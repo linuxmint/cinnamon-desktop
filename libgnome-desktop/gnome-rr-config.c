@@ -36,10 +36,6 @@
 #include <X11/Xlib.h>
 #include <gdk/gdkx.h>
 
-#include <unistd.h>
-#include <sys/wait.h>
-#include <signal.h>
-
 #include "gnome-rr-config.h"
 
 #include "edid.h"
@@ -1814,121 +1810,6 @@ get_required_virtual_size (CrtcAssignment *assign, int *width, int *height)
     g_list_free (active_crtcs);
 }
 
-static gboolean
-unity_running (void)
-{
-    const gchar *desktop_environment = g_getenv ("DESKTOP_SESSION");
-    
-    return !g_strcmp0 (desktop_environment, "ubuntu");
-}
-
-static gint _max_texture_size_cache = -1;
-
-static gint
-get_max_texture_size (GnomeRRScreen *screen)
-{
-    if (_max_texture_size_cache != -1)
-    {
-	return _max_texture_size_cache;
-    } else {
-	/* 
-	 * Spawn a second process to check the GL texture limits
-	 * We do this across a process boundary to ensure that crashes
-	 * in the GL driver (which are unfortunately common) don't take
-	 * down the app.
-	 */
-	int pipe_fd[2];
-	pid_t canary_pid;
-
-	char * const canary_argv[] = { LIBEXECDIR "/check_gl_texture_size", NULL };
-	char *canary_env[2];
-	char display_env[80];
-	  
-	snprintf (display_env, sizeof (display_env), "DISPLAY=%s", DisplayString (screen->priv->xdisplay));
-	canary_env[0] = display_env;
-	canary_env[1] = NULL;
-
-
-	if (pipe (pipe_fd) == -1)
-	{
-	    _max_texture_size_cache = 0;
-	    return 0;
-	}
-	canary_pid = fork ();
-	if (canary_pid == -1)
-	{
-	    _max_texture_size_cache = 0;
-	    return 0;
-	}
-
-	if (canary_pid == 0)
-	{
-	  close (pipe_fd[0]);
-	  dup2 (pipe_fd[1], 1);
-	  close (pipe_fd[1]);
-	 
-	  execve (canary_argv[0], canary_argv, canary_env);
-	} else {
-	    char buffer[10];
-	    gint max_texture_size;
-	    int child_status;
-	    int num_char;
-	    struct timespec fifty_msec = {0, 50000000};
-	    int wait_count = 0;
-	    
-	    close (pipe_fd[1]);
-
-	    /* Empirical testing suggests this check takes < 150msec on my
-	     * crappy Atom netbook with slow rotating HDD.  A 500msec timeout
-	     * should be generous while not being *too* long if it triggers.
-	     *
-	     * Do a sleep/poll dance because we're a library and there's no
-	     * guarantee that waiting on SIGCHLD won't stomp over a client's
-	     * set up.
-	     */
-	    while (waitpid (canary_pid, &child_status, WNOHANG) == 0 && wait_count < 10) {
-		g_debug ("Waiting for GL_MAX_TEXTURE_SIZE helper...");
-	        nanosleep (&fifty_msec, NULL);
-		wait_count++;
-	    }
-
-	    if (WIFEXITED (child_status) && WEXITSTATUS (child_status) == EXIT_SUCCESS) 
-	    {
-	        if ((num_char = read (pipe_fd[0], buffer, sizeof(buffer) - 1)) <= 0) 
-		{
-		    g_warning ("Failed to read GL_MAX_TEXTURE_SIZE from helper.");
-		    max_texture_size = 0;
-		} else {
-		    buffer[num_char] = '\0';
-		    sscanf (buffer, "%u", &max_texture_size);
-		    /* 
-		     * Sanity check the numbers.  No hardware I know of has a
-		     * GL_MAX_TEXTURE_SIZE smaller than 1024.
-		     */
-		    if (max_texture_size < 1024)
-			max_texture_size = 0;
-		}
-	    } else {
-	        if (wait_count == 10) {
-		    g_warning ("Timed out waiting for GL_MAX_TEXTURE_SIZE helper");
-
-		    /* Ensure we don't leave processes sitting around.  Who knows what they're doing? */
-		    kill (canary_pid, SIGTERM);
-		    waitpid (canary_pid, &child_status, 0);
-	        } else {
-		    g_warning ("GL_MAX_TEXTURE_SIZE helper quit unexpectedly");
-		}
-		max_texture_size = 0;
-	    }
-
-	    close (pipe_fd[0]);
-	    g_debug ("Found GL_MAX_TEXTURE_SIZE of %u", max_texture_size);
-	    _max_texture_size_cache = max_texture_size;
-	    return _max_texture_size_cache;
-	}
-    }
-}
-
 static CrtcAssignment *
 crtc_assignment_new (GnomeRRScreen *screen, GnomeRROutputInfo **outputs, GError **error)
 {
@@ -1941,7 +1822,6 @@ crtc_assignment_new (GnomeRRScreen *screen, GnomeRROutputInfo **outputs, GError 
     {
 	int width, height;
 	int min_width, max_width, min_height, max_height;
-	int max_texture_size;
 
 	get_required_virtual_size (assignment, &width, &height);
 
@@ -1963,29 +1843,6 @@ crtc_assignment_new (GnomeRRScreen *screen, GnomeRROutputInfo **outputs, GError 
 	    goto fail;
 	}
 
-	/* Hack:
-         * This should either be solved by
-         * (a) Allowing the compositor to veto RandR changes
-         * (b) Fixing the compositor
-         * 
-         * Nethier of these are feasible at this point, so just fix Unity.
-         */
-
-	if (unity_running ())
-	{
-	    max_texture_size = get_max_texture_size (screen);
-	    if (max_texture_size > 0 && (width > max_texture_size || height > max_texture_size))
-	    {
-		g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_BOUNDS_ERROR,
-			     _("Requested size (%d, %d) exceeds 3D hardware limit (%d, %d).\n"
-			       "You must either rearrange the displays so that they fit within a (%d, %d) square."),
-			     width, height, max_texture_size, max_texture_size,
-			     max_texture_size, max_texture_size);
-		goto fail;
-	    }
-	}
-	    
-	
 	assignment->screen = screen;
 	
 	return assignment;

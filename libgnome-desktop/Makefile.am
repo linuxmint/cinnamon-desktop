@@ -11,7 +11,6 @@ AM_CPPFLAGS =							\
 	-DG_LOG_DOMAIN=\"GnomeDesktop\"				\
 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale\""	\
 	-DPNP_IDS=\""$(PNP_IDS)"\"				\
-	-DLIBEXECDIR=\""$(libexecdir)\""			\
 	-DXKB_BASE=\""$(XKB_BASE)"\"				\
 	$(DISABLE_DEPRECATED_CFLAGS)
 
@@ -60,14 +59,6 @@ libgnome_desktop_3_la_LDFLAGS = \
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gnome-desktop-3.0.pc
-
-check_gl_texture_size_CPPFLAGS = \
-	$(GL_CFLAGS) \
-	$(XLIB_CFLAGS)
-
-check_gl_texture_size_LDADD = \
-	$(XLIB_LIBS) \
-	$(GL_LIBS)
 
 libgnome_desktopdir = $(includedir)/gnome-desktop-3.0/libgnome-desktop
 libgnome_desktop_HEADERS = \
@@ -127,7 +118,6 @@ MAINTAINERCLEANFILES = \
 	pnp.ids
 
 libexec_PROGRAMS =		\
-	check_gl_texture_size	\
 	gnome-rr-debug
 
 gnome_rr_debug_SOURCES =	\
