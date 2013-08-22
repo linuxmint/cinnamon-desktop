@@ -1,11 +1,7 @@
-Source: gnome-desktop3
-Section: gnome
+Source: cinnamon-desktop
+Section: cinnamon
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: @GNOME_TEAM@
-Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/desktop/unstable/gnome-desktop3
-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-desktop3
+Maintainer: Clement Lefebvre <root@linuxmint.com>
 Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.15.1),
@@ -30,52 +26,49 @@ Build-Depends: debhelper (>= 8),
                libgtk-3-doc,
                gobject-introspection (>= 0.10.2-1~),
                libgirepository1.0-dev (>= 0.10.2-1~),
-               gsettings-desktop-schemas-dev (>= 3.5.91),
                libgl1-mesa-dev,
                yelp-tools,
 
-Package: gnome-desktop3-data
+Package: cinnamon-desktop-data
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Breaks: gnome-desktop-data (<< 1:2.32.1-2)
 Replaces: gnome-desktop-data (<< 1:2.32.1-2)
-Description: Common files for GNOME desktop apps
- This package includes some files that are shared between several GNOME
+Description: Common files for Cinnamon desktop apps
+ This package includes some files that are shared between several Cinnamon
  apps (internationalization files).
 
-Package: libgnome-desktop-3-4
+Package: libcinnamon-desktop0
 Section: libs
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         gsettings-desktop-schemas (>= 3.5.91),
-         gnome-desktop3-data (>= ${source:Version})
+         cinnamon-desktop-data (>= ${source:Version})
 Recommends: hwdata (>= 0.227-1)
 Description: Utility library for loading .desktop files - runtime files
- This library is used by GNOME to load the .desktop files.
+ This library is used by Cinnamon to load the .desktop files.
 
-Package: libgnome-desktop-3-dev
+Package: libcinnamon-desktop-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
-         libgnome-desktop-3-4 (= ${binary:Version}),
-         gir1.2-gnomedesktop-3.0 (= ${binary:Version}),
+         libcinnamon-desktop0 (= ${binary:Version}),
+         gir1.2-cinnamondesktop-3.0 (= ${binary:Version}),
          libgtk-3-dev (>= 3.3.6),
-         gsettings-desktop-schemas-dev,
          libxkbfile-dev
 Description: Utility library for loading .desktop files - development files
- This package provides the include files and static library for the GNOME
+ This package provides the include files and static library for the Cinnamon
  desktop library functions.
 
-Package: gir1.2-gnomedesktop-3.0
+Package: gir1.2-cinnamondesktop-3.0
 Section: introspection
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${gir:Depends}
-Description: Introspection data for GnomeDesktop
- This package provides the include files and static library for the GNOME
+Description: Introspection data for CinnamonDesktop
+ This package provides the include files and static library for the Cinnamon
  desktop library functions.
  .
- This package contains the introspection data for GnomeDesktop
+ This package contains the introspection data for CinnamonDesktop

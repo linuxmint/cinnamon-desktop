@@ -2,7 +2,7 @@
 
 export DH_VERBOSE=1
 
-GNOME_MODULE=gnome-desktop
+GNOME_MODULE=cinnamon-desktop
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/gnome.mk
@@ -15,7 +15,7 @@ LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
 
 DEB_DH_AUTORECONF_ARGS = --as-needed
 
-DEB_CONFIGURE_LIBEXECDIR := /usr/lib/libgnome-desktop-3-4/
+DEB_CONFIGURE_LIBEXECDIR := /usr/lib/libcinnamon-desktop0/
 
 DEB_CONFIGURE_EXTRA_FLAGS += \
 			--with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
@@ -25,7 +25,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--enable-desktop-docs \
 			--enable-introspection
 
-DEB_DH_MAKESHLIBS_ARGS_libgnome-desktop-3-4 += -- -c4
-DEB_DH_SHLIBDEPS_ARGS_libgnome-desktop-3-4 := -X/usr/lib/libgnome-desktop-3-4/check_gl_texture_size 
+DEB_DH_MAKESHLIBS_ARGS_libcinnamon-desktop0 += -- -c4
+DEB_DH_SHLIBDEPS_ARGS_libcinnamon-desktop0 := -X/usr/lib/libcinnamon-desktop0/check_gl_texture_size 
 
 common-binary-post-install-arch:: list-missing

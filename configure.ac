@@ -1,16 +1,6 @@
-m4_define(gnome_platform, 3)
-m4_define(gnome_minor, 6)
-m4_define(gnome_micro, 3)
-dnl gnome_sub is an optional sub-version which will not be advertised to the user
-dnl It allows to release a 2.30.1.1 which is just a better 2.30.1
-dnl Leave empty if not needed
-m4_define(gnome_sub,)
 
-m4_define(gnome_version, [gnome_platform.gnome_minor.gnome_micro]m4_ifval(gnome_sub, .gnome_sub)),
-
-AC_INIT([gnome-desktop], gnome_version,
-        [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-desktop])
-AC_CONFIG_SRCDIR([libgnome-desktop])
+AC_INIT(cinnamon-desktop, 1.0.0)
+AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
 AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
@@ -37,38 +27,6 @@ IT_PROG_INTLTOOL([0.40.6])
 
 AC_PROG_CC
 PKG_PROG_PKG_CONFIG
-
-GNOME_PLATFORM=gnome_platform
-GNOME_MINOR=gnome_minor
-GNOME_MICRO=gnome_micro
-GNOME_DISTRIBUTOR="GNOME.Org"
-GNOME_DATE=`date +"%Y-%m-%d"`
-
-AC_ARG_WITH(gnome_distributor, [ --with-gnome-distributor=DISTRIBUTOR Specify name of GNOME distributor])
-
-if test "x$with_gnome_distributor" != x ; then
- GNOME_DISTRIBUTOR=$with_gnome_distributor
-fi
-
-AC_ARG_ENABLE([date-in-gnome-version],
- [AS_HELP_STRING([--disable-date-in-gnome-version],[do not put the build date in gnome-version.xml])],
- [],[enable_date_in_gnome_version=yes])
-if test "$enable_date_in_gnome_version" = "no"; then
- GNOME_DATE=
- GNOME_DATE_COMMENT_START="<!--"
- GNOME_DATE_COMMENT_END="-->"
-else
- GNOME_DATE_COMMENT_START=
- GNOME_DATE_COMMENT_END=
-fi
-
-AC_SUBST(GNOME_PLATFORM)
-AC_SUBST(GNOME_MINOR)
-AC_SUBST(GNOME_MICRO)
-AC_SUBST(GNOME_DISTRIBUTOR)
-AC_SUBST(GNOME_DATE)
-AC_SUBST(GNOME_DATE_COMMENT_START)
-AC_SUBST(GNOME_DATE_COMMENT_END)
 
 GNOME_COMPILE_WARNINGS([maximum])
 GNOME_MAINTAINER_MODE_DEFINES
@@ -114,7 +72,6 @@ GDK_PIXBUF_REQUIRED=2.21.3
 GTK_REQUIRED=3.3.6
 GLIB_REQUIRED=2.33.3
 XRANDR_REQUIRED=1.3
-GSETTINGS_DESKTOP_SCHEMAS_REQUIRED=3.5.91
 XEXT_REQUIRED=1.1
 
 AC_SUBST(GTK_REQUIRED)
@@ -144,15 +101,14 @@ AC_SUBST(XLIB_LIBS)
 
 dnl pkg-config dependency checks
 
-PKG_CHECK_MODULES(GNOME_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
-                                 gtk+-3.0 >= $GTK_REQUIRED
-                                 glib-2.0 >= $GLIB_REQUIRED
-                                 gio-2.0 >= $GLIB_REQUIRED
-                                 gsettings-desktop-schemas >= $GSETTINGS_DESKTOP_SCHEMAS_REQUIRED
-                                 xrandr >= $XRANDR_REQUIRED
-                                 xext >= $XEXT_REQUIRED
-                                 xkeyboard-config
-                                 xkbfile)
+PKG_CHECK_MODULES(CINNAMON_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
+                                    gtk+-3.0 >= $GTK_REQUIRED
+                                    glib-2.0 >= $GLIB_REQUIRED
+                                    gio-2.0 >= $GLIB_REQUIRED
+                                    xrandr >= $XRANDR_REQUIRED
+                                    xext >= $XEXT_REQUIRED
+                                    xkeyboard-config
+                                    xkbfile)
 
 XKB_BASE=$($PKG_CONFIG --variable xkb_base xkeyboard-config)
 AC_SUBST(XKB_BASE)
@@ -179,7 +135,7 @@ YELP_HELP_INIT
 
 dnl Language Support
 
-GETTEXT_PACKAGE=gnome-desktop-3.0
+GETTEXT_PACKAGE=cinnamon-desktop
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
 		   [The gettext translation domain])
 AC_SUBST(GETTEXT_PACKAGE)
@@ -193,13 +149,12 @@ GTK_DOC_CHECK([1.4])
 
 AC_CONFIG_FILES([
 Makefile
-libgnome-desktop/Makefile
-libgnome-desktop/gnome-desktop-3.0.pc
-libgnome-desktop/gnome-desktop-3.0-uninstalled.pc
+libcinnamon-desktop/Makefile
+libcinnamon-desktop/cinnamon-desktop.pc
+libcinnamon-desktop/cinnamon-desktop-uninstalled.pc
 docs/Makefile
 docs/reference/Makefile
-docs/reference/gnome-desktop3/Makefile
-gnome-version.xml.in
+docs/reference/cinnamon-desktop/Makefile
 po/Makefile.in
 desktop-docs/Makefile
 desktop-docs/fdl/Makefile
@@ -214,9 +169,7 @@ dnl - Show summary
 dnl ---------------------------------------------------------------------------
 
 echo "
-              gnome-desktop $VERSION
-              `echo gnome-desktop $VERSION | sed "s/./=/g"`
-
+              
         prefix:                       ${prefix}
         exec_prefix:                  ${exec_prefix}
         libdir:                       ${libdir}
@@ -231,10 +184,8 @@ echo "
         Maintainer mode:              ${USE_MAINTAINER_MODE}
         Use *_DISABLE_DEPRECATED:     ${enable_deprecation_flags}
 
-        GNOME Distributor:            ${GNOME_DISTRIBUTOR}
-        Build desktop-wide docs:      ${enable_desktop_docs}
-        Date in gnome-version.xml:    ${enable_date_in_gnome_version}
-        Use external pnp.ids:         ${EXTERNAL_PNP_IDS}
+         Build desktop-wide docs:      ${enable_desktop_docs}
+         Use external pnp.ids:         ${EXTERNAL_PNP_IDS}
         Build gtk-doc documentation:  ${enable_gtk_doc}
 
 "
