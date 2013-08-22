@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="GNOME Desktop Library Reference Manual" link="index.html" author="" name="gnome-desktop3" version="2" language="c">
+  <chapters>
+    <sub name="GNOME Desktop Library Overview" link="intro.html"/>
+    <sub name="Desktop Background" link="background.html">
+      <sub name="gnome-bg" link="gnome-desktop3-gnome-bg.html"/>
+    </sub>
+    <sub name="Monitor Configuration" link="randr.html">
+      <sub name="gnome-rr" link="gnome-desktop3-gnome-rr.html"/>
+      <sub name="gnome-rr-config" link="gnome-desktop3-gnome-rr-config.html"/>
+      <sub name="gnome-rr-labeler" link="gnome-desktop3-gnome-rr-labeler.html"/>
+    </sub>
+    <sub name="Thumbnails" link="thumbnail.html">
+      <sub name="GnomeDesktopThumbnailFactory" link="GnomeDesktopThumbnailFactory.html"/>
+    </sub>
+    <sub name="Miscellaneous" link="libgnome.html">
+      <sub name="gnome-desktop-utils" link="gnome-desktop3-gnome-desktop-utils.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gnome_bg_new ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-new"/>
+    <keyword type="function" name="gnome_bg_load_from_preferences ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-load-from-preferences"/>
+    <keyword type="function" name="gnome_bg_save_to_preferences ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-save-to-preferences"/>
+    <keyword type="function" name="gnome_bg_set_filename ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-filename"/>
+    <keyword type="function" name="gnome_bg_set_placement ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-placement"/>
+    <keyword type="function" name="gnome_bg_set_color ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-color"/>
+    <keyword type="function" name="gnome_bg_set_draw_background ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-draw-background"/>
+    <keyword type="function" name="gnome_bg_get_placement ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-placement"/>
+    <keyword type="function" name="gnome_bg_get_draw_background ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-draw-background"/>
+    <keyword type="function" name="gnome_bg_get_color ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-color"/>
+    <keyword type="function" name="gnome_bg_get_filename ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-filename"/>
+    <keyword type="function" name="gnome_bg_draw ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-draw"/>
+    <keyword type="function" name="gnome_bg_create_surface ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-create-surface"/>
+    <keyword type="function" name="gnome_bg_get_image_size ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-image-size"/>
+    <keyword type="function" name="gnome_bg_create_thumbnail ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-create-thumbnail"/>
+    <keyword type="function" name="gnome_bg_is_dark ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-is-dark"/>
+    <keyword type="function" name="gnome_bg_has_multiple_sizes ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-has-multiple-sizes"/>
+    <keyword type="function" name="gnome_bg_changes_with_time ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-changes-with-time"/>
+    <keyword type="function" name="gnome_bg_create_frame_thumbnail ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-create-frame-thumbnail"/>
+    <keyword type="function" name="gnome_bg_set_surface_as_root ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-surface-as-root"/>
+    <keyword type="function" name="gnome_bg_set_surface_as_root_with_crossfade ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-set-surface-as-root-with-crossfade"/>
+    <keyword type="function" name="gnome_bg_get_surface_from_root ()" link="gnome-desktop3-gnome-bg.html#gnome-bg-get-surface-from-root"/>
+    <keyword type="struct" name="GnomeBG" link="gnome-desktop3-gnome-bg.html#GnomeBG-struct"/>
+    <keyword type="struct" name="GnomeBGClass" link="gnome-desktop3-gnome-bg.html#GnomeBGClass"/>
+    <keyword type="signal" name="The &quot;changed&quot; signal" link="gnome-desktop3-gnome-bg.html#GnomeBG-changed"/>
+    <keyword type="signal" name="The &quot;transitioned&quot; signal" link="gnome-desktop3-gnome-bg.html#GnomeBG-transitioned"/>
+    <keyword type="struct" name="GnomeRRScreen" link="gnome-desktop3-gnome-rr.html#GnomeRRScreen"/>
+    <keyword type="typedef" name="GnomeRROutput" link="gnome-desktop3-gnome-rr.html#GnomeRROutput"/>
+    <keyword type="typedef" name="GnomeRRCrtc" link="gnome-desktop3-gnome-rr.html#GnomeRRCrtc"/>
+    <keyword type="typedef" name="GnomeRRMode" link="gnome-desktop3-gnome-rr.html#GnomeRRMode"/>
+    <keyword type="enum" name="enum GnomeRRRotation" link="gnome-desktop3-gnome-rr.html#GnomeRRRotation"/>
+    <keyword type="macro" name="GNOME_RR_ERROR" link="gnome-desktop3-gnome-rr.html#GNOME-RR-ERROR:CAPS"/>
+    <keyword type="function" name="gnome_rr_error_quark ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-error-quark"/>
+    <keyword type="enum" name="enum GnomeRRError" link="gnome-desktop3-gnome-rr.html#GnomeRRError"/>
+    <keyword type="macro" name="GNOME_RR_CONNECTOR_TYPE_PANEL" link="gnome-desktop3-gnome-rr.html#GNOME-RR-CONNECTOR-TYPE-PANEL:CAPS"/>
+    <keyword type="function" name="gnome_rr_screen_new ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-new"/>
+    <keyword type="function" name="gnome_rr_screen_list_outputs ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-list-outputs"/>
+    <keyword type="function" name="gnome_rr_screen_list_crtcs ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-list-crtcs"/>
+    <keyword type="function" name="gnome_rr_screen_list_modes ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-list-modes"/>
+    <keyword type="function" name="gnome_rr_screen_list_clone_modes ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-list-clone-modes"/>
+    <keyword type="function" name="gnome_rr_screen_set_size ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-set-size"/>
+    <keyword type="function" name="gnome_rr_screen_get_crtc_by_id ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-get-crtc-by-id"/>
+    <keyword type="function" name="gnome_rr_screen_refresh ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-refresh"/>
+    <keyword type="function" name="gnome_rr_screen_get_output_by_id ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-get-output-by-id"/>
+    <keyword type="function" name="gnome_rr_screen_get_output_by_name ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-get-output-by-name"/>
+    <keyword type="function" name="gnome_rr_screen_get_ranges ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-get-ranges"/>
+    <keyword type="function" name="gnome_rr_screen_get_timestamps ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-get-timestamps"/>
+    <keyword type="function" name="gnome_rr_screen_set_primary_output ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-screen-set-primary-output"/>
+    <keyword type="function" name="gnome_rr_output_get_id ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-id"/>
+    <keyword type="function" name="gnome_rr_output_get_name ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-name"/>
+    <keyword type="function" name="gnome_rr_output_is_connected ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-is-connected"/>
+    <keyword type="function" name="gnome_rr_output_get_size_inches ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-size-inches"/>
+    <keyword type="function" name="gnome_rr_output_get_width_mm ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-width-mm"/>
+    <keyword type="function" name="gnome_rr_output_get_height_mm ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-height-mm"/>
+    <keyword type="function" name="gnome_rr_output_get_edid_data ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-edid-data"/>
+    <keyword type="function" name="gnome_rr_output_get_possible_crtcs ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-possible-crtcs"/>
+    <keyword type="function" name="gnome_rr_output_get_current_mode ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-current-mode"/>
+    <keyword type="function" name="gnome_rr_output_get_crtc ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-crtc"/>
+    <keyword type="function" name="gnome_rr_output_get_connector_type ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-connector-type"/>
+    <keyword type="function" name="gnome_rr_output_is_laptop ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-is-laptop"/>
+    <keyword type="function" name="gnome_rr_output_get_position ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-position"/>
+    <keyword type="function" name="gnome_rr_output_can_clone ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-can-clone"/>
+    <keyword type="function" name="gnome_rr_output_list_modes ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-list-modes"/>
+    <keyword type="function" name="gnome_rr_output_get_preferred_mode ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-preferred-mode"/>
+    <keyword type="function" name="gnome_rr_output_supports_mode ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-supports-mode"/>
+    <keyword type="function" name="gnome_rr_output_get_is_primary ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-output-get-is-primary"/>
+    <keyword type="function" name="gnome_rr_mode_get_id ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-mode-get-id"/>
+    <keyword type="function" name="gnome_rr_mode_get_width ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-mode-get-width"/>
+    <keyword type="function" name="gnome_rr_mode_get_height ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-mode-get-height"/>
+    <keyword type="function" name="gnome_rr_mode_get_freq ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-mode-get-freq"/>
+    <keyword type="function" name="gnome_rr_crtc_get_id ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-id"/>
+    <keyword type="function" name="gnome_rr_crtc_set_config_with_time ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-set-config-with-time"/>
+    <keyword type="function" name="gnome_rr_crtc_can_drive_output ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-can-drive-output"/>
+    <keyword type="function" name="gnome_rr_crtc_get_current_mode ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-current-mode"/>
+    <keyword type="function" name="gnome_rr_crtc_get_position ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-position"/>
+    <keyword type="function" name="gnome_rr_crtc_get_current_rotation ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-current-rotation"/>
+    <keyword type="function" name="gnome_rr_crtc_get_rotations ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-rotations"/>
+    <keyword type="function" name="gnome_rr_crtc_supports_rotation ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-supports-rotation"/>
+    <keyword type="function" name="gnome_rr_crtc_get_gamma ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-get-gamma"/>
+    <keyword type="function" name="gnome_rr_crtc_set_gamma ()" link="gnome-desktop3-gnome-rr.html#gnome-rr-crtc-set-gamma"/>
+    <keyword type="function" name="gnome_rr_config_new_current ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-new-current"/>
+    <keyword type="function" name="gnome_rr_config_new_stored ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-new-stored"/>
+    <keyword type="function" name="gnome_rr_config_match ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-match"/>
+    <keyword type="function" name="gnome_rr_config_equal ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-equal"/>
+    <keyword type="function" name="gnome_rr_config_save ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-save"/>
+    <keyword type="function" name="gnome_rr_config_sanitize ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-sanitize"/>
+    <keyword type="function" name="gnome_rr_config_apply_with_time ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-apply-with-time"/>
+    <keyword type="function" name="gnome_rr_config_apply_from_filename_with_time ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-apply-from-filename-with-time"/>
+    <keyword type="function" name="gnome_rr_config_applicable ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-applicable"/>
+    <keyword type="function" name="gnome_rr_config_get_backup_filename ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-get-backup-filename"/>
+    <keyword type="function" name="gnome_rr_config_get_intended_filename ()" link="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-get-intended-filename"/>
+    <keyword type="function" name="gnome_rr_labeler_new ()" link="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-new"/>
+    <keyword type="function" name="gnome_rr_labeler_show ()" link="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-show"/>
+    <keyword type="function" name="gnome_rr_labeler_hide ()" link="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-hide"/>
+    <keyword type="struct" name="struct GnomeRRLabeler" link="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler-struct"/>
+    <keyword type="struct" name="struct GnomeRRLabelerClass" link="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabelerClass"/>
+    <keyword type="property" name="The &quot;config&quot; property" link="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler--config"/>
+    <keyword type="enum" name="enum GnomeDesktopThumbnailSize" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailSize"/>
+    <keyword type="struct" name="struct GnomeDesktopThumbnailFactory" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailFactory-struct"/>
+    <keyword type="struct" name="struct GnomeDesktopThumbnailFactoryClass" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailFactoryClass"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_new ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-new" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_lookup ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-lookup" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_has_valid_failed_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-has-valid-failed-thumbnail" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_can_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-can-thumbnail" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_generate_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-generate-thumbnail" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_save_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-save-thumbnail" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_factory_create_failed_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-create-failed-thumbnail" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_has_uri ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-has-uri" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_is_valid ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-is-valid" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_md5 ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-md5" deprecated="2.22: Use #GChecksum instead" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_path_for_uri ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-path-for-uri" since="2.2"/>
+    <keyword type="function" name="gnome_desktop_thumbnail_scale_down_pixbuf ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-scale-down-pixbuf" since="2.2"/>
+    <keyword type="struct" name="GnomeDesktopThumbnailFactoryPrivate" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailFactoryPrivate"/>
+    <keyword type="function" name="gnome_desktop_prepend_terminal_to_vector ()" link="gnome-desktop3-gnome-desktop-utils.html#gnome-desktop-prepend-terminal-to-vector"/>
+  </functions>
+</book>

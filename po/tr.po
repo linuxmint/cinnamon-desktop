@@ -1,0 +1,455 @@
+# Turkish translation of gnome-desktop.
+# Copyright (C) 2001-2003, 2004, 2008 Free Software Foundation, Inc.
+#
+# Fatih Demir <kabalak@kabalak.net>, 2000.
+# Görkem Çetin <gorkem@gelecek.com.tr>, 2002/2003.
+# Baris Cicek <baris@teamforce.name.tr>, 2004, 2008, 2009.
+# Muhammet Kara <muhammet.k@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&component=general\n"
+"POT-Creation-Date: 2010-11-27 02:14+0000\n"
+"PO-Revision-Date: 2011-06-25 18:18+0300\n"
+"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+#| msgid "Unknown"
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Terminal bulunamadı.Çalışmıyor olsa bile xterm kullanılıyor."
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "Ekran kaynakları alınamadı(CRTC'ler, çıkışlar, kipler)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"Ekran boyutlarının aralığı alınırken idare edilemeyen bir X hatası oluştu"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "Ekran boyutlarının aralığı alınamadı"
+
+#: ../libgnome-desktop/gnome-rr.c:714
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR uzantısı mevcut değil"
+
+#: ../libgnome-desktop/gnome-rr.c:1090
+#, c-format
+msgid "could not get information about output %d"
+msgstr "Çıktı hakkında bilgi alınamadı %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1477
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"CRTC %d için istenilen konum/boyut izin verilen limitlerin dışında: pozisyon="
+"(%d, %d), boyut=(%d, %d), en fazla=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1513
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "CRTC %d için yapılandırma ayarları tanımlanamadı"
+
+#: ../libgnome-desktop/gnome-rr.c:1629
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "CRTC %d hakkında bilgi alınamadı"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "Dizüstü"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1227
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "Hiçbir kayıtlı ekran yapılandırması aktif yapılandırma ile eşleşmiyor"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1489
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d, %s çıktısını kullanamıyor"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1496
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "%s çıktısı, %dx%d@%dHz kipini desteklemiyor"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1507
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d, rotasyon=%s özelliğini desteklemiyor"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1521
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"%s çıktısı, birebir kopyalanmış başka bir çıktıyla aynı parametrelere sahip "
+"değil:\n"
+"geçerli kip = %d, yeni kip = %d\n"
+"geçerli koordinatlar = (%d, %d), yeni koordinatlar = (%d, %d)\n"
+"geçerli rotasyon = %s, yeni rotasyon = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1536
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "%s çıktısına birebir kopyalama yapılamıyor"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1705
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "CRTC %d kipleri deneniyor\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1729
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr "CRTC %d: %dx%d@%dHz kipi, %dx%d@%dHz çıkışıyla (pass %d) deneniyor\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1776
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"CRTC'ler çıktılara atanamadı:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1780
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"seçilen kiplerden hiçbiri kullanılabilir kiplerle uyumlu değil:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1862
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"Gerekli sanal boyut mevcut boyuta uymuyor: istenilen=(%d, %d), en az=(%d, "
+"%d), en fazla=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:336
+msgid "Mirror Screens"
+msgstr "Yansı Ekranlar"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:164
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R:%S"
+
+#: ../js/ui/dateMenu.js:165
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:169
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../js/ui/dateMenu.js:170
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:177
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %b %e, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:178
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %b %e, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:182
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:183
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#~ msgid "About GNOME"
+#~ msgstr "GNOME Hakkında"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "GNOME hakkında daha fazla şey öğrenin"
+
+#~ msgid "News"
+#~ msgstr "Haberler"
+
+#~ msgid "GNOME Library"
+#~ msgstr "GNOME Kütüphanesi"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "GNOME Dostları"
+
+#~ msgid "Contact"
+#~ msgstr "Bağlantı"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Esrarengiz GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Uzayan Lastik GNOME"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "GNOME Balığı Wanda"
+
+#~ msgid "_Open URL"
+#~ msgstr "URL _Aç"
+
+#~ msgid "_Copy URL"
+#~ msgstr "URL _Kopyala"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "GNOME Masaüstü Hakkında"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "GNOME Masaüstü'ne Hoş Geldiniz"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Sizlere ulaştıranlar:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Sürüm"
+
+#~ msgid "Distributor"
+#~ msgstr "Dağıtıcı"
+
+#~ msgid "Build Date"
+#~ msgstr "Derleme Tarihi"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Bu GNOME sürümü hakkında bilgi göster"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME ayrıca uygulama geliştiricilerinin güçlü ve karmaşık uygulamalar "
+#~ "yaratmalarına olanak sağlayan eksiksiz bir geliştirme platformu içerir."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME bilgisayarınızda gördüğünüz; dosya yöneticisini, web tarayıcısını, "
+#~ "menüleri, ve başka bir çok uygulamayı içerir."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME, Unix benzeri işletim sistemleri ailesi için özgür, kullanılabilir, "
+#~ "kararlı ve erişilebilir masaüstü ortamıdır."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "GNOME'un kullanılabilirliğe ve erişilebilirliğe odaklanması, düzenli ürün "
+#~ "sürecine ve güçlü takım desteğine sahip olması onu Özgür Yazılım "
+#~ "masaüstleri arasında tek yapar."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "GNOME'un en büyük gücü bizim sağlam topluluğumuzdur. Sanal olarak kodlama "
+#~ "yeteneğine sahip ya da sahip olmayan herkes GNOME'u daha iyi yapmak için "
+#~ "katılımda bulunabilir."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "1997'de başladığından beri yüzlerce insan GNOME'un kodlamasına katkıda "
+#~ "bulundu; çok daha fazlası tercümeyi, belgelendirmeyi ve kalite kontrolünü "
+#~ "kapsayan başka önemli yollarla katkıda bulundular."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "'%s' dosyası okunamadı: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "'%s' dosyası geri alınırken hata: %s"
+
+#~ msgid "No name"
+#~ msgstr "İsimsiz"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "'%s' bir dosya ya da dizin değil."
+
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "'%s' dosya id'si bulunurken hata"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Kaydedilmek üzere bir dosya adı yok"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s başlatılıyor"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Başlatılacak URL yok"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Çalıştırılabilir bir öğe değil"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Çalıştırılacak komut (Exec) yok"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Başlatmak için hatalı komut (Exec)"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Bilinmeyen kodlama: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "Uygun bir ekran yapılandırması bulunamadı"
+
+#~ msgid "Directory"
+#~ msgstr "Dizin"
+
+#~ msgid "Application"
+#~ msgstr "Uygulama"
+
+#~ msgid "Link"
+#~ msgstr "Bağ"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSAygıtı"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME Türü"
+
+#~ msgid "Service"
+#~ msgstr "Servis"
+
+#~ msgid "ServiceType"
+#~ msgstr "Servis Türü"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "_Komut:"
+
+#~ msgid "_Name:"
+#~ msgstr "İ_sim:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Genel İsim:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "_Açıklama:"
+
+#~ msgid "Browse"
+#~ msgstr "Gözat"
+
+#~ msgid "_Type:"
+#~ msgstr "_Tür:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Simge:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Simgelere gözat"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "_Terminalde çalıştır"
+
+#~ msgid "Language"
+#~ msgstr "Dil"
+
+#~ msgid "Name"
+#~ msgstr "İsim"
+
+#~ msgid "Generic name"
+#~ msgstr "Genel isim"
+
+#~ msgid "Comment"
+#~ msgstr "Açıklama"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Kullanmadan önce bunu dene:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Belgelendirme:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "İsi_m/Açıklama çevirileri:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Ekle/Ayarla"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "İsim/Açıklama Çevirilerini Ekle veya Ayarla"
+
+#~ msgid "Re_move"
+#~ msgstr "_Sil"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "İsim/Açıklama Çevirilerini Sil"
+
+#~ msgid "Basic"
+#~ msgstr "Temel"
+
+#~ msgid "Advanced"
+#~ msgstr "Gelişmiş"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Başlangıçta İpuçlarını Göster"

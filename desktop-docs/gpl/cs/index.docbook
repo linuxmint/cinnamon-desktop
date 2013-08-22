@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="cs">
+  <articleinfo>
+    <title>GNU General Public License</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Dokumentační projekt GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Kopírování a distribuce doslovných kopií tohoto licenčního dokumentu jsou dovoleny komukoliv, jeho změny jsou však zakázány.</para>
+    </legalnotice>
+
+    <releaseinfo>Český překlad verze 2, červen 1991</releaseinfo>
+
+    <abstract role="description"><para>Softwarové licence jsou většinou navrženy tak, že vám odebírají právo svobodného sdílení a úprav programů. Smyslem GNU General Public License je naproti tomu zaručit svobodu ke sdílení a úpravám svobodného softwaru - pro zajištění svobodného přístupu k tomuto softwaru pro všechny jeho uživatele.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Preambule</title>
+    
+    <para>Softwarové licence jsou většinou navrženy tak, že vám odebírají právo svobodného sdílení a úprav programů. Smyslem GNU General Public License je naproti tomu zaručit svobodu ke sdílení a úpravám svobodného softwaru - pro zajištění svobodného přístupu k tomuto softwaru pro všechny jeho uživatele. Tato General Public License se vztahuje na většinu softwaru nadace Free Software Foundation a na jakýkoli jiný program, jehož autor se přikloní k jejímu používání. (Některý další software od Free Software Foundation je namísto toho pokryt GNU Lesser General Public License.) Můžete ji rovněž použít pro své programy.</para>
+
+    <para>Pokud mluvíme o svobodném softwaru, máme na mysli svobodu, nikoliv cenu. Naše General Public License je navržena pro zajištění toho, že můžete svobodně šířit kopie svobodného softwaru (a účtovat si poplatek za tuto službu, pokud chcete), že obdržíte zdrojový kód anebo jej můžete získat, pokud ho chcete, že můžete tento software modifikovat nebo jeho části použít v nových svobodných programech; a že víte, že tyto věci smíte dělat.</para>
+
+    <para>Abychom mohli vaše práva chránit, musíme vytvořit omezení, která zakáží komukoli vám tato práva odepírat nebo vás žádat, abyste se těchto práv vzdal. Tato omezení se promítají do jistých povinností, kterým musíte dostát, pokud šíříte kopie dotyčného softwaru anebo ho modifikujete.</para>
+
+    <para>Například, šíříte-li kopie takového programu, ať již zdarma nebo za poplatek, musíte poskytnout příjemcům všechna práva, která máte sám. Musíte zaručit, že příjemci rovněž dostanou anebo mohou získat zdrojový kód. A musíte jim ukázat tyto podmínky, aby znali svá práva.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>Kvůli ochraně každého autora i nás samotných chceme zajistit, aby každý chápal skutečnost, že pro svobodný software neplatí žádné záruky. Je-li software někým jiným modifikován a poslán dále, chceme, aby příjemci věděli, že to, co mají, není originál, takže jakékoliv problémy vnesené jinými se neodrazí na reputaci původních autorů.</para>
+
+    <para>Konečně, každý svobodný program je neustále ohrožen softwarovými patenty. Přejeme si zamezit nebezpečí, že redistributoři svobodného programu obdrží samostatně patentová osvědčení a tím učiní program vázaným. Abychom tomu zamezili, deklarovali jsme, že každý patent musí být buď vydán s tím, že umožňuje každému svobodné užití, anebo nesmí být vydán vůbec.</para>
+
+    <para>Přesná ustanovení a podmínky pro kopírování, šíření a modifikaci jsou uvedeny dále.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>Ustanovení a podmínky pro kopírování, distribuci a modifikaci</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Paragraf 0</title>
+      <para>Tato licence se vztahuje na kterýkoliv program či jiné dílo, které obsahuje zmínku, umístěnou v něm držitelem autorských práv, o tom, že dílo může být šířeno podle ustanovení GNU General Public License. V dalším textu znamená <quote>program</quote> každý takový program nebo dílo a <quote>dílo založené na programu</quote> znamená buď program samotný anebo každé jiné dílo z něj odvozené, které podléhá autorskému zákonu: tím se míní dílo obsahující program nebo jeho část, buď doslovně anebo s modifikacemi, popřípadě v překladu do jiného jazyka. (Nadále je překlad zahrnován bez omezení pod pojem <quote>modifikace</quote>.) Každý uživatel licence je označován jako <quote>vy</quote>.</para>
+
+      <para>Jiné činnosti než kopírování, šíření a modifikace nejsou pokryty touto licencí; sahají mimo její rámec. Akt spuštění programu není omezen a výstup z programu je pokryt pouze tehdy, jestliže obsah výstupu tvoří dílo založené na programu (nezávisle na tom, zda bylo vytvořeno činností programu). Posouzení platnosti předchozí věty závisí na tom, co program dělá.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Paragraf 1</title>
+      <para>Smíte kopírovat a šířit doslovné kopie zdrojového kódu programu tak, jak jste jej obdržel a na libovolném médiu, za předpokladu, že na každé kopii viditelně a náležitě zveřejníte zmínku o autorských právech a absenci záruky; ponecháte nedotčené všechny zmínky vztahující se k této licenci a k absenci záruky; a dáte každému příjemci spolu s programem kopii této licence.</para>
+      
+      <para>Za fyzický akt přenesení kopie můžete žádat poplatek a podle vlastního uvážení můžete nabídnout za poplatek záruční ochranu.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Paragraf 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Tyto požadavky se vztahují k modifikovanému dílu jako celku. Pokud lze identifikovat části takového díla, které zřejmě nejsou odvozeny z programu a mohou být samy o sobě rozumně považovány za nezávislá a samostatná díla, pak se tato licence a její ustanovení nevztahují na tyto části, jsou-li šířeny jako nezávislá díla. Avšak jakmile tytéž části rozšiřujete jako část celku, jímž je dílo založené na programu, musí být rozšiřování tohoto celku podřízeno ustanovením této licence tak, že povolení poskytnutá dalším uživatelům se rozšíří na celé dílo, tedy na všechny jeho části bez ohledu na to, kdo kterou část napsal.</para>
+
+      <para>Smyslem tohoto paragrafu tedy není získání práv na dílo zcela napsané vámi ani popírání vašich práv vůči němu; skutečným smyslem je výkon práva na řízení distribuce odvozených nebo kolektivních děl založených na programu.</para>
+
+      <para>Pouhé spojení jiného díla, jež není na programu založeno, s programem (anebo dílem založeným na programu) na paměťovém nebo distribučním médiu neuvazuje toto jiné dílo do působnosti této licence.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Paragraf 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Zdrojový kód k dílu je nejvhodnější formou díla z hlediska jeho případných modifikací. Pro dílo ve spustitelném tvaru znamená úplný zdrojový kód veškerý zdrojový kód pro všechny moduly, které obsahuje, plus jakékoli další soubory pro definici rozhraní, plus dávkové soubory potřebné pro kompilaci a instalaci spustitelného programu. Zvláštní výjimkou jsou však ty softwarové komponenty, které jsou normálně šířeny (buď ve zdrojové nebo binární formě) s hlavními součástmi operačního systému, na němž spustitelný program běží (tj. s překladačem, jádrem apod.). Tyto komponenty nemusí být šířeny se zdrojovým kódem, pokud ovšem komponenta sama nedoprovází spustitelnou podobu díla.</para>
+      
+      <para>Je-li šíření objektového nebo spustitelného kódu činěno nabídkou přístupu ke kopírování z určitého místa, potom se za distribuci zdrojového kódu počítá i nabídnutí ekvivalentního přístupu ke kopírování zdrojového kódu ze stejného místa, byť přitom nejsou třetí strany nuceny ke zkopírování zdrojového kódu spolu s objektovým.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Paragraf 4</title>
+      
+      <para>Nesmíte kopírovat, modifikovat, poskytovat sublicence anebo šířit program jiným způsobem než výslovně uvedeným v této licenci. Jakýkoli jiný pokus o kopírování, modifikování, poskytnutí sublicence anebo šíření programu je neplatný a automaticky ukončí vaše práva daná touto licencí. Strany, které od vás obdržely kopie anebo práva v souladu s touto licencí, však nemají své licence ukončeny, dokud se jim plně podřizují.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Paragraf 5</title>
+
+      <para>Není vaší povinností tuto licenci přijmout, protože jste ji nepodepsal. Nic jiného vám však nedává možnost kopírovat nebo šířit program nebo odvozená díla. V případě, že tuto licenci nepřijmete, jsou tyto činnosti zákonem zakázány. Tím pádem modifikací anebo šířením programu (anebo každého díla založeného na programu) vyjadřujete své podřízení se licenci a všem jejím ustanovením a podmínkám pro kopírovaní, modifikování a šíření programu a děl na něm založených.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Paragraf 6</title>
+
+      <para>Pokaždé, když redistribuujete program (nebo dílo založené na programu), získává příjemce od původního držitele licence právo kopírovat, modifikovat a šířit program v souladu s těmito ustanoveními a podmínkami. Nesmíte klást žádné další překážky výkonu zde zaručených příjemcových práv. Nejste odpovědný za vymáhání dodržování této licence třetími stranami.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Paragraf 7</title>
+
+      <para>Jsou-li vám z rozhodnutí soudu, obviněním z porušení patentu nebo z jakéhokoli jiného důvodu (nejen v souvislosti s patenty) uloženy takové podmínky (ať již příkazem soudu, smlouvou nebo jinak), které se vylučují s podmínkami této licence, nejste tím osvobozen od podmínek této licence. Pokud nemůžete šířit program tak, abyste vyhověl zároveň svým závazkům vyplývajícím z této licence a jiným platným závazkům, nesmíte jej v důsledku toho šířit vůbec. Pokud by například patentové osvědčení nepovolovalo bezplatnou redistribuci programu všemi, kdo vaším přičiněním získají přímo nebo nepřímo jeho kopie, pak by jediný možný způsob jak vyhovět zároveň patentovému osvědčení i této licenci spočíval v ukončení distribuce programu.</para>
+
+      <para>Pokud by se za nějakých specifických okolností jevila některá část tohoto paragrafu jako neplatná nebo nevynutitelná, považuje se za směrodatnou rovnováha vyjádřená tímto paragrafem a paragraf jako celek se považuje za směrodatný za jiných okolností.</para>
+
+      <para>Smyslem tohoto paragrafu není navádět vás k porušování patentů či jiných ustanovení vlastnického práva, anebo tato ustanovení zpochybňovat; jediným jeho smyslem je ochrana integrity systému šíření svobodného softwaru, který je podložen veřejnými licenčními předpisy. Mnozí lidé poskytli své příspěvky do širokého okruhu softwaru šířeného tímto systémem, spolehnuvše se na jeho důsledné uplatňování; záleží na autorovi/dárci, aby rozhodl, zda si přeje šířit software pomocí nějakého jiného systému a žádný uživatel licence nemůže takové rozhodnutí zpochybňovat.</para>
+
+      <para>Smyslem tohoto paragrafu je zevrubně osvětlit to, co je považováno za důsledek plynoucí ze zbytku této licence.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Paragraf 8</title>
+
+      <para>Pokud je šíření či použití programu v některých zemích omezeno buď patenty anebo autorsky chráněnými rozhraními, může držitel původních autorských práv, který svěřuje program do působnosti této licence, přidat výslovné omezení pro geografické šíření, vylučující takové země, takže šíření je povoleno jen v těch zemích nebo mezi těmi zeměmi, které nejsou tímto způsobem vyloučeny. Tato licence zahrnuje v tomto případě takové omezení přesně tak, jako by bylo zapsáno v textu této licence.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Paragraf 9</title>
+      
+      <para>Free Software Foundation může čas od času vydávat upravené nebo nové verze General Public License. Takové nové verze se budou svým duchem podobat současné verzi, v jednotlivostech se však mohou lišit s ohledem na nové problémy či zájmy.</para>
+
+      <para>Každé verzi je přiděleno rozlišující číslo verze. Pokud program specifikuje číslo verze, která se na něj vztahuje, a <quote>všechny následující verze</quote>, můžete se podle uvážení řídit ustanoveními a podmínkami buďto oné konkrétní verze anebo kterékoliv následující verze, kterou vydala Free Software Foundation. Jestliže program nespecifikuje číslo verze této licence, můžete si vybrat libovolnou verzi, kterou kdy Free Software Foundation vydala.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Paragraf 10</title>
+
+      <para>Pokud si přejete zahrnout části programu do jiných svobodných programů, jejichž distribuční podmínky jsou odlišné, zašlete autorovi žádost o povolení. V případě softwaru, k němuž vlastní autorská práva Free Software Foundation, napište Free Software Foundation; někdy činíme výjimky ze zde uvedených ustanovení. Naše rozhodnutí bude vedeno dvěma cíli: zachováním svobodné povahy všech odvozenin našeho svobodného softwaru a podporou sdílení a opětovného využití softwaru obecně.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>ZÁRUKA SE NEPOSKYTUJE</title>
+      <subtitle>Paragraf 11</subtitle>
+
+      <para>VZHLEDEM K BEZPLATNÉMU POSKYTNUTÍ LICENCE K PROGRAMU SE NA PROGRAM NEVZTAHUJE ŽÁDNÁ ZÁRUKA, A TO V MÍŘE POVOLENÉ PLATNÝM ZÁKONEM. POKUD NENÍ PÍSEMNĚ STANOVENO JINAK, POSKYTUJÍ DRŽITELÉ AUTORSKÝCH PRÁV POPŘÍPADĚ JINÉ STRANY PROGRAM <quote>TAK, JAK JE</quote>, BEZ ZÁRUKY JAKÉHOKOLI DRUHU, AŤ VÝSLOVNÉ NEBO VYPLÝVAJÍCÍ, VČETNĚ, ALE NIKOLI JEN, ZÁRUK PRODEJNOSTI A VHODNOSTI PRO URČITÝ ÚČEL. POKUD JDE O KVALITU A VÝKONNOST PROGRAMU, LEŽÍ VEŠKERÉ RIZIKO NA VÁS. POKUD BY SE U PROGRAMU PROJEVILY ZÁVADY, PADAJÍ NÁKLADY ZA VŠECHNU POTŘEBNOU ÚDRŽBU, OPRAVU ČI NÁPRAVU NA VÁŠ VRUB.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Paragraf 12</title>
+
+      <para>V ŽÁDNÉM PŘÍPADĚ, S VÝJIMKOU TOHO, KDYŽ TO VYŽADUJE PLATNÝ ZÁKON, ANEBO KDYŽ TO BYLO PÍSEMNĚ ODSOUHLASENO, VÁM NEBUDE ŽÁDNÝ Z DRŽITELŮ AUTORSKÝCH PRÁV ANI ŽÁDNÁ JINÁ STRANA, KTERÁ SMÍ MODIFIKOVAT ČI ŠÍŘIT PROGRAM V SOULADU S PŘEDCHOZÍMI USTANOVENÍMI, ODPOVĚDNI ZA ŠKODY, VČETNĚ VŠECH OBECNÝCH, SPECIÁLNÍCH, NAHODILÝCH NEBO NÁSLEDNÝCH ŠKOD VYPLÝVAJÍCÍCH Z UŽÍVÁNÍ ANEBO NESCHOPNOSTI UŽÍVAT PROGRAMU (VČETNĚ, ALE NIKOLI JEN, ZTRÁTY NEBO ZKRESLENÍ DAT, NEBO TRVALÝCH ŠKOD ZPŮSOBENÝCH VÁM NEBO TŘETÍM STRANÁM, NEBO SELHÁNÍ FUNKCE PROGRAMU V SOUČINNOSTI S JINÝMI PROGRAMY), A TO I V PŘÍPADĚ, ŽE TAKOVÝ DRŽITEL AUTORSKÝCH PRÁV NEBO JINÁ STRANA BYLI UPOZORNĚNI NA MOŽNOST TAKOVÝCH ŠKOD.</para>
+    </sect2>
+  </sect1>
+</article>

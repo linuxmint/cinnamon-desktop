@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="eu">
+   <articleinfo>
+    <title>GNU Dokumentazio librearen lizentzia</title>
+      <releaseinfo>1.1 bertsioa, 2000ko martxoa </releaseinfo>
+      
+      <copyright>
+	<year>2000</year><holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>GNOMEren dokumentazio-proiektua</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>1.1</revnumber>
+          <date>2000-03</date>
+        </revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Everyone is permitted to
+	    copy and distribute verbatim copies of this license
+	    document, but changing it is not allowed.
+	</para>
+      </legalnotice>
+
+      <abstract role="description"><para>Lizentzia honen xedea da eskuliburu bat, testuliburu bat edo bestelako edozein dokumentu idatzi <quote>libre</quote> egitea askatasunaren zentzuan: edonori ziurtatzea kopiatzeko eta birbanatzeko benetako askatasuna, aldatuta zein aldatu gabe, eta komertzialki zein ez-komertzialki. Bestalde, Lizentziaren bidez autoreei eta argitaratzaileei euren lana aitortzen zaie, eta ez dira beste batzuk egindako aldaketen erantzule.</para></abstract>
+    </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>AITZINSOLASA</title>
+    <para>Lizentzia honen xedea da eskuliburu bat, testuliburu bat edo bestelako edozein dokumentu idatzi <quote>libre</quote> egitea askatasunaren zentzuan: edonori ziurtatzea kopiatzeko eta birbanatzeko benetako askatasuna, aldatuta zein aldatu gabe, eta komertzialki zein ez-komertzialki. Bestalde, Lizentziaren bidez autoreei eta argitaratzaileei euren lana aitortzen zaie, eta ez dira beste batzuk egindako aldaketen erantzule.</para>
+    
+    <para>Lizentzia hau <quote>copyleft</quote> modukoa da, hau da, dokumentu honetatik eratorritako lan guztiek ere libreak izan behar dute zentzu berean. GNU Lizentzia Publiko Orokorra (software librearentzat diseinatutako "copyleft" lizentzia) osatzen du.</para>
+    
+    <para>Lizentzia hau software librearen eskuliburuentzat erabiltzeko diseinatu dugu, izan ere, software libreak dokumentazio librea behar baitu. Programa libre baten eskuliburuak software librearen askatasun berberak izan behar ditu. Baina lizentzia hau ez da software-eskuliburuentzat soilik; edozein testu-lanentzat erabil daiteke, zein gairi buruzkoa den eta liburu gisa inprimatua dagoen ala ez kontuan hartu gabe. Lizentzia hau batez ere gida edo erreferentzia izatea helburu duten lanentzat erabiltzea gomendatzen dugu.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>APLIKAGARRITASUNA ETA DEFINIZIOAK</title>
+    <para id="fdl-document">Eskuliburu edo bestelako lan bati Lizentzia honen baldintzen pean bana daitekeela adierazten duen oharra jarri baldin badio egile-eskubideen jabeak, eskuliburu edo lan horri lizentzia hau aplikatuko zaio. Hemendik aurrera Dokumentua aipatzen denean, horrelako eskuliburu edo lanei egiten die erreferentzia. Publikoko edonor da lizentziaren hartzaile, eta <quote>zu</quote>ren bidez adierazten da.</para>
+    
+    <para id="fdl-modified">Dokumentuaren <quote>Bertsio aldatua</quote> esaten denean, Dokumentu hau osorik edo zati batean biltzen duen edozein lan adierazten da, hau da, kopia literala, aldaketak dituena edo beste hizkuntza batera itzulitakoa.</para>
+	
+    <para id="fdl-secondary"><quote>Atal sekundarioa</quote> <link linkend="fdl-document">Dokumentu</link>aren eranskin izenduna edo gai nagusiaren aurreko hasierako atala da, eta Dokumentuaren argitaratzaileek edo autoreek Dokumentuaren gai nagusiarekiko (edo gai horrekin zerikusia duten gaiekiko) duten erlazioari buruzkoa da soil-soilik. Atal sekundarioan ez da agertzen zuzenean gai nagusiari dagokion ezer. (Adibidez, Dokumentua matematikako eskuliburu bat bada, Atal sekundarioak ez du matematikarik azalduko.) Gai nagusiarekin edo harekin zerikusia duten gaiekin duen harremana, konexio historikoa izan liteke, edo haien ikuspegi legal, komertzial, filosofiko, etiko edo politikoa.</para>
+
+    <para id="fdl-invariant"><quote>Atal aldaezinak</quote> <link linkend="fdl-secondary">Atal sekundario</link> jakin batzuk dira; <link linkend="fdl-document">Dokumentua</link> Lizentzia honen baldintzen pean argitaratzen dela esaten duen oharrean zehazten dira Atal aldaezinen izenburuak.</para>
+    
+    <para id="fdl-cover-texts"><quote>Azaleko testuak</quote> testu zati laburrak dira eta Aurreko azaleko testu edo Atzeko azaleko testu gisa aipatzen dira <link linkend="fdl-document">Dokumentua</link> Lizentzia honen pean argitaratzen dela dioen oharrean.</para>
+	
+    <para id="fdl-transparent"><link linkend="fdl-doument">Dokumentu</link>aren kopia <quote>gardena</quote> makina bidez irakurtzeko moduko kopia da eta, gainera, publiko orokorrak erabiltzeko moduko formatuduna, zuzenean testu-editore arruntekin ikusi eta edita daitekeena, edo, pixeletan osatutako irudia bada, pintatzeko editore orokorrekin editatzeko modukoa edo, marrazkia bada, marrazki-editore oso erabilgarriekin editatzeko modukoa; horrez gain, testu-formateatzaileetan sargai edo input gisa erabil daitekeena, edo testu-formateatzaileek sargai gisa onartzen duten formatuetako batera automatikoki itzul daitekeena. Beste era bateko fitxategi-formatu Gardenean egindako kopia, irakurleek aldaketak egiteko eragozpenak eta trabak jartzeko diseinatutako marka-sistema duena, ez da Gardena. <quote>Gardena</quote> ez den kopiari <quote>opako</quote> deitzen zaio.</para>
+    
+    <para>Kopia Gardenak egiteko erabil daitezkeen formatu egokien artean, honako hauek ditugu, besteak beste: markaketarik gabeko ASCII soila, Texinfo sarrera-formatua, LaTex sarrera-formatua, SGML edo XML jendeak erabiltzeko moduko DTDarekin, eta pertsonek aldatu ahal izateko diseinatutako HTML sinple eta estandarrarekiko egokitua. Formatu opakoen artean, berriz, honako hauek ditugu: PostScript, PDF, testu-prozesadore jabedunek soilik irakurri eta edita ditzaketen testu-formatu jabedunak, SGML edo XML bereziak (DTD eta/edo prozesatze-tresna erabilgarririk apenas dutenak), eta zenbait testu-prozesadorek irteerako emaitza gisa soilik makina bidez sortutako HTMLak.</para>
+    
+    <para id="fdl-title-page"><quote>Titulu-orriak</quote> esan nahi duena zera da: inprimatutako liburu bati dagokionez, titulu-orria bera eta Lizentzia honek titulu-orrian agertzera behartzen duen materiala modu irakurgarrian biltzeko behar diren orriak. Berez titulu-orririk ez duten formatuetan egindako lanetan, <quote>Titulu-orriak</quote> esan nahi duena da, testuaren gorputza hasi aurretik, gehien nabarmenduta agertzen den lanaren tituluaren ondoan agertzen den testua.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>KOPIA LITERALAK</title>
+    <para><link linkend="fdl-document">Dokumentua</link> edozein euskarritan kopiatu eta banatu dezakezu, komertzialki zein ez-komertzialki, baldin eta Lizentzia hau, copyright-oharrak eta Dokumentuari lizentzia hau aplikatzen zaiola adierazten duen lizentzia-oharra jartzen bazaie kopia guztiei, eta Lizentzia honi beste inolako baldintzarik gehitzen ez badiozu. Egiten edo banatzen dituzun kopietan ezin da erabili irakurketa edo kopiak egitea eragozten edo kontrolatzen duen inolako baliabide teknikorik. Nolanahi ere, kopiak egitearen truke ordaina jasotzea onartzen da. Kopia asko banatzen baduzu (hurrengo atalean zehazten da kopurua), <link linkend="fdl-section3">3. ataleko</link> baldintzak ere bete behar dituzu.</para>
+    
+    <para>Goian azaldutako baldintza berdinen pean kopiak mailegutan ere utz ditzakezu, eta kopiak jendaurrean erakutsi ere bai.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>KANTITATE HANDIAK KOPIATZEA</title>
+    <para><link linkend="fdl-document">Dokumentu</link>aren 100 kopia baino gehiago argitaratzen badituzu, eta Dokumentuaren lizentzia-oharrak <link linkend="fdl-cover-texts">Azaleko testuak</link> behar baditu, kopiei nahitaez jarri behar dizkiezu argi eta garbi irakurtzen diren Azaleko testu hauek: aurreko azaleko testuak aurreko azalean, eta Atzeko azaleko testuak atzeko azalean. Bi azalek modu argi eta irakurgarrian identifikatu behar zaituzte kopia horien argitaratzaile gisa. Aurreko azalak titulu osoa izan behar du, eta tituluaren hitz guztiak maila berdinean izan behar dute nabarmenak eta ikusteko modukoak. Horrez gainera, beste material batzuk ere gehi ditzakezu azaletan. Azaletara mugatutako aldaketekin egindako kopiak, <link linkend="fdl-document">Dokumentu</link>aren titulua mantentzen bada eta baldintza horiek betez egiten badira, kopia literaltzat jo daiteke beste alderdi batzuei dagokienez.</para>
+    
+    <para>Azaletan jarri beharreko testuak luzeegiak badira modu irakurgarrian ipintzeko, zerrendako lehenak jarri behar dituzu azalean bertan (sartzen diren guztiak), eta hurrengo orrietan jarraitu besteekin.</para>
+    
+    <para><link linkend="fdl-document">Dokumentu</link>aren 100 kopia <link linkend="fdl-transparent">Opako</link> argitaratzen edo banatzen badituzu, kopia Opako bakoitzarekin batera makinaz irakurtzeko moduko kopia <link linkend="fdl-transparent">Garden</link> bat eman behar duzu, edo bestela, kopia Opako bakoitzean edo bakoitzarekin batera ordenagailu-sare bateko helbide bat adierazi beharko duzu, edonork libreki atzi dezakeena eta Dokumentuaren kopia Garden osoa daukana, gehitutako materialik gabe, sare-erabiltzaile arruntak anonimoki deskargatu ahal izateko doan eta sare-protokolo estandar publikoen bidez. Azken aukeraren bidetik jotzen baduzu, zentzuz eta zuhur jokatu behar duzu kopia Opako asko banatzen hasten zarenean, kopia Garden hori adierazitako kokalekuan urtebetean gutxienez erabilgarri eta atzigarri egongo dela segurtatzeko zuk edizio horren azken kopia Opakoa (zuzenean edo zure agente edo xehekarien bidez) publikoari banatzen diozunetik kontatzen hasita.</para>
+    
+    <para>Bestalde, <link linkend="fdl-document">Dokumentu</link>aren kopiak kantitate handian birbanatzen hasi aurretik, autoreekin harremanetan jar zaitezen eskatzen zaizu, behartu gabe, Dokumentuaren bertsio eguneratua eman ahal izan diezazuten.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>ALDAKETAK</title>
+    <para><link linkend="fdl-document">Dokumentu</link>aren <link linkend="fdl-modified">Bertsio aldatua</link> kopiatu eta banatu dezakezu baldin eta hemen goiko <link linkend="fdl-section2">2</link> eta <link linkend="fdl-section3">3</link> ataletako baldintzak betetzen badituzu, kontuan izanik betiere Bertsio aldatua Lizentzia honen pean banatu behar duzula, Bertsio aldatua izanik Dokumentuaren funtzioa beteko duena, eta, beraz, Bertsio aldatua banatzeko edo aldatzeko baimena eman behar diozula kopia bat duen edonori. Horrez gainera, honako hauek egin behar dituzu Bertsio Aldatuan:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para><link linkend="fdl-title-page">Titulu-orri</link>an (eta azaletan, azalik badu) <link linkend="fdl-document">Dokumentu</link>arena eta aurreko bertsioena ez den beste edozein titulu bat erabili behar duzu (aurreko bertsiorik badago, Dokumentuaren Historiaren atalean zerrendatuta egongo da). Aurreko bertsio horietako baten titulu bera erabil dezakezu, baldin eta jatorrizko argitaratzaileak horretarako baimena ematen badu.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-title-page">Titulu-orri</link>an, autore gisa, <link linkend="fdl-modified">Bertsio aldatu</link>an aldaketak egin dituen pertsona edo erakunde baten edo gehiagoren izena jarri behar duzu, eta, horrekin batera, <link linkend="fdl-document">Dokumentu</link>aren bost egile nagusien izena gutxienez (eta bost baino gutxiago badira, guztiena).</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-title-page">Titulu-orri</link>an <link linkend="fdl-modified">Bertsio aldatu</link>aren argitaratzailearen izena jarri behar duzu, argitaratzaile gisa.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-document">Dokumentu</link>aren copyright-ohar guztiak gorde behar dituzu.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zure aldaketei dagokien copyright-oharra gehitu behar duzu beste copyright-oharren ondoan.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Copyright-oharren jarraian, lizentzia-ohar bat ipini behar duzu, jendeari baimena emateko <link linkend="fdl-modified">Bertsio aldatua</link> erabil dezan Lizentzia horren baldintzen pean, beheko Eranskinean azaltzen den bezala.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Lizentzia-ohar horretan <link linkend="fdl-document">Dokumentu</link>aren lizentzia-oharrean adierazitako <link linkend="fdl-invariant">Atal aldaezin</link> eta jarri beharreko <link linkend="fdl-cover-texts">Azaleko testu</link> guztien zerrenda gorde behar duzu.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Lizentzia honen kopia ere, aldaketarik gabe jarri behar duzu.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><quote>Historia</quote> izeneko atala gorde behar duzu, baita bere titulua ere, eta gutxienez <link linkend="fdl-modified">Bertsio aldatuaren</link> izenburua, urtea, autore berriak eta argitaratzailea aipatuko dituen elementu bat gehitu behar diozu, <link linkend="fdl-title-page">Titulu-orri</link>an agertzen den bezala. <quote>Historia</quote> izeneko atalik ez badago <link linkend="fdl-document">Dokumentu</link>an, zeuk sortu beharko duzu, Dokumentuaren titulua, urtea, autoreak eta argitaratzailea adierazteko Dokumentuaren Titulu-orrian agertzen den bezala, eta, gainera, Bertsio aldatua deskribatzeko beste elementu bat gehitu beharko duzu aurreko esaldian azaldutako moduan.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Dokumentuaren kopia <link linkend="fdl-transparent">Gardena</link> publikoki atzitzeko <link linkend="fdl-document">Dokumentu</link>an ematen den sare-helbidea (helbiderik ematen bada) gorde behar duzu, eta, era berean, Dokumentuaren oinarri izan diren aurreko bertsioentzat ematen diren sare-helbideak ere bai. Helbide horiek <quote>Historia</quote> atalean sar daitezke. Sare-helbideak ez dira nahitaez jarri behar, Dokumentua bera baino gutxienez lau urte lehenago argitaratutako lanari dagozkionak baldin badira, edo horretarako baimena ematen badu bertsioaren jatorrizko argitaratzaileak.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><quote>Eskertzak</quote> edo <quote>Eskaintzak</quote> izeneko edozein ataletan, atalaren titulua gorde behar da, eta ataleko eskertza edota eskaintza bakoitzean egileak darabilen gai eta tonua errespetatu behar dira.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Errespetatu <link linkend="fdl-document">Dokumentu</link>aren <link linkend="fdl-invariant">Atal aldaezin</link> guztiak, testuak eta tituluak batere aldatu gabe. Atal-zenbakiak edo haien baliokideak ez dira atalaren tituluaren zatitzat hartzen.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Ezabatu <quote>Oniritziak</quote> titulua duen edozein atal. Horrelako atal bat ezin da <link linkend="fdl-modified">Aldatutako bertsio</link>aren barruan egon.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Lehendik dagoen atal bati ez jarri <quote>oniritziak</quote> titulua ez eta <link linkend="fdl-invariant">Atal aldaezin</link>en baten tituluarekin gatazka sor lezakeena ere.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para><link linkend="fdl-modified">Bertsio aldatuak</link> gai nagusiari buruzko atal berriak edo eranskinak baditu, <link linkend="fdl-secondary">Atal Sekundario</link> gisa agertzen direnak, eta elementu horiek Dokumentutik kopiatutako materialik ez badute, atal horietako batzuk edo denak aldaezin izenda ditzakezu zuk hala nahi izanez gero. Horretarako, gehitu atal horien tituluak <link linkend="fdl-invariant">Atal aldaezin</link>en zerrendan, Bertsio aldatuaren lizentzia-oharrean. Titulu horiek gainerako atalen tituluen ezberdinak izan behar dute.</para>
+    
+    <para><quote>Oniritziak</quote> titulua duen atala gehi dezakezu, baldin eta zure <link linkend="fdl-modified">Bertsio aldatu</link>ari buruz alderdiek emandako oniritziak soilik biltzen badira, eta ez beste ezer --adibidez, adituek egindako ikuskatzea edo erakunde batek testua estandartzat onartu duela, eta abar--.</para>
+    
+    <para>Gehienez bost hitz dituen pasartea gehi dezakezu <link linkend="fdl-cover-texts">Aurreko azaleko testu</link> gisa, eta gehienez 25 hitzeko pasartea <link linkend="fdl-cover-texts">Atzeko azaleko testu</link> gisa <link linkend="fdl-modified">Bertsio aldatu</link>aren <link linkend="fdl-cover-texts">Azaleko testu</link>en zerrendaren bukaeran. Aurreko azaleko testu bakar bat eta Atzeko azaleko testu bat gehi daiteke entitate baten bidez (edo entitate batek egindako egokitzapenen bidez). Dagoeneko <link linkend="fdl-document">Dokumentu</link>ak azaleko testua baldin badauka azal berarentzat, aurretik zuk edo zu ordezkatzen zaituen entitateak gehitutakoa, ezingo duzu beste testurik gehitu, baina nahi izanez gero, lehendik dagoena ordeztu dezakezu, testu zaharra gehitu zuen argitaratzailearen baimen esplizitua baldin baduzu.</para>
+    
+    <para>Lizentzia honen bidez <link linkend="fdl-document">Dokumentu</link>aren autoreak (edo autoreek) eta argitaratzaileak (edo argitaratzaileek) ez dute baimenik ematen haien izenak publizitatean erabiltzeko edo <link linkend="fdl-modified">Bertsio aldatu</link>en oniritzia eragiteko edo adierazteko</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>DOKUMENTUAK KONBINATZEA</title>
+    <para>Lizentzia honen pean argitaratutako beste dokumentu batzuekin konbina dezakezu <link linkend="fdl-document">Dokumentua</link>, goian <link linkend="fdl-section4">4. atalean</link> biltzen diren baldintzak betetzen badituzu eta bateratzean jatorrizko dokumentuen <link linkend="fdl-invariant">Atal aldaezin</link> guztiak sartzen badituzu aldatu gabe eta guztiak Atal aldaezin gisa zerrendatuta zure lan konbinatuaren lizentzia-oharrean.</para>
+    
+    <para>Lan konbinatuak Lizentzia honen kopia bakarra baino ez du behar, eta hainbat <link linkend="fdl-invariant">Atal aldaezin</link> berdin badaude, kopia bakarrarekin ordeztu daitezke. Izen bera baina eduki ezberdina duten hainbat Atal aldaezin baldin badaude, atal bakoitzaren titulua desberdindu eta titulu bakar bihur ezazu, bukaeran autorearen edo argitaratzailearen izena jarriz parentesi artean, edo errepikatzen ez den zenbaki bat. Egin ezazu egokitzapen bera Atal aldaezinen zerrendako atal-tituluetan, lan konbinatuaren lizentzia-oharrean.</para>
+    
+    <para>Konbinazioan, jatorrizko dokumentuetan <quote>Historia</quote> titulua duten atalak konbinatu behar dituzu, eta <quote>Historia</quote> tituludun atal bakar bat osatu. Era berean, <quote>Eskertzak</quote> eta <quote>Eskaintzak</quote> tituluak dituzten atal guztiak bateratu. <quote>Oniritziak</quote> titulua duten sekzio guztiak, aldiz, ezabatu egin behar dituzu.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>DOKUMENTU-BILDUMAK</title>
+    <para><link linkend="fdl-document">Dokumentu</link> honekin eta lizentzia honekin argitaratutako beste dokumentu batzuekin bilduma bat osa dezakezu, eta, dokumentu bakoitzarekin batera ematen den Lizentziaren kopiaren ordez, Lizentzia bakarra eman dezakezu bilduma osoarentzat, baldin eta dokumentu bakoitzaren kopia literalak egiteko lizentzia honek ezartzen dituen baldintzak betetzen badituzu beste alderdi guztiei dagokienez.</para>
+    
+    <para>Bilduma horretatik dokumentu bat atera eta banaka banatu dezakezu Lizentzia honen pean, baldin eta ateratako dokumentuari Lizentziaren kopia bat jartzen badiozu, eta kopia literalei dagokienez Lizentziaren beste alderdi guztiak betetzen badituzu.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>LAN INDEPENDENTEAK GAINERATZEA</title>
+    <para><link linkend="fdl-document">Dokumentua</link> edo dokumentuaren eratorriak beste dokumentu edo lan bereizi batzuekin batera elkartzea --biltegi-bolumen batean edo banaketarako euskarri batean-- ez da Dokumentuaren <link linkend="fdl-modified">Bertsio aldatu</link>tzat jotzen bere osotasunean, non eta ez den konpilazioarengatik konpilazio-copyrightik eskatzen. Horrelako konpilazioei <quote>agregazio</quote> esaten zaie, eta Lizentzia hau ez zaie aplikatuko Dokumentuarekin batera konpilazioan sartutako gainerako lanei, konpilazioan sartu izanagatik bakarrik, baldin eta ez badira Dokumentuaren lan eratorriak. <link linkend="fdl-cover-texts">Azaleko testu</link>ari dagokion <link linkend="fdl-section3">3. ataleko</link> betebeharra Dokumentuaren kopia hauei aplikatzerik baldin badago, Dokumentua agregazioaren barnean biltzen duten azaletan bakarrik jar daitezke Azaleko testuak Dokumentua agregazio osoaren laurdena baino txikiagoa bada. Bestela, agregazio osoa inguratzen duten azaletan jarri behar dira testu horiek.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>ITZULPENA</title>
+    <para>Itzulpena aldaketatzat jotzen da, eta, beraz, <link linkend="fdl-document">Dokumentu</link>aren itzulpenak <link linkend="fdl-section4">4. ataleko</link> baldintzen pean banatu ditzakezu. <link linkend="fdl-invariant"> Atal aldaezin</link>en ordez itzulpena bakarrik jartzeko, copyright-jabeen baimena behar da, baina Atal aldaezin batzuen edo guztien itzulpenak jar ditzakezu Atal aldaezin horien jatorrizko bertsioekin batera. Lizentzia honen itzulpena ere jar dezakezu, baldin eta ingelesezko jatorrizko bertsioa ere jartzen baduzu. Lizentzia honen itzulpena eta jatorrizko ingelesezko bertsioa bat ez badatoz, jatorrizko bertsioak balioko du.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>AMAIERA</title>
+    <para>Lizentzia honen baitan espresuki adierazitakoa betetzen ez bada, debekatuta dago <link linkend="fdl-document">Dokumentua</link> kopiatzea, aldatzea, azpilizentziatzea edo banatzea. Dokumentua beste edozein eratan kopiatu, aldatu, azpilizentziatu edo banatzeko saio oro deuseza izango da, eta Lizentzia honek ematen dizkizun eskubideak automatikoki kenduko zaizkizu. Dena den, Lizentzia honen pean zuregandik kopiak edo eskubideak jaso dituztenei ez zaizkie lizentziak kenduko, baldintza guztiak betetzen dituzten bitartean.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>LIZENTZIA HONEN ETORKIZUNEKO BERRIKUSPENAK</title>
+    <para><ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink>ek GNU noizean behin Dokumentazio Librearen Lizentziaren bertsio berrituak eta birmoldatuak argitaratuko ditu. Bertsio berri horiek egungoaren antzekoak izango dira espirituz, baina, arazo edo kezka berriei aurre egin beharko dietenez, litekeena da zehatz-mehatz bat ez etortzea. Ikus <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>Lizentziaren bertsio bakoitzak bertsio-zenbaki desberdindua dauka. <link linkend="fdl-document">Dokumentu</link>an zehazten bada Lizentzia honen bertsio-zenbaki jakin bat <quote>edo bertsio berriago bat</quote> dagokiola, zehaztutako bertsioko baldintzak edo Free Software Foundation-ek argitaratutako (ez zirriborro gisako) bertsio berriago bateko baldintzak betetzeko aukera izango duzu. Dokumentuak ez badu Lizentzia honen bertsio-zenbakirik zehazten, Free Software Foundation-ek argitaratutako bertsioetako edozein aukeratu dezakezu (baina ez zirriborro gisa argitaratutakoa).</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Eranskina</title>
+    <para>Zuk idatzitako dokumentu batean Lizentzia hau erabiltzeko, jar ezazu Lizentziaren kopia bat dokumentuan, eta titulu-orriaren jarraian, berriz, copyrighta eta lizentzia-ohar hauek:</para>
+    
+    <blockquote>
+      <para>Copyright © URTEA ZURE IZENA.</para>
+      <para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak betetzen badira; <link linkend="fdl-invariant">Atal Aldaezin</link> hauekin: ZERRENDATU TITULUAK, <link linkend="fdl-cover-texts">Aurreko azal</link>eko testu hauekin: IDATZI ZERRENDA, eta <link linkend="fdl-cover-texts">Atzeko azal</link>eko testu hauekin: IDATZI ZERRENDA. Lizentziaren kopia bat aurkituko duzu <quote>GNU Dokumentazio Librearen lizentzia</quote> atalean.</para>
+    </blockquote>
+      
+    <para><link linkend="fdl-invariant">Atal aldaezin</link>ik ez baduzu, idatzi <quote>Atal aldaezinik gabe</quote> aldaezinak zein diren adierazi beharrean. Ez baduzu <link linkend="fdl-cover-texts">Aurreko azaleko testu</link>rik, idatzi <quote>Aurreko azaleko testurik gabe</quote> <quote>Aurreko azaleko testu hauekin: ZERRENDA</quote> jarri beharrean, eta gauza bera <link linkend="fdl-cover-texts">Atzeko azaleko testu</link>ekin.</para>
+    
+    <para>Zure dokumentuan programa-kodearen adibide ez-tribialik baldin badago, adibide horiek paraleloan argitaratzea gomendatzen dizugu eta zeuk aukeratu software librearen lizentzia eman nahi diezun, <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">GNU Lizentzia Publiko Orokorra</ulink> lizentzian esaterako, software libre gisa erabil ahal izan daitezen.</para>
+  </sect1>
+</article>

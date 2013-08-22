@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="fi">
+    <articleinfo>
+      <title>GNU Lesser General Public License (LGPL-lisenssi)</title>
+      <copyright>
+	<year>2000</year>
+	<holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+      <publisher role="maintainer">
+        <publishername>Gnomen dokumentointiprojekti</publishername>
+      </publisher>
+      <revhistory>
+        <revision>
+          <revnumber>2.1</revnumber>
+          <date>1999-02</date>
+        </revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.
+	</para>
+	<para>Tämän lisenssisopimuksen kirjaimellinen kopioiminen ja levittäminen on sallittu, mutta muuttaminen on kielletty.
+
+<warning><para>Tämä on LGPL-lisenssin epävirallinen käännös suomeksi. Tätä käännöstä ei ole julkaissut Free Software Foundation eikä se määritä oikeudellisesti sitovasti LGPL-lisenssiä käyttävien ohjelmien levitysehtoja — vain alkuperäinen englanninkielinen LGPL-lisenssin teksti on oikeudellisesti sitova. Toivomme kuitenkin, että tämä käännös auttaa suomenkielisiä ymmärtämään LGPL-lisenssiä paremmin.</para></warning></para>
+      </legalnotice>
+      <releaseinfo>Versio 2.1, helmikuu 1999</releaseinfo>
+    <abstract role="description"><para>Yleensä tietokoneohjelmien lisenssisopimukset on suunniteltu siten, että ne estävät ohjelmien vapaan jakamisen ja muuttamisen. Sen sijaan GPL-lisenssit on suunniteltu takaamaan käyttäjän vapaus jakaa ja muuttaa ohjelmaa — lisenssi varmistaa, että ohjelma on vapaa kaikille käyttäjille.</para></abstract>
+
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Johdanto</title>
+    
+    <para>Yleensä tietokoneohjelmien lisenssisopimukset on suunniteltu siten, että ne estävät ohjelmien vapaan jakamisen ja muuttamisen. Sen sijaan GPL-lisenssit on suunniteltu takaamaan käyttäjän vapaus jakaa ja muuttaa ohjelmaa — lisenssi varmistaa, että ohjelma on vapaa kaikille käyttäjille.</para>
+
+    <para>Kun tässä Lisenssissä puhutaan vapaasta ohjelmasta, silloin ei tarkoiteta hintaa. GPL-lisenssi on nimittäin suunniteltu siten, että käyttäjälle taataan vapaus levittää kopioita vapaista ohjelmista (ja pyytää halutessaan maksu tästä palvelusta). GPL-lisenssi takaa myös sen, että käyttäjä saa halutessaan ohjelman lähdekoodin, että hän voi muuttaa ohjelmaa tai käyttää osia siitä omissa vapaissa ohjelmissaan, ja että kaikkien näiden toimien tiedetään olevan sallittuja.</para>
+
+    <para>
+      This license, the Lesser General Public License, applies to some
+      specially designated software packages--typically libraries--of the
+      Free Software Foundation and other authors who decide to use it.  You
+      can use it too, but we suggest you first think carefully about whether
+      this license or the ordinary General Public License is the better
+      strategy to use in any particular case, based on the explanations below.
+    </para>
+
+    <para>Kun tässä Lisenssissä puhutaan vapaasta ohjelmasta, silloin ei tarkoiteta hintaa. GPL-lisenssit on nimittäin suunniteltu siten, että käyttäjälle taataan vapaus levittää kopioita vapaista ohjelmista (ja pyytää halutessaan maksu tästä palvelusta). GPL-lisenssit takaavat myös sen, että käyttäjä saa halutessaan ohjelman lähdekoodin, että hän voi muuttaa ohjelmaa tai käyttää osia siitä omissa vapaissa ohjelmissaan, ja että kaikkien näiden toimien tiedetään olevan sallittuja.</para>
+
+    <para>Jotta käyttäjän oikeudet turvattaisiin, lisenssillä asetetaan rajoituksia, jotka estävät ketä tahansa kieltämästä näitä oikeuksia tai vaatimasta niiden luovuttamista. Nämä rajoitukset merkitsevät tiettyjä velvoitteita jokaiselle käyttäjälle, joka levittää kirjastokopioita tai muuttaa kirjastoa.</para>
+
+    <para>
+      For example, if you distribute copies of the library, whether gratis
+      or for a fee, you must give the recipients all the rights that we gave
+      you.  You must make sure that they, too, receive or can get the source
+      code.  If you link other code with the library, you must provide
+      complete object files to the recipients, so that they can relink them
+      with the library after making changes to the library and recompiling
+      it.  And you must show them these terms so they know their rights.
+    </para>
+
+    <para>
+      We protect your rights with a two-step method: (1) we copyright the
+      library, and (2) we offer you this license, which gives you legal
+      permission to copy, distribute and/or modify the library.
+    </para>
+
+    <para>Edelleen, jokaisen tekijän ja Free Software Foundationin suojaamiseksi on varmistettava, että jokainen ymmärtää, että vapaalla kirjastolla ei ole takuuta. Jos joku muuttaa kirjastoa ja levittää sen edelleen, kirjaston vastaanottajien on tiedettävä, että heillä ei ole alkuperäistä kirjastoa. Joten mikä tahansa ongelma, jonka muut ovat aikaansaaneet, ei vaikuta alkuperäisen tekijän maineeseen.</para>
+
+    <para>
+      Finally, software patents pose a constant threat to the existence of
+      any free program.  We wish to make sure that a company cannot
+      effectively restrict the users of a free program by obtaining a
+      restrictive license from a patent holder.  Therefore, we insist that
+      any patent license obtained for a version of the library must be
+      consistent with the full freedom of use specified in this license.
+    </para>
+
+    <para>
+      Most GNU software, including some libraries, is covered by the
+      ordinary GNU General Public License.  This license, the GNU Lesser
+      General Public License, applies to certain designated libraries, and
+      is quite different from the ordinary General Public License.  We use
+      this license for certain libraries in order to permit linking those
+      libraries into non-free programs.
+    </para>
+
+    <para>
+      When a program is linked with a library, whether statically or using
+      a shared library, the combination of the two is legally speaking a
+      combined work, a derivative of the original library.  The ordinary
+      General Public License therefore permits such linking only if the
+      entire combination fits its criteria of freedom.  The Lesser General
+      Public License permits more lax criteria for linking other code with
+      the library.
+    </para>
+
+    <para>
+      We call this license the <quote>Lesser</quote> General Public License
+      because it does Less to protect the user's freedom than the ordinary
+      General Public License.  It also provides other free software developers
+      Less of an advantage over competing non-free programs.  These
+      disadvantages are the reason we use the ordinary General Public License
+      for many libraries.  However, the Lesser license provides advantages in
+      certain special circumstances.
+    </para>
+
+    <para>
+      For example, on rare occasions, there may be a special need to
+      encourage the widest possible use of a certain library, so that it becomes
+      a de-facto standard.  To achieve this, non-free programs must be
+      allowed to use the library.  A more frequent case is that a free
+      library does the same job as widely used non-free libraries.  In this
+      case, there is little to gain by limiting the free library to free
+      software only, so we use the Lesser General Public License.
+    </para>
+
+    <para>
+      In other cases, permission to use a particular library in non-free
+      programs enables a greater number of people to use a large body of
+      free software.  For example, permission to use the GNU C Library in
+      non-free programs enables many more people to use the whole GNU
+      operating system, as well as its variant, the GNU/Linux operating
+      system.
+    </para>
+
+    <para>
+      Although the Lesser General Public License is Less protective of the
+      users' freedom, it does ensure that the user of a program that is
+      linked with the Library has the freedom and the wherewithal to run
+      that program using a modified version of the Library.
+    </para>
+
+    <para>
+      The precise terms and conditions for copying, distribution and
+      modification follow.  Pay close attention to the difference between a
+      <quote>work based on the library</quote> and a <quote>work that uses the
+      library</quote>.  The former contains code derived from the library,
+      whereas the latter must be combined with the library in order to run.
+    </para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>Ehdot kopioimiselle, levittämiselle ja muuttamiselle</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Kohta 0</title>
+      <para>
+	This License Agreement applies to any software library or other
+	program which contains a notice placed by the copyright holder or
+	other authorized party saying it may be distributed under the terms of
+	this Lesser General Public License (also called <quote>this License</quote>).
+	Each licensee is addressed as <quote>you</quote>.
+      </para>
+
+      <para>
+	A <quote>library</quote> means a collection of software functions and/or data
+	prepared so as to be conveniently linked with application programs
+	(which use some of those functions and data) to form executables.
+      </para>
+
+      <para>
+	The <quote>Library</quote>, below, refers to any such software library or work
+	which has been distributed under these terms.  A <quote>work based on the
+	Library</quote> means either the Library or any derivative work under
+	copyright law: that is to say, a work containing the Library or a
+	portion of it, either verbatim or with modifications and/or translated
+	straightforwardly into another language.  (Hereinafter, translation is
+	included without limitation in the term <quote>modification</quote>.)
+      </para>	
+
+      <para>Teoksen <quote>lähdekoodi</quote> tarkoittaa sen suositeltavaa muotoa muutosten tekemistä varten. Kirjaston täydellinen lähdekoodi tarkoittaa kaikkea lähdekoodia kaikkiin teoksen sisältämiin moduleihin ja lisäksi kaikkiin sen mukana seuraaviin käyttöliittymätiedostoihin sekä skripteihin, joilla hallitaan ajettavan teoksen asennusta ja kääntämistä.</para>
+
+      <para>
+	Activities other than copying, distribution and modification are not
+	covered by this License; they are outside its scope.  The act of
+	running a program using the Library is not restricted, and output from
+	such a program is covered only if its contents constitute a work based
+	on the Library (independent of the use of the Library in a tool for
+	writing it).  Whether that is true depends on what the Library does
+	and what the program that uses the Library does.
+      </para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Kohta 1</title>
+      <para>Lisenssin saajalla on oikeus kopioida ja levittää sanatarkkoja kopioita Kirjaston lähdekoodista sellaisena kuin se on saatu, millä tahansa laitteella. Ehtona on, että asianmukaisesti jokaisesta kopiosta ilmenee kenellä on siihen tekijänoikeus ja että Kirjastoon ei ole takuuta; edelleen, kaikki viitaukset tähän Lisenssiin ja ilmoitukseen takuun puuttumisesta on pidettävä koskemattomana; ja vielä, jokaiselle Kirjaston vastaanottajalle on annettava tämä Lisenssi kirjaston mukana.</para>
+      
+      <para>Lisenssin saaja voi pyytää maksun Ohjelman kopioimisesta ja voi halutessaan myydä Ohjelmaan takuun.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Kohta 2</title>
+      <para>
+	You may modify your copy or copies of the Library or any portion
+	of it, thus forming a work based on the Library, and copy and
+	distribute such modifications or work under the terms of 
+	<link linkend="sect1">Section 1</link> above, provided that 
+	you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	       The modified work must itself be a software library.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the files modified to carry prominent notices
+	      stating that you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the whole of the work to be licensed at no
+	      charge to all third parties under the terms of this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If a facility in the modified Library refers to a function or a
+	      table of data to be supplied by an application program that uses
+	      the facility, other than as an argument passed when the facility
+	      is invoked, then you must make a good faith effort to ensure that,
+	      in the event an application does not supply such function or
+	      table, the facility still operates, and performs whatever part of
+	      its purpose remains meaningful.
+	    </para>
+
+	    <para>
+	      (For example, a function in a library to compute square roots has
+	      a purpose that is entirely well-defined independent of the
+	      application.  Therefore, Subsection 2d requires that any
+	      application-supplied function or table used by this function must
+	      be optional: if the application does not supply it, the square
+	      root function must still compute square roots.)
+	    </para>
+	      
+	    <para>
+	      These requirements apply to the modified work as a whole.  If
+	      identifiable sections of that work are not derived from the Library,
+	      and can be reasonably considered independent and separate works in
+	      themselves, then this License, and its terms, do not apply to those
+	      sections when you distribute them as separate works.  But when you
+	      distribute the same sections as part of a whole which is a work based
+	      on the Library, the distribution of the whole must be on the terms of
+	      this License, whose permissions for other licensees extend to the
+	      entire whole, and thus to each and every part regardless of who wrote
+	      it.
+	    </para>
+
+	    <para>
+	      Thus, it is not the intent of this section to claim rights or contest
+	      your rights to work written entirely by you; rather, the intent is to
+	      exercise the right to control the distribution of derivative or
+	      collective works based on the Library.
+	    </para>
+
+	    <para>
+	      In addition, mere aggregation of another work not based on the Library
+	      with the Library (or with a work based on the Library) on a volume of
+	      a storage or distribution medium does not bring the other work under
+	      the scope of this License.
+	    </para>
+	  </listitem>	      
+	</orderedlist>
+      </para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Kohta 3</title>
+
+      <para>
+	You may opt to apply the terms of the ordinary GNU General Public
+	License instead of this License to a given copy of the Library.  To do
+	this, you must alter all the notices that refer to this License, so
+	that they refer to the ordinary GNU General Public License, version 2,
+	instead of to this License.  (If a newer version than version 2 of the
+	ordinary GNU General Public License has appeared, then you can specify
+	that version instead if you wish.)  Do not make any other change in
+	these notices.
+      </para>
+
+      <para>
+	Once this change is made in a given copy, it is irreversible for
+	that copy, so the ordinary GNU General Public License applies to all
+	subsequent copies and derivative works made from that copy.
+      </para>
+      
+      <para>
+	This option is useful when you wish to copy part of the code of
+	the Library into a program that is not a library.
+      </para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Kohta 4</title>
+      
+      <para>
+	You may copy and distribute the Library (or a portion or
+	derivative of it, under <link linkend="sect2">Section 2</link>
+	) in object code or executable form under the terms of Sections 
+	<link linkend="sect1">1</link> and 
+	<link linkend="sect2">2</link> above provided that you accompany
+	it with the complete corresponding machine-readable source code, which
+	must be distributed under the terms of Sections <link linkend="sect1">1</link>
+	and <link linkend="sect2">2</link> above on a
+	medium customarily used for software interchange.
+      </para>
+
+      <para>Jos ajettavan tai objektikoodin levittäminen tehdään tarjoamalla pääsy tietyssä paikassa olevaan kopioon, tällöin tarjoamalla vastaavasti pääsy samassa paikassa olevaan lähdekoodiin luetaan lähdekoodin levittämiseksi, vaikka kolmansia osapuolia ei pakotettaisi kopioimaan lähdekoodia objektikoodin mukana.</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Kohta 5</title>
+
+      <para>
+	A program that contains no derivative of any portion of the
+	Library, but is designed to work with the Library by being compiled or
+	linked with it, is called a <quote>work that uses the Library</quote>.  
+	Such a work, in isolation, is not a derivative work of the Library, and
+	therefore falls outside the scope of this License.
+      </para>
+
+      <para>
+	However, linking a <quote>work that uses the Library</quote> with the Library
+	creates an executable that is a derivative of the Library (because it
+	contains portions of the Library), rather than a <quote>work that uses the
+	library</quote>.  The executable is therefore covered by this License.
+	<link linkend="sect6">Section 6</link> states terms for distribution 
+	of such executables.
+      </para>
+
+      <para>
+	When a <quote>work that uses the Library</quote> uses material from a 
+	header file that is part of the Library, the object code for the work 
+	may be a derivative work of the Library even though the source code is not.
+	Whether this is true is especially significant if the work can be
+	linked without the Library, or if the work is itself a library.  The
+	threshold for this to be true is not precisely defined by law.	
+      </para>
+
+      <para>
+	If such an object file uses only numerical parameters, data
+	structure layouts and accessors, and small macros and small inline
+	functions (ten lines or less in length), then the use of the object
+	file is unrestricted, regardless of whether it is legally a derivative
+	work.  (Executables containing this object code plus portions of the
+	Library will still fall under <link linkend="sect6">Section 6</link>.)
+      </para>
+
+      <para>
+	Otherwise, if the work is a derivative of the Library, you may
+	distribute the object code for the work under the terms of 
+	<link linkend="sect6">Section 6</link>.
+	Any executables containing that work also fall under 
+	<link linkend="sect6">Section 6</link>,
+	whether or not they are linked directly with the Library itself.
+      </para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Kohta 6</title>
+
+      <para>
+	As an exception to the Sections above, you may also combine or
+	link a <quote>work that uses the Library</quote> with the Library to
+	produce a work containing portions of the Library, and distribute that
+	work under terms of your choice, provided that the terms permit
+	modification of the work for the customer's own use and reverse
+	engineering for debugging such modifications.
+      </para>
+
+      <para>
+	You must give prominent notice with each copy of the work that the
+	Library is used in it and that the Library and its use are covered by
+	this License.  You must supply a copy of this License.  If the work
+	during execution displays copyright notices, you must include the
+	copyright notice for the Library among them, as well as a reference
+	directing the user to the copy of this License.  Also, you must do one
+	of these things:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">
+	      Accompany the work with the complete corresponding
+	      machine-readable source code for the Library including whatever
+	      changes were used in the work (which must be distributed under
+	      Sections <link linkend="sect1">1</link> and 
+	      <link linkend="sect2">2</link> above); and, if the work is an 
+	      executable linked with the Library, with the complete machine-readable 
+	      <quote>work that uses the Library</quote>, as object code and/or source 
+	      code, so that the user can modify the Library and then relink to 
+	      produce a modified executable containing the modified Library.  (It is 
+	      understood that the user who changes the contents of definitions files 
+	      in the Library will not necessarily be able to recompile the application
+	      to use the modified definitions.)
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Use a suitable shared library mechanism for linking with the
+	      Library.  A suitable mechanism is one that (1) uses at run time a
+	      copy of the library already present on the user's computer system,
+	      rather than copying library functions into the executable, and (2)
+	      will operate properly with a modified version of the library, if
+	      the user installs one, as long as the modified version is
+	      interface-compatible with the version that the work was made with.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany the work with a written offer, valid for at
+	      least three years, to give the same user the materials
+	      specified in <link linkend="sect6a">Subsection 6a</link>
+	      , above, for a charge no more than the cost of performing 
+	      this distribution.	      
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If distribution of the work is made by offering access to copy
+	      from a designated place, offer equivalent access to copy the above
+	      specified materials from the same place.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Verify that the user has already received a copy of these
+	      materials or that you have already sent this user a copy.
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+	<para>
+	  For an executable, the required form of the <quote>work that uses the
+	  Library</quote> must include any data and utility programs needed for
+	  reproducing the executable from it.  However, as a special exception,
+	  the materials to be distributed need not include anything that is
+	  normally distributed (in either source or binary form) with the major
+	  components (compiler, kernel, and so on) of the operating system on
+	  which the executable runs, unless that component itself accompanies
+	  the executable.
+	</para>
+
+	<para>
+	  It may happen that this requirement contradicts the license
+	  restrictions of other proprietary libraries that do not normally
+	  accompany the operating system.  Such a contradiction means you cannot
+	  use both them and the Library together in an executable that you
+	  distribute.
+	</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Kohta 7</title>
+
+      <para>
+	You may place library facilities that are a work based on the
+	Library side-by-side in a single library together with other library
+	facilities not covered by this License, and distribute such a combined
+	library, provided that the separate distribution of the work based on
+	the Library and of the other library facilities is otherwise
+	permitted, and provided that you do these two things:
+      </para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	    Accompany the combined library with a copy of the same work
+	    based on the Library, uncombined with any other library
+	    facilities.  This must be distributed under the terms of the
+	    Sections above.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Give prominent notice with the combined library of the fact
+	    that part of it is a work based on the Library, and explaining
+	    where to find the accompanying uncombined form of the same work.
+	  </para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Kohta 8</title>
+
+      <para>Kirjaston kopioiminen, muuttaminen, lisensointi edelleen tai Kirjaston levittäminen muuten kuin tämän Lisenssin ehtojen mukaisesti on kielletty. Kaikki yritykset muulla tavoin kopioida, muuttaa, lisensoida edelleen tai levittää Kirjastoa ovat pätemättömiä ja johtavat automaattisesti tämän Lisenssin mukaisten oikeuksien päättymiseen. Sen sijaan ne, jotka ovat saaneet kopioita tai oikeuksia Lisenssin saajalta tämän Lisenssin ehtojen mukaisesti, eivät menetä saamiaan lisensoituja oikeuksia niin kauan kuin he noudattavat näitä ehtoja.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Kohta 9</title>
+      
+      <para>Lisenssin saajalta ei vaadita tämän Lisenssin hyväksymistä, koska siitä puuttuu allekirjoitus. Kuitenkaan mikään muu ei salli Lisenssin saajaa muuttaa tai levittää Kirjastoa tai sen jälkiperäisteosta. Nämä toimenpiteet ovat lailla kiellettyjä siinä tapauksessa, että Lisenssin saaja ei hyväksy tätä Lisenssiä. Niinpä muuttamalla tai levittämällä Kirjastoa (tai Kirjastoon perustuvaa teosta) Lisenssin saaja ilmaisee hyväksyvänsä tämän Lisenssin ja kaikki sen ehdot sekä edellytykset Kirjaston ja siihen perustuvien teosten kopioimiselle, levittämiselle ja muuttamiselle.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Kohta 10</title>
+
+      <para>Aina kun Kirjastoa (tai Kirjastoon perustuvaa teosta) levitetään, vastaanottaja saa automaattisesti alkuperäiseltä tekijältä lisenssin kopioida, levittää ja muuttaa Kirjastoa näiden ehtojen ja edellytysten sitomina. Vastaanottajalle ei saa asettaa mitään lisärajoitteita tässä annettujen oikeuksien käytöstä. Lisenssin saajalla ei ole vastuuta valvoa noudattavatko kolmannet osapuolet tätä Lisenssiä.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>Kohta 11</title>
+
+      <para>Jos oikeuden päätös tai väite patentin loukkauksesta tai jokin muu syy (rajoittumatta patenttikysymyksiin) asettaa Lisenssin saajalle ehtoja (olipa niiden alkuperä sitten tuomio, sopimus tai jokin muu), jotka ovat vastoin näitä lisenssiehtoja, ne eivät anna oikeutta poiketa tästä Lisenssistä. Jos levittäminen ei ole mahdollista siten, että samanaikaisesti toimitaan sekä tämän Lisenssin että joidenkin muiden rajoittavien velvoitteiden mukaisesti, tällöin Kirjastoa ei saa lainkaan levittää. Jos esimerkiksi jokin patenttilisenssi ei salli kaikille niille, jotka saavat Kirjaston Lisenssin saajalta joko suoraan tai epäsuorasti, Kirjaston levittämistä edelleen ilman rojaltimaksuja, tällöin ainut tapa täyttää sekä patenttilisenssin että tämän Lisenssin ehdot on olla levittämättä Kirjastoa lainkaan.</para>
+
+      <para>Jos jokin osa tästä kohdasta katsotaan pätemättömäksi tai mahdottomaksi vahvistaa oikeudessa joissakin tietyissä olosuhteissa, silloin tätä kohtaa on tarkoitus soveltaa pätevin osin ja muissa olosuhteissa kokonaisuudessaan.</para>
+
+      <para>Tämän kohdan tarkoitus ei ole johtaa siihen, että Lisenssin saaja rikkoisi mitään patenttia tai muuta varallisuussoikeutta tai väittää mitään näiden oikeuksien pätevyydestä; tämän kohdan ainoana tarkoituksena on suojata vapaiden ohjelmien levitysjärjestelmän yhtenäisyys, joka on luotu käyttämällä yleisiä lisenssejä. Monet ovat antaneet arvokkaan panoksensa mitä erilaisimpiin ohjelmiin, joita levitetään tässä järjestelmässä luottaen sen soveltamisen pysyvyyteen; on jokaisen tekijän ja lahjoittajan päätösvallassa haluaako hän levittää ohjelmaa jossakin muussa järjestelmässä ja Lisenssin saaja ei voi vaikuttaa tähän valintaan.</para>
+
+      <para>Tämän kohdan tarkoituksena on tehdä täysin selväksi se, mikä on tämän Lisenssin muiden osien seuraus.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Kohta 12</title>
+
+      <para>Jos patentit tai tekijänoikeudella suojatut käyttöliittymät rajoittavat Kirjaston levittämistä tai käyttöä joissakin valtioissa, Kirjaston alkuperäinen tekijä, joka lisensoi ohjelmaansa tällä Lisenssillä, voi asettaa nimenomaisia maantieteellisiä levitysrajoituksia, jolloin levittäminen on sallittu joko mukaan- tai poislukien nämä valtiot. Tälläisessä tapauksessa nämä rajoitukset otetaan huomioon kuin ne olisi kirjoitettu tämän Lisenssin sekaan.</para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>Kohta 13</title>
+
+      <para>Free Software Foundation voi julkaista korjattuja tai uusia versioita LGPL-lisenssistä aika ajoin. Näiden uusien versioiden henki on yhtenevä nykyisen version kanssa, mutta ne saattavat erota yksityiskohdissa ottaen huomioon uusia ongelmia ja huolenaiheita.</para>
+
+      <para>Jokaiselle versiolle annetaan ne muista erottava versionumero. Jos Kirjasto käyttää tämän Lisenssin tiettyä versiota tai <quote>mitä tahansa myöhempää versiota</quote>, Lisenssin saaja saa valita, käyttääkö sitä tai jotakin Free Software Foundationin julkaisemaa myöhempää versiota Lisenssistä. Jos Kirjasto ei mainitse mitä versiota tästä Lisenssistä se käyttää, on sallittua valita mikä tahansa versio, jonka Free Software Foundation on koskaan julkaissut.</para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>Kohta 14</title>
+
+      <para>Jos Lisenssin saaja haluaa ottaa osia Kirjastosta mukaan muihin vapaisiin ohjelmiin, joiden levitysehdot ovat erilaiset, hänen tulee kirjoittaa tekijälle ja kysyä lupaa. Jos ohjelman tekijänoikeuden omistaa Free Software Foundation, on kirjoitettava heille; he tekevät joskus poikkeuksia. Free Software Foundationin päätösten ohjenuorana on kaksi päämäärää; säilyttää kaikista heidän vapaista ohjelmista johdettujen ohjelmien vapaa asema ja yleisesti kannustaa ohjelmien jakamiseen ja uudelleen käyttöön.</para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>Ei takuuta</title>
+      <subtitle>Kohta 15</subtitle>
+
+      <para>Koska tämä Kirjasto on lisensoitu ilmaiseksi, tälle Kirjastolle ei myönnetä takuuta lain sallimissa rajoissa. Ellei tekijänoikeuden haltija kirjallisesti muuta osoita, Kirjasto on tarjolla <quote>sellaisena kuin se on</quote> ilman minkäänlaista takuuta, ilmaistua tai hiljaista, sisältäen, muttei tyhjentävästi, hiljaisen takuun kaupallisesti hyväksyttävästä laadusta ja soveltuvuudesta tiettyyn tarkoitukseen. Lisenssin saajalla on kaikki riski Kirjaston laadusta ja suorituskyvystä. Jos ohjelma osoittautuu virheelliseksi, Lisenssin saajan vastuulla ovat kaikki huolto- ja korjauskustannukset.</para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>Kohta 16</title>
+
+      <para>Ellei laista tai kirjallisesta hyväksynnästä muuta johdu, tekijänoikeuden haltija ja kuka tahansa kolmas osapuoli, joka voi muuttaa tai levittää kirjastoa kuten edellä on sallittu, eivät ole missään tilanteessa vastuussa Lisenssin saajalle yleisistä, erityisistä, satunnaisista tai seurauksellisista vahingoista (sisältäen, muttei tyhjentävästi, tiedon katoamisen, tiedon vääristymisen, Lisenssin saajan tai kolmansien osapuolten menetykset ja kirjaston puutteen toimia minkä tahansa toisen ohjelman kanssa), jotka aiheutuvat kirjaston käytöstä tai siitä, että kirjastoa ei voi käyttää, siinäkin tapauksessa, että tekijänoikeuden haltija tai kolmas osapuoli olisi maininnut kyseisten vahinkojen mahdollisuudesta.</para>
+    </sect2>
+  </sect1>
+</article>

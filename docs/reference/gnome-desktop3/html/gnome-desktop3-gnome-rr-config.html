@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-rr-config</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
+<link rel="home" href="index.html" title="GNOME Desktop Library Reference Manual">
+<link rel="up" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="prev" href="gnome-desktop3-gnome-rr.html" title="gnome-rr">
+<link rel="next" href="gnome-desktop3-gnome-rr-labeler.html" title="gnome-rr-labeler">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gnome-desktop3-gnome-rr.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="randr.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Desktop Library Reference Manual</th>
+<td><a accesskey="n" href="gnome-desktop3-gnome-rr-labeler.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gnome-desktop3-gnome-rr-config.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gnome-desktop3-gnome-rr-config.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="gnome-desktop3-gnome-rr-config"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-desktop3-gnome-rr-config.top_of_page"></a>gnome-rr-config</span></h2>
+<p>gnome-rr-config</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="gnome-desktop3-gnome-rr-config.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis"><span class="returnvalue">GnomeRRConfig</span> *     <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-new-current" title="gnome_rr_config_new_current ()">gnome_rr_config_new_current</a>         (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">GnomeRRConfig</span> *     <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-new-stored" title="gnome_rr_config_new_stored ()">gnome_rr_config_new_stored</a>          (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-match" title="gnome_rr_config_match ()">gnome_rr_config_match</a>               (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config1</code></em>,
+                                                         <em class="parameter"><code><span class="type">GnomeRRConfig</span> *config2</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-equal" title="gnome_rr_config_equal ()">gnome_rr_config_equal</a>               (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config1</code></em>,
+                                                         <em class="parameter"><code><span class="type">GnomeRRConfig</span> *config2</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-save" title="gnome_rr_config_save ()">gnome_rr_config_save</a>                (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-sanitize" title="gnome_rr_config_sanitize ()">gnome_rr_config_sanitize</a>            (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-apply-with-time" title="gnome_rr_config_apply_with_time ()">gnome_rr_config_apply_with_time</a>     (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-apply-from-filename-with-time" title="gnome_rr_config_apply_from_filename_with_time ()">gnome_rr_config_apply_from_filename_with_time</a>
+                                                        (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *filename</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-applicable" title="gnome_rr_config_applicable ()">gnome_rr_config_applicable</a>          (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">char</span> *              <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-get-backup-filename" title="gnome_rr_config_get_backup_filename ()">gnome_rr_config_get_backup_filename</a> (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">char</span> *              <a class="link" href="gnome-desktop3-gnome-rr-config.html#gnome-rr-config-get-intended-filename" title="gnome_rr_config_get_intended_filename ()">gnome_rr_config_get_intended_filename</a>
+                                                        (<em class="parameter"><code><span class="type">void</span></code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-config.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-config.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="gnome-rr-config-new-current"></a><h3>gnome_rr_config_new_current ()</h3>
+<pre class="programlisting"><span class="returnvalue">GnomeRRConfig</span> *     gnome_rr_config_new_current         (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-new-stored"></a><h3>gnome_rr_config_new_stored ()</h3>
+<pre class="programlisting"><span class="returnvalue">GnomeRRConfig</span> *     gnome_rr_config_new_stored          (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-match"></a><h3>gnome_rr_config_match ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_match               (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config1</code></em>,
+                                                         <em class="parameter"><code><span class="type">GnomeRRConfig</span> *config2</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-equal"></a><h3>gnome_rr_config_equal ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_equal               (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config1</code></em>,
+                                                         <em class="parameter"><code><span class="type">GnomeRRConfig</span> *config2</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-save"></a><h3>gnome_rr_config_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_save                (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-sanitize"></a><h3>gnome_rr_config_sanitize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_config_sanitize            (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-apply-with-time"></a><h3>gnome_rr_config_apply_with_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_apply_with_time     (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-apply-from-filename-with-time"></a><h3>gnome_rr_config_apply_from_filename_with_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_apply_from_filename_with_time
+                                                        (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *filename</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-applicable"></a><h3>gnome_rr_config_applicable ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_applicable          (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *configuration</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-get-backup-filename"></a><h3>gnome_rr_config_get_backup_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *              gnome_rr_config_get_backup_filename (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-config-get-intended-filename"></a><h3>gnome_rr_config_get_intended_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *              gnome_rr_config_get_intended_filename
+                                                        (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

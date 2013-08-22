@@ -1,0 +1,915 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-lgpl doc\n"
+"POT-Creation-Date: 2010-07-27 09:27+0000\n"
+"PO-Revision-Date: 2010-07-29 19:21+0800\n"
+"Last-Translator: Yinghua Wang <wantinghard@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C/lgpl.xml:17(title)
+msgid "GNU Lesser General Public License"
+msgstr "GNU 宽通用公共许可证"
+
+#: C/lgpl.xml:19(year)
+msgid "2000"
+msgstr "2000"
+
+#: C/lgpl.xml:20(holder)
+msgid "Free Software Foundation, Inc."
+msgstr "Free Software Foundation, Inc."
+
+#: C/lgpl.xml:23(surname)
+msgid "Free Software Foundation"
+msgstr "自由软件基金会"
+
+#: C/lgpl.xml:26(publishername)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/lgpl.xml:30(revnumber)
+msgid "2.1"
+msgstr "2.1"
+
+#: C/lgpl.xml:31(date)
+msgid "1999-02"
+msgstr "1999-02"
+
+#: C/lgpl.xml:35(para)
+#, fuzzy
+#| msgid ""
+#| "<address>Free Software Foundation, Inc. <street>51 Franklin Street, Suite "
+#| "330</street>, <city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+#| "postcode><country>USA</country></address>."
+msgid ""
+"<address>Free Software Foundation, Inc. <street>51 Franklin Street, Fifth "
+"Floor</street>, <city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>."
+msgstr ""
+"<address>Free Software Foundation, Inc. <street>51 Franklin Street, Fifth "
+"Floor</street>, <city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>."
+
+#: C/lgpl.xml:43(para)
+msgid ""
+"Everyone is permitted to copy and distribute verbatim copies of this license "
+"document, but changing it is not allowed."
+msgstr ""
+"允许任何人复制和发布这一许可证原始文档的副本，但绝对不允许对它进行任何修改。"
+
+#: C/lgpl.xml:48(releaseinfo)
+msgid "Version 2.1, February 1999"
+msgstr "1999年2月，版本2.1"
+
+#: C/lgpl.xml:51(para)
+#, fuzzy
+#| msgid ""
+#| "The licenses for most software are designed to take away your freedom to "
+#| "share and change it. By contrast, the GNU General Public Licenses are "
+#| "intended to guarantee your freedom to share and change free software--to "
+#| "make sure the software is free for all its users."
+msgid ""
+"The licenses for most software are designed to take away your freedom to "
+"share and change it. By contrast, the GNU General Public Licenses are "
+"intended to guarantee your freedom to share and change free software - to "
+"make sure the software is free for all its users."
+msgstr ""
+"大多数软件许可证决意剥夺你共享和修改软件的自由。相反，GNU 通用公共许可证力图"
+"保证你的共享和修改自由软件的自由 - 保证自由软件对所有用户是自由的。"
+
+#: C/lgpl.xml:61(title)
+msgid "Preamble"
+msgstr "序言"
+
+#: C/lgpl.xml:63(para)
+msgid ""
+"The licenses for most software are designed to take away your freedom to "
+"share and change it. By contrast, the GNU General Public Licenses are "
+"intended to guarantee your freedom to share and change free software--to "
+"make sure the software is free for all its users."
+msgstr ""
+"大多数软件许可证决意剥夺你的共享和修改软件的自由。相反，GNU 通用公共许可证力"
+"图保证你的共享和修改自由软件的自由——保证自由软件对所有用户是自由的。"
+
+#: C/lgpl.xml:70(para)
+msgid ""
+"When we speak of free software, we are referring to freedom, not price. Our "
+"General Public Licenses are designed to make sure that you have the freedom "
+"to distribute copies of free software (and charge for this service if you "
+"wish), that you receive source code or can get it if you want it, that you "
+"can change the software or use pieces of it in new free programs; and that "
+"you know you can do these things."
+msgstr ""
+"当我们谈到自由软件时，我们指的是自由而不是价格。我们的 GNU 通用公共许可证决意"
+"保证你有发布自由软件的自由(如果你愿意，你可以对此项服务收取一定的费用)；保证"
+"你能收到源程序或者在你需要时能够得到它；保证你能修改软件或将它的一部分用于新"
+"的自由软件；而且还保证你知道你能做这些事情。"
+
+#: C/lgpl.xml:79(para)
+msgid ""
+"This license, the Lesser General Public License, applies to some specially "
+"designated software packages--typically libraries--of the Free Software "
+"Foundation and other authors who decide to use it. You can use it too, but "
+"we suggest you first think carefully about whether this license or the "
+"ordinary General Public License is the better strategy to use in any "
+"particular case, based on the explanations below."
+msgstr ""
+"此许可证，较宽松通用公共许可证，适用于自由软件基金会以及那些决定使用此许可证"
+"的作者所特殊设计的软件包——特别是库。您也可以使用此许可证，但是我们建议您先根"
+"据下面的解释仔细考查一下究竟是此许可证还是传统的通用公共许可证较适合在任何特"
+"定用途中使用。"
+
+#: C/lgpl.xml:88(para)
+msgid ""
+"When we speak of free software, we are referring to freedom of use, not "
+"price. Our General Public Licenses are designed to make sure that you have "
+"the freedom to distribute copies of free software (and charge for this "
+"service if you wish); that you receive source code or can get it if you want "
+"it; that you can change the software and use pieces of it in new free "
+"programs; and that you are informed that you can do these things."
+msgstr ""
+"当我们谈到自由软件时，我们指的是用途自由而不是价格。我们的 GNU 通用公共许可证"
+"决意保证你有发布自由软件的自由(如果你愿意，你可以对此项服务收取一定的费用)；"
+"保证你能收到源程序或者在你需要时能够得到它；保证你能修改软件或将它的一部分用"
+"于新的自由软件；而且还保证你知道你能做这些事情。"
+
+#: C/lgpl.xml:98(para)
+msgid ""
+"To protect your rights, we need to make restrictions that forbid "
+"distributors to deny you these rights or to ask you to surrender these "
+"rights. These restrictions translate to certain responsibilities for you if "
+"you distribute copies of the library or if you modify it."
+msgstr ""
+"为了保护你的权利，我们需要作出规定：禁止任何人否认你的权利，或者要求你放弃这"
+"些权利。如果你修改了库或者发布了库的副本，这些规定就转化为你的责任。"
+
+#: C/lgpl.xml:105(para)
+msgid ""
+"For example, if you distribute copies of the library, whether gratis or for "
+"a fee, you must give the recipients all the rights that we gave you. You "
+"must make sure that they, too, receive or can get the source code. If you "
+"link other code with the library, you must provide complete object files to "
+"the recipients, so that they can relink them with the library after making "
+"changes to the library and recompiling it. And you must show them these "
+"terms so they know their rights."
+msgstr ""
+"例如，如果你发布这样一个库的副本，不管是收费的还是免费的，你必须将你具有的一"
+"切权利给予你的接受者；你必须保证他们能收到或得到源程序；如果你把该库与某个程"
+"序进行连接，你必须把完整的目标文件提供给接受者，以使他们在修改了库并重新进行"
+"了编译之后可以重新与该库进行连接。并且，你必须向他们展示这些条款，使他们了解"
+"自己的的权利。"
+
+#: C/lgpl.xml:115(para)
+msgid ""
+"We protect your rights with a two-step method: (1) we copyright the library, "
+"and (2) we offer you this license, which gives you legal permission to copy, "
+"distribute and/or modify the library."
+msgstr ""
+"我们采取两项措施来保护你的权利：(1) 我们保护库的版权，(2) 我们为您提供了此许"
+"可证，它给你复制、发布和修改库的法律许可。"
+
+#: C/lgpl.xml:121(para)
+msgid ""
+"To protect each distributor, we want to make it very clear that there is no "
+"warranty for the free library. Also, if the library is modified by someone "
+"else and passed on, the recipients should know that what they have is not "
+"the original version, so that the original author's reputation will not be "
+"affected by problems that might be introduced by others."
+msgstr ""
+"为了保护发布者，我们需要清楚地让每个人明白，自由库没有担保。同时，如果由于其"
+"他某个人修改了库，并继续加以传播，我们需要它的接受者明白：他们所得到的并不是"
+"原来的版本。任何由其他人引入的任何问题，不应损害原作者的声誉。"
+
+#: C/lgpl.xml:130(para)
+msgid ""
+"Finally, software patents pose a constant threat to the existence of any "
+"free program. We wish to make sure that a company cannot effectively "
+"restrict the users of a free program by obtaining a restrictive license from "
+"a patent holder. Therefore, we insist that any patent license obtained for a "
+"version of the library must be consistent with the full freedom of use "
+"specified in this license."
+msgstr ""
+"最后，任何自由软件不断受到软件专利的威胁。我们想要确保公司无法通过专利持有人"
+"的限制性许可证来限制自由软件的用户。因此，我们坚持库的任何版本所获得的任何专"
+"利许可都必须与此许可证所指定的完全自由用途相吻合。"
+
+#: C/lgpl.xml:139(para)
+msgid ""
+"Most GNU software, including some libraries, is covered by the ordinary GNU "
+"General Public License. This license, the GNU Lesser General Public License, "
+"applies to certain designated libraries, and is quite different from the "
+"ordinary General Public License. We use this license for certain libraries "
+"in order to permit linking those libraries into non-free programs."
+msgstr ""
+"大多数 GNU 软件，包括某些库，都是由传统的 GNU 通用公共许可证所管理的。此协"
+"议，GNU 宽通用公共许可证，适用于某些特殊设计的库，因而与传统的 GNU 通用公共许"
+"可证有所不同。我们对特定的库使用这一许可是为了允许将这些库与非自由的程序链接"
+"在一起。"
+
+#: C/lgpl.xml:148(para)
+msgid ""
+"When a program is linked with a library, whether statically or using a "
+"shared library, the combination of the two is legally speaking a combined "
+"work, a derivative of the original library. The ordinary General Public "
+"License therefore permits such linking only if the entire combination fits "
+"its criteria of freedom. The Lesser General Public License permits more lax "
+"criteria for linking other code with the library."
+msgstr ""
+"当程序与库链接在一起的时候，不管是静态还是共享库，此二者的组合可以被称为结合"
+"的作品，或称原始库的派生作品。传统的 GNU 通用公共许可证仅当整个组合符合其自由"
+"条件时才允许这样链接。宽通用公共许可证则在将其它代码与库链接在一起时条件更为"
+"宽松。"
+
+#: C/lgpl.xml:158(para)
+msgid ""
+"We call this license the <quote>Lesser</quote> General Public License "
+"because it does Less to protect the user's freedom than the ordinary General "
+"Public License. It also provides other free software developers Less of an "
+"advantage over competing non-free programs. These disadvantages are the "
+"reason we use the ordinary General Public License for many libraries. "
+"However, the Lesser license provides advantages in certain special "
+"circumstances."
+msgstr ""
+"我们把这份许可证称为<quote>宽(Lesser)</quote>通用公共许可证，因为它在保护用户"
+"自由方面比原通用公共许可证相比要弱。对于自由软件开发者与纯非自由软件的竞争，"
+"它提供的优势也更少。这些优势是我们的许多库使用常规的通用公共许可证的原因。然"
+"而，更宽松的许可在某些特定环境中有自己的优势。"
+
+#: C/lgpl.xml:168(para)
+msgid ""
+"For example, on rare occasions, there may be a special need to encourage the "
+"widest possible use of a certain library, so that it becomes a de-facto "
+"standard. To achieve this, non-free programs must be allowed to use the "
+"library. A more frequent case is that a free library does the same job as "
+"widely used non-free libraries. In this case, there is little to gain by "
+"limiting the free library to free software only, so we use the Lesser "
+"General Public License."
+msgstr ""
+"例如，在一些少见的情形下，需要鼓励尽量广泛的使用某个特定库，以使它成为一种事"
+"实标准。要实现这一目的，必须允许非自由软件使用该库。更常见的例子是，一个自由"
+"库实现了某个广泛使用的非自由库的相同功能。这时，将自由库限定于自由软件才能使"
+"用得不偿失，因此我们使用宽通用公共许可证。"
+
+#: C/lgpl.xml:178(para)
+msgid ""
+"In other cases, permission to use a particular library in non-free programs "
+"enables a greater number of people to use a large body of free software. For "
+"example, permission to use the GNU C Library in non-free programs enables "
+"many more people to use the whole GNU operating system, as well as its "
+"variant, the GNU/Linux operating system."
+msgstr ""
+"在其他情形下，允许在非自由程序中使用某个特定的库使得更多的人可以广泛地使用自"
+"由软件。例如，允许在非自由程序中使用 GNU C 库允许更多的人使用整个 GNU操作系统"
+"和它的变体，GNU/Linux 操作系统。"
+
+#: C/lgpl.xml:187(para)
+msgid ""
+"Although the Lesser General Public License is Less protective of the users' "
+"freedom, it does ensure that the user of a program that is linked with the "
+"Library has the freedom and the wherewithal to run that program using a "
+"modified version of the Library."
+msgstr ""
+"尽管宽通用公共许可证在保护用户自由上弱一些，它仍然能保证与自由库链接的程序的"
+"用户使用该库的修改版本运行那个程序的自由和必要条件。"
+
+#: C/lgpl.xml:194(para)
+msgid ""
+"The precise terms and conditions for copying, distribution and modification "
+"follow. Pay close attention to the difference between a <quote>work based on "
+"the library</quote> and a <quote>work that uses the library</quote>. The "
+"former contains code derived from the library, whereas the latter must be "
+"combined with the library in order to run."
+msgstr ""
+"以下是有关复制、传播和修改的条款和条件的详细阐述。请特别留意<quote>基于库的作"
+"品</quote>与<quote>使用库的作品</quote>之间的差别。前者包含从库中衍生的代码，"
+"而后者必须与该库一起才能运行。"
+
+#: C/lgpl.xml:205(title)
+msgid "TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION"
+msgstr "复制、传播和修改的条款及条件"
+
+#: C/lgpl.xml:208(title)
+msgid "Section 0"
+msgstr "第 0 节"
+
+#: C/lgpl.xml:209(para)
+msgid ""
+"This License Agreement applies to any software library or other program "
+"which contains a notice placed by the copyright holder or other authorized "
+"party saying it may be distributed under the terms of this Lesser General "
+"Public License (also called <quote>this License</quote>). Each licensee is "
+"addressed as <quote>you</quote>."
+msgstr ""
+"此许可协议适用于任何软件库或其他程序，条件是它们包含一条由版权拥有者或其他授"
+"权方置入的声明，言明它可以在此宽通用公共许可证(也称<quote>此协议</quote> )条"
+"款约束下传播。各获授权者由<quote>你</quote>指定。"
+
+#: C/lgpl.xml:217(para)
+msgid ""
+"A <quote>library</quote> means a collection of software functions and/or "
+"data prepared so as to be conveniently linked with application programs "
+"(which use some of those functions and data) to form executables."
+msgstr ""
+"一个<quote>库</quote>是指一系列编译好的软件函数和/或数据的集合，可以方便地与"
+"应用程序(它使用了其中的一些函数和数据)链接来组成可执行程序。"
+
+#: C/lgpl.xml:223(para)
+msgid ""
+"The <quote>Library</quote>, below, refers to any such software library or "
+"work which has been distributed under these terms. A <quote>work based on "
+"the Library</quote> means either the Library or any derivative work under "
+"copyright law: that is to say, a work containing the Library or a portion of "
+"it, either verbatim or with modifications and/or translated "
+"straightforwardly into another language. (Hereinafter, translation is "
+"included without limitation in the term <quote>modification</quote>.)"
+msgstr ""
+"下文所说的<quote>库</quote>，是指任何在这些条款下发布的软件库或作品。一件"
+"<quote>基于库的作品</quote>是指该库或任何在版权法规定下的派生作品：即包含该库"
+"或部分库和作品，无论是原样使用还是经过修改和/或直接翻译为另一种语言。(下文"
+"中，翻译将不作限制地包含在术语<quote>修改</quote>的范围内。)"
+
+#: C/lgpl.xml:233(para)
+msgid ""
+"<quote>Source code</quote> for a work means the preferred form of the work "
+"for making modifications to it. For a library, complete source code means "
+"all the source code for all modules it contains, plus any associated "
+"interface definition files, plus the scripts used to control compilation and "
+"installation of the library."
+msgstr ""
+"一件作品的<quote>源代码</quote>是指用来对作品作修改的优先形式。对于库，完整的"
+"源代码意味着它包含的所有模块的所有源代码，以及任何与接口定义相关的文件，还有"
+"使用和控制编译和安装库的脚本。"
+
+#: C/lgpl.xml:241(para)
+msgid ""
+"Activities other than copying, distribution and modification are not covered "
+"by this License; they are outside its scope. The act of running a program "
+"using the Library is not restricted, and output from such a program is "
+"covered only if its contents constitute a work based on the Library "
+"(independent of the use of the Library in a tool for writing it). Whether "
+"that is true depends on what the Library does and what the program that uses "
+"the Library does."
+msgstr ""
+"此许可证不影响复制、传播和修改以外的活动；这些活动超出了约束范围。执行使用了"
+"库的程序的行为不受限制，这类程序的输出也不在约束范围内，除非输出内容构成了一"
+"件基于库的作品(与在编写它的工具中使用库的情况无关)。判断是否约束取决于库所发"
+"挥的作用以及使用库的程序的行为。"
+
+#: C/lgpl.xml:254(title)
+msgid "Section 1"
+msgstr "第 1 节"
+
+#: C/lgpl.xml:255(para)
+msgid ""
+"You may copy and distribute verbatim copies of the Library's complete source "
+"code as you receive it, in any medium, provided that you conspicuously and "
+"appropriately publish on each copy an appropriate copyright notice and "
+"disclaimer of warranty; keep intact all the notices that refer to this "
+"License and to the absence of any warranty; and distribute a copy of this "
+"License along with the Library."
+msgstr ""
+"在收到库后，你可以使用任何媒介原样复制和传播库的源代码，只要你以明确和适当的"
+"方式在每份副本中公布一个恰当的版权提示和担保声明；保持所有提及此许可证和缺少"
+"保证的提示的完整性；并与在库发布时附一份此许可的副本。"
+
+#: C/lgpl.xml:265(para)
+msgid ""
+"You may charge a fee for the physical act of transferring a copy, and you "
+"may at your option offer warranty protection in exchange for a fee."
+msgstr "你可以为转让副本的实际行动索要费用，也可以选择通过提供担保来获取费用。"
+
+#: C/lgpl.xml:273(title)
+msgid "Section 2"
+msgstr "第 2 节"
+
+#: C/lgpl.xml:283(para)
+msgid "The modified work must itself be a software library."
+msgstr "修改的作品自身必须是一个软件库。"
+
+#: C/lgpl.xml:288(para)
+msgid ""
+"You must cause the files modified to carry prominent notices stating that "
+"you changed the files and the date of any change."
+msgstr "你必须在修改的文件中显著标明，你修改了文件，以及修改的日期。"
+
+#: C/lgpl.xml:294(para)
+msgid ""
+"You must cause the whole of the work to be licensed at no charge to all "
+"third parties under the terms of this License."
+msgstr "你必须将整个作品在本许可证条款约束下无偿地授权给所有第三方组织。"
+
+#: C/lgpl.xml:300(para)
+#, fuzzy
+msgid ""
+"If a facility in the modified Library refers to a function or a table of "
+"data to be supplied by an application program that uses the facility, other "
+"than as an argument passed when the facility is invoked, then you must make "
+"a good faith effort to ensure that, in the event an application does not "
+"supply such function or table, the facility still operates, and performs "
+"whatever part of its purpose remains meaningful."
+msgstr ""
+"如果修改了的库中的某项功能引用了一个由使用该功能的外部应用程序提供的函数或数"
+"据表，而不是在调用此功能时作为参数传递的，则你必须相当留意，保证在该应用程序"
+"无法提供那些函数或表的时候，该功能依然能正常工作，按原意输出的各部分仍然有意"
+"义。"
+
+#: C/lgpl.xml:310(para)
+msgid ""
+"(For example, a function in a library to compute square roots has a purpose "
+"that is entirely well-defined independent of the application. Therefore, "
+"Subsection 2d requires that any application-supplied function or table used "
+"by this function must be optional: if the application does not supply it, "
+"the square root function must still compute square roots.)"
+msgstr ""
+"(例如，一个库中的某个用来计算平方根的函数经过仔细设计，与应用程序完全独立。因"
+"此，第二小节要求该函数使用的任何由应用程序提供的函数或表必须是可选的：如果该"
+"应用程序不提供它，平方根函数必须依然能够计算平方根。)"
+
+#: C/lgpl.xml:319(para)
+msgid ""
+"These requirements apply to the modified work as a whole. If identifiable "
+"sections of that work are not derived from the Library, and can be "
+"reasonably considered independent and separate works in themselves, then "
+"this License, and its terms, do not apply to those sections when you "
+"distribute them as separate works. But when you distribute the same sections "
+"as part of a whole which is a work based on the Library, the distribution of "
+"the whole must be on the terms of this License, whose permissions for other "
+"licensees extend to the entire whole, and thus to each and every part "
+"regardless of who wrote it."
+msgstr ""
+"这些要求适用于整个修改的作品。如果该作品可识别的部分不是从库中衍生的，而且可"
+"以充分认为是独立和不相关的作品，则此许可证及其条款在你将它们作为独立作品发布"
+"时不适用。但如果你将这些部分作为整体的一部分发布，而整体是基于库工作的，则整"
+"个发布必须受此许可证约束，对其他授权者的许可将延伸到整个作品，因而也就是对每"
+"一个部分，而不管它由谁编写。"
+
+#: C/lgpl.xml:332(para)
+msgid ""
+"Thus, it is not the intent of this section to claim rights or contest your "
+"rights to work written entirely by you; rather, the intent is to exercise "
+"the right to control the distribution of derivative or collective works "
+"based on the Library."
+msgstr ""
+"因此，本节目的不在于声明或争取你对于完全由你编写的作品的权利；相反，是剥夺对"
+"基于库的衍生或集合作品的发布控制权。"
+
+#: C/lgpl.xml:339(para)
+msgid ""
+"In addition, mere aggregation of another work not based on the Library with "
+"the Library (or with a work based on the Library) on a volume of a storage "
+"or distribution medium does not bring the other work under the scope of this "
+"License."
+msgstr ""
+"另外，仅将另一并非基于库的作品与库一起(或与基于库的作品一起)在存储设备卷上或"
+"发行媒介上，不会导致该作品列入此许可证约束范围。"
+
+#: C/lgpl.xml:274(para)
+msgid ""
+"You may modify your copy or copies of the Library or any portion of it, thus "
+"forming a work based on the Library, and copy and distribute such "
+"modifications or work under the terms of <link linkend=\"sect1\">Section 1</"
+"link> above, provided that you also meet all of these conditions: "
+"<placeholder-1/>"
+msgstr ""
+"你可以修改库的副本或它的任意部分，形成一份基于该库的作品，然后在上面<link "
+"linkend=\"sect1\">第 1 节</link>所述条款下复制和传播这些修改或作品，前是你同"
+"时符合以下条件：<placeholder-1/>"
+
+#: C/lgpl.xml:352(title)
+msgid "Section 3"
+msgstr "第 3 节"
+
+#: C/lgpl.xml:354(para)
+msgid ""
+"You may opt to apply the terms of the ordinary GNU General Public License "
+"instead of this License to a given copy of the Library. To do this, you must "
+"alter all the notices that refer to this License, so that they refer to the "
+"ordinary GNU General Public License, version 2, instead of to this License. "
+"(If a newer version than version 2 of the ordinary GNU General Public "
+"License has appeared, then you can specify that version instead if you "
+"wish.) Do not make any other change in these notices."
+msgstr ""
+"你可以选择向库的副本应用原 GNU 通用公共许可证而非此许可证。为此，你必须调整所"
+"有提及此许可证的声明，让它们指向原通用公共许可证第 2 版，而不是本许可证。(如"
+"果出现了原通用公共许可证比第 2 版更新的版本，你可以转而指定那个版本，取决于你"
+"的意愿。)不要对声明其他部分作任何更改。"
+
+#: C/lgpl.xml:365(para)
+msgid ""
+"Once this change is made in a given copy, it is irreversible for that copy, "
+"so the ordinary GNU General Public License applies to all subsequent copies "
+"and derivative works made from that copy."
+msgstr ""
+"一旦对给定副本作出修改，该副本就无法恢复，因此原 GNU 通用公共许可证将应用于该"
+"副本的所有后续副本和衍生作品。"
+
+#: C/lgpl.xml:371(para)
+msgid ""
+"This option is useful when you wish to copy part of the code of the Library "
+"into a program that is not a library."
+msgstr "此选项在你希望将库的部分代码复制到一个非库的程序中时有用。"
+
+#: C/lgpl.xml:378(title)
+msgid "Section 4"
+msgstr "第 4 节"
+
+#: C/lgpl.xml:380(para)
+msgid ""
+"You may copy and distribute the Library (or a portion or derivative of it, "
+"under <link linkend=\"sect2\">Section 2</link> ) in object code or "
+"executable form under the terms of Sections <link linkend=\"sect1\">1</link> "
+"and <link linkend=\"sect2\">2</link> above provided that you accompany it "
+"with the complete corresponding machine-readable source code, which must be "
+"distributed under the terms of Sections <link linkend=\"sect1\">1</link> and "
+"<link linkend=\"sect2\">2</link> above on a medium customarily used for "
+"software interchange."
+msgstr ""
+"你可以在上面第<link linkend=\"sect2\">1</link>、<link linkend=\"sect2\">2</"
+"link>节条款的约束下以目标代码或可执行文件的形式复制和传播<link linkend="
+"\"sect2\">第 2 节</link>中的库(或其部分或衍生内容)，前提是你随之附带相应的机"
+"器可读的完整源代码，代码必须在第<link linkend=\"sect2\">1</link>、<link "
+"linkend=\"sect2\">2</link>节条款约束下通过常用的软件交换媒介分发。"
+
+#: C/lgpl.xml:392(para)
+msgid ""
+"If distribution of object code is made by offering access to copy from a "
+"designated place, then offering equivalent access to copy the source code "
+"from the same place satisfies the requirement to distribute the source code, "
+"even though third parties are not compelled to copy the source along with "
+"the object code."
+msgstr ""
+"如果传播目标代码是通过提供从某个指定位置复制的访问权限的形式进行的，则提供从"
+"相同位置访问并复制源代码的同等权限即满足发布源代码的要求，尽管不强制第三方与"
+"目标代码一起复制源代码。"
+
+#: C/lgpl.xml:403(title)
+msgid "Section 5"
+msgstr "第 5 节"
+
+#: C/lgpl.xml:405(para)
+msgid ""
+"A program that contains no derivative of any portion of the Library, but is "
+"designed to work with the Library by being compiled or linked with it, is "
+"called a <quote>work that uses the Library</quote>. Such a work, in "
+"isolation, is not a derivative work of the Library, and therefore falls "
+"outside the scope of this License."
+msgstr ""
+"一个未包含该库的衍生或部分内容，但设计为通过和库一起编译和链接的方式与库一同"
+"工作的程序，称为<quote>使用库的作品</quote>。这样的作品从个体来讲，不是库的衍"
+"生作品，因此不在此许可证的约束范围内。"
+
+#: C/lgpl.xml:413(para)
+msgid ""
+"However, linking a <quote>work that uses the Library</quote> with the "
+"Library creates an executable that is a derivative of the Library (because "
+"it contains portions of the Library), rather than a <quote>work that uses "
+"the library</quote>. The executable is therefore covered by this License. "
+"<link linkend=\"sect6\">Section 6</link> states terms for distribution of "
+"such executables."
+msgstr ""
+"然而，将<quote>使用库的作品</quote>与库链接生成的可执行文件是库的衍生作品(因"
+"为它包含库的一部分)，而非<quote>使用库的作品</quote>。因此该可执行文件受此许"
+"可证约束。<link linkend=\"sect6\">第 6 节</link>阐述了此类可执行文件的发布条"
+"款。"
+
+#: C/lgpl.xml:422(para)
+msgid ""
+"When a <quote>work that uses the Library</quote> uses material from a header "
+"file that is part of the Library, the object code for the work may be a "
+"derivative work of the Library even though the source code is not. Whether "
+"this is true is especially significant if the work can be linked without the "
+"Library, or if the work is itself a library. The threshold for this to be "
+"true is not precisely defined by law."
+msgstr ""
+"当<quote>使用库的作品</quote>使用了来自组成库的头文件的内容时，该作品的目标代"
+"码可能成为库的衍生作品，尽管源代码不是。这一事实是否成立可以从该作品离开该库"
+"能否链接或它是否本身就是库很明显的判断出来。判断的标准没有精确的法律定义。"
+
+#: C/lgpl.xml:431(para)
+msgid ""
+"If such an object file uses only numerical parameters, data structure "
+"layouts and accessors, and small macros and small inline functions (ten "
+"lines or less in length), then the use of the object file is unrestricted, "
+"regardless of whether it is legally a derivative work. (Executables "
+"containing this object code plus portions of the Library will still fall "
+"under <link linkend=\"sect6\">Section 6</link>.)"
+msgstr ""
+"如果这样的目标文件只使用了数值参数、数据结构布局和访问接口、小的宏以及小的内"
+"嵌函数(10 行或更短)，则使用该目标文件不作限制，不管它在法律上是不是衍生作品。"
+"(包含此目标代码加上部分库的可执行文件仍然符合<link linkend=\"sect6\">第 6 节"
+"</link>)的约束。"
+
+#: C/lgpl.xml:440(para)
+msgid ""
+"Otherwise, if the work is a derivative of the Library, you may distribute "
+"the object code for the work under the terms of <link linkend=\"sect6"
+"\">Section 6</link>. Any executables containing that work also fall under "
+"<link linkend=\"sect6\">Section 6</link>, whether or not they are linked "
+"directly with the Library itself."
+msgstr ""
+"否则，如果该作品是库的衍生作品，你可以遵照<link linkend=\"sect6\">第 6 节</"
+"link>的条款发布此作品的目标代码。任何包含该作品的可执行文件也受<link linkend="
+"\"sect6\">第 6 节</link>的约束，不管它们是否与该库直接链接。"
+
+#: C/lgpl.xml:451(title)
+msgid "Section 6"
+msgstr "第 6 节"
+
+#: C/lgpl.xml:453(para)
+msgid ""
+"As an exception to the Sections above, you may also combine or link a "
+"<quote>work that uses the Library</quote> with the Library to produce a work "
+"containing portions of the Library, and distribute that work under terms of "
+"your choice, provided that the terms permit modification of the work for the "
+"customer's own use and reverse engineering for debugging such modifications."
+msgstr ""
+
+#: C/lgpl.xml:473(para)
+msgid ""
+"Accompany the work with the complete corresponding machine-readable source "
+"code for the Library including whatever changes were used in the work (which "
+"must be distributed under Sections <link linkend=\"sect1\">1</link> and "
+"<link linkend=\"sect2\">2</link> above); and, if the work is an executable "
+"linked with the Library, with the complete machine-readable <quote>work that "
+"uses the Library</quote>, as object code and/or source code, so that the "
+"user can modify the Library and then relink to produce a modified executable "
+"containing the modified Library. (It is understood that the user who changes "
+"the contents of definitions files in the Library will not necessarily be "
+"able to recompile the application to use the modified definitions.)"
+msgstr ""
+
+#: C/lgpl.xml:489(para)
+msgid ""
+"Use a suitable shared library mechanism for linking with the Library. A "
+"suitable mechanism is one that (1) uses at run time a copy of the library "
+"already present on the user's computer system, rather than copying library "
+"functions into the executable, and (2) will operate properly with a modified "
+"version of the library, if the user installs one, as long as the modified "
+"version is interface-compatible with the version that the work was made with."
+msgstr ""
+
+#: C/lgpl.xml:500(para)
+msgid ""
+"Accompany the work with a written offer, valid for at least three years, to "
+"give the same user the materials specified in <link linkend=\"sect6a"
+"\">Subsection 6a</link> , above, for a charge no more than the cost of "
+"performing this distribution."
+msgstr ""
+
+#: C/lgpl.xml:509(para)
+msgid ""
+"If distribution of the work is made by offering access to copy from a "
+"designated place, offer equivalent access to copy the above specified "
+"materials from the same place."
+msgstr ""
+
+#: C/lgpl.xml:516(para)
+msgid ""
+"Verify that the user has already received a copy of these materials or that "
+"you have already sent this user a copy."
+msgstr ""
+
+#: C/lgpl.xml:462(para)
+msgid ""
+"You must give prominent notice with each copy of the work that the Library "
+"is used in it and that the Library and its use are covered by this License. "
+"You must supply a copy of this License. If the work during execution "
+"displays copyright notices, you must include the copyright notice for the "
+"Library among them, as well as a reference directing the user to the copy of "
+"this License. Also, you must do one of these things: <placeholder-1/>"
+msgstr ""
+
+#: C/lgpl.xml:524(para)
+msgid ""
+"For an executable, the required form of the <quote>work that uses the "
+"Library</quote> must include any data and utility programs needed for "
+"reproducing the executable from it. However, as a special exception, the "
+"materials to be distributed need not include anything that is normally "
+"distributed (in either source or binary form) with the major components "
+"(compiler, kernel, and so on) of the operating system on which the "
+"executable runs, unless that component itself accompanies the executable."
+msgstr ""
+
+#: C/lgpl.xml:535(para)
+msgid ""
+"It may happen that this requirement contradicts the license restrictions of "
+"other proprietary libraries that do not normally accompany the operating "
+"system. Such a contradiction means you cannot use both them and the Library "
+"together in an executable that you distribute."
+msgstr ""
+
+#: C/lgpl.xml:546(title)
+msgid "Section 7"
+msgstr "第 7 节"
+
+#: C/lgpl.xml:548(para)
+msgid ""
+"You may place library facilities that are a work based on the Library side-"
+"by-side in a single library together with other library facilities not "
+"covered by this License, and distribute such a combined library, provided "
+"that the separate distribution of the work based on the Library and of the "
+"other library facilities is otherwise permitted, and provided that you do "
+"these two things:"
+msgstr ""
+
+#: C/lgpl.xml:559(para)
+msgid ""
+"Accompany the combined library with a copy of the same work based on the "
+"Library, uncombined with any other library facilities. This must be "
+"distributed under the terms of the Sections above."
+msgstr ""
+
+#: C/lgpl.xml:567(para)
+msgid ""
+"Give prominent notice with the combined library of the fact that part of it "
+"is a work based on the Library, and explaining where to find the "
+"accompanying uncombined form of the same work."
+msgstr ""
+
+#: C/lgpl.xml:577(title)
+msgid "Section 8"
+msgstr "第 8 节"
+
+#: C/lgpl.xml:579(para)
+msgid ""
+"You may not copy, modify, sublicense, link with, or distribute the Library "
+"except as expressly provided under this License. Any attempt otherwise to "
+"copy, modify, sublicense, link with, or distribute the Library is void, and "
+"will automatically terminate your rights under this License. However, "
+"parties who have received copies, or rights, from you under this License "
+"will not have their licenses terminated so long as such parties remain in "
+"full compliance."
+msgstr ""
+
+#: C/lgpl.xml:591(title)
+msgid "Section 9"
+msgstr "第 9 节"
+
+#: C/lgpl.xml:593(para)
+msgid ""
+"You are not required to accept this License, since you have not signed it. "
+"However, nothing else grants you permission to modify or distribute the "
+"Library or its derivative works. These actions are prohibited by law if you "
+"do not accept this License. Therefore, by modifying or distributing the "
+"Library (or any work based on the Library), you indicate your acceptance of "
+"this License to do so, and all its terms and conditions for copying, "
+"distributing or modifying the Library or works based on it."
+msgstr ""
+
+#: C/lgpl.xml:606(title)
+msgid "Section 10"
+msgstr "第 10 节"
+
+#: C/lgpl.xml:608(para)
+msgid ""
+"Each time you redistribute the Library (or any work based on the Library), "
+"the recipient automatically receives a license from the original licensor to "
+"copy, distribute, link with or modify the Library subject to these terms and "
+"conditions. You may not impose any further restrictions on the recipients' "
+"exercise of the rights granted herein. You are not responsible for enforcing "
+"compliance by third parties with this License."
+msgstr ""
+
+#: C/lgpl.xml:620(title)
+msgid "Section 11"
+msgstr "第 11 节"
+
+#: C/lgpl.xml:622(para)
+msgid ""
+"If, as a consequence of a court judgment or allegation of patent "
+"infringement or for any other reason (not limited to patent issues), "
+"conditions are imposed on you (whether by court order, agreement or "
+"otherwise) that contradict the conditions of this License, they do not "
+"excuse you from the conditions of this License. If you cannot distribute so "
+"as to satisfy simultaneously your obligations under this License and any "
+"other pertinent obligations, then as a consequence you may not distribute "
+"the Library at all. For example, if a patent license would not permit "
+"royalty-free redistribution of the Library by all those who receive copies "
+"directly or indirectly through you, then the only way you could satisfy both "
+"it and this License would be to refrain entirely from distribution of the "
+"Library."
+msgstr ""
+
+#: C/lgpl.xml:637(para)
+msgid ""
+"If any portion of this section is held invalid or unenforceable under any "
+"particular circumstance, the balance of the section is intended to apply, "
+"and the section as a whole is intended to apply in other circumstances."
+msgstr ""
+
+#: C/lgpl.xml:643(para)
+msgid ""
+"It is not the purpose of this section to induce you to infringe any patents "
+"or other property right claims or to contest validity of any such claims; "
+"this section has the sole purpose of protecting the integrity of the free "
+"software distribution system which is implemented by public license "
+"practices. Many people have made generous contributions to the wide range of "
+"software distributed through that system in reliance on consistent "
+"application of that system; it is up to the author/donor to decide if he or "
+"she is willing to distribute software through any other system and a "
+"licensee cannot impose that choice."
+msgstr ""
+
+#: C/lgpl.xml:656(para)
+msgid ""
+"This section is intended to make thoroughly clear what is believed to be a "
+"consequence of the rest of this License."
+msgstr ""
+
+#: C/lgpl.xml:663(title)
+msgid "Section 12"
+msgstr "第 12 节"
+
+#: C/lgpl.xml:665(para)
+msgid ""
+"If the distribution and/or use of the Library is restricted in certain "
+"countries either by patents or by copyrighted interfaces, the original "
+"copyright holder who places the Library under this License may add an "
+"explicit geographical distribution limitation excluding those countries, so "
+"that distribution is permitted only in or among countries not thus excluded. "
+"In such case, this License incorporates the limitation as if written in the "
+"body of this License."
+msgstr ""
+
+#: C/lgpl.xml:677(title)
+msgid "Section 13"
+msgstr "第 13 节"
+
+#: C/lgpl.xml:679(para)
+msgid ""
+"The Free Software Foundation may publish revised and/or new versions of the "
+"Lesser General Public License from time to time. Such new versions will be "
+"similar in spirit to the present version, but may differ in detail to "
+"address new problems or concerns."
+msgstr ""
+
+#: C/lgpl.xml:686(para)
+msgid ""
+"Each version is given a distinguishing version number. If the Library "
+"specifies a version number of this License which applies to it and "
+"<quote>any later version</quote>, you have the option of following the terms "
+"and conditions either of that version or of any later version published by "
+"the Free Software Foundation. If the Library does not specify a license "
+"version number, you may choose any version ever published by the Free "
+"Software Foundation."
+msgstr ""
+
+#: C/lgpl.xml:698(title)
+msgid "Section 14"
+msgstr "第 14 节"
+
+#: C/lgpl.xml:700(para)
+msgid ""
+"If you wish to incorporate parts of the Library into other free programs "
+"whose distribution conditions are incompatible with these, write to the "
+"author to ask for permission. For software which is copyrighted by the Free "
+"Software Foundation, write to the Free Software Foundation; we sometimes "
+"make exceptions for this. Our decision will be guided by the two goals of "
+"preserving the free status of all derivatives of our free software and of "
+"promoting the sharing and reuse of software generally."
+msgstr ""
+
+#: C/lgpl.xml:713(title)
+msgid "NO WARRANTY"
+msgstr "没有担保"
+
+#: C/lgpl.xml:714(subtitle)
+msgid "Section 15"
+msgstr "第 15 节"
+
+#: C/lgpl.xml:716(para)
+msgid ""
+"BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE "
+"LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE "
+"STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE "
+"LIBRARY <quote>AS IS</quote> WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED "
+"OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF "
+"MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO "
+"THE QUALITY AND PERFORMANCE OF THE LIBRARY IS WITH YOU. SHOULD THE LIBRARY "
+"PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR "
+"CORRECTION."
+msgstr ""
+
+#: C/lgpl.xml:730(title)
+msgid "Section 16"
+msgstr "第 16 节"
+
+#: C/lgpl.xml:732(para)
+msgid ""
+"IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL "
+"ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE "
+"THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY "
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE "
+"OR INABILITY TO USE THE LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA "
+"OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD "
+"PARTIES OR A FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), "
+"EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF "
+"SUCH DAMAGES."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/lgpl.xml:0(None)
+msgid "translator-credits"
+msgstr "Yinghua Wang <wantinghard@gmail.com>，2010"

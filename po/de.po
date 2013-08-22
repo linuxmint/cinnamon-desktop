@@ -1,0 +1,254 @@
+# German GNOME Desktop translation.
+# Copyright (C) 1998-2003 Free Software Foundation, Inc.
+#
+# Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+# Matthias Warkus <mawa@iname.com>, 1999-2001.
+# Karl Eichwalder <ke@suse.de>, 2000, 2001.
+# Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+# Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+# Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+# Christian Neumair <chris@gnome-de.org>, 2002, 2003.
+# Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+# Andre Klapper <ak-47@gmx.net>, 2008.
+# Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010.
+# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2010.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
+# Hedda Peters <hpeters@redhat.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-18 06:35+0000\n"
+"PO-Revision-Date: 2012-09-19 10:03+0000\n"
+"Last-Translator: Hedda Peters <hpeters@redhat.com>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Kein Terminal gefunden. xterm wird verwendet, auch wenn es gegebenfalls "
+"nicht einsatzbereit ist"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr ""
+"Es konnten keine Informationen über den Bildschirm gesammelt werden (CRTCs, "
+"Ausgaben, Auflösungen)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "Unbehandelter X Fehler beim Abfragen der Bildschirmgrößen"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "Mögliche Bildschirmgrößen konnten nicht abgefragt werden"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "Die RANDR-Erweiterung ist nicht vorhanden"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "Es konnten keine Informationen über die Ausgabe »%d« erfragt werden"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"Gewählte Position/Größe für CRTC »%d« ist über dem erlaubten Limit:Position="
+"(%d, %d), Größe=(%d, %d), Maximum=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "Konfiguration für CRTC »%d« konnte nicht angewendet werden"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "Informationen über CRTC »%d« konnten nicht erfragt werden"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Laptop"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "Keine der gespeicherten Bildschirmkonfigurationen gleichen der Aktiven"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC »%d« unterstützt die Ausgabe »%s« nicht"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "Ausgabe »%s« unterstützt den Modus »%dx%d@%dHz« nicht"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC »%d« unterstützt Drehung um %s nicht"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"Ausgabe »%s« hat nicht die gleichen Parameter wie eine andere duplizierte "
+"Ausgabe:\n"
+"bestehender Modus = %d, neuer Modus = %d\n"
+"bestehende Koordinaten = (%d, %d), neue Koordinaten = (%d, %d)\n"
+"bestehende Drehung = %s, neue Drehung = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "Auf Ausgabe »%s« kann nicht dupliziert werden"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Teste Modi für CRTC »%d«\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC »%d«: Teste Modus »%dx%d@%dHz« mit Ausgabe bei »%dx%d@%dHz« (Durchlauf "
+"%d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"CRTCs konnten nicht als Ausgaben festgelegt werden:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"Keiner der gewählten Modi ist kompatibel mit den möglichen Modi:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"Gewählte virtuelle Größe passt nicht zur verfügbaren Größe: Erwünschte=(%d, "
+"%d), Minimum=(%d, %d), Maximum=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "Gespiegelte Bildschirme"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a, %e. %b, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a, %e. %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a, %e. %b, %l:%M:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a, %e. %b, %l:%M"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M"
+

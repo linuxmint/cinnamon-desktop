@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-rr-labeler</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
+<link rel="home" href="index.html" title="GNOME Desktop Library Reference Manual">
+<link rel="up" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="prev" href="gnome-desktop3-gnome-rr-config.html" title="gnome-rr-config">
+<link rel="next" href="thumbnail.html" title="Part IV. Thumbnails">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gnome-desktop3-gnome-rr-config.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="randr.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Desktop Library Reference Manual</th>
+<td><a accesskey="n" href="thumbnail.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gnome-desktop3-gnome-rr-labeler.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gnome-desktop3-gnome-rr-labeler.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#gnome-desktop3-gnome-rr-labeler.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#gnome-desktop3-gnome-rr-labeler.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="gnome-desktop3-gnome-rr-labeler"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-desktop3-gnome-rr-labeler.top_of_page"></a>gnome-rr-labeler</span></h2>
+<p>gnome-rr-labeler</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="gnome-desktop3-gnome-rr-labeler.synopsis"></a><h2>Synopsis</h2>
+<a name="GnomeRRLabeler"></a><pre class="synopsis"><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="returnvalue">GnomeRRLabeler</span></a> *    <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-new" title="gnome_rr_labeler_new ()">gnome_rr_labeler_new</a>                (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-show" title="gnome_rr_labeler_show ()">gnome_rr_labeler_show</a>               (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a> *labeler</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#gnome-rr-labeler-hide" title="gnome_rr_labeler_hide ()">gnome_rr_labeler_hide</a>               (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a> *labeler</code></em>);
+struct              <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler-struct" title="struct GnomeRRLabeler">GnomeRRLabeler</a>;
+struct              <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabelerClass" title="struct GnomeRRLabelerClass">GnomeRRLabelerClass</a>;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-labeler.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GnomeRRLabeler
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-labeler.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler--config" title='The "config" property'>config</a>"                   <span class="type">GnomeRRConfig</span>*        : Write / Construct Only
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-labeler.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-labeler.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="gnome-rr-labeler-new"></a><h3>gnome_rr_labeler_new ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="returnvalue">GnomeRRLabeler</span></a> *    gnome_rr_labeler_new                (<em class="parameter"><code><span class="type">GnomeRRConfig</span> *config</code></em>);</pre>
+<p>
+Create a GUI element that will display colored labels on each connected monitor.
+This is useful when users are required to identify which monitor is which, e.g. for
+for configuring multiple monitors.
+The labels will be shown by default, use gnome_rr_labeler_hide to hide them.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config</code></em> :</span></p></td>
+<td>Configuration of the screens to label</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>A new <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-labeler-show"></a><h3>gnome_rr_labeler_show ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_labeler_show               (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a> *labeler</code></em>);</pre>
+<p>
+Show the labels.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>labeler</code></em> :</span></p></td>
+<td>A <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-rr-labeler-hide"></a><h3>gnome_rr_labeler_hide ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_labeler_hide               (<em class="parameter"><code><a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a> *labeler</code></em>);</pre>
+<p>
+Hide ouput labels.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>labeler</code></em> :</span></p></td>
+<td>A <a class="link" href="gnome-desktop3-gnome-rr-labeler.html#GnomeRRLabeler"><span class="type">GnomeRRLabeler</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeRRLabeler-struct"></a><h3>struct GnomeRRLabeler</h3>
+<pre class="programlisting">struct GnomeRRLabeler;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeRRLabelerClass"></a><h3>struct GnomeRRLabelerClass</h3>
+<pre class="programlisting">struct GnomeRRLabelerClass {
+	GObjectClass parent_class;
+};
+</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-desktop3-gnome-rr-labeler.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GnomeRRLabeler--config"></a><h3>The <code class="literal">"config"</code> property</h3>
+<pre class="programlisting">  "config"                   <span class="type">GnomeRRConfig</span>*        : Write / Construct Only</pre>
+<p>RandR configuration to label.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

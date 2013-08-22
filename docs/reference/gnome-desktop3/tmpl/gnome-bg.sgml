@@ -1,0 +1,275 @@
+<!-- ##### SECTION Title ##### -->
+gnome-bg
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION gnome_bg_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_load_from_preferences ##### -->
+<para>
+
+</para>
+
+@bg: 
+@settings: 
+
+
+<!-- ##### FUNCTION gnome_bg_save_to_preferences ##### -->
+<para>
+
+</para>
+
+@bg: 
+@settings: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_filename ##### -->
+<para>
+
+</para>
+
+@bg: 
+@filename: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_placement ##### -->
+<para>
+
+</para>
+
+@bg: 
+@placement: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_color ##### -->
+<para>
+
+</para>
+
+@bg: 
+@type: 
+@primary: 
+@secondary: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_draw_background ##### -->
+<para>
+
+</para>
+
+@bg: 
+@draw_background: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_placement ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_draw_background ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_color ##### -->
+<para>
+
+</para>
+
+@bg: 
+@type: 
+@primary: 
+@secondary: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_filename ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_draw ##### -->
+<para>
+
+</para>
+
+@bg: 
+@dest: 
+@screen: 
+@is_root: 
+
+
+<!-- ##### FUNCTION gnome_bg_create_surface ##### -->
+<para>
+
+</para>
+
+@bg: 
+@window: 
+@width: 
+@height: 
+@root: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_image_size ##### -->
+<para>
+
+</para>
+
+@bg: 
+@factory: 
+@best_width: 
+@best_height: 
+@width: 
+@height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_create_thumbnail ##### -->
+<para>
+
+</para>
+
+@bg: 
+@factory: 
+@screen: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_is_dark ##### -->
+<para>
+
+</para>
+
+@bg: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_has_multiple_sizes ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_changes_with_time ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_create_frame_thumbnail ##### -->
+<para>
+
+</para>
+
+@bg: 
+@factory: 
+@screen: 
+@dest_width: 
+@dest_height: 
+@frame_num: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_surface_as_root ##### -->
+<para>
+
+</para>
+
+@screen: 
+@surface: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_surface_as_root_with_crossfade ##### -->
+<para>
+
+</para>
+
+@screen: 
+@surface: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_surface_from_root ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### STRUCT GnomeBG ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL GnomeBG::changed ##### -->
+<para>
+
+</para>
+
+@bg: the object which received the signal.
+
+<!-- ##### SIGNAL GnomeBG::transitioned ##### -->
+<para>
+
+</para>
+
+@bg: the object which received the signal.
+
+<!-- ##### STRUCT GnomeBGClass ##### -->
+<para>
+
+</para>
+
+

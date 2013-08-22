@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="hu">
+   <articleinfo>
+    <title>GNU Free Documentation License</title>
+      <releaseinfo>2000. március, 1.1-es változat</releaseinfo>
+      
+      <copyright><year>2000</year><holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>GNOME Dokumentációs projekt</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>1.1</revnumber> <date>2000-03</date></revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. A jelen licencdokumentumot bárki szabadon lemásolhatja és a pontos másolatait terjesztheti, de a módosítása tilos.</para>
+      </legalnotice>
+
+      <abstract role="description"><para>Jelen Licenc célja egy tetszőleges kézikönyv, tankönyv, vagy más, ehhez hasonló felhasználható és hasznos dokumentum a szó szoros értelmében <quote>szabaddá</quote> tétele: annak érdekében, hogy mindenkinek biztosítsa a szöveg sokszorosításának és terjesztésének teljes szabadságát, módosításokkal, vagy anélkül, akár kereskedelmi, akár nem kereskedelmi területen. Másfelől, e Licenc megőrzi a szerző vagy kiadó munkájának elismeréséhez fűződő jogát, s egyúttal mentesíti őt a mások által beiktatott módosítások következményei alól.</para></abstract>
+    
+    <othercredit class="translator">
+      <personname>
+        <firstname>Kalman Kemenczy</firstname>
+      </personname>
+      <email>kkemenczy at novell dot com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Kalman Kemenczy</holder>
+    </copyright>
+  </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>ELŐSZÓ</title>
+    <para>Jelen Licenc célja egy tetszőleges kézikönyv, tankönyv, vagy más, ehhez hasonló felhasználható és hasznos dokumentum a szó szoros értelmében <quote>szabaddá</quote> tétele: annak érdekében, hogy mindenkinek biztosítsa a szöveg sokszorosításának és terjesztésének teljes szabadságát, módosításokkal, vagy anélkül, akár kereskedelmi, akár nem kereskedelmi területen. Másfelől, e Licenc megőrzi a szerző vagy kiadó munkájának elismeréséhez fűződő jogát, s egyúttal mentesíti őt a mások által beiktatott módosítások következményei alól.</para>
+    
+    <para>A jelen Licenc egyfajta <quote>copyleft</quote> licencnek tekintendő: ez azt jelenti, hogy a dokumentumból származtatott munkák maguk is szabad minősítést kell, hogy kapjanak. Ez a dokumentum egyben a GNU General Public License kiegészítőjeként is szolgál, mely egy, a szabad szoftverekre vonatkozó etalon licenc.</para>
+    
+    <para>A jelen Licenc a szabad szoftverek kézikönyveihez való használatra készült, hiszen a szabad szoftver egyben szabad dokumentációt is igényel: egy szabad programot olyan kézikönyvvel kell ellátni, amely ugyanazon szabadságokat biztosítja, mint maga a program. Mindazonáltal a jelen Licenc nem korlátozódik pusztán kézikönyvekre; feltételei tetszőleges tárgykörű írott dokumentumra alkalmazhatók, függetlenül attól, hogy az könyvformában valaha megjelent-e. Mindamellett e Licencet főként olyan munkákhoz ajánljuk, melyek elsődleges célja az útmutatás vagy a tájékoztatás.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>ALKALMAZHATÓSÁG ÉS DEFINÍCIÓK</title>
+    <para id="fdl-document">A jelen Licenc minden olyan kézikönyvre, vagy más jellegű, bármilyen adathordozón található munkára vonatkozik, amelyen megtalálható a szerzői jog tulajdonosa által feltüntetett figyelmeztetés, miszerint a dokumentum terjesztése jelen Licenc feltételei alapján lehetséges. Az alábbiakban használt <quote>Dokumentum</quote> kifejezés bármely ilyen jellegű kézikönyvre, vagy egyéb munkára vonatkozhat. A nyilvánosság bármely tagja potenciális licenctulajdonosnak tekinthető, és a továbbiakban az <quote>Ön</quote> megszólítást használjuk rá.</para>
+    
+    <para id="fdl-modified">A Dokumentum <quote>Módosított Változata</quote> bármely olyan munkára vonatkozik, amely tartalmazza a Dokumentumot, vagy annak elemeit akár szó szerint, akár módosításokkal, és/vagy más nyelvre lefordítva.</para>
+	
+    <para id="fdl-secondary">A <quote>Másodlagos szakasz</quote> egy egyedi névvel bíró függelék, esetleg a <link linkend="fdl-document">Dokumentum</link> egy bevezető szakasza, amely kizárólag a kiadóknak, vagy az alkotóknak a Dokumentum átfogó tárgyköréhez (vagy kapcsolódó témákhoz) fűződő viszonyáról szól, és nem tartalmaz semmi olyat, ami közvetlenül ezen átfogó témakör alá eshet. (Vagyis ha a Dokumentum részben egy matematika-tankönyv, akkor a Másodlagos szakasz nem tartalmazhat matematikai tárgyú magyarázatokat). A fenti kapcsolat tárgya lehet a témakörrel, vagy a kapcsolódó témákkal való történelmi viszony, illetve az azokra vonatkozó jogi, kereskedelmi, filozófiai, etikai, vagy politikai felfogás.</para>
+
+    <para id="fdl-invariant">A <quote>Nem Változtatható szakaszok</quote> olyan <link linkend="fdl-secondary">Másodlagos szakaszok</link>, amelyek címe Nem Változtatható szakaszként van megjelölve abban a közleményben, amely szerint a <link linkend="fdl-document">Dokumentum</link> a jelen Licenc hatálya alatt lett kiadva.</para>
+    
+    <para id="fdl-cover-texts">A <quote>Borítószövegek</quote> olyan rövid szövegrészek, melyek Címlapszövegként, illetve Hátlapszövegként kerülnek felsorolásra a közleményben, amely szerint a <link linkend="fdl-document">Dokumentum</link> a jelen Licenc hatálya alatt lett kiadva.</para>
+	
+    <para id="fdl-transparent">A <link linkend="fdl-document">Dokumentum</link> <quote>Átlátszó</quote> példánya olyan géppel olvasható változatot jelent, amely a nyilvánosság számára hozzáférhető formátumban kerül terjesztésre, továbbá amelynek tartalma alkalmas a szokványos szövegszerkesztő-programokkal, illetve (pixelekből álló képek esetén) szokványos képmegjelenítő-programokkal, vagy (rajzok esetén) általánosan hozzáférhető rajzprogramok segítségével azonnali és közvetlen változtatásokra; továbbá olyan formátumban mely alkalmas a szövegszerkesztőkbe való bevitelre, vagy a szövegszerkesztők által kezelt formátumokra való automatikus átalakításra. Egy olyan, egyébként Átlátszó formátumban készült példány, melynek a jelölőnyelve vagy ennek hiánya úgy lett kialakítva, hogy megakadályozza, vagy eltántorítsa az olvasókat minden további módosítástól, nem tekinthető Átlátszónak. A nem <quote>Átlátszó</quote> példányok az <quote>Átlátszatlan</quote> megnevezést kapják.</para>
+    
+    <para>Az Átlátszóság kritériumainak megfelelő formátumok között megtalálható például a jelölőnyelvet nem használó egyszerű ASCII, a Texinfo beviteli formátum, a LaTeX beviteli formátum, az SGML vagy az XML egy általánosan hozzáférhető DTD használatával, és a szabványnak megfelelő, emberi módosításra tervezett egyszerű HTML, PostScript vagy PDF. Átlátszó képformátumokra példa a PNG, XCF és a JPG. Az Átlátszatlan formátumok közé sorolhatóak a a szellemi tulajdont képező formátumok, amelyeket csak szellemi tulajdont képező szövegszerkesztőkkel lehet elolvasni, az olyan SGML vagy XML, amelyhez a szükséges DTD és/vagy egyéb feldolgozó eszközök nem általánosan hozzáférhetők, és az olyan gépileg generált HTML, PostScript vagy PDF formátum, amely kizárólag egyes szövegszerkesztők kimeneti formátumaként áll elő.</para>
+    
+    <para id="fdl-title-page">Egy nyomtatott könyv esetében a <quote>Címlap</quote> magát a címlapot, illetve bármely azt kiegészítő további oldalt jelöli, amely a jelen Licencben előírt címlaptartalom közzétételéhez szükséges. Az olyan formátumú munkáknál, amelyek nem rendelkeznek effajta címlappal, a <quote>Címlap</quote> a munka címének legjobban kiemelt változatához legközelebb eső, ám a szöveg törzsét megelőző szövegrészeket jelöli.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>SZÓ SZERINTI SOKSZOROSÍTÁS</title>
+    <para>Önnek lehetősége van a <link linkend="fdl-document">Dokumentum</link> kereskedelmi, vagy nem kereskedelmi jellegű sokszorosítására és terjesztésére a felhasznált adathordozó típusától függetlenül, feltéve, hogy a jelen Licenc, a szerzői jogi figyelmeztetés, továbbá a Dokumentumot a jelen Licenc hatálya alá rendelő közlemény minden példányban egyaránt megjelenik, és hogy ezeken kívül semmilyen feltételt nem szab meg a szöveghez. Nem alkalmazhat olyan technikai eszközöket, amelyekkel megakadályozható vagy szabályozható az Ön által terjesztett példányok elolvasása vagy sokszorosítása. Mindazonáltal elfogadhat ellenszolgáltatást a másolatokért cserébe. Amennyiben az Ön által terjesztett példányok száma meghalad egy bizonyos mennyiséget, úgy a <link linkend="fdl-section3">3. szakasz</link> feltételeinek is eleget kell tennie.</para>
+    
+    <para>A fenti feltételeket betartva kölcsönözhet is példányokat, de akár nyilvánosan is közzéteheti a szöveget.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>SOKSZOROSÍTÁS NAGYOBB MENNYISÉGBEN</title>
+    <para>Amennyiben 100-nál több nyomtatott példányt (vagy olyan adathordozón található példányokat, amelyeknek jellemzően van nyomtatott címlapjuk) tesz közzé a <link linkend="fdl-document">Dokumentumból</link>, és a dokumentum Licence feltételül szabja a Borítószövegek meglétét, úgy minden egyes példányt köteles ellátni olyan borítólapokkal, amelyeken a következő <link linkend="fdl-cover-texts">Borítószövegek</link> tisztán és olvashatóan fel vannak tüntetve: Címlapszövegek a címlapon, illetve Hátlapszövegek a hátlapon. Mindkét borítólapra egyértelműen és olvashatóan rá kell vezetnie a kiadó, vagyis jelen esetben az Ön nevét. A címlapon a Dokumentum teljes címének szerepelnie kell, és a cím minden szavának egyformán kiemeltnek és láthatónak kell lennie. Ezen felül, belátása szerint, további részleteket is hozzáadhat a borítólapokhoz. Amennyiben az esetleges módosítások kizárólag a borítólapokat érintik, és feltéve, hogy a <link linkend="fdl-document">Dokumentum</link> címe változatlan marad, továbbá a borítólapok megfelelnek minden egyéb követelménynek, úgy a sokszorosítás ettől eltekintve szó szerinti sokszorosításnak minősül.</para>
+    
+    <para>Abban az esetben, ha a borítólapok bármelyikén megkövetelt szövegrészek túl hosszúnak bizonyulnának az olvasható közzétételhez, úgy csak az elsőként felsoroltakat kell feltüntetnie (amennyi józan belátás szerint elfér) a tényleges borítón, a továbbiak pedig átkerülhetnek a következő oldalakra.</para>
+    
+    <para>Amennyiben 100-nál több <link linkend="fdl-transparent">Átlátszatlan</link> példányt tesz közzé, vagy terjeszt a <link linkend="fdl-document">Dokumentumból</link>, úgy köteles vagy egy géppel olvasható <link linkend="fdl-transparent">Átlátszó</link> példányt mellékelni minden egyes Átlátszatlan példányhoz, vagy leírni minden egyes Átlátszatlan példányban egy, a módosítatlan Átlátszó példányt tartalmazó olyan számítógép-hálózat elérhetőségét, amely elérhető az általános hálózati felhasználók számára, és onnan nyilvános szabványú hálózati protokollok segítségével a Dokumentum hozzáadott anyagok nélküli, teljes változata letölthető. Ha az utóbbi lehetőséget választja, köteles gondoskodni arról, hogy attól a naptól kezdve, amikor az utolsó Átlátszatlan példány is terjesztésre került (akár közvetlenül Ön által, akár kiskereskedelmi forgalomban), a fenti helyen közzétett Átlátszó példány még legalább egy évig hozzáférhető legyen a felhasználók számára.</para>
+    
+    <para>Megkérjük, ámde nem kötelezzük Önt arra, hogy minden esetben, amikor nagyobb példányszámú terjesztésbe kezd, már jóval ezt megelőzően lépjen kapcsolatba a <link linkend="fdl-document">Dokumentum</link> szerzőivel, annak érdekében, hogy megkaphassa tőlük a Dokumentum esetleges újabb változatát.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>MÓDOSÍTÁSOK</title>
+    <para>Önnek lehetősége van a <link linkend="fdl-document">Dokumentum</link> <link linkend="fdl-modified">Módosított</link> Változatának sokszorosítására és terjesztésére a <link linkend="fdl-section2">2.</link> és <link linkend="fdl-section3">3.</link> szakaszok fenti rendelkezései alapján, feltéve, hogy a Módosított Változatot kizárólag jelen Licenc feltételeivel összhangban teszi közzé, ahol a Módosított Változat a Dokumentum szerepét tölti be, ezáltal lehetőséget biztosítva annak terjesztésére és módosítására bárkinek, aki csak hozzájut egy példányához. Mindezen felül, a Módosított Változat az alábbi követelményeknek is meg kell, hogy feleljen:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>A <link linkend="fdl-title-page">Címlapon</link> (és ha van, a borítókon) tüntessen fel egy a <link linkend="fdl-document">Dokumentumétól</link>, illetve bármely korábbi változatétól eltérő címet (amelyeknek, ha vannak, a Dokumentum Előzmények szakaszában kell szerepelniük). Egy korábbi változat címét csak akkor használhatja, ha annak szerzője engedélyezte azt.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>A <link linkend="fdl-title-page">Címlapon</link> szerzőkként sorolja fel a <link linkend="fdl-modified">Módosított Változatban</link> elvégzett változtatásokért felelős természetes vagy jogi személyeket, továbbá a <link linkend="fdl-document">Dokumentum</link> fő szerzői közül legkevesebb ötöt (vagy mindet, ha ötnél kevesebben vannak) kivéve, ha ezen feltétel alól ők Önt felmentik.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>A <link linkend="fdl-title-page">Címlapon</link> a <link linkend="fdl-modified">Módosított Változat</link> közzétételéért felelős személyt tüntesse fel kiadóként.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>A <link linkend="fdl-document">Dokumentum</link> összes szerzői jogi figyelmeztetését hagyja érintetlenül.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Saját módosításaira vonatkozóan is tegyen közzé egy szerzői jogi megjegyzést, a többi ilyen jellegű figyelmeztetés mellett.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Rögtön a szerzői jogi figyelmeztetéseket követően tüntessen fel egy közleményt, az alábbi Függelék mintájára, amelyben engedélyezi a <link linkend="fdl-modified">Módosított Változat</link> felhasználását a jelen Licenc feltételeinek megfelelően.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>A fenti közleményben hagyja érintetlenül a <link linkend="fdl-invariant">Nem Változtatható</link> szakaszok és a szükséges <link linkend="fdl-cover-texts">Borítószövegek</link> a jelen <link linkend="fdl-document">Dokumentum</link> licencében előírt teljes listáját.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Mellékelje a jelen Licenc egy eredeti példányát.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Az <quote>Előzmények</quote> elnevezésű szakaszt, illetve annak címét szintén hagyja érintetlenül, emellett adjon hozzá egy új elemet, amely minimálisan tartalmazza a <link linkend="fdl-modified">Módosított Változat</link> címét, kiadási évét, továbbá az új szerzők, illetve a kiadó nevét, a <link linkend="fdl-title-page">Címlapon</link> láthatókhoz hasonlóan. Amennyiben a <link linkend="fdl-document">Dokumentum</link> nem tartalmaz semmiféle <quote>Előzmények</quote> elnevezésű szakaszt, úgy hozzon létre egyet, amely tartalmazza a Dokumentum címét, kiadási évét, továbbá a szerzők, illetve a kiadó nevét, a Címlapon láthatókhoz hasonlóan; majd ezt követően adjon hozzá egy új, a Módosított Változatra vonatkozó elemet, a fentiekkel összhangban.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Ne tegyen változtatásokat a <link linkend="fdl-document">Dokumentumban</link> megadott <link linkend="fdl-transparent">Átlátszó példány</link> nyilvános hálózati elérhetőségét (ha van ilyen) illetően, vagy hasonlóképp, a Dokumentum alapjául szolgáló korábbi változatok hálózati helyére vonatkozóan. Ezek az <quote>Előzmények</quote> szakaszban is szerepelhetnek. Csak abban az esetben hagyhatja el egyes korábbi változatok hálózati elérhetőségét, ha azok legkevesebb négy évvel a Dokumentum előtt készültek, vagy ha maga az alkotó engedélyezi azt.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bármely <quote>Köszönetnyilvánítás</quote>, vagy <quote>Ajánlások</quote>elnevezésű szakasz címét hagyja érintetlenül, továbbá gondoskodjon arról, hogy azok tartalma és hangvétele az egyes hozzájárulókat, és/vagy az ajánlásokat illetően változatlan maradjon.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>A <link linkend="fdl-document">Dokumentum</link> összes <link linkend="fdl-invariant">Nem Változtatható</link> szakaszát hagyja érintetlenül, úgy címüket, mint tartalmukat illetően. A szakaszok számozása, vagy bármely azzal egyenértékű jelölés nem tartozik a szakaszcímek közé.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Töröljön minden <quote>Hozzájárulás</quote> elnevezésű szakaszt. Effajta szakaszok nem képezhetik részét a <link linkend="fdl-modified">Módosított Változatnak</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Ne nevezzen át semmilyen létező szakaszt <quote>Hozzájárulás</quote> elnevezésűre, vagy olyasmire, amely címében a <link linkend="fdl-invariant">Nem Változtatható</link> szakaszokkal ütközhet.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Ha a <link linkend="fdl-modified">Módosított Változat</link> új bevezető szakaszokat tartalmaz, vagy olyan függelékeket, melyek <link linkend="fdl-secondary">Másodlagos szakasznak</link> minősülnek, ám nem tartalmaznak a Dokumentumból származó anyagot, abban az esetben, belátása szerint, e szakaszok némelyikét, vagy akár az összeset besorolhatja nem változtathatóként. Ehhez nem kell mást tennie, mint felsorolni a szóban forgó címeket a <link linkend="fdl-invariant">Módosított Változat</link> licencének Nem Változtatható szakaszok listájában. E címeknek határozottan el kell különülnie minden egyéb szakaszcímtől.</para>
+    
+    <para><quote>Hozzájárulás</quote> elnevezésű szakaszt csak akkor adhat a Dokumentumhoz, ha az kizárólag a <link linkend="fdl-modified">Módosított Változatra</link> utaló megjegyzéseket tartalmaz – például mások recenzióira vonatkozóan, vagy hogy egy szervezet a szöveget egy szabvány mérvadó definíciójaként ismerte el.</para>
+    
+    <para><link linkend="fdl-cover-texts">Címlapszöveg</link> gyanánt egy legfeljebb öt szóból álló szövegrészt adhat meg, a <link linkend="fdl-cover-texts">Hátlapszöveg</link> esetén pedig 25 szót fűzhet a <link linkend="fdl-modified">Módosított Változat</link> <link linkend="fdl-cover-texts">Borítószövegeinek</link> végéhez. Bármely természetes vagy jogi személy csak és kizárólag egy Címlapszöveg és egy Hátlapszöveg részt adhat (akár közvetítőn keresztül) a Dokumentumhoz. Ha a <link linkend="fdl-document">Dokumentum</link> már rendelkezik Borítószöveggel ehhez a változathoz, mert korábban Ön adta hozzá, vagy az a szervezet, amelynek nevében Ön fellép, akkor nem adhat hozzá másik Borítószöveget; a régit mindazonáltal lecserélheti, abban az esetben, ha az azt hozzáadó korábbi kiadó egyértelműen engedélyezi.</para>
+    
+    <para>A közös <link linkend="fdl-document">Dokumentum</link> szerzői és kiadói ezzel a Licenccel nem járulnak hozzá nevük felhasználására, a <link linkend="fdl-modified">Módosított Változat</link> népszerűsítésére, és nem támogatják azt.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>KOMBINÁLT DOKUMENTUMOK</title>
+    <para>Önnek lehetősége van a <link linkend="fdl-document">Dokumentum</link> egyéb, e Licenc hatálya alatt kiadott dokumentumokkal való kombinálására a <link linkend="fdl-section4">4. szakasz</link> módosított változatokra vonatkozó rendelkezései alapján, feltéve, hogy a kombináció módosítás nélkül tartalmazza az eredeti dokumentumok összes <link linkend="fdl-invariant">Nem Változtatható</link> szakaszát, és hogy azok mind Nem Változtatható szakaszként kerülnek felsorolásra a kombinált munka licencében, és tartalmazzák a hozzájuk tartozó Garanciák Kizárásait is.</para>
+    
+    <para>A kombinált munkának a jelen Licenc mindössze egy példányát kell tartalmaznia, az egymással átfedésben lévő <link linkend="fdl-invariant">Nem Változtatható</link> szakaszok pedig kiválthatók egy összegzett példánnyal. Amennyiben több Nem Változtatható szakasz szerepelne ugyanazon címmel, ám eltérő tartalommal, úgy alakítsa át minden egyes szakasz címét olyan módon, hogy mögé írja zárójelben az eredeti szerző és kiadó nevét (ha ismeri) vagy egy egyedi sorszámot. Ha szükséges, a Nem Változtatható szakaszok címeivel is végezze el a fenti módosításokat a kombinált munka licencében.</para>
+    
+    <para>A kombinált munkában az eredeti dokumentumok összes <quote>Előzmények</quote> elnevezésű szakaszát össze kell olvasztania, miáltal egy összefüggő <quote>Előzmények</quote> elnevezésű szakasz jön létre; hasonlóképp kell eljárnia a <quote>Köszönetnyilvánítás</quote>, illetve az <quote>Ajánlások</quote> elnevezésű szakaszok tekintetében. Ugyanakkor minden <quote>Hozzájárulás</quote>elnevezésű szakaszt törölnie kell.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>DOKUMENTUMGYŰJTEMÉNYEK</title>
+    <para>Önnek lehetősége van a <link linkend="fdl-document">Dokumentumból</link>, illetve bármely egyéb, a jelen Licenc hatálya alatt kiadott dokumentumból gyűjteményt létrehozni, és az egyes dokumentumokban található licenceket egyetlen példánnyal kiváltani, feltéve, hogy a gyűjteményben szereplő összes dokumentum esetén minden más tekintetben követi a jelen Licenc feltételeit azok szó szerinti sokszorosítására vonatkozóan.</para>
+    
+    <para>Tetszése szerint ki is emelhet egy meghatározott dokumentumot a gyűjteményből, továbbá terjesztheti azt jelen Licenc feltételei alapján, feltéve, hogy a szóban forgó dokumentumhoz mellékeli a jelen Licenc egy példányát, és minden egyéb tekintetben betartja jelen Licenc előírásait a dokumentum szó szerinti sokszorosítására vonatkozóan.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>ÖSSZEFŰZÉS FÜGGETLEN MUNKÁKKAL</title>
+    <para>A <link linkend="fdl-document">Dokumentum</link> és annak származékainak különálló, vagy független dokumentumokkal, illetve munkákkal való összefűzése egy közös tárolási, vagy terjesztési egységen <quote>gyűjteménynek</quote> nevezendő, amennyiben az összefűzés eredményeképpen érvényes szerzői jogi feltételek nem korlátozzák nagyobb mértékben az összefűzés felhasználóinak jogait, mint amennyire azt az egyes összetevők teszik. Amikor a Dokumentum része egy gyűjteménynek, akkor a jelen Licenc nem érvényes a gyűjtemény azon részeire, amelyek nem a Dokumentumból származtatott munkák. Amennyiben a <link linkend="fdl-section3">3. szakasz</link> <link linkend="fdl-cover-texts">Borítószövegekre</link> vonatkozó rendelkezései alkalmazhatók a Dokumentum e példányaira, és a Dokumentum a teljes összegzésnek kevesebb, mint felét teszi ki, úgy a Dokumentum Borítószövegeit olyan módon is el lehet helyezni a borítókon, hogy azok csak magát a Dokumentumot fogják közre, vagy a borítóknak megfelelő elektronikus formában, amennyiben a Dokumentum elektronikus formában található. Minden más esetben a teljes összegzés borítólapjain kell feltüntetni a fenti szövegeket.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>FORDÍTÁS</title>
+    <para>A fordítás egyfajta módosításnak tekinthető, így a <link linkend="fdl-document">Dokumentum</link> lefordított példányai a <link linkend="fdl-section4">4. szakasz</link> rendelkezései alapján terjeszthetők. A <link linkend="fdl-invariant">Nem Változtatható</link> szakaszok lefordításához külön engedélyt kell kérni a szerzői jogtulajdonostól, mindazonáltal közzétehetők a lefordított változatok is úgy, ha az eredeti Nem Változtatható szakaszokat is belefoglalja a munkába. E Licenc lefordítására, valamint minden, a Dokumentumhoz tartozó Licencmellékletre, illetve az esetleges Garanciák Kizárásaira ugyanezek a feltételek érvényesek, vagyis a lefordított változatok csak akkor jelenhetnek meg, ha mellette ott vannak az eredeti, angol nyelvű Licenc, a mellékletek és kizárások szövegei is. Amennyiben eltérés mutatkozna az eredeti változatok, illetve a fordítás között, úgy a Licenc, a mellékletek és kizárások angol nyelvű eredetije tekintendő mérvadónak.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>MEGSZŰNÉS</title>
+    <para>A jelen Licencben egyértelműen kijelölt kereteken kívül tilos a <link linkend="fdl-document">Dokumentum</link> bárminemű sokszorosítása, módosítása, továbblicencelése, vagy terjesztése. Minden ezzel szembeni sokszorosítási, módosítási, továbblicencelési, vagy terjesztési kísérlet a jelen Licencben meghatározott jogok automatikus megszűnését vonja maga után. Ugyanakkor azok a felek, akik Önön keresztül jutottak másolathoz vagy jogosultságokhoz, nem veszítik el azokat, amíg maradéktalanul betartják e Licenc előírásait.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>JELEN LICENC JÖVŐBENI JAVÍTÁSAI</title>
+    <para>Megtörténhet, hogy a <ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink> időről időre felülvizsgált és/vagy új verziókat bocsát ki a GNU Free Documentation License-ből. E verziók szellemisége hasonló lesz jelen változatéhoz, ám részleteikben eltérhetnek, új problémák, új aggályok felmerülése okán. Vö.: <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>A Licenc minden változata egyedi verziószámmal van ellátva. Ha a <link linkend="fdl-document">Dokumentum</link> jelen Licenc egy konkrét, számozott verziójára <quote>vagy bármely újabb verzióra</quote> hivatkozik, úgy önnek a szóban forgó változat, vagy bármely újabb a Free Software Foundation által (nem vázlatként) kiadott verzió feltételeinek követésére lehetősége van. Ha a Dokumentum nem ad meg semmilyen verziószámot, úgy bármely, a Free Software Foundation által valaha (nem vázlatként) kiadott változat megfelel.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Függelék</title>
+    <para>Ha a jelen Licencet egy Ön által írt dokumentumban kívánja használni, akkor mellékelje hozzá a Licenc egy példányát, továbbá vezesse rá az alábbi szerzői jogi és licencközleményeket, rögtön a címlapot követően:</para>
+    
+    <blockquote>
+      <para>Copyright (C) ÉV AZ ÖN NEVE.</para>
+      <para>Engedélyt adunk Önnek a jelen dokumentum sokszorosítására, terjesztésére és/vagy módosítására a Free Software Foundation által kiadott GNU FDL 1.1-es, vagy bármely azt követő verziójának feltételei alapján. Nincs <link linkend="fdl-invariant">Nem Változtatható</link> szakasz, nincs <link linkend="fdl-cover-texts">Címlapszöveg</link>, nincs <link linkend="fdl-cover-texts">Hátlapszöveg</link>.  A jelen licenc egy példányát a <quote>GNU Free Documentation License</quote> elnevezésű szakasz alatt találja.</para>
+    </blockquote>
+      
+    <para>Amennyiben nincsenek <link linkend="fdl-invariant">Nem változtatható szakaszok</link>, akkor ahelyett a rész helyett, hogy melyek nem változtathatóak, írja azt, hogy <quote>Nem tartalmaz Nem változtatható szakaszokat</quote>. Amennyiben nincsenek <link linkend="fdl-cover-texts">Címlapszövegek</link>, akkor <quote>Címlapszöveg felsorolása</quote> helyett, írja azt, hogy <quote>Címlapszöveget nem tartalmaz</quote>; hasonlóan járjon el a <link linkend="fdl-cover-texts">Hátlapszöveg</link> esetében.</para>
+    
+    <para>Amennyiben a dokumentum nem egyértelmű programkódpéldákat is tartalmaz, úgy azt javasoljuk, hogy e példákat egy választása szerinti szabad szoftver licenc alatt közölje – mint például a <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html"> GNU General Public License</ulink> –, hogy lehetővé tegye a kódok szabad szoftverekben való alkalmazását.</para>
+  </sect1>
+</article>

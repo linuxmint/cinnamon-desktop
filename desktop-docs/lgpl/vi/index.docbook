@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="vi">
+    <articleinfo>
+      <title>Giấy phép Công Cộng Phụ GNU</title>
+      <copyright>
+	<year>2000</year>
+	<holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+      <publisher role="maintainer">
+        <publishername>Dự án Tài liệu GNOME</publishername>
+      </publisher>
+      <revhistory>
+        <revision>
+          <revnumber>2.1</revnumber>
+          <date>1999-02</date>
+        </revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.
+	</para>
+	<para>Mọi người đều đuợc quyền sao chép và phân phối nguyên văn tài liệu giấy phép này, nhưng không được phép thay đổi nó.</para>
+      </legalnotice>
+      <releaseinfo>Phiên bản 2.1, tháng 2/1999</releaseinfo>
+    <abstract role="description"><para>Giấy phép sử dụng của hầu hết các phần mềm được thiết kế để bạn không được tự do chia sẻ và thay đổi phần mềm đó. Trái lại, các Giấy phép Công cộng GNU dự định đảm bảo cho bạn được tự do chia sẻ và thay đổi phần mềm một cách tự do, và đảm bảo phần mềm tự do cho mọi người sử dụng.</para></abstract>
+
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Lời mở đầu</title>
+    
+    <para>Giấy phép sử dụng của hầu hết các phần mềm được thiết kế để bạn không được tự do chia sẻ và thay đổi phần mềm đó. Trái lại, các Giấy phép Công cộng GNU dự định đảm bảo cho bạn được tự do chia sẻ và thay đổi phần mềm một cách tự do, và đảm bảo phần mềm tự do cho mọi người sử dụng.</para>
+
+    <para>Khi chúng tôi nói về phần mềm tự do, chúng tôi đề cập đến sự tự do sử dụng, chứ không phải là giá cả. Giấy phép Công cộng GNU của chúng tôi được thiết kế để đảm bảo bạn có quyền tự do phát hành bản sao của phần mềm tự do (và thu tiền dịch vụ này nếu muốn), nhận mã nguồn hoặc có khả năng lấy nó nếu bạn muốn, bạn có thể thay đổi phần mềm hay sử dụng bất kỳ đoạn nào của nó trong chương trình tự do mới; và để giúp bạn biết rõ là bạn có thể làm những điều này.</para>
+
+    <para>Giấy phép này, Giấy phép Công cộng Phụ, áp dụng cho một số gói phần mềm đã chỉ rõ đặc biệt — thường thư viện — của Tổ chức Phần mềm Tự do và các tác giả khác chọn sử dụng nó. Bạn cũng có thể sử dụng nó, nhưng trước tiên đề nghị bạn nghĩ cẩn thận nếu giấy phép này hay Giấy phép Công cộng chuẩn là chiến lược tốt hơn trong trường hợp riêng nào, dựa vào các lời giải thích bên dưới.</para>
+
+    <para>Khi chúng tôi nói về phần mềm tự do, chúng tôi đề cập đến sự tự do sử dụng, chứ không phải là giá cả. Các Giấy phép Công cộng của chúng tôi được thiết kế để đảm bảo bạn có quyền tự do phát hành bản sao của phần mềm tự do (và thu tiền dịch vụ này nếu muốn), nhận mã nguồn hoặc có khả năng lấy nó nếu bạn muốn, bạn có thể thay đổi phần mềm hay sử dụng bất kỳ đoạn nào của nó trong chương trình tự do mới; và để giúp bạn biết rõ là bạn có thể làm những điều này.</para>
+
+    <para>Để bảo vệ quyền lợi của bạn, chúng tôi cần đưa ra những hạn chế để cấm bất cứ ai phủ nhận bạn có những quyền này hay đòi hỏi bạn từ bỏ nó. Những sự hạn chế này được hiểu là một số trách nhiệm nhất thiết của bạn nếu bạn phát hành bản sao của thư viện hoặc sửa đổi nó.</para>
+
+    <para>Chẳng hạn, nếu bạn phát hành bản sao của thư viện như vậy, dù là cho không hay thu tiền, bạn phải trao cho người nhận tất cả những quyền bạn có. Bạn phải chắc chắn là họ cũng nhận được hay có thể lấy mã nguồn. Nếu bạn liên kết mã nguồn khác với thư viện, bạn phải cung cấp các tập tin đối tượng hoàn thành cho người nhận, để họ có thể liên kết lại tập tin như vậy với thư viện rồi biên dịch lại. Và bạn cũng phải cho họ biết những điều kiện này, để họ biết những quyền của họ.</para>
+
+    <para>Chúng tôi bảo vệ quyền của bạn bằng một phương pháp hai bước: (1) chúng tôi bản quyền tác giả của thư viện, và (2) chúng tôi trao cho bạn giấy phép này để bạn có quyền hợp pháp sao chép, phát hành và/hay sửa đổi thư viện.</para>
+
+    <para>Hơn nữa, để bảo vệ mỗi người phát hành, chúng tôi muốn chắc chắn là mọi người hiểu rằng thư viện tự do này không có bảo hành. Nếu thư viện bị sửa đổi bởi người khác và được phân phát tiếp, chúng tôi muốn người nhận biết rằng cái mà họ có đó không phải là bản gốc, vì vậy, bất kỳ lỗi nào do người khác gây ra sẽ không làm mang tiếng đến tác giả gốc.</para>
+
+    <para>Cuối cùng, chương trình tự do nào cũng luôn bị đe dọa bởi bằng sáng chế phần mềm. Chúng tôi muốn chắc chắn là công ty không thể giới hạn được các người dùng chương trình tự do, bằng cách giành được giấy phép hạn chế từ người giữ sáng chế. Vì vậy chúng tôi cứ nhất định giấy phép sáng chế nào được giành cho một phiên bản của thư viện này phải phụ hợp với toàn bộ quyền tự do được ghi rõ trong giấy phép này.</para>
+
+    <para>Phần lớn phần mềm GNU, gồm có một số thư viện, được bao quát bởi Giấy phép Công cộng GNU chuẩn. Giấy phép này, Giấy phép Công cộng Phụ GNU, áp dụng cho một số thư viện đã xác định: nó rất khác với Giấy phép Công cộng GNU chuẩn. Chúng tôi sử dụng giấy phép này cho một số thư viện riêng, để cho phép khả năng liên kết thư viện như vậy vào chương trình khác tự do.</para>
+
+    <para>Khi chương trình được liên kết với thư viện, bất chấp một cách tĩnh hay bằng thư viện dùng chung, sự kết hợp hai điều này nói hợp pháp là một sản phẩm đã kết hợp, sẩn phẩm dẫn xuất thư viện gốc. Giấy phép Công cộng GNU chuẩn thì cho phép khả năng liên kết như vậy chỉ nếu toàn bộ sự kết hợp thoả tiêu chuẩn quyền tự do của nó. Giấy phép Công cộng Phụ GNU cho phép tiêu chuẩn lỏng lẻo hơn để liên kết mã nguồn khác với thư viện.</para>
+
+    <para>Chúng tôi gọi giấy phép này Giấy phép Công cộng <quote>Phụ</quote> vì nó làm ít để bảo vệ quyền tự do của người dùng hơn Giấy phép Công cộng chuẩn. Nó cũng cung cấp cho các nhà phát triển phần mềm tự do ít thế lợi hơn chương trình khác tự do cạnh tranh. Những nhược điểm này là lý do chúng tôi sử dụng Giấy phép Công cộng chuẩn cho rất nhiều thư viện. Tuy nhiên, giấy phép Phụ cung cấp lợi ích trong một số trường hợp đặc biệt.</para>
+
+    <para>Chẳng hạn, rất ít lần có như cầu đặc biệt hỗ trợ cách sử dụng rộng rãi nhất có thể một thư viện nào đó, để nó trở thành một tiêu chuẩn như thế. Để đặt mục đích này, các chương trình khác tự do cũng phải có quyền sử dụng thư viện đó. Một trường hợp xảy ra nhiều lần hơn là thư viện tự do làm cùng một công việc với thư viện khác tự do được sử dụng rộng rãi. Trong trường hợp này, không có lợi ích nhiều khi giới hạn thư viện tự do trong chỉ phần mềm tự do, vì thế chúng tôi sử dụng Giấy phép Công cộng Phụ.</para>
+
+    <para>Trong trường hợp khác, quyền sử dụng một thư viện nào đó trong chương trình khác tự do cũng cho rất nhiều người có khả năng sử dụng một tập phần mềm tự do rất lớn. Chẳng hạn, quyền sử dụng Thư viện C của GNU trong các chương trình khác tự do thì cho rất nhiều người thêm có khả năng sử dụng toàn bộ hệ điều hành GNU, cũng như biến thế của nó, hệ điều hành GNU/Linux.</para>
+
+    <para>Mặc dù Giấy phép Công cộng Phụ làm ít hơn để bảo vệ quyền tự do của người dùng, nó có phải đảm bảo rằng người dùng chương trình được liên kết với Thư viện có quyền tự do và khả năng chạy chương trình đó, bằng một phiên bản đã sửa đổi của Thư viện.</para>
+
+    <para>Theo đây có những điều kiện chính xác để sao chép, phát hành và sửa đổi. Hãy tập trung cẩn thận sự khác biệt giữa <quote>một sản phẩm dựa vào thư viện</quote> và <quote>một sản phẩm sử dụng thư viện</quote>. Điều trước chứa mã bắt nguồn từ thư viên, còn điều sau phải được kết hợp với thư viện để chạy được.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>ĐIỀU KIỆN SAO CHÉP, PHÁT HÀNH VÀ SỬA ĐỔI</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Phần 0</title>
+      <para>Điều kiện Quyền này áp dụng cho bất kỳ thư viện phần mềm hay chương trình khác mà chứa một thông báo được chèn vào bởi người giữ tác quyền hay bất kỳ bên được quyền nói rằng có thể được phát hành theo các điều khoản của Giấy phép Công cộng Phụ này (cũng được gợi như là <quote>Giấy phép này</quote>). Mỗi người được cầp bản quyền được gọi là <quote>bạn</quote>.</para>
+
+      <para>Một <quote>thư viện</quote> nghĩa là một tập hợp các hàm phần mềm và/hay dữ liệu được chuẩn bị để được liên kết tiện lợi với chương trình ứng dụng (mà sử dụng một số hàm và dữ liệu trong tập hợp này) để xây dựng tập tin có khả năng thực hiện.</para>
+
+      <para><quote>Thư viện</quote> dưới đây có nghĩa là bất kỳ thư viện phần mềm hay sản phẩm như vậy đã được phát hành theo các điều khoản này. Một <quote>sẩn phẩm dựa trên Thư viện</quote> có nghĩa là Thư viện hay bất kỳ sản phẩm nào bắt nguồn từ nó dưới luật bản quyền: tức là, sản phẩm chứa Thư viện đó hay một phần của nó, hoặc đúng nguyên văn hoặc với sự sửa đổi và/hoặc được dịch sang một ngôn ngữ khác. (Kể từ câu này, việc dịch ngôn ngữ được bao gồm vô hạn trong thuật ngữ <quote>sự sửa đổi</quote>.)</para>	
+
+      <para><quote>Mã nguồn</quote> của sản phẩm có nghĩa là dạng thức sản phẩm được ưa thích khi sửa đổi nó. Đối với thư viện, toàn bộ mã nguồn có nghĩa là tất cả các mã nguồn cho mọi mô-đun đã chứa, cộng với bất cứ tập tin xác định giao diện tương ứng, cộng với các văn lệnh được dùng để điều khiển tiến trình biên dịch và cài đặt thư viện.</para>
+
+      <para>Những hoạt động khác ngoài sự sao chép, phát hành và sửa đổi không được kiểm soát bởi Giấy phép này; nó ở ngoài phạm vi của giấy phép này. Hành động chạy Thư viện không bị hạn chế, và dữ liệu xuất từ Thư viện chỉ bị khống chế nếu nội dung của nó tạo thành một sản phẩm dựa vào Thư viện (không phụ thuộc vào việc sử dụng Thư viện như là công cụ ghi nó). Điều đó đúng hay không phụ thuộc vào điều mà Thư viện tạo ra, và điều mà chương trình sử dụng Thư viện tạo ra.</para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Phần 1</title>
+      <para>Bạn có quyền sao chép và phát hành bản sao đúng nguyên văn của toàn bộ mã nguồn của Thư viện như bạn đã nhận nó, bằng bất kỳ cách nào, miễn là bạn công bố rõ ràng và thích đáng trên mỗi bản sao một thông báo tác quyền thích hợp và miễn trừ bảo hành; giữ nguyên vẹn mọi thông báo liên quan đến Giấy phép này và miễn trừ bảo hành; và đưa cho những người nhận Chương trình khác một bản sao của Giấy phép cùng với Thư viện.</para>
+      
+      <para>Bạn có thể thu phí cho việc gởi bản sao, và bạn có thể tùy ý đề nghị cung cấp dịch vụ bảo hành có thu phí.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Phần 2</title>
+      <para>
+	You may modify your copy or copies of the Library or any portion
+	of it, thus forming a work based on the Library, and copy and
+	distribute such modifications or work under the terms of 
+	<link linkend="sect1">Section 1</link> above, provided that 
+	you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	       The modified work must itself be a software library.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the files modified to carry prominent notices
+	      stating that you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the whole of the work to be licensed at no
+	      charge to all third parties under the terms of this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If a facility in the modified Library refers to a function or a
+	      table of data to be supplied by an application program that uses
+	      the facility, other than as an argument passed when the facility
+	      is invoked, then you must make a good faith effort to ensure that,
+	      in the event an application does not supply such function or
+	      table, the facility still operates, and performs whatever part of
+	      its purpose remains meaningful.
+	    </para>
+
+	    <para>
+	      (For example, a function in a library to compute square roots has
+	      a purpose that is entirely well-defined independent of the
+	      application.  Therefore, Subsection 2d requires that any
+	      application-supplied function or table used by this function must
+	      be optional: if the application does not supply it, the square
+	      root function must still compute square roots.)
+	    </para>
+	      
+	    <para>
+	      These requirements apply to the modified work as a whole.  If
+	      identifiable sections of that work are not derived from the Library,
+	      and can be reasonably considered independent and separate works in
+	      themselves, then this License, and its terms, do not apply to those
+	      sections when you distribute them as separate works.  But when you
+	      distribute the same sections as part of a whole which is a work based
+	      on the Library, the distribution of the whole must be on the terms of
+	      this License, whose permissions for other licensees extend to the
+	      entire whole, and thus to each and every part regardless of who wrote
+	      it.
+	    </para>
+
+	    <para>
+	      Thus, it is not the intent of this section to claim rights or contest
+	      your rights to work written entirely by you; rather, the intent is to
+	      exercise the right to control the distribution of derivative or
+	      collective works based on the Library.
+	    </para>
+
+	    <para>
+	      In addition, mere aggregation of another work not based on the Library
+	      with the Library (or with a work based on the Library) on a volume of
+	      a storage or distribution medium does not bring the other work under
+	      the scope of this License.
+	    </para>
+	  </listitem>	      
+	</orderedlist>
+      </para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Phần 3</title>
+
+      <para>Bạn có thể chọn áp dụng các điều kiện của Giấy phép Công cộng GNU chuẩn, thay cho Giấy phép này, cho một bản sao nào đó của Thư viện. Để làm như thế, bạn phải thay đổi mọi thông báo đề cập Giấy phép này, để đề cập Giấy phép Công cộng GNU chuẩn, phiên bản 2, thay cho Giấy phép này. (Có phiên bản mới hơn của Giấy phép Công cộng GNU chuẩn thì bạn có thể ghi rõ phiên bản đó thay thế, nếu bạn muốn.) Đừng thay đổi gì khác trong những thông báo này.</para>
+
+      <para>Một khi làm thay đổi này trong bản sao nào, không thể đảo ngược lại cho bản sao đó, vì thế  Giấy phép Công cộng GNU chuẩn áp dụng cho tất cả các bản sao phụ và sản phẩm bất nguồn từ bản sao đó.</para>
+      
+      <para>Tùy chọn này không có ích khi bạn muốn sao chép phần mã nguồn của Thư viện vào một chương trình không phải là thư viện.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Phần 4</title>
+      
+      <para>Bạn có quyền sao chép và phát hành Thư viện (hoặc đoạn nào của nó hoặc sản phẩm dựa vào nó, dưới <link linkend="sect2">Phần 2</link>) trong dạng thức mã đối tượng hay tập tin chạy được với điều kiện của <link linkend="sect1">Phần 1</link> và <link linkend="sect2">2</link> bên trên, miễn là bạn kèm theo toàn bộ mã nguồn tương ứng mà máy có thể đọc được, được phát hành với điều kiện của Phần <link linkend="sect1">1</link> và <link linkend="sect2">2</link> bên trên, trên thiết bị lưu trữ thường dùng để trao đổi phần mềm.</para>
+
+      <para>Nếu việc phát hành mã đối tượng được làm bằng cách trao truy cập sao chép từ một nơi đã xác định, thì việc trao các truy cập sao chép tương đương đến mã nguồn đó từ cùng nơi đó được tính là sự phát hành mã nguồn, mặc dù người khác không bắt buộc phải sao chép mã nguồn cùng với mã đối tượng.</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Phần 5</title>
+
+      <para>Một chương trình không chứa sản phẩm bắt nguồn từ bất cứ đoạn nào của Thư viện, còn được thiết kế để làm việc với Thư viện bằng cách được biên dịch hay liên kết với nó, được gọi là <quote>sản phẩm sử dụng Thư viện</quote>. Sản phẩm như vậy, độc lập không phải là sản phẩm bắt nguồn từ Thư viện thì nằm ở ngoại phạm vi của Giấy phép này.</para>
+
+      <para>Tuy nhiên, việc liên kết một <quote>sản phẩm sử dụng Thư viện</quote> với Thư viện thì tạo một tập tin chạy được bắt nguồn từ Thư viện (vì nó chứa đoạn của Thư viện), hơn là một <quote>sản phẩm sử dụng Thư viện</quote>. Tập tin chạy được thì được bao quát bởi Giấy phép này. <link linkend="sect6">Phần 6</link> phát biểu các điều kiện phát hành tập tin chạy được như vậy.</para>
+
+      <para>Khi một <quote>sản phẩm sử dụng Thư viện</quote> cũng sử dụng đoạn nào của tập tin phần đầu thuộc về Thư viện, mã đối tượng cho sản phẩm này có thể là một sản phẩm bắt nguồn từ Thư viện, mặc dù mã nguồn không phải. Điều đó đúng hay không là quan trọng đặc biệt nếu sản phẩm này có thể được liên kết không có Thư viện, hoặc nếu sản phẩm này chính nó là thư viện. Pháp luật chưa xác định chính xác ngưỡng đúng của trường hợp này.</para>
+
+      <para>Tập tin đối tượng như vậy sử dụng chỉ các tham số kiểu số, bố trí cấu trúc dữ liệu, và vĩ lệnh nhỏ và hàm trực tiếp nhỏ (mỗi điều có độ dài tối đa 10 dòng) thì cách sử dụng tập tin đối tượng là vô hạn, bất chấp nó hợp lý là sản phẩm bắt nguồn. (Tập tin chạy được chứa mã đối tượng này cộng với đoạn của Thư viện vẫn còn nằm dưới <link linkend="sect6">Phần 6</link>.)</para>
+
+      <para>Không thì, nếu sản phẩm bắt nguồn từ Thư viện, bạn có thể phát hành mã đối tượng của sản phẩm theo điều kiện của <link linkend="sect6">Phần 6</link>. Bất kỳ tập tin chạy được chứa sản phẩm đó cũng nằm dưới <link linkend="sect6">Section 6</link>, bất chấp nó được liên kết trực tiếp với Thư viện chính nó.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Phần 6</title>
+
+      <para>Ngoại lệ những Phần trên là bạn cũng có thể kết hợp hay liên kết một <quote>sản phẩm sử dụng Thư viện</quote> với Thư viện để tạo một sản phẩm chứa đoạn của Thư viện, rồi phát hành sản phẩm đó dưới các điều khoản bạn chọn, miễn là điều khoản này cho phép sửa đổi sản phẩm cho người khách sử dụng riêng, và cho phép thiết kế đối chiếu để gỡ lỗi trong sự sửa đổi như vậy.</para>
+
+      <para>
+	You must give prominent notice with each copy of the work that the
+	Library is used in it and that the Library and its use are covered by
+	this License.  You must supply a copy of this License.  If the work
+	during execution displays copyright notices, you must include the
+	copyright notice for the Library among them, as well as a reference
+	directing the user to the copy of this License.  Also, you must do one
+	of these things:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">
+	      Accompany the work with the complete corresponding
+	      machine-readable source code for the Library including whatever
+	      changes were used in the work (which must be distributed under
+	      Sections <link linkend="sect1">1</link> and 
+	      <link linkend="sect2">2</link> above); and, if the work is an 
+	      executable linked with the Library, with the complete machine-readable 
+	      <quote>work that uses the Library</quote>, as object code and/or source 
+	      code, so that the user can modify the Library and then relink to 
+	      produce a modified executable containing the modified Library.  (It is 
+	      understood that the user who changes the contents of definitions files 
+	      in the Library will not necessarily be able to recompile the application
+	      to use the modified definitions.)
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Use a suitable shared library mechanism for linking with the
+	      Library.  A suitable mechanism is one that (1) uses at run time a
+	      copy of the library already present on the user's computer system,
+	      rather than copying library functions into the executable, and (2)
+	      will operate properly with a modified version of the library, if
+	      the user installs one, as long as the modified version is
+	      interface-compatible with the version that the work was made with.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany the work with a written offer, valid for at
+	      least three years, to give the same user the materials
+	      specified in <link linkend="sect6a">Subsection 6a</link>
+	      , above, for a charge no more than the cost of performing 
+	      this distribution.	      
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If distribution of the work is made by offering access to copy
+	      from a designated place, offer equivalent access to copy the above
+	      specified materials from the same place.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Verify that the user has already received a copy of these
+	      materials or that you have already sent this user a copy.
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+	<para>Đối với tập tin chạy được, dạng thức cần thiết của <quote>sản phẩm sử dụng Thư viện</quote> phải chứa chương trình nào kiểu dữ liêu hay tiện ích cần thiết để tạo lại tập tin chạy được từ nó. Tuy nhiên, ngoại lệ đặc biệt là các nguyên liệu được phát hành không cần phải bao gồm những gì được phát hành bình thường (trong dạng thức hoặc nguồn hoặc nhị phân) với các thành phần chính (bộ biên dịch, hạt nhân v.v.) của hệ điều hành nơi tập tin chạy được hoạt động, trừ khi thành phần kèm theo cần thiết để chạy tập tin.</para>
+
+	<para>Có thể xảy ra rằng điều kiện này mâu thuẫn sự hạn chế giấy phép của thư viện sở hữu khác không bình thường kèm theo hệ điều hành. Sự mâu thuẫn như vậy có nghĩa là bạn không thể sử dụng cả thư viện như vậy và Thư viện đều trong tập tin chạy được bạn phát hành.</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Phần 7</title>
+
+      <para>Bạn có thể để chức năng thư viện là sản phẩm dựa vào Thư viện cạnh nhau trong một thư viện riêng lẻ, cộng với các chức năng thư viện không được bao quát bởi Giấy phép này, và phát hành thư viện đã kết hợp như vậy, miễn là cho phép phát hành riêng <quote>sản phẩm sử dụng Thư viện</quote> và chức năng thư viện khác, và miễn là bạn làm hai việc này:</para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Kèm theo thư viện đã kết hợp một bản sao của cùng <quote>sản phẩm sử dụng Thư viện</quote>, riêng với chức năng thư viện khác nào. Nó phải được phát hành với các điều khoản của những Phần trên.</para>
+	</listitem>
+	<listitem>
+	  <para>Công bố rõ ràng trên thư viện đã kết hợp thông báo rằng phần của nó là <quote>sản phẩm sử dụng Thư viện</quote>, cũng chỉ tới nơi chứa dạng thức riêng của cùng sản phẩm kèm theo.</para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Phần 8</title>
+
+      <para>Không cho phép bạn sao chép, sửa đổi, liên kết với hay phát hành Thư viện, trừ với điều kiện được diễn tả dứt khoát trong Giấy phép này. Bất kỳ sự cố gắng nào trong việc sao chép, sửa đổi, cấp giấy phép phụ, liên kết với hay phát hành Thư viện bằng cách khác bị bãi bỏ, và sẽ tự động kết thúc các quyền của bạn dưới Giấy phép này. Tuy nhiên, người khác đã nhận bản sao hay quyền từ bạn dưới Giấy phép này sẽ không bị ảnh hưởng, miễn là họ tiếp tục tuân theo hoàn toàn.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Phần 9</title>
+      
+      <para>Bạn không bắt buộc phải chấp nhận Giấy phép này, vì bạn chưa ký tên vào nó. Tuy nhiên, không có gì khác cho phép bạn sửa đổi hay phát hành Thư viện hay sản phẩm bắt nguồn từ nó. Các hành động này bị pháp luật cấm nếu bạn không chấp nhận Giấy phép này. Vì vậy, bằng cách sửa đổi hay phát hành Thư viện (hay sản phẩm dựa vào nó), bạn ngụ ý sự chấp nhận Giấy phép này để làm như thế, gồm mọi điều kiện sao chép, phát hành hay sửa đổi Thư viện hay sản phẩm dựa vào nó.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Phần 10</title>
+
+      <para>Mỗi lần bạn phát hành lại Thư viện (hay sản phẩm dựa vào Thư viện), người nhận có thể nhận tự động một giấy phép từ người cấp gốc, để sao chép, phát hành, liên kết với hay sửa đổi Thư viện với điều kiện này. Không cho phép bạn hạn chế thêm cách người dùng sử dụng các quyền đã được cấp trong Giấy phép này. Bạn cũng không phải chịu trách nhiệm về việc ép buộc người khác tuân theo điều kiện của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>Phần 11</title>
+
+      <para>Nếu, do kết quả của quyết định của toà án hay các cáo buộc vi phạm bằng sáng chế hay vì bất cứ lý do nào (không bị giới hạn trong vấn đề bằng sáng chế), bạn bị ép buộc chấp nhận điều kiện (hoặc vì quyết định của toà án, sự thoả thuận hoặc cách khác nào) mà mâu thuẫn điều kiện của Giấy phép này, trường hợp này không miễn cho bạn không phải thỏa mãn điều kiện của Giấy phép này. Nếu bạn không thể phát hành bằng cách thỏa mãn đồng thời các giao ước của bạn dưới Giấy phép này và bất kỳ giao ước thích hợp khác, thì kết quả là không cho phép bạn phát hành Thư viện bằng cách nào cả. Lấy thí dụ, nếu một bằng sáng chế nào đó không cho phép sự phát hành lại Thư viện một cách miễn tiền bản quyền phát minh cho mọi người nhận bản sao từ bạn một cách trực tiếp hay gián tiếp, thì cách duy nhất bạn có thể thỏa cả bằng đó và Giấy phép này là hoàn toàn không phát hành Thư viện.</para>
+
+      <para>Nếu đoạn nào trong phần này được quyết định là không hợp lệ hay không thể được ép buộc trong bất kỳ trường hợp riêng nào, đoạn còn lại dự định áp dụng được, và toàn bộ phần dự định áp dụng trong các trường hợp khác.</para>
+
+      <para>Không phải là mục đích của phần này để xúi giục bạn vi phạm bằng sáng chế nào hay lời yêu sách quyền tài sản khác, hoặc để không thừa nhận sự hợp lệ của lời yêu sách như vậy; phần này có mục đích duy nhất là bảo vệ tình trạng nguyên vẹn của hệ thống phát hành phần mềm tự do, mà được thực thi bởi các áp dụng giấy phép công cộng. Nhiều người đã đóng góp rộng lượng cho một phạm vị rộng của các phần mềm được phát hành qua hệ thống đó, nhờ sự thực thi nền bỉ hệ thống đó: tùy tác giả / người tặng quyết định nếu họ muốn phát hành phần mềm qua hệ thống khác nào, và người được cấp Giấy phép không thể điều khiển cách quyết định đó.</para>
+
+      <para>Phần này dự định diễn tả rõ ràng hoàn toàn kết quả được hiểu của phần còn lại của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Phần 12</title>
+
+      <para>Nếu sự phát hành và/hay cách sử dụng Thư viện bị hạn chế trong một số quốc gia nào đó, hoặc bởi bằng sáng chế hoặc bởi giao diện có bản quyền tác giả, người giữ tác quyền gốc đã đặt Thư viện dưới Giấy phép này có khả năng thêm sự hạn chế phát hành địa lý riêng loại trừ những quốc gia đó, để cho phép phát hành chỉ trong hay giữa các quốc gia không bị loại trừ như thế. Trong trường hợp như vậy, Giấy phép này hợp nhất sự hạn chế đó như là nó được ghi trong thân của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>Phần 13</title>
+
+      <para>Tổ chức Phần mềm Tự do có thể xuất bản phiên bản đã sửa đổi và/hay mới của Giấy phép Công cộng Phụ GNU. Phiên bản mới như vậy sẽ có tinh thần tương tự với phiên bản hiện thời, nhưng có thể khác biệt trong chi tiết để giải quyết vấn đề mới.</para>
+
+      <para>Mỗi phiên bản được gán một số hiệu phân biệt phiên bản đó. Nếu Thư viện xác định số phiên bản riêng của Giấy phép này áp dụng cho nó, <quote>và bất kỳ phiên bản sau nào</quote>, bạn có tùy chọn thỏa điều kiện hoặc của phiên bản đó, hoặc của bất kỳ phiên bản sau nào được xuất bản bởi Tổ chức Phần mềm Tự do. Nếu Thư viện không xác định số phiên bản riêng của Giấy phép này, bạn có khả năng chọn bất kỳ phiên bản nào của Giấy phép này đã được xuất bản bởi Tổ chức Phần mềm Tự do.</para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>Phần 14</title>
+
+      <para>Nếu bạn muốn hợp nhất phần nào của Thư viện vào chương trình tự do khác có điều kiện phát hành không tương thích với Giấy phép này, hãy xin phép tác giả. Đối với phần mềm có bản quyền tác giả của Tổ chức Phần mềm Tự do, hãy viết thư cho Tổ chức Phần mềm Tự do : thỉng thoảng chúng tôi cho phép ngoại lệ trong trường hợp này. Quyết định của chúng tôi sẽ được hướng dẫn bởi hai mục đích là sự bảo tồn trạng thái tự do của mọi điều bắt nguồn từ phần mềm tự do của chúng tôi, và sự đẩy mạnh sự chia sẻ và sử dụng lại phần mềm một cách chung.</para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>KHÔNG BẢO HÀNH</title>
+      <subtitle>Phần 15</subtitle>
+
+      <para>VÌ THƯ VIỆN ĐÃ ĐƯỢC CẤP PHÉP MIỄN PHÍ, KHÔNG CÓ BẢO HÀNH ĐỐI VỚI THƯ VIỆN NÀY, VỚI ĐIỀU KIỆN ĐƯỢC PHÁP LUẬT CHO PHÉP. TRỪ KHI XÁC ĐỊNH KHÁC BẰNG TÀI LIỆU GIẤY TỜ, CÁC NGƯỜI GIỮ BẢN QUYỀN TÁC GIẢ VÀ/HAY NGƯỜI KHÁC CUNG CẤP THƯ VIỆN NÀY <quote>NHƯ THẾ</quote>, KHÔNG CÓ BẢO HÀNH GÌ CẢ, KHÔNG PHÁT BIỂU NÓ, CŨNG KHÔNG NGỤ Ý NÓ, GỒM, NHƯNG KHÔNG BỊ HẠN CHẾ BỞI, SỰ BẢO ĐẢM ĐÃ NGỤ Ý TÌNH TRẠNG CÓ THỂ BÁN ĐƯỢC VÀ SỰ THÍCH HỢP VỚI MỘT MỤC ĐÍCH DỨT KHOÁT. MỌI RỦI RO VỀ CHẤT LƯỢNG, ĐỘ CHÍNH XÁC VÀ HIỆU SUẤT CỦA THƯ VIỆN NÀY BẠN SẼ TỰ CHỊU. NẾU THƯ VIỆN NÀY GÂY RA HƯ HỎNG, BẠN GÁNH VÁC HOÀN TOÀN TRÁCH NGHIỆM TRẢ TIỀN DỊCH VỤ GIÚP ĐỠ HAY SỪA CHỮA.</para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>Phần 16</title>
+
+      <para>KHÔNG CÓ TRƯỜNG HỢP NÀO (TRỪ KHI PHÁP LUẬT YÊU CẦU HAY KHI ĐƯỢC THỎA THUẬN BẰNG TÀI LIỆU GIẤY TỜ) MÀ BẤT KỲ NGƯỜI GIỮ BẢN QUYỀN TÁC GIẢ NÀO, HAY BẤT KỲ NGƯỜI KHÁC NÀO CÓ THỂ SỬA ĐỔI VÀ/HAY PHÁT HÀNH LẠI THƯ VIỆN NHƯ ĐƯỢC PHÉP BÊN TRÊN, SẼ CÓ TRÁCH NHIỆM VỀ PHÁP LÝ BỒI THƯỜNG, GỒM BẤT KỲ BỒI THƯỜNG KIỂU TỔNG QUÁT, ĐẶC BIỆT, NGẪU NHIÊN HAY DO HẬU QUẢ DO SỬ DỤNG HAY SỰ KHÔNG CÓ KHẢ NĂNG SỬ DỤNG THƯ VIỆN NÀY (GỒM NHƯNG KHÔNG PHẢI BỊ HẠN THẾ BỞI SỰ MẤT DỮ LIỆU HAY DỮ LIỆU BỊ LÀM CHO KHÔNG CHÍNH XÁC HAY CÁC MẤT MÁT CỦA BẠN HAY NGƯỜI KHÁC HAY SỰ KHÔNG HOẠT ĐỘNG ĐƯỢC THƯ VIỆN NÀY VỚI CHƯƠNG TRÌNH KHÁC), THẬM CHÍ NẾU BẠN HAY NGƯỜI KHÁC ĐÃ ĐƯỢC BÁO BIẾT CÓ KHẢ NĂNG THIỆT HẠI NHƯ VẬY.</para>
+    </sect2>
+  </sect1>
+</article>

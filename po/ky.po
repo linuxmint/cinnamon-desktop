@@ -1,0 +1,489 @@
+# Translation of gnome-desktop to Kirghiz
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2003, 2004, 2005.
+#
+# Timur Jamakeev <ztimur@gmail.com>, 2005, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop 2.13.2\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"PO-Revision-Date: 2012-09-24 18:49+0600\n"
+"Last-Translator: Timur Zhamakeev <ztimur@gmail.com>\n"
+"Language-Team: Kirghiz <gnome-i18n@gnome.org>\n"
+"Language: ky\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Белгисиз"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Туура териминал табылбады, xterm колдонулууда, ал иштебеши мүмкүн"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "экрандын ресурстарына жетүүгө болбоду (CRTC, чыгуусу, режимдери)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"экрандын өлчөмдөрүнүн диапазонун алууда X системасынын иштетилбеген катасы"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "экрандын өлчөмдөрүнүн диапазонун алуудагы ката"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR кеңейтмеси жок"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "%d чыгуусу жөнүндө маалымат алууга болбоду"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"%d CRTC үчүн талап кылынган абалы же өлчөмү белгиленген чектен чыгып кетти: "
+"абалы="
+"(%d, %d), өлчөмү=(%d, %d), максимуму=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "%d CRTC үчүн параметрлерди орнотууга болбоду"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "%d CRTC жөнүндө маалымат алууга болбоду"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Ноутбук"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"дисплейдин сакталган конфигурацияларынын ичинен бири да учурдагыга дал келбейт"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr " %d  CRTC %s чыгуусун башкара албайт"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "%s чыгуусу %dx%d@%dHz режимин колдобойт"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "%d CRTC  тегеретүүсү=%s  колдобойт"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"%s чыгуусу, клондонгон башка чыгуунун параметрлерине туура келбейт:\n"
+"учурдагы режим = %d, жаңы режим = %d\n"
+"учурдагы координата = (%d, %d), жаңы координата = (%d, %d)\n"
+"учурдагы тегеретүү = %s, жаңы тегеретүү = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "%s чыгуусуна клондоого болбоду"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "%d CRTC үчүн режимдерди текшерүү\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"%d CRTC:  %dx%d@%dГц режимин текшерүү; чыгуусу %dx%d@%dГц (%d-жолку аракет)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"Чыгуу үчүн CRTC аныктоого болбоду:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"тандалган бир дагы режим, уруксат болгон режимге туура келбейт:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"талап кылынган виртулдык өлчөм, учурдагы жерге батпады:"
+"талып кылынгыны=(%d, %d), минимуму=(%d, %d), максимуму=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "Чагылыштырылган дисплейлер"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %b %e, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %b %e, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Сырдуу GEGL"
+
+#~ msgid "The Squeaky Rubber Gnome"
+#~ msgstr "Чыйылдаган резина гном"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Ванда -- GNOME балыгы"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "Башсап сүрөттөлүштөрүн камтыган каталог табылбады."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr ""
+#~ "Башсап сүрөттөлүштөрүн камтыган бул каталогду ачууда ката пайда болду: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Башсап сүрөттөлүшүн жүктөөгө болбоду: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "GNOME логотиби табылбады."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "\"%s\" жүктөөгө болбоду: %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "\"%s\" дарегин ачууга болбоду: %s"
+
+#~ msgid "Could not locate the file with GNOME version information."
+#~ msgstr ""
+#~ "GNOME чөйрөсүнүн версиясы жөнүндөгү маалыматты камтыган файл табылбады."
+
+#~ msgid "Version"
+#~ msgstr "Версиясы"
+
+#~ msgid "Distributor"
+#~ msgstr "Дистрибьютор"
+
+#~ msgid "Build Date"
+#~ msgstr "Курулуу датасы"
+
+#~ msgid "About GNOME"
+#~ msgstr "GNOME чөйрөсү жөнүндө"
+
+#~ msgid "News"
+#~ msgstr "Жаңылыктар"
+
+#~ msgid "Software"
+#~ msgstr "Программалык жабдуу"
+
+#~ msgid "Developers"
+#~ msgstr "Иштеп чыгуучулар"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "GNOME достору"
+
+#~ msgid "Contact"
+#~ msgstr "Контакт"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "GNOME чөйрөсүнө кош келиңиз"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "GNOME чөйрөсүн сиз үчүн булар түздү:"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "GNOME чөйрөсү жөнүндө"
+
+#~ msgid "Know more about GNOME"
+#~ msgstr "GNOME жөнүндө көбүрөөк билүү"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "Ошондой эле GNOME чөйрөсү кубаттуу жана татаал иштемелерди түзүүгө жол "
+#~ "берүүчү даяр платформаны камтыйт."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME чөйрөсү файл менеджери, веб-барактарды аралагыч, меню панели ж.б.у."
+#~ "с. эң керектүү иштемелерди көпчүлүгүн камтыйт."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME чөйрөсү UNIX-сыяктуу аракеттер системасы тутуму үчүн эркин, "
+#~ "стабилдүү, колдонууда ыңгайлуу (анын ичинде мүмкүнчүлүктөрү чектелген "
+#~ "адамдар үчүн да) иш чөйрөсү болуп эсептелет."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "GNOME чөйрөсү колдонуудагы ыңгайлуулукка өзгөчө көңүл бурат (анын ичинде "
+#~ "мүкүнчүлүгү чектелген адамдар үчүн да) жана анын жаңы версияларынын "
+#~ "регулярдуу чыгуусу, күчтүү корпоративдик колдоосу башка эркин иш стол "
+#~ "чөйрөлөрүнөн айырмалап турат."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "GNOME чөйрөсүнүн артыкчылык жагы анын күчтүү колдонуучулар коомчулугунда. "
+#~ "Ар бир адам программалоодо тажрыйбасы бар болсо да, тажрыйбасы жок болсо "
+#~ "да, чөйрөнү жакшыртууга өз салымын кошо алат."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "GNOME проекти 1997-жылы башталгандан тартып анын башат кодун жүздөгөн "
+#~ "адамдар жазды, бирок андан да көп адамдар башка маанилүү жолдор менен б."
+#~ "а. которуу, документациялоо жана сапатын текшерүү аркылуу өз салымдарын "
+#~ "кошушту."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "\"%s\" файлын окуудагы ката: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "\"%s\" файлын түрүү катасы: %s"
+
+#~ msgid "No name"
+#~ msgstr "Аты жок"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "\"%s\" файлы кадимки файл же каталог эмес."
+
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "'%s' файлынын идентификаторун табууга болбоду"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Сактоо үчүн файл аты берилген эмес"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s башталууда"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Иштетүү үчүн URL көрсөтүлбөгөн"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Элемент иштетилүүчү эмес"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Иштетүү үчүн команда (Exec) жок"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Иштетүү үчүн команда (Exec) туура эмес"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "\"%s\" кодировкасы белгисиз"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "\"%s\" файлына жазуудагы ката: %s"
+
+#~ msgid "Directory"
+#~ msgstr "Каталог"
+
+#~ msgid "Application"
+#~ msgstr "Иштеме"
+
+#~ msgid "Link"
+#~ msgstr "Шилтеме"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSDevice"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME тиби"
+
+#~ msgid "Service"
+#~ msgstr "Сервис"
+
+#~ msgid "ServiceType"
+#~ msgstr "Сервис тиби"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "Ком_анда:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Аты:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Жалпы аты:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Ко_мментарий:"
+
+#~ msgid "Browse"
+#~ msgstr "Аралоо"
+
+#~ msgid "_Type:"
+#~ msgstr "_Тип:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Сүрөтбелги:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Сүрөтбелгилерди аралоо"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "_Терминалда иштетүү"
+
+#~ msgid "Language"
+#~ msgstr "Тил"
+
+#~ msgid "Name"
+#~ msgstr "Аты"
+
+#~ msgid "Generic name"
+#~ msgstr "Жалпы аты"
+
+#~ msgid "Comment"
+#~ msgstr "Комментарий"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Колдонуу алдында текшерүү:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Документация:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Атынын/комментарийлердин котормосу:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Кошуу/Орнотуу"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Атынын/комантарийдин котормосун кошуу же орнотуу"
+
+#~ msgid "Re_move"
+#~ msgstr "_Жоготуу"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Атынын/комментарийдин котормосун жоготуу"
+
+#~ msgid "Basic"
+#~ msgstr "Негизги"
+
+#~ msgid "Advanced"
+#~ msgstr "Кошумча"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "Баштоо учурунда _жардам саптарын көрсөтүү"

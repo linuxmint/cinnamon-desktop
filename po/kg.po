@@ -1,0 +1,304 @@
+# Kikongo translation of gnome-desktop.
+# Copyright (C) Listed translators
+# This file is distributed under the same license as the gnome-desktop package.
+# Kibavuidi Nsiangani <lundombe01@zaya-dio.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-05 21:41+0200\n"
+"PO-Revision-Date: 2010-10-04 21:48+0100\n"
+"Last-Translator: Kibavuidi Nsiangani <lundombe01@zaya-dio.com>\n"
+"Language-Team: Kikongo, kg <lundombe01@zaya-dio.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:60
+msgid "About GNOME"
+msgstr "mambu ma gnome"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "longoka mambu mankaka ma gnome"
+
+#: ../gnome-about/gnome-about.in:61
+msgid "News"
+msgstr "nsangu"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "GNOME Library"
+msgstr "kinsasilu kia gnome"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "Friends of GNOME"
+msgstr "nkundi za gnome"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Contact"
+msgstr "ma bila"
+
+#: ../gnome-about/gnome-about.in:68
+msgid "The Mysterious GEGL"
+msgstr "gegl"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Squeaky Rubber GNOME"
+msgstr "luaaza lua gnome"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "Wanda The GNOME Fish"
+msgstr "wanda wa mbizi a maza ya gnome"
+
+#: ../gnome-about/gnome-about.in:567
+msgid "_Open URL"
+msgstr "weenda ku _kizi"
+
+#: ../gnome-about/gnome-about.in:574
+msgid "_Copy URL"
+msgstr "_tangininae kizi"
+
+#: ../gnome-about/gnome-about.in:826
+msgid "About the GNOME Desktop"
+msgstr "nsangu za gnome"
+
+#: ../gnome-about/gnome-about.in:859
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:873
+msgid "Welcome to the GNOME Desktop"
+msgstr "toma luaka mu gnome"
+
+#: ../gnome-about/gnome-about.in:890
+msgid "Brought to you by:"
+msgstr "nsoniki"
+
+#: ../gnome-about/gnome-about.in:914
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:975
+msgid "Version"
+msgstr "luteezolo"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Distributor"
+msgstr "nteki"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "diatugama mu"
+
+#: ../gnome-about/gnome-about.in:1024
+msgid "Display information on this GNOME version"
+msgstr "songae mafiuma ma luteezolo elu kia gnome"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"gnome yena ye luuvu kiantunga bisalasala, mu bantungi kisalasala ye luvu "
+"kiokio kivananga mpuasika mu tunga bisalasala biampimpita ye biangolo"
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr "mamo maalanga muntu mu yandi nsikidisi, makalaanga mu gnome. "
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr "gnome yi lusadilu lua mpensa, lua lenga, lua mbote mu lundombe."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"gnome usanga ntima mu kala bulenga, bunsalakana, nsaluka za mbote ye "
+"lusadisu luambote. I diodio i dia nsisi kati kua mayanzala mampensa"
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"ngolo za gnome mu buntuadi buandi zituukanga. vo uzeye tunga bisalasala vo "
+"kuzeye ko, lendele vana lusadisu mu tomesa gnome."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"nkama za bantu bamana vana lusadisu luau muna tungulua gnome, tuuka mu "
+"luyantikulu andi mu 1997; bankaka keti mu sekola, mu sasila evo muna fimpa "
+"yo."
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "dianzenza"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"nanga ilemba sala kansi ngieti sadila xterm kaka, kadi nkele ka yi monekene "
+"ko."
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "mambu ma kiansonga (crtc, biduukilu, nsongolo), bu yavewa mo nkatu"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "mpitakani mu X bu ikele baka teezolo bia kiansongalala"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "biteezolo bia kiansongalala, bu ivewa bio nkatu"
+
+#: ../libgnome-desktop/gnome-rr.c:714
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "ki randr ka i monekene ko"
+
+#: ../libgnome-desktop/gnome-rr.c:1090
+#, c-format
+msgid "could not get information about output %d"
+msgstr "nsangu za kiduukilu %d bu ibaka zo nkatu"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1477
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"nkubu ulombele mu crtc %d kena va kati kua ndelo zabetila ko: kitudilu=(%d, %"
+"d), teezolo=(%d, %d), yongi=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1513
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "nkubukulu za crtc %d, bu itatanesa zo nkatu"
+
+#: ../libgnome-desktop/gnome-rr.c:1629
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "nsangu za crtc %d, bu yavewa zo nkatu"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "nsikidisi a koko"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1162
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"mu nkubukulu zazo zi monekene mu nti yi, ka vena mosi ko yikuenda betila ye "
+"zaku bubu"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1423
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "crtc %d, bu kidiatisa %s nkatu"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1430
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr " nduukilu %s ka yilendi sadila nsongolo zozo %dx%d@%dHz,"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1441
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d kayizeye mveengulani=%s ko"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1455
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"kiansongalala %s  ye kifuanisu kiandi, mosi mosi ye nkubukulu andi:\n"
+"nsongolo yankulu = %d, yampa= %d\n"
+"bintulani biankulu= (%d, %d), biampa = (%d, %d)\n"
+"mveengulani akulu = %s, mveengulani ampa = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1470
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "kileendi fuanikisa ku %s ko"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1639
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "nsongolo za crtc ngieti meka: %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1663
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: ngita meka  nsongolo yi %dx%d@%dHz ye %dx%d@%dHz (bua mbote %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1710
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"zi crtc ye binsongalala, bu i ba waawasa nkatu\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1714
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"mu nsongolo zazo zi meni solua, ka yena mosi ko yina ya beetila:\n"
+" %s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1796
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"teezo biangindula ka bina bia betila ko ye bia lundombe luaku: bi uyuvudi=(%"
+"d, %d), bia nsi=(%d, %d), bianene=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:207
+msgid "Mirror Screens"
+msgstr "bitalatala biole"

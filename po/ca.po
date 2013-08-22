@@ -1,0 +1,655 @@
+# gnome-desktop translation to Catalan.
+# Copyright © 2000, 2002, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
+# Ivan Vilata i Balaguer <ivan@selidor.net>, 2000.
+# Softcatalà <info@softcatala.org>, 2000.
+# Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005, 2007.
+# Gil Forcada <gilforcada@guifi.net>, 2008, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop 2.12.0\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-18 06:35+0000\n"
+"PO-Revision-Date: 2010-09-27 22:48+0200\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"No s'ha trobat cap terminal, s'utilitzarà l'xterm encara que potser no "
+"funcioni"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr ""
+"no s'han pogut obtenir els recursos de la pantalla (CRTC, sortides, modes)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"s'ha produït un error no gestionat de l'X en obtenir les mides de pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "no s'ha pogut obtenir el rang de les mides de pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "no hi ha l'extensió RANDR"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "no s'ha pogut obtenir la informació sobre la sortida %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"la posició/mida sol·licitades per al CRTC %d són fora dels límits permesos: "
+"posició=(%d, %d), mida=(%d, %d), màxim=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "no s'ha pogut establir la configuració per al CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "no s'ha pogut obtenir la informació sobre el CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Portàtil"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"cap de les configuracions desades de la pantalla coincideix amb la "
+"configuració activa"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "la pantalla CRTC %d no pot mostrar la sortida %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "la sortida %s no pot utilitzar el mode %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "la pantalla CRTC %d no permet la rotació = %s»"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"la sortida %s no permet utilitzar els mateixos paràmetres que l'altra "
+"sortida clonada:\n"
+"el mode existent = %d, el mode nou = %d\n"
+"les coordenades existents = (%d, %d), les coordenades noves (%d, %d)\n"
+"la rotació existent = %s, la rotació nova = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "no s'ha pogut clonar cap a la sortida %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "S'estan provant els modes per la pantalla CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"Pantalla CRTC %d: s'està provant el mode %dx%d@%dHz amb la sortida a %dx%d@"
+"%dHz (intent %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"no s'han pogut assignar les pantalles CRTC a les sortides:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"cap mètode seleccionat era compatible amb els mètodes possibles:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"la mida virtual sol·licitada no s'ajusta a la mida disponible: sol·licitada="
+"(%d, %d), mínima=(%d, %d), màxima=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "Pantalles duplicades"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %d de %b, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %d de %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %d de %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %d de %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "About GNOME"
+#~ msgstr "Quant al GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Apreneu més coses sobre el GNOME"
+
+#~ msgid "News"
+#~ msgstr "Notícies"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Biblioteca del GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Amics del GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Contacte"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "El misteriós GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "El GNOME de goma estrident"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda el peix del GNOME"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Obre l'URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Copia l'URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Quant a l'escriptori GNOME"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Benvingut a l'escriptori GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Tot això ha estat possible gràcies a:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Versió"
+
+#~ msgid "Distributor"
+#~ msgstr "Distribuïdor"
+
+#~ msgid "Build Date"
+#~ msgstr "Data de muntatge"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Mostra informació d'aquesta versió del GNOME"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "El GNOME també inclou una plataforma de desenvolupament completa per a "
+#~ "programadors d'aplicacions, que permet crear-ne de tot tipus."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "El GNOME inclou gairebé tot el que veieu al vostre ordinador: el gestor "
+#~ "de fitxers, el navegador web, els menús i moltes altres aplicacions."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "El GNOME és un entorn d'escriptori lliure, usable, estable i accessible "
+#~ "per a la família de sistemes operatius tipus Unix."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "El focus del GNOME en la usabilitat i accessibilitat, el seu cicle "
+#~ "regular de llançaments, i un fort suport per part de corporacions el fan "
+#~ "únic dins dels escriptoris del programari lliure."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "El punt més fort del GNOME és la seva gran comunitat. Gairebé tothom, amb "
+#~ "coneixements o sense de programació, pot contribuir a millorar el GNOME."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Centenars de persones han contribuït codi al GNOME des que es va començar "
+#~ "al 1997; molts més hi han contribuït d'altres maneres importants, que "
+#~ "inclouen traduccions, documentació i control de qualitat."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "S'ha produït un error en llegir el fitxer «%s»: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "S'ha produït un error en rebobinar el fitxer «%s»: %s"
+
+#~ msgid "No name"
+#~ msgstr "Sense nom"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "El fitxer «%s» no és un fitxer o directori normal."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "No s'ha pogut trobar el fitxer «%s»"
+
+#~ msgid "No filename to save to"
+#~ msgstr "No hi ha un nom de fitxer per a desar"
+
+#~ msgid "Starting %s"
+#~ msgstr "S'està iniciant %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "No hi ha un URL per a obrir"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "No és un element llançable"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "No hi ha una ordre (Exec) per a llançar"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Ordre errònia (Exec) per a llançar"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Codificació desconeguda de: %s"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Pantalles duplicades"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "no s'ha pogut trobar una configuració adequada de les pantalles"
+
+#~ msgid "Directory"
+#~ msgstr "Directori"
+
+#~ msgid "Application"
+#~ msgstr "Aplicació"
+
+#~ msgid "Link"
+#~ msgstr "Enllaç"
+
+#~ msgid "FSDevice"
+#~ msgstr "DispositiuFS"
+
+#~ msgid "MIME Type"
+#~ msgstr "Tipus MIME"
+
+# No, res de "servici", Saplana. jm
+#~ msgid "Service"
+#~ msgstr "Servei"
+
+#~ msgid "ServiceType"
+#~ msgstr "TipusDeServei"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "_Ordre:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Nom:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "Nom _genèric:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Co_mentari:"
+
+#~ msgid "Browse"
+#~ msgstr "Navega"
+
+#~ msgid "_Type:"
+#~ msgstr "_Tipus:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Icona:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Navega per les icones"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "Executa en un t_erminal"
+
+#~ msgid "Language"
+#~ msgstr "Llengua"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Generic name"
+#~ msgstr "Nom genèric"
+
+#~ msgid "Comment"
+#~ msgstr "Comentari"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Prova això abans d'utilitzar:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Documentació:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "Traduccions del _nom/comentari:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Afegeix/Estableix"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Afegeix o estableix traduccions del nom/comentari"
+
+#~ msgid "Re_move"
+#~ msgstr "Supri_meix"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Suprimeix la traducció de nom/comentari"
+
+#~ msgid "Basic"
+#~ msgstr "Bàsic"
+
+#~ msgid "Advanced"
+#~ msgstr "Avançat"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Mostra consells en iniciar"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "No s'ha trobat el directori amb les imatges de la capçalera."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr ""
+#~ "No s'ha pogut obrir el directori amb les imatges de la capçalera: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "No s'ha pogut carregar la imatge de capçalera: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "No s'ha trobat el logotip del GNOME."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "No s'ha pogut carregar «%s»: %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "No s'ha pogut obrir l'adreça «%s»: %s"
+
+#~ msgid "%s: %s\n"
+#~ msgstr "%s: %s\n"
+
+#~ msgid "%s: "
+#~ msgstr "%s: "
+
+#~ msgid "Software"
+#~ msgstr "Programari"
+
+#~ msgid "Developers"
+#~ msgstr "Desenvolupadors"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "S'ha produït un error en escriure «%s»: %s"
+
+#~ msgid "The End!"
+#~ msgstr "Fi!"
+
+#~ msgid "Accessories"
+#~ msgstr "Accessoris"
+
+#~ msgid "Accessories menu"
+#~ msgstr "Menú d'accessoris"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicacions"
+
+#~ msgid "Programming"
+#~ msgstr "Programació"
+
+#~ msgid "Tools for software development"
+#~ msgstr "Eines per al desenvolupament de programari"
+
+#~ msgid "Games"
+#~ msgstr "Jocs"
+
+#~ msgid "Games menu"
+#~ msgstr "Menú de jocs"
+
+#~ msgid "Graphics"
+#~ msgstr "Gràfics"
+
+#~ msgid "Graphics menu"
+#~ msgstr "Menú de gràfics"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Programs for Internet and networks"
+#~ msgstr "Programes per a Internet i xarxes"
+
+#~ msgid "Multimedia"
+#~ msgstr "Multimèdia"
+
+#~ msgid "Multimedia menu"
+#~ msgstr "Menú multimèdia"
+
+#~ msgid "Office"
+#~ msgstr "Oficina"
+
+#~ msgid "Office Applications"
+#~ msgstr "Aplicacions d'ofimàtica"
+
+#~ msgid "Applications without a category"
+#~ msgstr "Aplicacions sense una categoria"
+
+#~ msgid "Other"
+#~ msgstr "Altres"
+
+#~ msgid "Programs"
+#~ msgstr "Programes"
+
+#~ msgid "Programs menu"
+#~ msgstr "Menú de programes"
+
+#~ msgid "Desktop Preferences"
+#~ msgstr "Preferències de l'escriptori"
+
+#~ msgid "Preferences that affect the whole GNOME desktop"
+#~ msgstr "Preferències que afecten a tot l'escriptori del GNOME"
+
+#~ msgid "System Tools"
+#~ msgstr "Sistema"
+
+#~ msgid "System menu"
+#~ msgstr "Menú de sistema"
+
+#~ msgid ""
+#~ "GNOME is developed by an active community of volunteers who want to "
+#~ "provide a desktop and a suite of user friendly applications. Because "
+#~ "GNOME needs documentors, translators, and many other types of people, "
+#~ "virtually anyone, with or without coding skills, can contribute to GNOME."
+#~ msgstr ""
+#~ "GNOME és desenvolupat per una comunitat activa de voluntaris que volen "
+#~ "proveir un escriptori i una col·lecció d'aplicacions amigables. Perquè "
+#~ "GNOME necessita documentadors, traductors i molts altres tipus de gent, "
+#~ "virtualment tothom, amb i sense coneiximents de programació, pot "
+#~ "contribuir al GNOME."
+
+#~ msgid "Download"
+#~ msgstr "Descarrega"
+
+#~ msgid "Users"
+#~ msgstr "Usuaris"
+
+#~ msgid "Foundation"
+#~ msgstr "Fundació"
+
+#~ msgid "Sound & Video"
+#~ msgstr "So i vídeo"
+
+#~ msgid "Click here to visit the site : "
+#~ msgstr "Feu clic ací per a visitar el lloc: "
+
+#~ msgid "List of GNOME Contributors"
+#~ msgstr "Llista de contribuïdors al GNOME"
+
+#~ msgid "GNOME Logo Image"
+#~ msgstr "Imatge del logo del GNOME"
+
+#~ msgid "Contributors' Names"
+#~ msgstr "Noms dels contribuïdors"
+
+#~ msgid "GNOME %s Was Brought To You By"
+#~ msgstr "GNOME %s us ha estat portat per"
+
+#~ msgid "And Many More ..."
+#~ msgstr "I molts altres ..."
+
+#~ msgid "GNOME News Site"
+#~ msgstr "Lloc de notícies del GNOME"
+
+#~ msgid "http://www.gnome.org/"
+#~ msgstr "http://www.gnome.org/"
+
+#~ msgid "GNOME Main Site"
+#~ msgstr "Lloc principal del GNOME"
+
+#~ msgid "GNOME is a part of the GNU Project"
+#~ msgstr "GNOME és una part del Projecte GNU"
+
+#~ msgid "File '%s' has invalid MIME type: %s"
+#~ msgstr "El fitxer «%s» té un tipus MIME invàlid: %s"
+
+#~ msgid "Home"
+#~ msgstr "Hogar"
+
+#~ msgid "Home Applications"
+#~ msgstr "Aplicacions domèstiques"
+
+#~ msgid "MimeType"
+#~ msgstr "TipusDeMime"

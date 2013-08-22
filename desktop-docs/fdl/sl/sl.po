@@ -1,0 +1,331 @@
+#'gnome-desktop/desktop-docs/fdl/
+# Slovenian translations for desktop FDL licence.
+# Copyright (C) 2009 desktop FDL COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop FDL dokument.
+# Matej Urbančič <mateju@svn.gnome.org>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop FDL help master\n"
+"POT-Creation-Date: 2012-09-20 03:33+0000\n"
+"PO-Revision-Date: 2012-09-20 09:54+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Language-Team: slovenščina <gnome-si@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Matej Urbančič"
+
+#: C/index.docbook:17(articleinfo/title)
+msgid "GNU Free Documentation License"
+msgstr "Dovoljenje za prosto dokumentacijo GNU"
+
+#: C/index.docbook:18(articleinfo/releaseinfo)
+msgid "Version 1.1, March 2000"
+msgstr "Različica 1.1, marec 2000"
+
+#: C/index.docbook:22(articleinfo/copyright)
+msgid "<year>2000</year><holder>Free Software Foundation, Inc.</holder>"
+msgstr "<year>2000</year><holder>Free Software Foundation, Inc</holder>"
+
+#: C/index.docbook:26(articleinfo/author)
+msgid "<surname>Free Software Foundation</surname>"
+msgstr "<surname>Free Software Foundation</surname>"
+
+#: C/index.docbook:31(publisher/publishername)
+msgid "GNOME Documentation Project"
+msgstr "Projekt dokumentacije GNOME"
+
+#: C/index.docbook:35(revhistory/revision)
+msgid "<revnumber>1.1</revnumber> <date>2000-03</date>"
+msgstr "<revnumber>1.1</revnumber> <date>2000-03</date>"
+
+#: C/index.docbook:43(para/address)
+#, no-wrap
+msgid ""
+"Free Software Foundation, Inc. \n"
+"             <street>51 Franklin Street, Fifth Floor</street>, \n"
+"             <city>Boston</city>, \n"
+"             <state>MA</state> <postcode>02110-1301</postcode>\n"
+"\t    <country>USA</country>"
+msgstr ""
+"Free Software Foundation, Inc. \n"
+"             <street>51 Franklin Street, Fifth Floor</street>, \n"
+"             <city>Boston</city>, \n"
+"             <state>MA</state> <postcode>02110-1301</postcode>\n"
+"\t    <country>USA</country>"
+
+#: C/index.docbook:42(legalnotice/para)
+msgid "<_:address-1/>. Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed."
+msgstr "<_:address-1/>. Vsakdo sme kopirati in razširjati dobesedne kopije tega dokumenta dovoljenja, ni pa ga dovoljeno spreminjati."
+
+#: C/index.docbook:53(abstract/para)
+#: C/index.docbook:67(sect1/para)
+msgid "The purpose of this License is to make a manual, textbook, or other written document <quote>free</quote> in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others."
+msgstr "Namen dovoljenja je omogočiti, da priročnik, učbenik, ali kak drug pisani dokument, postane <quote>prost</quote> v pomenski obliki prostosti: zagotoviti vsakomur učinkovito prostost, da besedilo prepisuje in razširja, s spremembami ali brez njih, komercialno ali nekomercialno. Dovoljenje ohranja avtorske in založniške zasluge, vendar brez prenesene odgovornosti za spremembe, ki so jih naredili drugi."
+
+#: C/index.docbook:66(sect1/title)
+msgid "PREAMBLE"
+msgstr "Predgovor"
+
+#: C/index.docbook:78(sect1/para)
+msgid "This License is a kind of <quote>copyleft</quote>, which means that derivative works of the document must themselves be free in the same sense. It complements the GNU General Public License, which is a copyleft license designed for free software."
+msgstr "Dovoljenje je opredeljeno kot <quote>odprta avtorska pravica (copyleft)</quote>, kar pomeni, da morajo biti spremembe v izpeljanih delih prav tako proste v istem pomenu te besede. Dovoljenje dopolnjuje Splošno javno dovoljenje GNU (v originalu GNU General Public License), ki je prav tako odprta avtorska pravica, vendar zasnovana za prosto programsko opremo. "
+
+#: C/index.docbook:85(sect1/para)
+msgid "We have designed this License in order to use it for manuals for free software, because free software needs free documentation: a free program should come with manuals providing the same freedoms that the software does. But this License is not limited to software manuals; it can be used for any textual work, regardless of subject matter or whether it is published as a printed book. We recommend this License principally for works whose purpose is instruction or reference."
+msgstr "Dovoljenje je zasnovano za priročnike za prosto programsko opremo, saj je prosta dokumentacija pogosto sestavni del prostih programov: prosti program bi moral vključevati priročnike, ki imajo enaka določila svoboščin, kot sam program. To dovoljenje pa ni omejeno le na priročnike programov; uporablja se lahko za katerokoli besedilno delo, ne glede na temo ali način izdaje. To dovoljenje je priporočljivo predvsem za dela, katerih namen je podajanje navodil in sklicnih podatkov."
+
+#: C/index.docbook:97(sect1/title)
+msgid "APPLICABILITY AND DEFINITIONS"
+msgstr "Primernost in definicije"
+
+#: C/index.docbook:98(sect1/para)
+msgid "This License applies to any manual or other work that contains a notice placed by the copyright holder saying it can be distributed under the terms of this License. The <quote>Document</quote>, below, refers to any such manual or work. Any member of the public is a licensee, and is addressed as <quote>you</quote>."
+msgstr "Dovoljenje se nanaša na katerikoli priročnik ali drugo delo z obvestilom imetnika pravic razširjanja, v katerem ta izjavlja, da se lahko delo razširja pod pogoji tega dovoljenja. <quote>Dokument</quote>, spodaj, se nanaša na takšen priročnik ali delo. Vsak posameznik je upravičen do uporabe dovoljenja in je v dokumentu naslovljen v <quote>drugi osebi</quote>."
+
+#: C/index.docbook:107(sect1/para)
+msgid "A <quote>Modified Version</quote> of the Document means any work containing the Document or a portion of it, either copied verbatim, or with modifications and/or translated into another language."
+msgstr "<quote>Spremenjena različica</quote> (v originalu Modified Version) dokumenta pomeni vsako delo, ki vsebuje ta dokument ali del tega, bodisi prepisan dobesedno ali s spremembami in/ali preveden v drug jezik."
+
+#: C/index.docbook:114(sect1/para)
+msgid "A <quote>Secondary Section</quote> is a named appendix or a front-matter section of the <link linkend=\"fdl-document\">Document</link> that deals exclusively with the relationship of the publishers or authors of the Document to the Document's overall subject (or to related matters) and contains nothing that could fall directly within that overall subject. (For example, if the Document is in part a textbook of mathematics, a Secondary Section may not explain any mathematics.) The relationship could be a matter of historical connection with the subject or with related matters, or of legal, commercial, philosophical, ethical or political position regarding them."
+msgstr "<quote>Drugotni razdelek</quote> (v originalu Secondary Section) se imenuje dodatek ali razdelek na prednjih straneh <link linkend=\"fdl-document\">Dokumenta</link>, ki obravnava izključno odnose izdajatelja ali avtorja tega dokumenta do splošne vsebine dokumenta (ali s tem povezanih vsebin) in ne vsebuje ničesar, kar bi sodilo neposredno v to splošno vsebino. (Če je, denimo, ta dokument del učbenika matematike, drugotni razdelek ne sme vključevati razlage matematike.) Odnos je lahko stvar zgodovinske povezave s predmetom ali s povezanimi vsebinami, ali pravni, pridobitni, filozofski, etični ali politični položaj glede teh vsebin."
+
+#: C/index.docbook:129(sect1/para)
+msgid "The <quote>Invariant Sections</quote> are certain <link linkend=\"fdl-secondary\"> Secondary Sections</link> whose titles are designated, as being those of Invariant Sections, in the notice that says that the <link linkend=\"fdl-document\">Document</link> is released under this License."
+msgstr "<quote>Nespremenljivi razdelki</quote> (v originalu Invariant Sections) so določeni <link linkend=\"fdl-secondary\">Drugotni razdelki</link>, katerih naslovi so označeni kot nespremenljivi razdelki v izjavi, da se ta <link linkend=\"fdl-document\">Dokument</link> razširja pod pogoji tega dovoljenja."
+
+#: C/index.docbook:138(sect1/para)
+msgid "The <quote>Cover Texts</quote> are certain short passages of text that are listed, as Front-Cover Texts or Back-Cover Texts, in the notice that says that the <link linkend=\"fdl-document\">Document</link> is released under this License."
+msgstr "<quote>Besedila na platnicah</quote> (v originalu Cover Texts) so določeni kratki deli besedila, ki so našteti kot besedila za prvo ali zadnjo stran knjige, v izjavi, ki pravi, da je <link linkend=\"fdl-document\">Dokument</link> izdan pod pogoji tega dovoljenja."
+
+#: C/index.docbook:146(sect1/para)
+msgid "A <quote>Transparent</quote> copy of the <link linkend=\"fdl-document\"> Document</link> means a machine-readable copy, represented in a format whose specification is available to the general public, whose contents can be viewed and edited directly and straightforwardly with generic text editors or (for images composed of pixels) generic paint programs or (for drawings) some widely available drawing editor, and that is suitable for input to text formatters or for automatic translation to a variety of formats suitable for input to text formatters. A copy made in an otherwise Transparent file format whose markup has been designed to thwart or discourage subsequent modification by readers is not Transparent. A copy that is not <quote>Transparent</quote> is called <quote>Opaque</quote>."
+msgstr "<quote>Jasen izvod</quote> (v originalu Transparent copy) dokumenta pomeni izvod v strojno berljivi obliki, katere določila so dostopna splošni javnosti, katerega vsebina se lahko gleda in ureja neposredno in enostavno s splošnimi urejevalniki besedil ali (za bitne slike) splošnimi risarskimi programi ali (za risbe) nekaterimi splošno dostopnimi urejevalniki risb, in je primeren kot vhod oblikovalnikom besedila ali za samodejno pretvarjanje v različne druge oblike, primerne za vhod oblikovalnikom besedila. Izvod sicer jasne datoteke, katere oznake so bile zasnovane tako, da bralcem preprečijo ali otežijo naknadne spremembe, ni Jasen. Izvod, ki ni <quote>Jasen</quote>, se imenuje <quote>Nejasen</quote>."
+
+#: C/index.docbook:163(sect1/para)
+msgid "Examples of suitable formats for Transparent copies include plain ASCII without markup, Texinfo input format, LaTeX input format, SGML or XML using a publicly available DTD, and standard-conforming simple HTML designed for human modification. Opaque formats include PostScript, PDF, proprietary formats that can be read and edited only by proprietary word processors, SGML or XML for which the DTD and/or processing tools are not generally available, and the machine-generated HTML produced by some word processors for output purposes only."
+msgstr "Nekateri primeri primernih oblik zapisa za jasne izvode so: ASCII ali ISO 8859-2 brez oblikovanja, vhodna oblika za Texinfo, vhodna oblika za LaTeX, SGML ali XML, ki uporablja javno dostopen DTD, in preprosta standardna oblika HTML, namenjena temu, da jo spremeni človek. Nejasne oblike vključujejo PostScript, PDF, lastniške oblike, ki jih lahko beremo in urejamo le z lastniškimi urejevalniki besedil, SGML ali XML, za katerega DTD in/ali orodja za obdelavo niso splošno dostopna, in strojno ustvarjen HTML, ki ga nekateri urejevalniki besedil izdelujejo le kot izhodno obliko zapisa."
+
+#: C/index.docbook:176(sect1/para)
+msgid "The <quote>Title Page</quote> means, for a printed book, the title page itself, plus such following pages as are needed to hold, legibly, the material this License requires to appear in the title page. For works in formats which do not have any title page as such, <quote>Title Page</quote> means the text near the most prominent appearance of the work's title, preceding the beginning of the body of the text."
+msgstr "<quote>Naslovna stran</quote> pri natisnjeni knjigi pomeni sámo naslovno stran skupaj s takšnimi nadaljnjimi stranmi, ki so neizogibne za čitljivo izražanje stvari, za katere to dovoljenje zahteva, da se pojavljajo na naslovni strani. Za dela v oblikah, ki nimajo naslovne strani kot take, <quote>Naslovna stran</quote> pomeni besedilo blizu najvidnejši pojavitvi naslova dela, pred začetkom telesa besedila."
+
+#: C/index.docbook:188(sect1/title)
+msgid "VERBATIM COPYING"
+msgstr "Dobesedno razmnoževanje"
+
+#: C/index.docbook:189(sect1/para)
+msgid "You may copy and distribute the <link linkend=\"fdl-document\">Document</link> in any medium, either commercially or noncommercially, provided that this License, the copyright notices, and the license notice saying this License applies to the Document are reproduced in all copies, and that you add no other conditions whatsoever to those of this License. You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute. However, you may accept compensation in exchange for copies. If you distribute a large enough number of copies you must also follow the conditions in <link linkend=\"fdl-section3\">section 3</link>."
+msgstr "<link linkend=\"fdl-document\">Dokument</link> je dovoljeno razmnoževati in razširjati na kakršenkoli način, pridobitno ali nepridobitno, če je le na vsakem izvodu objavljeno to dovoljenje, izjave o pravicah razširjanja, in obvestilo dovoljenja, ki pravi, da se to nanaša na ta dokument, in da določilom tega dovoljenja niso posebej dodane omejitve. Ni dovoljeno uporabljati tehničnih ukrepov, ki bi preprečevali ali nadzorovali branje ali nadaljnje razširjanje izvodov, ki jih naredite ali razširjate. Izvode je dovoljeno zaračunati. V kolikor razširjate dovolj veliko število izvodov, je treba upoštevati tudi določila iz 3. razdelka."
+
+#: C/index.docbook:204(sect1/para)
+msgid "You may also lend copies, under the same conditions stated above, and you may publicly display copies."
+msgstr "Izvode je dovoljeno posojati, pod enakimi pogoji, kot so opisani zgoraj, in jih tudi javno prikazovati."
+
+#: C/index.docbook:211(sect1/title)
+msgid "COPYING IN QUANTITY"
+msgstr "Množično razmnoževanje"
+
+#: C/index.docbook:212(sect1/para)
+msgid "If you publish printed copies of the <link linkend=\"fdl-document\">Document</link> numbering more than 100, and the Document's license notice requires <link linkend=\"fdl-cover-texts\">Cover Texts</link>, you must enclose the copies in covers that carry, clearly and legibly, all these Cover Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on the back cover. Both covers must also clearly and legibly identify you as the publisher of these copies. The front cover must present the full title with all words of the title equally prominent and visible. You may add other material on the covers in addition. Copying with changes limited to the covers, as long as they preserve the title of the <link linkend=\"fdl-document\">Document</link> and satisfy these conditions, can be treated as verbatim copying in other respects."
+msgstr "Pri izdajanju natisnjenih izvodov tega <link linkend=\"fdl-document\">Dokumenta</link> v nakladi več kot 100 izvodov, in dovoljenje dokumenta zahteva tudi <link linkend=\"fdl-cover-texts\">Besedila na platnicah</link>, je treba izvode obdati s platnicami, ki čitljivo in razumljivo nosijo vsa ta Besedila na platnicah: besedila na naslovnici in besedila na zadnji strani platnic. Na obeh platnicah mora biti tudi čitljivo in razumljivo zavedeno imenovanje izdajatelja teh izvodov. Prednja platnica mora vsebovati popoln naslov z vsemi enako izrazito natisnjenimi in vidnimi besedami naslova. Na platnice je ob tem dovoljeno dodati tudi druge stvari. Kopiranje s spremembami, omejenimi na platnice, če le ohranijo naslov tega <link linkend=\"fdl-document\">documenta</link>in zadoščajo tem pogojem, se lahko v drugih ozirih štejejo za dobesedno kopiranje."
+
+#: C/index.docbook:230(sect1/para)
+msgid "If the required texts for either cover are too voluminous to fit legibly, you should put the first ones listed (as many as fit reasonably) on the actual cover, and continue the rest onto adjacent pages."
+msgstr "Če je zahtevanih besedil za katero od platnic preveč, da bi jih bilo mogoče podati čitljivo, je treba najprej vstaviti prve naštete (kolikor jih pač razumno gre) na pravo platnico, in vstaviti preostanek na strani, ki neposredno sledijo naslovnici."
+
+#: C/index.docbook:237(sect1/para)
+msgid "If you publish or distribute <link linkend=\"fdl-transparent\">Opaque</link> copies of the <link linkend=\"fdl-document\">Document</link> numbering more than 100, you must either include a machine-readable <link linkend=\"fdl-transparent\">Transparent</link> copy along with each Opaque copy, or state in or with each Opaque copy a publicly-accessible computer-network location containing a complete Transparent copy of the Document, free of added material, which the general network-using public has access to download anonymously at no charge using public-standard network protocols. If you use the latter option, you must take reasonably prudent steps, when you begin distribution of Opaque copies in quantity, to ensure that this Transparent copy will remain thus accessible at the stated location until at least one year after the last time you distribute an Opaque copy (directly or through your agents or retailers) of that edition to the public."
+msgstr "Če objavljate ali razširjate <link linkend=\"fdl-transparent\">Nejasne izvode</link> tega <link linkend=\"fdl-document\">Dokumenta</link>, v nakladi več kot 100 izvodov, je treba bodisi vključiti strojno berljivo <link linkend=\"fdl-transparent\">Jasno obliko</link> poleg vsakega Nejasnega izvoda, ali poleg vsakega Nejasnega izvoda objaviti tudi javno dostopno mesto v računalniškem omrežju, kjer je dostopna popolna Jasna kopija dokumenta, brez dodatnega materiala, in kjer jo splošna javnost, ki uporablja omrežje, lahko brezplačno prejme preko javnih standardnih omrežnih protokolov. Če uporabite zadnjo izbiro, je treba razumno preudarno  poskrbeti za to, da bo po objavi Nejasne oblike dela, Jasna oblika ostala dostopna na objavljenem mestu vsaj še eno leto po preteku datuma, ko je javnosti posredovan (neposredno ali prek zastopnikov oziroma trgovcev na drobno) zadnji Nejasni izvod."
+
+#: C/index.docbook:257(sect1/para)
+msgid "It is requested, but not required, that you contact the authors of the <link linkend=\"fdl-document\">Document</link> well before redistributing any large number of copies, to give them a chance to provide you with an updated version of the Document."
+msgstr "Priporočeno je, ne pa tudi zahtevano, da se precej pred začetkom razširjanja večjega števila izvodov, vzpostavi stik z avtorji tega <link linkend=\"fdl-document\">Dokumenta</link>, da imajo možnost priskrbeti pred razširjanjem posodobljene različice dokumenta."
+
+#: C/index.docbook:266(sect1/title)
+msgid "MODIFICATIONS"
+msgstr "Spremembe"
+
+#: C/index.docbook:267(sect1/para)
+msgid "You may copy and distribute a <link linkend=\"fdl-modified\">Modified Version</link> of the <link linkend=\"fdl-document\">Document</link> under the conditions of sections <link linkend=\"fdl-section2\">2</link> and <link linkend=\"fdl-section3\">3</link> above, provided that you release the Modified Version under precisely this License, with the Modified Version filling the role of the Document, thus licensing distribution and modification of the Modified Version to whoever possesses a copy of it. In addition, you must do these things in the Modified Version:"
+msgstr "Spremenjeno različico tega <link linkend=\"fdl-document\">Dokumenta</link> je dovoljeno razmnoževati in razširjati pod pogoji iz <link linkend=\"fdl-section2\">2.</link> in <link linkend=\"fdl-section3\">3.</link> razdelka, v kolikor bo izdana <link linkend=\"fdl-modified\">Spremenjena različica</link> pod točno tem dovoljenjem, kjer Spremenjena različica prevzame vlogo tega dokumenta, in torej to dovoljenje ureja razširjanje in spreminjanje Spremenjene različice za kogarkoli, ki poseduje njen izvod. Poleg tega je treba v Spremenjeni različici narediti še naslednje:"
+
+#: C/index.docbook:282(listitem/para)
+msgid "Use in the <link linkend=\"fdl-title-page\">Title Page</link> (and on the covers, if any) a title distinct from that of the <link linkend=\"fdl-document\">Document</link>, and from those of previous versions (which should, if there were any, be listed in the History section of the Document). You may use the same title as a previous version if the original publisher of that version gives permission."
+msgstr "Na <link linkend=\"fdl-title-page\">naslovni strani</link> (ali platnicah, če obstajajo) uporabite naslov, različen od naslova izvirnega <link linkend=\"fdl-document\">Dokumenta</link> in vseh prejšnjih različic (ki bi morale biti, če jih je kaj, naštete v razdelku Zgodovina v dokumentu). Če se izvirni založnik s tem strinja, lahko uporabite isti naslov kot ga ima prejšnja različica."
+
+#: C/index.docbook:295(listitem/para)
+msgid "List on the <link linkend=\"fdl-title-page\">Title Page</link>, as authors, one or more persons or entities responsible for authorship of the modifications in the <link linkend=\"fdl-modified\">Modified Version</link>, together with at least five of the principal authors of the <link linkend=\"fdl-document\">Document</link> (all of its principal authors, if it has less than five)."
+msgstr "Na <link linkend=\"fdl-title-page\">naslovni strani</link> kot avtorje našteti eno ali več oseb ali družb, odgovornih za avtorstvo sprememb v <link linkend=\"fdl-modified\">Spremenjeni različici</link>, skupaj z vsaj petimi glavnimi avtorji <link linkend=\"fdl-document\">Dokumenta</link> (ali vsemi avtorji, če jih je manj kot pet)."
+
+#: C/index.docbook:307(listitem/para)
+msgid "State on the <link linkend=\"fdl-title-page\">Title Page</link> the name of the publisher of the <link linkend=\"fdl-modified\">Modified Version</link>, as the publisher."
+msgstr "Na <link linkend=\"fdl-title-page\">naslovni strani</link> imenovati založnika <link linkend=\"fdl-modified\">Spremenjene različice</link>."
+
+#: C/index.docbook:316(listitem/para)
+msgid "Preserve all the copyright notices of the <link linkend=\"fdl-document\">Document</link>."
+msgstr "Ohraniti vsa obvestila o pravicah razširjanja <link linkend=\"fdl-document\">Dokumenta</link>."
+
+#: C/index.docbook:323(listitem/para)
+msgid "Add an appropriate copyright notice for your modifications adjacent to the other copyright notices."
+msgstr "Dodati ustrezno obvestilo o pravicah razširjanja za vse spremembe poleg drugih obvestil o pravicah razširjanja."
+
+#: C/index.docbook:330(listitem/para)
+msgid "Include, immediately after the copyright notices, a license notice giving the public permission to use the <link linkend=\"fdl-modified\">Modified Version</link> under the terms of this License, in the form shown in the Addendum below."
+msgstr "Takoj po obvestilih o pravicah razširjanja vključiti obvestilo dovoljenja, ki javno dovoljuje rabo <link linkend=\"fdl-modified\">Spremenjene različice</link> pod pogoji tega dovoljenja, v obliki, prikazani v Dodatku, spodaj."
+
+#: C/index.docbook:340(listitem/para)
+msgid "Preserve in that license notice the full lists of <link linkend=\"fdl-invariant\"> Invariant Sections</link> and required <link linkend=\"fdl-cover-texts\">Cover Texts</link> given in the <link linkend=\"fdl-document\">Document's</link> license notice."
+msgstr "V tem obvestilu dovoljenja ohranite popoln seznam <link linkend=\"fdl-invariant\">Nespremenljivih razdelkov</link> in zahtevanih <link linkend=\"fdl-cover-texts\">Besedil na ovitku</link>, podanih v obvestilu dovoljenja tega <link linkend=\"fdl-document\">Dkumenta</link>."
+
+#: C/index.docbook:350(listitem/para)
+msgid "Include an unaltered copy of this License."
+msgstr "Vključite nespremenjen izvod tega dovoljenja. "
+
+#: C/index.docbook:356(listitem/para)
+msgid "Preserve the section entitled <quote>History</quote>, and its title, and add to it an item stating at least the title, year, new authors, and publisher of the <link linkend=\"fdl-modified\">Modified Version </link>as given on the <link linkend=\"fdl-title-page\">Title Page</link>. If there is no section entitled <quote>History</quote> in the <link linkend=\"fdl-document\">Document</link>, create one stating the title, year, authors, and publisher of the Document as given on its Title Page, then add an item describing the Modified Version as stated in the previous sentence."
+msgstr "Ohranite razdelek, imenovan <quote>Zgodovina</quote>, in njegov naslov, in vanj dodajte postavko z vsaj naslovom, letom, novimi avtorji in izdajateljem <link linkend=\"fdl-modified\">Spremenjene različice</link>, kot je podana na <link linkend=\"fdl-title-page\">Naslovni strani</link>. Če v dokumentu ni razdelka, imenovanega <quote>Zgodovina</quote>, ga ustvarite, in podajte naslov, leto, avtorje in izdajatelja <link linkend=\"fdl-document\">Dokumenta</link> kot je podan na njegovi Naslovni strani, potem pa še dodajte postavko, v kateri opišite Spremenjeno različico, kot piše v prejšnjem stavku."
+
+#: C/index.docbook:372(listitem/para)
+msgid "Preserve the network location, if any, given in the <link linkend=\"fdl-document\">Document</link> for public access to a <link linkend=\"fdl-transparent\">Transparent</link> copy of the Document, and likewise the network locations given in the Document for previous versions it was based on. These may be placed in the <quote>History</quote> section. You may omit a network location for a work that was published at least four years before the Document itself, or if the original publisher of the version it refers to gives permission."
+msgstr "V kolikor obstaja, je priporočeno ohraniti omrežno mesto, za javni dostop do <link linkend=\"fdl-transparent\">Jasnih</link> izvodov <link linkend=\"fdl-document\">Dokumenta</link>, ki je navedeno v dokumentu, in podobno tudi vsa omrežna mesta s prejšnjimi različicami dokumenta, ki so navedena v dokumentu. Priporočljivo jih je dodati v razdelek <quote>Zgodovine</quote>. Mogoče pa je  omrežna mesta tudi izpustiti za delo, ki je bilo izdano vsaj štiri leta pred samim dokumentom, ali, če izdajatelj, omenjen v ustrezni različici, to dovoli."
+
+#: C/index.docbook:387(listitem/para)
+msgid "In any section entitled <quote>Acknowledgements</quote> or <quote>Dedications</quote>, preserve the section's title, and preserve in the section all the substance and tone of each of the contributor acknowledgements and/or dedications given therein."
+msgstr "V vsakem razdelku, poimenovanem <quote>Zahvale</quote> ali <quote>Posvetila</quote>, je treba ohraniti naslov razdelka in v razdelku ohraniti vso izvorno vsebino  za vse tam podane zahvale in/ali posvetila."
+
+#: C/index.docbook:397(listitem/para)
+msgid "Preserve all the <link linkend=\"fdl-invariant\">Invariant Sections</link> of the <link linkend=\"fdl-document\">Document</link>, unaltered in their text and in their titles. Section numbers or the equivalent are not considered part of the section titles."
+msgstr "Ohraniti je treba vse <link linkend=\"fdl-invariant\">Nespremenljive razdelke</link> <link linkend=\"fdl-document\">Dokumenta</link>, z nespremenjenim besedilom in naslovi. Številke ali druge oznake razdelkov ne štejejo za del naslovov razdelkov."
+
+#: C/index.docbook:407(listitem/para)
+msgid "Delete any section entitled <quote>Endorsements</quote>. Such a section may not be included in the <link linkend=\"fdl-modified\">Modified Version</link>."
+msgstr "Izbrisati je treba vse razdelke, naslovljene <quote>Odobritve</quote>. Takšni razdelki ne smejo biti vključeni v  <link linkend=\"fdl-modified\">Spremenjeni različici</link>."
+
+#: C/index.docbook:416(listitem/para)
+msgid "Do not retitle any existing section as <quote>Endorsements</quote> or to conflict in title with any <link linkend=\"fdl-invariant\">Invariant Section</link>."
+msgstr "Ni dovoljeno preimenovati kateregakoli obstoječega razdelka v <quote>Odobritve</quote> ali v isto ime, kot ga ima  <link linkend=\"fdl-invariant\">Nespremenljivi razdelek</link>."
+
+#: C/index.docbook:425(sect1/para)
+msgid "If the <link linkend=\"fdl-modified\">Modified Version</link> includes new front-matter sections or appendices that qualify as <link linkend=\"fdl-secondary\">Secondary Sections</link> and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of <link linkend=\"fdl-invariant\">Invariant Sections</link> in the Modified Version's license notice. These titles must be distinct from any other section titles."
+msgstr "V primeru, da <link linkend=\"fdl-modified\">Spremenjena različica</link> vključuje nove čelne razdelke ali dodatke, ki štejejo za <link linkend=\"fdl-secondary\">Drugotne razdelke</link> in ne vsebujejo iz dokumenta prepisane snovi, je dovoljeno po lastni presoji označiti nekatere ali vse takšne razdelke kot nespremenljive. To je treba storiti tako, da se dodajo njihovi naslovi v seznam <link linkend=\"fdl-invariant\">Nespremenljivih razdelkov</link> v obvestilu dovoljenja Spremenjene različice. Ti naslovi se morajo razlikovati od vseh drugih naslovov razdelkov."
+
+#: C/index.docbook:437(sect1/para)
+msgid "You may add a section entitled <quote>Endorsements</quote>, provided it contains nothing but endorsements of your <link linkend=\"fdl-modified\">Modified Version</link> by various parties--for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard."
+msgstr "Dodate lahko razdelek, imenovan <quote>Odobritve</quote>, če ne vsebuje nič drugega kot odobritve vaše Spremenjene različice različnih strank – na primer, recenzijske izjave ali besedilo, ki je bilo odobreno s strani organizacije kot veljavna definicija standarda."
+
+#: C/index.docbook:446(sect1/para)
+msgid "You may add a passage of up to five words as a <link linkend=\"fdl-cover-texts\">Front-Cover Text</link>, and a passage of up to 25 words as a <link linkend=\"fdl-cover-texts\">Back-Cover Text</link>, to the end of the list of <link linkend=\"fdl-cover-texts\">Cover Texts</link> in the <link linkend=\"fdl-modified\">Modified Version</link>. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the <link linkend=\"fdl-document\">Document</link> already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one."
+msgstr "Kot <link linkend=\"fdl-cover-texts\">Besedilo na naslovnici</link> <link linkend=\"fdl-modified\">Spremenjene različice</link> je dovoljeno dodati odlomek največ petih besed, kot <link linkend=\"fdl-cover-texts\">Besedilo na zadnji strani</link> pa odlomek največ 25 besed. Vsaka oseba lahko doda le po en odlomek Besedilu na naslovnici in Besedilu na zadnji strani platnic, vključno z odlomki po dogovorih. Če <link linkend=\"fdl-document\">Dokument</link> že vsebuje besedilo na naslovnici za isti ovitek, ki je bil že dodan ali je bil dodan po dogovoru z isto (fizično ali pravno) osebo v zastopstvu, ni dovoljeno dodati še enega, pač pa je dovoljeno starega nadomestiti z izrecnim soglasjem prejšnjega izdajatelja, ki je stari odlomek dodal."
+
+#: C/index.docbook:463(sect1/para)
+msgid "The author(s) and publisher(s) of the <link linkend=\"fdl-document\">Document</link> do not by this License give permission to use their names for publicity for or to assert or imply endorsement of any <link linkend=\"fdl-modified\">Modified Version </link>."
+msgstr "Avtorji in izdajatelji <link linkend=\"fdl-document\">Dokumenta</link> s tem dovoljenjem ne dovolijo uporabe njihovih imen ali pritrditve ali implicitnega soglasja za katerokoli <link linkend=\"fdl-modified\">Spremenjeno različico</link>."
+
+#: C/index.docbook:473(sect1/title)
+msgid "COMBINING DOCUMENTS"
+msgstr "Združevanje dokumentov"
+
+#: C/index.docbook:474(sect1/para)
+msgid "You may combine the <link linkend=\"fdl-document\">Document</link> with other documents released under this License, under the terms defined in <link linkend=\"fdl-section4\">section 4</link> above for modified versions, provided that you include in the combination all of the <link linkend=\"fdl-invariant\">Invariant Sections</link> of all of the original documents, unmodified, and list them all as Invariant Sections of your combined work in its license notice."
+msgstr "<link linkend=\"fdl-document\">Dokument</link> je dovoljeno združevati s katerimikoli drugimi dokumenti, izdanimi pod pogoji tega dovoljenja, pod zgornjimi pogoji za spremenjene različice iz <link linkend=\"fdl-section4\">4. razdelka</link>, če vključite vse <link linkend=\"fdl-invariant\">Nespremenljive razdelke</link> vseh izvirnih dokumentov, nespremenjenih, in so v izjavi dovoljenja našteti kot Nespremenljivi razdelki novega, združenega dela."
+
+#: C/index.docbook:485(sect1/para)
+msgid "The combined work need only contain one copy of this License, and multiple identical <link linkend=\"fdl-invariant\">Invariant Sections</link> may be replaced with a single copy. If there are multiple Invariant Sections with the same name but different contents, make the title of each such section unique by adding at the end of it, in parentheses, the name of the original author or publisher of that section if known, or else a unique number. Make the same adjustment to the section titles in the list of Invariant Sections in the license notice of the combined work."
+msgstr "Združeno delo zahteva le en izvod tega dovoljenja, in več istih <link linkend=\"fdl-invariant\">Nespremenljivih razdelkov</link> se lahko nadomesti z enim samim. Če obstaja več Nespremenljivih razdelkov z istim imenom, vendar različno vsebino, je treba naslov vsakega od njih spremeniti v edinstvenega, tako da na njegov konec v oklepajih dodate ime izvirnega avtorja ali izdajatelja, če vam je znano, sicer pa edinstveno število. Iste spremembe je treba narediti v imenih razdelkov v seznamu Nespremenljivih razdelkov v izjavi dovoljenja vašega združenega dela."
+
+#: C/index.docbook:498(sect1/para)
+msgid "In the combination, you must combine any sections entitled <quote>History</quote> in the various original documents, forming one section entitled <quote>History</quote>; likewise combine any sections entitled <quote>Acknowledgements</quote>, and any sections entitled <quote>Dedications</quote>. You must delete all sections entitled <quote>Endorsements.</quote>"
+msgstr "V združenem delu je treba združiti vse razdelke v različnih izvirnih dokumentih, poimenovane <quote>Zgodovina</quote>, tako da se oblikuje en sam razdelek <quote>Zgodovina</quote>; podobno je treba združiti vse razdelke <quote>Zahvale</quote> in <quote>Posvetila</quote>. Izbrisati pa je treba vse razdelke, poimenovane <quote>Odobritve</quote>."
+
+#: C/index.docbook:509(sect1/title)
+msgid "COLLECTIONS OF DOCUMENTS"
+msgstr "Zbirka dokumentov"
+
+#: C/index.docbook:510(sect1/para)
+msgid "You may make a collection consisting of the <link linkend=\"fdl-document\">Document</link> and other documents released under this License, and replace the individual copies of this License in the various documents with a single copy that is included in the collection, provided that you follow the rules of this License for verbatim copying of each of the documents in all other respects."
+msgstr "Dovoljeno je napraviti zbirko tega <link linkend=\"fdl-document\">Dokumenta</link> in drugih dokumentov, izdanih pod pogoji tega dovoljenja, in nadomestiti posamezne izvode tega dovoljenja v različnih dokumentih z enim samim izvodom, ki je vključen v zbirko, upoštevajoč zahteve tega dovoljenja za dobesedno razmnoževanje vsakega od teh dokumentov v vseh drugih pogledih. "
+
+#: C/index.docbook:520(sect1/para)
+msgid "You may extract a single document from such a collection, and dispbibute it individually under this License, provided you insert a copy of this License into the extracted document, and follow this License in all other respects regarding verbatim copying of that document."
+msgstr "Iz take zbirke je dovoljeno izluščiti posamezen dokument in ga posebej razširjati pod pogoji tega dovoljenja, če je v izluščen dokument vstavljen izvod tega dovoljenja in v vseh drugih ozirih glede dobesednega razmnoževanja upoštevajoč to dovoljenje."
+
+#: C/index.docbook:530(sect1/title)
+msgid "AGGREGATION WITH INDEPENDENT WORKS"
+msgstr "Združevanje z neodvisnimi deli"
+
+#: C/index.docbook:531(sect1/para)
+msgid "A compilation of the <link linkend=\"fdl-document\">Document</link> or its derivatives with other separate and independent documents or works, in or on a volume of a storage or distribution medium, does not as a whole count as a <link linkend=\"fdl-modified\">Modified Version</link> of the Document, provided no compilation copyright is claimed for the compilation. Such a compilation is called an <quote>aggregate</quote>, and this License does not apply to the other self-contained works thus compiled with the Document , on account of their being thus compiled, if they are not themselves derivative works of the Document. If the <link linkend=\"fdl-cover-texts\">Cover Text</link> requirement of <link linkend=\"fdl-section3\">section 3</link> is applicable to these copies of the Document, then if the Document is less than one quarter of the entire aggregate, the Document's Cover Texts may be placed on covers that surround only the Document within the aggregate. Otherwise they must appear on covers around the whole aggregate."
+msgstr "Združevanje <link linkend=\"fdl-document\">Dokumenta</link>  ali njegovih izpeljanih različic z drugimi ločenimi in neodvisnimi dokumenti ali deli, v knjigi ali kakršnemkoli nosilcu hrambe ali razširjanja, kot celota ne šteje za <link linkend=\"fdl-modified\">Spremenjeno različico</link> dokumenta, če za združeno zbirko nihče ne zahteva pravic razširjanja. Takšno združeno delo se imenuje <quote>zbirka</quote> in to dovoljenje ne velja za druga samostojna dela, tako združena z dokumentom, zaradi tega, ker so združena z dokumentom, če niso sama izpeljana dela dokumenta. V kolikor so zahteve <link linkend=\"fdl-cover-texts\">besedila na ovitku</link> skladne z <link linkend=\"fdl-section3\">oddelkom 3</link> tega dokumenta, potem je dovoljeno, v kolikor je dokument del, ki je manjši od četrtine celotne zbirke, besedilo na naslovnici postaviti na platnici, ki sta neposredno povezani le z dokumentom v zbirki. Sicer mora biti besedilo izpisano na naslovnicah celotne zbirke."
+
+#: C/index.docbook:554(sect1/title)
+msgid "TRANSLATION"
+msgstr "Prevod"
+
+#: C/index.docbook:555(sect1/para)
+msgid "Translation is considered a kind of modification, so you may distribute translations of the <link linkend=\"fdl-document\">Document</link> under the terms of <link linkend=\"fdl-section4\">section 4</link>. Replacing <link linkend=\"fdl-invariant\"> Invariant Sections</link> with translations requires special permission from their copyright holders, but you may include translations of some or all Invariant Sections in addition to the original versions of these Invariant Sections. You may include a translation of this License provided that you also include the original English version of this License. In case of a disagreement between the translation and the original English version of this License, the original English version will prevail."
+msgstr "Prevod šteje za vrsto spremembe, zato lahko razširjate prevode <link linkend=\"fdl-document\">Dokumenta</link> pod pogoji <link linkend=\"fdl-section4\">4. razdelka</link>. Nadomeščanje <link linkend=\"fdl-invariant\">Nespremenljivih razdelkov</link> s prevodi zahteva posebno dovoljenje imetnikov pravic njihovega razširjanja, lahko pa vključite prevode nekaterih Nespremenljivih razdelkov poleg izvirnih različic teh Nespremenljivih razdelkov. Vključite lahko tudi prevod tega dovoljenja, če vključite tudi izvirno angleško različico tega dovoljenja. V primeru neskladja med prevodom in angleškim izvirnikom tega dovoljenja, velja izvirna angleška različica."
+
+#: C/index.docbook:573(sect1/title)
+msgid "TERMINATION"
+msgstr "Prenehanje veljavnosti"
+
+#: C/index.docbook:574(sect1/para)
+msgid "You may not copy, modify, sublicense, or distribute the <link linkend=\"fdl-document\">Document</link> except as expressly provided for under this License. Any other attempt to copy, modify, sublicense or distribute the Document is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance."
+msgstr "<link linkend=\"fdl-document\">Dokumenta</link> ni dovoljeno razmnoževati, spreminjati, podrejati dovoljenja ali ga razširjati, razen če je to izrecno dovoljeno s tem dovoljenjem. Vsak drugi poskus razmnoževanja, spreminjanja, podrejanja dovoljenja ali razširjanja Dokumenta je ničen, in samodejno prekine vaše pravice, izhajajoče iz tega dovoljenja. Vendar pa se osebam, ki so svoj izvod ali pravice dobile od vas pod tem dovoljenjem, dovoljenje ne prekine, dokler se ji popolnoma podrejajo. "
+
+#: C/index.docbook:587(sect1/title)
+msgid "FUTURE REVISIONS OF THIS LICENSE"
+msgstr "Prihodnje popravljene izdaje tega dovoljenja"
+
+#: C/index.docbook:588(sect1/para)
+msgid "The <ulink type=\"http\" url=\"http://www.gnu.org/fsf/fsf.html\">Free Software Foundation</ulink> may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See <ulink type=\"http\" url=\"http://www.gnu.org/copyleft\">http://www.gnu.org/copyleft/</ulink>."
+msgstr "Ustanova <ulink type=\"http\" url=\"http://www.gnu.org/fsf/fsf.html\">Free Software Foundation</ulink> lahko od časa do časa izdaja nove, popravljene, različice dovoljenja Proste dokumentacije GNU. Nove različice bodo pisane v duhu trenutne različice, vendar se lahko razlikujejo v podrobnostih, ki bodo opredeljevale nove težave ali poglede. Več o tem si je mogoče ogledati na naslovu <ulink type=\"http\" url=\"http://www.gnu.org/copyleft\">http://www.gnu.org/copyleft/</ulink>."
+
+#: C/index.docbook:599(sect1/para)
+msgid "Each version of the License is given a distinguishing version number. If the <link linkend=\"fdl-document\">Document</link> specifies that a particular numbered version of this License <quote>or any later version</quote> applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation."
+msgstr "Vsaki različici dovoljenja je dodeljena edinstvena številka različice. Če <link linkend=\"fdl-document\">Dokument</link> določa, da zanj velja določena <quote>ali katerakoli poznejša različica</quote> tega dovoljenja, je dovoljeno izbirati pogoje in določila bodisi te različice ali katerekoli poznejše izdane različice (ne pa tudi osnutka), ki jo je izdala ustanova Free Software Foundation. Če program ne določa številke različice dovoljenja, lahko izberete katerokoli različico, ki jo je kdajkoli izdala ustanova Free Software Foundation (ne pa tudi osnutka)."
+
+#: C/index.docbook:614(sect1/title)
+msgid "Addendum"
+msgstr "Dostavek"
+
+#: C/index.docbook:615(sect1/para)
+msgid "To use this License in a document you have written, include a copy of the License in the document and put the following copyright and license notices just after the title page:"
+msgstr "Za uporabo tega dovoljenja v dokumentu, ki ste ga napisali, vključite izvod dovoljenja v dokument in takoj za naslovno stranjo vključite naslednje obvestilo o dovoljenju in pravicah razširjanja: "
+
+#: C/index.docbook:622(blockquote/para)
+msgid "Copyright © YEAR YOUR NAME."
+msgstr "Avtorske pravice © LETO VAŠE IME."
+
+#: C/index.docbook:625(blockquote/para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.1 or any later version published by the Free Software Foundation; with the <link linkend=\"fdl-invariant\">Invariant Sections</link> being LIST THEIR TITLES, with the <link linkend=\"fdl-cover-texts\">Front-Cover Texts</link> being LIST, and with the <link linkend=\"fdl-cover-texts\">Back-Cover Texts</link> being LIST. A copy of the license is included in the section entitled <quote>GNU Free Documentation License</quote>."
+msgstr "Dokument je dovoljeno razmnoževati, razširjati in/ali spreminjati pod pogoji Dovoljenja za prosto dokumentacijo GNU (GNU FreeDocumentation License), različice 1.1 ali katerekoli poznejše različice, ki jo je izdala ustanova Free Software Foundation; z <link linkend=\"fdl-invariant\">Nespremenljivimi razdelki</link>: NAŠTEJTE NJIHOVE NASLOVE, z  <link linkend=\"fdl-cover-texts\">Besedilom na naslovnici</link>: NAVEDITE SEZNAM, in z <link linkend=\"fdl-cover-texts\">Besedilom na zadnji strani</link>:NAVEDITE SEZNAM. Izvod dovoljenja je vključen v razdelku, imenovanem <quote>Dovoljenje za prosto dokumentacijo GNU</quote>."
+
+#: C/index.docbook:640(sect1/para)
+msgid "If you have no <link linkend=\"fdl-invariant\">Invariant Sections</link>, write <quote>with no Invariant Sections</quote> instead of saying which ones are invariant. If you have no <link linkend=\"fdl-cover-texts\">Front-Cover Texts</link>, write <quote>no Front-Cover Texts</quote> instead of <quote>Front-Cover Texts being LIST</quote>; likewise for <link linkend=\"fdl-cover-texts\">Back-Cover Texts</link>."
+msgstr "V primeru, da ni  <link linkend=\"fdl-invariant\">Nespremenljivih razdelkov</link>, je treba v dokumentu zapisati, da je ta <quote>brez Nespremenljivih razdelkov</quote>, namesto, da so posamič opredeljeni. Podobno je treba storiti tudi, če ni <link linkend=\"fdl-cover-texts\">Besedila na ovitku</link>."
+
+#: C/index.docbook:650(sect1/para)
+msgid "If your document contains nontrivial examples of program code, we recommend releasing these examples in parallel under your choice of free software license, such as the <ulink type=\"http\" url=\"http://www.gnu.org/copyleft/gpl.html\"> GNU General Public License</ulink>, to permit their use in free software."
+msgstr "V kolikor dokument vsebuje netrivialne primere programske kode, vam priporočamo, da te primere izdate vzporedno pod dovoljenjem proste programske opreme, kot je Splošno dovoljenje GNU (angl. GNU General Public License), po vašem izboru, da dovolite rabo te kode v prostih programih."
+
+#~ msgid "2000"
+#~ msgstr "2000"
+
+#~ msgid "1.1"
+#~ msgstr "1.1"
+
+#~ msgid "2000-03"
+#~ msgstr "03-2000"

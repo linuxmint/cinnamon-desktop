@@ -1,0 +1,101 @@
+<!-- ##### SECTION Title ##### -->
+edid
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF uchar ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF MonitorInfo ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF Timing ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF DetailedTiming ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM Interface ##### -->
+<para>
+
+</para>
+
+@UNDEFINED: 
+@DVI: 
+@HDMI_A: 
+@HDMI_B: 
+@MDDI: 
+@DISPLAY_PORT: 
+
+<!-- ##### ENUM ColorType ##### -->
+<para>
+
+</para>
+
+@UNDEFINED_COLOR: 
+@MONOCHROME: 
+@RGB: 
+@OTHER_COLOR: 
+
+<!-- ##### ENUM StereoType ##### -->
+<para>
+
+</para>
+
+@NO_STEREO: 
+@FIELD_RIGHT: 
+@FIELD_LEFT: 
+@TWO_WAY_RIGHT_ON_EVEN: 
+@TWO_WAY_LEFT_ON_EVEN: 
+@FOUR_WAY_INTERLEAVED: 
+@SIDE_BY_SIDE: 
+
+<!-- ##### FUNCTION decode_edid ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION make_display_name ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+

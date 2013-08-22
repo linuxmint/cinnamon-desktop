@@ -1,0 +1,565 @@
+# Dutch translation for gnome-desktop
+#
+# This file is licensed under the same terms as the gnome-desktop package.
+#
+# Dirk-Jan C. Binnema <djcb@dds.nl>, 1998, 1999
+# Dennis Smit <synap@area101.penguin.nl>, 2000
+# Almer S. Tigelaar <almer1@dds.nl>, 2000
+# Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2001
+# Taco Witte <T.C.Witte@phys.uu.nl>, 2002
+# Tino Meinen <a.t.meinen@chello.nl>, 2002, 2003, 2005, 2006
+# Wouter Bolsterlee <wbolster@gnome.org>, 2007–2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-12 14:51+0200\n"
+"PO-Revision-Date: 2010-09-12 14:51+0200\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
+"Language-Team: Dutch <vertaling@nl.linux.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:60
+msgid "About GNOME"
+msgstr "Info over Gnome"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Meer te weten komen over Gnome"
+
+#: ../gnome-about/gnome-about.in:61
+msgid "News"
+msgstr "Nieuws"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "GNOME Library"
+msgstr "Gnome-bibliotheek"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "Friends of GNOME"
+msgstr "Vrienden van Gnome"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Contact"
+msgstr "Contact"
+
+#: ../gnome-about/gnome-about.in:68
+msgid "The Mysterious GEGL"
+msgstr "Het Mysterieuze GEGL"
+
+# Onvertaald gelaten (Reinout en Wouter)
+#: ../gnome-about/gnome-about.in:69
+msgid "The Squeaky Rubber GNOME"
+msgstr "The Squeaky Rubber GNOME"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "Wanda The GNOME Fish"
+msgstr "Wanda de Gnome-vis"
+
+#: ../gnome-about/gnome-about.in:567
+msgid "_Open URL"
+msgstr "URL _openen"
+
+#: ../gnome-about/gnome-about.in:574
+msgid "_Copy URL"
+msgstr "URL _kopiëren"
+
+#: ../gnome-about/gnome-about.in:826
+msgid "About the GNOME Desktop"
+msgstr "Info over de Gnome-werkomgeving"
+
+#: ../gnome-about/gnome-about.in:859
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:873
+msgid "Welcome to the GNOME Desktop"
+msgstr "Welkom bij de Gnome-werkomgeving"
+
+#: ../gnome-about/gnome-about.in:890
+msgid "Brought to you by:"
+msgstr "U gebracht door:"
+
+#: ../gnome-about/gnome-about.in:914
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:975
+msgid "Version"
+msgstr "Versie"
+
+# leverancier
+#: ../gnome-about/gnome-about.in:977
+msgid "Distributor"
+msgstr "Distributeur"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Bouwdatum"
+
+#: ../gnome-about/gnome-about.in:1024
+msgid "Display information on this GNOME version"
+msgstr "Informatie over deze Gnome-verise weergeven"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"Gnome bevat tevens een compleet platform voor softwareontwikkelaars waarmee "
+"krachtige en complexe toepassingen kunnen worden gebouwd."
+
+# vrij vertaald
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"Gnome is hetgeen waarmee u werkt en wat op uw computer zichtbaar is, "
+"waaronder het bestandsbeheer, de menu's, en diverse toepassingen zoals een "
+"web-browser."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"Gnome is een vrije (Libre), gebruiksvriendelijke, krachtige en toegankelijke "
+"werkomgeving voor de besturingssystemen die tot de Unix-familie behoren."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Gnome richt zich op gebruiksvriendelijkheid en toegankelijkheid, het "
+"regelmatig uitbrengen van verbeterde versies, en een krachtige ondersteuning "
+"vanuit het bedrijfsleven. Dit alles zorgt dat Gnome uniek is binnen de "
+"werkomgevingen van de vrije software."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"De grootste kracht van Gnome is onze hechte gemeenschap. Bijna iedereen kan "
+"bijdragen aan het verbeteren van Gnome, ook degenen die niet kunnen "
+"programmeren."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Sinds de start van Gnome in 1997 hebben al honderden mensen programmacode "
+"voor Gnome geschreven. Nog meer mensen hebben bijgedragen op een andere "
+"belangrijke manier door bijvoorbeeld te vertalen, te documenteren, en te "
+"zorgen voor kwaliteit."
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:220
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Fout bij lezen van '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:288
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Fout bij terugspoelen van '%s': %s"
+
+#. Translators: the "name" mentioned
+#. * here is the name of an application or
+#. * a document
+#. Translators: the "name" mentioned here is the name of
+#. * an application or a document
+#: ../libgnome-desktop/gnome-desktop-item.c:380
+#: ../libgnome-desktop/gnome-desktop-item.c:3524
+msgid "No name"
+msgstr "Geen naam"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:607
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Bestand '%s' is geen gewoon bestand of map"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:791
+#, c-format
+msgid "Cannot find file '%s'"
+msgstr "Kan bestand ‘%s’ niet vinden"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:837
+#, c-format
+msgid "No filename to save to"
+msgstr "Geen bestandsnaam opgegeven"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1822
+#, c-format
+msgid "Starting %s"
+msgstr "%s wordt gestart"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2058
+#, c-format
+msgid "No URL to launch"
+msgstr "Geen URL om te starten"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2074
+#, c-format
+msgid "Not a launchable item"
+msgstr "Niet startbaar"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2084
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Geen opdracht (Exec) om te starten"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2097
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Ongeldige opdracht (Exec) om te starten"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3581
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Onbekende codering: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Geen terminal gevonden en teruggevallen op ‘xterm’, ook al werkt dat "
+"wellicht niet."
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "kon de schermhulpbronnen niet verkrijgen (CRTCs, outputs, modes)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"onafgehandelde X-fout bij het opvragen van het bereik van de schermafmetingen"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "Kon het bereik van de schermafmetingen niet opvragen"
+
+#: ../libgnome-desktop/gnome-rr.c:715
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR-extensie niet aanwezig"
+
+#: ../libgnome-desktop/gnome-rr.c:1092
+#, c-format
+msgid "could not get information about output %d"
+msgstr "kon informatie over uitvoer %d niet verkrijgen"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1479
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"aangevraagde positie/afmeting voor CRTC %d ligt buiten de toegestane "
+"limieten: positie=(%d, %d), afmeting=(%d, %d), maximum=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1515
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "kon de instellingen voor CRTC %d niet doorvoeren"
+
+#: ../libgnome-desktop/gnome-rr.c:1631
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "kon informatie over CRTC %d niet verkrijgen"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "Laptop"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1162
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"geen van de opgeslagen schermconfiguraties kwam overeen met de actieve "
+"configuratie"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1423
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d kan uitvoer %s niet aansturen"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1430
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "uitvoer %s ondersteunt modus %dx%d@%dHz niet"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1441
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d ondersteunt rotation=%s niet"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1455
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"uitvoer %s heeft niet dezelfde parameters als een andere gekloonde uitvoer:\n"
+"huidige modus = %d, nieuwe modus = %d\n"
+"huidige coördinaten = (%d, %d), nieuwe coördinaten = (%d, %d)\n"
+"huidige rotatie = %s, nieuwe rotatie = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1470
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "kan niet klonen naar uitvoer %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1639
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Proberen modi voor CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1663
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: uitproberen modus %dx%d@%dHz met uitvoer op %dx%d@%dHz (ronde %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1710
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"kon CRTC's niet aan uitvoer toewijzen:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1714
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"geen van de geselecteerde modi waren compatibel met de mogelijke modi:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1796
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"vereiste virtuele afmeting past niet binnen de beschikbare afmeting: "
+"aangevraagd=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:212
+msgid "Mirror Screens"
+msgstr "Schermen spiegelen"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:164
+msgid "%a %b %e, %R:%S"
+msgstr "%a %e %b, %R:%S"
+
+#: ../js/ui/dateMenu.js:165
+msgid "%a %b %e, %R"
+msgstr "%a %e %b, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:169
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../js/ui/dateMenu.js:170
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:177
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %e %b, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:178
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %e %b, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:182
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:183
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "kon geen geschikte schermconfiguratie vinden"
+
+#~ msgid "Directory"
+#~ msgstr "Map"
+
+#~ msgid "Application"
+#~ msgstr "Toepassing"
+
+#~ msgid "Link"
+#~ msgstr "Verwijzing"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSDevice"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME-type"
+
+#~ msgid "Service"
+#~ msgstr "Service"
+
+#~ msgid "ServiceType"
+#~ msgstr "Servicetype"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "Opdr_acht:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Naam:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "Al_gemene naam:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Op_merking:"
+
+# verkennen/bladeren
+#~ msgid "Browse"
+#~ msgstr "Bladeren"
+
+#~ msgid "_Type:"
+#~ msgstr "_Type:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Pictogram:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Bladeren door pictogrammen"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "Uitvoeren in t_erminal"
+
+#~ msgid "Language"
+#~ msgstr "Taal"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Generic name"
+#~ msgstr "Algemene naam"
+
+#~ msgid "Comment"
+#~ msgstr "Opmerking"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "Eerst _uitproberen:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Documentatie:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Naam/Opmerking vertalingen:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Toevoegen/Instellen"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Naam/Commentaar vertalingen"
+
+#~ msgid "Re_move"
+#~ msgstr "Ver_wijderen"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Verwijder Naam/Opmerking vertalingen"
+
+#~ msgid "Basic"
+#~ msgstr "Eenvoudig"
+
+#~ msgid "Advanced"
+#~ msgstr "Geavanceerd"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Hints weergeven bij opstarten"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "Fout bij schrijven van '%s': %s"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "Kon de map met header-images niet vinden."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "Kon de map met header-images niet openen: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Kon header-image niet laden: %s"
+
+# het logo van Gnome/het Gnome-logo
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "Kon het Gnome-logo niet vinden."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "Kon '%s' niet laden: %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "Kon adres \"%s\" niet openen: %s"
+
+#~ msgid "%s: %s\n"
+#~ msgstr "%s: %s\n"
+
+#~ msgid "%s: "
+#~ msgstr "%s: "
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~ msgid "Developers"
+#~ msgstr "Ontwikkelaars"
+
+# zou ook onvertaald kunnen blijven
+#~ msgid "The End!"
+#~ msgstr "Dit is het einde!"

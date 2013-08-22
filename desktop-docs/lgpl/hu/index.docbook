@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="hu">
+    <articleinfo>
+      <title>GNU Lesser General Public License</title>
+      <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+      <author><surname>Free Software Foundation</surname></author>
+      <publisher role="maintainer">
+        <publishername>GNOME Dokumentációs projekt</publishername>
+      </publisher>
+      <revhistory>
+        <revision><revnumber>2.1</revnumber> <date>1999-02</date></revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.</para>
+	<para>A jelen licencdokumentumot bárki szabadon lemásolhatja és a pontos másolatait terjesztheti, de a módosítása tilos.</para>
+      </legalnotice>
+      <releaseinfo>1999. február, 2.1-es verzió</releaseinfo>
+    <abstract role="description"><para>A legtöbb szoftver licencei azzal a szándékkal készültek, hogy minél kevesebb lehetőséget adjanak a szoftver megváltoztatására és terjesztésére. Ezzel szemben a GNU GPL licenccsalád célja, hogy garantálja a szabad szoftver másolásának és terjesztésének szabadságát, ezáltal biztosítva a szoftver szabad felhasználhatóságát minden felhasználó számára.</para></abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Kalman Kemenczy</firstname>
+      </personname>
+      <email>kkemenczy at novell dot com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Kalman Kemenczy</holder>
+    </copyright>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Előszó</title>
+    
+    <para>A legtöbb szoftver licencei azzal a szándékkal készültek, hogy minél kevesebb lehetőséget adjanak a szoftver megváltoztatására és terjesztésére. Ezzel szemben a GNU GPL licenccsalád célja, hogy garantálja a szabad szoftver másolásának és terjesztésének szabadságát, ezáltal biztosítva a szoftver szabad felhasználhatóságát minden felhasználó számára.</para>
+
+    <para>A szabad szoftver megjelölés nem jelenti azt, hogy a szoftvernek nem lehet ára. A GPL licencek célja, hogy garantálja a szabad szoftver másolatainak szabad terjesztését (és e szolgáltatásért akár díj felszámítását), a forráskód elérhetőségét, hogy bárki szabadon módosíthassa a szoftvert, vagy felhasználhassa a részeit új szabad programokban; és hogy mások megismerhessék ezt a lehetőséget.</para>
+
+    <para>Ez a licenc, a Lesser General Public License (LGPL) vonatkozik a Free Software Foundation speciálisan kialakított szoftvercsomagjaira - jellemzően programkönyvtárakra -, illetve minden olyan szoftvercsomagra, amelynek szerzője úgy dönt, hogy ezt használja a szerzői jog megjelölésekor. Ön is használhatja, de azt javasoljuk, az alábbi magyarázatok alapján először gondolja át, hogy ez a licenc, vagy a szokásos GPL (GNU General Public License) számít-e jobb követendő stratégiának.</para>
+
+    <para>A szabad szoftver megjelölés nem jelenti azt, hogy a szoftvernek nem lehet ára. A GPL licencek célja, hogy garantálja a szabad szoftver másolatainak szabad terjesztését (és e szolgáltatásért akár díj felszámítását), a forráskód elérhetőségét, hogy bárki szabadon módosíthassa a szoftvert, vagy felhasználhassa a részeit új szabad programokban; és hogy mások megismerhessék ezt a lehetőséget. </para>
+
+    <para>A szerző jogainak védelmében korlátozásokat kell hozni, amelyek megtiltják, hogy bárki megtagadhassa ezeket a jogokat másoktól, vagy bárki mást ezekről való lemondásra kényszerítsen. Ezek a megszorítások bizonyos felelősségeket jelentenek azok számára, akik a szoftver másolatait terjesztik vagy módosítják.</para>
+
+    <para>Ha valaki például egy ilyen programkönyvtár másolatait terjeszti, akár ingyen vagy bizonyos összeg fejében, a vonatkozó minden jogot tovább kell adnia a fogadó feleknek. Biztosítani kell továbbá, hogy megkapják vagy legalábbis megkaphassák a forráskódot is. És a jelen dokumentumban szereplő licencfeltételeket is el kell juttatni, hogy tisztában legyenek a jogaikkal.</para>
+
+    <para>A jogok védelme két lépésből áll: (1) a programkönyvtár szerzői jogainak védelméből és (2) a jelen licenc biztosításából, amely jogalapot biztosít a programkönyvtár másolására, terjesztésére és/vagy módosítására.</para>
+
+    <para>Az egyes terjesztők védelmében világossá akarjuk tenni: a jelen szabad programkönyvtárra nincs jótállás. Ha a programkönyvtárat módosították és továbbadták, akkor mindenkinek, aki a módosított változatot kapja, tudnia kell, hogy az nem az eredeti, így a mások által okozott hibáknak nem lehet hatása az eredeti szerző hírnevére.</para>
+
+    <para>Végül, a szabad szoftver létét állandóan fenyegetik a szoftverszabadalmak. El szeretnénk kerülni annak veszélyét, hogy a szabad program terjesztői szabadalmat jegyezhessenek be rá, ezáltal saját szellemi tulajdont képezővé tegyék a programot. Ennek érdekében ragaszkodunk hozzá, hogy a programkönyvtár egy változatával kapcsolatban megszerzett bármely szabadalmi engedélynek összhangban kell lennie a jelen licencben taglalt teljesen szabad használattal.</para>
+
+    <para>A legtöbb GNU szoftverre, beleértve egyes programkönyvtárakat is, a normál GNU General Public License (GPL) feltételei vonatkoznak. Ez a licenc, a GNU Lesser General Public License (LGPL), meghatározott programkönyvtárakra vonatkozik, és eléggé eltér a normál GNU General Public License-től. Ezt a licencet azért alkalmazzuk bizonyos programkönyvtárakhoz, hogy engedélyezhessük a beépítésüket nem szabad programokba is.</para>
+
+    <para>Amikor egy programot összeszerkesztenek egy programkönyvtárral, függetlenül attól, hogy statikusan vagy egy megosztott programkönyvtár használatával, a kettő kombinációja jogilag közös munkának, az eredeti programkönyvtár leszármazottjának számít. A normál GNU General Public License (GPL) feltételek ezért csak akkor engedi az ilyen összeszerkesztést, ha a teljes kombináció is megfelel a szabadság feltételeinek. A GNU Lesser General Public License (LGPL) azonban kevésbé szigorúan rendelkezik más kódnak a programkönyvtárral összeszerkesztéséről.</para>
+
+    <para>Azért <quote>Lesser</quote> General Public License-nek hívjuk ezt a licencet, mert kevesebbet tesz a felhasználó szabadságának védelme érdekében, mint a normál GNU General Public License (GPL). Szintén kevesebb előnyt nyújt a többi szabadszoftver-fejlesztőnek a versenytárs, nem szabad programokkal szemben. Az ilyen előnyök miatt használjuk magunk is a normál GNU General Public License-t (GPL) számos programkönyvtárhoz. Néhány speciális esetben azonban a GNU Lesser General Public License (LGPL) használata előnyösebb.</para>
+
+    <para>Ritkán ugyan, de például előfordulhat, hogy igény van egy meghatározott programkönyvtárnak a lehető legszélesebb körben történő elterjesztésére, hogy az válhasson a de facto szabvánnyá. Ehhez engedélyezni kell, hogy a nem szabad programok is használhassák a programkönyvtárat. Gyakoribb eset az, hogy egy szabad programkönyvtár ugyanazt a feladatot látja el, mint a széles körben használt nem szabad programkönyvtárak. Ebben az esetben igen kevés előny származik a programkönyvtár kizárólag szabad szoftverekben felhasználásra való korlátozásának, tehát ilyenkor is az LGPL feltételeit használjuk.</para>
+
+    <para>Megint más esetekben egy adott programkönyvtár nem szabad programokban felhasználásának engedélyezése azt jelenti, hogy több ember használhat szabad szoftvert. Például a GNU C Programkönyvtár felhasználása nem szabad programokban azt jelenti, hogy sokkal több ember használhatja a teljes GNU operációs rendszert, illetve annak változatát, a GNU/Linux operációs rendszert.</para>
+
+    <para>Bár az LGPL kevésbé védi a felhasználók szabadságát, azt azonban garantálja, hogy a Programkönyvtárral összeszerkesztett program felhasználója jogosult legyen a program használatára a Programkönyvtár módosított változatával is.</para>
+
+    <para>A másolásra, terjesztésre és módosításra vonatkozó pontos szabályok és feltételek az alábbiakban olvashatók. Nagyon fontos megkülönböztetni a <quote>programkönyvtáron alapuló munka</quote> és a <quote>programkönyvtárat felhasználó munka</quote> fogalmakat. Az előbbi a programkönyvtárból származó kódot tartalmaz, míg az utóbbi a futásához igényli a programkönyvtárat.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>A MÁSOLÁSRA, TERJESZTÉSRE ÉS MÓDOSÍTÁSRA VONATKOZÓ FELTÉTELEK ÉS KIKÖTÉSEK</title>
+
+    <sect2 id="sect0" label="0">
+      <title>0. szakasz</title>
+      <para>Ez a licenc minden olyan programkönyvtárra vagy egyéb programra vonatkozik, amelyhez a szerzői jog tulajdonosa vagy egyéb jogosult fél azt a megjegyzést fűzte, hogy az a jelen LGPL-ben (más néven a <quote>jelen Licencben</quote>) foglaltak alapján terjeszthető. Minden engedélyezés címzettje <quote>Ön</quote>. </para>
+
+      <para><quote>Programkönyvtár</quote> alatt függvények és/vagy adatok olyan gyűjteményét értjük, amely úgy lett elkészítve, hogy kényelmesen összeszerkeszthető legyen alkalmazásprogramokkal (amelyek a függvények és az adatok egy részét használják), végrehajtható fájlok elkészítéséhez. </para>
+
+      <para>Az alábbiakban a <quote>Programkönyvtár</quote> kifejezés bármely ilyen programkönyvtárra vagy munkára vonatkozik, a <quote>Programkönyvtáron alapuló munka</quote> pedig magát a Programkönyvtárat vagy egy szerzői joggal védett munkát jelenti: vagyis olyan munkát, amely tartalmazza a Programkönyvtárat vagy annak egy részletét, módosítva vagy módosítás nélkül és/vagy más nyelvre fordítva. (Az alábbiakban a fordítás minden egyéb megkötés nélkül beletartozik a <quote>módosítás</quote> fogalmába.)</para>	
+
+      <para>Egy munka <quote>Forráskódja</quote> a munkának az a formátuma, amelyben a módosítások elvégzése a legegyszerűbben kivitelezhető. Egy programkönyvtár esetében a teljes forráskód az általa tartalmazott összes modul forráskódját jelenti, valamint minden hozzá tartozó illesztődefiníciós fájlt, valamint a programkönyvtár fordítását és telepítését szabályozó parancsfájlokat.</para>
+
+      <para>A jelen Licenc a másoláson, terjesztésen és módosításon kívül más tevékenységre nem vonatkozik, azok a hatályán kívül esnek. A Programkönyvtárat használó program futtatása nincs korlátozva, illetve a program kimenetére is csak abban az esetben vonatkozik ez a szabályozás, ha az tartalmazza a Programkönyvtáron alapuló munka egy részletét (függetlenül attól, hogy a Programkönyvtárat használták-e egy eszközben a megírásához). Az, hogy ez igaz-e, a Programkönyvtár, illetve a Programkönyvtárat használó program működésétől függ.</para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>1. szakasz</title>
+      <para>A Programkönyvtár forráskódja módosítás nélkül másolható és bármely adathordozón terjeszthető, feltéve, hogy minden egyes példányon pontosan szerepel a megfelelő szerzői jogi megjegyzés, illetve a garanciavállalás elutasítása; érintetlenül kell hagyni minden erre a szabályozásra és a garancia teljes hiányára utaló szöveget és a jelen licencdokumentumot is el kell juttatni mindazokhoz, akik a Programkönyvtárat kapják.</para>
+      
+      <para>Felszámítható díj a másolat fizikai továbbítása fejében, illetve ellenszolgáltatás fejében garanciális támogatás is biztosítható.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>2. szakasz</title>
+      <para>A Programkönyvtár másolatai vagy azok egy része módosítható, amely így a Programkönyvtáron alapuló munkát alkot. A módosítás ezután az <link linkend="sect1">1. szakasz</link> adott feltételek szerint tovább terjeszthető, ha az alábbi feltételek is teljesülnek: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>A módosított munkának magának is programkönyvtárnak kell lennie.</para>
+	  </listitem>
+	  <listitem>
+	    <para>A módosított fájlokat el kell látni olyan megjegyzéssel, amely feltünteti a módosítást végző nevét és a módosítások dátumát.</para>
+	  </listitem>
+	  <listitem>
+	    <para>A teljes munkát olyan szabályokkal kell kiadni vagy terjeszteni, hogy annak használati joga harmadik személy részére licencdíjmentesen hozzáférhető legyen, a jelen Licencnek megfelelően.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Ha a módosított Programkönyvtár egy része egy olyan függvényre vagy adattáblára hivatkozik, amelyet egy, az adott részt használó alkalmazásprogram biztosít, és nem egy átadott argumentumról van szó annak meghívásakor, akkor mindent el kell követni annak érdekében, hogy amennyiben az alkalmazás nem biztosítja a szükséges függvényt vagy adattáblát, az adott rész akkor is működőképes maradjon, és végrehajtsa, amit csak a működéséből adódóan elvégezhet.</para>
+
+	    <para>(Ha például egy programkönyvtár egy függvénye négyzetgyököt számít, akkor annak a célja teljesen jól definiált, az alkalmazástól függetlenül. Vagyis a 2d alpont azt követeli meg, hogy a függvény számára az alkalmazás által biztosított függvény vagy adattábla opcionális legyen: ha az alkalmazás nem biztosít ilyet, a négyzetgyök függvénynek akkor is négyzetgyököket kell tudnia számítani.)</para>
+	      
+	    <para>Ezek a feltételek a módosított munkára, mint egészre vonatkoznak. Ha a munka azonosítható részei nem a Programkönyvtáron alapulnak és független munkákként elkülönülten azonosíthatók, akkor ez a szabályozás nem vonatkozik ezekre a részekre, amennyiben azok külön munkaként kerülnek terjesztésre. Viszont, ha ugyanez a rész az egész részeként kerül terjesztésre, amely a Programkönyvtáron alapuló munka, akkor az egész munka terjesztése csak a jelen dokumentum alapján lehetséges, amely ebben az esetben a jogokat minden egyes felhasználó számára kiterjeszti a munka egészére tekintet nélkül arra, hogy melyik részt ki írta.</para>
+
+	    <para>E szövegrésznek tehát nem az a célja, hogy mások jogait elvegye vagy korlátozza a kizárólag saját maga által írt munkákra; a cél az, hogy a jogok gyakorlása szabályozva legyen a Programkönyvtáron alapuló illetve a gyűjteményes munkák terjesztése esetében.</para>
+
+	    <para>Ezenkívül más munkáknak, amelyek nem a Programkönyvtáron alapulnak, a Programkönyvtárral (vagy a Programkönyvtáron alapuló munkával) közös adathordozón vagy adattárolón szerepeltetése nem jelenti a jelen szabályok érvényességét azokra is.</para>
+	  </listitem>	      
+	</orderedlist></para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>3. szakasz</title>
+
+      <para>Ön választhatja azt, hogy a Programkönyvtár egy adott példányára vonatkozóan a normál GNU General Public License használatát köti ki és nem a jelen Licencet. Ehhez meg kell változtatni az erre a licencre hivatkozó összes figyelmeztetést, úgy, hogy azok a jelen licenc helyett a normál GNU General Public License (GPL) 2. verziójára hivatkozzanak. (Ha a normál GNU General Public License-ből a 2. verziónál frissebb jelenne meg, akkor azt a verziót is előírhatja, ha akarja). Egyéb változtatást ne tegyen a figyelmeztetésekben. </para>
+
+      <para>Miután a módosítás megtörtént, az visszafordíthatatlan az adott példányra vonatkozóan, vagyis a GNU General Public License fog vonatkozni annak összes további másolatára és az abból a példányból származtatott összes munkára. </para>
+      
+      <para>Ez a lehetőség akkor hasznos, ha a Programkönyvtár kódjának egy részét egy olyan programba akarja illeszteni, amelyik nem programkönyvtár.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>4. szakasz</title>
+      
+      <para>A Programkönyvtár (vagy a programkönyvtáron alapuló munka a <link linkend="sect2">2. szakasznak</link> megfelelően) másolható és terjeszthető tárgykódú vagy végrehajtható kódú formájában az <link linkend="sect1">1.</link> és <link linkend="sect2">2.</link> szakaszban foglaltak szerint, feltéve, hogy a teljes, gép által értelmezhető forráskód kíséri az anyagot, amelynek terjesztése az<link linkend="sect1">1.</link> és <link linkend="sect2">2.</link> szakaszban foglaltak szerint történik, jellemzően szoftverterjesztésre használt adathordozón. </para>
+
+      <para>Ha a tárgykód terjesztése azt jelenti, hogy lehetőség van lemásolni egy meghatározott helyről, akkor ez teljesíti a forráskód terjesztésére vonatkozó kötelezettséget, bár a harmadik felek nem kötelesek a forráskódot a tárgykóddal együtt lemásolni.</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>5. szakasz</title>
+
+      <para>Az olyan Programkönyvtárat, amely nem tartalmazza a Programkönyvtár semmilyen részének leszármazottját, de úgy készült, hogy a Programkönyvtárral együttműködjön, hozzáfordítás vagy hozzászerkesztés útján, <quote>Programkönyvtárat használó munkának</quote> nevezzük. Az ilyen munkák elszigetelten nem számítanak a Programkönyvtár származtatott munkájának, így a jelen Licenc hatályán kívül esnek. </para>
+
+      <para>Egy, a <quote>Programkönyvtárat használó munka</quote> és a Programkönyvtár összeszerkesztése azonban egy olyan végrehajtható fájlt eredményez, amelyik a Programkönyvtár származtatott munkája (hiszen tartalmazza a Programkönyvtár részeit), nem pedig a <quote>Programkönyvtárat használó munka</quote>. A végrehajtható fájlra tehát vonatkozik a jelen Licenc. A <link linkend="sect6">6. szakasz</link> taglalja az ilyen végrehajtható fájlok terjesztésének feltételeit.</para>
+
+      <para>Ha egy <quote>Programkönyvtárat használó munka</quote> egy olyan fejlécfájl anyagát használja, amelyik a Programkönyvtár része, akkor a munka tárgykódja lehet a Programkönyvtár származtatott munkája, akkor is, ha maga a forráskód nem az. Az, hogy ez igaz-e, különösen fontos, ha az adott munka összeszerkeszthető a Programkönyvtár nélkül is, vagy ha a munka maga is egy programkönyvtár. Azt, hogy ez mikor igaz, a törvény nem szabályozza pontosan. </para>
+
+      <para>Ha egy ilyen objektumfájl csak numerikus paramétereket, adatstruktúra-elrendezéseket, -hozzáféréseket, kisebb makrókat és kisebb beágyazott függvényeket (nem több, mint tíz sornyit) használ, akkor az objektumfájl használata nem korlátozott, függetlenül attól, hogy származtatott munka-e vagy sem. (A tárgykódot és a Programkönyvtár részeit tartalmazó végrehajtható fájlok továbbra is a <link linkend="sect6">6. szakasz</link> hatálya alá tartoznak.) </para>
+
+      <para>Ellenkező esetben, ha a munka a Programkönyvtár származtatott munkája, akkor a tárgykódja terjeszthető a <link linkend="sect6">6. szakasz</link> feltételeinek megfelelően. A munkát tartalmazó végrehajtható fájlok szintén a <link linkend="sect6">6. szakasz</link> hatálya alá esnek, akkor is, ha nincsenek közvetlenül a Programkönyvtárral összeszerkesztve.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>6. szakasz</title>
+
+      <para>A fenti szakaszok kivételeként egy, a <quote>Programkönyvtárat használó munka</quote> egyesíthető vagy összeszerkeszthető a Programkönyvtárral, hogy létrejöjjön egy olyan munka, amely tartalmazza a Programkönyvtár részeit, és az ilyen munka terjeszthető az Ön által választott feltételek szerint is, feltéve, hogy ezek a feltételek megengedik a munka szabad módosítását a vásárló saját használatára és az ilyen módosítások hibakeresésére szolgáló visszafejtést. </para>
+
+      <para>A munka minden egyes példányán megfelelően jelezni kell, hogy a Programkönyvtár használja, és hogy a használatot a jelen Licenc szabályozza. Mellékelni kell a jelen Licenc egy példányát. Ha a munka végrehajtás közben szerzői jogi megjegyzéseket jelenít meg, akkor ezek közt szerepelnie kell a Programkönyvtár szerzői jogi megjegyzésének is, valamint egy hivatkozásnak, amely a felhasználót a jelen Licenc egy példányához irányítja. Továbbá az alábbiak egyikét biztosítani kell: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">A munka mellé mellékelni kell a Programkönyvtár teljes, géppel olvasható forráskódját, jelezve, hogy a (fenti <link linkend="sect1">1.</link> és <link linkend="sect2">2.</link> szakaszoknak megfelelően terjesztett) munkában milyen módosítások történtek; valamint, ha a munka egy, a Programkönyvtárral összeszerkesztett végrehajtható fájl, a teljes <quote>Programkönyvtárat használó munka</quote> géppel olvasható kódját, ahhoz hogy tárgykódként és/vagy forráskódként a felhasználó módosíthassa a Programkönyvtárat és utána átszerkeszthesse azt egy olyan módosított végrehajtható fájl előállításához, amely tartalmazza a Programkönyvtárat. (Természetesen előfordulhat, hogy a Programkönyvtár definíciós fájljainak tartalmát megváltoztató felhasználó nem feltétlenül lesz képes újrafordítani az alkalmazást a módosított definíciókkal.)</para>
+	  </listitem>
+	  <listitem>
+	    <para>Egy megfelelő megosztott Programkönyvtár-mechanizmus használata a Programkönyvtárral való összeszerkesztéshez. Megfelelő mechanizmus az olyan, amely (1) futási időben a programkönyvtár egy, már a felhasználó számítógéprendszerén megtalálható példányát használja, nem pedig bemásolja a programkönyvtár egyes függvényeit a végrehajtható fájlba, továbbá (2) megfelelően működik a programkönyvtár módosított változatával is, ha a felhasználó egy olyat telepít, feltéve, hogy a módosított verzió interfésze kompatibilis azzal a verzióval, amelyikkel a munka készült.</para>
+	  </listitem>
+	  <listitem>
+	    <para>A munkához egy legalább három évig érvényes írásos ajánlat mellékelése, hogy ugyanazon felhasználó számára a <link linkend="sect6a">6.a alszakaszban</link> meghatározott anyagokat biztosítja, nem nagyobb díjért, mint a jelen  terjesztés díja.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Ha a munka terjesztése egy adott helyről történő másolás engedélyezését jelenti, akkor egyenértékű hozzáférés biztosítása szükséges a fent meghatározott anyagok ugyanonnan lemásolásához.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Annak ellenőrzése, hogy a felhasználó már megkapta ezen anyagok egy példányát, vagy hogy már el lett küldve a felhasználónak egy példány.</para>
+	  </listitem>
+	</orderedlist></para>
+
+	<para>Végrehajtható fájl esetében a <quote>Programkönyvtárat használó munka</quote> elvárt formájának tartalmaznia kell minden adatot és segédprogramot, amelyre szükség van a belőlük származó végrehajtható fájl előállításához. Speciális kivételként a terjesztett anyagoknak nem kell semmi olyat tartalmaznia, amelyek normál esetben azon operációs rendszer fő részeivel (fordító, kernel stb.) együtt kerülnek terjesztésre (akár forráskódként, akár bináris formában), amelyen a végrehajtható fájl futni fog, kivéve, ha a komponens maga a végrehajtható fájllal együtt érkezik. </para>
+
+	<para>Előfordulhat, hogy ez a követelmény ellentmond más szellemi tulajdont képező programkönyvtárak licenckorlátozásainak, amelyek normál esetben nem járnak az operációs rendszer mellé. Az ilyen ellentmondás azt jelenti, hogy nem használhatja azokat és a Programkönyvtárat együtt egy terjeszteni kívánt végrehajtható fájlban.</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>7. szakasz</title>
+
+      <para>Ön elhelyezheti a programkönyvtár egyes részeit, amelyek a Programkönyvtáron alapuló munkának számítanak, egymás mellett egyetlen programkönyvtárban más programkönyvtárak részeivel együtt, amelyekre nem vonatkozik a jelen Licenc, és az ilyen egyesített programkönyvtárat is terjesztheti, feltéve, hogy a Programkönyvtáron alapuló munka és a másik programkönyvtár részeinek külön-külön terjesztése egyébként engedélyezett és az alábbi két dolog valamelyikét biztosítja:</para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Az egyesített programkönyvtár mellé mellékeli a Programkönyvtáron alapuló ugyanazon munkát, amely nincs egyesítve semmilyen más programkönyvtár részeivel. Ezt a fenti részek feltételeinek megfelelően kell terjeszteni.</para>
+	</listitem>
+	<listitem>
+	  <para>Megfelelő figyelmeztetést alkalmaz az egyesített programkönyvtár mellé a tényről, hogy ez részben a Programkönyvtáron alapuló munka, és elmagyarázza, hogy hol található ugyanazon munka nem egyesített formában.</para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>8. szakasz</title>
+
+      <para>A Programkönyvtárat csak a jelen Licencben leírtaknak megfelelően szabad lemásolni, terjeszteni, módosítani és allicencbe adni. Az egyéb módon való másolás, módosítás, terjesztés és allicencbe adás érvénytelen, és azonnal érvényteleníti a dokumentumban biztosított jogosultságokat. Mindazonáltal azok, akik a Licencet megszegőtől kaptak példányokat vagy jogokat, tovább gyakorolhatják a Licenc által meghatározott jogaikat mindaddig, amíg teljes mértékben megfelelnek a Licenc feltételeinek.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>9. szakasz</title>
+      
+      <para>Nem kötelező elfogadnia ezt a szabályozást, hiszen nem írta alá. Ezen kívül viszont semmi más nem ad jogokat a Programkönyvtár vagy a származtatott munkák terjesztésére és módosítására. Ezeket a cselekedeteket a törvény bünteti, ha nem a jelen szerzői jogi szabályozás keretei között történnek. Mindezek miatt a Programkönyvtár (vagy a Programkönyvtáron alapuló munka) terjesztése vagy módosítása a jelen dokumentum szabályainak, és azon belül a Programkönyvtár vagy a munka módosítására, másolására vagy terjesztésére vonatkozó összes feltételének elfogadását jelenti.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>10. szakasz</title>
+
+      <para>Minden alkalommal, amikor a Programkönyvtár (vagy az azon alapuló munka) továbbadása történik, a Programkönyvtárat megkapó személy automatikusan hozzájut az eredeti licenctulajdonostól származó licenchez, amely a jelen szabályok szerint biztosítja a jogot a Programkönyvtár másolására, terjesztésére, szerkesztéshez felhasználásra és módosítására. Nem lehet semmilyen módon tovább korlátozni a fogadó félnek az itt megadott jogait. A Programkönyvtár továbbadója nem felelős harmadik személyekkel betartatni a jelen szabályokat.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>11. szakasz</title>
+
+      <para>Ha bírósági határozat, szabadalomsértés vélelme, vagy egyéb (nem kizárólag szabadalmakkal kapcsolatos) okból olyan feltételeknek kell megfelelnie (akár bírósági határozat, akár megállapodás, akár bármi más eredményeképp), amelyek ellentétesek a jelen feltételekkel, az nem menti fel a terjesztőt a jelen feltételek figyelembevétele alól. Ha a terjesztés nem lehetséges a jelen Licenc és az egyéb feltételek kötelezettségeinek együttes betartásával, akkor tilos a Programkönyvtár terjesztése. Ha például egy licencszabadalom nem engedi meg egy programkönyvtár jogdíj nélküli továbbterjesztését azok számára, akik közvetve vagy közvetlenül megkapják, akkor az egyetlen módja, hogy eleget tegyen valaki mindkét feltételnek, az, hogy eláll a programkönyvtár terjesztésétől.</para>
+
+      <para>Ha ennek a szakasznak bármely része érvénytelen, vagy nem érvényesíthető valamely körülmény folytán, akkor a szakasz fennmaradó részét kell alkalmazni, egyéb esetekben pedig a szakasz egésze alkalmazandó.</para>
+
+      <para>Ennek a szakasznak nem az a célja, hogy a szabadalmak vagy egyéb hasonló jogok megsértésére ösztönözzön bárkit is; mindössze meg szeretné védeni a szabad szoftver terjesztési rendszerének egységét, amelyet a szabad közreadást szabályozó feltételrendszerek teremtenek meg. Sok ember nagymértékben járult hozzá az e rendszer keretében terjesztett, különféle szoftverekhez, és számít a rendszer következetes alkalmazására; azt a szerző/adományozó dönti el, hogy a szoftverét más rendszer szerint is közzé kívánja-e tenni, és a licencet kapók ezt nem befolyásolhatják. </para>
+
+      <para>E szakasz célja, hogy pontosan tisztázza azt, ami elgondolásunk szerint a jelen licenc többi részének a következménye.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>12. szakasz</title>
+
+      <para>Ha a Programkönyvtár terjesztése és/vagy használata egyes országokban nem lehetséges akár szabadalmak, akár szerzői jogokkal védett felületek miatt, akkor a Programkönyvtár szerzői jogainak eredeti tulajdonosa, aki a Programkönyvtárat ezen szabályozás alapján adja közre, egy explicit földrajzi megkötést adhat a terjesztésre, és egyes országokat kizárhat. Ebben az esetben úgy tekintendő, hogy a jelen licenc ezt a megkötést is tartalmazza, ugyanúgy, mintha az  a szövegében lenne leírva.</para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>13. szakasz</title>
+
+      <para>A Free Software Foundation időről időre kiadja a GNU Lesser General Public License (LGPL) felülvizsgált és/vagy újabb változatait. Ezek az újabb dokumentumok az előzőek szellemében készülnek, de részletekben különbözhetnek, hogy új problémákat vagy aggályokat is kezeljenek.</para>
+
+      <para>A dokumentum minden változata egy megkülönböztető verziószámmal ellátva jelenik meg. Ha a programkönyvtár szerzői jogi megjegyzésében egy bizonyos vagy annál <quote>újabb verzió</quote> van megjelölve, akkor lehetőség van akár a megjelölt, vagy a Free Software Foundation által kiadott későbbi verzióban leírt feltételek követésére. Ha nincs ilyen megjelölt verzió, akkor lehetőség van a Free Software Foundation által valaha kibocsátott bármelyik verzió alkalmazására.</para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>14. szakasz</title>
+
+      <para>A Programkönyvtárat más szabad szoftverbe, amelynek szerzői jogi szabályozása különbözik, csak akkor építheti be, ha a szerzőtől erre engedélyt szerzett. Abban az esetben, ha a programkönyvtár szerzői jogainak tulajdonosa a Free Software Foundation, akkor a Free Software Foundation címére kell írni; néha kivételt teszünk. A döntés a következő két cél szem előtt tartásával fog történni: megmaradjon a szabad szoftveren alapuló munkák szabad állapota, valamint segítse elő a szoftver újrafelhasználását és megosztását.</para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>GARANCIAVÁLLALÁS HIÁNYA</title>
+      <subtitle>15. szakasz</subtitle>
+
+      <para>MIVEL A JELEN PROGRAMKÖNYVTÁR HASZNÁLATI JOGA DÍJMENTES, AZ ALKALMAZHATÓ JOGSZABÁLYOK ÁLTAL BIZTOSÍTOTT MAXIMÁLIS MÉRTÉKBEN VISSZAUTASÍTJUK A PROGRAMKÖNYVTÁRHOZ A GARANCIA BIZTOSÍTÁSÁT. AMENNYIBEN A SZERZŐI JOGOK TULAJDONOSAI ÍRÁSBAN MÁSKÉNT NEM NYILATKOZNAK, A PROGRAMKÖNYVTÁR A <quote>JELEN ÁLLAPOTÁBAN</quote> KERÜL KIADÁSRA, MINDENFÉLE GARANCIAVÁLLALÁS NÉLKÜL, LEGYEN AZ KIFEJEZETT VAGY BELEÉRTETT, BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN A FORGALOMBAHOZHATÓSÁGRA VAGY ALKALMAZHATÓSÁGRA VONATKOZÓ GARANCIÁKAT. A PROGRAMKÖNYVTÁR MINŐSÉGÉBŐL ÉS MŰKÖDÉSÉBŐL FAKADÓ ÖSSZES KOCKÁZAT A FELHASZNÁLÓT TERHELI. HA A PROGRAMKÖNYVTÁR HIBÁSAN MŰKÖDIK, A FELHASZNÁLÓNAK MAGÁNAK KELL VÁLLALNIA A JAVÍTÁSHOZ SZÜKSÉGES MINDEN KÖLTSÉGET.</para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>16. szakasz</title>
+
+      <para>AMENNYIBEN A HATÁLYOS JOGSZABÁLYOK VAGY A SZERZŐI JOGOK TULAJDONOSAI ÍRÁSOS MEGÁLLAPODÁSBAN MÁSKÉNT NEM RENDELKEZNEK, SEM A PROGRAMKÖNYVTÁR SZERZŐJE, SEM MÁSOK, AKIK MÓDOSÍTOTTÁK ÉS/VAGY TERJESZTETTÉK A PROGRAMKÖNYVTÁRAT A FENTIEKNEK MEGFELELŐEN, NEM TEHETŐK FELELŐSSÉ A KÁROKÉRT, BELEÉRTVE MINDEN VÉLETLEN, VAGY KÖVETKEZMÉNYES KÁRT, AMELY A PROGRAMKÖNYVTÁR HASZNÁLATÁBÓL VAGY A HASZNÁLAT MEGAKADÁLYOZÁSÁBÓL SZÁRMAZIK (BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN AZ ADATVESZTÉST ÉS A HELYTELEN ADATFELDOLGOZÁST, VALAMINT A MÁS PROGRAMKÖNYVTÁRAKKAL VALÓ HIBÁS EGYÜTTMŰKÖDÉST), MÉG AKKOR SEM, HA EZEN FELEK TUDATÁBAN VOLTAK, HOGY ILYEN KÁROK KELETKEZHETNEK.</para>
+    </sect2>
+  </sect1>
+</article>

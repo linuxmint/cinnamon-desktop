@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gnome-version>
+ <platform>@GNOME_PLATFORM@</platform>
+ <minor>@GNOME_MINOR@</minor>
+ <micro>@GNOME_MICRO@</micro>
+ <distributor>@GNOME_DISTRIBUTOR@</distributor>
+ @GNOME_DATE_COMMENT_START@<date>@GNOME_DATE@</date>@GNOME_DATE_COMMENT_END@
+</gnome-version>

@@ -1,0 +1,211 @@
+# GNOME-desktop'i eesti keele tõlge.
+# Estonian translation of GNOME-desktop.
+#
+# Copyright (C) 1999-2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2010 The GNOME Project.
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Lauris Kaplinski <lauris@ariman.ee>, 1999.
+# Ilmar Kerm <ikerm@hot.ee>, 2001, 2002.
+# Tõivo Leedjärv <toivo@linux.ee>, 2002, 2003.
+# Priit Laes <amd@store20.com>, 2004-2006.
+# Ivar Smolin <okul@linux.ee>, 2005-2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 20:19+0000\n"
+"PO-Revision-Date: 2012-09-23 09:38+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Tundmatu"
+
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Terminali pole võimalik leida, kasutatakse xtermi, isegi juhul, kui see ei "
+"pruugi töötada"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ekraani ressursse (CRTC-d, väljundeid, režiime) pole võimalik hankida"
+
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "X-serveri käsitlematu viga ekraanisuuruste vahemiku hankimisel"
+
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ekraanisuuruste vahemikku pole võimalik hankida"
+
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANRD-laiendus pole saadaval"
+
+#, c-format
+msgid "could not get information about output %d"
+msgstr "väljundi %d kohta pole võimalik teavet hankida"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"CRTC %d jaoks määratud asukoht või suurus ületab lubatud piire: asukoht=(%d, "
+"%d), suurus=(%d, %d), suurim=(%d, %d)"
+
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "CRTC %d jaoks pole võimalik sätteid määrata"
+
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "CRTC %d kohta pole võimalik teavet hankida"
+
+msgid "Laptop"
+msgstr "Sülearvuti"
+
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "salvestatud kuvasätete hulgast ei sobi aktiivsete sätetega mitte ükski"
+
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ei suuda juhtida väljundit %s"
+
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "väljund %s ei toeta režiimi %dx%d@%dHz"
+
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d ei toeta pöördenurka=%s"
+
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"väljundil %s ei ole samad parameetrid nagu teisel kloonitud väljundil:\n"
+"praegune režiim = %d, uus režiim = %d\n"
+"praegused koordinaadid = (%d, %d), uued koordinaadid = (%d, %d)\n"
+"praegune pöördenurk = %s, uus pöördenurk %s"
+
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "pole võimalik väljundisse %s kloonida"
+
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "CRTC %d režiimide proovimine\n"
+
+# või peaks pass tõlkima kui läbilase või tiir?
+# päris tõlkimata vist ka ei saa jätta
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: režiimi %dx%d@%dHz proovimine väljundiga %dx%d@%dHz (käik %d)\n"
+
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"CRTC-sid pole võimalik väljunditele määrata:\n"
+"%s"
+
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"ükski valitud režiimidest ei sobi võimalikega:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"vajalik virtuaalsuurus ei sobi saadaoleva suurusega: küsitud suurus=(%d, "
+"%d), vähim=(%d, %d), suurim=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+msgid "Mirrored Displays"
+msgstr "Kuvad on peegeldatud"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+msgid "%a %b %e, %R:%S"
+msgstr "%a, %e. %b, %R:%S"
+
+msgid "%a %b %e, %R"
+msgstr "%a, %e. %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+msgid "%R:%S"
+msgstr "%R:%S"
+
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a, %e. %b, %l:%M:%S %p"
+
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a, %e. %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+msgid "%l:%M %p"
+msgstr "%l:%M %p"

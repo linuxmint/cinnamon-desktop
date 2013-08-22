@@ -1,0 +1,299 @@
+# Biełaruski pierakład gnome-desktop
+# Ihar Hračyška <iharh@gnome.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-25 23:14+0200\n"
+"PO-Revision-Date: 2009-02-25 23:14+0200\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian Latin <i18n@mova.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:61
+msgid "About GNOME"
+msgstr "Źviestki ab GNOME"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Daviedajsia bolš pra GNOME"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "News"
+msgstr "Naviny"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "GNOME Library"
+msgstr "Biblijateka GNOME"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Friends of GNOME"
+msgstr "Siabry GNOME"
+
+#: ../gnome-about/gnome-about.in:65
+msgid "Contact"
+msgstr "Kantakt"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Mysterious GEGL"
+msgstr "Tajamničy GEGL"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "The Squeaky Rubber GNOME"
+msgstr "Pisklivy humovy GNOME"
+
+#: ../gnome-about/gnome-about.in:71
+msgid "Wanda The GNOME Fish"
+msgstr "Rybka Vanda GNOME"
+
+#: ../gnome-about/gnome-about.in:568
+msgid "_Open URL"
+msgstr "_Adčyni URL"
+
+#: ../gnome-about/gnome-about.in:575
+msgid "_Copy URL"
+msgstr "_Skapijuj URL"
+
+#: ../gnome-about/gnome-about.in:830
+msgid "About the GNOME Desktop"
+msgstr "Źviestki ab Asiarodździ GNOME"
+
+#: ../gnome-about/gnome-about.in:866
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:880
+msgid "Welcome to the GNOME Desktop"
+msgstr "Ciabie vitaje Asiarodździe GNOME"
+
+#: ../gnome-about/gnome-about.in:897
+msgid "Brought to you by:"
+msgstr "Da raźvićcia GNOME pryčynilisia:"
+
+#: ../gnome-about/gnome-about.in:921
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Version"
+msgstr "Versija"
+
+#: ../gnome-about/gnome-about.in:978
+msgid "Distributor"
+msgstr "Raspaŭsiudnik"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Čas zborki"
+
+#: ../gnome-about/gnome-about.in:1023
+msgid "Display information on this GNOME version"
+msgstr "Pakažy źviestki ab hetaj versii GNOME"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME taksama źjaŭlajecca samadastatkovaj platformaj raspracoŭvańnia "
+"aplikacyjaŭ, jakaja dazvalaje stvarać mahutnyja i składanyja prahramnyja "
+"kompleksy."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME uklučaje bolšaść z taho, čym ty karystajeśsia na kamputary, u tym liku "
+"kiraŭnika fajłaŭ, web-hartača, menu i inšyja aplikacyi."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME jość svabodnym, zručnym, stabilnym asiarodździem dla aperacyjnych "
+"systemaŭ ź siamji Unix."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Kancentracyja GNOME na zručnaści i dastupnaści, rehularnym vydaŭničym cykle "
+"i mocnaj karparacyjnaj padtrymcy robić jaho ŭnikalnym siarod inšych "
+"svabodnych asiarodździaŭ."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"Najvialikšaj siłaj GNOME jość našaja mocnaja supolnaść. Amal kožny, "
+"niezaležna ad umieńnia prahramavać, moža ŭdzielničać u raźvićci GNOME."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Sotni roznych ludziej dapamahali i dapamahajuć napisańniem prahramnaha kodu "
+"dla GNOME ad pačatku prajektu ŭ 1987; jašče bolš ludziej pryniali ŭdzieł u "
+"pierakładzie, dakumentavańni, testavańni."
+
+#: ../libgnome-desktop/display-name.c:213
+msgid "Laptop"
+msgstr "Laptop"
+
+#: ../libgnome-desktop/display-name.c:221
+msgid "Unknown"
+msgstr "Nieviadomy"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:218
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Pamyłka adčytańnia fajłu \"%s\": %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:286
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Pamyłka pieraskoku ŭ fajle \"%s\": %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:388
+#: ../libgnome-desktop/gnome-desktop-item.c:3530
+msgid "No name"
+msgstr "Niama nazvy"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:615
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Fajł \"%s\" nia jość zvyčajnym fajłam albo kataloham."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:799
+#, c-format
+msgid "Error cannot find file id '%s'"
+msgstr "Pamyłka: niemahčyma znajści id fajła \"%s\""
+
+#: ../libgnome-desktop/gnome-desktop-item.c:845
+#, c-format
+msgid "No filename to save to"
+msgstr "Nie staje nazvy fajłu dla zapisu"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1830
+#, c-format
+msgid "Starting %s"
+msgstr "Uruchamleńnie: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2066
+#, c-format
+msgid "No URL to launch"
+msgstr "Nie staje ŭruchomnaha URŁa"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2082
+#, c-format
+msgid "Not a launchable item"
+msgstr "Heta nie ŭruchomny element"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2092
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Nie staje ŭruchomnaha zahadu (Exec)"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2105
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Niapravilny ŭruchomny zahad (Exec)"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3586
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Nieviadomaje kadavańnie: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:130
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Nie ŭdałosia znajści terminał. Užyvajem \"xterm\", navat kali jon nie pracuje"
+
+#: ../libgnome-desktop/gnome-rr.c:346
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "nie ŭdałosia atrymać absiah mahčymych pamieraŭ ekranaŭ"
+
+#: ../libgnome-desktop/gnome-rr.c:355
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"uźnikła nieabsłužanaja pamyłka X pry atrymańni absiahu mahčymych pamieraŭ "
+"ekranaŭ"
+
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "nie ŭdałosia atrymać resursy ekranu (CRTC, vyjści, režymy)"
+
+#: ../libgnome-desktop/gnome-rr.c:579
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "Pašyreńnia RANDR niama"
+
+#: ../libgnome-desktop/gnome-rr.c:809
+#, c-format
+msgid "could not get information about output %d"
+msgstr "nie ŭdałosia atrymać źviestak pra vyjście %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.
+#: ../libgnome-desktop/gnome-rr.c:1107
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"zapatrabavanaja pazycyja/pamier dla CRTC %d nie adpaviadaje dazvolenym "
+"miežam: pazycyja=(%d, %d), pamier=(%d, %d), najbolšaja miaža=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1140
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "nie ŭdałosia akreślić nałady dla CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1249
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "nie ŭdałosia atrymać źviestak pra CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1124
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"nivodny z zapisanych naboraŭ naładaŭ dla ekranu nie adpaviadaje dziejnym "
+"naładam"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1572
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"zapatrabavany virtualny pamier nia źmieścicca ŭ najaŭnych pamierach: "
+"zapatrabavana=(%d, %d), minimalna=(%d, %d), maksymalna=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1586
+#, c-format
+msgid "could not find a suitable configuration of screens"
+msgstr "nie ŭdałosia znajści prydatnych naładaŭ dla ekranaŭ"

@@ -1,0 +1,171 @@
+=== modified file 'libgnome-desktop/gnome-bg.c'
+Index: b/libgnome-desktop/gnome-bg.c
+===================================================================
+--- a/libgnome-desktop/gnome-bg.c
++++ b/libgnome-desktop/gnome-bg.c
+@@ -59,6 +59,19 @@
+    in the slideshow is less than 60 seconds away */
+ #define KEEP_EXPENSIVE_CACHE_SECS 60
+ 
++#define QUAD_MAX_LEVEL_OF_RECURSION 16
++#define QUAD_MIN_LEVEL_OF_RECURSION 2
++
++/* We're weighting the left side of the screen higher than
++   the right because the launcher and dash are on that side
++   of the screen. */
++#define QUAD_CORNER_WEIGHT_NW      3
++#define QUAD_CORNER_WEIGHT_NE      1
++#define QUAD_CORNER_WEIGHT_SE      1
++#define QUAD_CORNER_WEIGHT_SW      3
++#define QUAD_CORNER_WEIGHT_CENTER  2
++#define QUAD_CORNER_WEIGHT_TOTAL   (QUAD_CORNER_WEIGHT_NW + QUAD_CORNER_WEIGHT_NE + QUAD_CORNER_WEIGHT_SE + QUAD_CORNER_WEIGHT_SW + QUAD_CORNER_WEIGHT_CENTER)
++
+ typedef struct _SlideShow SlideShow;
+ typedef struct _Slide Slide;
+ 
+@@ -2391,10 +2404,137 @@
+ }
+ 
+ /* Pixbuf utilities */
++G_INLINE_FUNC GdkRGBA
++get_pixbuf_sample (guchar     *pixels,
++                   gint       rowstride,
++                   gint       channels,
++                   gint       x,
++                   gint       y)
++{
++	GdkRGBA sample;
++	gdouble dd = 0xFF;
++	guchar *p = pixels + ((y * rowstride) + (x * channels));
++
++	sample.red = *p++ / dd;
++	sample.green = *p++ / dd;
++	sample.blue = *p++ / dd;
++	sample.alpha = 1.0f;
++
++	return sample;
++}
++
++G_INLINE_FUNC gboolean
++is_color_different (const GdkRGBA color_a,
++                    const GdkRGBA color_b)
++{
++	GdkRGBA diff;
++
++	diff.red   = color_a.red   - color_b.red;
++	diff.green = color_a.green - color_b.green;
++	diff.blue  = color_a.blue  - color_b.blue;
++	diff.alpha = 1.0f;
++
++	if (fabs (diff.red) > 0.15 ||
++	    fabs (diff.green) > 0.15 ||
++	    fabs (diff.blue) > 0.15)
++		return TRUE;
++
++	return FALSE;
++}
++
++static GdkRGBA
++get_quad_average (gint       x,
++                  gint       y,
++                  gint       width,
++                  gint       height,
++                  gint       level_of_recursion,
++                  guchar     *pixels,
++                  gint       rowstride,
++                  gint       channels)
++{
++	// samples four corners
++	// c1-----c2
++	// |       |
++	// c3-----c4
++
++	GdkRGBA average;
++	GdkRGBA corner1 = get_pixbuf_sample (pixels, rowstride, channels, x        , y         );
++	GdkRGBA corner2 = get_pixbuf_sample (pixels, rowstride, channels, x + width, y         );
++	GdkRGBA corner3 = get_pixbuf_sample (pixels, rowstride, channels, x        , y + height);
++	GdkRGBA corner4 = get_pixbuf_sample (pixels, rowstride, channels, x + width, y + height);
++	GdkRGBA centre  = get_pixbuf_sample (pixels, rowstride, channels, x + (width / 2), y + (height / 2));
++
++	/* If we're over the max we want to just take the average and be happy
++	   with that value */
++	if (level_of_recursion < QUAD_MAX_LEVEL_OF_RECURSION) {
++		/* Otherwise we want to look at each value and check it's distance
++		   from the center color and take the average if they're far apart. */
++
++		/* corner 1 */
++		if (level_of_recursion < QUAD_MIN_LEVEL_OF_RECURSION ||
++				is_color_different(corner1, centre)) {
++			corner1 = get_quad_average (x, y, width/2, height/2, level_of_recursion + 1, pixels, rowstride, channels);
++		}
++
++		/* corner 2 */
++		if (level_of_recursion < QUAD_MIN_LEVEL_OF_RECURSION ||
++				is_color_different(corner2, centre)) {
++			corner2 = get_quad_average (x + width/2, y, width/2, height/2, level_of_recursion + 1, pixels, rowstride, channels);
++		}
++
++		/* corner 3 */
++		if (level_of_recursion < QUAD_MIN_LEVEL_OF_RECURSION ||
++				is_color_different(corner3, centre)) {
++			corner3 = get_quad_average (x, y + height/2, width/2, height/2, level_of_recursion + 1, pixels, rowstride, channels);
++		}
++
++		/* corner 4 */
++		if (level_of_recursion < QUAD_MIN_LEVEL_OF_RECURSION ||
++				is_color_different(corner4, centre)) {
++			corner4 = get_quad_average (x + width/2, y + height/2, width/2, height/2, level_of_recursion + 1, pixels, rowstride, channels);
++		}
++	}
++
++	average.red   = ((corner1.red * QUAD_CORNER_WEIGHT_NW)     +
++	                 (corner3.red * QUAD_CORNER_WEIGHT_SW)     +
++	                 (centre.red  * QUAD_CORNER_WEIGHT_CENTER) +
++	                 (corner2.red * QUAD_CORNER_WEIGHT_NE)     +
++	                 (corner4.red * QUAD_CORNER_WEIGHT_SE))
++	                / QUAD_CORNER_WEIGHT_TOTAL;
++	average.green = ((corner1.green * QUAD_CORNER_WEIGHT_NW)     +
++	                 (corner3.green * QUAD_CORNER_WEIGHT_SW)     +
++	                 (centre.green  * QUAD_CORNER_WEIGHT_CENTER) +
++	                 (corner2.green * QUAD_CORNER_WEIGHT_NE)     +
++	                 (corner4.green * QUAD_CORNER_WEIGHT_SE))
++	                / QUAD_CORNER_WEIGHT_TOTAL;
++	average.blue  = ((corner1.blue * QUAD_CORNER_WEIGHT_NW)     +
++	                 (corner3.blue * QUAD_CORNER_WEIGHT_SW)     +
++	                 (centre.blue  * QUAD_CORNER_WEIGHT_CENTER) +
++	                 (corner2.blue * QUAD_CORNER_WEIGHT_NE)     +
++	                 (corner4.blue * QUAD_CORNER_WEIGHT_SE))
++	                / QUAD_CORNER_WEIGHT_TOTAL;
++	average.alpha = 1.0f;
++
++	return average;
++}
++
+ static void
+ pixbuf_average_value (GdkPixbuf *pixbuf,
+                       GdkRGBA   *result)
+ {
++	GdkRGBA average;
++	average = get_quad_average (0, 0,
++	                            gdk_pixbuf_get_width (pixbuf) - 1, gdk_pixbuf_get_height (pixbuf) - 1,
++	                            1,
++	                            gdk_pixbuf_get_pixels (pixbuf),
++	                            gdk_pixbuf_get_rowstride (pixbuf),
++	                            gdk_pixbuf_get_n_channels (pixbuf));
++	result->red = average.red;
++	result->green = average.green;
++	result->blue = average.blue;
++	result->alpha = average.alpha;
++
++#if 0
+ 	guint64 a_total, r_total, g_total, b_total;
+ 	guint row, column;
+ 	int row_stride;
+@@ -2454,6 +2594,7 @@
+ 	result->red = r_total / dd;
+ 	result->green = g_total / dd;
+ 	result->blue = b_total / dd;
++#endif
+ }
+ 
+ static GdkPixbuf *

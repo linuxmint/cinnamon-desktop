@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="pl">
+   <articleinfo>
+    <title>Licencja GNU Wolnej Dokumentacji</title>
+      <releaseinfo>Wersja 1.1, marzec 2000</releaseinfo>
+      
+      <copyright><year>2000</year><holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>Projekt dokumentacji GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>1.1</revnumber> <date>2000-03</date></revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Zezwala się na kopiowanie i rozpowszechnianie wiernych kopii niniejszego dokumentu licencyjnego, jednak bez prawa wprowadzania zmian.</para>
+      </legalnotice>
+
+      <abstract role="description"><para>Celem niniejszej licencji jest zagwarantowanie wolnego dostępu do podręcznika, treści książki i wszelkiej dokumentacji w formie pisanej oraz zapewnienie każdemu użytkownikowi swobody kopiowania i rozpowszechniania wyżej wymienionych, z dokonywaniem modyfikacji lub bez, zarówno w celach komercyjnych, jak i nie komercyjnych. Ponad to Licencja ta pozwala przyznać zasługi autorowi i wydawcy przy jednoczesnym ich zwolnieniu z odpowiedzialności za modyfikacje dokonywane przez innych. </para></abstract>
+    
+    <othercredit class="translator">
+      <personname>
+        <firstname>Aviary.pl</firstname>
+      </personname>
+      <email>gnomepl@aviary.pl</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2009</year>
+      
+        <year>2012</year>
+      
+      <holder>Aviary.pl</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Łukasz Jernaś</firstname>
+      </personname>
+      <email>deejay1@srem.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2009</year>
+      
+      <holder>Łukasz Jernaś</holder>
+    </copyright>
+  </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>Preambuła</title>
+    <para>Celem niniejszej licencji jest zagwarantowanie wolnego dostępu do podręcznika, treści książki i wszelkiej dokumentacji w formie pisanej oraz zapewnienie każdemu użytkownikowi swobody kopiowania i rozpowszechniania wyżej wymienionych, z dokonywaniem modyfikacji lub bez, zarówno w celach komercyjnych, jak i nie komercyjnych. Ponad to Licencja ta pozwala przyznać zasługi autorowi i wydawcy przy jednoczesnym ich zwolnieniu z odpowiedzialności za modyfikacje dokonywane przez innych. </para>
+    
+    <para>Niniejsza Licencja zastrzega też, że wszelkie prace powstałe na podstawie tego dokumentu muszą nosić cechę <quote>wolnego dostępu</quote> w tym samym sensie co produkt oryginalny. Licencja stanowi uzupełnienie Powszechnej Licencji Publicznej GNU (GNU General Public License), która jest licencją dotyczącą wolnego oprogramowania. </para>
+    
+    <para>Niniejsza Licencja została opracowana z zamiarem zastosowania jej do podręczników do wolnego oprogramowania, ponieważ wolne oprogramowanie wymaga wolnej dokumentacji: wolny program powinien być rozpowszechniany z podręcznikami, których dotyczą te same prawa, które wiążą się z oprogramowaniem. Licencja ta nie ogranicza się jednak do podręczników oprogramowania. Można ją stosować do różnych dokumentów tekstowych, bez względu na ich przedmiot oraz niezależnie od tego, czy zostały opublikowane w postaci książki drukowanej. Stosowanie tej Licencji zalecane jest głównie w przypadku prac, których celem jest instruktaż lub pomoc podręczna.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>Zastosownie i definicje</title>
+    <para id="fdl-document">Niniejsza Licencja stosuje się do podręczników i innych prac, na których umieszczona jest pochodząca od właściciela praw autorskich informacja, że dana praca może być rozpowszechniana wyłącznie na warunkach niniejszej Licencji. Używane poniżej słowo <quote>"Dokument"</quote> odnosić się będzie do wszelkich tego typu publikacji. Ich odbiorcy nazywani będą <quote>licencjobiorcami</quote>.</para>
+    
+    <para id="fdl-modified"><quote>Zmodyfikowana wersja</quote> Dokumentu oznacza wszelkie prace zawierające Dokument lub jego część w postaci dosłownej bądź zmodyfikowanej i/lub przełożonej na inny język.</para>
+	
+    <para id="fdl-secondary"><quote>Sekcją drugorzędną</quote> nazywa się dodatek opatrzony odrębnym tytułem lub sekcję początkową <link linkend="fdl-document">Dokumentu</link>, która dotyczy wyłącznie związku wydawców lub autorów Dokumentu z ogólną tematyką Dokumentu (lub zagadnieniami z nią związanymi) i nie zawiera żadnych treści bezpośrednio związanych z ogólną tematyką (na przykład, jeżeli Dokument stanowi w części podręcznik matematyki, Sekcja drugorzędna nie może wyjaśniać zagadnień matematycznych). Wyżej wyjaśniany związek może się natomiast wyrażać w aspektach historycznym, prawnym, komercyjnym, filozoficznym, etycznym lub politycznym.</para>
+
+    <para id="fdl-invariant"><quote>Sekcje niezmienne</quote> to takie <link linkend="fdl-secondary">Sekcje drugorzędne</link>, których tytuły są ustalone jako tytuły Sekcji niezmiennych w nocie informującej, że <link linkend="fdl-document">Dokument</link> został opublikowany na warunkach Licencji.</para>
+    
+    <para id="fdl-cover-texts"><quote>Treść okładki</quote> to pewne krótkie fragmenty tekstu, które w nocie informującej, że <link linkend="fdl-document">Dokument</link> został opublikowany na warunkach Licencji, są opisywane jako "do umieszczenia na przedniej okładce" lub "do umieszczenia na tylnej okładce".</para>
+	
+    <para id="fdl-transparent"><quote>Jawna</quote> kopia <link linkend="fdl-document">Dokumentu</link> oznacza kopię czytelną dla komputera, zapisaną w formacie, którego specyfikacja jest publicznie dostępna. Zawartość tej kopii może być oglądana i edytowana bezpośrednio za pomocą typowego edytora tekstu lub (w przypadku obrazów złożonych z pikseli) za pomocą typowego programu graficznego lub (w przypadku rysunków) za pomocą ogólnie dostępnego edytora rysunków. Ponadto kopia ta stanowi odpowiednie dane wejściowe dla programów formatujących tekst lub dla programów konwertujących do różnych formatów odpowiednich dla programów formatujących tekst. Kopia spełniająca powyższe warunki, w której jednak zostały wstawione znaczniki mające na celu utrudnienie dalszych modyfikacji przez czytelników, nie jest Jawna. Kopię, która nie jest <quote>Jawna</quote>, nazywa się <quote>Niejawną</quote>.</para>
+    
+    <para>Przykładowe formaty kopii Jawnych to: czysty tekst ASCII bez znaczników, format wejściowy Texinfo, format wejściowy LaTeX, SGML lub XML wykorzystujące publicznie dostępne DTD, standardowy prosty HTML przeznaczony do ręcznej modyfikacji. Formaty niejawne to na przykład PostScript, PDF, formaty własne, które mogą być odczytywane i edytowane jedynie przez własne edytory tekstu, SGML lub XML, dla których DTD i/lub narzędzia przetwarzające nie są ogólnie dostępne, oraz HTML wygenerowany maszynowo przez niektóre procesory tekstu jedynie w celu uzyskania danych wynikowych.</para>
+    
+    <para id="fdl-title-page"><quote>Strona tytułowa</quote> oznacza, w przypadku książki drukowanej, samą stronę tytułową oraz kolejne strony zawierające informacje, które zgodnie z tą Licencją muszą pojawić się na stronie tytułowej. W przypadku prac w formatach nieposiadających strony tytułowej <quote>Strona tytułowa</quote> oznacza tekst pojawiający się najbliżej tytułu pracy, poprzedzający początek tekstu głównego. </para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>Kopiowanie dosłowne</title>
+    <para>Licencjobiorca może kopiować i rozprowadzać <link linkend="fdl-document">Dokument</link> komercyjnie lub niekomercyjnie, w dowolnej postaci, pod warunkiem zamieszczenia na każdej kopii Dokumentu treści Licencji, informacji o prawie autorskim oraz noty mówiącej, że do Dokumentu ma zastosowanie niniejsza Licencja, a także pod warunkiem nie umieszczania żadnych dodatkowych ograniczeń, które nie wynikają z Licencji. Licencjobiorca nie ma prawa używać żadnych technicznych metod pomiarowych utrudniających lub kontrolujących czytanie lub dalsze kopiowanie utworzonych i rozpowszechnianych przez siebie kopii. Może jednak pobierać opłaty za udostępnianie kopii. W przypadku dystrybucji dużej liczby kopii Licencjobiorca jest zobowiązany przestrzegać warunków wymienionych w <link linkend="fdl-section3">punkcie 3</link>.</para>
+    
+    <para>Licencjobiorca może także wypożyczać kopie na warunkach opisanych powyżej, a także wystawiać je publicznie.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>Kopiowanie ilościowe</title>
+    <para>Jeżeli Licencjobiorca publikuje drukowane kopie <link linkend="fdl-document">Dokumentu</link> w liczbie większej niż 100, a licencja Dokumentu wymaga umieszczenia <link linkend="fdl-cover-texts">Treści okładki</link>, należy dołączyć kopie okładek, które zawierają całą wyraźną i czytelną Treść okładki: treść przedniej okładki, na przedniej okładce, a treść tylnej okładki, na tylnej okładce. Obie okładki muszą też jasno i czytelnie informować o Licencjobiorcy jako wydawcy tych kopii. Okładka przednia musi przedstawiać pełny tytuł; wszystkie słowa muszą być równie dobrze widoczne i czytelne. Licencjobiorca może na okładkach umieszczać także inne informacje dodatkowe. Kopiowanie ze zmianami ograniczonymi do okładek, dopóki nie narusza tytułu <link linkend="fdl-document">Dokumentu</link> i spełnia opisane warunki, może być traktowane pod innymi względami jako kopiowanie dosłowne. </para>
+    
+    <para>Jeżeli napisy wymagane na którejś z okładek są zbyt obszerne, by mogły pozostać czytelne po ich umieszczeniu, Licencjobiorca powinien umieścić ich początek(taką ilość, jaka wydaje się rozsądna) na rzeczywistej okładce, a pozostałą część na sąsiednich stronach. </para>
+    
+    <para>W przypadku publikowania lub rozpowszechniania <link linkend="fdl-transparent">Niejawnych</link> kopii <link linkend="fdl-document">Dokumentu</link> w liczbie większej niż 100, Licencjobiorca zobowiązany jest albo dołączyć do każdej z nich <link linkend="fdl-transparent">Jawną</link> kopię czytelną dla komputera, albo wymienić w lub przy każdej kopii Niejawnej publicznie dostępną w sieci komputerowej lokalizację pełnej kopii Jawnej Dokumentu, bez żadnych informacji dodanych -- lokalizację, do której każdy użytkownik sieci miałby bezpłatny anonimowy dostęp za pomocą standardowych publicznych protokołów sieciowych. W przypadku drugim Licencjobiorca musi podjąć odpowiednie środki ostrożności, by wymieniona kopia Jawna pozostała dostępna we wskazanej lokalizacji przynajmniej przez rok od momentu rozpowszechnienia ostatniej kopii Niejawnej (bezpośredniego lub przez agentów albo sprzedawców) danego wydania. </para>
+    
+    <para>Zaleca się, choć nie wymaga, aby przed rozpoczęciem rozpowszechniania dużej liczby kopii <link linkend="fdl-document">Dokumentu</link>, Licencjobiorca skontaktował się z jego autorami celem uzyskania uaktualnionej wersji Dokumentu. </para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>Modyfikacje</title>
+    <para>Licencjobiorca może kopiować i rozpowszechniać <link linkend="fdl-modified">Zmodyfikowaną</link> wersję <link linkend="fdl-document">Dokumentu</link> na zasadach wymienionych powyżej w punkcie <link linkend="fdl-section2">2</link> i <link linkend="fdl-section3">3</link> pod warunkiem ścisłego przestrzegania niniejszej Licencji. Zmodyfikowana wersja pełni wtedy rolę Dokumentu, a więc Licencja dotycząca modyfikacji i rozpowszechniania Zmodyfikowanej wersji przenoszona jest na każdego, kto posiada jej kopię. Ponadto Licencjobiorca musi w stosunku do Zmodyfikowanej wersji spełnić następujące wymogi: </para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>Użyć na <link linkend="fdl-title-page">Stronie tytułowej</link> (i na okładkach, o ile istnieją) tytułu innego niż tytuł <link linkend="fdl-document">Dokumentu</link> i innego niż tytuły poprzednich wersji (które, o ile istniały, powinny zostać wymienione w Dokumencie, w sekcji Historia). Tytułu jednej z ostatnich wersji Licencjobiorca może użyć, jeżeli jej wydawca wyrazi na to zgodę.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Wymienić na <link linkend="fdl-title-page">Stronie tytułowej</link>, jako autorów, jedną lub kilka osób albo jednostek odpowiedzialnych za autorstwo modyfikacji <link linkend="fdl-modified">Zmodyfikowanej wersji</link>, a także przynajmniej pięciu spośród pierwotnych autorów <link linkend="fdl-document">Dokumentu</link> (wszystkich, jeśli było ich mniej niż pięciu).</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Umieścić na <link linkend="fdl-title-page">Stronie tytułowej</link> nazwę wydawcy <link linkend="fdl-modified">Zmodyfikowanej wersji</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zachować wszelkie noty o prawach autorskich zawarte w <link linkend="fdl-document">Dokumencie</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Dodać odpowiednią notę o prawach autorskich dotyczących modyfikacji obok innych not o prawach autorskich.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bezpośrednio po notach o prawach autorskich, zamieścić notę licencyjną zezwalającą na publiczne użytkowanie <link linkend="fdl-modified">Zmodyfikowanej wersji</link> na zasadach niniejszej Licencji w postaci podanej w Załączniku poniżej.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zachować w nocie licencyjnej pełną listę <link linkend="fdl-invariant">Sekcji niezmiennych</link> i wymaganych <link linkend="fdl-cover-texts">Treści</link> okładki podanych w nocie licencyjnej <link linkend="fdl-document">Dokumentu</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Dołączyć niezmienioną kopię niniejszej Licencji.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zachować sekcję zatytułowaną <quote>Historia</quote> oraz jej tytuł i dodać do niej informację dotyczącą przynajmniej tytułu, roku publikacji, nowych autorów i wydawcy <link linkend="fdl-modified">Zmodyfikowanej wersji</link> zgodnie z danymi zamieszczonymi na <link linkend="fdl-title-page">Stronie tytułowej</link>. Jeżeli w <link linkend="fdl-document">Dokumencie</link> nie istnieje sekcja pod tytułem <quote>Historia</quote>, należy ją utworzyć, podając tytuł, rok, autorów i wydawcę Dokumentu zgodnie z danymi zamieszczonymi na stronie tytułowej, a następnie dodając informację dotyczącą Zmodyfikowanej wersji, jak opisano w poprzednim zdaniu.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zachować wymienioną w <link linkend="fdl-document">Dokumencie</link> (jeśli taka istniała) informację o lokalizacji sieciowej, publicznie dostępnej <link linkend="fdl-transparent">Jawnej</link> kopii Dokumentu, a także o podanych w Dokumencie lokalizacjach sieciowych poprzednich wersji, na których został on oparty. Informacje te mogą się znajdować w sekcji <quote>Historia</quote>. Zezwala się na pominięcie lokalizacji sieciowej prac, które zostały wydane przynajmniej cztery lata przed samym Dokumentem, a także tych, których pierwotny wydawca wyraża na to zgodę.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>W każdej sekcji zatytułowanej <quote>Podziękowania</quote> lub <quote>Dedykacje</quote> zachować tytuł i treść, oddając również ton każdego z podziękowań i dedykacji.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Zachować wszelkie <link linkend="fdl-invariant">Sekcje niezmienne</link> <link linkend="fdl-document">Dokumentu</link> w niezmienionej postaci (dotyczy zarówno treści, jak i tytułu). Numery sekcji i równoważne im oznaczenia nie są traktowane jako należące do tytułów sekcji. </para>
+      </listitem>
+      
+      <listitem>
+	  <para>Usunąć wszelkie sekcje zatytułowane <quote>Adnotacje</quote>. Nie muszą one być załączane w Zmodyfikowanej wersji.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Nie nadawać żadnej z istniejących sekcji tytułu <quote>Adnotacje</quote> ani tytułu pokrywającego się z jakąkolwiek <link linkend="fdl-invariant">Sekcją niezmienną</link>.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Jeżeli <link linkend="fdl-modified">Zmodyfikowana wersja</link> zawiera nowe sekcje początkowe lub dodatki stanowiące <link linkend="fdl-secondary">Sekcje drugorzędne</link> i nie zawierające materiału skopiowanego z Dokumentu, Licencjobiorca może je lub ich część oznaczyć jako sekcje niezmienne. W tym celu musi on dodać ich tytuły do listy <link linkend="fdl-invariant">Sekcji niezmiennych</link> zawartej w nocie licencyjnej Zmodyfikowanej wersji. Tytuły te muszą być różne od tytułów pozostałych sekcji.</para>
+    
+    <para>Licencjobiorca może dodać sekcję <quote>Adnotacje</quote>, pod warunkiem, że nie zawiera ona żadnych treści innych niż adnotacje dotyczące <link linkend="fdl-modified">Zmodyfikowanej wersji</link> -- mogą to być na przykład stwierdzenia o recenzji koleżeńskiej albo o akceptacji tekstu przez organizację jako autorytatywnej definicji standardu.</para>
+    
+    <para>Na końcu listy <link linkend="fdl-cover-texts">Treści okładki</link> w <link linkend="fdl-modified">Zmodyfikowanej wersji</link>, Licencjobiorca może dodać fragment <link linkend="fdl-cover-texts"><quote>do umieszczenia na przedniej okładce</quote></link> o długości nie przekraczającej pięciu słów, a także fragment o długości do 25 słów <link linkend="fdl-cover-texts"><quote>do umieszczenia na tylnej okładce</quote></link>. Przez każdą jednostkę (lub na mocy ustaleń przez nią poczynionych) może zostać dodany tylko jeden fragment z przeznaczeniem na przednią okładkę i jeden z przeznaczeniem na tylną. Jeżeli <link linkend="fdl-document">Dokument</link> zawiera już treść okładki dla danej okładki, dodaną uprzednio przez Licencjobiorcę lub w ramach ustaleń z jednostką, w imieniu której działa Licencjobiorca, nowa treść okładki nie może zostać dodana. Dopuszcza się jednak zastąpienie poprzedniej treści okładki nową pod warunkiem wyraźnej zgody poprzedniego wydawcy, od którego stara treść pochodzi.</para>
+    
+    <para>Niniejsza Licencja nie oznacza, iż autor (autorzy) i wydawca (wydawcy) wyrażają zgodę na publiczne używanie ich nazwisk w celu zapewnienia autorytetu jakiejkolwiek <link linkend="fdl-modified">Zmodyfikowanej wersji</link>.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>Łączenie dokumentów</title>
+    <para>Licencjobiorca może łączyć <link linkend="fdl-document">Dokument</link> z innymi dokumentami wydanymi na warunkach niniejszej Licencji, na warunkach podanych dla wersji zmodyfikowanych w <link linkend="fdl-section4">części 4</link> powyżej, jednak tylko wtedy, gdy w połączeniu zostaną zawarte wszystkie <link linkend="fdl-invariant">Sekcje niezmienne</link> wszystkich oryginalnych dokumentów w postaci niezmodyfikowanej i gdy będą one wymienione jako Sekcje niezmienne połączenia w jego nocie licencyjnej.</para>
+    
+    <para>Połączenie wymaga tylko jednej kopii niniejszej Licencji, a kilka identycznych <link linkend="fdl-invariant">Sekcji niezmiennych</link> może zostać zastąpionych jedną. Jeżeli istnieje kilka Sekcji niezmiennych o tym samym tytule, ale różnej zawartości, Licencjobiorca jest zobowiązany uczynić tytuł każdej z nich unikalnym poprzez dodanie na jego końcu, w nawiasach, nazwy oryginalnego autora lub wydawcy danej sekcji, o ile jest znany, lub unikalnego numeru. Podobne poprawki wymagane są w tytułach sekcji na liście Sekcji niezmiennych w nocie licencyjnej połączenia. </para>
+    
+    <para>W połączeniu Licencjobiorca musi zawrzeć wszystkie sekcje zatytułowane <quote>Historia</quote> z dokumentów oryginalnych, tworząc jedną sekcję <quote>Historia</quote>. Podobnie ma postąpić z sekcjami <quote>Podziękowania</quote> i <quote>Dedykacje</quote>. Wszystkie sekcje zatytułowane <quote>Adnotacje</quote> należy usunąć.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>Zbiory dokumentów</title>
+    <para>Licencjobiorca może utworzyć zbiór składający się z <link linkend="fdl-document">Dokumentu</link> i innych dokumentów wydanych zgodnie z niniejszą Licencją i zastąpić poszczególne kopie Licencji pochodzące z tych dokumentów jedną kopią dołączoną do zbioru, pod warunkiem zachowania zasad Licencji dotyczących kopii dosłownych we wszelkich innych aspektach każdego z dokumentów.</para>
+    
+    <para>Z takiego zbioru Licencjobiorca może wyodrębnić pojedynczy dokument i rozpowszechniać go niezależnie na zasadach niniejszej Licencji, pod warunkiem zamieszczenia w wyodrębnionym dokumencie kopii niniejszej Licencji oraz zachowania zasad Licencji we wszystkich aspektach dotyczących dosłownej kopii tego dokumentu.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>Zestawienia z pracami niezależnymi</title>
+    <para>Kompilacja <link linkend="fdl-document">Dokumentu</link> lub jego pochodnych z innymi oddzielnymi i niezależnymi dokumentami lub pracami nie jest uznawana za <link linkend="fdl-modified">Zmodyfikowaną wersję</link> Dokumentu, chyba że odnoszą się do niej jako do całości prawa autorskie. Taka kompilacja jest nazywana zestawieniem, a niniejsza Licencja nie dotyczy samodzielnych prac skompilowanych z Dokumentem, jeśli nie są to pochodne Dokumentu. Jeżeli do kopii Dokumentu odnoszą się wymagania dotyczące <link linkend="fdl-cover-texts">Treści okładki</link> wymienione w <link linkend="fdl-section3">części 3</link> i jeżeli Dokument stanowi mniej niż jedną czwartą całości zestawienia, Treść okładki Dokumentu może być umieszczona na okładkach zamykających Dokument w obrębie zestawienia. W przeciwnym razie Treść okładki musi się pojawić na okładkach całego zestawienia.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>Tłumaczenie</title>
+    <para>Tłumaczenie jest uznawane za rodzaj modyfikacji, a więc Licencjobiorca może rozpowszechniać tłumaczenia <link linkend="fdl-document">Dokumentu</link> na zasadach wymienionych w <link linkend="fdl-section4">punkcie 4</link>. Zastąpienie <link linkend="fdl-invariant">Sekcji niezmiennych</link> ich tłumaczeniem wymaga specjalnej zgody właścicieli prawa autorskiego. Dopuszcza się jednak zamieszczanie tłumaczeń wybranych lub wszystkich Sekcji niezmiennych obok ich wersji oryginalnych. Podanie tłumaczenia niniejszej Licencji możliwe jest pod warunkiem zamieszczenia także jej oryginalnej wersji angielskiej. W przypadku niezgodności pomiędzy zamieszczonym tłumaczeniem a oryginalną wersją angielską niniejszej Licencji moc prawną ma oryginalna wersja angielska.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>Wygaśnięcie</title>
+    <para>Poza przypadkami jednoznacznie dopuszczonymi na warunkach niniejszej Licencji nie zezwala się Licencjobiorcy na kopiowanie, modyfikowanie, czy rozpowszechnianie <link linkend="fdl-document">Dokumentu</link> ani też na cedowanie praw licencyjnych. We wszystkich pozostałych wypadkach każda próba kopiowania, modyfikowania lub rozpowszechniania Dokumentu albo cedowania praw licencyjnych jest nieważna i powoduje automatyczne wygaśnięcie praw, które licencjobiorca nabył z tytułu Licencji. Niemniej jednak w odniesieniu do stron, które już otrzymały od Licencjobiorcy kopie albo prawa w ramach niniejszej Licencji, licencje nie zostaną anulowane, dopóki strony te w pełni się do nich stosują.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>Przyszłe wersje Licencji</title>
+    <para>W miarę potrzeby <ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink> może publikować nowe poprawione wersje GNU Free Documenation License. Wersje te muszą pozostawać w duchu podobnym do wersji obecnej, choć mogą się różnić w szczegółach dotyczących nowych problemów czy zagadnień. Patrz <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>Każdej wersji niniejszej Licencji nadaje się wyróżniający ją numer. Jeżeli w <link linkend="fdl-document">Dokumencie</link> podaje się numer wersji Licencji, oznaczający, iż odnosi się do niego podana <quote>lub jakakolwiek późniejsza</quote> wersja licencji, Licencjobiorca ma do wyboru stosować się do postanowień i warunków albotej wersji, albo którejkolwiek wersji późniejszej opublikowanej oficjalnie (nie jako propozycja) przez Free Software Foundation. Jeśli Dokument nie podaje numeru wersji niniejszej Licencji, Licencjobiorca może wybrać dowolną wersję kiedykolwiek opublikowaną (nie jako propozycja) przez Free Software Foundation.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Załącznik: Jak zastosować tę Licencję dla swojego dokumentu.</title>
+    <para>Aby zastosować tę Licencję w stosunku do dokumentu swojego autorstwa, dołącz kopię Licencji do dokumentu i zamieść następującą informację o prawach autorskich i uwagi o licencji bezpośrednio po stronie tytułowej.</para>
+    
+    <blockquote>
+      <para>Copyright (c) rok imię nazwisko</para>
+      <para>Udziela się  zezwolenia do  kopiowania rozpowszechniania i/lub modyfikację tego dokumentu zgodnie z zasadami Licencji GNU Wolnej Dokumentacji w wersji 1.1 lub dowolnej późniejszej opublikowanej przez Free Software Foundation; wraz z zawartymi <link linkend="fdl-invariant">Sekcjami Niezmiennymi</link> LISTA TYTUŁÓW SEKCJI, wraz z <link linkend="fdl-cover-texts">Tekstem na Przedniej Okładce</link> LISTA i z <link linkend="fdl-cover-texts">Tekstem na Tylnej Okładce</link> LISTA. Kopia licencji załączona jest w sekcji zatytułowanej <quote>GNU Free Documentation License</quote></para>
+    </blockquote>
+      
+    <para>W przypadku niezamieszczania <link linkend="fdl-invariant">Sekcji Niezmiennych</link>, należy napisać <quote>nie zawiera Sekcji Niezmiennych</quote> zamiast spisu sekcji niezmiennych. W przypadku nie zamieszczania <link linkend="fdl-cover-texts">Tekstu na Przedniej Okładce</link> należy wpisać <quote>bez Tekstu na Okładce</quote> w miejsce <quote>wraz z Tekstem na Przedniej Okładce LISTA</quote>, analogicznie postępowanie dotyczy <link linkend="fdl-cover-texts">Tekstu na Tylnej Okładce</link>.</para>
+    
+    <para>Jeśli w dokumencie zawarte są nieszablonowe przykłady kodu programu, zalecamy aby uwolnić również te przykłady na licencji wolnego oprogramowania, takiej jak <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">Powszechna Licencja Publiczna GNU</ulink>, aby zapewnienić możliwość ich użycia w wolnym oprogramowaniu.</para>
+  </sect1>
+</article>

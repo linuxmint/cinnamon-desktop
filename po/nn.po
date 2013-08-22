@@ -1,0 +1,528 @@
+# translation of nn.po to Norwegian Nynorsk
+# Norwegian (nynorsk) translation of gnome-core.
+# Copyright (C) 1998-2000, 2003, 2006 Free Software Foundation, Inc.
+# Christian Fredrik Kalager Schaller <Uraeus@linuxrising.org>, 2000-2001.
+# Kjartan Maraas  <kmaraas@gnome.org>, 2001.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2001-2002.
+# Monica Gausen <monica@gausen.net>, 2001.
+# Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2006.
+# Torstein Adolf Winterseth <kvikende@fsfe.org>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: nn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&component=general\n"
+"POT-Creation-Date: 2010-11-27 02:14+0000\n"
+"PO-Revision-Date: 2010-11-29 18:06+0200\n"
+"Last-Translator: Torstein Adolf Winterseth <kvikende@fsfe.org>\n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Ukjend"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Klarte ikkje finna ein terminal. Vil prøva å bruka xterm, sjølv om han "
+"kanskje ikkje fungerer"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "klarte ikkje få skjermressursane (CRTC, utdata, modusar)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "Uhandtert X-feil under henting av område med skjermstorleikar"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "klarte ikkje henta område med skjermstorleikar"
+
+#: ../libgnome-desktop/gnome-rr.c:714
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR-utvidinga er ikkje til stades"
+
+#: ../libgnome-desktop/gnome-rr.c:1090
+#, c-format
+msgid "could not get information about output %d"
+msgstr "klarte ikkje henta informasjon om utdata %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1477
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"førespurd posisjon/storleik for CRTC %d er utanfor dei gyldige grensene: "
+"posisjon=(%d, %d), storleik=(%d, %d), maksimum=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1513
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "klarte ikkje setja innstillingane til CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1629
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "klarte ikkje henta informasjon om CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "Bærbar"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1227
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"ingen av dei lagra skjerminnstillingane samsvarar med den aktive innstillinga"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1489
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d klarte ikkje driva utdata %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1496
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "utdata %s støttar ikkje modus %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1507
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d støttar ikkje rotasjon=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1521
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"utdata %s har ikkje same parameter som eit anna, klona utdata:\n"
+"eksisterande modus = %d, ny modus = %d\n"
+"eksisterande koordinatar = (%d, %d), nye koordinatar = (%d, %d)\n"
+"eksisterande rotasjon = %s, ny rotasjon = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1536
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "klarte ikkje klona til utdata %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1705
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Prøvar modus for CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1729
+#, fuzzy, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr "CRTC %d: prøvar modus %dx%d@%dHz med utdata på %dx%d@%dHz (pass %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1776
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"klarte ikkje tildela CRTC-ar til utdata:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1780
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"ingen av dei valde modusane er kompatible med dei moglege modusane:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1862
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"nødvendig virtuell storleik passar ikkje med dei tilgjengelege storleikane: "
+"førespurd=(%d, %d), minimum=(%d, %d), maksimum=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:336
+msgid "Mirror Screens"
+msgstr "Spegelskjermar"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/panel.js:584
+#, fuzzy
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R.%S"
+
+#: ../js/ui/panel.js:585
+#, fuzzy
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/panel.js:589
+#, fuzzy
+msgid "%a %R:%S"
+msgstr "%a %R.%S"
+
+#: ../js/ui/panel.js:590
+#, fuzzy
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/panel.js:597
+#, fuzzy
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %b %e, %l.%M.%S %p"
+
+#: ../js/ui/panel.js:598
+#, fuzzy
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %b %e, %l.%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/panel.js:602
+#, fuzzy
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l.%M.%S %p"
+
+#: ../js/ui/panel.js:603
+#, fuzzy
+msgid "%a %l:%M %p"
+msgstr "%a %l.%M %p"
+
+# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
+#~ msgid "About GNOME"
+#~ msgstr "Om GNOME"
+
+# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Lær meir om GNOME"
+
+#~ msgid "News"
+#~ msgstr "Nyheiter"
+
+#~ msgid "GNOME Library"
+#~ msgstr "GNOME-bibliotek"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Vener av GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
+
+# gnome-about/contributors.h:95
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Den mystiske GEGL"
+
+# gnome-about/contributors.h:254
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Den knirkande gummiGNOMEn"
+
+# gnome-about/contributors.h:279
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "GNOME-fisken Wanda"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Opna URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Kopier URL"
+
+# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Om GNOME-skrivebordet"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Velkommen til GNOME-skrivebordet"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Laga av:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Versjon"
+
+# help-browser/window.c:250
+#~ msgid "Distributor"
+#~ msgstr "Distributør"
+
+#~ msgid "Build Date"
+#~ msgstr "Byggjedato"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Vis informasjon om denne GNOME-versjonen"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME har også ein komplett utviklingsplattform for programutviklarar. "
+#~ "Denne plattformen gjer det mogleg å laga kraftige og innfløkte program."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME har det meste av det du ser på datamaskina di, inkludert ein "
+#~ "filhandsamar, ein nettlesar, menyar og mange program."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME er eit fritt, lettbrukt, stabilt og tilgjengeleg skrivebordsmiljø "
+#~ "for UNIX-liknande operativsystem."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "GNOME fokuserer på å vera brukarvennleg og tilgjengeleg, å koma i nye "
+#~ "utgåver med jamne mellomrom, og å bruka støtte frå sterke verksemder til "
+#~ "å verta unik blant skrivebordsmiljøa i fri programvare-miljøet."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "Den største styrka med GNOME er det sterke miljøet rundt. Så å seia alle, "
+#~ "med eller utan programmeringskunnskap, kan bidra til å gjera GNOME betre."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Hundrevis av menneske har vore med og programmert GNOME sidan prosjektet "
+#~ "starta i 1997. Mange fleire har hjelpt til på andre viktige måtar, t.d. "
+#~ "omsetjing, dokumentasjon og kvalitetssikring."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Feil ved lesing av fil «%s»: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Feil ved tilbakespoling av fil «%s»: %s"
+
+# gnome-terminal/gnome-terminal.glade.h:23 panel/menu.c:4729
+#~ msgid "No name"
+#~ msgstr "Inkje namn"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Fila «%s» er ikkje ei vanleg fil eller mappe."
+
+#~| msgid "Error cannot find file id '%s'"
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Klarte ikkje finna fila «%s»"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Ikkje noko filnamn å lagra til"
+
+#~ msgid "Starting %s"
+#~ msgstr "Startar %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Ingen URL å starta"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Ikkje eit køyrbart element"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Ingen kommando (Exec) å køyra"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Feil kommando (Exec) å køyra"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Ukjend koding av: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "klarte ikkje finna ei passande innstilling av skjermar"
+
+# help-browser/window.c:250
+#~ msgid "Directory"
+#~ msgstr "Katalog"
+
+# panel/launcher.c:499 panel/launcher.c:693 panel/menu.c:1715
+#~ msgid "Application"
+#~ msgstr "Applikasjon"
+
+# gsm/gnome-login-check.c:246
+#~ msgid "Link"
+#~ msgstr "Lenkje"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSeining"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME-type"
+
+#~ msgid "Service"
+#~ msgstr "Teneste"
+
+#~ msgid "ServiceType"
+#~ msgstr "Teneste-type"
+
+# help-browser/history.c:260
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+# gsm/session-properties-capplet.c:292
+#~ msgid "Comm_and:"
+#~ msgstr "Komm_ando:"
+
+# panel/foobar-widget.c:322
+#~ msgid "_Name:"
+#~ msgstr "_Namn:"
+
+# applets/gen_util/printer.c:317
+#~ msgid "_Generic name:"
+#~ msgstr "_Vanleg namn:"
+
+# gsm/session-properties-capplet.c:292
+#~ msgid "Co_mment:"
+#~ msgstr "_Merknad:"
+
+# applets/fish/fish.c:535 applets/gen_util/mailcheck.c:1020
+# gnome-hint/gnome-hint-properties.c:146 panel/menu-properties.c:596
+# panel/menu-properties.c:634 panel/panel-util.c:193
+# panel/panel_config.c:1631 panel/swallow.c:261
+#~ msgid "Browse"
+#~ msgstr "Bla gjennom"
+
+# panel/menu.c:4771
+#~ msgid "_Type:"
+#~ msgstr "_Type:"
+
+# panel/drawer.c:142 panel/menu-properties.c:617 panel/menu-properties.c:653
+#~ msgid "_Icon:"
+#~ msgstr "_Ikon:"
+
+# panel/gnome-panel-properties.c:499
+#~ msgid "Browse icons"
+#~ msgstr "Sjå på ikon"
+
+# panel/gnome-run.c:606
+#~ msgid "Run in t_erminal"
+#~ msgstr "Køyr i t_erminal"
+
+#~ msgid "Language"
+#~ msgstr "Språk"
+
+# panel/foobar-widget.c:322
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+# applets/gen_util/printer.c:317
+#~ msgid "Generic name"
+#~ msgstr "Generisk namn"
+
+# gsm/session-properties-capplet.c:292
+#~ msgid "Comment"
+#~ msgstr "Merknad"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Prøv dette før bruk:"
+
+# help-browser/window.c:247
+#~ msgid "_Documentation:"
+#~ msgstr "_Dokumentasjon"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "Omsetjing av _namn/merknadar:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Legg til/Set"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Legg eller sett namn/merknadar på omsetjingar"
+
+# help-browser/bookmarks.c:242
+#~ msgid "Re_move"
+#~ msgstr "Fje_rn"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Fjern namn/merknad på omsetjingar"
+
+# help-browser/window.c:237
+#~ msgid "Basic"
+#~ msgstr "Enkel"
+
+# applets/desk-guide/deskguide_applet.c:137
+#~ msgid "Advanced"
+#~ msgstr "Avansert"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "Vi_s tips ved oppstart"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "Kan ikkje finna katalogen med bileta til toppteksten."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "Feil under opning av katalogen med bileta til toppteksten: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Kan ikkje lesa inn topptekstbilete: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "Kunne ikkje finna GNOME-logoen."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "Kan ikkje lasta «%s»: %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "Kan ikkje opna adressa «%s»: %s"
+
+#~ msgid "Could not locate the file with GNOME version information."
+#~ msgstr "Kan ikkje finna fila med versjonsinformasjon om GNOME."
+
+#~ msgid "Software"
+#~ msgstr "Programvare"
+
+# gnome-about/gnome-about.c:576
+#~ msgid "Developers"
+#~ msgstr "Utviklarar"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "Feil ved skriving av fil «%s»: %s"

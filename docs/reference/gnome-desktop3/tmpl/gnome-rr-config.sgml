@@ -1,0 +1,135 @@
+<!-- ##### SECTION Title ##### -->
+gnome-rr-config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION gnome_rr_config_new_current ##### -->
+<para>
+
+</para>
+
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_new_stored ##### -->
+<para>
+
+</para>
+
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_match ##### -->
+<para>
+
+</para>
+
+@config1: 
+@config2: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_equal ##### -->
+<para>
+
+</para>
+
+@config1: 
+@config2: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_save ##### -->
+<para>
+
+</para>
+
+@configuration: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_sanitize ##### -->
+<para>
+
+</para>
+
+@configuration: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_apply_with_time ##### -->
+<para>
+
+</para>
+
+@configuration: 
+@screen: 
+@timestamp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_apply_from_filename_with_time ##### -->
+<para>
+
+</para>
+
+@screen: 
+@filename: 
+@timestamp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_applicable ##### -->
+<para>
+
+</para>
+
+@configuration: 
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_get_backup_filename ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_config_get_intended_filename ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

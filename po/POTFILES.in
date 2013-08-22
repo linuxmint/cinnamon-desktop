@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+# When adding a file here, make sure that the entry point in the API of this
+# file calls _gnome_desktop_init_i18n ()
+libgnome-desktop/display-name.c
+libgnome-desktop/gnome-desktop-utils.c
+libgnome-desktop/gnome-rr.c
+libgnome-desktop/gnome-rr-config.c
+libgnome-desktop/gnome-rr-labeler.c
+libgnome-desktop/gnome-wall-clock.c

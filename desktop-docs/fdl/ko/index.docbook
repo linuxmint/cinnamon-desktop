@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="ko">
+   <articleinfo>
+    <title>GNU 자유 문서 사용 허가서</title>
+      <releaseinfo>1.1 판, 2000년 3월 </releaseinfo>
+      
+      <copyright>
+	<year>2000</year><holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>그놈 문서 프로젝트</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>1.1</revnumber>
+          <date>2000-03</date>
+        </revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Everyone is permitted to
+	    copy and distribute verbatim copies of this license
+	    document, but changing it is not allowed.
+	</para>
+      </legalnotice>
+
+      <abstract role="description"><para>본 사용 허가서의 목적은 첫째, 매뉴얼이나 책 또는 다른 문서들을 <quote>자유</quote>롭게 만들기 위한 것입니다. 여기서 말하는 <quote>자유</quote>란 무료가 아닌 구속되지 않는다는 관점에서의 자유를 의미합니다. 즉, 상업적이든 비상업적이든 간에 누구나 그것을 수정하거나 그렇지 않은 상태에서 복제 및 재배포할 수 있는 실질적인 자유를 보장하기 위한 것입니다. 둘째, 본 사용 허가서는 저작자나 발행인에게 다른 사람들이 가한 수정에 책임지지 않고 그들의 저작물에 대한 공로를 인정 받을 수 있는 길을 보장하기 위한 것입니다.</para></abstract>
+    </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>전문</title>
+    <para>본 사용 허가서의 목적은 첫째, 매뉴얼이나 책 또는 다른 문서들을 <quote>자유</quote>롭게 만들기 위한 것입니다. 여기서 말하는 <quote>자유</quote>란 무료가 아닌 구속되지 않는다는 관점에서의 자유를 의미합니다. 즉, 상업적이든 비상업적이든 간에 누구나 그것을 수정하거나 그렇지 않은 상태에서 복제 및 재배포할 수 있는 실질적인 자유를 보장하기 위한 것입니다. 둘째, 본 사용 허가서는 저작자나 발행인에게 다른 사람들이 가한 수정에 책임지지 않고 그들의 저작물에 대한 공로를 인정 받을 수 있는 길을 보장하기 위한 것입니다.</para>
+    
+    <para>본 사용 허가서는 일종의 <quote>카피레프트</quote>입니다. 즉, 문서의 2차적 저작물 또한 같은 의미에서 자유로워야 한다는 것을 의미합니다. 이것은 자유 소프트웨어를 위해서 고안된 카피레프트 사용 허가서인 GNU 일반 공중 사용 허가서를 보완합니다.</para>
+    
+    <para>자유 소프트웨어는 자유 문서를 필요로 하기 때문에 본 사용 허가서는 자유 소프트웨어 매뉴얼에 사용되기 위해서 고안되었습니다. 자유 프로그램에는 소프트웨어에서와 같은 자유가 제공되는 매뉴얼이 함께 수반되어야 합니다. 그러나 본 사용 허가서가 단지 소프트웨어 매뉴얼에만 한정되는 것은 아닙니다. 이것은 문서의 주제나 그것이 인쇄물로 발행되었는지의 여부에 상관없이 모든 종류의 문서 저작물에 사용될 수 있습니다. 교육이나 참고를 목적으로 하는 저작물에는 원칙적으로 본 사용 허가서를 사용할 것을 추천합니다.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>적용 범위와 정의</title>
+    <para id="fdl-document">본 사용 허가서는 GNU 자유 문서 사용 허가서(이하, <quote>GFDL</quote>이라고 칭합니다.)의 규정에 따라 배포될 수 있다는 사항이 저작권자에 의해서 명시된 모든 매뉴얼과 문서 저작물에 적용됩니다. 아래의 <quote>문서</quote>(文書, document)는 그러한 모든  매뉴얼 또는 문서 저작물을 의미합니다. 공중의 누구라도 <quote>피양도자</quote>가 될 수 있습니다.</para>
+    
+    <para id="fdl-modified">문서의 <quote>수정판</quote>(修正版, modified version)이란 원문서가 그대로 복제 또는 개작되거나, 다른 언어로 번역된 문서의 전부나 일부를 포함하고 있는 저작물을 의미합니다.</para>
+	
+    <para id="fdl-secondary"><link linkend="fdl-document">문서</link>의 <quote>2차구성부</quote>(二次構成部, secondary section)란 문서의 저작자나 발행인과 문서의 전체 주제(또는 관련 내용)와의 관계만을 설명하거나, 문서의 전체 주제와 직접적인 관계가 없는 내용을 포함하고 있는 머리말과 목차 등의 서두나 부록 부분을 가리킵니다. (예를 들면 문서가 수학 교과서의 일부였을 경우, 이 문서의 2차구성부는 수학에 관련된 어떠한 내용도 기술되어서는 안됩니다.) 2차구성부에 포함될 수 있는 내용은 문서의 주제나 관련 사항에 대한 개정 이력이나 법률적, 상업적, 철학적, 윤리적, 정치적 입장 등입니다.</para>
+
+    <para id="fdl-invariant"><quote>변경불가부분</quote>(變更不可部分, invariant section)이란 <link linkend="fdl-document">문서</link>가 본 사용 허가서에 의해서 배포된다는 사실이, 해당 부분이 변경불가부분이라는 제목과 함께 명시된 <link linkend="fdl-secondary">2차 구성부</link>의 한 형태를 의미합니다.</para>
+    
+    <para id="fdl-cover-texts"><quote>표지구절</quote>(表紙句節, cover texts)이란 <link linkend="fdl-document">문서</link>가 본 사용 허가서에 의해서 배포된다는 사실이 문서의 앞 표지나 뒷 표지에 언급되는 짧은 문장을 의미합니다.</para>
+	
+    <para id="fdl-transparent"><link linkend="fdl-document">문서</link>의 <quote>투명</quote>(透明, transparent) 복제물이란 그 사양이 공중에게 공개되어 있고 일반적인 문서 편집기, (픽셀로 구성된 이미지의 경우) 일반적인 페인트 프로그램, (그림의 경우) 널리 사용되는 그림 편집기로 그 내용을 출력시키거나 직접 수정하기에 용이하며 조판 프로그램에 입력하기에 적당하거나 조판 프로그램에 입력할 수 있는 다양한 형태의 포맷으로 자동으로 번역되기에 용이한 형태로 만들어진 기계로 판독 가능한 복제물을 의미합니다. 피양도자가 문서를 개작하는 것을 방해하거나 금지하기 위해서 조판 형태를 설계한 파일 포맷은 투명한 것이 아닙니다. 투명 복제물이 아닌 것을 <quote>불투명</quote>(不透明, opaque) 복제물이라고 합니다.</para>
+    
+    <para>투명 복제물로 적절한 포맷의 예는 마크업이 포함되지 않은 평범한 ASCII 포맷과 Texinfo 입력 포맷, LaTeX 입력 포맷, 공개적으로 이용되는 DTD를 사용하는 SGML이나 XML, 그리고 표준 규약을 준수하는 간단한 형식의 HTML과 같이 사람이 직접 개작할 수 있는 형태의 포맷입니다. 불투명 복제물에는 PostScript와 PDF, 독점 워드 프로세서에서만 읽고 편집할 수 있는 독점 포맷, 일반적으로 통용되지 않는 DTD와 처리 도구가 필요한 SGML 및 XML 포맷, 그리고 출력 목적만을 위해서 워드 프로세서로 생성한 기계 생성 HTML 포맷이 포함됩니다.</para>
+    
+    <para id="fdl-title-page"><quote>제목 페이지</quote>(title page)란 인쇄된 책의 경우에는 문서의 제목이 표시된 페이지 자체뿐만 아니라 보다 쉽게 이해되는데 필요하다고 판단되어 본 사용 허가서가 제목 페이지에 함께 포함시킬 것을 규정한 후속 페이지들을 모두 의미합니다. 제목 페이지가 없는 저작물의 경우, <quote>제목 페이지</quote>는 본문이 시작되기 전에 저작물의 제목에 가장 근접한 형태가 나타난 페이지를 의미합니다.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>동일 복제</title>
+    <para><link linkend="fdl-document">문서</link>의 피양도자는 본 사용 허가서에 어떠한 사항도 추가하지 않은 상태에서 본 사용 허가서와 저작권 사항 그리고 문서의 모든 복제물에 본 사용 허가서가 동일하게 적용된다는 사항을 명시하고 이를 문서의 복제물과 함께 제공하는 한, 어떠한 정보 매체에 의해서도 상업적이나 비상업적인 목적으로 문서를 복제하거나 배포할 수 있습니다. 문서를 복제하거나 배포할 경우에는 임의의 피양도자가 문서를 열람하거나 복제할 수 없도록 방해하거나 통제할 수 있는 어떠한 기술적 수단도 사용해서는 안됩니다. 그러나 복제물을 제공하는데 따른 보상을 청구할 수는 있습니다. 만약, 충분히 많은 양의 복제물을 배포할 경우에는 <link linkend="fdl-section3">제3조</link>의 규정들을 함께 준수해야만 합니다.</para>
+    
+    <para>또한 위의 조건을 준수하는 한, 피양도자는 문서의 복제물을 대여하거나 공개적으로 전시할 수 있습니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>대량 복제</title>
+    <para>만약, <link linkend="fdl-document">문서</link>의 인쇄 복제물을 100부 이상 발행하며, 문서의 사용 허가서가 <link linkend="fdl-cover-texts">표지 구절</link>의 사용을 규정하고 있는 경우에는 인쇄물의 앞 표지와 뒷 표지에 삽입될 앞 표지 구절과 뒷 표지 구절이 명확하고 읽기 쉬운 형태로 모든 복제물에 포함되어야 합니다. 또한 인쇄 복제물의 발행인에 대한 정보가 양쪽 표지 모두에 명확하고 읽기 쉬운 형태로 명시되어야 합니다. 인쇄물의 앞 표지에는 문서의 완전한 제목이, 제목을 구성하는 모든 문자들이 동일한 수준의 식별력을 가질 수 있도록 표시되어야 합니다. 복제물의 표지에는 추가적인 문장이나 도형, 그림 등의 요소를 추가하는 것이 가능합니다. <link linkend="fdl-document">문서</link>의 제목이 유지되고 이러한 조건들을 만족하는 한, 표지만 변경시킨 복제물은 표지 이외의 다른 부분에 대한 동일 복제로 간주됩니다.</para>
+    
+    <para>앞 표지나 뒷 표지에 표시될 표지 구절의 내용이 너무 많아서 읽기 힘든 경우에는 실제 표지에는 (적당한 만큼만) 기재하고, 나머지 내용들은 인접 페이지에 표시할 수 있습니다.</para>
+    
+    <para>100부 이상의 <link linkend="fdl-transparent">불투명</link> 복제물을 발행하거나 배포하는 경우, 모든 불투명 복제물에 기계 판독이 가능한 <link linkend="fdl-transparent">투명</link> 복제물을 함께 첨부하거나, 추가된 것이 없는 완벽한 투명 복제물이 있는 공개적인 접근이 가능한 컴퓨터 네트워크의 위치를 각 불투명 복제물에 명시하여 네트워크를 사용하는 일반 공중이 공개 표준을 준수하는 네트워크 프로토콜을 이용하여 비용없이 익명으로 다운로드 받을 수 있도록 해야 합니다. 후자의 경우, 불투명 복제물을 대량으로 배포하기 시작할 때에는 매우 신중한 접근을 해야 하는데, 불투명 복제물을 공중에게 (본인이 직접 또는 대리인을 통해서, 또는 소매업자를 통해서) 배포한 마지막 시점으로부터 적어도 1년 뒤까지 투명 복제물이 명시된 위치에서 접근될 수 있는 상태로 확실히 남아있도록 해야 합니다.</para>
+    
+    <para>강제 조항은 아니지만, 복제물을 대량으로 배포하기 전에 충분한 시간적 여유를 두고 <link linkend="fdl-document">문서</link>의 저작자와 연락해서 저작자에게 문서의 최신 개정판을 제공할 수 있는 기회를 주어야 합니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>개작</title>
+    <para><link linkend="fdl-document">문서</link>의 <link linkend="fdl-modified">수정판</link>은 수정판이 명백하게 본 사용 허가서에 의해서 관리되는 조건 하에서 <link linkend="fdl-section2">제2조</link>와 <link linkend="fdl-section3">제3조</link>의 규정에 의해서 복제 및 배포될 수 있습니다. 즉, 수정판은 문서의 역할을 유지해야 하며, 수정판의 복제물을 양도받은 임의의 피양도자는 개작과 배포에 대한 동일한 권리를 양수받게 됩니다. 또한 수정판에 대해서 다음의 규정들을 준수해야만 합니다.</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>수정판의 <link linkend="fdl-title-page">제목 페이지</link>에는 (표지가 있다면 표지에도) <link linkend="fdl-document">문서</link>와 그 이전 판의 문서와 구별되는 제목을 사용해야 합니다. (문서의 개정 이력란이 존재한다면 이러한 사실이 등재되어야 합니다.) 그러나 이전 판의 발행인이 허락한다면, 이전 판과 같은 제목을 사용할 수 있습니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-modified">수정판</link>의 <link linkend="fdl-title-page">제목 페이지</link>에는 적어도 5명의 <link linkend="fdl-document">문서</link>의 원저작자 (5명보다 적다면 원저작자 모두)와 함께, 개작에 책임이 있는 1인 이상의 개인 또는 단체를 저작자로 명시해야 합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-modified">수정판</link>의 발행인 성명을 <link linkend="fdl-title-page">제목 페이지</link>에 발행인으로서 명시합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-document">문서</link>의 모든 저작권 표시를 수정판에 유지해야 합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>문서의 저작권 표시 부분에 자신이 개작한 것에 대한 적절한 저작권 사항을 추가해서 수정판에 표시합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>저작권 표시 바로 다음에, 본 사용 허가서의 규정 하에 공중이 <link linkend="fdl-modified">수정판</link>을 사용할 수 있다는 사용 허가 표시를 본 사용 허가서의 부록에 나와있는 형식으로 포함시킵니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-document">문서</link>의 사용 허가 표시에 포함되어 있던 <link linkend="fdl-invariant">변경 불가 부분</link>의 목록과 명시할 것을 요구한 <link linkend="fdl-cover-texts">표지 구절</link>을 수정판에도 모두 그대로 유지시킵니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>본 사용 허가서를 변경 없이 그대로 포함시킵니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><quote>개정이력</quote>(履歷, history)이라는 이름이 붙어 있는 부분과 그 제목을 그대로 유지하고 적어도 <link linkend="fdl-modified">수정판</link>의 제목, 연도, 수정판 저작자, 발행인에 대한 항목을 <link linkend="fdl-title-page">제목 페이지</link>에서 명시한 것과 동일하게 이 부분에 추가합니다. <link linkend="fdl-document">문서</link>에 <quote>이력</quote> 부분이 없을 경우에는 제목 페이지와 동일하게 문서의 제목과 연도, 저작자, 발행인을 명시한 이력 부분을 새롭게 만들고 앞에서 언급한 대로 수정판에 대한 사항을 추가합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>공중이 <link linkend="fdl-transparent">투명</link> 복제물에 접근할 수 있게 하기 위해서 <link linkend="fdl-document">문서</link>에 명시한 네트워크 주소가 존재한다면 이를 수정판에도 그대로 유지시킵니다. 문서의 이전 판에 포함되어 있던 네트워크 주소가 문서에 기재되어 있는 경우에도, 이를 소급해서 수정판에 그대로 유지합니다. 네트워크 주소는 <quote>개정 이력</quote> 부분에 기재될 수도 있습니다. 만일 네트워크 주소가 문서보다 적어도 4년 전에 발행된 저작물을 위한 것이거나 네트워크 주소가 최초로 포함된 문서의 발행인이 허락했다면 이를 생략할 수 있습니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><quote>감사의 글</quote>(acknowledgements) 또는 <quote>헌사</quote>(dedications)라는 표제를 갖고 있는 부분이 있다면, 이 부분에 기재되어 있는 제목과 기여자에 대한 감사의 글 그리고 헌사의 내용과 어조를 수정판에도 모두 유지합니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><link linkend="fdl-document">문서</link>의 모든 <link linkend="fdl-invariant">변경 불가 부분</link>은 제목과 본문을 변경하지 않고 수정판에 그대로 유지시킵니다. 장(chapter) 또는 절(section) 번호나 이에 상당하는 것은 변경 불가 부분의 제목의 일부분으로 간주되지 않습니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para><quote>추천사</quote>(endorsements)라는 제목이 붙은 부분은 <link linkend="fdl-modified">수정판</link>에서 모두 누락시킵니다. 이러한 부분이 수정판에 포함되어서는 안됩니다.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>기존의 어떠한 부분도 수정판에서 <quote>추천사</quote>로 제목을 바꾸지 말고 제목을 개명하는 부분이 <link linkend="fdl-invariant">변경 불가 부분</link>의 어떠한 제목과도 충돌되지 않도록 합니다.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>만일 <link linkend="fdl-modified">수정판</link>이 문서에 포함되어 있지 않던 새로운 서두 부분이나 부록을 <link linkend="fdl-secondary">2차 구성부</link>의 형태로 포함하게 되면, 이러한 부분의 전체나 일부를 선택에 따라 <link linkend="fdl-invariant">변경 불가 부분</link>으로 설정할 수 있습니다. 변경 불가 부분을 새롭게 설정하기 위해서는 수정판의 사용권 허가 표시 부분에 포함되어 있는 변경 불가 부분 목록에 제목을 추가시킵니다. 이때 그 제목들은 다른 부분의 제목들과 구별되어야 합니다.</para>
+    
+    <para><link linkend="fdl-modified">수정판</link>에만 한정된 추천사가 다양한 주체들에 의해서 제공될 경우에는, 예를 들어 동료들의 비평문이나 수정판을 특정한 표준의 권위있는 정의로 인정한다는 관련 기관의 승인이 있을 경우에는 <quote>추천사</quote>라는 제목의 글을 추가할 수 있습니다.</para>
+    
+    <para><link linkend="fdl-modified">수정판</link>의 <link linkend="fdl-cover-texts">표지 구절</link> 목록 말미에는 <link linkend="fdl-cover-texts">앞 표지 구절</link>과 <link linkend="fdl-cover-texts">뒷 표지 구절</link>로 각각 5단어와 25단어 미만의 문장을 덧붙일 수 있습니다. 한 개인 또는 한 단체는 (또는 단체에 의해서 만들어진 협약을 통해서) 오직 한 개의 문장만을 각각 앞 표지 구절과 뒷 표지 구절에 추가할 수 있습니다. 만약 <link linkend="fdl-document">문서</link>의 표지 구절에 이미 특정인이나 특정인이 대표하는 단체의 협약에 의해서 포함된 문장이 존재할 경우에는 동일인에 의해서 표지 구절 문장이 추가될 수 없습니다. 그러나 문서의 발행인으로부터 명시적인 승인을 받은 경우에는 기존의 문장을 수정판에서 새로운 문장으로 대체할 수 있습니다.</para>
+    
+    <para><link linkend="fdl-document">문서</link>의 저작자(들)과 발행인(들)은 본 사용 허가서를 통해서 <link linkend="fdl-modified">수정판</link>을 선전하는데 그들의 이름이 사용되거나, 명시적 또는 묵시적인 형태로 그들의 이름이 수정판을 추천하는데 사용되는 것을 허용한 것은 아닙니다.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>문서의 결합</title>
+    <para>수정판에 대해서 정의된 <link linkend="fdl-section4">제4조</link>의 규정에 따라서 본 사용 허가서에 의해서 특정 <link linkend="fdl-document">문서</link>를 다른 문서들과 결합할 수 있습니다. 단, 문서를 결합할 때는 결합 저작물을 구성하는 개별 문서들의 <link linkend="fdl-invariant">변경 불가 부분</link>들을 결합 문서에 그대로 포함시켜야 하며 그 목록을 결합 저작물의 저작권 표시 부분에 명시해야 합니다.</para>
+    
+    <para>결합 저작물에는 본 사용 허가서의 복제물 1부만 포함시키면 되며 여러 개의 동일한 <link linkend="fdl-invariant">변경 불가 부분</link> 또한 하나로 통합될 수 있습니다. 만약, 동일한 이름을 갖는 변경 불가 부분이 여러 개 존재하지만 그 내용이 다른 경우에는 각각의 내용과 관련된 저작자와 발행자가 알려져 있을 경우에는 해당 정보를 각 부분의 말미에 괄호안에 명시하고 그렇지 않은 경우에는 숫자를 이용해서 구분합니다. 결합 저작물의 저작권 표시 부분에 있는 변경 불가 부분 목록에 포함된 제목도 같은 방식으로 조정합니다.</para>
+    
+    <para>원문서에 존재하던 <quote>개정 이력</quote> 부분은 모두 통합하여, 단일한 <quote>개정 이력</quote> 부분을 결합 저작물 안에 유지해야 합니다. <quote>감사의 글</quote>과 <quote>헌사</quote>도 같은 방식으로 조정합니다. 단, <quote>추천사</quote> 부분은 모두 삭제해야 합니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>문서의 수집</title>
+    <para>본 사용 허가서에 의해서 배포된 <link linkend="fdl-document">문서</link>들을 모아서 구성된 수집 저작물을 만들 수 있습니다. 또한 개별 문서에 포함되어 있던 본 사용 허가서의 복제물들을 한 개로 대체하여 수집 저작물에 포함시킬 수 있습니다. 이 경우, 다른 모든 부분들은 본 사용 허가서에 규정된 제2조 동일 복제 규정을 준수해야 합니다.</para>
+    
+    <para>수집 저작물로부터 하나의 문서를 발췌해서 개별 배포할 경우에는 본 사용 허가서의 복제물을 발췌한 문서에 첨부하고 그 이외의 다른 부분들은 모두 제2조에 규정된 동일 복제 조항을 준수해야 합니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>독자적 저작물과의 집합 저작물 구성</title>
+    <para><link linkend="fdl-document">문서</link> 또는 문서의 2차적 저작물을 독자적인 문서나 저작물과 함께 대량 저장 매체 또는 배포 매체에 구성한 편집물을 만들 경우에는 저작물의 구성에 따른 편집 저작권이 주장되지 않는 한, 저작물 전체를 본 사용 허가서가 규정하는 <link linkend="fdl-modified">수정판</link>으로 간주하지 않습니다. 이러한 편집물을 <quote>집합 저작물</quote>이라고 부르며, 편집 과정에서 문서와 함께 구성된 독자적 저작물이 문서로부터 파생된 것이 아니라면 본 사용 허가서가 적용되지 않습니다. <link linkend="fdl-section3">제3조</link>의 <link linkend="fdl-cover-texts">표지 구절</link>에 대한 요구는 문서의 복제물에 적용됩니다. 따라서 문서의 양이 전체 편집물의 1/4 보다 작은 경우에는, 문서의 표지 구절은 편집물 안에서 문서가 위치해 있는 곳의 표지 부분에 포함되어도 무방합니다. 그렇지 않은 경우에는 표지 구절이 전체 편집물의 표지 부분에 나타나야 합니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>번역</title>
+    <para>번역은 일종의 개작으로 간주됩니다. 따라서 <link linkend="fdl-document">문서</link>의 번역물은 <link linkend="fdl-section4">제4조</link>의 규정에 따라 배포될 수 있습니다. <link linkend="fdl-invariant">변경 불가 부분</link>을 번역물로 대체하기 위해서는 저작권자의 명시적인 승인을 얻어야 합니다. 그러나 변경 불가 부분의 전체 또는 일부에 대한 번역문을 원문과 함께 표시할 경우에는 저작권자로부터 별도의 승인을 얻을 필요가 없습니다. 본 사용 허가서의 번역판을 첨부할 경우에는 영어 원판을 함께 제공해야 합니다. 영어 원판과 번역판 사이에 충돌이 발생할 경우에는 영문 원판이 우선합니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>권리의 소멸</title>
+    <para>본 허가서에 의해서 명시적으로 이루어 지지 않는 한 <link linkend="fdl-document">문서</link>에 대한 복제와 개작, 양도, 배포가 성립될 수 없습니다. 이와 관련된 어떠한 행위도 무효이며 본 허가서가 보장한 권리는 자동으로 소멸됩니다. 그러나 본 허가서의 규정에 따라 문서의 복제물이나 권리를 양도받았던 제3자는 본 허가서의 규정들을 준수하는 한, 배포자의 권리 소멸에 관계없이 사용상의 권리를 계속해서 유지할 수 있습니다.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>본 사용 허가서의 향후 개정</title>
+    <para><ulink type="http" url="http://www.gnu.org/fsf/fsf.html">자유 소프트웨어 재단</ulink>은 때때로 본 사용 허가서의 개정판이나 신판을 공표할 수 있습니다. 새롭게 공표될 판은 당면한 문제나 현안을 처리하기 위해서 세부적인 내용에 차이가 발생할 수 있지만, 그 근본 정신에는 변함이 없을 것입니다 <ulink type="http" url="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</ulink>의 내용을 참고하시기 바랍니다.</para>
+    
+    <para>각각의 판들은 판번호를 사용해서 구별됩니다. 특정한 판번호와 그 이후 판을 따른다는 사항이 명시된 <link linkend="fdl-document">문서</link>에는 해당 판이나 <quote>그 이후에 발행된 어떠한 판을</quote> 선택해서 적용해도 (초안으로 공표한 판 제외) 무방하고, 판번호를 명시하고 있지 않은 경우에는 자유 소프트웨어 재단이 공표한 어떠한 판번호의 판을 적용해도 (초안으로 공표한 판 제외) 무방합니다.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>부록</title>
+    <para>작성한 문서에 본 사용 허가서를 적용하기 위해서는 본 사용 허가서의 복제물을 문서에 첨부하고 다음과 같은 저작권 및 사용 허가 표시를 제목 페이지 다음에 추가합니다.</para>
+    
+    <blockquote>
+      <para>Copyright © 연도 본인 성명.</para>
+      <para>GNU 자유 문서 사용 허가서 1.1판 또는 자유 소프트웨어 재단에서 발행한 이후 판의 규정에 따라 본 문서를 복제하거나 개작 및 배포할 수 있습니다. 본 문서의 <link linkend="fdl-invariant">변경 불가 부분</link>은 <quote>xxx</quote>이고 <link linkend="fdl-cover-texts">앞 표지 구절</link>은 <quote>xxx</quote>, <link linkend="fdl-cover-texts">뒷 표지 구절</link>은 <quote>xxx</quote>입니다. 본 사용 허가서의 전체 내용은 <quote>GNU 자유 문서 사용 허가서</quote> 부분에 포함되어 있습니다.</para>
+    </blockquote>
+      
+    <para>만약, <link linkend="fdl-invariant">변경 불가 부분</link>이 없는 경우라면 변경 불가 부분을 명시하는 대신 <quote>변경 불가 부분 없음</quote>이라고 표시합니다. 앞 표지 구절과 뒷 표지 구절이 없는 경우에도 각각 <quote>앞 표지 구절 없음</quote>과 <quote>뒷 표지 구절 없음</quote>이라는 사실을 명시합니다.</para>
+    
+    <para>만약, 문서가 프로그램 코드의 예를 상당 부분 포함하고 있다면 <ulink type="http" url="http://korea.gnu.org/people/chsong/copyleft/gpl.ko.html">GNU 일반 공중 사용 허가서</ulink>와 같은 자유 소프트웨어 사용 허가서를 사용해서 프로그램 코드가 자유소프트웨어에서 사용될 수 있도록 사용 허가를 병행할 것을 추천합니다.</para>
+  </sect1>
+</article>

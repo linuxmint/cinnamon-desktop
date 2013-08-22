@@ -1,0 +1,214 @@
+# Kashubian translation for gnome-desktop
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the gnome-desktop package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-16 19:06+0200\n"
+"PO-Revision-Date: 2011-11-02 09:16+0000\n"
+"Last-Translator: Yurek Hinz <yurekh@yahoo.com>\n"
+"Language-Team: Kashubian <csb@li.org>\n"
+"Language: csb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:67
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Nieznóné"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Ni mòże nalézc terminalu, bãdze brékòwóny xterm, ten równak mòże "
+"fùnkcjonowac ze zmiłkama."
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:451
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ni mòże dobëc dostónków ekranu (CRTC, wińdzeniów, tribów)"
+
+#: ../libgnome-desktop/gnome-rr.c:471
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "nieòbsłëgiwónô fela X przë ùzwëskaniu òbjimù miarë ekranu"
+
+#: ../libgnome-desktop/gnome-rr.c:477
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ni mòże dobëc òbjimù miarë ekranu"
+
+#: ../libgnome-desktop/gnome-rr.c:768
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "rozszérzenié RANDR nie je przistãpné"
+
+#: ../libgnome-desktop/gnome-rr.c:1569
+#, c-format
+msgid "could not get information about output %d"
+msgstr "ni mòże dobëc wëdowiédzë ò wińdzenim %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2129
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"żądóné pòłożenié/miara dlô CRTC %d nachôdô sã bùten zezwòlonegò limitu: "
+"pòłożenié=(%d, %d), miara=(%d, %d), maksymalno=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2165
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "ni mòże nastôwic kònfigùracji dlô CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2310
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "ni mòże dobëc wëdowiédzë ò CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:553
+msgid "Laptop"
+msgstr "Laptop"
+
+#: ../libgnome-desktop/gnome-rr-config.c:708
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"Żôdnô z zapisónëch ùstôwów wëskrzënianiô nie pasëje do aktiwny kònfigùracji"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1477
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ni mòże òbsłëżëc wińdzeniô %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1484
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "wińdzenié %s nie òbsługùje tribù  %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1495
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d nie òbsługùje rotatcjô =%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1509
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"wińdzenié %s ni mô taczich sómëch parametrów co jiné sklónowóné wińdzenié:\n"
+"òbstójny trib = %d, new mode = %d\n"
+"òbstójné wespółrzãdné = (%d, %d), nowé wespółrzãdné = (%d, %d) \n"
+"òbstójnô rotacjô = %s, nowô rotacjô = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1524
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "ni mòże sklonwac ë sélac do weńdzeniô %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1693
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Próbùje tribë dlô CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1717
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: próbùje trib %dx%d@%dHz z wińdzenim %dx%d@%dHz (przepùst %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1764
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ni mógł przëpisac CRTC to wińdzeniów:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1768
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"żóden z wëbrónëch tribów nie robi z przistãpnyma tribama:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1850
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"wirtualnô miara, jaczi je nót, nie pasëje do przëstãpny miarë: nót=(%d, %d), "
+"minimalno=(%d, %d), maksymalno=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:312
+msgid "Mirror Screens"
+msgstr "Zwielokrotnianié ekranu"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:195
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:196
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:200
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:201
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:206
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %e %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:207
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %e %b, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:211
+msgid "%a %l:%M:%S %p"
+msgstr "%a, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:212
+msgid "%a %l:%M %p"
+msgstr "%a, %l:%M %p"

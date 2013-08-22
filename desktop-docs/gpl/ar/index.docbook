@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="ar">
+  <articleinfo>
+    <title>رخصة جنو العمومية</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>مشروع توثيق جنوم</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>يسمح لأي شخص بنسخ وتوزيع نسخ حرفية من مستند الرخصة هذا، لكن لا يسمح بتعديله.</para>
+    </legalnotice>
+
+    <releaseinfo>إصدار 2، يناير 1991</releaseinfo>
+
+    <abstract role="description"><para>صممت رخص استعمال أغلب البرمجيات لتسلبك حرية التشارك فيها أو تعديلها. وعلى عكس هذا، ترمي رخصة جنو العمومية إلى ضمان حرية تشارك البرمجيات الحرة وتعديلها، والتأكد من أن البرمجيات فعلاً موفرة لكل مستعمليها.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>تمهيد</title>
+    
+    <para>صممت رخص استعمال أغلب البرمجيات لتسلبك حرية التشارك فيها أو تعديلها. وعلى عكس هذا، ترمي رخصة جنو العمومية إلى ضمان حرية تشارك البرمجيات الحرة وتعديلها، والتأكد من أن البرمجيات فعلاً موفرة لكل مستعمليها. تنطبق هذه الرخصة على أغلب برمجيات مؤسسة البرامج الحرة FSF، و على أي برنامج يعلن صاحبه ذلك (توجد برمجيات أخرى للمؤسسة خاضعة لرخصة LGPL أي رخصة غنو العمومية للمكتبات ) يمكنك طبعاً جعل برامجك خاضعة لهذه الرخصة إذا رغبت في ذلك.</para>
+
+    <para>البرمجيات الحرة لا تعني بالضرورة المجانية. صممت رخصتنا لكي تضمن لك حرية توزيع نسخات من هذه البرمجيات (أكان ذلك مجاناً أو مقابل رسم نقدي) وحصولك على الكود المصدري source code أو توصيله لك إذا رغبت في ذلك، وحرية تعديل البرمجية أو استعمال أجزاء منها في برمجيات حرة جديدة، وحقك أن تعرف أنه يسمح لك فعل كل ذلك.</para>
+
+    <para>لحماية حقك قمنا بوضع قيود على الحرية لمنع أي شخص من حجب هذه الحقوق عنك أو طلب التنازل عنها. هذه القيود عبارة عن بعض الالتزامات المطلوبة منك عند توزيع أو تعديل نسخ من برنامج حر تسري عليه بنود هذه الرخصة.</para>
+
+    <para>مثلاً إذا وزعت نُسخاً من برنامج (مجاناً أو مقابل ثمن)، إعطاء المتلقين كل الحقوق التي حصلت عليها، و تتأكد من أنهم أيضاً حصلوا على الكود المصدري أو أنه في متناولهم، وإظهار هذه الشروط لهم ليعرفوا حقوقهم وواجباتهم.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>من أجل حماية كل مبرمج(مؤلف) وإيانا نريد أن نتأكد من أن الجميع يدرك أن لا ضمانات على هذه البرمجيات. إذ يمكن لأي شخص أن يعدل البرنامج قبل أن يوزعه، نريد من المتلقي أن يدرك أن ما وصله ليس (بالضرورة) المنتج الأصلي، لهذا فإن أي مشاكل بسبب الأخرين يجب أن لا تنال من سمعة صاحب العمل الأصلي.</para>
+
+    <para>و اخيراً، أي برنامج حر مهدد باستمرار بسبب براءات الاختراع الحصرية. نأمل أن نتجنب خطر الموزعون الذين يسجلون براءة اختراع على برنامج حر باسمهم، هذا يجعل البرنامج ملكية فكرية لهم. لمنع هذه الحالة، نذكر بوضوح بأن أي براءة اختراع يجب أن ترخص للجميع حرية الاستعمال أو لا تسجل البتة.</para>
+
+    <para>ضوابط وشروط النسخ والتوزيع و التعديل المحددة تأتي تالياً.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title><strong>بنود وشروط النسخ والتوزيع و التعديل</strong></title>
+
+    <sect2 id="sect0" label="0">
+      <title>بند 0</title>
+      <para>صفر.  تسري هذه الرخصة على أي برنامج معلومياتي أو أي عمل يتضمن تنويهاً وضعه صاحب حقوق النسخ copyright يشير إلى أن توزيع البرنامج خاضع لضوابط رخصة غنو العمومية. كلمة <quote>برنامج</quote> أدناه تعني أي برنامج أو أي عمل، و عبارة <quote>عمل مبني على البرنامج</quote> تعني كلاً من البرنامج أو أي عمل مشتق منه في ظل حقوق النسخ، سواء تضمن البرنامج ككل ، أو أجزاء منه ، حرفياً (مطابق للأصل) أو بعد تعديلات و/أو بترجمة إلى لغة أخرى (من الآن فصاعداً تعتبر الترجمة نوعاً من التعديل ما لم يحدد عكس ذلك). وكل مرخص له يشار إليه بضمائر الخطاب مثل <quote>أنت</quote>.</para>
+
+      <para>هذه الرخصة لا تغطي سوى النسخ والتوزيع والتعديل، أي نشاط آخر فهو غير مشمول بها وخارج عن مجالها، استعمال البرنامج لا يخضع لأي قيد، و مخرجاته لا تخضع للرخصة إلا إذا شكلت عملاً مشتقاً من البرنامج (بغض النظر عن كونها نتيجةً لاستعمال البرنامج) ، و هذه النقط مرتبطة بطبيعة عمل البرنامج.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>بند 1</title>
+      <para>يمكنك نسخ وتوزيع نُسخاً حرفية مطابقة للكود المصدري للبرنامج كما تلقيته بأية وسيلة أو وسيطة نقل، بشرط إرفاق كل نسخة بتنويه حقوق النسخ وتصريحات لتبرئة المسؤولية، وأن لا تمس بنود هذه الرخصة وتؤكد غياب الضمانة، وتقديم مع كل نسخة من البرنامج نسخة من الرخصة.</para>
+      
+      <para> يمكنك تلقي رسم نقدي بدل النسخ المادي، كما وأنك حر في عرض ضمانة إضافية مقدمة من طرفك مقابل رسوم أخرى.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>بند 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>تسري هذه الشروط على العمل المعدل بمجمله. وإذا كانت أجزاء منه ممكنة التمييز وغير مشتقة من العمل الأصلي، و يمكن بصفة منطقية اعتبارها عملاً مستقلاً ومنفصلاً في حد ذاته، فإن بنود هذه الرخصة لا تسري على تلك الأجزاء إذا وزعتها كعمل منفصل. لكن إذا وزعتها  كجزء من عمل إجمالي متكامل تسري عليه هذه الرخصة، فإن مفعول الرخصة يطال كل المنتوج بغض النظر من كتبه.</para>
+
+      <para> ليس الهدف من هذا البند سلبك حقوقك في عمل أنجزته بمجمله أو منازعتك إياها، و إنما الهدف ممارسة حق مراقبة التوزيع الحر لكل عمل مشتق أو تجميعي مبني على البرنامج.</para>
+
+      <para>أضف إلى ذلك، أن كل جمع لعمل ما، غير مبني على البرنامج، مع البرنامج (أو عمل مشتق منه) على وسيط تخزين أو التوزيع، لا يجعل هذا العمل في مجال الرخصة.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>بند 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>نقصد بالكود المصدري لعمل ما، الهيئة الأنسب للتطوير والتعديل على ذلك العمل. بالنسبة لعمل تنفيذي فإن مصدره الكامل يعني كل مكونات البرنامج التنقيذي، كما يشمل هذا الوصف كلاً من ملفات محددات الواجهة والنصوص التنفيذية scripts التي تتحكم في في عملية التصنيف. compilation والتركيب installation. إلا أن هناك استثناء خاص فليس بالضرورة أن يشمل الكود المصدري أي شيء يوزع عادةً(على صورة مصدر أو تنفيذي) مع المكونات الأساسية للنظام (المُصنفات، المُجمِعات، النواة ...الخ) إلا في حالة نشر هذه الأجزاء تزامناً مع البرنامج التنفيذي.</para>
+      
+      <para>إذا كان توزيع الملفات التنفيذية أو الكود الهدف يتم بتوفير وصول لمكان نسخ البرنامج، فإن توفير وصول مماثل في نفس المكان للكود المصدر يعتبر توزيعاً للكود المصدري ولو اختار المستعمل عدم الاستفادة من العرض.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>بند 4</title>
+      
+      <para>لا يمكن نسخ أو تعديل أو توزيع أو إعادة ترخيص أو إيداع البرنامج  إلا بالطرق المحددة صراحةً في هذه الرخصة. أي محاولة لنسخ أو تعديل أو إعادة ترخيصه أو توزيع البرنامج خلافاً لأحكام هذه الرخصة ينهي حقوقك في استعماله وفق بنودها، و يبقى لمن تلقوا منك نسخاً من البرنامج أو تراخيص استعمال هذه النسخ، الصلاحية في استمرار التمتع بهذا المكتسب ما احترموا كامل مواد هذه الرخصة.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>بند 5</title>
+
+      <para>لست ملزماً بهذه الرخصة لأنك لم توقع عليها، و في نفس الوقت، لا شئ آخر يسمح لك بتعديل أو توزيع البرنامج أو أي عمل مشتق منه، فهذا ممنوع بموجب القانون ما دمت غير متفق مع بنود الرخصة. لهذا بتعديلك أو توزيعك للبرنامج (أو أي عمل مبني عليه)، فأنت متفق ضمنياً مع جميع بنود و شروط هذه الرخصة.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>بند 6</title>
+
+      <para>إعادة توزيع البرنامج (أو أي عمل مشتق منه) يتضمن تلقائياً حصول المتلقين على الرخصة تمنحهم حق النسخ والتوزيع والتعديل، حسب بنود و شروط هذه الرخصة. وليس لك أن تفرض قيوداً إضافية على الحقوق المكتسبة من طرف المتلقي، كما وأنك لست مسؤولاً عن عدم احترام طرف ثالث لهذه الرخصة.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>بند 7</title>
+
+      <para>إذا فرضت عليك شروطاً (بحكم قضائي أو بإتفاقية أو غير ذلك) نتيجة حكم محكمة أو إدعاء ضدك بانتهاك براءة اختراع وغير ذلك من الأسباب (غير محصورة بقضايا براءات الاختراع)، وبدت تلك الشروط غير منسجمة مع بنود هذه الرخصة، فإن ذلك لا يعتبر مبرراً لإعفائك مما توجبه هذه الرخصة. إذا لم تستطع الجمع بين الوفاء لبنود هذه الرخصة وواجبات أخرى ذات صلة، فلا توزع برنامجك البتة. و كمثال، إذا وجدت رخصة براءة اختراع لا تجيز توزيع البرنامج مجاناً من طرف كل من تلقى البرنامج بواسطتك (مباشرة أو لا)، فيكون الحل الوحيد للتوفيق بين تلك الرخصة وهذه الرخصة هو الامتناع التام عن توزيع البرنامج.</para>
+
+      <para>إذا كان اي مقطع من هذا الجزء من الرخصة لاغياً أو غير نافذ المفعول في ظرف ما، فإن ذلك لا يلغي مفعول باقي الجزء، و يسري اثر الجزء بأكمله في أي ظروف أخرى.</para>
+
+      <para>ليس القصد من هذا البند تحريضك على انتهاك براءة اختراع ما أو حق ملكية، أو دفعك إلى تجريد أصحاب هذه الحقوق منها، ولكن فقط لحماية سلامة  نظام توزيع البرنامج الحر، أشخاص كثر جادوا بمساهمات طبقت نظام التوزيع هذا عملياً معتمدين على الملائمة العملية له، و يبقى للمؤلف أو المساهم اختيار طرق توزيع أخرى و ليس للمرخص له فرض هذا الاختيار.</para>
+
+      <para>القصد من هذا البند هو التوضيح التام لما يفترض أن تستلزمه باقي البنود.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>بند 8</title>
+
+      <para>إذا كان توزيع و/أو استعمال البرنامج مقيداً ببراءة اختراع أو حقوق نسخ في دولة ما، فعلى المالك الأصلي لحق النسخ الذي أخضع البرنامج لهذه الرخصة، إضافة تحديد جغرافي لمناطق التوزيع يستثني هذه الدول، وفي هذه الحالة، تصبح هذه الإضاقة جزءاً لا يتجزأ من متن الرخصة.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>بند 9</title>
+      
+      <para>يمكن لمؤسسة البرمجيات الحرة نشر تنقيحات أو إصدارات جديدة من هذه الرخصة من حين لاخر. تحتفظ الإصدارات الجديدة بروح الإصدار الحالي و يمكن أن تتضمن تغييرات في بعض التفاصيل من أجل الإحاطة بالمستجدات.</para>
+
+      <para>لكل إصدار رقم فريد. فإذا حدد البرنامج رقم إصدار معين و أضاف <quote>أو أي إصدار أحدث</quote> فيمكنك اختيار التقيّد بضوابط و شروط الإصدار المعين أو أي إصدار أحدث تنشره جمعية البرمجيات الحرة. في حال لم يحدد رقم الإصدار، يمكنك اختيار أي اصدار منشور من طرف مؤسسة البرمجيات الحرة.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>بند 10</title>
+
+      <para>إذا أردت دمج عناصر من البرنامج في برامج حرة أخرى تختلف عنه في شروط التوزيع، اكتب إلى مؤلفه لاستئذانه. بالنسبة للبرامج المسجلة مباشرة باسم مؤسسة البرمجيات الحرة، اكتب لنا (أحياناً منح الاستثناء وارد). قرارنا يحكمه هدفان، أولهما الحفاظ على الطابع الحر للبرنامج أو لمشتقاته، و ثانيهما تشجيع التشارك و إعادة استعمال البرامج عموماً.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title><strong>لا ضمانات</strong></title>
+      <subtitle>بند 11</subtitle>
+
+      <para><strong>لأن استعمال هذا البرنامج حر فهو دون أية ضمانة  على البرنامج إلى الحد الذي تسمح به القوانين المعمول بها. يقدم البرنامج كما هو ، دون أي نوع من الضمانات لا صراحةً ولا ضمنياً، بما في ذلك ضمانات التسويق أو ملائمة هدف معين، إلا إذا ورد عكس ذلك خطياً من قبل صاحب حقوق النسخ أو غيره بأن يقدم هكذا ضمان. تتحمل أنت كافة عواقب المجازفة المتعلقة بجودة وأداء البرنامج. إذا كان بالبرنامج خلل، فعليك تحمل مصاريف جميع الخدمات و التصحيحات و الإصلاحات اللازمة.</strong></para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>بند 12</title>
+
+      <para><strong> لا يعتبر مالك الحق أو أي من له حق التعديل و/أو التوزيع كما هو مسموح به أعلاه مسؤولاً عن أي ضرر بما في ذلك الأضرار العامة أو المحددة أو العرضية أو الناتجة عن استعمال البرنامج أو عدم التمكن من استعماله، و هذا حتى في حالة إعلام مالك الحق أو أي طرف آخر بإمكانية وقوع التلف (فعلى سبيل المثال لا للحصر : ضياع المعلومات أو تأثر دقتها ، أو ضياع حصل نتيجة استعمال البرنامج من طرفك أو من طرف آخر أو نتيجة إخفاق البرنامج في العمل إلى جانب برنامج آخر) إلا إذا أجبره القانون المعمول به أو وافق بنفسه خطياً على ذلك.</strong></para>
+    </sect2>
+  </sect1>
+</article>

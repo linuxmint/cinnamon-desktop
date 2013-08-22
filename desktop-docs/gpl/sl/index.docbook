@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="sl">
+  <articleinfo>
+    <title>Splošno javno dovoljenje GNU</title>    
+    <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>Projekt dokumentacije GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>2</revnumber> <date>1991-06</date></revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para><address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.</para>
+
+      <para>Vsakdo sme razmnoževati in razširjati dobesedne kopije tega dokumenta, ni pa ga dovoljeno spreminjati.</para>
+    </legalnotice>
+
+    <releaseinfo>Različica 2, junij 1991</releaseinfo>
+
+    <abstract role="description"><para>Dovoljenja večine programske opreme so zasnovane tako, da preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa Splošno Javno Dovoljenje GNU (angl. GNU General Public License, GPL) jamči svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovilo, da ostane ta prosta za vse njene uporabnike.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Predgovor</title>
+    
+    <para>Dovoljenja večine programske opreme so zasnovane tako, da preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa Splošno Javno Dovoljenje GNU (angl. GNU General Public License, GPL) jamči svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovilo, da ostane ta prosta za vse njene uporabnike. Dovoljenje GPL se nanaša na večino programske opreme ustanove Free Software Foundation in na vse druge programe, katerih avtorji so se zavezali k njeni uporabi. (Nekatera druga programska oprema ustanove Free Software Foundation je namesto tega pokrita s Splošnim dovoljenjem GNU za knjižnice, angl. GNU Library General Public License.) Uporabite jo lahko tudi za vaše programe.</para>
+
+    <para>Ko govorimo o prosti programski opremi, imamo s tem v mislih svobodo, ne cene. Splošna Javna dovoljenja GNU zagotavlja pravico razširjanja kopij proste programske opreme (in po želji zaračunavati za to storitev); pravico do dostopa do izvorne kode; pravico spreminjanja programske opreme ali uporabljanje njenih delov v novi prosti programski opremi; in seznanjanje z vsemi temi pravicami.</para>
+
+    <para>Zaradi zavarovanja vaših pravic je uvedena omejitev, ki prepoveduje vsakomur, da bi vam te pravice kratil ali od vas zahteval predajo teh pravic. Te omejitve se prevedejo v vašo odgovornost, če razširjate kopije programske opreme ali jo spreminjate.</para>
+
+    <para>Na primer, če razširjate kopije takega programa, bodisi zastonj ali za plačilo, morate dati prejemnikom vse pravice, ki jih imate vi. Prepričati se morate, da bodo tudi oni prejeli ali imeli dostop do izvorne kode. In morate jim pokazati te pogoje (opp. izvirnik), da bodo poznali svoje pravice.</para>
+
+    <para>Pravice uporabnika so varovanev dveh korakih: <orderedlist numeration="arabic">
+	<listitem>
+	  <para>s pravno zaščito programske opreme in</para>
+	</listitem>
+	<listitem>
+	  <para>ponujenim dovoljenjem, ki vam daje pravno dovoljenje za razmnoževanje, razširjanje in/ali spreminjanje programske opreme.</para>
+	</listitem>
+      </orderedlist></para>
+
+    <para>Prav tako, za zaščito vsakega avtorja in zaradi naše zaščite želimo zagotoviti, da vsakdo razume, da za to prosto programsko opremo ni nobenega jamstva. Če je programsko opremo spremenil nekdo drug in ga posredoval naprej, želimo, da njegovi prejemniki vedo, da to, kar imajo, ni izvirnik, zato da se problemi, ki jih povzročijo drugi, ne bodo odražali na ugledu izvornega avtorja.</para>
+
+    <para>Končno, vsaki prosti programski opremi nenehno grozijo programski patenti. Želimo se izogniti nevarnosti, da bi razširjevalci proste programske opreme posamično dobivali patentna dovoljenja in s tem naredili program lastniški (angl. proprietary). Za preprečitev tega jasno zahtevamo, da mora biti dovoljenje vsakega patenta tako, da ga lahko vsakdo prosto uporablja, ali pa sploh ne sme biti omejen s kakršnimkoli dovoljenjem.</para>
+
+    <para>Sledijo natančne določitve in pogoji za razmnoževanje, razširjanje in spreminjanje.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>Določila in pogoji za razmnoževanje, razširjanje in spreminjanje</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Razdelek 0</title>
+      <para>Dovoljenje se nanaša na vsak program ali drugo delo, ki vsebuje obvestilo lastnika avtorskih pravic (angl. copyright holder) z izjavo, da se program ali drugo delo lahko razširja pod pogoji Splošnega Javnega Dovoljenja GNU (angl. General Public License). <quote>Program</quote> se v nadaljevanju nanaša na vsak tak program ali delo, in <quote>delo, ki temelji na tem programu</quote> pomeni bodisi program ali pa katerokoli izvedeno delo po zakonu o avtorskih pravicah (angl. copyright law): se pravi delo, ki vsebuje program ali njegov del, bodisi dobesedno ali s spremembami in/ali prevedeno v drug jezik. (Tukaj in povsod v nadaljevanju je prevod vključen brez omejitev v pojem <quote>spremembe</quote>.) Vsak zavezanec k dovoljenju je opredeljen kot <quote>vi</quote>.</para>
+
+      <para>Dovoljenje ne pokriva nobenih drugih dejavnosti razen razmnoževanja, razširjanja in sprememb; ostale so izven njenega dosega. Dejanje zagona programa ni omejeno in odvodni zapis programa je zajet le, če njegova vsebina sestavlja delo, iz katerega je izpeljan program (ne glede na to, da je bil narejen z zagnanim programom). Ali je to res ali ne, je odvisno od tega, kaj program dela.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Razdelek 1</title>
+      <para>Dovoljeno je razmnoževati in razširjati dobesedne izvode izvorne kode programa v enaki obliki, kot jo dobite, preko kateregakoli nosilca, če je le na vsakem izvodu razločno in primerno objavljeno obvestilo o pravicah razširjanja in zanikanje jamstva; vsa obvestila, ki se nanašajo na to dovoljenje in odsotnost vsakršnega jamstva pustite nedotaknjena; in da prejmejo vsi drugi prejemniki programa poleg programa še izvod tega dovoljenja.</para>
+      
+      <para>Za fizično dejanje prenosa kopije lahko zaračunavate in po vaši presoji lahko ponudite garancijsko zaščito v zameno za plačilo.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Razdelek 2</title>
+      <para>Dovoljeno je spreminjati vaš izvod ali izvode programa ali katerikoli njegov del, in tako narediti delo, ki temelji na programu, ter razmnoževati in razširjati takšne spremembe ali dela pod pogoji zgornjega <link linkend="sect1">Razdelka 1</link>, če je zadoščeno tudi vsem naslednjim pogojem: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Zagotoviti je treba, da spremenjene datoteke nosijo vidna obvestila o tem, da so spremenjena in datum vsake spremembe.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Zagotoviti je treba, da je vsako delo, ki ga razširjate ali izdajate in ki v celoti ali deloma vsebuje program ali katerikoli njegov del ali pa je iz njega izpeljano, objavljeno pod pogoji tega dovoljenja kot celota brez plačila katerikoli tretji osebi.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Če spremenjeni program ob zagonu navadno bere ukaze interaktivno, je treba zagotoviti, da se ob najbolj običajnem zagonu za takšno interaktivno uporabo izpiše ali pokaže najava, ki vključuje ustrezno sporočilo o pravicah razširjanja in sporočilo, da jamstvo ni zagotovljeno (ali pa sporočilo, da ponujate jamstvo) in da lahko uporabniki razširjajo program pod temi pogoji, in pove uporabniku, kako pogledati izvod tega dovoljenja. <note>
+		<title>Izjema:</title>
+		<para>Če je sam program interaktiven, vendar navadno ne izpiše takšne najave, tudi za vaše delo, ki temelji na programu, ni nujno, da jo.</para>
+	      </note></para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Te zahteve se nanašajo na spremenjeno delo kot celoto. Če razdelki tega dela, ki jih je lahko prepoznati, niso izpeljani iz programa in se jih lahko ima za neodvisna in ločena dela sama po sebi, potem to dovoljenje in njeni pogoji zanje ne veljajo, kadar jih razširjate ločeno. Vendar, kadar te iste razdelke razširjate kot del celote, ki je delo, ki temelji na programu, mora biti razširjanje celote izvedeno pod pogoji tega dovoljenja, katerega dovoljenja za druga dovoljenja se razširjajo na vso celoto in torej na vsak njen del, ne glede na to, kdo ga je napisal.</para>
+
+      <para>Torej, namen tega razdelka ni, da bi zanikal ali spodbijal vaše pravice do dela, ki ste ga v celoti napisali sami; namesto tega je namen razširiti pravico do nadzora razširjanja na izpeljana ali zbrana dela, ki temeljijo na programu.</para>
+
+      <para>Poleg tega, če gre za zgolj kopičenje drugega dela, ki ne temelji na programu, s programom (ali z delom, ki temelji na programu) na mediju za shranjevanje ali distribucijskem mediju, se dovoljenje na to drugo delo ne nanaša.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Razdelek 3</title>
+
+      <para>Program (ali delo, ki temelji na njem, pod določil <link linkend="sect2">razdelka 2</link>) je dovoljeno razmnoževati in razširjati v objektni kodi ali izvedljivi obliki pod pogoji zgornjih <link linkend="sect1">razdelkov 1</link> in <link linkend="sect2">2</link>, če izpolnite tudi kaj od tega: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>opremite ga s popolno in ustrezno izvorno kodo v strojno berljivi obliki, ki mora biti razširjana pod pogoji zgornjih razdelkov 1 in 2 na nosilcu, ki se navadno uporablja za izmenjavo programske opreme; ali,</para>
+	  </listitem>
+	  <listitem>
+	    <para>opremite ga z napisano ponudbo, veljavno vsaj tri leta, da boste katerikoli tretji osebi, za plačilo, ki ne bo presegalo vaših stroškov fizičnega izvajanja izvorne distribucije, dali popoln izvod ustrezne izvorne kode v strojno berljivi obliki, ki bo razširjana pod pogoji zgornjih razdelkov 1 in 2 na nosilcu, ki se običajno uporablja za izmenjavo programske opreme; ali,</para>
+	  </listitem>
+	  <listitem>
+	    <para>opremite ga s podatki, ki ste jih dobili vi, kot ponudbo distribucije ustrezne izvorne kode. (Ta alternativa je dovoljena le za nekomercialne distribucije in le, če ste dobili program v obliki izvorne kode ali izvedljivi obliki s takšno ponudbo, glede na podrazdelek b, zgoraj.)</para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Izvorna koda pri delih pomeni obliko dela, najprimernejšo za izdelavo sprememb. Pri izvedljivem delu pomeni izvorna koda vso izvorno kodo za vse module, ki jih vsebuje, poleg tega pa še morebitne datoteke z definicijami vmesnika, povezane s tem delom in skripte, uporabljane za nadzor prevajanja in namestitev izvedljive datoteke. Vendar - kot posebna izjema - ni nujno, da razširjana izvorna koda vključuje vse, kar se navadno razširja (v izvorni ali strojni obliki) z večjimi komponentami (prevajalnik, jedro, in tako naprej) operacijskega sistema, na katerem teče izvedljiva datoteka, razen če ta komponenta spremlja izvedljivo datoteko.</para>
+      
+      <para>Če se razširjanje izvedljive datoteke ali objektne kode izvede s ponujenim dostopom za prepisovanje z za to namenjenega mesta, potem ponujanje ekvivalentnega dostopa za razmnoževanje izvorne kode z istega mesta šteje kot razširjanje izvorne kode, čeprav tretje osebe niso prisiljene razmnoževati izvorne kode poleg objektne kode.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Razdelek 4</title>
+      
+      <para>Ni dovoljeno razmnoževati, spreminjati, podrejati dovoljenja ali razširjati programa drugače, kot to izrecno določa pričujoče dovoljenje. Vsak drugi poskus razmnoževanja, spreminjanja, podrejanja dovoljenja ali razširjanja Dokumenta je ničen, in samodejno prekine vaše pravice, izhajajoče iz tega dovoljenja. Vendar pa se osebam, ki so svoj izvod ali pravice dobile od vas pod tem dovoljenjem, dovoljenje ne prekine, dokler se ji popolnoma podrejajo.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Razdelek 5</title>
+
+      <para>Ni vam treba sprejeti pogojev dovoljenja, saj ga niste podpisali. Vendar vam razen nje nič ne dovoljuje spreminjanja ali razširjanja programa ali iz njega izpeljanih del. Če ne sprejmete tega dovoljenja, ta dejanja prepoveduje zakon. Torej, s spremembo ali razširjanjem programa (ali kateregakoli dela, ki temelji na programu), pokažete svoje strinjanje s tem dovoljenjem in z vsemi njegovimi določili in pogoji za razmnoževanje, razširjanje ali spreminjanje programa ali del, ki temeljijo na njem.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Razdelek 6</title>
+
+      <para>Vsakič, ko razširjate program (ali katerokoli delo, ki temelji na programu), prejemnik samodejno prejme dovoljenje izvornega izdajatelja dovoljenja (angl. original licensor) za razmnoževanje, razširjanje ali spreminjanje programa glede na ta določila in pogoje. Ni dovoljeno vsiljevati nobenih nadaljnjih omejitev izvajanja prejemnikovih pravic, podeljenih tukaj. Niste odgovorni za vsiljevanje strinjanja tretjih oseb s tem dovoljenjem.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Razdelek 7</title>
+
+      <para>Če so vam, kot posledica presoje sodišča ali suma kršitve patenta ali zaradi kateregakoli drugega razloga (ne omejenega zgolj na patentna vprašanja), vsiljeni pogoji (bodisi z odlokom sodišča, sporazumom ali drugače), ki nasprotujejo pogojem tega dovoljenja, vas ne odvezujejo pogojev tega dovoljenja. Če programa ne morete razširjati tako, da hkrati zadostite svojim obvezam pod dovoljenjem in katerimkoli drugim pristojnim obvezam, potem posledično sploh ne smete razširjati programa. Na primer, če patentno dovoljenje ne dovoli razširjanja programa brez plačevanja avtorskega honorarja vseh, ki prejmejo kopije neposredno ali posredno od vas, potem je edina možna pot, da zadostite temu pogoju in temu dovoljenju ta, da se v celoti vzdržite razširjanja programa.</para>
+
+      <para>Če se za katerikoli del tega razdelka ugotovi, da je neveljaven ali da se ga ne da izvajati pod kateremkoli določenim pogojem, je mišljeno, da velja usmeritev tega razdelka (angl. balance of the section) in razdelek kot celota velja v drugih primerih.</para>
+
+      <para>Namen tega razdelka ni, da bi vas napeljeval h kršitvi patentov ali drugih trditev lastništva pravic ali izpodbijal veljavnost katerihkoli takšnih trditev; edini namen tega razdelka je ščitenje integritete sistema distribucije proste programske opreme, ki je izveden s prakso javnih dovoljenj. Mnogi ljudje so radodarno prispevali k širokemu naboru programske opreme, razširjane preko tega sistema, v upanju na njegovo dosledno izvajanje; od avtorja/dajalca je odvisno, če je pripravljen razširjati programje skozi katerikoli drug sistem, in izdajatelj dovoljenja ne more vsiljevati te izbire.</para>
+
+      <para>Ta razdelek namerava temeljito pojasniti, kaj so predvidene posledice nadaljevanja dovoljenja.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Razdelek 8</title>
+
+      <para>Če sta razširjanje in/ali uporaba programa omejena v določenih državah, bodisi zaradi patentov ali vmesnikov s posebno pravico razširjanja (angl. copyrighted interfaces), lahko izvorni lastnik ali lastnica pravic razširjanja, ki postavlja program pod to dovoljenje, doda izrecno zemljepisno omejitev razširjanja, ki izključuje te države, tako da je razširjanje dovoljeno le v in med državami, ki niso na tak način izključene. V takem primeru to dovoljenje vključuje omejitve, kot da so napisane v telesu tega dovoljenja.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Razdelek 9</title>
+      
+      <para>Ustanova Free Software Foundation lahko od časa do časa izdaja preurejene in/ali nove različice Splošnega Javnega dovoljenja (angl. General Public License). Nove različice bodo pisane v duhu trenutne različice, vendar se lahko razlikujejo v podrobnostih, ki bodo obravnavale nove težave ali poglede.</para>
+
+      <para>Vsaki različici je prirejena razločevalna številka različice. Če program določa številko različice tega dovoljenja, ki se nanaša nanj in <quote>na katerekoli poznejše različice</quote>, imate izbiro upoštevanja pogojev in določil bodisi te različice ali katerekoli poznejše različice, ki jo je izdala ustanova Free Software Foundation. Če program ne določa številke različice tega dovoljenja, lahko izberete katerokoli različico, ki jo je kdajkoli izdala ustanova Free Software Foundation.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Razdelek 10</title>
+
+      <para>Če želite vključiti dele programa v druge proste programe, katerih pogoji razširjanja so drugačni, pišite avtorju in ga prosite za dovoljenje. Za programje, katerega pravice razširjanja ima Free Software Foundation, pišite na Free Software Foundation; včasih naredimo izjemo pri tem. Našo odločitev bosta vodila dva cilja: ohranitev prostega statusa vseh izvedenih del iz naše proste programske opreme in spodbujanje razdeljevanja in ponovne uporabe programja na splošno.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>BREZ JAMSTVA</title>
+      <subtitle>Razdelek 11</subtitle>
+
+      <para>KER JE PROGRAM Z DOVOLJENJEM OPREDELJEN KOT BREZPLAČEN, NI NOBENEGA JAMSTVA ZA PROGRAM DO MEJE, KI JO DOLOČA PRISTOJNI ZAKON. RAZEN, ČE NI DRUGAČE NAPISANO, IMETNIKI PRAVIC RAZŠIRJANJA IN/ALI DRUGE OSEBE PONUJAJO PROGRAM <quote>TAK, KOT JE</quote>, BREZ ZAGOTOVILA KAKRŠNEKOLI VRSTE, NEPOSREDNEGA ALI POSREDNEGA, KAR VKLJUČUJE, A NI OMEJENO NA POSREDNA JAMSTVA CENOVNE VREDNOSTI IN PRIMERNOSTI ZA DOLOČENO UPORABO. CELOTNO TVEGANJE GLEDE KAKOVOSTI IN DELOVANJA PROGRAMA PREVZAMETE SAMI. ČE SE PROGRAM IZKAŽE ZA OKVARJENEGA, SAMI NOSITE STROŠKE VSEH POTREBNIH STORITEV, POPRAVIL ALI POPRAVKOV.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Razdelek 12</title>
+
+      <para>V NOBENEM PRIMERU, RAZEN ČE TAKO PRAVI VELJAVNI ZAKON ALI JE PISNO DOGOVORJENO, NE BO LASTNIK PRAVIC RAZŠIRJANJA ALI KATERAKOLI DRUGA OSEBA, KI LAHKO SPREMENI IN/ALI PONOVNO RAZŠIRJA PROGRAM, KOT JE DOVOLJENO ZGORAJ, PREVZEL ODGOVORNOSTI ZARADI ŠKODE, NAJSI GRE ZA SPLOŠNO, POSEBNO, NENAMERNO ŠKODO ALI ŠKODO, IZHAJAJOČO IZ UPORABE ALI NEZMOŽNOSTI UPORABE PROGRAMA (VKLJUČNO Z, A NE OMEJENO NA, IZGUBO PODATKOV ALI NENATANČNO OBDELAVO PODATKOV ALI IZGUBO, POVZROČENO VAM ALI TRETJIM OSEBAM ALI NEZMOŽNOST PROGRAMA, DA BI DELOVAL S KAKIM DRUGIM PROGRAMOM), ČETUDI JE BIL TAK LASTNIK ALI DRUGA OSEBA OBVEŠČEN O MOŽNOSTI NASTANKA TAKŠNE ŠKODE.</para>
+    </sect2>
+  </sect1>
+</article>

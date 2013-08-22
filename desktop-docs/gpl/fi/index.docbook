@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="fi">
+  <articleinfo>
+    <title>GNU yleinen lisenssi (GPL-lisenssi)</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Gnomen dokumentointiprojekti</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Tämän lisenssisopimuksen kirjaimellinen kopioiminen ja levittäminen on sallittu, mutta muuttaminen on kielletty.
+
+<warning><para>Tämä on GPL-lisenssin epävirallinen käännös suomeksi. Tätä käännöstä ei ole julkaissut Free Software Foundation eikä se määritä oikeudellisesti sitovasti GPL-lisenssiä käyttävien ohjelmien levitysehtoja — vain alkuperäinen englanninkielinen GPL-lisenssin teksti on oikeudellisesti sitova. Toivomme kuitenkin, että tämä käännös auttaa suomenkielisiä ymmärtämään GPL-lisenssiä paremmin.</para></warning></para>
+    </legalnotice>
+
+    <releaseinfo>Versio 2, kesäkuu 1991</releaseinfo>
+
+    <abstract role="description"><para>Yleensä tietokoneohjelmien lisenssisopimukset on suunniteltu siten, että ne estävät ohjelmien vapaan jakamisen ja muuttamisen. Sen sijaan GPL-lisenssi on suunniteltu takaamaan käyttäjän vapaus jakaa ja muuttaa ohjelmaa — lisenssi varmistaa, että ohjelma on vapaa kaikille käyttäjille.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Johdanto</title>
+    
+    <para>Yleensä tietokoneohjelmien lisenssisopimukset on suunniteltu siten, että ne estävät ohjelmien vapaan jakamisen ja muuttamisen. Sen sijaan GPL-lisenssi on suunniteltu takaamaan käyttäjän vapaus jakaa ja muuttaa ohjelmaa — lisenssi varmistaa, että ohjelma on vapaa kaikille käyttäjille. GPL-lisenssi soveltuu pääosaan Free Software Foundationin ohjelmia ja mihin tahansa muuhun ohjelmaan, jonka tekijät ja oikeudenomistajat sitoutuvat sen käyttöön. (Joihinkin Free Software Foundationin ohjelmiin sovelletaan GPL-lisenssin sijasta LGPL-lisenssiä [GNU-kirjastolisenssi]). Kuka tahansa voi käyttää GPL-lisenssiä.</para>
+
+    <para>Kun tässä Lisenssissä puhutaan vapaasta ohjelmasta, silloin ei tarkoiteta hintaa. GPL-lisenssi on nimittäin suunniteltu siten, että käyttäjälle taataan vapaus levittää kopioita vapaista ohjelmista (ja pyytää halutessaan maksu tästä palvelusta). GPL-lisenssi takaa myös sen, että käyttäjä saa halutessaan ohjelman lähdekoodin, että hän voi muuttaa ohjelmaa tai käyttää osia siitä omissa vapaissa ohjelmissaan, ja että kaikkien näiden toimien tiedetään olevan sallittuja.</para>
+
+    <para>Jotta käyttäjän oikeudet turvattaisiin, lisenssillä asetetaan rajoituksia, jotka estävät ketä tahansa kieltämästä näitä oikeuksia tai vaatimasta niiden luovuttamista. Nämä rajoitukset merkitsevät tiettyjä velvoitteita jokaiselle käyttäjälle, joka levittää ohjelmakopioita tai muuttaa ohjelmaa.</para>
+
+    <para>Jokaisen joka esimerkiksi levittää kopioita GPL-lisenssin alaisesta ohjelmasta, ilmaiseksi tai maksusta, on annettava käyttäjille kaikki oikeudet, jotka hänelläkin on. Jokaisella käyttäjällä on oltava varmasti mahdollisuus saada ohjelman lähdekoodi. Ohjelman käyttäjille on myöskin esitettävä tämän lisenssisopimuksen ehdot, jotta he tietävät oikeutensa.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>Edelleen, jokaisen tekijän ja Free Software Foundationin suojaamiseksi on varmistettava, että jokainen ymmärtää, että vapaalla ohjelmalla ei ole takuuta. Jos joku muuttaa ohjelmaa ja levittää sen edelleen, ohjelman vastaanottajien on tiedettävä, että heillä ei ole alkuperäistä ohjelmaa. Joten mikä tahansa ongelma, jonka muut ovat aikaansaaneet, ei vaikuta alkuperäisen tekijän maineeseen.</para>
+
+    <para>Ohjelmistopatentit uhkaavat jokaista vapaata ohjelmaa. On olemassa vaara, että vapaiden ohjelmien levittäjät patentoivat ohjelmia sillä seurauksella, että heillä on ohjelmiin omistusoikeus. Tämän välttämiseksi jokainen patentti on joko lisensoitava ilmaiseksi kaikille käyttäjille tai jätettävä kokonaan lisensoimatta.</para>
+
+    <para>Seuraa tarkat ehdot vapaiden ohjelmien kopioimiselle, levittämiselle ja muuttamiselle.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>Ehdot kopioimiselle, levittämiselle ja muuttamiselle</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Kohta 0</title>
+      <para>Tätä Lisenssiä sovelletaan kaikkiin ohjelmiin tai muihin teoksiin, jotka sisältävät tekijänoikeuden haltijan ilmoituksen, että teoksen levittäminen tapahtuu GPL-lisenssin ehtojen mukaan. <quote>Ohjelma</quote> viittaa kaikkiin tälläisiin tietokoneohjelmiin ja muihin teoksiin. <quote>Ohjelmaan perustuva teos</quote> tarkoittaa joko Ohjelmaa tai mitä tahansa tekijänoikeuslain mukaista jälkiperäistä teosta: toisin sanoen teosta, joka sisältää Ohjelman tai osan siitä, kirjaimellisesti tai muutettuna, tai toiselle kielelle käännettynä. (Tästä eteenpäin käännös sisältyy käsitteeseen <quote>muutos</quote>). <quote>Lisenssin saaja</quote> on se, jolle ohjelma lisensoidaan.</para>
+
+      <para>Tämä lisenssi ei kata muita toimenpiteitä kuin kopioimisen, levittämisen ja muuttamisen. Ohjelman ajaminen ei ole kiellettyä. Ohjelman tuloste on tämän Lisenssin alainen vain silloin, kun se muodostaa Ohjelmaan perustuvan teoksen (riippumatta siitä ajetaanko Ohjelmaa vai ei). Milloin tuloste on Lisenssin alainen riippuu siitä, mitä Ohjelma tekee.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Kohta 1</title>
+      <para>Lisenssin saajalla on oikeus kopioida ja levittää sanatarkkoja kopioita Ohjelman lähdekoodista sellaisena kuin se on saatu, millä tahansa laitteella. Ehtona on, että asianmukaisesti jokaisesta kopiosta ilmenee kenellä on siihen tekijänoikeus ja että Ohjelmaan ei ole takuuta; edelleen, kaikki viitaukset tähän Lisenssiin ja ilmoitukseen takuun puuttumisesta on pidettävä koskemattomana; ja vielä, jokaiselle Ohjelman vastaanottajalle on annettava tämä Lisenssi ohjelman mukana.</para>
+      
+      <para>Lisenssin saaja voi pyytää maksun Ohjelman kopioimisesta ja voi halutessaan myydä Ohjelmaan takuun.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Kohta 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Nämä ehdot koskevat muuteltua teosta kokonaisuudessaan. Jos yksilöitävät osat tästä teoksesta eivät ole johdettuja Ohjelmasta ja ne voidaan perustellusti katsoa itsenäisiksi ja erillisiksi teoksiksi, silloin tämä Lisenssi ja sen ehdot eivät koske näitä osia, kun niitä levitetään erillisinä teoksina. Mutta jos samoja osia levitetään osana kokonaisuutta, joka on Ohjelmaan perustuva teos, tämän kokonaisuuden levittäminen on tapahduttava tämän Lisenssin ehtojen mukaan, jolloin tämän lisenssin ehdot laajenevat kokonaisuuteen ja täten sen jokaiseen osaan riippumatta siitä, kuka ne on tehnyt ja millä lisenssiehdoilla.</para>
+
+      <para>Eli tämän Kohdan tarkoitus ei ole saada oikeuksia tai ottaa pois Lisenssin saajan oikeuksia teokseen, jonka hän on kokonaan kirjoittanut; pikemminkin tarkoitus on käyttää oikeutta kontrolloida Ohjelmaan perustuvien jälkiperäisteosten tai kollektiivisten teosten levittämistä.</para>
+
+      <para>Lisäksi pelkkä toisen teoksen, joka ei perustu Ohjelmaan, liittäminen Ohjelman (tai Ohjelmaan perustuvan teoksen) kanssa samalle tallennus- tai jakeluvälineelle ei merkitse sitä, että toinen teos tulisi tämän Lisenssin sitomaksi.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Kohta 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Teoksen lähdekoodi tarkoittaa sen suositeltavaa muotoa muutosten tekemistä varten. Ajettavan teoksen täydellinen lähdekoodi tarkoittaa kaikkea lähdekoodia kaikkiin teoksen sisältämiin moduleihin ja lisäksi kaikkiin sen mukana seuraaviin käyttöliittymätiedostoihin sekä skripteihin, joilla hallitaan ajettavan teoksen asennusta ja kääntämistä. Kuitenkin erityisenä poikkeuksena levitetyn lähdekoodin ei tarvitse sisältää mitään sellaista, mikä yleensä levitetään (joko lähdekoodi- tai binäärimuodossa) käyttöjärjestelmän pääkomponenttien (kääntäjä, ydin, jne.) mukana, joiden päällä teosta ajetaan, ellei tälläinen komponentti tule ajettavan teoksen mukana.</para>
+      
+      <para>Jos ajettavan tai objektikoodin levittäminen tehdään tarjoamalla pääsy tietyssä paikassa olevaan kopioon, tällöin tarjoamalla vastaavasti pääsy samassa paikassa olevaan lähdekoodiin luetaan lähdekoodin levittämiseksi, vaikka kolmansia osapuolia ei pakotettaisi kopioimaan lähdekoodia objektikoodin mukana.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Kohta 4</title>
+      
+      <para>Ohjelman kopioiminen, muuttaminen, lisensointi edelleen tai Ohjelman levittäminen muuten kuin tämän Lisenssin ehtojen mukaisesti on kielletty. Kaikki yritykset muulla tavoin kopioida, muuttaa, lisensoida edelleen tai levittää Ohjelmaa ovat pätemättömiä ja johtavat automaattisesti tämän Lisenssin mukaisten oikeuksien päättymiseen. Sen sijaan ne, jotka ovat saaneet kopioita tai oikeuksia Lisenssin saajalta tämän Lisenssin ehtojen mukaisesti, eivät menetä saamiaan lisensoituja oikeuksia niin kauan kuin he noudattavat näitä ehtoja.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Kohta 5</title>
+
+      <para>Lisenssin saajalta ei vaadita tämän Lisenssin hyväksymistä, koska siitä puuttuu allekirjoitus. Kuitenkaan mikään muu ei salli Lisenssin saajaa muuttaa tai levittää Ohjelmaa tai sen jälkiperäisteosta. Nämä toimenpiteet ovat lailla kiellettyjä siinä tapauksessa, että Lisenssin saaja ei hyväksy tätä Lisenssiä. Niinpä muuttamalla tai levittämällä Ohjelmaa (tai Ohjelmaan perustuvaa teosta) Lisenssin saaja ilmaisee hyväksyvänsä tämän Lisenssin ja kaikki sen ehdot sekä edellytykset Ohjelman ja siihen perustuvien teosten kopioimiselle, levittämiselle ja muuttamiselle.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Kohta 6</title>
+
+      <para>Aina kun Ohjelmaa (tai Ohjelmaan perustuvaa teosta) levitetään, vastaanottaja saa automaattisesti alkuperäiseltä tekijältä lisenssin kopioida, levittää ja muuttaa Ohjelmaa näiden ehtojen ja edellytysten sitomina. Vastaanottajalle ei saa asettaa mitään lisärajoitteita tässä annettujen oikeuksien käytöstä. Lisenssin saajalla ei ole vastuuta valvoa noudattavatko kolmannet osapuolet tätä Lisenssiä.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Kohta 7</title>
+
+      <para>Jos oikeuden päätös tai väite patentin loukkauksesta tai jokin muu syy (rajoittumatta patenttikysymyksiin) asettaa Lisenssin saajalle ehtoja (olipa niiden alkuperä sitten tuomio, sopimus tai jokin muu), jotka ovat vastoin näitä lisenssiehtoja, ne eivät anna oikeutta poiketa tästä Lisenssistä. Jos levittäminen ei ole mahdollista siten, että samanaikaisesti toimitaan sekä tämän Lisenssin että joidenkin muiden rajoittavien velvoitteiden mukaisesti, tällöin Ohjelmaa ei saa lainkaan levittää. Jos esimerkiksi jokin patenttilisenssi ei salli kaikille niille, jotka saavat Ohjelman Lisenssin saajalta joko suoraan tai epäsuorasti, Ohjelman levittämistä edelleen ilman rojaltimaksuja, tällöin ainut tapa täyttää sekä patenttilisenssin että tämän Lisenssin ehdot on olla levittämättä Ohjelmaa lainkaan.</para>
+
+      <para>Jos jokin osa tästä kohdasta katsotaan pätemättömäksi tai mahdottomaksi vahvistaa oikeudessa joissakin tietyissä olosuhteissa, silloin tätä kohtaa on tarkoitus soveltaa pätevin osin ja muissa olosuhteissa kokonaisuudessaan.</para>
+
+      <para>Tämän kohdan tarkoitus ei ole johtaa siihen, että Lisenssin saaja rikkoisi mitään patenttia tai muuta varallisuussoikeutta tai väittää mitään näiden oikeuksien pätevyydestä; tämän kohdan ainoana tarkoituksena on suojata vapaiden ohjelmien levitysjärjestelmän yhtenäisyys, joka on luotu käyttämällä yleisiä lisenssejä. Monet ovat antaneet arvokkaan panoksensa mitä erilaisimpiin ohjelmiin, joita levitetään tässä järjestelmässä luottaen sen soveltamisen pysyvyyteen; on jokaisen tekijän ja lahjoittajan päätösvallassa haluaako hän levittää ohjelmaa jossakin muussa järjestelmässä ja Lisenssin saaja ei voi vaikuttaa tähän valintaan.</para>
+
+      <para>Tämän kohdan tarkoituksena on tehdä täysin selväksi se, mikä on tämän Lisenssin muiden osien seuraus.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Kohta 8</title>
+
+      <para>Jos patentit tai tekijänoikeudella suojatut käyttöliittymät rajoittavat Ohjelman levittämistä tai käyttöä joissakin valtioissa, Ohjelman alkuperäinen tekijä, joka lisensoi ohjelmaansa tällä Lisenssillä, voi asettaa nimenomaisia maantieteellisiä levitysrajoituksia, jolloin levittäminen on sallittu joko mukaan- tai poislukien nämä valtiot. Tälläisessä tapauksessa nämä rajoitukset otetaan huomioon kuin ne olisi kirjoitettu tämän Lisenssin sekaan.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Kohta 9</title>
+      
+      <para>Free Software Foundation voi julkaista korjattuja tai uusia versioita GPL-lisenssistä aika ajoin. Näiden uusien versioiden henki on yhtenevä nykyisen version kanssa, mutta ne saattavat erota yksityiskohdissa ottaen huomioon uusia ongelmia ja huolenaiheita.</para>
+
+      <para>Jokaiselle versiolle annetaan ne muista erottava versionumero. Jos Ohjelma käyttää tämän Lisenssin tiettyä versiota tai <quote>mitä tahansa myöhempää versiota</quote>, Lisenssin saaja saa valita, käyttääkö sitä tai jotakin Free Software Foundationin julkaisemaa myöhempää versiota Lisenssistä. Jos Ohjelma ei mainitse mitä versiota tästä Lisenssistä se käyttää, on sallittua valita mikä tahansa versio, jonka Free Software Foundation on koskaan julkaissut.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Kohta 10</title>
+
+      <para>Jos Lisenssin saaja haluaa ottaa osia Ohjelmasta mukaan muihin vapaisiin ohjelmiin, joiden levitysehdot ovat erilaiset, hänen tulee kirjoittaa tekijälle ja kysyä lupaa. Jos ohjelman tekijänoikeuden omistaa Free Software Foundation, on kirjoitettava heille; he tekevät joskus poikkeuksia. Free Software Foundationin päätösten ohjenuorana on kaksi päämäärää; säilyttää kaikista heidän vapaista ohjelmista johdettujen ohjelmien vapaa asema ja yleisesti kannustaa ohjelmien jakamiseen ja uudelleen käyttöön.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>Ei takuuta</title>
+      <subtitle>Kohta 11</subtitle>
+
+      <para>Koska tämä Ohjelma on lisensoitu ilmaiseksi, tälle Ohjelmalle ei myönnetä takuuta lain sallimissa rajoissa. Ellei tekijänoikeuden haltija kirjallisesti muuta osoita, Ohjelma on tarjolla <quote>sellaisena kuin se on</quote> ilman minkäänlaista takuuta, ilmaistua tai hiljaista, sisältäen, muttei tyhjentävästi, hiljaisen takuun kaupallisesti hyväksyttävästä laadusta ja soveltuvuudesta tiettyyn tarkoitukseen. Lisenssin saajalla on kaikki riski Ohjelman laadusta ja suorituskyvystä. Jos ohjelma osoittautuu virheelliseksi, Lisenssin saajan vastuulla ovat kaikki huolto- ja korjauskustannukset.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Kohta 12</title>
+
+      <para>Ellei laista tai kirjallisesta hyväksynnästä muuta johdu, tekijänoikeuden haltija ja kuka tahansa kolmas osapuoli, joka voi muuttaa tai levittää ohjelmaa kuten edellä on sallittu, eivät ole missään tilanteessa vastuussa Lisenssin saajalle yleisistä, erityisistä, satunnaisista tai seurauksellisista vahingoista (sisältäen, muttei tyhjentävästi, tiedon katoamisen, tiedon vääristymisen, Lisenssin saajan tai kolmansien osapuolten menetykset ja ohjelman puutteen toimia minkä tahansa toisen ohjelman kanssa), jotka aiheutuvat ohjelman käytöstä tai siitä, että ohjelmaa ei voi käyttää, siinäkin tapauksessa, että tekijänoikeuden haltija tai kolmas osapuoli olisi maininnut kyseisten vahinkojen mahdollisuudesta.</para>
+    </sect2>
+  </sect1>
+</article>

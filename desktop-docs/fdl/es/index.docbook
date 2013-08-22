@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="es">
+   <articleinfo>
+    <title>GNU Free Documentation License</title>
+      <releaseinfo>Versión 1.1 Marzo 2000</releaseinfo>
+      
+      <copyright><year>2000</year><holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>Proyecto de Documentación de GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>1.1</revnumber> <date>03/2000</date></revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Se permite la copia y distribución de copias literales de este documento, pero no se permite su modificación.</para>
+      </legalnotice>
+
+      <abstract role="description"><para>El propósito de esta Licencia es permitir que un manual, libro de texto, u otro documento escrito sea <quote>libre</quote> en el sentido de libertad: asegurar a todo el mundo la libertad efectiva de copiarlo y redistribuirlo, con o sin modificaciones, de manera comercial o no. En segundo término, esta Licencia proporciona al autor y al editor una manera de obtener reconocimiento por su trabajo, sin que se le considere responsable de las modificaciones realizadas por otros.</para></abstract>
+    
+    <othercredit class="translator">
+      <personname>
+        <firstname>Daniel Mustieles</firstname>
+      </personname>
+      <email>daniel.mustieles@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2012</year>
+      
+      <holder>Daniel Mustieles</holder>
+    </copyright>
+  </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>PREÁMBULO</title>
+    <para>El propósito de esta Licencia es permitir que un manual, libro de texto, u otro documento escrito sea <quote>libre</quote> en el sentido de libertad: asegurar a todo el mundo la libertad efectiva de copiarlo y redistribuirlo, con o sin modificaciones, de manera comercial o no. En segundo término, esta Licencia proporciona al autor y al editor una manera de obtener reconocimiento por su trabajo, sin que se le considere responsable de las modificaciones realizadas por otros.</para>
+    
+    <para> Esta Licencia es de tipo <quote>copyleft</quote>, lo que significa que los trabajos derivados del documento deben a su vez ser libres en el mismo sentido. Complementa la Licencia Pública General de GNU, que es una licencia tipo copyleft diseñada para el software libre.</para>
+    
+    <para>Hemos diseñado esta Licencia para usarla en manuales de software libre, ya que el software libre necesita documentación libre: Un programa libre debe venir con los manuales que ofrezcan la mismas libertades que da el software. Pero esta licencia no se limita a manuales de software; puede ser usada para cualquier trabajo textual, sin tener en cuenta su temática o si se publica como libro impreso. Recomendamos esta licencia principalmente para trabajos cuyo fin sea instructivo o de referencia.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>APLICACIÓN y DEFINICIONES</title>
+    <para id="fdl-document">Esta Licencia se aplica a cualquier manual u otro trabajo que contenga un aviso colocado por el poseedor del copyright diciendo que puede distribuirse bajo los términos de esta Licencia. El <quote>Documento</quote>, abajo, se refiere a cualquier manual o trabajo. Cualquier miembro del público es un licenciatario,y será referido como <quote>Usted</quote>.</para>
+    
+    <para id="fdl-modified">Una <quote>Versión Modificada</quote> del Documento significa cualquier trabajo que contenga el Documento o una porción del mismo, ya sea una copia literal o con modificaciones y/o traducciones a otro idioma.</para>
+	
+    <para id="fdl-secondary">Una <quote>Sección Secundaria</quote> es un apéndice con título o una sección preliminar del Documento que trata exclusivamente de la relación entre los autores o editores y el tema general del<link linkend="fdl-document">Documento</link> que trata exclusivamente con la relación entre los editores o autores del Documento con el asunto general del Documento (o asuntos relacionados) y no contiene nada que pueda considerarse dentro del tema principal. (Por ejemplo, si el Documento es en parte un libro de texto de matemáticas, una Sección Secundaria no explicará nada de matemáticas.) La relación puede ser una conexión histórica con el asunto o temas relacionados, o una opinión legal, comercial, filosófica, ética o política acerca de ellos.</para>
+
+    <para id="fdl-invariant">Las <quote>Secciones Invariantes</quote> son ciertas <link linkend="fdl-secondary">Secciones Secundarias</link> cuyos títulos son designados como Secciones Invariantes en la nota que indica que el <link linkend="fdl-document">Documento</link> se publica bajo esta Licencia.</para>
+    
+    <para id="fdl-cover-texts"> Los <quote>Textos de Cubierta</quote> son ciertos pasajes cortos de texto que se listan como Textos de Cubierta Delantera o Textos de Cubierta Trasera en la nota que indica que el <link linkend="fdl-document">Documento</link> se publica bajo esta Licencia.</para>
+	
+    <para id="fdl-transparent"> Una copia <quote>Transparente</quote> del <link linkend="fdl-document">Documento</link>, significa una copia para lectura en máquina, representada en un formato cuya especificación está disponible al público en general, cuyo contenido puede ser visto y editados directamente con editores de texto genéricos o (para imágenes compuestas por píxeles) con programas genéricos de manipulación de imágenes o (para dibujos) con algún editor de dibujos ampliamente disponible, y que sea adecuado como entrada para formateadores de texto o para su traducción automática a formatos adecuados para formateadores de texto. Una copia hecha en un formato definido como Transparente, pero cuyo marcaje o ausencia de él haya sido diseñado para impedir o dificultar modificaciones posteriores por parte de los lectores no es Transparente. Una copia que no es <quote>Transparente</quote> se denomina <quote>Opaca</quote>.</para>
+    
+    <para>Como ejemplos de formatos adecuados para copias Transparentes están ASCII puro sin marcaje, formato de entrada de Texinfo, formato de entrada de LaTeX, SGML o XML usando una DTD disponible públicamente, y HTML, PostScript o PDF simples, que sigan los estándares y diseños para que los modifiquen personas.Los formatos Opacos incluyen formatos propietarios que pueden ser leídos y editados únicamente en procesadores de textos propietarios, SGML o XML para los cuáles las DTD y/o herramientas de procesamiento no estén ampliamente disponibles, y HTML, PostScript o PDF generados por algunos procesadores de textos sólo como salida.</para>
+    
+    <para id="fdl-title-page"> La <quote>Portada</quote> significa, en un libro impreso, la página de título, más las páginas siguientes que sean necesarias para mantener legiblemente el material que esta Licencia requiere en la portada. Para trabajos en formatos que no tienen página de portada como tal, <quote>Portada</quote>significa el texto cercano a la aparición más prominente del título del trabajo,precediendo el comienzo del cuerpo del texto.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>COPIA LITERAL</title>
+    <para>Usted puede copiar y distribuir el <link linkend="fdl-document">Documento</link> en cualquier medio, sea en forma comercial o no, siempre y cuando proporcione esta Licencia, las notas de copyright y la nota que indica que esta Licencia se aplica al Documento reproduciéndola en todas las copias y que usted no añada ninguna otra condición a las expuestas en esta Licencia. Usted no puede usar medidas técnicas para obstruir o controlar la lectura o copia posterior de las copias que usted haga o distribuya. Sin embargo, usted puede aceptar compensación a cambio de las copias. Si distribuye un número suficientemente grande de copias también deberá seguir las condiciones de la <link linkend="fdl-section3">sección 3</link>.</para>
+    
+    <para> Usted también puede prestar copias, bajo las mismas condiciones establecidas anteriormente, y puede exhibir copias públicamente.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>COPIADO EN CANTIDAD</title>
+    <para> Si publica copias impresas del <link linkend="fdl-document">Documento</link> que sobrepasen las 100, y la nota de licencia del Documento exige <link linkend="fdl-cover-texts">Textos de Cubierta</link>, debe incluirlas copias con cubiertas que lleven en forma clara y legible todos esos Textos de Cubierta: Textos de Cubierta Delantera en la cubierta delantera y Textos de Cubierta Trasera en la cubierta trasera. Ambas cubiertas deben identificarlo a Usted clara y legiblemente como editor de tales copias. La cubierta debe mostrar el título completo con todas las palabras igualmente prominentes y visibles. Además puede añadir otro material en las cubiertas. Las copias con cambios limitados a las cubiertas, siempre que conserven el título del <link linkend="fdl-document">Documento</link> y satisfagan estas condiciones, pueden considerarse como copias literales en todos los aspectos.</para>
+    
+    <para> Si los textos requeridos para la cubierta son muy voluminosos para que ajusten legiblemente, debe colocar los primeros (tantos como sea razonable colocar) en la verdadera cubierta y situar el resto en páginas adyacentes.</para>
+    
+    <para> Si Usted publica o distribuye copias <link linkend="fdl-transparent">Opacas</link> del <link linkend="fdl-document">Documento</link> cuya cantidad exceda las 100, debe incluir una copia <link linkend="fdl-transparent">Transparente</link>, que pueda ser leída por una máquina, con cada copia Opaca, o bien mostrar, en cada copia Opaca, una dirección de red donde cualquier usuario de la misma tenga acceso por medio de protocolos públicos y estandarizados a una copia Transparente del Documento completa, sin material adicional. Si usted hace uso de la última opción, deberá tomar las medidas necesarias, cuando comience la distribución de las copias Opacas en cantidad, para asegurar que esta copia Transparente permanecerá accesible en el sitio establecido por lo menos un año después de la última vez que distribuya una copia Opaca de esa edición al público (directamente o a través de sus agentes o distribuidores).</para>
+    
+    <para>Se solicita, aunque no es requisito, que se ponga en contacto con los autores del <link linkend="fdl-document">Documento</link> antes de redistribuir gran número de copias, para darles la oportunidad de que le proporcionen una versión actualizada del Documento.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>MODIFICACIONES</title>
+    <para>Puede copiar y distribuir una <link linkend="fdl-modified">Versión Modificada</link> del <link linkend="fdl-document">Documento</link> bajo las condiciones de las secciones <link linkend="fdl-section2">2</link> y <link linkend="fdl-section3">3</link> anteriores, siempre que Usted libere la Versión Modificada bajo esta misma Licencia, con la Versión Modificada haciendo el rol del Documento, por lo tanto dando Licencia de distribución y modificación de la Versión Modificada a quienquiera posea una copia de la misma. Además, debe hacer lo siguiente en la Versión Modificada:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>Usar en la <link linkend="fdl-title-page">Portada</link> (y en las cubiertas, si hay alguna) un título distinto al del <link linkend="fdl-document">Documento</link> y de sus versiones anteriores (que deberían, si hay alguna, estar listadas en la sección de Historia del Documento). Puede usar el mismo título de versiones anteriores al original siempre y cuando quien las publicó originalmente otorgue permiso.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Listar en la <link linkend="fdl-title-page">Portada</link>, como autores, una o más personas o entidades responsables de la autoría de las modificaciones de la <link linkend="fdl-modified">Versión Modificada</link>, junto con por lo menos cinco de los autores principales del <link linkend="fdl-document">Documento</link> (todos sus autores principales, si hay menos de cinco), a menos que le eximan de tal requisito.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Mostrar en la <link linkend="fdl-title-page">Portada</link>  como editor el nombre del editor de la <link linkend="fdl-modified">Versión Modificada</link></para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conservar todas las notas de copyright del <link linkend="fdl-document">Documento</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Añadir una nota de copyright apropiada a sus modificaciones, adyacente a las otras notas de copyright.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Incluir, inmediatamente después de los avisos de copyright, una nota de licencia dando el permiso público para usar la <link linkend="fdl-modified">Versión Modificada</link> bajo los términos de esta Licencia, de la forma mostrada en el Adenda de más abajo.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Incluir, inmediatamente después de ese aviso de licencia, la lista completa de <link linkend="fdl-invariant">Secciones invariantes</link> y de los <link linkend="fdl-cover-texts">Textos de Cubierta</link> que sean requeridos en el aviso de Licencia del <link linkend="fdl-document">Documento</link> original.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Incluir una copia sin modificación de esta Licencia.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conservar la sección titulada <quote>Historia</quote>, conservar su Título y añadirle un elemento que declare al menos el título, el año, los nuevos autores y el editor de la <link linkend="fdl-modified">Versión Modificada</link>, tal como figuran en la <link linkend="fdl-title-page">Portada</link>. Si no hay una sección titulada <quote>Historia</quote> en el <link linkend="fdl-document">Documento</link>, crear una estableciendo el título, el año, los autores y el editor del Documento, tal como figuran en su Portada, añadiendo además un elemento describiendo la Versión Modificada, como se estableció en la sentencia anterior.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conservar la dirección en red, si la hay, dada en el <link linkend="fdl-document">Documento</link> para el acceso público a una copia <link linkend="fdl-transparent">Transparente</link> del mismo, así como las otras direcciones de red dadas en el Documento para versiones anteriores en las que estuviese basado. Pueden ubicarse en la sección <quote>Historia</quote>. Se puede omitir la ubicación en red de un trabajo que haya sido publicado por lo menos cuatro años antes que el Documento mismo, o si el editor original de dicha versión da permiso.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>En cualquier sección titulada <quote>Agradecimientos</quote> o <quote>Dedicatorias</quote>, conservar el título de la sección y conservar en ella toda la sustancia y el tono de los agradecimientos y/o dedicatorias incluidas por cada contribuyente.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conservar todas las <link linkend="fdl-invariant">Secciones Invariantes</link> del <link linkend="fdl-document">Documento</link>, sin alterar su texto ni sus títulos. Los números de sección o equivalentes no se consideran parte de los títulos de la sección.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Eliminar cualquier sección titulada <quote>Aprobaciones</quote>. Tales secciones no pueden estar incluidas en las <link linkend="fdl-modified">Versiones Modificadas</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>No cambiar el título de ninguna sección existente a <quote>Aprobaciones</quote> ni a uno que entre en conflicto con el de alguna <link linkend="fdl-invariant">Sección Invariante</link>.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para> Si la <link linkend="fdl-modified">Versión Modificada</link> incluye secciones o apéndices nuevos que cualifiquen como <link linkend="fdl-secondary">Secciones Secundarias</link> y no contienen ningún material copiado del Documento, puede opcionalmente designar algunas o todas esas secciones como invariantes. Para hacerlo, añada sus títulos a la lista de <link linkend="fdl-invariant">Secciones Invariantes</link> en el aviso de licencia de la Versión Modificada. Tales títulos deben ser distintos de cualquier otro título de sección.</para>
+    
+    <para>Puede añadir una sección titulada <quote>Aprobaciones</quote>, siempre que contenga únicamente aprobaciones de su <link linkend="fdl-modified">Versión Modificada</link> por otras fuentes --por ejemplo, observaciones de compañeros o que el texto ha sido aprobado por una organización como definición oficial de un estándar.</para>
+    
+    <para>Puede añadir un pasaje de hasta cinco palabras como <link linkend="fdl-cover-texts">Texto de Cubierta Delantera</link> y un pasaje de hasta 25 palabras como <link linkend="fdl-cover-texts">Texto de Cubierta Trasera</link> al final de la lista de <link linkend="fdl-cover-texts">Texto de Cubierta</link> en la <link linkend="fdl-modified">Versión Modificada</link>. Una entidad sólo puede añadir (o hacer que se añada) un pasaje al Texto de Cubierta Delantera y uno al de Cubierta Trasera. Si el <link linkend="fdl-document">Documento</link> ya incluye un textos de cubiertas añadidos previamente por usted o por acuerdo previo con la entidad que usted representa, usted no puede añadir otro; pero puede reemplazar el anterior, con permiso explícito del editor anterior que agregó el texto anterior.</para>
+    
+    <para>Con esta Licencia ni los autores ni los editores del <link linkend="fdl-document">Documento</link> dan permiso para usar sus nombres para publicidad ni para asegurar o implicar aprobación de cualquier <link linkend="fdl-modified">Versión Modificada</link>.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>COMBINACIÓN DE DOCUMENTOS</title>
+    <para>Usted puede combinar el <link linkend="fdl-document">Documento</link> con otros documentos liberados bajo esta Licencia, bajo los términos definidos en la sección <link linkend="fdl-section4">section 4</link> más arriba para versiones modificadas, siempre que incluya en la combinación todas las <link linkend="fdl-invariant">Secciones Invariantes</link> de todos los documentos originales, sin modificaciones, y las liste todas como Secciones Invariantes de su trabajo combinado en su aviso de licencia.</para>
+    
+    <para>El trabajo combinado necesita contener solamente una copia de esta Licencia, y múltiples <link linkend="fdl-invariant">Secciones Invariantes</link> idénticas pueden reemplazarse por una sola copia. Si hay múltiples Secciones Invariantes con el mismo nombre pero con contenidos diferentes, haga el título de cada una de estas secciones único añadiéndolo al final de este, entre paréntesis, el nombre del autor o de quien editó originalmente esa sección, si es conocido, o si no, un número único. Haga el mismo ajuste a los títulos de sección en la lista de Secciones Invariantes en la nota de licencia del trabajo combinado.</para>
+    
+    <para>En la combinación, debe combinar cualquier sección titulada <quote>Historia</quote> de los distintos documentos originales, formando una sección titulada <quote>Historia</quote>; de la misma forma, combine cualquier sección titulada <quote>Reconocimientos</quote> y cualquier sección titulada <quote>Dedicatorias</quote>. Debe eliminar todas las secciones tituladas <quote>Aprobaciones</quote>.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>COLECCIONES DE DOCUMENTOS</title>
+    <para> Puede hacer una colección que conste del <link linkend="fdl-document">Documento</link> y de otros documentos publicados bajo esta Licencia, y reemplazar las copias individuales de esta Licencia en todos los documentos por una sola copia que esté incluida en la colección, siempre que siga las reglas de esta Licencia para cada copia literal de cada uno de los documentos en cualquiera de los demás aspectos.</para>
+    
+    <para> Puede extraer un solo documento de una de tales colecciones y distribuirlo individualmente bajo esta Licencia, siempre que inserte una copia de esta Licencia en el documento extraído, y siga esta Licencia en todos los demás aspectos relativos a la copia literal de dicho documento.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>AGREGACIÓN CON TRABAJOS INDEPENDIENTES</title>
+    <para>Una recopilación que conste del <link linkend="fdl-document">Documento</link> o sus derivados y de otros documentos o trabajos separados e independientes, en cualquier soporte de almacenamiento o distribución, no cuenta como un todo como una <link linkend="fdl-modified">Versión Modificada</link> del Documento, siempre que no se reclame ningún derecho de copyright por la compilación. Dicha compilación se denomina un <quote>agregado</quote>, y esta Licencia no se aplica a otros trabajos  autocontenidos incluidos con el Documento. teniendo en cuenta que son compilados, si no son los mismos trabajos derivados del Documento. Si el requisito de <link linkend="fdl-cover-texts">Texto de Cubierta</link> de la <link linkend="fdl-section3">sección 3</link> es aplicable a estas copias del Documento, entonces si el Documento es menor que un cuarto del agregado completo, los Textos de Cubierta del Documento pueden colocarse en cubiertas que enmarquen solamente el Documento dentro del agregado. En caso contrario deben aparecer en cubiertas impresas enmarcando todo el agregado.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>TRADUCCIÓN</title>
+    <para>La Traducción se considera como un tipo de modificación, por lo que usted puede distribuir traducciones del <link linkend="fdl-document">Documento</link> bajo los términos de la <link linkend="fdl-section4">sección 4</link>. El reemplazo las <link linkend="fdl-invariant">Secciones Invariantes</link> por traducciones requiere permiso especial de los poseedores del copyright, pero usted puede incluir traducciones de algunas o todas las Secciones Invariantes junto con las versiones originales de las mismas. Puede incluir una traducción de esta Licencia, siempre que incluya también la versión original en inglés de esta Licencia. En caso de desacuerdo entre la traducción y la versión original en inglés de esta Licencia, la versión original en Inglés prevalecerá.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>TERMINACIÓN</title>
+    <para> Usted no puede copiar, modificar, sublicenciar o distribuir el <link linkend="fdl-document">Documento</link> salvo por lo permitido expresamente por esta Licencia. Cualquier otro intento de copia, modificación, sublicenciamiento o distribución del Documento es nulo, y dará por terminados automáticamente sus derechos bajo esa Licencia. Sin embargo, los terceros que hayan recibido copias, o derechos, de usted bajo esta Licencia no verán terminadas sus licencias, siempre que permanezcan en total conformidad con ella.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>REVISIONES FUTURAS DE ESTA LICENCIA</title>
+    <para>La <ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink> puede publicar versiones nuevas y revisadas de la Licencia de Documentación Libre GNU de vez en cuando. Dichas versiones nuevas serán similares en espíritu a la presente versión, pero pueden diferir en detalles para solucionar nuevos problemas o preocupaciones. Vea <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para> Cada versión de la Licencia tiene un número de versión que la distingue. Si el <link linkend="fdl-document">Documento</link> especifica que se aplica una versión numerada en particular de esta licencia o <quote>cualquier versión posterior</quote>, usted tiene la opción de seguir los términos y condiciones de la versión especificada o cualquiera posterior que haya sido publicada (no como borrador) por la Free Software Foundation. Si el Documento no especifica un número de versión de esta Licencia, puede escoger cualquier versión que haya sido publicada (no como borrador) por la Free Software Foundation.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Adenda</title>
+    <para>Para usar esta licencia en un documento que usted haya escrito, incluya una copia de la Licencia en el documento y ponga el siguiente copyright y notificación de licencia justo después de la página de título:</para>
+    
+    <blockquote>
+      <para>Copyright © AÑO SU NOMBRE.</para>
+      <para>Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free Software Foundation; con las <link linkend="fdl-invariant">Secciones Invariantes</link> siendo su LISTE SUS TÍTULOS, con <link linkend="fdl-cover-texts">Textos de Cubierta Delantera</link> siendo LISTA, y con los <link linkend="fdl-cover-texts">Textos de Cubierta Trasera</link> siendo LISTA. Una copia de la licencia está incluida en la sección titulada <quote>GNU Free Documentation License</quote>.</para>
+    </blockquote>
+      
+    <para>Si no tiene <link linkend="fdl-invariant">Secciones Invariantes</link>, escriba <quote>sin Secciones Invariantes</quote> en vez de decir cuáles son invariantes. Si no tiene <link linkend="fdl-cover-texts">Textos de Cubierta Frontal</link>, escriba <quote>sin Textos de Cubierta Frontal</quote>; de la misma manera para <link linkend="fdl-cover-texts">Textos de Cubierta Trasera</link>.</para>
+    
+    <para> Si su documento contiene ejemplos de código de programa no triviales, recomendamos liberar estos ejemplos en paralelo bajo la licencia de software libre que usted elija, como la <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">Licencia Pública General de GNU (GNU General Public License)</ulink>, para permitir su uso en software libre.</para>
+  </sect1>
+</article>

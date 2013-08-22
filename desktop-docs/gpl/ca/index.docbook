@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="ca">
+  <articleinfo>
+    <title>Llicència pública general de GNU</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Projecte de documentació del GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Tothom pot copiar i distribuir còpies literals d'aquest document de llicència, però no es permet de fer-hi modificacions.</para>
+    </legalnotice>
+
+    <releaseinfo>Versió 2, Juny de 1991</releaseinfo>
+
+    <abstract role="description"><para>Les llicències de la majoria de programari estan dissenyades per a prendre-us la llibertat de compartir-lo i modificar-lo. Contràriament, la Llicència pública general de GNU està pensada per a garantir-vos la llibertat de compartir i modificar el programari lliure, per tal d'assegurar que el programari sigui lliure per a tots els seus usuaris i usuàries.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Preàmbul</title>
+    
+    <para>Les llicències de la majoria de programari estan dissenyades per a prendre-us la llibertat de compartir-lo i modificar-lo. Contràriament, la Llicència pública general de GNU està pensada per a garantir-vos la llibertat de compartir i modificar el programari lliure, per tal d'assegurar que el programari sigui lliure per a tots els seus usuaris i usuàries. Aquesta Llicència pública general és aplicable a la majoria de programari de la Free Software Foundation (Fundació per al programari lliure) i a qualsevol altre programa els autors del qual es comprometin a utilitzar-la (algun altre programari de la Free Software Foundation, en canvi, està protegit per la Llicència pública general per a biblioteques de GNU). També podeu aplicar-la als vostres programes. </para>
+
+    <para>Quan parlem de programari lliure ens referim a la llibertat, no al preu. Les nostres llicències públiques generals estan pensades per assegurar que tingueu la llibertat de distribuir còpies del programari lliure (i de cobrar per aquest servei, si voleu); que rebeu el codi font o que, si el voleu, el pugueu rebre; que pugueu modificar el programari o fer-ne servir parts en programes lliures nous; i que sapigueu que podeu fer totes aquestes coses. </para>
+
+    <para>Per a protegir els vostres drets, cal que apliquem restriccions que prohibeixin a tothom de negar-vos aquests drets o demanar-vos que hi renuncieu. Aquestes restriccions suposen determinades responsabilitats per a vós si distribuïu còpies del programari o si el modifiqueu. </para>
+
+    <para>Per exemple, si distribuïu còpies d'un programa, tant si el distribuïu de franc com si en feu pagar un preu, heu de donar als destinataris els mateixos drets que teniu vós. Us heu d'assegurar que ells també en rebin o puguin aconseguir-ne el codi font, i els heu de fer saber aquests termes per tal que coneguin els seus drets. </para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>A més a més, per protegir-nos i protegir l'autor o autora, volem estar segurs que tothom entén que no hi ha cap garantia per a aquest programari lliure. Si algú modifica el programari i el passa, volem que els destinataris sàpiguen que el que tenen no és l'original, per tal que qualsevol problema que hagin pogut introduir terceres persones no repercuteixi en la reputació de l'autor o autora original. </para>
+
+    <para>Finalment, qualsevol programa lliure està constantment amenaçat per les patents de programari. Volem evitar el perill que els redistribuïdors d'un programa lliure acabin obtenint llicències de patents i que, com a conseqüència d'això, el programa esdevingui propietat exclusiva d'algú. Per evitar-ho, hem deixat clar que, de qualsevol patent, se n'han d'emetre llicències per a tothom o no emetre'n cap. </para>
+
+    <para>Les condicions exactes per a la còpia, distribució i modificació són les següents.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>TERMES I CONDICIONS PER A LA CÒPIA, DISTRIBUCIÓ I MODIFICACIÓ</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Secció 0</title>
+      <para>Aquesta llicència és aplicable a qualsevol programa o altra obra que contingui un avís del posseïdor del copyright que digui que es pot distribuir sota els termes d'aquesta llicència pública general. D'ara endavant, el <quote>programa</quote> es refereix a aquest programa o obra, i una <quote>obra basada en el programa</quote> es refereix al programa o a qualsevol obra derivada segons la llei de copyright: és a dir, una obra que contingui el programa o alguna part del programa, ja sigui literalment o amb modificacions o bé traduït a altres llengües (d'ara endavant, les traduccions s'inclouen sense cap limitació en el terme <quote>modificació</quote>). Ens referim a cada beneficiari de la llicència com a <quote>vós</quote>.</para>
+
+      <para>Les activitats que no siguin còpia, distribució o modificació no es tenen en compte en aquesta llicència, queden fora del seu àmbit. No es restringeix l'acte d'executar el programa, i la llicència només protegeix la producció que s'obtingui amb el programa si el seu contingut constitueix una obra basada en el programa (independentment de si s'ha creat executant el programa). Que aquest sigui el cas o no depèn de què faci el programa.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Secció 1</title>
+      <para>Podeu copiar i distribuir còpies literals del codi font del programa tal com el rebeu, en qualsevol mitjà, sempre que publiqueu en cada còpia, de manera adient i ben visible, una nota de copyright i una renúncia de garantia; manteniu intactes tots els avisos que fan referència a aquesta llicència i a l'absència de garanties de cap mena; i lliureu a qualsevol altre destinatari del programa una còpia d'aquesta llicència juntament amb el programa. </para>
+      
+      <para>Podeu cobrar un preu per l'acte físic de trametre una còpia i podeu, si així ho voleu, oferir alguna garantia a canvi d'un preu. </para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Secció 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Aquests requeriments afecten l'obra modificada com un tot. Si hi ha parts identificables que no estan derivades del programa, i es poden considerar raonablement com a obres independents i separades en si mateixes, aleshores aquesta llicència i els seus termes no s'apliquen a aquelles parts quan les distribuïu com a obres separades. Però quan distribuïu aquestes mateixes parts integrades en un tot que sigui una obra basada en el programa, la distribució del tot s'ha de fer d'acord amb els termes d'aquesta llicència, i els permisos atorgats a altres beneficiaris abasten el tot sencer i, per tant, totes i cadascuna de les parts, independentment de qui les hagi escrites. </para>
+
+      <para>Així doncs, la intenció d'aquesta secció no és reclamar o disputar-vos cap dret a codi que hagueu escrit del tot vós mateix. La intenció és més aviat exercir el dret a controlar la distribució d'obres derivades o col·lectives basades en el programa.</para>
+
+      <para>A més a més, la simple agregació amb el programa (o amb una obra basada en el programa) d'altres obres no basades en el programa en un volum d'un mitjà d'emmagatzemament o de distribució no posa aquestes altres obres sota l'àmbit de la llicència.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Secció 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>El codi font per a una obra vol dir la forma preferida de l'obra per a fer-hi modificacions. Per una obra executable, el codi font complet vol dir tot el codi font per a tots els mòduls que conté, més tots els fitxers de definició d'interfícies associats si s'escau, més els scripts que es facin servir per a controlar la compilació i la instal·lació de l'executable si s'escau. Tanmateix, com a excepció especial, el codi font que es distribueixi no cal que inclogui res del que normalment es distribueixi (sia en forma binària o de codi font) amb els components principals (compilador, nucli o similars) del sistema operatiu en què s'executa el programa, tret que el component en qüestió acompanyi l'executable.</para>
+      
+      <para>Si la distribució de l'executable consisteix a donar accés per a copiar-lo d'un lloc determinat, aleshores serveix com a distribució del codi font el fet de donar un accés equivalent per a copiar el codi font, encara que les terceres parts no estiguin obligades a copiar el codi font en copiar el codi objecte.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Secció 4</title>
+      
+      <para>No podeu copiar, modificar, reemetre llicències, o distribuir el programa si no és de la forma expressa que atorga aquesta Llicència. Qualsevol altre intent de copiar, modificar, reemetre llicències, o distribuir el programa és il·lícit i finalitzarà automàticament els drets que hagueu obtingut d'aquesta llicència. Tanmateix, les parts que hagin rebut de vós còpies o drets d'acord amb aquesta llicència no veuran les seves llicències finalitzades mentre segueixin observant-les estrictament.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Secció 5</title>
+
+      <para>No esteu obligat a acceptar aquesta llicència, ja que no l'heu signada. Tanmateix, no hi ha cap altra opció que us doni permís per modificar o distribuir el programa o les seves obres derivades. Aquestes accions queden prohibides per la llei si no accepteu aquesta llicència. Així doncs, en modificar o distribuir el programa o les seves obres derivades, indiqueu que accepteu aquesta llicència per a fer-ho, i tots els seus termes i condicions per copiar, distribuir o modificar el programa o obres que hi estiguin basades.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Secció 6</title>
+
+      <para>Cada cop que distribuïu el programa (o qualsevol obra basada en el programa), el destinatari rep automàticament, de qui va emetre la llicència originàriament, una llicència per copiar, distribuir o modificar el programa sotmesa a aquests termes i condicions. No podeu imposar cap més restricció a l'exercici dels drets que aquí es confereixen. No sou responsable de fer complir aquesta llicència a terceres parts.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Secció 7</title>
+
+      <para>Si, a conseqüència d'una decisió judicial, una demanda per infracció d'una patent o per qualsevol altra raó (no exclusivament relacionada amb patents), se us imposen condicions (tant si és per ordre judicial, acord, o el que sigui) que contradiuen les condicions d'aquesta llicència, no quedeu excusat de les condicions d'aquesta llicència. Si no us és possible distribuir de manera que satisfeu alhora les obligacions que us imposa aquesta llicència i qualsevol altra obligació pertinent, aleshores no podeu distribuir el programa en absolut. Per exemple, si una llicència de patent no permetés redistribuir gratuïtament el programa a aquells que hagin rebut còpies de vós directament o indirecta, aleshores la única manera en què podríeu satisfer tant això com aquesta llicència seria abstenir-vos completament de distribuir el programa.</para>
+
+      <para>Si qualsevol fragment d'aquesta secció quedés invalidat o no es pogués fer complir en qualsevol circumstància particular, la intenció és que s'apliqui el balanç de la secció, i que s'apliqui la secció en la seva totalitat en altres circumstàncies.</para>
+
+      <para>El propòsit d'aquesta secció no és induir-vos a infringir cap patent ni cap altre requeriment del dret a la propietat, o a discutir-ne la validesa; l'únic propòsit d'aquesta secció és protegir la integritat del sistema de distribució de programari lliure, que s'implementa amb pràctiques de llicència pública. Molta gent ha fet generoses contribucions a l'ampli ventall de programari distribuït per aquest sistema refiant-se de l'aplicació consistent del sistema; li pertoca a l'autor, autora o donant decidir si vol distribuir programari per algun altre sistema, i un beneficiari de la llicència no pot imposar aquesta elecció.</para>
+
+      <para>Aquesta secció pretén deixar del tot clar el que es considera una conseqüència de la resta de la llicència.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Secció 8</title>
+
+      <para>Si hi ha països que restringeixen la distribució o l'ús del programari, ja sigui per patents o per interfícies sota copyright, el posseïdor del copyright original que posi el programa sota aquesta llicència pot afegir limitacions geogràfiques explícites que excloguin aquests països, de manera que la distribució només quedi permesa dins dels països no exclosos, o entre ells. En tal cas, aquesta llicència incorpora la limitació com si estigués escrita en el text de la llicència.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Secció 9</title>
+      
+      <para>La Free Software Foundation pot publicar versions revisades o noves de la llicència pública general de tant en tant. Aquestes versions noves seran semblants en esperit a la versió present, però poden diferir en detalls per tractar noves preocupacions o problemes.</para>
+
+      <para>Cada versió rep un número de versió distintiu. Si el programa especifica un número de versió d'aquesta llicència que li és aplicable i que també és aplicable a <quote>qualsevol versió posterior</quote>, teniu l'opció de seguir els termes i condicions de la versió especificada o bé els de qualsevol versió publicada posteriorment per la Free Software Foundation. Si el programa no especifica un número de versió d'aquesta llicència, podeu triar qualsevol versió que hagi publicat la Free Software Foundation en qualsevol data.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Secció 10</title>
+
+      <para>Si voleu incorporar parts del programa en altres programes lliures les condicions de distribució dels quals són diferents, escriviu a l'autor per demanar-li permís. Per al programari que està sota copyright de la Free Software Foundation, escriviu a la Free Software Foundation; de vegades fem excepcions per a permetre-ho. Prendrem la nostra decisió guiats pels dos objectius de mantenir la condició de lliure de tots els derivats del nostre programari lliure i de promoure la compartició i la reutilització del programari en general.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>SENSE GARANTIA</title>
+      <subtitle>Secció 11</subtitle>
+
+      <para>ATÈS QUE EL PROGRAMARI TÉ UNA LLICÈNCIA GRATUÏTA, NO SE N'OFEREIX CAP TIPUS DE GARANTIA, EN LA MESURA PERMESA PER LES LLEIS APLICABLES. LLEVAT DELS CASOS EN QUÈ S'AFIRMI EL CONTRARI PER ESCRIT, ELS LLICENCIADORS I/O LES ALTRES PARTS OFEREIXEN EL PROGRAMA <quote>TAL COM ÉS</quote>, SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES IMPLÍCITES DE COMERCIALITZACIÓ I ADEQUACIÓ A UN ÚS CONCRET. TOT EL RISC PEL QUE FA A LA QUALITAT I RENDIMENT DEL PROGRAMA ÉS VOSTRE. EN CAS QUE EL PROGRAMA RESULTÉS DEFECTUÓS, VÓS ASSUMIU TOT EL COST D'ASSISTÈNCIA, REPARACIÓ O CORRECCIÓ.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Secció 12</title>
+
+      <para>EL POSSEÏDOR DEL COPYRIGHT, O QUALSEVOL ALTRA PART QUE PUGUI MODIFICAR O REDISTRIBUIR EL PROGRAMA TAL I COM ES PERMET MÉS AMUNT NO US HAURÀ DE RESPONDRE EN CAP CAS, TRET DEL QUE REQUEREIXI LA LLEI APLICABLE O ELS ACORDS PER ESCRIT, PER PERJUDICIS, INCLOSOS ELS INCIDENTALS, DERIVATS, ESPECIALS O GENERALS QUE ES DERIVIN DE L'ÚS O DE LA IMPOSSIBILITAT D'ÚS DEL PROGRAMA (INCLOSES, ENTRE D'ALTRES, LES PÈRDUES DE DADES, LES DADES QUE EL PROGRAMA HAGI MALMÈS, LES PÈRDUES QUE US HAGI PROVOCAT A VÓS O A TERCERS O LA IMPOSSIBILITAT QUE EL PROGRAMA FUNCIONI AMB QUALSEVOL ALTRE PROGRAMA), FINS I TOT SI AQUEST POSSEÏDOR O ALTRA PART HA ESTAT ADVERTIDA DE LA POSSIBILITAT D'AQUESTS PERJUDICIS.</para>
+    </sect2>
+  </sect1>
+</article>

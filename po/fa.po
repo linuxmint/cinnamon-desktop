@@ -1,0 +1,388 @@
+# Persian translation of gnome-desktop.
+# Copyright (C) 1998-2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+# Roozbeh Pournader <roozbeh@farsiweb.info>, 2003.
+# Meelad Zakaria <meelad@farsiweb.info>, 2004.
+# Elnaz Sarbar <elnaz@farsiweb.info>, 2006.
+# Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
+# Mahyar Moghimi <mahyar.moqimi@gmail.com>, 2010.
+# Arash Mousavi <mousavi.arash@gmail.cim>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"PO-Revision-Date: 2012-09-06 20:48+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "ناشناخته"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"پایانه‌ای یافت نمی‌شود، با استفاده از مقلد پایانه در سیستم پنجرهٔ ایکس، حتی اگر "
+"ممکن است کار نکند"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "منابع صفحه نمایش گرفته نشد(کنترل کننده‌ی سی‌آر‌تی، خروجی‌ها، حالت‌ها)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "خطای تصدی نشدهٔ ایکس هنگام گرفتن گسترهٔ اندازه‌ی صفحه‌نمایش"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "گسترهٔ اندازه‌های صفحه نمایش گرفته نشد."
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "پسوند RANDR موجود نیست."
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "اطلاعات درباره‌ی خروجی %d بدست نیامد."
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"موقعیت/اندازه‌ی درخواست شده برای کنترل‌کننده‌ی سی‌آر‌تی %d در خارج از حد مجاز "
+"است: موقعیت=(%d, %d) ، , اندازه=(%d, %d), بیشینه=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "پیکر‌بندی برای کنترلر سی‌آر‌تی %d تنظیم نشد"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "اطلاعات درباره‌ی کنترلر سی‌آر‌تی %d گرفته نشد"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "لپ‌تاپ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"هیچ‌کدام از پیکربندی‌های ذخیره شده برای صفحهٔ نمایش با پیکربندی فعال فعلی "
+"مطابقت نیافت."
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "کنترلر سی‌آر‌تی %d نمی‌تواند خروجی %s را بگرداند"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "خروجی %s از حالت %dx%d@%dHz پشتیبانی نمی‌کند."
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "کنترلر سی‌آر‌تی %d از چرخاندن=%s پشتیبانی نمی‌کند"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"خروجی %s دارای پارامتر‌های همانند با خروجی دیگری (که کپی‌برابر است) نیست: \n"
+"حالت موجود = %d ، حالت جدید= %d\n"
+"مختصات موجود = (%d, %d), مختصات جدید = (%d, %d)\n"
+"چرخش موجود =  %s, چرخش جدید = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "کپی‌برابر به خروجی %s انجام نمی‌شود."
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "در حال آزمودن حالت‌ها برای کنترلر سی‌آر‌تی %d  \n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"کنترلر سی‌آر‌تی %d: در حال امتحان کردن حالت %dx%d@%dHz با خروجی در %dx%d@%dHz "
+"(گذر %d )\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"کنترلرهای سی‌آر‌تی به خروجی‌ها منتسب نشد:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"هیچ‌کدام از حالت‌های انتخاب شده با حالت‌های ممکن، سازگار نبودند: \n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"اندازه‌ی مجازی مورد نیاز با اندازه‌ی در دسترس جور نمی‌شود: درخواست شده= (%d, "
+"%d) ، کمینه= (%d, %d)، بیشینه= (%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "نمایشگرهای آینه‌ای"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %Od %b %OH:%OM:%OS"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %Od %b %OH:%OM"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %OH:%OM:%OS"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %OH:%OM"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+#| msgid "%a %R:%S"
+msgid "%R:%S"
+msgstr "%OH:%OM:%OS"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%OH:%OM"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a Od% %b %OH:%OM:%OS"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %Od %b %OH:%OM"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %OH:%OM:%OS"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %OH:%OM"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+#| msgid "%a %l:%M:%S %p"
+msgid "%l:%M:%S %p"
+msgstr "%OI:%OM:%OS %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+#| msgid "%a %l:%M %p"
+msgid "%l:%M %p"
+msgstr "%OI:%OM %p"
+
+#~ msgid "About GNOME"
+#~ msgstr "دربارهٔ گنوم"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "دربارهٔ گنوم بیشتر بدانید"
+
+#~ msgid "News"
+#~ msgstr "اخبار"
+
+#~ msgid "GNOME Library"
+#~ msgstr "کتابخانهٔ گنوم"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "دوستان گنوم"
+
+#~ msgid "Contact"
+#~ msgstr "آشنا"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "GEGL رازآلود"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "گنوم لاستیکی جیغ‌جیغو"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "واندا، ماهی گنوم"
+
+#~ msgid "_Open URL"
+#~ msgstr "_بازکردن آدرس"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_رونوشت آدرس"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "دربارهٔ رومیزی گنوم"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "به رومیزی گنوم خوش آمدید"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "کاری از:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "نسخه"
+
+#~ msgid "Distributor"
+#~ msgstr "توزیع‌کننده"
+
+#~ msgid "Build Date"
+#~ msgstr "تاریخ ساخت"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "نمایش اطلاعات درباره‌ی این نسخه گنوم"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "گنوم همچنین دارای یک سکوی برنامه‌سازی کامل برای برنامه‌نویسان است، که به "
+#~ "کار ایجاد برنامه‌های قوی و پیچیده می‌آید."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "گنوم بیشتر چیزهایی را که در کامپیوتر خود می‌بینید در بر دارد، از جمله "
+#~ "مرورگر پرونده، مرورگر وب، منوها و تعداد زیادی برنامه."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "گنوم یک محیط رومیزی آزاد، کارا، باثبات و قابل دسترسی برای خانوادهٔ "
+#~ "سیستم‌عامل‌های شبیه یونیکس است."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "تمرکز گنوم بر کارآیی و در دسترس بودن، چرخهٔ انتشار منظم، و پشتیبانی "
+#~ "یکپارچهٔ قوی آن را در میان رومیزی‌های نرم‌افزارهای آزاد بی‌همتا می‌سازد."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "بزرگترین قدرت گنوم اجتماع قوی ماست. عملاً هر کس، چه مهارت‌های کد نویسی "
+#~ "داشته باشد و چه نداشته باشد، می‌تواند در بهتر کردن گنوم همکاری کند."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "از زمان شروع پروژهٔ گنوم در سال ۱۹۹۷ صدها نفر در نوشتن کد آن، و تعداد "
+#~ "بسیار بیشتری به روش‌های مهم دیگری، از جمله ترجمه، تهیهٔ مستندات و تضمین "
+#~ "کیفیت با آن همکاری کرده‌اند."
+
+#~ msgid "Mirror Screens"
+#~ msgstr "نمایش آینه‌ای"
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "خطا در خواندن پرونده‌ی «%s»: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "خطا در برگرداندن پرونده‌ی «%s»: %s"
+
+#~ msgid "No name"
+#~ msgstr "بدون نام"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "پرونده‌ی «%s» یک پرونده یا شاخه‌ی عادی نیست."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "پرونده‌ی «%s» نشد"
+
+#~ msgid "No filename to save to"
+#~ msgstr "نام پرونده‌ای برای ذخیره کردن موچود نیست"
+
+#~ msgid "Starting %s"
+#~ msgstr "در حال آغاز %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "URL برای راه‌اندازی موجود نیست"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "شیء قابل راه‌اندازی نیست"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "فرمانی (Exec) برای راه‌اندازی داده نشد"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "فرمان (Exec) برای راه‌اندازی مناسب نیست"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "کدگذاری ناشناخته در: %s"

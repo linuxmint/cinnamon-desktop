@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="sr-Latn">
+  <articleinfo>
+    <title>Gnuova opšta javna licenca</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Projekat Gnomove dokumentacije</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Svakome je dopušteno da umnožava i da prosleđuje verbatim (cd) primerke dokumenta ove licence, ali njegovo menjanje nije dozvoljeno.</para>
+    </legalnotice>
+
+    <releaseinfo>Izdanje 2, jun 1991</releaseinfo>
+
+    <abstract role="description"><para>Licence većine softvera su namenjene oduzimanju vaše slobode njegovog deljenja i menjanja. Nasuprot tome, GNU Opšta javna licenca je osmišljena da garantuje vašu slobodu deljenja i razmene slobodnog softvera — da bi osigurala slobodu softvera za sve njegove korisnike.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Uvod</title>
+    
+    <para>Licence većine softvera su namenjene oduzimanju vaše slobode njegovog deljenja i menjanja. Nasuprot tome, GNU Opšta javna licenca je osmišljena da garantuje vašu slobodu deljenja i razmene slobodnog softvera — kako bi osigurala slobodu softvera za sve njegove korisnike. Ova Opšta javna licenca se primenjuje na većinu softvera Zadužbine slobodnog softvera i na svaki drugi softver čiji se autori obavežu na njeno korišćenje. (Neki drugi softver Zadužbine slobodnog softvera je pokriven GNU Bibliotečkom opštom javnom licencom.) I vi takođe možete da je primenite na vaše programe.</para>
+
+    <para>Kada govorimo o slobodnom softveru, mislimo na slobodu, a ne na cenu. Naše Opšte javne licence su osmišljena da osiguraju da vi imate slobodu da raspodeljujete primerke slobodnog softvera (i da naplatite za tu uslugu ako želite), da primite izvorni kôd ili da možete da ga nabavite ako želite, da možete da izmenite softver ili da koristite njegove delove u novim slobodnim programima; i da znate da možete da uradite te stvari.</para>
+
+    <para>Da bismo zaštitili vaša prava, moramo da napravimo ograničenja koja zabranjuju bilo kome da vam uskrati ta prava ili da od vas zatraži da se odreknete istih. Ova ograničenja se odnose na neke vaše odgovornosti ako raspodeljujete primerke softvera ili ako ga menjate.</para>
+
+    <para>Na primer, ako raspodeljujete primerke takvog programa, bilo bez ili uz novčanu nadoknadu, morate i primaocima da date sva prava koja posedujete. Morate da se osigurate da i oni, takođe, prime ili da mogu da nabave izvorni kôd. I morate da im pokažete ove odredbe kako bi se upoznali sa svojim pravima.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>Takođe, zbog zaštite svakog autora a i naše, želimo da se osiguramo da svako razume da ne postoji garancija za taj slobodan softver. Ako je softver izmenio neko drugi i prosledio ga, želimo da njegovi primaoci znaju da ono što oni imaju nije original, tako da bilo koji problem koji uvede neko drugi neće da se odrazi na ugled autora originala.</para>
+
+    <para>Najzad, svi slobodni programi su neprekidno ugroženi softverskim patentima. Želimo da izbegnemo opasnost da raspodeljivači slobodnog programa pojedinačno nabave licence patenta, i da zapravo učine program vlasničkim. Da bismo ovo sprečili, jasno smo naznačili da svaki patent mora biti licenciran za svačije slobodno korišćenje ili da ne bude licenciran uopšte.</para>
+
+    <para>Tačne odredbe i uslovi za umnožavanje, raspodelu i izmene slede.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>ODREDBE I USLOVI ZA UMNOŽAVANJE, RASPODELU I MENJANJE</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Odeljak 0</title>
+      <para>Ova licenca se primenjuje na svaki program ili drugi rad koji sadrži saopštenje vlasnika autorskih prava u kom stoji da može biti raspodeljen pod odredbama ove Opšte javne licence. „Program“ će nadalje označavati svaki takav program ili delo, a „delo zasnovano na Programu“ će označavati Program ili bilo koje delo proisteklo iz njega po Zakonu o autorskim pravima; tj. delo koje sadrži Program ili njegov deo, bilo doslovni ili sa izmenama i/ili preveden na drugi jezik. (Odavde pa nadalje, prevod je uključen bez ograničenja u pogledu izraza „izmena“.) Svaki korisnik licence je označen kao „vi“.</para>
+
+      <para>Aktivnosti drugačije od umnožavanja, raspodele i menjanja nisu pokrivene ovom licencom; one su izvan njene primene. Čin pokretanja Programa nije ograničen, a rezultat Programa je pokriven jedino ako njegov sadržaj sačinjava delo zasnovano na Programu (nezavisno od toga da li je nastao pokretanjem Programa). Da li će ovo biti tako zavisi od toga šta Program radi.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Odeljak 1</title>
+      <para>Možete da umnožavate i raspodeljujete verbatim (cd) primerke izvornog kôda programa odmah čim ga primite, na bilo kom medijumu, uz uslov da upadljivo i na odgovarajući način objavite na svakom primerku odgovarajuće obaveštenje o autorskim pravima i odricanje od garancije; da zadržite netaknuta sva obaveštenja koja se odnose na ovu licencu i odsustvo bilo kakve garancije; i da date svim drugim primaocima Programa primerak ove licence uz Program.</para>
+      
+      <para>Možete da naplatite nadoknadu za fizički čin prenosa primerka, i možete po vašem izboru da ponudite zaštitu garancijom u zamenu za nadoknadu.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Odeljak 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Ovi zahtevi se odnose na izmenjeno delo kao celinu. Ako prepoznatljivi delovi takvog dela nisu izvedeni iz Programa, i mogu biti razumno smatrani nezavisnim i odvojenim delima za sebe, onda se ova Licenca, i njene odredbe, ne odnosi na te delove kada ih raspodeljujete kao odvojena dela. Ali kada raspodeljujete iste delove kao deo celine koja je delo zasnovano na Programu, raspodela celine mora biti pod odredbama ove Licence, čija se ovlašćenja za druge licence proširuju na čitavu celinu, a time i na svaki i na bilo koji deo bez obzira ko ga je napisao.</para>
+
+      <para>Dakle, nije namera ovog odeljka da zahteva prava ili da osporava vaša prava na delo koje ste vi u potpunosti napisali; već mu je namera da ostvari pravo da kontroliše raspodelu izvedenih ili zajedničkih dela zasnovanih na Programu.</para>
+
+      <para>Pored toga, samo prisajedinjenje Programu drugog dela koje nije zasnovano na Programu (ili delu zasnovanom na Programu) na jedinicu skladištenja ili na medijum za raspodelu ne dovodi drugo delo pod okvir ove Licence.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Odeljak 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Izvorni kôd dela podrazumeva željeni oblik dela za unošenje izmena na njemu. Za izvršni oblik dela, potpuni izvorni kôd podrazumeva sav izvorni kôd svih modula koje sadrži, sa dodatkom svih datoteka definicije sučelja, svih skripti korišćenih za kontrolisanje prevođenja i instaliranja izvršnog izdanja. Međutim, kao poseban izuzetak, raspodeljeni izvorni kôd ne mora da uključuje sve ono što se obično raspodeljuje (bilo u izvornom ili izvršnom obliku) sa glavnim komponentama (prevodiocem, jezgrom, i tako dalje) operativnog sistema na kojem se pokreće izvršna datoteka, osim ukoliko se sama ta komponenta ne isporučuje uz izvršnu datoteku.</para>
+      
+      <para>Ako se raspodela izvršnog ili objektnog kôda vrši nuđenjem pristupa za umnožavanje sa određenog mesta, onda se nuđenje istovetnog pristupa umnožavanju izvornog kôda sa istog mesta računa kao raspodela izvornog kôda, čak i ako se od treće strane ne zahteva da umnožava izvorni kôd zajedno sa objektnim kôdom.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Odeljak 4</title>
+      
+      <para>Ne smete umnožavati, menjati, podlicencirati ili raspodeljivati Program izuzev pod izričitim odredbama ove licence. Svaki pokušaj da na drugi način umnožite, menjate, podlicencirate ili raspodeljujete Program je ništavan, i automatski će ukinuti vaša prava pod ovom licencom. Međutim, stranama koje su od vas primile primerke ili prava pod ovom Licencom neće biti ukinute njihove licence sve dok takve strane ostanu u potpunoj saglasnosti.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Odeljak 5</title>
+
+      <para>Niste obavezni da prihvatite ovu licencu, pošto je niste ni potpisali. Međutim, ništa drugo vam ne dozvoljava da menjate ili raspodeljujete Program ili izvedena dela. Te radnje su zabranjene zakonom ukoliko ne prihvatite ovu licencu. Tako, menjanjem ili raspodeljivanjem Programa (ili dela zasnovanog na Programu), vi prihvatate ovu Licencu, i sve njene odredbe i uslove za umnožavanje, raspodelu ili menjanje Programa ili dela zasnovanih na njemu.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Odeljak 6</title>
+
+      <para>Svaki put kada raspodeljujete Program (ili bilo koje delo zasnovano na Programu), primalac automatski prima licencu od prvobitnog davaoca licence za umnožavanje, raspodelu ili menjanje Programa prema ovim odredbama i uslovima. Vi ne možete primaocu da nametnete nikakva dalja ograničenja na bilo kakvo korišćenje ovde garantovanih prava. Vi niste odgovorni za primenu saglasnosti od strane trećih lica na ove licence.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Odeljak 7</title>
+
+      <para>Ako su vam, kao posledica sudske presude ili pod izgovorom kršenja patenta ili zbog bilo kog drugog razloga (ne ograničavajući se na pitanja patenata), nametnuti uslovi (bilo sudskim nalogom, dogovorom ili drugačije) koji su suprotni uslovima ove licence, isti vas ne izuzimaju iz uslova ove licence. Ako ne možete da raspodeljujete i da istovremeno zadovoljite vaše obaveze pod ovom licencom i pod bilo kojom drugom značajnom obavezom, onda je posledica svega toga da ne možete program da raspodeljujete uopšte. Na primer, ako licenca patenta ne dozvoljava besplatnu raspodelu Programa od strane svih onih koji direktno ili indirektno prime primerak preko vas, onda jedini način da zadovoljite i taj uslov i ovu licencu jeste taj da se u potpunosti odreknete raspodele Programa.</para>
+
+      <para>Ako se bilo koji deo ovog odeljka smatra nevažećim ili neprimenljivim pod bilo kojom određenom okolnošću, primenjuje se ostatak odeljka a odeljak u celini se primenjuje u ostalim okolnostima.</para>
+
+      <para>Nije svrha ovog odeljka da vas navede da prekršite bilo koja potraživanja patenta ili drugih prava na svojinu niti da ospori punovažnost takvih potraživanja; jedina svrha ovog odeljka je da zaštiti celovitost sistema raspodele slobodnog softvera, koja se sprovodi primenom javnih licenci. Mnogi ljudi su dali velikodušne doprinose širokom spektru softvera raspodeljenog ovim sistemom oslanjajući se na doslednu primenu tog sistema; na autoru/donatoru je da odluči da li je on ili ona spreman/spremna da raspodeljuje softver nekim drugim sistemom a licenca ne može da nametne taj izbor.</para>
+
+      <para>Ovaj odeljak je namenjen da detaljno razjasni ono što se veruje da je posledica ostatka ove licence.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Odeljak 8</title>
+
+      <para>Ako je raspodela i/ili korišćenje Programa ograničeno u određenim zemljama, bilo patentima ili autorskim pravima, prvobitni nosilac autorskih prava koji stavi Program pod ovu licencu može da doda izričito geografsko ograničenje raspodele isključujući te zemlje, tako da je raspodela dozvoljena samo u zemlji ili zemljama koje nisu na taj način isključene. U tom slučaju, ova licenca uključuje ograničenje kao da je njen sastavni deo.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Odeljak 9</title>
+      
+      <para>Zadužbina slobodnog softvera može s vremena na vreme da objavi prerađena i/ili nova izdanja Opšte javne licence. Takve prerade će po duhu biti slične sadašnjem izdanju, ali se mogu razlikovati u detaljima u cilju ukazivanja na nove probleme ili pitanja.</para>
+
+      <para>Svakom izdanju se dodaje broj za razlikovanje izdanja. Ako Program određuje broj izdanja Licence koja mu se primenjuje i „bilo koje novije izdanje“, imate mogućnost da sledite odredbe i uslove bilo tog izdanja ili bilo kog novijeg izdanja koje objavi Zadužbina slobodnog softvera. Ako program ne određuje broj izdanja te Licence, možete da izaberete bilo koje izdanje koje je do sada objavila Zadužbina slobodnog softvera.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Odeljak 10</title>
+
+      <para>Ako želite da pripojite delove Programa drugim slobodnim programima čiji su uslovi raspodele drugačiji, pišite autoru i od njega zatražite odobrenje. Za softver za koji autorska prava zadržava Zadužbina slobodnog softvera, pišite Zadužbini slobodnog softvera; za ovo mi ponekad napravimo izuzetke. Naša odluka će biti motivisana u cilju očuvanja slobodnog statusa svih proisteklih radova našeg slobodnog softvera i u cilju promovisanja deljenja i ponovne upotrebe softvera uopšte.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>NEDOSTATAK GARANCIJE</title>
+      <subtitle>Odeljak 11</subtitle>
+
+      <para>ZATO ŠTO JE PROGRAM LICENCIRAN BEZ OBAVEZA, NE POSTOJI GARANCIJA ZA PROGRAM, DO GRANICE DOPUŠTENE MERODAVNIM ZAKONOM. OSIM AKO NIJE DRUGAČIJE NAVEDENO, NOSIOCI AUTORSKIH PRAVA I/ILI DRUGA LICA OBEZBEĐUJU PROGRAM „KAKAV JESTE“ BEZ GARANCIJE BILO KAKVE VRSTE, BILO IZRAŽENE ILI PRIMENJENE, UKLJUČUJUĆI, ALI NE OGRANIČAVAJUĆI SE NA, PRIMENJENE GARANCIJE TRŽIŠNE VREDNOSTI I PRILAGOĐENOSTI ODREĐENOJ NAMENI. CELOKUPAN RIZIK NA KVALITET I PERFORMANSE PROGRAMA JE VAŠ. AKO PROGRAM POKAŽE NEDOSTATKE, VI PREUZIMATE TROŠKOVE SVIH POTREBNIH SERVISIRANJA, POPRAVKI ILI PREPRAVLJANJA.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Odeljak 12</title>
+
+      <para>NI U KOM SLUČAJU, IZUZEV AKO TO NE ZAHTEVA MERODAVNI ZAKON ILI PISMENI DOGOVOR, NEĆE NOSILAC AUTORSKIH PRAVA, ILI BILO KOJE DRUGO LICE KOJE MOŽE DA IZMENI I/ILI RASPODELI PROGRAM KAO ŠTO JE TO DOPUŠTENO LICENCOM, BITI ODGOVORAN VAMA ZA ŠTETE, UKLJUČUJUĆI SVE OPŠTE, POSEBNE, SLUČAJNE ILI POSLEDIČNE ŠTETE NASTALE USLED KORIŠĆENJA ILI NEMOGUĆNOSTI KORIŠĆENJA PROGRAMA (UKLJUČUJUĆI ALI NE OGRANIČAVAJUĆI SE NA GUBITAK PODATAKA ILI POGREŠAN PRIKAZ PODATAKA ILI GUBITKE KOJE STE IZAZVALI VI ILI TREĆA LICA, ILI NA NEUSPEH PROGRAMA ZA RAD SA BILO KOJIM DRUGIM PROGRAMIMA), ČAK I AKO SU TAJ NOSILAC ILI DRUGA LICA BILA OBAVEŠTENA O MOGUĆNOSTI TAKVIH ŠTETA.</para>
+    </sect2>
+  </sect1>
+</article>

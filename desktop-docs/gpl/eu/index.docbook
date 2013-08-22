@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="eu">
+  <articleinfo>
+    <title>GNU Lizentzia Publiko Orokorra</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>GNOMEren dokumentazio-proiektua</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Edonork egin eta banatu ditzake lizentzia-dokumentu honen kopia literalak, baina debekatuta dago dokumentuan aldaketak egitea.</para>
+    </legalnotice>
+
+    <releaseinfo>2. bertsioa, 1991ko ekaina</releaseinfo>
+
+    <abstract role="description"><para>Softwarea partekatzeko eta aldatzeko askatasuna kentzeko diseinatuta daude software-lizentzia gehienak. Aitzitik, software librea partekatu eta aldatzeko duzun askatasuna bermatzea da GNU Lizentzia Publiko Orokorraren xedea, hau da, softwarea erabiltzaile guztientzat librea izango dela ziurtatzea.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Aitzinsolasa</title>
+    
+    <para>Softwarea partekatzeko eta aldatzeko askatasuna kentzeko diseinatuta daude software-lizentzia gehienak. Aitzitik, software librea partekatu eta aldatzeko duzun askatasuna bermatzea da GNU Lizentzia Publiko Orokorraren xedea, hau da, softwarea erabiltzaile guztientzat librea izango dela ziurtatzea. Lizentzia Publiko Orokor hau Free Software Foundation-en software gehienari aplikatzen zaio, baita beste edozein programari ere, egileek hala aginduz gero. (Free Software Foundation-en beste zenbait softwareri GNU Liburutegien Lizentzia Publiko Orokorra aplikatzen zaio horren ordez) Zure programei ere aplika diezaiekezu.</para>
+
+    <para>Software libreaz hitz egiten dugunean, askatasunari buruz ari gara, eta ez prezioari buruz. Gure Lizentzia Publiko Orokorren xedea da software librearen kopiak banatzeko (eta, nahi izanez gero, zerbitzu horrengatik kobratzeko) askatasuna duzula ziurtatzea, iturburu-kodea jasoko duzula edo, nahi izanez gero, hartzeko aukera duzula bermatzea, softwarea aldatzeko edo software zatiak beste programa libre berri batzuetan erabiltzeko eskubidea duzula segurtatzea eta gauza horiek egin ditzakezula jakinaraztea.</para>
+
+    <para>Zure eskubideak babesteko, norbaitek zuri eskubide hauek ukatzea edo eskubide horiei uko eginaraztea debekatzeko eta eragozteko mugak jarri behar ditugu. Mugaketa horien ondorioz, softwarea aldatu edo kopiak banatzen badituzu, zenbait erantzukizun hartuko dituzu zure gain.</para>
+
+    <para>Adibidez, horrelako programa baten kopiak banatzen badituzu, bai doan eta bai kuota baten truke, zuk dituzun eskubide guztiak eman behar dizkiezu hartzaileei. Beraiek ere iturburu-kodea jasotzen dutela edo jaso dezaketela ziurtatu behar duzu. Eta baldintza hauek erakutsi behar dizkiezu, zer eskubide dituzten jakin dezaten.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>Horrez gainera, egile oro eta geure burua babestearren, ziurtatu nahi dugu jende guztiak ulertzen duela software libre honek ez duela inolako bermerik. Norbaitek softwarea aldatu eta beste bati pasatzen badio, hartzaileak, berak jaso duena ez dela jatorrizkoa jakitea nahi dugu, besteen eraginez sortzen diren arazoek kalterik egin ez diezaioten jatorrizkoaren egilearen ospe edo izen onari.</para>
+
+    <para>Azkenik, aipatu beharrekoa da software-patenteek etengabe mehatxu egiten diotela edozein programa libreri. Programa libre baten birbanatzaileek patente-lizentziak banaka eskuratu eta, ondorioz, programaren jabe egitearen arriskua ekidin nahi dugu. Hori gerta ez dadin, argi utzi dugu patente guztiek edonork askatasunez erabiltzeko lizentzia izan behar dutela, edo, bestela, inongo lizentziarik ez.</para>
+
+    <para>Softwarea kopiatzeko, banatzeko eta aldatzeko baldintza zehatzak dituzu jarraian:</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>KOPIATZEKO, BANATZEKO ETA ALDATZEKO BALDINTZAK</title>
+
+    <sect2 id="sect0" label="0">
+      <title>0 atala</title>
+      <para>Lizentzia Publiko Orokor honen baldintzen pean banatu daitekeela adierazten duen oharra jarri baldin badio egile-eskubideen jabeak, programa edo lan horri lizentzia hau aplikatuko zaio. Behean aipatzen den <quote>Programa</quote> hitzak horrelako edozein programari edo lani egiten dio erreferentzia, eta <quote>programan oinarritutako lanarekin</quote> egile-eskubideen legearen baitan egindako Programa edo edozein lan eratorri adierazi nahi da: hau da, Programa bera edo Programaren zati bat daukan lana, bai kopia literala, bai aldaketak dituen kopia eta bai beste hizkuntza batera itzulitakoa ere. (Aurrerantzean, itzulpena <quote>aldaketa</quote> terminoaren baitan sartuko da inongo mugarik gabe.) Lizentziadun oro adierazteko <quote>zu</quote> erabiltzen da.</para>
+
+      <para>Lizentzia honi dagozkion jarduera bakarrak kopiatzea, banatzea eta aldatzea dira; bestelako jarduerak lizentzia honen esparrutik kanpo daude. Programa exekutatzea ez dago mugatuta, eta Programaren emaitza estaltzen da edukia Programan oinarritutako lana bada soilik (Programa exekutatuz egina izan edo ez). Egia den edo ez, programak egiten duenaren araberakoa da.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>1. atala</title>
+      <para>Programaren iturburu-kodea jaso bezala literalki kopiatu eta banatu dezakezu, edozein euskarritan, baldin eta behar bezala eta ikusteko moduan jartzen badiozu kopia bakoitzari egile-eskubideen oharra eta bermerik ez duela dioen oharra; Lizentziari eta bermerik ezari dagozkion ohar guztiak oso-osorik mantentzen badituzu; eta Programaren hartzaile guztiei Lizentziaren kopia ematen badiezu Programarekin batera.</para>
+      
+      <para>Kuota kobra dezakezu kopia ematearen ekintza fisikoagatik, eta zure esku dago garantia-babesa ematea kuota baten truke.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>2. atala</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Aldatua izan den lanari bere osotasunean hartuta aplikatuko zaizkio betebehar horiek. Lan horren atal identifikagarriak ez badira Programatik eratorritakoak, eta ondorioz lan independente eta bereizitzat har baldin badaitezke, Lizentzia hau eta baldintzak ez zaizkie atal horiei aplikatuko lan independente gisa banatzerakoan. Baina atal horiek Programan oinarritutako lan oso baten zati bezala banatzen badituzu, lan oso horren banaketa Lizentzia honen baldintzak betez egin behar da, eta lizentzia honek beste lizentziadun batzuentzat dituen baimenek osorik hartzen dute, eta, beraz, zati bakoitza eta zati guztiak, nork idatziak diren kontuan hartu gabe.</para>
+
+      <para>Honela, beraz, atal honen xedea ez da zuk osoki idatzitako lanaren eskubideak eskatu edo exijitzea, baizik eta Programan oinarritutako lan eratorrien edo talde-lanen banaketa kontrolatzeko eskubidea baliatzea.</para>
+
+      <para>Horrez gainera, Programari (edo programan oinarritutako lan bati) Programan oinarritu gabeko beste lan bat gehitzen bazaio biltegi-bolumen batean edo banaketarako euskarri batean, gehitze hutsarengatik beste lan hori ez da sartuko Lizentzia honen esparruan.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>3. atala</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Lan baten iturburu-kodea da lanari aldaketak egiteko modurik egokiena. Lan exekutagarri baten iturburu-kode osoa zera da: bere modulu guztien iturburu-kodea, lan horri lotutako edozein interfazeren definizio-fitxategiak eta exekutagarriaren konpilazioa eta instalazioa kontrolatzeko erabiltzen diren script-ak. Nolanahi ere, aparteko salbuespen gisa, banatzen den iturburu-kodeak ez dauka eman beharrik exekutatzeko erabiltzen den sistema eragilearen osagai nagusiekin (konpiladorea, nukleoa eta abar) banatu ohi den guztia (iturburu nahiz bitar moduan), baldin eta osagaia bera ez bada exekutagarriarekin batera banatzen.</para>
+      
+      <para>Exekutagarri edo objektu-kodeen banaketa xede horretarako zehaztutako leku batetik kopiatzeko sarbidea eskainiz egiten bada, leku beretik iturburu-kodea kopiatzeko sarbide baliokidea eskaintzea iturburu-kodearen banaketa gisa hartzen da, nahiz eta hirugarren alderdiak ez dauden behartuta objektu-kodearekin batera iturburua kopiatzera.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>4. atala</title>
+      
+      <para>Lizentzia honen baitan espresuki adierazitakoa bete gabe debekatuta dago Programa kopiatu, aldatu, azpilizentziatu edo banatzea. Beste era batean Programa kopiatu, aldatu, azpilizentziatu edo banatzeko saio oro deuseza izango da, eta Lizentzia honen baitan dauzkazun eskubideak automatikoki kenduko zaizkizu. Dena den, Lizentzia honen pean zuregandik kopiak edo eskubideak jaso dituztenei ez zaizkie lizentziak kenduko, baldintza guztiak betetzen badituzte.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>5. atala</title>
+
+      <para>Lizentzia hau sinatu ez duzunez, ez daukazu onartu beharrik. Nolanahi ere, beste ezerk ez dizu emango Programa edo programatik eratorritako lanak aldatzeko edo banatzeko baimenik. Ekintza horiek legez debekatuta daude Lizentzia hau onartu ezean. Ondorioz, Programa (edo Programan oinarritutako edozein lan) aldatu edo kopiatzen baduzu, Lizentzia hau onartzen duzula adierazten duzu, eta horrekin batera, Programa edo Programan oinarritutako lanak kopiatzeko, banatzeko eta aldatzeko baldintza guztiak.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>6. atala</title>
+
+      <para>Programa (edo Programan oinarritutako edozein lan) birbanatzen duzun bakoitzean, hartzaileak automatikoki jasotzen du jatorrizko lizentzia-emailearengandik Programa kopiatu, banatu edo aldatzeko lizentzia, baldintza hauetan. Hemen ematen diren eskubideei dagokienez, ezin diozu bestelako murriztapenik ezarri hartzaileari. Ez da zure ardura hirugarrenei Lizentzia hau betearaztea.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>7. atala</title>
+
+      <para>Epaitegi-ebazpen baten ondorioz edo patente-eskubidea urratu dela dioen salaketa baten ondorioz, edo beste edozein arrazoirengatik (ez bakarrik patente-gaiei dagokiena) Lizentzia honen baldintzekin bat ez datozen baldintzak ezartzen bazaizkizu, ez zara Lizentzia honen baldintzak bete beharretik libratuko. Ezinezkoa bazaizu Lizentzia honetako baldintzak eta dagozkion beste betebehar batzuk betez banatzea, ezingo duzu Programa inola ere banatu. Adibidez, patente-lizentzia batek ez balu onartuko zure bitartez zuzenean edo zeharka kopiak jasotzen dituztenek Programa egile-eskubiderik gabe birbanatzea, Programa ez banatzea litzateke bai patentea, bai Lizentzia hau betetzeko modu bakarra.</para>
+
+      <para>Atal honen zatiren bat baliogabea edo bete ezina bada egoera bereziren batean, atalaren gainerako guztia aplikatu beharko da, eta atala bere osotasunean aplikatu beharko da beste egoeretan.</para>
+
+      <para>Atal honen xedea ez da patenteak edo jabetza-eskubideen eskakizunak ez betetzera bultzatzea edo halako eskakizunen baliozkotasuna ukatzea; atal honen xede bakarra da software librearen banaketa-sistemaren zuzentasuna babestea, lizentzia publikoen bidez bideratzen baita. Sistema horren baitan banatutako software ugariari ekarpen oparoa egin dio jende askok, sistema modu iraunkorrean aplikatuko delakoan. Egile/emailearen esku dago erabakitzea beste sistemaren baten bidez banatu nahi duen edo ez, eta lizentziadun batek ezin du halako erabakirik inposatu.</para>
+
+      <para>Atal honek argi eta garbi utzi nahi du zer den Lizentziaren gainerako zatiaren ondoriotzat jotzen dena.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>8. atala</title>
+
+      <para>Zenbait herrialdetan Programaren banaketa edo/eta erabilera mugatzen baldin badute patenteen edo copyright-dun interfazeen bidez, jatorrizko copyrighta duenak geografikoki mugatu ahal izango du banaketa herrialde horiek kanpoan uzteko, era horretan baztertu gabeko herrialdeetan edo herrialdeen artean soilik egin dadin banaketa. Halako kasuetan, mugaketa hori Lizentzia honetan sartuta geratuko da, Lizentziaren gorputzean idatzita egongo balitz bezala.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>9. atala</title>
+      
+      <para>Free Software Foundation-ek noizean behin Lizentzia Publiko Orokorraren bertsio berrikusiak edo berriak argitara ditzake. Bertsio berri horiek egungoaren antzekoak izango dira espirituz, baina, arazo edo kezka berriei aurre egin beharko dietenez, litekeena da zehatz-mehatz bat ez etortzea.</para>
+
+      <para>Bertsio bakoitzak bertsio-zenbaki desberdindua dauka. Programak zehazten badu Lizentzia honen bertsio-zenbaki jakin bat edo bertsio berriago bat aplikatzen zaiola, aukera duzu bertsio horren edo Free Software Foundation-ek geroago argitaratutako beste bertsioren baten baldintzak betetzeko. Programak ez badu Lizentzia honen bertsio-zenbakirik zehazten, Free Software Foundation-ek argitaratutako bertsioetako edozein aukeratu dezakezu.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>10. atala</title>
+
+      <para>Banaketa-baldintza desberdinak dituzten beste programa libre batzuetan sartu nahi badituzu Programaren zatiak, idatz iezaiozu egileari baimena eskatzeko. Free Software Foundation-en esku baldin badaude jabetza intelektualeko eskubideak, idatz ezazu Free Software Foundation-era, batzuetan salbuespenak egiten baititugu halakoetan. Gure erabakia bi helburu hauen araberakoa izango da: gure software libretik eratorritako lan guztien egoera librea mantentzea eta oro har softwarea partekatua eta berrerabilia izan dadin sustatzea.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>BERMERIK EZA</title>
+      <subtitle>11. atala</subtitle>
+
+      <para>PROGRAMAREN LIZENTZIA DOAN EMATEN DENEZ, PROGRAMAK EZ DU BERMERIK, LEGE APLIKAGARRIAK ONARTZEN DUEN NEURRIAN. AURKAKORIK ADIERAZTEN EZ DEN KASUETAN, JABETZA INTELEKTUALEKO ESKUBIDEA DUTENEK ETA/EDO BESTE ALDERDI BATZUEK PROGRAMA <quote>DAGOEN-DAGOENEAN</quote> EMATEN DUTE INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK, BARNE HARTUZ, BAINA HORRETARA MUGATU GABE, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKITASUNAREN BERMEA. PROGRAMAREN KALITATEARI ETA ERRENDIMENDUARI DAGOKIONEZ, ZURE GAIN DAGO ARRISKU GUZTIA. PROGRAMAK AKATSIK IZANGO BALU, KONPONTZEKO EDO ZUZENTZEKO BEHARREZKO ZERBITZU GUZTIEN KOSTUA ZURE GAIN HARTU BEHARKO ZENUKE.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>12. atala</title>
+
+      <para>LEGE APLIKAGARRIAK EDO IDATZIZ JASOTAKO BORONDATEZKO AKORDIO BATEK HALA ESKATZEN DUELAKO EZ BADA, EZIN IZANGO DIOZU JABETZA INTELEKTUALAREN ESKUBIDEDUNARI EDO GOIAN BAIMENTZEN DEN BEZALA PROGRAMA BIRBANATU EDO ALDA DEZAKEEN BESTE ALDERDI BATI ERANTZUKIZUNIK ESKATU EZ KALTEENGATIK, EZ PROGRAMAREN ERABILERAREN EDO ERABILTZEKO EZGAITASUNAREN ONDORIOZ SOR DAITEZKEEN KALTE OROKOR, BEREZI, GEHIGARRI EDO ONDORIOZKOENGATIK (BESTEAK BESTE, DATUAK GALTZEA EDO HONDATZEA, EDO ZUK EDO BESTE NORBAITEK JASANDAKO GALERAK, EDO BESTE PROGRAMEKIN LAN EGITEKO PROGRAMAREN HUTS EGITEREN BAT), NAHIZ ETA ESKUBIDEDUNARI EDO BESTE NORBAIT HORRI KALTEAK IZAN LITEZKEELA AURRETIK ABISATU IZAN.</para>
+    </sect2>
+  </sect1>
+</article>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="sv">
+   <articleinfo>
+    <title>GNU Free Documentation License</title>
+      <releaseinfo>Version 1.1, Mars 2000</releaseinfo>
+      
+      <copyright>
+	<year>2000</year><holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Dokumentationsprojekt för GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>1.1</revnumber>
+          <date>2000-03</date>
+        </revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Everyone is permitted to
+	    copy and distribute verbatim copies of this license
+	    document, but changing it is not allowed.
+	</para>
+      </legalnotice>
+
+      <abstract role="description"><para>Syftet med denna licens är att göra en handbok, bok, eller annat praktiskt och användbart dokument <quote>fritt</quote> som i frihet: att försäkra var och en den faktiska friheten att kopiera och sprida det vidare, med eller utan förändringar, antingen kommersiellt eller ideellt. Sekundärt bevarar denna licens ett sätt för författaren och förläggaren att få ära för deras arbete utan att de anses vara ansvariga för förändringar gjorda av andra.</para></abstract>
+    </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>BAKGRUND</title>
+    <para>Syftet med denna licens är att göra en handbok, bok, eller annat praktiskt och användbart dokument <quote>fritt</quote> som i frihet: att försäkra var och en den faktiska friheten att kopiera och sprida det vidare, med eller utan förändringar, antingen kommersiellt eller ideellt. Sekundärt bevarar denna licens ett sätt för författaren och förläggaren att få ära för deras arbete utan att de anses vara ansvariga för förändringar gjorda av andra.</para>
+    
+    <para>Denna Licens är en sorts <quote>copyleft</quote>, vilket betyder att derivativa verk av detta dokument själva måste vara fria på samma sätt. Den kompletterar GNU General Public License, som är en copyleft-licens utformad för fri programvara.</para>
+    
+    <para>Vi har utformat denna licens för att den skall användas för handböcker till fri programvara, eftersom fri programvara behöver fri dokumentation: ett fritt program bör ha en handbok som erbjuder samma friheter som programmet gör. Men denna licens är inte begränsad till programvaruhandböcker; den kan användas för vilket textverk som helst oavsett ämne eller huruvida det är en utgiven, tryckt bok. Vi rekommenderar denna licens huvudsakligen för alla verk vars syfte är instruktion eller referens.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>TILLÄMPNINGSOMRÅDE OCH DEFINITIONER</title>
+    <para id="fdl-document">Denna licens [det engelska originalet] gäller för varje handbok eller annat verk, oavsett uttrycksform, som innehåller ett meddelande där upphovsrättsinnehavaren stadgat att verket kan spridas enligt villkoren i GNU Free Documentation License. Ett sådant meddelande ger en internationell frihet utan krav på ersättning och utan tidsbegränsning att använda verket under villkoren i denna licens [det engelska originalet]. <quote>Dokument</quote> nedan syftar på godtycklig handbok eller verk. Var och en är licenstagare och benämns som <quote>du</quote>.</para>
+    
+    <para id="fdl-modified">En <quote>förändrad version</quote> av dokumentet avser varje verk som innehåller dokumentet eller en del av det, antingen ordagranna kopior, eller med ändringar och/eller översatt till ett annat språk.</para>
+	
+    <para id="fdl-secondary">Ett <quote>sekundärt avsnitt</quote> är en märkt bilaga eller förord till <link linkend="fdl-document">dokumentet</link> som exklusivt behandlar förhållandet mellan dokumentets förläggare eller författare och dokumentets huvudsakliga ämne (eller till relaterade ämnen) och som inte innehåller något som direkt faller under det huvudsakliga ämnet. (Således, om dokumentet delvis är en lärobok i matematik så får ett sekundärt avsnitt inte förklara någon matematik.) Förhållandet kan vara en historisk koppling till ämnet eller något relaterat, eller en juridisk, kommersiell, filosofisk, etisk eller politisk ställning till det.</para>
+
+    <para id="fdl-invariant">De <quote>oföränderliga avsnitten</quote> är <link linkend="fdl-secondary">sekundära avsnitt</link> vars titlar är angivna som oföränderliga avsnitt i meddelandet som stadgar att <link linkend="fdl-document">dokumentet</link> är utgivet under denna licens [det engelska originalet].</para>
+    
+    <para id="fdl-cover-texts"><quote>Omslagstexterna</quote> är speciella korta ordföljder som är listade som framsidestexter eller baksidestexter i meddelandet som stadgar att <link linkend="fdl-document">dokumentet</link> är utgivet under denna licens [det engelska originalet].</para>
+	
+    <para id="fdl-transparent">En <quote>transparent</quote> kopia av <link linkend="fdl-document">dokumentet</link> är en maskinläsbar kopia, representerad i ett format vars specifikation finns tillgänglig för allmänheten, som lämpar sig för att revidera dokumentet på ett enkelt sätt med generella textredigeringsprogram eller (för pixelbaserade bilder) generella grafikprogram eller (för ritningar) något väl tillgängligt ritprogram, och som är passande som indata till textfomaterare eller för automatisk konvertering till en mängd format som passar som indata till textformaterare. En kopia i ett för övrigt transparent filformat vars markeringar, eller avsaknad av markeringar, har ordnats för att hindra eller motverka att vidare förändring vidtas av läsare är inte transparent. Ett bildformat är inte transparent om det används för någon betydande del text. En kopia som inte är <quote>transparent</quote> kallas <quote>opak</quote>.</para>
+    
+    <para>Exempel på passande format för transparenta kopior innefattar ren ASCII utan markeringar, Texinfo indataformat, LaTeX indataformat, SGML eller XML som använder en publikt tillgänglig DTD, och standardenlig HTML, PostScript eller PDF utformat för mänsklig förändring. Exempel på transparenta bildformat innefattar PNG, XCF och JPG. Opaka format innefattar leverantörsspecifika format som bara kan läsas och editeras med leverantörsspecifika ordbehandlare, SGML eller XML för vilket DTD och/eller verktyg för behandling inte finns allmänt tillgängliga, och den maskingenererade HTML, PostScript eller PDF som produceras av vissa ordbehandlare enbart avsett som utdata.</para>
+    
+    <para id="fdl-title-page"><quote>Titelsidan</quote> innebär, för en tryckt bok, titelsidan själv, och sådana därpå följande sidor som krävs för att göra det material som enligt denna licens skall synas på titelsidan läsbart. För verk i sådana format som inte har någon egentlig titelsida, avses med <quote>titelsida</quote> den text som är närmast den mest framstående förekomsten av verkets titel, föregående den huvudsakliga textmassan.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>ORDAGRANN KOPIERING</title>
+    <para>Du äger kopiera och sprida <link linkend="fdl-document">dokumentet</link> på valfritt medium, antingen kommersiellt eller ideellt, förutsatt att denna licens [det engelska originalet], upphovsrättsklausul, och meddelandet som stadgar att GNU Free Documentation License gäller för dokumentet finns med på alla kopior, och att du inte lägger till några som helst andra villkor än de som ingår i denna licens. Du äger inte vidta tekniska åtgärder för att begränsa eller kontrollera läsande eller vidare kopiering av de kopior du skapar eller sprider. Dock äger du ta emot kompensation i utbyte mot kopior. Om du sprider tillräckligt många kopior måste du också följa villkoren i <link linkend="fdl-section3">paragraf 3</link>.</para>
+    
+    <para>Du äger också låna ut kopior, under samma villkor som ovan, och du äger visa kopior offentligt.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>OMFATTANDE KOPIERING</title>
+    <para>Om du publicerar tryckta kopior (eller kopior i medier som normalt har tryckta omslag) av <link linkend="fdl-document">dokumentet</link>, i en upplaga överstigande 100 exemplar, och dokumentets licensmeddelande kräver <link linkend="fdl-cover-texts">omslagstexter</link>, så måste du förse kopiorna med omslag som, klart och tydligt, visar alla omslagstexter: framsidestexter på framsidan och baksidestexter på baksidan. Båda omslagen måste klart och tydligt identifiera dig som utgivare av dessa kopior. Framsidan måste presentera dokumentets hela titel, med alla ord i titeln lika framträdande och synliga. Du äger lägga till ytterligare stoff på omslagen. Kopiering med förändringar gjorda bara på omslaget, så länge som de bevarar <link linkend="fdl-document">dokumentets</link> titel och i övrigt uppfyller dessa krav kan anses vara ordagrann kopiering i andra avseenden.</para>
+    
+    <para>Om de obligatoriska texterna för något omslag är för omfattande för att rymmas i läsbart skick skall du placera de första (så många som får plats) på det egentliga omslaget, och fortsätta med resten på de direkt intilliggande sidorna.</para>
+    
+    <para>Om du publicerar <link linkend="fdl-transparent">opaka</link> kopior av <link linkend="fdl-document">dokumentet</link> i upplagor om mer än 100, måste du antingen bifoga en maskinläsbar <link linkend="fdl-transparent">transparent</link> kopia med varje opak kopia, eller ange i eller med varje opak kopia en nätverksadress som är tillgänglig för den allmänna nätverksanvändande massan där man, med öppet standardiserade protokoll, kan ladda ner en komplett transparent kopia av dokumentet, utan extra material. Om du väljer det senare alternativet, måste du vidta skäliga åtgärder, när du börjar sprida opaka kopior i kvantitet, för att denna transparenta kopia skall förbli tillgänglig på angivna platsen till åtminstone ett år efter den sista gången du spred en opak kopia (direkt eller via ombud eller återförsäljare) av den utgåvan till allmänheten.</para>
+    
+    <para>Det är önskvärt, men inte ett krav, att du kontaktar författarna till <link linkend="fdl-document">dokumentet</link> i god tid innan du sprider något större antal kopior, för att ge dem en chans att förse dig med en uppdaterad version av dokumentet.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>FÖRÄNDRINGAR</title>
+    <para>Du äger kopiera och sprida en <link linkend="fdl-modified">förändrad version</link> av <link linkend="fdl-document">dokumentet</link> under de villkor som beskrivs i paragraf <link linkend="fdl-section2">2</link> och <link linkend="fdl-section3">3</link> av GNU Free Documentation License, förutsatt att du släpper den förändrade versionen under exakt denna licens, och att den förändrade versionen antar dokumentets roll, och således medger spridning och förändring av den förändrade versionen till envar som erhåller en kopia av den. Utöver detta måste du göra följande med den ändrade versionen:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>På <link linkend="fdl-title-page">titelsidan</link> (och omslagen om det finns några) använda en titel skild från den som [original]<link linkend="fdl-document">dokumentet</link> har, och skild från tidigare versioners titel (som skall, om det finns några, finnas listade i historikavsnittet i dokumentet). Du äger använda samma titel som det föregående dokumentet om den ursprungliga utgivaren ger sitt tillstånd.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Lista på <link linkend="fdl-title-page">titelsidan</link>, som författare, en eller flera personer eller juridiska personer som ansvarat för förändringarna i den <link linkend="fdl-modified">förändrade versionen</link>, tillsammans med minst fem av de huvudsakliga författarna av <link linkend="fdl-document">dokumentet</link> (alla dess huvudsakliga författare, om det har mindre än fem).</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Ange namnet på utgivaren av den <link linkend="fdl-modified">förändrade versionen</link>, som utgivare, på <link linkend="fdl-title-page">titelsidan</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bibehålla <link linkend="fdl-document">dokumentets</link> alla upphovsrättsklausuler.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Lägga till en upphovsrättsklausul för dina förändringar angränsande till de andra upphovsrättsklausulerna.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Direkt efter upphovsrättsklausulerna innefatta ett meddelande som ger allmänheten tillstånd att använda den <link linkend="fdl-modified">förändrade versionen</link> under villkoren i denna licens [det engelska originalet] i den form som visas i Tillägg nedan.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>I meddelandet om licensen bevara den fullständiga listan över <link linkend="fdl-invariant">oföränderliga avsnitt</link> och obligatoriska <link linkend="fdl-cover-texts">omslagstexter</link> som finns i <link linkend="fdl-document">dokumentets</link> meddelande om licensen.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Inkludera en oförändrad kopia av denna licens [Det är den engelska originalversionen som avses].</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bevara avsnittet med titeln <quote>historik</quote> (History), bevara dess titel och lägg i avsnittet till en post med åtminstone titeln, året, nya författare och utgivaren av den <link linkend="fdl-modified">förändrade versionen</link> så som angivet på <link linkend="fdl-title-page">titelsidan</link>. Om det inte finns något avsnitt med titeln <quote>historik</quote> (History) i <link linkend="fdl-document">dokumentet</link> så skapa en med titeln, året, författare och utgivaren av dokumentet så som det står på [original]dokumentets titelsida. Lägg sedan till en post som beskriver den förändrade versionen så som beskrivits ovan.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bevara den nätverksadress, om det finns någon, angiven i <link linkend="fdl-document">dokumentet</link> till den allmänt tillgängliga <link linkend="fdl-transparent">transparenta</link> kopian av dokumentet, och likaså nätverksadresserna till de föregående versioner som dokumentet baseras på. Dessa får placeras i avsnittet <quote>historik</quote> (History). Du äger utelämna en nätverksadress för ett verk som är publicerat mer än fyra år före dokumentet självt, eller om den ursprunglige utgivaren vars verk nätverksadressen hänvisar till ger sitt tillstånd.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>För alla avsnitt med titlarna <quote>tillkännagivanden</quote> (Acknowledgements) eller <quote>dedikationer</quote> (Dedications), bevara titeln på avsnittet, och bevara allt innehåll och prägel på alla tillkännagivanden och/eller dedikationer gjorda av varje bidragare.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bevara alla <link linkend="fdl-invariant">oföränderliga avsnitt</link> i <link linkend="fdl-document">dokumentet</link> oförändrade till text och titel. Avsnittsnummer eller motsvarande anses inte tillhöra avsnittets titel.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Radera varje avsnitt med titeln <quote>endossering</quote> (Endorsements). Ett sådant avsnitt får inte inkluderas i en <link linkend="fdl-modified">förändrad version</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Inte byta titel på något existerande avsnitt så att det blir <quote>endossering</quote> (Endorsements) eller så att titeln kan förväxlas med något <link linkend="fdl-invariant">oföränderligt avsnitt</link>.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Om den <link linkend="fdl-modified">förändrade versionen</link> innehåller nya framsidestexter eller bilagor som är att anses som <link linkend="fdl-secondary">sekundära avsnitt</link> och inte innehåller något material kopierat från dokumentet, så äger du, om du vill, benämna några eller samtliga av dessa som oföränderliga. För att göra detta, lägg deras titlar till listan över <link linkend="fdl-invariant">oföränderliga avsnitt</link> i den förändrade versionens licensmeddelande. Dessa titlar måste vara skilda från alla andra avsnitts titlar.</para>
+    
+    <para>Du äger lägga till ett avsnitt med titeln <quote>endossering</quote> (Endorsements), förutsatt att det inte innehåller något annat än endosseringar för din <link linkend="fdl-modified">förändrade version</link> från olika aktörer -- till exempel, meddelanden om utförd korrekturläsning eller att texten har godkänts av en organisation som en officiell definition av en standard.</para>
+    
+    <para>Du äger lägga till ett textavsnitt på upp till fem ord som <link linkend="fdl-cover-texts">framsidestext</link>, och ett textavsnitt på upp till 25 ord som baksidestext i listan över <link linkend="fdl-cover-texts">omslagstexter</link> i den <link linkend="fdl-modified">förändrade versionen</link>. Bara ett textavsnitt med framsidestexter och ett med baksidestexter får läggas till av (eller genom försorg av) en enda juridisk person. Om <link linkend="fdl-document">dokumentet</link> redan innehåller en omlagstext för något av omslagen, tidigare tillagd av dig eller genom försorg av samma juridiska person som du företräder, äger du inte lägga till en till, men du äger ändra den gamla med tillstånd från den tidigare utgivaren som lade till den förra.</para>
+    
+    <para>Författaren (författarna) och utgivaren (utgivarna) av <link linkend="fdl-document">dokumentet</link> ger inte via denna licens sitt tillstånd att använda sina namn för publicitet eller för att lägga till eller antyda endossering av någon <link linkend="fdl-modified">förändrad version</link>.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>KOMBINERA DOKUMENT</title>
+    <para>Du äger kombinera <link linkend="fdl-document">dokumentet</link> med andra dokument som är utgivna under denna licens, under de villkor som definieras i <link linkend="fdl-section4">paragraf 4</link> av GNU Free Documentation License för förändrade versioner, förutsatt att du, i det kombinerade dokumentet, innefattar alla <link linkend="fdl-invariant">oföränderliga avsnitt</link> från originaldokumenten, omodifierade, och listar dem som oföränderliga avsnitt i ditt kombinerade verk i dess licensklausul, och att du bevarar alla deras garantiavsägelseklausuler.</para>
+    
+    <para>Det kombinerade verket behöver bara innehålla en enstaka kopia av denna licens [engelska originalversionen], och flera identiska <link linkend="fdl-invariant">oföränderliga stycken</link> kan ersättas med en kopia. Om det finns flera oföränderliga stycken med samma namn men olika innehåll, se till att titeln på varje sådant avsnitt är unik genom att i slutet på den, inom parentes, lägga till namnet på den ursprunglige författaren eller utgivaren av det avsnittet om dessa är kända, annars ett unikt nummer. Gör samma justeringar av titlarna i listan över oföränderliga avsnitt i licensklausulen i det kombinerade verket.</para>
+    
+    <para>I det kombinerade verket måste du kombinera alla avsnitt med titlarna <quote>historik</quote> (History) i de ursprungliga dokumenten, till ett avsnitt med titeln <quote>historik</quote> (History); på samma sätt skall alla avsnitt med titlarna <quote>tillkännagivanden</quote> (Acknowledgements), alla avsnitt med titlarna <quote>dedikationer</quote> (Dedications) kombineras. Du måste ta bort alla avsnitt med titlarna <quote>endossering</quote> (Endorsements).</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>SAMLINGAR AV DOKUMENT</title>
+    <para>Du äger skapa en samling bestående av <link linkend="fdl-document">dokumentet</link> och andra dokument som är släppta under GNU Free Documentation License, och ersätta individuella kopior i dokumenten av denna licens med en enda kopia [av den engelska originalversionen] som inkluderas i samlingen, förutsatt att du följer villkoren för ordagrann kopiering i denna licens för varje inkluderat dokument i alla andra avseenden.</para>
+    
+    <para>Du äger lyfta ut ett dokument från en sådan samling, och sprida det enskilt under GNU Free Documentation License, förutsatt att du lägger till en kopia av denna licens [den engelska originalversionen] i det utlyfta dokumentet, och följer villkoren för ordagrann kopiering i denna licens för det utlyfta dokumentet i alla andra avseenden.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>SAMMANSLAGNING MED OBEROENDE VERK</title>
+    <para>En samling av <link linkend="fdl-document">dokumentet</link> eller av dess derivat med andra separata och oberoende dokument eller verk, på eller i en lagringsvolym eller ett spridningsmedium, kallas för en <quote>sammanslagning</quote> om den sammanslagna upphovsrätten inte används för att begränsa samlingens användares rättigheter som de enskilda dokumenten medger. När dokumentet ingår i en sådan sammanslagning, gäller inte denna licens de andra verken i samlingen som inte själva är deriverat av dokumentet. Om kravet på <link linkend="fdl-cover-texts">omslagstexter</link> enligt <link linkend="fdl-section3">paragraf 3</link> är tillämpligt på dessa kopior av dokumentet, så kan dokumentets omslagstexter, om dokumentet utgör mindre än hälften av hela samlingen, placeras på det omslag som omger dokumentet inuti samlingen, eller den elektroniska motsvarigheten till omslag om dokumentet är i elektronisk form. Annars måste de synas på det omslag som omger hela samlingen.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>ÖVERSÄTTNING</title>
+    <para>Översättning anses vara en sorts förändring, så du äger sprida översättningar av <link linkend="fdl-document">dokumentet</link> enligt de villkor som sätts i <link linkend="fdl-section4">paragraf 4</link>. <link linkend="fdl-invariant">Oföränderliga avsnitt</link> som ersätts med översättningar kräver tillstånd från deras upphovsrättsinnehavare, men du äger inkludera översättningar av alla eller vissa av dessa oföränderliga avsnitt tillsammans med originalversionerna av dessa oföränderliga avsnitt. Du äger inkludera en översättning av denna licens, och alla licensklausuler i dokumentet, och alla garantiavsägelser, förutsatt att du också innefattar den engelska originalversionen av denna licens och originalversionerna av dessa klausuler. Skulle det finnas skillnader mellan översättningen och originalversionen av denna licens eller någon klausul så gäller originalversionen.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>UPPHÖRANDE</title>
+    <para>Du äger inte kopiera, förändra, omlicensiera eller sprida <link linkend="fdl-document">dokumentet</link> annat än enligt villkoren i GNU Free Documentation License. Alla övriga försök att kopiera, modifiera, omlicensiera, eller sprida dokumentet är ogiltiga och kommer automatiskt medföra att du förlorar dina rättigheter enligt denna licens. Tredje man som har mottagit kopior eller rättigheter från dig enligt dessa licensvillkor kommer dock inte att förlora sina rättigheter så länge de följer licensvillkoren.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>FRAMTIDA VERSIONER AV DENNA LICENS</title>
+    <para><ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink> kan publicera nya, reviderade versioner av GNU Free Documentation License då och då. Sådana nya versioner kommer att vara likadana i andemening som den nuvarande versionen, men kan skilja i detalj för att behandla nya problem eller angelägenheter. Se <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>Varje version av licensen ges ett unikt versionsnummer. Om <link linkend="fdl-document">dokumentet</link> stadgar att en specifik numrerad version av denna licens <quote>eller valfri senare version</quote> gäller för det, så äger du rätten att följa villkoren enligt antingen den angivna versionen eller vilken senare version som helst som publicerats (inte som utkast) av Free Software Foundation. Om dokumentet inte anger en version av denna licens, äger du välja vilken version som helst som publicerats (inte som utkast) av Free Software Foundation.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>TILLÄGG</title>
+    <para>För att använda GNU Free Documentation License för ett dokument du har skrivit, inkludera en kopia av licensen [det engelska originalet] i dokumentet och placera följande copyrightklausul omedelbart efter titelsidan:</para>
+    
+    <blockquote>
+      <para>Copyright (c) ÅRTAL DITT NAMN.</para>
+      <para>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.1 or any later version published by the Free Software Foundation; with the <link linkend="fdl-invariant">Invariant Sections</link> being LIST THEIR TITLES, with the <link linkend="fdl-cover-texts">Front-Cover Texts</link> being LIST, and with the <link linkend="fdl-cover-texts">Back-Cover Texts</link> being LIST. A copy of the license is included in the section entitled <quote>GNU Free Documentation License</quote>.</para>
+    </blockquote>
+      
+    <para>Om du inte har några <link linkend="fdl-invariant">oföränderliga avsnitt</link>, skriv <quote>utan oföränderliga avsnitt</quote> istället för att ange vilka som är oföränderliga. Om du inte har några <link linkend="fdl-cover-texts">framsidestexter</link>, skriv <quote>utan framsidestexter</quote> istället för <quote>framsidestexter som LISTAS</quote>; såväl som för <link linkend="fdl-cover-texts">baksidestexter</link>.</para>
+    
+    <para>Om ditt dokument innehåller icke-triviala exempel med programkod, så rekommenderar vi att du släpper dessa exempel parallellt under en, av dig vald, fri programvarulicens, som till exempel <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</ulink>, för att möjliggöra deras användning i fri programvara.</para>
+  </sect1>
+</article>

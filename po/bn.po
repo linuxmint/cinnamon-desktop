@@ -1,0 +1,359 @@
+# Bangla translation of gnome-desktop module.
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+# Taneem Ahmed <taneem@bengalinux.org>, 2003.
+# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2007.
+# Sadia Afroz <sadia@ankur.org.bd>, 2010.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+# Zenat Rahnuma <zenat@ankur.org.bd>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-04 09:13+0000\n"
+"PO-Revision-Date: 2011-04-04 15:02+0600\n"
+"Last-Translator: Zenat Rahnuma <zenat@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Language: bn_BD\n"
+
+# Translated by sadia
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "অজানা"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "xterm ব্যবহার করে কোন টার্মিনাল পাওয়া যাচ্ছেনা, যদিও এটা হয়ত কাজ করছে না "
+
+# Translated by sadia
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:483
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "পর্দার উৎসগুলো পাওয়া যাচ্ছে না ( CRTC, আউটপুট, মুড)"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:503
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "পর্দার আকারের সীমা পাওয়ার সময় অনিয়ন্ত্রিত X error "
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:509
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "পর্দার আকারের সীমা পাওয়া যাচ্ছে না"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:730
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR এক্সটেনশন অনুপস্থিত"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:1283
+#, c-format
+msgid "could not get information about output %d"
+msgstr "%d আউটপুট সম্পর্কে কোন তথ্য পাওয়া যাচ্ছে না"
+
+# Translated by sadia
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1724
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"CRTC %d-এর অনুরোধকৃত অবস্থান / আকার অনুমোদিত সীমার বাইরে: অবস্থান=(%d, %d), আকার="
+"(%d, %d), সর্বোচ্চ=(%d, %d)"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:1760
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "CRTC %d এর কনফিগারেশন নির্ধারণ করা যাচ্ছে না"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr.c:1909
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "CRTC %d সম্পর্কিত তথ্য পাওয়া যাচ্ছে না"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr-config.c:553
+msgid "Laptop"
+msgstr "ল্যাপটপ"
+
+# Translated by sadia
+#: ../libgnome-desktop/gnome-rr-config.c:708
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "সক্রিয় কনফিগারেশনের সাথে সংরক্ষন করা প্রদর্শন কনফিগারেশনের কোনটাই মিলছে না"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1492
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d আউটপুট  %s চালানো যাচ্ছেনা"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1499
+#, c-format
+#| msgid "output %s does not support mode %dx%d@%dHz"
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "আউটপুট %s সমর্থন করেনা %dx%d@%dHz মোডকে"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1510
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d আবর্তন=%s সমর্থন করেনা"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1524
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"%s আউটপুটের অন্য ক্লোন আউটপুটের মত একই প্যারামিটার নেই:\n"
+"বিদ্যমান মোড = %d, নতুন মোড = %d\n"
+"বিদ্যমান স্থানাংক = (%d, %d), নতুন স্থানাংক = (%d, %d)\n"
+"বিদ্যমান আবর্তন = %s, নতুন আবর্তন = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1539
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "%s আউটপুট ক্লোন করা যাচ্ছেনা"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1708
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "CRTC %d এর জন্য মোড চেষ্টা করা হচ্ছে\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1732
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d:  %dx%d@%dHz (pass %d) আউটপুটের সাথে %dx%d@%dHz মোড চেষ্টা করা হচ্ছে\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1779
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"এই আউটপুটে CRTC অ্যাসাইন করা যাচ্ছেনা:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1783
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"নির্বাচিত কোন মোডই সম্ভাব্য মোডের সাথে সংগতিপূর্ণ নয়:\n"
+"%s"
+
+# Translated by sadia
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1865
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"প্রয়োজনীয় ভার্চুয়াল আকার বিদ্যমান আকারের সাথে মানানসই হচ্ছে না: অনুরোধকৃত=(%d, %d), "
+"সর্বনিম্ন=(%d, %d), সর্বোচ্চ=(%d, %d)"
+
+# Translated by sadia
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:410
+msgid "Mirror Screens"
+msgstr "প্রতিফলিত পর্দা"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:164
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R:%S"
+
+#: ../js/ui/dateMenu.js:165
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:169
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../js/ui/dateMenu.js:170
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:177
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %b %e, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:178
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %b %e, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:182
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:183
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+# Translated by sadia
+#~ msgid "About GNOME"
+#~ msgstr "জিনোম পরিচিতি"
+
+# Translated by sadia
+#~ msgid "Learn more about GNOME"
+#~ msgstr "জিনোম সম্পর্কে আরও জানুন"
+
+#~ msgid "News"
+#~ msgstr "সংবাদ"
+
+# Translated by sadia
+#~ msgid "GNOME Library"
+#~ msgstr "জিনোম লাইব্রেরি"
+
+# Translated by sadia
+#~ msgid "Friends of GNOME"
+#~ msgstr "জিনোমের বন্ধু"
+
+#~ msgid "Contact"
+#~ msgstr "যোগাযোগ"
+
+# Translated by sadia
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "দুর্বোধ্য GEGL"
+
+# Translated by sadia
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "স্কুইকি রাবার জিনোম"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "জিনোমের মাছ ওয়ানডা"
+
+# Translated by sadia
+#~ msgid "_Open URL"
+#~ msgstr "URL খুলুন (_O)"
+
+# Translated by sadia
+#~ msgid "_Copy URL"
+#~ msgstr "URL অনুলিপি করুন (_C)"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "জিনোম ডেস্কটপ পরিচিতি"
+
+# Translated by sadia
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "জিনোম ডেস্কটপে স্বাগতম"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "আপনার কাছে যিনি এনেছেন:"
+
+# Translated by sadia
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "সংস্করণ"
+
+#~ msgid "Distributor"
+#~ msgstr "বন্টনকারী"
+
+#~ msgid "Build Date"
+#~ msgstr "তৈরীর তারিখ"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "এই জিনোম সংস্করণে তথ্য দেখাও"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "শক্তিশালী ও জটিল অ্যাপলিকেশন সৃষ্টির অনুমতি দিয়ে, অ্যাপলিকেশন প্রোগ্রামারদের জন্য "
+#~ "জিনোম সম্পূর্ণ ডেভালপারদের একটি প্লাটফর্মের সঙ্গে যুক্ত করে।"
+
+# Translated by sadia
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "ফাইল ম্যানেজার, ওয়েব ব্রাউজার, মেনু এবং অন্যান্য অ্যাপলিকেশন, আপনি যা-ই আপনার "
+#~ "কম্পিউটারে দেখতে চান তার সবই জিনোমে সংযুক্ত করা হয়েছে।"
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "ইউনিক্স-পরিবারের মতো অপারেটিং সিস্টেমের জন্য জিনোম বিনামূল্যে,ব্যবহার উপযোগী, "
+#~ "প্রতিষ্ঠিত, সমর্থিত একটি ডেস্কটপ।"
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "জিনোমের দৃষ্টি হচ্ছে ব্যবহার উপযোগিতা এবং সহায়ক প্রযুক্তির দিকে, নিয়মিত মুক্তি "
+#~ "চক্র, এবং শক্তিশালী কর্পোরেট সহায়তা এটাকে বিনামূল্যের ডেস্কটপগুলোর মধ্যে অদ্বিতীয় "
+#~ "করে তুলেছে।"
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "জিনোমের সবচেয়ে বড় শক্তি হচ্ছে আমাদের শক্তিশালী গোষ্ঠী। কোডিং দক্ষতা আছে বা নেই "
+#~ "এমন যে কেউ জিনোমকে সমৃদ্ধ করার কাজে ভার্চুয়ালি অবদান রাখতে পারে।"
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "শতশত মানুষ সেই ১৯৯৭ সালে জিনোম শুরু হওয়ার পর থেকে এর কোডিং-এ অবদান রেখেছে; "
+#~ "আরও অনেকে ভাষানুবাদ, ডকুমেন্টেশন এবং গুণগতমানের নিশ্চয়তা সহ অন্যান্য গুরুত্বপূর্ণভাবে "
+#~ "অবদান রেখেছে।"
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "ফাইল '%s' পড়তে ভুল: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "ফাইল '%s' এর প্রথমে যেতে ভুল: %s"
+
+#~ msgid "No name"
+#~ msgstr "নাম নেই"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "ফাইল '%s' কোন সাধারণ ফাইল বা ডিরেক্টরি নয়।"

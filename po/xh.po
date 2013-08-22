@@ -1,0 +1,477 @@
+# Xhosa translation for gnome-desktop
+# Copyright (C) 2005 Canonical Ltd.
+# This file is distributed under the same license as the gnome-desktop package.
+# Translation by Canonical Ltd <translations@canonical.com> with thanks to
+# Translation World CC in South Africa, 2005.
+# Andiswa Mvanyashe <andiswamva@webmail.co.za>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-03-16 09:20+0000\n"
+"PO-Revision-Date: 2012-01-06 20:25+0200\n"
+"Last-Translator: Andiswa Mvanyashe <andiswamva@webmail.co.za>\n"
+"Language-Team: translate-discuss-xh@lists.sourceforge.net\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: xh\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Project-Style: gnome\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:67
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Ayaziwa"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Ayifumani theminali, xa kusebenza i-xterm, nokuba ingangasebenzi"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:451
+#, fuzzy, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ayikwazanga ukufumana umnikezi wesikrini (CRTCs, okuphumayo, iintlobo)"
+
+#: ../libgnome-desktop/gnome-rr.c:471
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"ayikwazanga kuphatha impazamo u-X ngokuya ibifumana inqanaba lobungakanani "
+"besikrini"
+
+#: ../libgnome-desktop/gnome-rr.c:477
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "alufumanekanga uhlobo lobungakanani besikrini"
+
+#: ../libgnome-desktop/gnome-rr.c:768
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR intambo yokudlulisela ayikho"
+
+#: ../libgnome-desktop/gnome-rr.c:1569
+#, c-format
+msgid "could not get information about output %d"
+msgstr "azifumanekanga iinkcukacha ngeziphumo ze-%d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2128
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"cela indawo/ubungakanani be-CRTC %d ingaphandle kwimigqa evumelekileyo: "
+"indawo=(%d, %d), ubungakanani=(%d, %d), ubukhulu=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2164
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "ayikwazanga ukumisela ubambeko lwe-CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2309
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "azifumanekanga iinkcukacha ngo-CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:553
+msgid "Laptop"
+msgstr "Umphezulu osongiweyo"
+
+#: ../libgnome-desktop/gnome-rr-config.c:708
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"ukukhona nanye yeemboniso zobambeko ezigciniweyo ezihambisana nobambeko "
+"lwangoku"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1477
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "I-CRTC %d ayikwazi kuqhuba isiphumo %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1484
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "isiphumo %s ayiluxhasi uhlobo lwe-%d%d%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1495
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "I-CRTC %d ayikuxhasi ukujikeleza kwe-%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1509
+#, fuzzy, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"isiphumo %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1524
+#, fuzzy, c-format
+msgid "cannot clone to output %s"
+msgstr "ayikwazi kukutshwa kwiziphumo i-%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1693
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Izama inkqubo ye-CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1717
+#, fuzzy, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: uhlobo lokuzama %dx%d@%dHz ngaphandle kweziphumo %dx%d@%dHz "
+"(iphumelele %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1764
+#, fuzzy, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ayikwazanga ukufaka i-CRTCs kokuphumayo:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1768
+#, fuzzy, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"akukho nalunye uhlobo olukhethiwe ebelulungele olu hlobo :\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1850
+#, fuzzy, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ubungakanani obulindelekileyo akungeni kubungakanani obukhona : iceliwe=(%d, "
+"%d), encinanana=(%d, %d), eyona enkulu=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:312
+msgid "Mirror Screens"
+msgstr "Isikrini sefestile"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:195
+msgid "%a %b %e, %R:%S"
+msgstr "%a %b %e, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:196
+msgid "%a %b %e, %R"
+msgstr "%a %b %e, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:200
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:201
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:206
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %b %e, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:207
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %b %e, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:211
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:212
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "I-GEGL Engummangaliso"
+
+#~ msgid "The Squeaky Rubber Gnome"
+#~ msgstr "I-Gnome Yerabha Etswinayo"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "I-Wanda Intlanzi Ye-GNOME"
+
+#~ msgid "The End!"
+#~ msgstr "Isiphelo!"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr ""
+#~ "Ayikwazanga kufumana uvimba weefayili ezinemifanekiso yemibhalo "
+#~ "engasentla ephepheni."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr ""
+#~ "Isilele ekuvuleni uvimba weefayili ezinemifanekiso yemibhalo engasentla "
+#~ "ephepheni: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Ayikwazi kulayisha umfanekiso wombhalo ongasentla ephepheni: %s"
+
+#~ msgid "Could not locate the GNOME logo button."
+#~ msgstr "Ayikwazanga kufumana iqhosha lelogo ye-GNOME."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "Ayikwazi kulayisha '%s': %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "Ayikwazanga kuvula idilesi \"%s\": %s"
+
+#~ msgid "Could not locate the file with GNOME version information."
+#~ msgstr "Ayikwazanga kufumana ifayili eneenkcukacha zenguqulelo ye-GNOME."
+
+#~ msgid "Version"
+#~ msgstr "Inguqulelo"
+
+#~ msgid "Distributor"
+#~ msgstr "Umsasazi"
+
+#~ msgid "Build Date"
+#~ msgstr "Yakha Umhla"
+
+#~ msgid "About GNOME"
+#~ msgstr "Malunga ne-GNOME"
+
+#~ msgid "News"
+#~ msgstr "Iindaba"
+
+#~ msgid "Software"
+#~ msgstr "Ubucukubhede Bekhompyutha"
+
+#~ msgid "Developers"
+#~ msgstr "Abaphuhlisi"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Abahlobo be-GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Qhagamshelana"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Wamkelekile Kulwazi Olukwiskrini lwe-GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Luziswa kuwe yi:"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Malunga Nolwazi Olukwiskrini lwe-GNOME"
+
+#~ msgid "Know more about GNOME"
+#~ msgstr "Yazi banzi nge-GNOME"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "I-GNOME kananjalo ibandakanya iqonga elipheleleyo lophuhliso ukwenzela "
+#~ "abahlohli bobucukubhede bekhompyutha, ukuze kuvunyelwe ukuyilwa "
+#~ "kweenkqubo zekhompyutha ezinesakhono nezimbaxa."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "I-GNOME ibandakanya okona kuninzi okubona ekhompyutheni yakho, "
+#~ "kubandakanywa umlawuli wefayili, isikhangeli se-web, iimenyu, neenkqubo "
+#~ "eziliqela zekhompyutha."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "I-GNOME Yimeko eguqukayo elungeleneyo yolwazi olukwiskrini "
+#~ "ekhululekileyo, esebenzisekayo, engagungqiyo, nefikelelekayo ukwenzela "
+#~ "usapho olufana nolwe-Unix lweenkqubo zokusebenza."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "Ukujolisa kwe-GNOME ekusebenzisekeni nasekufikeleleni, kumjikelo "
+#~ "wobonelelo osoloko ukho, nenkxaso esemva eyomeleleyo eyenza ukuba ifane "
+#~ "yodwa phakathi kolwazi lwezikrini Zobucukubhede Bekhompyutha "
+#~ "Obukhululekileyo."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "Isakhono esisona sikhulu se-GNOME kukomelela kwabahlali bethu. "
+#~ "Enyanisweni nabani, onobuchule bokufaka iikhowudi okanye ongenabo, unakho "
+#~ "ukwenza igalelo lokuyiphucula i-GNOME."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Amakhulu abantu abe negalelo kwikhowudi ye-GNOME ukususela ekuqalisweni "
+#~ "kwayo ngowe-1997; baninzi ababe negalelo ngeendlela ezizezinye "
+#~ "ezibalulekileyo, kubandakanywa uguqulelo, ugcino kumaxwebhu, "
+#~ "nokuqinisekiswa kodidi."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Ifayili efunda impazamo '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Ifayili ejijela emva ukulungisa imposiso '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "Akukho gama"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Ifayili '%s' asiyofayili okanye uvimba weefayili osoloko ekhona."
+
+#~ msgid "No filename to save to"
+#~ msgstr "Akukho gama lokugcina kwifayili"
+
+#~ msgid "Starting %s"
+#~ msgstr "Kuqaliswa %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Akukho I-URL yokufaka isindululo"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Asilonqaku linokundululwa"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Akukho myalelo (Exec) wokundulula"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Umyalelo olahlekisayo (Exec) wokundulula"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Ukunxulumanisa okungaziwayo kwayo: %s"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "Ifayili yokubhala iimposiso '%s': %s"
+
+#~ msgid "Directory"
+#~ msgstr "Uvimba weefayili"
+
+#~ msgid "Application"
+#~ msgstr "Inkqubo Yekhompyutha"
+
+#~ msgid "Link"
+#~ msgstr "Unxulumaniso"
+
+#~ msgid "FSDevice"
+#~ msgstr "Isixhobo Se-FS"
+
+#~ msgid "MIME Type"
+#~ msgstr "Uhlobo lwe-MIME"
+
+#~ msgid "Service"
+#~ msgstr "Inkonzo"
+
+#~ msgid "ServiceType"
+#~ msgstr "Uhlobo Lwenkonzo"
+
+#~ msgid "_URL:"
+#~ msgstr "I-_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "Umyalelo_kunye:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Igama:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Igama elingangqalanga:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Uku_phawula:"
+
+#~ msgid "Browse"
+#~ msgstr "Khangela"
+
+#~ msgid "_Type:"
+#~ msgstr "_Chwetheza:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Umfanekiso Ongumqondiso:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Imifanekiso eyimiqondiso yokukhangela"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "Phumeza inkqubo kwisixhobo esibonisa i_mpumezo"
+
+#~ msgid "Language"
+#~ msgstr "Ulwimi"
+
+#~ msgid "Name"
+#~ msgstr "Igama"
+
+#~ msgid "Generic name"
+#~ msgstr "Igama elingangqalanga"
+
+#~ msgid "Comment"
+#~ msgstr "Phawula"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Kuzame oku phambi kokukusebenzisa:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Gcina Kumaxwebhu:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Nika igama/Izimvo ngokuguquliweyo:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Fakela/Seta"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Fakela okanye Seta Igama/Iinguqulelo Zokuphawula"
+
+#~ msgid "Re_move"
+#~ msgstr "Yi_suse"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Susa Igama/Iinguqulelo Zokuphawula"
+
+#~ msgid "Basic"
+#~ msgstr "Esisiseko"
+
+#~ msgid "Advanced"
+#~ msgstr "Ehambele phambili"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Ibonisa amacebiso xa Kuqaliswa Kwakhona"

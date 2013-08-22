@@ -1,0 +1,374 @@
+# translation of gnome-desktop.gnome-2-32.lo.po to Lao
+# Lao translation for gnome-desktop.
+# Copyright (C) 2004-2008, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Anousak Souphavanh <anousak@gmail.ocm>, 2008.
+# Anousak Souphavanh <anousak@gmail.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop.gnome-2-32.lo\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-desktop&component=general\n"
+"POT-Creation-Date: 2010-11-16 08:38+0000\n"
+"PO-Revision-Date: 2010-11-17 15:59+0700\n"
+"Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
+"Language-Team: Lao <lo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:60
+msgid "About GNOME"
+msgstr "ກ່ຽວກັບ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "ຮຽນຮູ້ເພີ້ມ ກ່ຽວກັບ GNOME"
+
+#: ../gnome-about/gnome-about.in:61
+msgid "News"
+msgstr "ຂ່າວ"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "GNOME Library"
+msgstr "ຫໍສະຫມຸດ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "Friends of GNOME"
+msgstr "ເພື່ອນຂອງ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Contact"
+msgstr "ຕິດຕໍ່"
+
+#: ../gnome-about/gnome-about.in:68
+msgid "The Mysterious GEGL"
+msgstr "GEGL ອັນລຶບລັບ"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Squeaky Rubber GNOME"
+msgstr "ກາໂນມ ຢ່າງອຽດອາດ"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "Wanda The GNOME Fish"
+msgstr "ວັນນາ ປາ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.in:567
+msgid "_Open URL"
+msgstr "ເ_ປີດ URL"
+
+#: ../gnome-about/gnome-about.in:574
+msgid "_Copy URL"
+msgstr "_ສໍາເນົາ URL"
+
+#: ../gnome-about/gnome-about.in:826
+msgid "About the GNOME Desktop"
+msgstr "ກ່ຽວກັບ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.in:859
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:873
+msgid "Welcome to the GNOME Desktop"
+msgstr "ຍີນດີເຂັ້າຊູ່ເດດທ໋ອບ ກາໂນມ"
+
+#: ../gnome-about/gnome-about.in:890
+msgid "Brought to you by:"
+msgstr "ນໍາສະເຫນີທ່ານໂດຍ:"
+
+#: ../gnome-about/gnome-about.in:914
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:975
+msgid "Version"
+msgstr "ລູ້ນ"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Distributor"
+msgstr "ຜູ້ຈັດເເຈກ"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "ວັນສ້າງ"
+
+#: ../gnome-about/gnome-about.in:1024
+msgid "Display information on this GNOME version"
+msgstr "ສະເເດງຂໍ້ມູນລຸ້  ກາໂນມ ລຸ້ນນີ້"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"ນອກຈາກນີ້ ກາໂນມ ຍັງມີລະບົບຮອງຮັບ ທີ່ຊ່ວຍໃຫ້ຂຽນໂປຣເເກຣມ ສາມາດພັດທະນາໂປຣເເກຣມທີມີພະລັງສູງ "
+"ເເລະ ມີຄວາມອາດສາມາດ."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"ກາໂນມ ປະກອບໄປດ້ວຍສີ່ງທີ່ທ່ານເຫັນຢູ່ຫນ້າຈໍເກີອບທັງຫມົດ ເປັນຕົ້ນ ຕົວຈັດການເເຟ້ມ ເເວບບາວເຊີ້ ຫລາຍການ "
+"ເມນູ ເເລະ ໂປຣເເກຣມ ອື່ນ ຯ ອີກຫລາຍ ຯ "
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"ກາໂນມ ເປັນລະບົບເເດສະທອບທ໌ ທີ່ໃຫ້ເສລິພາບ ສະດວກໃຊ້ ເເລະ ມີໍີສີ່ງອໍານ່ວນຄວາມສະດວກຜູ້ໃຊ້ປະເພດຕ່າງ ຯ "
+"ສໍາລັບລະບົບປະທິບັດການຕະກູນຢູນິກຊ໌"
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"ກາໂນມ ເນັ້ນຄວາມງ່າຍໃນການໃຊ້ ພັດທະນາລູ້ນໃຫ່ມສະມໍ່າສະເມີ ເເລະ "
+"ໃດ້ຮັບການອຸບປະຖໍາຈາກກອງທຸລະກິດຢ່າງຕໍ່ເນື່ອງ ທັ້ງຫມົດທີ່ນໍາໃຫ້  ກາໂນມ "
+"ເປັນລະບົບເເດດຊ໌ທອບ໌ທີ່ບໍ່ຄືໃຜໃນກຸ່ມເເດດຊ໌ທອບ໌ທີ່ເປັນສອບເເວຣ໌ເເຟຣ໌"
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"ຈຸດທີ່ດີເດັນທີ່ສູດຂອງ ກາໂນມ ກໍ່ຄືຊູມຊົນທີ່ເຂົ້ມເເຂງ ທຸກ ຯ ຄົນ ບໍ່ວ່າຈະເປັນໃຜ ຫນັກຂຽນໂປຣເເກຣມຫລືບໍ່ "
+"ກໍ່ສານາດຮວມກັນພັດທະນາ ກາໂນມ ໃຫ້ດີຂື້ນໃດ້"
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"ຜູ່ຄົນຫລາຍຮ້ອຍໄດ້ຮ່ວມກັນພັດທະນາ ໂປຣເເກຣມ ສໍາລັບ ກາໂນມ ຕັ້ງເເຕ່ເລີ້ມໂຄງການຕອນປີ 2540 ຫລື 1998 "
+"ເເລະຍັງມີອີດຫລາຍ ຯ ທີ່ຊ່ວຍສົ່ງເສີມໃນທາງອື່ນ ຯ ເປັນຕົ້ນ ການເເປ ຂຽນຄູ່ມື ເເລະ ກວດສອບຄຸນນະພາບ"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "ບໍ່ຮູ້"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:220
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "ເກີດຜິດພາດເວລາອ່ານເເຟ້ມ '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:288
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "ເກີດຜິດພາດເວລາການກໍ້ເເຟ້ມກັບ '%s': %s"
+
+#. Translators: the "name" mentioned
+#. * here is the name of an application or
+#. * a document
+#. Translators: the "name" mentioned here is the name of
+#. * an application or a document
+#: ../libgnome-desktop/gnome-desktop-item.c:380
+#: ../libgnome-desktop/gnome-desktop-item.c:3528
+msgid "No name"
+msgstr "ບໍ່ມີຊື"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:607
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "ເເຟ້ມ '%s' ບໍ່ເເມ່ນເເຟ້ມ ຫລື ໂຟລເດີຮ໌ ປົກກະຕິ"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:791
+#, fuzzy, c-format
+#| msgid "Error cannot find file id '%s'"
+msgid "Cannot find file '%s'"
+msgstr "ເກີດຜິດພາດເວລາຫາເເຟ້ມ '%s'"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:837
+#, c-format
+msgid "No filename to save to"
+msgstr "ບໍ່ມີຊື່ເເຟ້ມສໍາລັບໃຊ້ໃນການບັນທືກ"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1828
+#, c-format
+msgid "Starting %s"
+msgstr "ກໍາລັງເລີ້ມ %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2062
+#, c-format
+msgid "No URL to launch"
+msgstr "ບໍ່ມີ URL ຈະເປີດ"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2078
+#, c-format
+msgid "Not a launchable item"
+msgstr "ຮ້ອງໃຊ້ບໍ່ໃດ້"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2088
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "ບໍ່ມີຄໍາສັ່ງ (Exec) ຈະຮ້ອງ"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2101
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "ຄໍາສັ່ງທີ່ຈະຮ້ອງ(Exec) ມັນໃຊ້ບໍ່ໃດ້"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3585
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "ບໍ່ຮູ້ຈັກລະຫັດເເອນໂຄດຂອງ: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "ບໍ່ສາມາດຫາຈໍ, ໄຊ້ Xterm ເເທນ, ເຖີງມັນຈະບໍ່ທໍາງານກໍ່ຕາມ"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ບໍ່ສາມາດເອົາອຸປະກອນຈໍ (CRTCs, outputs, modes)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "ພິດພາດ ກັບ X ໃນເວລາປັບປູງຂະນານຈໍ "
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ພິດພາດ ກັບ X ໃນເວລາປັບປູງຂະນານຈໍ "
+
+#: ../libgnome-desktop/gnome-rr.c:715
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "ບໍ່ມີ RAND ໂປຣເເກຣມ"
+
+#: ../libgnome-desktop/gnome-rr.c:1092
+#, c-format
+msgid "could not get information about output %d"
+msgstr "ບໍ່ສາມາດ ເອົາຂໍ້ມູນກ່ຽວກັບ %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1479
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ຮ້ອງຂໍ ທີ່/ຂະນານ ສະເພາະ CRTC %d ເເມ່ນ ທີ່ໃດ້is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1515
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "ບໍ່ສາມາດ ຕັ້ງຄ່າສະເພາະ CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1631
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "ບໍ່ສາມາດ ເອົາຂໍ້ມູນກ່ຽວກັບ CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "ເເລບທອບ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1162
+#, c-format
+msgid "none of the saved display configurations matched the active configuration"
+msgstr "ບໍ່ມີຕັ້ງຄ່າທີ່ຖຶກບັນທຶກ ທີ່ກົງກັບ ຕັ້ງຄ່າທີ່ທໍາງານຢູ່"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1423
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ບໍ່ສາມາດຜົນອອກສະເເດງອອກ %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1430
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "ຜົນສະເເດງອອກ %s ບໍ່ສາມາດສະນົບສະໜູນເເບບ %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1441
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d ບໍ່ສາມາດສະນົບສະໜູນມຸນວຽນ=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1455
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"ຜົນອອກ %s ບໍ່ມີຕົວປ່ຽນເສີມທີ່ເທົ່າກັບຜົນອອກທີ່ທຶກລອອກເເບ:\n"
+"ເເບບມີເເລ້ວ = %d, ເເບບໄໝ່ = %d\n"
+"ຕົວປະສານມີເເລ້ວ= (%d, %d), ຕົວປະສາບໄໝ່ = (%d, %d)\n"
+"ການມຸນວຽນມີເເລ້ວ = %s, ການມຸນວຽນໄໝ່= %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1470
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "ບໍ່ສາມາດລອອກເເບບໃສ່ ຜົນອອກ %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1639
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "ທົດລອງເເບບສະເພາະ CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1663
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr "CRTC %d: ທົດລອງເເບບ %dx%d@%dHz ກັບຜົນອອກທີ່ %dx%d@%dHz (ພ່ານ %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1710
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ບໍ່ສາມາດເເຕ່ງຕັ້ງໃຫ້ CRTCs ຕໍ່ຜົນອອກ:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1714
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"ບໍ່ມີເເບບໃດທີຖຶກເລືອຈະເຂົ້າກັບເເບບທີ່ເປັນໄປໃດ້:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1796
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ຂະໜາດທີ້ຈໍາເປັນບໍ່ສາມາດເຂົ້າກັບຂະໜາດທີ່ມີ: ຖຶກຮ້ອງຂໍ=(%d, %d), "
+"ຕໍາສຸດ=(%d, %d), ສູງສຸດ=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:212
+msgid "Mirror Screens"
+msgstr "ຈໍເເວ່ນ"
+

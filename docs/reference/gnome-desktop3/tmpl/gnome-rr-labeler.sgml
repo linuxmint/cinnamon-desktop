@@ -1,0 +1,67 @@
+<!-- ##### SECTION Title ##### -->
+gnome-rr-labeler
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION gnome_rr_labeler_new ##### -->
+<para>
+
+</para>
+
+@config: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_labeler_show ##### -->
+<para>
+
+</para>
+
+@labeler: 
+
+
+<!-- ##### FUNCTION gnome_rr_labeler_hide ##### -->
+<para>
+
+</para>
+
+@labeler: 
+
+
+<!-- ##### STRUCT GnomeRRLabeler ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GnomeRRLabeler:config ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT GnomeRRLabelerClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+

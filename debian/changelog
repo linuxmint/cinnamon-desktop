@@ -1,0 +1,2171 @@
+gnome-desktop3 (3.6.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release. Bug fixes:
+    + gnome-xkb-info: Handle duplicated layouts
+
+ -- Iain Lane <iain.lane@canonical.com>  Mon, 18 Mar 2013 11:38:11 +0000
+
+gnome-desktop3 (3.6.2-0ubuntu8) raring; urgency=low
+
+  * debian/rules: exclude the gl checker from the shlibdeps computation,
+    it will not make a difference on i386/amd64 (where libGL is used) but it 
+    will avoid bringing a non working GL on arm. The code deals with the 
+    helper not working, so that shouldn't create any runtime issue
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 01 Mar 2013 13:57:17 +0100
+
+gnome-desktop3 (3.6.2-0ubuntu7) raring; urgency=low
+
+  * Revert previous change, series.<arch> doesn't work, will need to find
+    some other way to do that but meanwhile that will fix the build
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 28 Feb 2013 16:00:08 +0100
+
+gnome-desktop3 (3.6.2-0ubuntu6) raring; urgency=low
+
+  * debian/control.in:
+    - don't use libgl on armhf
+  * debian/patches/series.armhf:
+    - don't 02_refuse_to_break_GL_compositors.patch on armhf, it's not 
+      needed there and creates a depends on libgl that we don't want
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 28 Feb 2013 15:32:32 +0100
+
+gnome-desktop3 (3.6.2-0ubuntu5) raring; urgency=low
+
+  * debian/control.in:
+    - Change libgnome-desktop-3-4 dependency on gnome-desktop3-data
+      from (= ${source:Version}) to (>= ${source:Version}) to not
+      break parallel-installability with newer library versions
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 08 Jan 2013 13:17:37 -0500
+
+gnome-desktop3 (3.6.2-0ubuntu4) raring; urgency=low
+
+  * debian/patches/02_refuse_to_break_GL_compositors.patch:
+    - stop mentionning unity-2D as a fallback option
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 22 Nov 2012 10:30:31 +0100
+
+gnome-desktop3 (3.6.2-0ubuntu3) raring; urgency=low
+
+  * Install helper tools into a versioned directory (by overriding
+    libexecdir). They could alternatively be installed in a separate package.
+  * Remove the Replaces added in 3.6.0.1-0ubuntu2 as the file conflict no
+    longer exists.
+
+ -- Iain Lane <iain.lane@canonical.com>  Wed, 21 Nov 2012 16:40:37 +0000
+
+gnome-desktop3 (3.6.2-0ubuntu2) raring; urgency=low
+
+  * debian/control.in:
+    - Mark gnome-desktop3-data Multi-Arch: foreign, to allow satisfying
+      cross-build-dependencies on libgnome-desktop-3-dev.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 21 Nov 2012 10:04:16 +0000
+
+gnome-desktop3 (3.6.2-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 13 Nov 2012 15:28:52 +1300
+
+gnome-desktop3 (3.6.1-0ubuntu1) raring; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 08 Nov 2012 14:53:49 -0500
+
+gnome-desktop3 (3.6.0.1-0ubuntu2) quantal-proposed; urgency=low
+
+  * Add Replaces from libgnome-desktop-3-4 to libgnome-desktop-3-2.
+    Unfortunately this shared library ships binaries in an unversioned path.
+    If the upgrade ordering is such that libgnome-desktop-3-4 is unpacked
+    before libgnome-desktop-3-2 is removed then dpkg will error due to file
+    overwriting. The long-term solution to be implemented is to move these
+    binaries to their own package and to alter consumers to depend thereon.
+    (LP: #1061283)
+
+ -- Iain Lane <iain.lane@canonical.com>  Thu, 04 Oct 2012 11:36:41 +0100
+
+gnome-desktop3 (3.6.0.1-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream release
+    - gnome-xkb-info: Fix introspection element-type annotations
+
+ -- Iain Lane <iain.lane@canonical.com>  Wed, 26 Sep 2012 17:27:24 +0100
+
+gnome-desktop3 (3.6.0-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream version
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 24 Sep 2012 21:30:09 +0200
+
+gnome-desktop3 (3.5.91-0ubuntu1) quantal; urgency=low
+
+  * New upstream bugfix release
+  * debian/control:
+    - Bump depends on gsettings-desktop-schemas
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 06 Sep 2012 13:32:21 +1200
+
+gnome-desktop3 (3.5.90-0ubuntu1) quantal; urgency=low
+
+  * New upstream release.
+  * debian/gnome-desktop3-data.install:
+    - Install help from new location
+  * debian/libgnome-desktop-3-4.symbols:
+    - Add new symbols and remove -0ubuntu1 versioning
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 22 Aug 2012 13:08:03 -0400
+
+gnome-desktop3 (3.5.5-0ubuntu3) quantal; urgency=low
+
+  * debian/control:
+    - add yelp-tools build-dep to make it build in a chroot (not mentionned
+      in the configure.ac file)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 07 Aug 2012 11:29:10 +0200
+
+gnome-desktop3 (3.5.5-0ubuntu2) quantal; urgency=low
+
+  * debian/control:
+    - readd the mesa build-dep (was a removed duplicate in the configure.ac
+      file)
+    - removed duplicated dh-autoreconf build-dep
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 07 Aug 2012 10:55:01 +0200
+
+gnome-desktop3 (3.5.5-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - don't build-dep anymore on mesa
+    - build-dep on libglib2.0-dev (>= 2.33.3)
+  * debian/patches/git_background_fallback.patch:
+    - removed upstream
+  * debian/gnome-desktop3-data.install:
+    - do not install the omf files anymore: not generated
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 07 Aug 2012 10:44:47 +0200
+
+gnome-desktop3 (3.5.4-0ubuntu2) quantal; urgency=low
+
+  * debian/patches/git_background_fallback.patch:
+    - if the configured wallpaper is not available fallback to try the 
+      default one, it's not a perfect solution for having the wallpaper in
+      use replaced but better than having no background (lp: #625357)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 18 Jul 2012 11:19:13 +0200
+
+gnome-desktop3 (3.5.4-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 17 Jul 2012 09:34:27 +1200
+
+gnome-desktop3 (3.5.3-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream release
+  * debian/libgnome-desktop-3-4.symbols:
+    - Updated
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 27 Jun 2012 17:06:42 +1200
+
+gnome-desktop3 (3.5.2-0ubuntu3) quantal; urgency=low
+
+  * debian/control.in: libgnome-desktop-3-dev depends libxkbfile-dev
+    since XKBrules.h is being used, thanks Laney.
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 25 Jun 2012 17:41:41 +0200
+
+gnome-desktop3 (3.5.2-0ubuntu2) quantal; urgency=low
+
+  * 02_refuse_to_break_GL_compositors.patch:
+    check_gl_texture_size wasn't installed anymore because of two
+    libexec_PROGRAMS in the same Makefile.am. This caused
+    gnome-settings-daemon to timeout as it couldn't get MAX_GL_TEXTURE
+    anymore and so, no theme, no integrated appmenu, long log in.
+    (LP: #1010675)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Mon, 11 Jun 2012 09:51:31 +0200
+
+gnome-desktop3 (3.5.2-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Add build-depends on xkb-data, libxkbfile-dev
+    - Update package names for new library version
+  * debian/rules:
+    - Update package names for new library version
+  * debian/libgnome-desktop-3-4.symbols:
+    - Updated
+  * debian/patches/03_default_display_is_internal.patch:
+    - Applied upstream
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 05 Jun 2012 16:10:52 +1200
+
+gnome-desktop3 (3.4.2-0ubuntu1) quantal; urgency=low
+
+  * New upstream version
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 22 May 2012 20:06:01 +0200
+
+gnome-desktop3 (3.4.1-2ubuntu1) quantal; urgency=low
+
+  * Merge with Debian unstable. Remaining Ubuntu changes:
+    - tweak_color_computation.patch: Patch from Gord, no patch header, no bug
+      link.
+    - 02_refuse_to_break_GL_compositors.patch: Check whether Unity is running
+      and if so refuse to configure a multi-head setup larger than
+      GL_MAX_TEXTURE_SIZE.  Works around breakage when using Unity on such a
+      setup, which is as much as we can do at this point. Add libgl1-mesa-dev
+      and dh-autoreconf build dependencies for this. Install the helper in
+      debian/libgnome-desktop-3-2.install. (LP #824099)
+    - 03_default_display_is_internal.patch: Treat a display named "default" as
+      internal. This happens with the proprietary NVidia driver which does not
+      do proper XRandR. We cannot detect external vs. internal display there,
+      so err on the side of "internal" to make suspend on lid close work.
+      (LP #949296)
+    - 04_compute_average_color.patch: Compute the avergage color in
+      gnome-desktop itself, not in unity to fix some races (LP #963140)
+    - debian/watch: Look for development versions.
+  * debian/control.in: Add epoch to gnome-desktop3-data's Breaks/Replaces, as
+    our old gnome-desktop source package introduced an epoch. This needs to be
+    kept until after 14.04 LTS.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 03 May 2012 14:49:20 +0200
+
+gnome-desktop3 (3.4.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 19 Apr 2012 03:50:19 +0200
+
+gnome-desktop3 (3.4.1-1) experimental; urgency=low
+
+  * New upstream translation release.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 16 Apr 2012 18:07:14 +0200
+
+gnome-desktop3 (3.4.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/patches/01-clock_gettime.patch: Removed, merged upstream.
+  * Bump (Build-)Depends on libgtk-3-dev to (>= 3.3.6).
+  * Bump Build-Depends on libxrandr-dev to (>= 1.3).
+  * debian/libgnome-desktop-3-2.symbols: Add new symbols and remove
+    gnome_rr_crtc_set_config. None of the reverse dependencies uses that
+    function so this should be safe without a soname bump.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 03 Apr 2012 19:35:04 +0200
+
+gnome-desktop3 (3.2.1-4) unstable; urgency=low
+
+  * Build system-wide help documents and install them in gnome-desktop3-data.
+  * Add the necessary Breaks/Replaces against gnome-desktop-data (<< 2.32.1-2)
+    which previously shipped those files.
+  * Build gtk-doc API documentation.
+  * debian/patches/01-clock_gettime.patch: Link libgnome-desktop against librt
+    for clock_gettime().
+  * Use dh-autoreconf to update the build system.
+  * Update debian/copyright using the machine-readable copyright format 1.0.
+  * Bump Standards-Version to 3.9.3.
+  * Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 03 Apr 2012 19:17:35 +0200
+
+gnome-desktop3 (3.2.1-3) unstable; urgency=low
+
+  * Upload to unstable.
+  * debian/control.in:
+    - Tighten dependency on gnome-desktop3-data again.
+    - Change section of gir1.2-gnomedesktop-3.0 to introspection.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 07 Dec 2011 05:58:38 +0100
+
+gnome-desktop3 (3.2.1-2) experimental; urgency=low
+
+  * debian/control.in:
+    - Loosen the dependency on gnome-desktop-data for now such that
+      libgnome-desktop-3-2 is installable in parallel with
+      libgnome-desktop-3-0
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Thu, 27 Oct 2011 11:30:24 +0200
+
+gnome-desktop3 (3.2.1-1) experimental; urgency=low
+
+  * New upstream release.
+    - Link against -lm for sqrt. Closes: #640437
+  * debian/watch:
+    - Update to version 3.
+    - Track .xz tarballs.
+  * debian/control.in:
+    - Use Section: libs for gir1.2-gnomedesktop-3.0.
+    - Drop (Build-)Depends on libstartup-notification0-dev.
+    - Add Build-Depends on libxext-dev.
+    - Update Vcs-* URLs.
+    - Bump Build-Depends on intltool to (>= 0.40.6).
+  * debian/rules:
+    - List missing files.
+    - Include utils.mk for list-missing.
+    - Drop clean-la.mk since we don't install any .la files.
+  * debian/libgnome-desktop-3-dev.install:
+    - Remove .a file, static libraries are no longer built by default.
+  * Update libgnome-desktop-3 library package for the SONAME bump 0 → 2.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 16 Oct 2011 20:33:13 +0200
+
+gnome-desktop3 (3.0.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Bump debhelper compatibility level to 8.
+  * Bump Standards-Version to 3.9.2. No further changes.
+  * debian/watch: Switch to .bz2 tarballs.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 03 Jun 2011 19:37:17 +0200
+
+gnome-desktop3 (3.0.2-1) experimental; urgency=low
+
+  [ Rico Tzschichholz ]
+  * debian/{rules,control.in,libgnome-desktop-3-dev,
+    gir1.2-gnomedesktop-3.0.install}:
+    - enable introspection build and add required files
+
+  [ Sebastien Bacher ]
+  * New upstream version
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 24 May 2011 16:57:25 +0200
+
+gnome-desktop3 (3.0.1-1) experimental; urgency=low
+
+  [ Guido Günther ]
+  * libgnome-desktop-3-0.symbols: add Build-Depends-Package to generate
+    stricter build-deps
+
+  [ Sebastien Bacher ]
+  * New upstream version
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 18 May 2011 13:30:52 +0200
+
+gnome-desktop3 (3.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Wed, 13 Apr 2011 16:11:09 +0200
+
+gnome-desktop3 (2.91.93-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Frederic Peters <fpeters@debian.org>  Thu, 24 Mar 2011 22:23:12 +0100
+
+gnome-desktop3 (2.91.92-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ Josselin Mouette ]
+  * Add missing dependency on gnome-desktop3-data.
+
+  [ Frederic Peters ]
+  * debian/control.in: update dependency on gsettings-desktop-schemas.
+  * debian/rules: disable introspection support at the moment.
+
+ -- Frederic Peters <fpeters@debian.org>  Tue, 22 Mar 2011 14:03:34 +0100
+
+gnome-desktop3 (2.91.6.1-1) experimental; urgency=low
+
+  [ Sebastien Bacher ]
+  * debian/rules: use dpkg-vendor to set the distributor
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+  * debian/control.in:
+    - Update for the new gtk+ package names.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 19 Feb 2011 14:32:54 +0000
+
+gnome-desktop3 (2.91.6-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in,
+      debian/rules,
+      debian/gnome-about.install:
+      - gnome-about is gone, drop every reference to it.
+    + debian/patches/00git_no_GDK_DRAWABLE.patch,
+      debian/patches/00git_no_GDK_WINDOW_TYPE.patch,
+      debian/patches/00git_no_gdk_x11_drawable_get_xid.patch:
+      - Dropped, fixed upstream.
+    + debian/libgnome-desktop-3-0.symbols:
+      - Updated.
+    + debian/control.in:
+      - Depend / Build-Depend on gsettings-desktop-schemas(-dev) >= 0.1.4
+        for org.gnome.desktop.thumbnailers.
+      - Bump libgtk3.0-dev build dependency.
+    + debian/rules,
+      debian/gnome-desktop3-data.install:
+      - gnome-version.xml is back. Install it and build with
+        --with-gnome-distributor=Debian again.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 12 Jan 2011 22:12:39 +0000
+
+gnome-desktop3 (2.91.3-3) experimental; urgency=low
+
+  [ Sebastien Bacher ]
+  * debian/control.in: updated the dpkg-dev build-depends
+  * debian/rules:
+    - use dpkg-vendor to set the distributor
+
+  [ Sjoerd Simons ]
+  * Merge patches to build against new GTK+ from the ubuntu packaging
+    (originally from git)
+  * Update debian build-depend to >= 2.91.6
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 18 Dec 2010 18:34:09 +0000
+
+gnome-desktop3 (2.91.3-2) experimental; urgency=low
+
+  * debian/control.in:
+    - Let libgnome-desktop-3-dev depend on
+      gsettings-desktop-schemas-dev.
+  * debian/rules:
+    - Fail the build if the .symbols file is not updated.
+  * debian/libgnome-desktop-3-0.symbols:
+    - Updated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 05 Dec 2010 22:23:51 +0100
+
+gnome-desktop3 (2.91.3-1) experimental; urgency=low
+
+  [ Sebastien Bacher ]
+  * New upstream version
+  * Rename the source for the GNOME3 version since they are abi incompatible
+  * debian/control.in:
+    - build-depends on gsettings-desktop-schemas-dev
+    - clean some old conflicts and replaces
+    - depends on gsettings-desktop-schemas
+    - don't build the gnome-about binary from this version
+    - updated description
+    - updated for the source and binaries renaming
+    - updated the build-depends and depends
+  * Updated the .install for the new version
+  * debian/patches/99_ltmain_as-needed.patch:
+    - refreshed
+  * debian/libgnome-desktop-3-0.symbols:
+    - use a .symbols rather than shlibs
+  * debian/rules:
+    - dropped shlibs update since .symbols are used
+    - updated to the new library name
+    - use quilt as a patch system
+    - use --disable-gnome-about --disable-desktop-docs to avoid conflicting 
+      with the gtk2 version
+
+  [ Sjoerd Simons ]
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 27 Nov 2010 22:23:42 +0000
+
+gnome-desktop (2.30.2-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Switch to source format 3.0 (quilt)
+    - Add debian/source/format.
+    - Add debian/patches/series.
+    - Remove /usr/share/cdbs/1/rules/simple-patchsys.mk from debian/rules.
+    - Refresh debian/patches/99_ltmain_as-needed.patch.
+  * debian/control.in
+    - Remove ancient Conflicts/Replaces which are no longer relevant.
+    - Bump Standards-Version to 3.9.0. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 17 Jul 2010 04:45:22 +0200
+
+gnome-desktop (2.30.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 26 Apr 2010 23:22:47 +0200
+
+gnome-desktop (2.30.0-1) experimental; urgency=low
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/rules:
+    - Use the system pnp.ids from hwdata.
+  * debian/control.in:
+    - Recommend hwdata.
+
+  [ Josselin Mouette ]
+  * New upstream release.
+  * Bump build-dependencies.
+  * Rename runtime library package.
+  * 01_check_xrandr_version.patch: dropped, merged upstream.
+
+ -- Josselin Mouette <joss@debian.org>  Tue, 13 Apr 2010 21:05:05 +0200
+
+gnome-desktop (2.28.2-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Fix typo in description. Closes: #557400.
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 18 Dec 2009 16:14:17 +0100
+
+gnome-desktop (2.28.1-3) unstable; urgency=low
+
+  * 01_trap_rr_x_errors.patch: dropped, this solution is fugly.
+  * 01_check_xrandr_version.patch: check that the extension is available 
+    at version 1.2 before running code that requires version 1.2 anyway.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 21 Nov 2009 10:38:16 +0100
+
+gnome-desktop (2.28.1-2) unstable; urgency=low
+
+  * Switch to python-support.
+  * 01_trap_rr_x_errors.patch: patch from Chris Coulson to support 
+    FreeNX, it fixes some BadRequest errors. Closes: #556797.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 18 Nov 2009 09:16:11 +0100
+
+gnome-desktop (2.28.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control.in:
+    - bumped standards-version to 3.8.3. No changes needed.
+    - added Vcs-* fields.
+
+ -- Andrea Veri <andrea.veri89@gmail.com>  Mon, 26 Oct 2009 22:04:51 +0100
+
+gnome-desktop (2.28.0-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Stop mentioning GNOME 2.
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+  * debian/watch: Don't uupdate.
+  * debian/patches/90_relibtoolize.patch:
+    - Removed, not needed anymore now that upstream uses a recent libtool.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 27 Sep 2009 23:30:02 +0200
+
+gnome-desktop (2.26.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * 90_relibtoolize.patch: updated for the new version.
+
+ -- Josselin Mouette <joss@debian.org>  Tue, 14 Apr 2009 12:16:16 +0200
+
+gnome-desktop (2.26.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Standards version is 3.8.1.
+  * Rename library package to libgnome-desktop-2-11.
+  * Update build-dependencies and -dev dependencies.
+  * 90_relibtoolize.patch: updated for the new version.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 11 Apr 2009 12:47:08 +0200
+
+gnome-desktop (2.24.3-1) unstable; urgency=low
+
+  * Build-depend on libglib2.0-doc and libgtk2.0-doc to ensure proper 
+    xrefs.
+  * New upstream release.
+  * 90_relibtoolize.patch: regenerate for the new version.
+  * Upload to unstable!!1!omgwtfbbq
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 15 Mar 2009 15:21:12 +0100
+
+gnome-desktop (2.24.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * 90_relibtoolize.patch: regenerate for the new version.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 04 Jan 2009 10:27:14 +0100
+
+gnome-desktop (2.24.1-1) experimental; urgency=low
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+    - update patches/99_ltmain_as-needed.patch to apply.
+
+  [ Josselin Mouette ]
+  * Bump build-dependency on intltool, add one on libxrandr-dev.
+  * Add a ~ to build-depend on libgnomeui-dev.
+  * Rename the library package to libgnome-desktop-2-7.
+  * Ship the documentation in libgnome-desktop-dev.
+  * 90_relibtoolize.patch: relibtoolize to avoid the rpath issue on 
+    amd64.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 17 Nov 2008 21:43:38 +0100
+
+gnome-desktop (2.22.3-2) unstable; urgency=low
+
+  * Ship files in /usr/share/omf in gnome-desktop-data. Closes: #492872. 
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 18 Sep 2008 15:03:53 +0200
+
+gnome-desktop (2.22.3-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * debian/control.in:
+    + Update Standards-Version to 3.8.0, no additional changes needed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 30 Jun 2008 12:30:12 +0200
+
+gnome-desktop (2.22.2-1) unstable; urgency=low
+
+  * New upstream translation and bugfix release.
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 29 May 2008 01:32:08 +0200
+
+gnome-desktop (2.22.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 08 Apr 2008 13:18:00 +0200
+
+gnome-desktop (2.22.0-1) unstable; urgency=low
+
+  * New upstream stable release:
+    + debian/control.in:
+      - Update and cleanup build dependencies.
+    + debian/control.in,
+      debian/rules:
+      - gnome-about is now written in python, change things accordingly.
+    + debian/rules,
+      debian/libgnome-desktop-2.shlibs:
+      - Update shlibs to >= 2.22.0 because of new API.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 13 Mar 2008 21:06:48 +0100
+
+gnome-desktop (2.20.3-1) unstable; urgency=low
+
+  * New upstream release with minor updates.
+  * libgnome-desktop-dev.dirs: removed, useless.
+  * Standards version is 3.7.3.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 12 Jan 2008 04:32:34 +0100
+
+gnome-desktop (2.20.2-1) unstable; urgency=low
+
+  * New upstream bugfix release with updated translations.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 29 Nov 2007 11:15:09 +0100
+
+gnome-desktop (2.20.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 26 Oct 2007 19:03:07 +0200
+
+gnome-desktop (2.20.0-2) unstable; urgency=low
+
+  * Move gnome-version.xml to gnome-desktop-data. This is required for
+    bug-buddy.
+  * gnome-about depends on gnome-desktop-data.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 21 Sep 2007 21:09:03 +0200
+
+gnome-desktop (2.20.0-1) unstable; urgency=low
+
+  [ Loic Minier ]
+  * Don't include autotools.mk as it's already included by gnome.mk.
+
+  [ Sebastian Dröge ]
+  * New upstream release:
+    + debian/control.in:
+      - Add libgconf2-dev to build dependencies, bump the minimum required
+        version of libglib2.0-dev and libgtk2.0-dev as specified in
+        configure.in.
+  * debian/control.in:
+    + Use ${binary:Version} instead of ${Source-Version} to make lintian happy.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 21 Sep 2007 09:52:59 +0200
+
+gnome-desktop (2.18.3-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * 99_ltmain_as-needed.patch: get --as-needed back to work.
+
+  [ Loic Minier ]
+  * New upstream stable release; translation.
+
+ -- Loic Minier <lool@dooz.org>  Tue, 03 Jul 2007 21:53:55 +0200
+
+gnome-desktop (2.18.2-1) unstable; urgency=low
+
+  * New stable release; no API change.
+  * Wrap configure flags.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 28 May 2007 16:08:59 +0200
+
+gnome-desktop (2.18.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 25 Apr 2007 07:18:49 +0200
+
+gnome-desktop (2.18.0-2) unstable; urgency=low
+
+  * Upload to unstable; drop check-dist include.
+  * Wrap build-deps and deps.
+  * Fix URL in copyright.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 14 Apr 2007 15:41:23 +0200
+
+gnome-desktop (2.18.0-1) experimental; urgency=low
+
+  * Drop duplicate scrollkeeper build-dep.
+  * New upstream major stable release; fixes and translations; API additions.
+    - Set shlibs to libgnome-desktop-2 (>= 2.17.5).
+  * Bump up Debhelper compatibility level to 5.
+  * Set LDFLAGS directly and not via DEB_CONFIGURE_SCRIPT_ENV; build-depend on
+    cdbs >= 0.4.41.
+  * Drop useless version computation from rules.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 17 Mar 2007 14:08:08 +0100
+
+gnome-desktop (2.16.3-1) experimental; urgency=low
+
+  * Add a get-orig-source target to retrieve the upstream tarball.
+  * Include the new check-dist Makefile to prevent accidental uploads to
+    unstable; bump build-dep on gnome-pkg-tools to >= 0.10.
+  * Merge 2.14.3-2; SVN r8331:8963.
+    - Drop patch 01_ml.po, obsolete.
+  * New upstream stable release; bug fixes and translations.
+    - Build-depend on libxml2-dev >= 2.4.20.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 17 Mar 2007 13:40:59 +0100
+
+gnome-desktop (2.16.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Josselin Mouette <joss@debian.org>  Sun,  3 Dec 2006 21:55:03 +0100
+
+gnome-desktop (2.16.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump intltool requirement to 0.35.0.
+  * Remove orbit and bonobo requirements.
+  * Require gnome-pkg-tools 0.7 and use clean-la.mk.
+
+ -- Josselin Mouette <joss@debian.org>  Tue, 12 Sep 2006 22:18:19 +0200
+
+gnome-desktop (2.15.91-1) experimental; urgency=low
+
+  * New upstream development releases; no API changes.
+    - Target at experimental.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 13 Aug 2006 21:23:21 +0200
+
+gnome-desktop (2.14.3-2) unstable; urgency=low
+
+  [ Loic Minier ]
+  * Add a get-orig-source target to retrieve the upstream tarball.
+
+  [ Josselin Mouette ]
+  * 01_ml.po.patch: new Malayalam translation from പ്രവീണ്‍|Praveen എ|A
+    (closes: #408107).
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 15 Feb 2007 19:23:17 +0100
+
+gnome-desktop (2.14.3-1) unstable; urgency=low
+
+  * New upstream release; no API changes.
+
+ -- Loic Minier <lool@dooz.org>  Tue,  8 Aug 2006 10:19:28 +0200
+
+gnome-desktop (2.14.2-2) unstable; urgency=low
+
+  * Stop shipping *.la files as libeel2-dev and libnautilus-extension-dev were
+    rebuilt without these.
+  * Fix watch file.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 26 Jun 2006 22:22:24 +0200
+
+gnome-desktop (2.14.2-1) unstable; urgency=low
+
+  * Bump up Standards-Version to 3.7.2.
+    [debian/control, debian/control.in]
+  * New upstream release.
+    - Add missing build-deps on libgtk2.0-dev (>= 2.8.0), libgnomevfs2-dev (>=
+      2.0.0), libstartup-notification0-dev (>= 0.5), libgnomecanvas2-dev (>=
+      2.0.0), scrollkeeper.
+      [debian/control, debian/control.in]
+    - Bump libglib2.0-dev build-dep to >= 2.8.0 and gtk-doc-tools to >= 1.4.
+      [debian/control, debian/control.in]
+  * Don't override DEB_CONFIGURE_EXTRA_FLAGS completely.
+    [debian/rules]
+
+ -- Loic Minier <lool@dooz.org>  Wed, 31 May 2006 18:29:30 +0200
+
+gnome-desktop (2.14.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * [debian.control.in] Bumped the libgnomeui dependencies due to the
+    libXcursor/libXrender transition.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Fri, 21 Apr 2006 10:46:12 +0200
+
+gnome-desktop (2.14.0-1) unstable; urgency=low
+
+  * New upstream GNOME 2.14 release.
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon,  3 Apr 2006 15:02:43 +0200
+
+gnome-desktop (2.12.3-1) unstable; urgency=low
+
+  [ Ondřej Surý ]
+  * Add versioned build dependency on gnome-doc-utils (Closes: #351634)
+
+  [ Loic Minier ]
+  * New upstream release.
+  * Add ${misc:Depends} deps.
+  * Bump up Standards-Version to 3.6.2.
+  * Ship some serious copyright information.
+
+ -- Loic Minier <lool@dooz.org>  Wed,  1 Mar 2006 19:26:11 +0100
+
+gnome-desktop (2.12.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon,  6 Feb 2006 14:49:01 +0100
+
+gnome-desktop (2.12.2-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/libgnome-desktop-2.shlibs:
+    - updated (Closes: #344273)
+
+ -- Guilherme de S. Pastore <guilherme.pastore@terra.com.br>  Wed, 21 Dec 2005 17:31:02 -0200
+
+gnome-desktop (2.12.1-1) experimental; urgency=low
+
+  * New upstream version.
+  * debian/control.in:
+    - Build-Depends on gnome-doc-utils.
+    - updated for the packages changes.
+    - updated the libgnomeui requirement.
+  * debian/gnome-desktop-data.install, debian/gnome-about.install:
+    - install the desktop file with the binary.   
+  * debian/rules:
+    - don't update scrollkeeper files on build.
+  * debian/watch:
+    - updated.
+
+ -- Sebastien Bacher <seb128@debian.org>  Tue, 18 Oct 2005 13:03:21 +0200
+
+gnome-desktop (2.10.2-1) unstable; urgency=low
+
+  * Sebastien Bacher:
+    * New upstream version.
+    * debian/patches/01_relibtoolise.patch:
+      - not required.
+  * Josselin Mouette:
+    * Pass --as-needed to ld.
+    * Don't overwrite DEB_CONFIGURE_SCRIPT_ENV completely.
+
+ -- Sebastien Bacher <seb128@debian.org>  Thu, 30 Jun 2005 19:03:25 +0200
+
+gnome-desktop (2.10.2-1) unstable; urgency=low
+
+  * Sebastien Bacher:
+    * New upstream version.
+    * debian/patches/01_relibtoolise.patch:
+      - not required.
+  * Josselin Mouette:
+    * Pass --as-needed to ld.
+    * Don't overwrite DEB_CONFIGURE_SCRIPT_ENV completely.
+
+ -- Sebastien Bacher <seb128@debian.org>  Thu, 30 Jun 2005 19:03:25 +0200
+
+gnome-desktop (2.10.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Ondřej Surý <ondrej@sury.org>  Tue,  7 Jun 2005 16:05:50 +0200
+
+gnome-desktop (2.10.1-1) experimental; urgency=low
+
+  * New upstream version.
+  * debian/libgnome-desktop-2.shlibs:
+    - updated (Closes: #304449).
+  * debian/patches/01_relibtoolise.patch:
+    - updated.
+
+ -- Sebastien Bacher <seb128@debian.org>  Wed, 13 Apr 2005 16:27:26 +0200
+
+gnome-desktop (2.10.0-1) experimental; urgency=low
+
+  * New upstream version.
+  * debian/control.in:
+    - updated the requirements.
+  * debian/gnome-desktop-data.install:
+    - updated.
+  * debian/libgnome-desktop-2.shlibs:
+    - updated.
+  * debian/patches/01_relibtoolise.patch:
+    - updated.
+  * debian/watch:
+    - updated. 
+
+ -- Sebastien Bacher <seb128@debian.org>  Fri,  8 Apr 2005 17:51:35 +0200
+
+gnome-desktop (2.8.3-2) unstable; urgency=high
+
+  * GNOME Team upload.
+  * debian/control.in:
+    Build-Depend on libgnomeui-dev (>= 2.8.1-3) to remove dependency on howl.
+  * Priority high, howl needs to be removed due to license issues.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed,  2 Mar 2005 08:39:31 +0100
+
+gnome-desktop (2.8.3-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Ondřej Surý <ondrej@sury.org>  Thu, 24 Feb 2005 13:48:51 +0100
+
+gnome-desktop (2.8.1-2) unstable; urgency=low
+
+  * GNOME team upload.
+  * Upload to unstable.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 19 Nov 2004 14:30:36 +0100
+
+gnome-desktop (2.8.1-1) experimental; urgency=low
+
+  * GNOME team upload.
+  * New upstream release.
+  * debian/libgnome-desktop-2.shlibs: bump shlibs, as some symbols have
+    changed.
+  * debian/patches/01_relibtoolise.patch: updated.
+
+ -- Jordi Mallach <jordi@debian.org>  Tue, 19 Oct 2004 17:49:34 +0200
+
+gnome-desktop (2.8.0-1) experimental; urgency=low
+
+  * New upstream development release.
+  * [debian/watch] Updated.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Thu, 16 Sep 2004 20:16:43 +0200
+
+gnome-desktop (2.7.91-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Tue, 17 Aug 2004 20:24:09 +0200
+
+gnome-desktop (2.7.90-1) experimental; urgency=low
+
+  * New upstream development release.
+  * [debian/rules] Ensure complete symbol information at build time; make the
+    linker work a bit harder to speed up dynamic loading.
+  * [debian/patches/01_relibtoolise.patch] Updated.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Sun, 15 Aug 2004 16:36:33 +0200
+
+gnome-desktop (2.7.1-1) experimental; urgency=low
+
+  * GNOME Team upload.
+  * New (development) upstream release.
+  * debian/patches/01_relibtoolise.patch:
+    - updated
+
+ -- Sebastien Bacher <seb128@debian.org>  Sat, 26 Jun 2004 18:20:17 +0200
+
+gnome-desktop (2.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Fri, 18 Jun 2004 12:50:12 +0200
+
+gnome-desktop (2.6.1-2) unstable; urgency=low
+
+  * Ondřej Surý
+    - upload to unstable.
+
+ -- Ondřej Surý <ondrej@debian.org>  Wed, 26 May 2004 15:25:12 +0200
+
+gnome-desktop (2.6.1-1) experimental; urgency=low
+
+  * Ondřej Surý
+    - new upstream release.
+    - Relibtoolize again for 2.6.1
+    - Remove *.files.
+  * J.H.M. Dassen (Ray):
+    - [debian/patches/01_relibtoolise.patch] New. Cuts down the direct
+      dependencies of gnome-about.
+  * Jordi Mallach:
+    - [debian/rules] Configure with --with-gnome-distributor=Debian again.
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 20 Apr 2004 12:50:06 +0200
+
+gnome-desktop (2.6.0-4) experimental; urgency=low
+
+  * Rebuild with correct libgnome-keyring-dev package.
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Sat, 27 Mar 2004 08:32:24 -0300
+
+gnome-desktop (2.6.0-3) experimental; urgency=low
+
+  * debian/control.in
+    + Add build dependency on scrollkeeper.
+
+ -- Ondřej Surý <ondrej@debian.org>  Fri, 26 Mar 2004 23:04:53 +0100
+
+gnome-desktop (2.6.0-2) experimental; urgency=low
+
+  * Add dependency on docbook-xml and gtk-doc-tools.
+
+ -- Ondřej Surý <ondrej@debian.org>  Wed, 24 Mar 2004 16:33:52 +0100
+
+gnome-desktop (2.6.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Ondřej Surý <ondrej@debian.org>  Wed, 24 Mar 2004 09:45:43 +0100
+
+gnome-desktop (2.4.1-9) unstable; urgency=low
+
+  * New maintainer (Closes: #238883)
+  * Switched to cdbs build system.
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 23 Mar 2004 16:15:45 +0000
+
+gnome-desktop (2.4.1-8) unstable; urgency=low
+
+  * debian/control set Maintainer to Debian QA Group
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 20 Mar 2004 09:49:26 +0100
+
+gnome-desktop (2.4.1-7) unstable; urgency=low
+
+  * Orphaned package.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Mar 2004 15:36:08 +0100
+
+gnome-desktop (2.4.1-6) unstable; urgency=low
+
+  * Remove DTD hack now we have xml catalog
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  8 Feb 2004 10:41:21 +0100
+
+gnome-desktop (2.4.1-5) unstable; urgency=low
+
+  * gnome-desktop-data add a replace for gnome-panel-data << 2.0 (Closes: #230096)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 28 Jan 2004 18:40:45 +0100
+
+gnome-desktop (2.4.1-4) unstable; urgency=low
+
+  * Build with --with-gnome-distributor=Debian (Closes: #217951)
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  1 Nov 2003 17:09:11 +0100
+
+gnome-desktop (2.4.1-3) unstable; urgency=low
+
+  * Update Build-Depends to GNOME 2.4 packages (Closes: #217512)
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 26 Oct 2003 08:32:40 +0100
+
+gnome-desktop (2.4.1-2) unstable; urgency=low
+
+  * Rebuild to remove liblinc dependency in the -dev package
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 19 Oct 2003 00:07:47 +0200
+
+gnome-desktop (2.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 18 Oct 2003 01:00:09 +0200
+
+gnome-desktop (2.2.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 16 May 2003 17:35:52 +0200
+
+gnome-desktop (2.2.1-2) unstable; urgency=low
+
+  * debian/control gnome-desktop-data replaces gnome-core (<= 1.5) (Closes: #186635)
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 28 Mar 2003 22:33:06 +0100
+
+gnome-desktop (2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix typo in gnome-about (Closes: #184102)
+  * Fix extra item in launcher (Closes: #184109)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 11 Mar 2003 14:58:58 +0100
+
+gnome-desktop (2.2.0.1-2) unstable; urgency=low
+
+  * Bug 178956 was in gnome-help not in gnome-help-data (Closes: #178956)
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  6 Feb 2003 17:21:07 +0100
+
+gnome-desktop (2.2.0.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add a Conflicts with gnome-help-data (Closes: #178956)
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  4 Feb 2003 14:26:27 +0100
+
+gnome-desktop (2.2.0-2) unstable; urgency=low
+
+  * Add versioned conflicts for gnome-core (Closes: #178115, #178126)
+  * Build against the latest libstartup-notification0 (Closes: #178246)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 25 Jan 2003 14:16:13 +0100
+
+gnome-desktop (2.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Hack configure to work with mipsel (Closes: #177321)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 21 Jan 2003 15:21:03 +0100
+
+gnome-desktop (2.1.90-2) unstable; urgency=low
+
+  * Add libstartup-notification0-dev dependency for the -dev package
+    (Closes: #176710)
+  * Update libgnomeui-dev version to 2.1.90 in build-depends (Closes: #176732)
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 17 Jan 2003 16:50:07 +0100
+
+gnome-desktop (2.1.90-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump Standards-Version to 3.5.8
+  * Bump libgnome-desktop name to -2 (was -0)
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  8 Jan 2003 00:58:51 +0100
+
+gnome-desktop (2.0.10-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 15 Nov 2002 14:32:07 +0100
+
+gnome-desktop (2.0.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 14 Oct 2002 15:44:42 +0200
+
+gnome-desktop (2.0.8-2) unstable; urgency=low
+
+  * Update to standards version 3.5.7
+  * debian/control Add a versioned Conflicts: gnome-panel (<= 2.0.0)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 28 Sep 2002 19:29:23 +0200
+
+gnome-desktop (2.0.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  5 Sep 2002 18:50:11 +0200
+
+gnome-desktop (2.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 27 Aug 2002 11:06:01 +0200
+
+gnome-desktop (2.0.6-2) unstable; urgency=low
+
+  * Build against the latest libgnutls 5 (Closes: #157782)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 22 Aug 2002 15:35:41 +0200
+
+gnome-desktop (2.0.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  8 Aug 2002 16:39:25 +0200
+
+gnome-desktop (2.0.5a-1) unstable; urgency=low
+
+  * I forgot to rename the original tarball
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  7 Aug 2002 12:46:26 +0200
+
+gnome-desktop (2.0.5-1) unstable; urgency=low
+
+  * New upstream releae.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  5 Aug 2002 19:31:35 +0200
+
+gnome-desktop (2.0.4-3) unstable; urgency=low
+
+  * Remove call to internet DTD by locale DTD
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  2 Aug 2002 19:32:12 +0200
+
+gnome-desktop (2.0.4-2) unstable; urgency=low
+
+  * Recompiled against the latest libgnomevfs to remove libssl dependency.
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  2 Aug 2002 17:17:04 +0200
+
+gnome-desktop (2.0.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 30 Jul 2002 15:23:45 +0200
+
+gnome-desktop (2.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 15 Jul 2002 15:09:05 +0200
+
+gnome-desktop (2.0.2-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 27 Jun 2002 19:39:17 +0200
+
+gnome-desktop (2.0.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 26 Jun 2002 01:29:52 +0200
+
+gnome-desktop (2.0.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 17 Jun 2002 15:56:37 +0200
+
+gnome-desktop (2.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 10 Jun 2002 16:24:14 +0200
+
+gnome-desktop (1.5.22-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  4 Jun 2002 16:59:29 +0200
+
+gnome-desktop (1.5.21-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 28 May 2002 15:39:27 +0200
+
+gnome-desktop (1.5.20-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 20 May 2002 21:57:19 +0200
+
+gnome-desktop (1.5.19-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add support for DEB_HOST_GNU_TYPE DEB_BUILD_GNU_TYPE and
+    DEB_BUILD_OPTIONS
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 15 May 2002 20:25:14 +0200
+
+gnome-desktop (1.5.18-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 29 Apr 2002 20:23:14 +0200
+
+gnome-desktop (1.5.17-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 22 Apr 2002 16:43:21 +0200
+
+gnome-desktop (1.5.16-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 17 Apr 2002 15:29:54 +0200
+
+gnome-desktop (1.5.15-1) experimental; urgency=low
+
+  * new upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  1 Apr 2002 22:29:24 +0200
+
+gnome-desktop (1.5.14-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 29 Mar 2002 16:52:31 +0100
+
+gnome-desktop (1.5.12-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  5 Mar 2002 14:32:36 +0100
+
+gnome-desktop (1.5.11-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 26 Feb 2002 15:41:56 +0100
+
+gnome-desktop (1.5.10-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 18 Feb 2002 21:49:27 +0100
+
+gnome-desktop (1.5.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 16 Feb 2002 00:58:38 +0100
+
+gnome-desktop (1.5.7-1) experimental; urgency=low
+
+  * New upstrema release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  5 Feb 2002 14:41:01 +0100
+
+gnome-core2 (1.5.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 20 Jan 2002 16:21:40 +0100
+
+gnome-core (1.4.0.4-16) unstable; urgency=low
+
+  * Fix typo in gnome-terminal.wrapper (Closes: #127768)
+  * Remove gnome-hint patche (Closes: #121390, #129184)
+  * debian/control Replace libpng-dev by libpng2-dev in Build-Depends
+    (Closes: #128377)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 14 Jan 2002 15:04:52 +0100
+
+gnome-core (1.4.0.4-15) unstable; urgency=low
+
+  * Build against the latest gnome-libs to update the libzvt2 dependency
+    (Closes: #127309, #127271)
+  * debian/control Replace libpng2-dev by libpng-dev in Build-Depends.
+  * debian/control Build-depends on libzvt-dev (>= 1.4.1.2-9)
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  1 Jan 2002 15:27:43 +0100
+
+gnome-core (1.4.0.4-14) unstable; urgency=low
+
+  * Fix typo in gnome-terminal.1 (Closes: #123073)
+  * Fix base page for doc-base in libpanel-applet-dev package.
+  * Fix typo in gnome-help documentation (Closes: #126566)
+  * Apply patch to allows meta functionnality in gnome-terminal (Closes: #50427)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 27 Dec 2001 14:47:36 +0100
+
+gnome-core (1.4.0.4-13) unstable; urgency=low
+
+  * Default font for gnome-terminal is "fixed" only (Closes: #117126)
+  * Patch against gnome-hint.c Don't use gettext for font descriptor
+    (Closes: #116606)
+  * Patch against gnome-about/Makefile.am to use new gdk_pixbuf include path
+    (Closes: #120312)
+  * Revert my change on logout.c Only root can shutdown/reboot from the
+    panel (Closes: #119316, #120127)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 20 Nov 2001 11:36:05 +0100
+
+gnome-core (1.4.0.4-12) unstable; urgency=low
+
+  * gnome-wm honour --default-wm (Closes: #115668)
+  * Build against the latest gnome-libs
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 21 Oct 2001 14:11:19 +0200
+
+gnome-core (1.4.0.4-11) unstable; urgency=low
+
+  * debian/control lynx comeback in Recommends (Closes: #114142)
+  * debian/control replaces xml-i18n-tools by intltool (Closes: #115024)
+  * Fix automake 1.5 errors. Thanks to Denis Barbier (Closes: #114369)
+  * Build against the latest orbit (Closes: #115309)
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 12 Oct 2001 10:46:49 +0200
+
+gnome-core (1.4.0.4-10) unstable; urgency=low
+
+  * Fix typo in panel/panel.hints (Closes: #113590)
+  * Replace lynx by w3m (Closes: #113613)
+  * Move gnome-terminal.desktop in gnome-terminal package (Closes: #113736)
+  * Move gnome-help.desktop in gnome-help package
+  * debian:control Add Replaces: gnome-panel-data (<= 1.4.0.4-9) for above
+  * Patch against gsm/logout.c Now you can reboot/halt your machine from the
+    panel. This only work for root, because shutdown doesn't understand the
+    -a option. Read README.debian in gnome-panel package.
+  * debian/rules Remove less files in clean target (Closes: #114020)
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  1 Oct 2001 11:34:06 +0200
+
+gnome-core (1.4.0.4-9) unstable; urgency=low
+
+  * Add Debian menu for panel and gmenu (Closes: #112176)
+  * Remove /var/lib/gnome on purge (Closes: #113005)
+  * Remove /etc/gnome/config on purge (Closes: #112994)
+  * Remove /etc/gnome on purge (Closes: #112995)
+  * debian/control replace cygnus-stylesheets by docbook-utils
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 24 Sep 2001 18:39:19 +0200
+
+gnome-core (1.4.0.4-8) unstable; urgency=high
+
+  * High urgency, because the current release in testing has a missing
+    dependency on libpanel-applet0 and the panel package doesn't work if
+    libpanel-applet0 isn't installed (Closes: #111517)
+  * debian/control for gnome-help, move lynx from depends to recommends
+    (Closes: #109652)
+  * debian/control gnome-panel suggests fortune-mod (Closes: #110865)
+  * debian/control gnome-help suggests gnome-users-guide not
+    gnome-users-guide-en (Closes: #111200)
+  * Don't change cursor color (Closes: #97697)
+  * Change default font for gnome-terminal (Closes: #111319)
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  7 Sep 2001 15:06:07 +0200
+
+gnome-core (1.4.0.4-7) unstable; urgency=low
+
+  * Fix path in gnome-session.1 (Closes: #107724)
+  * debian/*.sgml Use docbook 4.1
+  * debian/control gnome-help-data Replaces gnome-terminal (<= 1.0.55-2)
+    (CLoses: #107948)
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  8 Aug 2001 08:07:56 +0200
+
+gnome-core (1.4.0.4-6) unstable; urgency=low
+
+  * debian/rules for dh_makeshlibs replace libcapplet0 by libpanel-applet0
+    (Closes: #105772)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 18 Jul 2001 19:02:59 +0200
+
+gnome-core (1.4.0.4-5) unstable; urgency=low
+
+  * Patch against gnome-edit to use EDITOR if the default gnome editor is
+    unavailable.
+  * Remove gnome-wm patch, and move the patched file in debian/
+  * debian/gnome-wm Try to exec $WINDOW_MANAGER before x-window-manager
+    (Closes: #103430
+  * New patch from Michael Urman to hide task names in tasklist_applet
+    (Closes: #104587)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 14 Jul 2001 16:58:12 +0200
+
+gnome-core (1.4.0.4-4) unstable; urgency=low
+
+  * Gnome-help Provides: man-browser, www-browser, info-browser
+  * Switch to debhelper V3
+  * Change libraries versionning to (>= 1.4.0.2-3) instead of the latest
+    package number.
+  * Build-depends on groff-base instead of groff
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 22 Jun 2001 17:02:37 +0200
+
+gnome-core (1.4.0.4-3) unstable; urgency=low
+
+  * New patch: Allows to save/load the keyboard secure state (Closes: #83028)
+  * New patch: Remove a warning in configure
+  * gnome-help replace gnome-panel-data (Closes: #99499)
+  * Build-depends on xml-i18n-tools (>= 0.8.4.cvs.20010530-1) (Close: #98784)
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  2 Jun 2001 14:41:45 +0200
+
+gnome-core (1.4.0.4-2) unstable; urgency=low
+
+  * New patch: Replace Distribution by Debian in configuration dialog box.
+  * New patch: Upstream patch to allow Debian menu in default configuration.
+  * New patch: Fix some wrong path.
+  * Move gnome-feedback doc from gnome-help-data to gnome-core.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 15 May 2001 15:36:51 +0200
+
+gnome-core (1.4.0.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  9 May 2001 23:56:27 +0200
+
+gnome-core (1.4.0.3-2) unstable; urgency=low
+
+  * Remove debugging code (/tmp/languages file)
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  7 May 2001 16:48:18 +0200
+
+gnome-core (1.4.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * New: tooltips for long task names in tasklist_applet (Closes: #63898)
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  3 May 2001 15:51:58 +0200
+
+gnome-core (1.4.0.2-3) unstable; urgency=low
+
+  * Fix wrong dif.gz file (Closes: #94499)
+  * Build against the latest lignome-dev (Closes: #95301, #95691)
+  * gnome-terminal should depends on gnome-bin (Closes: #95498)
+  * Doesn't build against gtkhtml this break fonts displaying (Closes: #92187)
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  1 May 2001 11:03:14 +0200
+
+gnome-core (1.4.0.2-2) unstable; urgency=low
+
+  * New/old patch against manpages, never applied by upstream.
+  * gnome-help depends on lynx.
+  * Use x-terminal-emulator in gnome-download instead of xterm.
+  * Move gnome-convert and gnome-download from gnome-core to gnome-help.
+  * Move gnome-login-check from gnome-core to gnome-session.
+  * Move gnome-panel-add-launcher from gnome-core to gnome-panel.
+  * Move sesion-properties* from gnome-core to gnome-session.
+  * debian/control Add Replaces for the changes above.
+  * Write manpages (Closes: #87085)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 17 Apr 2001 18:54:15 +0200
+
+gnome-core (1.4.0.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build-depends on latest gettext (Closes: #93198)
+  * Icon box in menu editor is back (Closes: #91938)
+  * Build-depends on latest xml-i18n-tools and libgnome-dev
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 11 Apr 2001 15:16:20 +0200
+
+gnome-core (1.4.0.1-2) unstable; urgency=low
+
+  * Build depends on versionned gettext 0.10.35-17 (Closes: #93198)
+  * Write manpage for gnome-session and add docbook-to-man in build-depnds
+  * Write manpages for gnome-help (Closes: #87089)
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  7 Apr 2001 15:52:40 +0200
+
+gnome-core (1.4.0.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/gnome-terminal.wrapper change -T by -t (Closes: #90847)
+  * debian/gnome-session.README.debian remove references to .xsession. This
+    is now obsolete by the new x-session-manager scheme.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  1 Apr 2001 15:01:51 +0200
+
+gnome-core (1.4.0-2) unstable; urgency=low
+
+  * Build depends on libglade-gnome0-dev (>= 0.16-1) (Closes: #90416)
+  * debian/control Add Build-Conflicts: libgtkhtml-dev (>= 0.7-1) (Closes: #90700)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 22 Mar 2001 16:44:12 +0100
+
+gnome-core (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Gnome-core replaces gnome-control-center 1.2.3-1 (Closes: #90124)
+  * Remove manpages patche included by upstream.
+  * gnome-session don't always saves session on logout (Closes: #89630)
+  * Can add a launcher in the panel (Closes: #90018)
+  * Deskguide don't crashes on Fill with mini-images (Closes: #86952)
+  * Deskguide don't fail to run (Closes: #89769)
+  * Pager applet don't fail to run (Closes: #89025)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 19 Mar 2001 13:01:26 +0100
+
+gnome-core (1.3.1-2) unstable; urgency=low
+
+  * Remove taslisk-applet manpage (Closes: #88994)
+  * New patch against gnome-terminal.1 (Closes: #89005)
+  * Move /usr/lib/libtasklist_applet.so in libpanel-applet0
+    (Closes: #89053, #89008, #89012, #89091, #89003)
+  * Gnome-terminal replace gnome-help-data (<= 1.0.55-2) (Closes: #87910)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 10 Mar 2001 10:45:14 +0100
+
+gnome-core (1.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed default.session patch
+  * debian/control Add Replaces: gnome-control-center (<= 1.2.2-10), because
+    the session-properties-capplet is now in this package.
+  * debian/{postinst,prerm} Call scrollkeeper
+  * debian/control Add scrollkeeper, xml-i18n-tools and libglade-gnome0-dev in
+    build-depends and scrollkeeper in depends for gnome-core
+  * Menu and laucnh keys works now (Closes: #86955)
+  * Dead keys work in gnome-terminal (Closes: #63102)
+  * Gnome-terminal isn't broken (Closes: #86752)
+  * New patch htmlurl.h (This file was broken by upstream author)
+  * XFMail doesn't crash the tasklist applet in this release (Closes: #88515)
+  * debian/gnome-core.menu New file for the session properties capplet
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  5 Mar 2001 11:40:15 +0100
+
+gnome-core (1.2.4-11) unstable; urgency=low
+
+  * Update (again) the Build-depends field (Closes: #87419)
+  * Add a debian directory for the gnome-help-browser and add suggest doc-base
+   for gnome-help. Now we can watch debian documentation registered with doc-base.
+  * Add a lintian override file for libpanel-applet0
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 25 Feb 2001 16:14:09 +0100
+
+gnome-core (1.2.4-10) unstable; urgency=low
+
+  * Update the Build-depends field (Closes: #86441, #87419)
+  * Call update-alternatives only in remove (gnome-terminal, gnome-session) (Closes: #87327, #87328)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 24 Feb 2001 18:03:20 +0100
+
+gnome-core (1.2.4-9) unstable; urgency=low
+
+  * Remove abandonned /etc/CORBA/servers/bad-applet.goad (Closes: #84950)
+  * Build against the latest gnome-libs (1.2.11) (Close: #85932)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 14 Feb 2001 13:49:26 +0100
+
+gnome-core (1.2.4-8) unstable; urgency=low
+
+  * debian/control Add Replaces: gnome-help-data (<< 1.0.55-2) for
+    gnome-help (Closes: #80974)
+  * debian/gnome-help.mime Rewrote (Closes: #82891)
+  * debian/control gnome-core depends on gnome-bin (Closes: #82951)
+  * Wrote gnome-panel.README.Debian (Closes: #82954)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 22 Jan 2001 16:04:58 +0100
+
+gnome-core (1.2.4-7) unstable; urgency=low
+
+  * Added gnome-bin (>= 1.2.0) in gnome-session Depends field (Closes: #80589, #80595, #80733)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 27 Dec 2000 19:24:08 +0100
+
+gnome-core (1.2.4-6) unstable; urgency=low
+
+  * Apply patch to gnome-run to call x-terminal-emulator (Closes: #80219)
+  * debian/gnome-terminal.wrapper This is -t not -T close (Closes: #80405)
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 24 Dec 2000 03:27:12 +0100
+
+gnome-core (1.2.4-5) unstable; urgency=low
+
+  * Install gnome-terminal.wrapper as x-terminal-emulator and remove
+    debian/patches/gnome-terminal.dpatch (Closes: 64326)
+    Thanks to  Eric Gillespie, Jr. <epg@progenylinux.com>
+  * Add Recommends: gnome-applets on gnome-panel (Closes: #72208)
+  * gnome-sesion provides x-session-manager and install alternative (Closes: #60667)
+  * Added hints=Gnome for all menu files.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 20 Dec 2000 23:19:55 +0100
+
+gnome-core (1.2.4-4) unstable; urgency=low
+
+  * Call x-terminal-emulator in gnome-wm and add depends on the latest debianutils
+    for gnome-session. Thanks to Joseph Carter <knghtbrd@progeny.com> for the file
+    (Closes: #79776)
+  * Rewrote default.session patch
+  * Add patch form Doug Larrick <doug@ties.org> for gwmthumbnail.c (Closes: #78550)
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 17 Dec 2000 12:04:54 +0100
+
+gnome-core (1.2.4-3) unstable; urgency=low
+
+  * Change gnome-help.mime to call the right file (Closes: #77986)
+    Thanks Malcolm Parsons <malcolm@ivywell.screaming.net> for the patch.
+  * Patch gsm/default.in (two entries with same id) (Closes: #78276)
+    Thanks to Normal User <gohmandj@mrs.umn.edu> (Nice name)
+  * Move gnome-control-center from Depends to Suggests.
+  * Remove libgtkhtml-dev from Build-Depends (Closes: #79527)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 13 Dec 2000 18:01:34 +0100
+
+gnome-core (1.2.4-2) unstable; urgency=low
+
+  * Remove README and NEWS files (Closes: #77250)
+  * Disable thumbnails by default in deskguide_applet (Closes: #77205)
+  * debian/rules --with-window-manager is now sawfish (was x-window-manager)
+    and rewrote debian/patches/gnome-wm.dpatch to remove x-window-manager (Closes: #77401)
+  * Should close this old bug (Closes: #51198)
+  * Patch gnome-edit to use x-terminal-emulator instead of xterm.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 20 Nov 2000 11:35:55 +0100
+
+gnome-core (1.2.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 16 Nov 2000 00:43:15 +0100
+
+gnome-core (1.2.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add gnome-help example and manpage in gnome-help package (Closes: #49977)
+  * This release should close these old bugs (Closes: #60561, #60768, #45053)
+  * Gnome-panel don't use all CPU time (Closes: #75251, #60209)
+  * Remove gmenu patch included by upstream.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  8 Nov 2000 17:09:42 +0100
+
+gnome-core (1.2.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Debian menus aren't empty (Closes: #70470)
+  * Launcher can find icon (Closes: #62502)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 24 Oct 2000 15:51:11 +0200
+
+gnome-core (1.2.2.1-3) unstable; urgency=low
+
+  * Add gnome-terminal.prerm for update-alternatives --remove (Closes: #74451)
+  * Patch gnome-terminal to accept -T option (Closes: #74450)
+  * Move README.debian in gnome-session package (Closes: #60440)
+  * mesg work in gnome-terminal (Closes: #71728)
+  * Upstream fix these old bugs in Gnome-terminal
+      Problem with menubar (Closes: #57516)
+      Problem with console-apt Closes: #60079)
+      Problem with screen (Closes: #50156)
+  * Binaries don't should go in /usr/X11R6/bin (Closes: #24031)
+    Quoting Debian policy :
+    "Packages using the X Window System should abide by the FHS standard"
+    "whenever possible; they should install binaries, libraries, manual"
+    "pages, and other files in FHS-mandated locations wherever possible."
+    "This means that files must not be installed into /usr/X11R6/bin/'"
+  * hostname isn't harcoded (Closes: #72536)
+  * Error messages mention Lynx (Closes: #62216)
+  * Display correctly deskuse.html (Closes: #49974)
+  * Add patch from malcolm <malcolm@ivywell.screaming.net> (Closes: #64820)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 14 Oct 2000 23:39:49 +0200
+
+gnome-core (1.2.2.1-2) unstable; urgency=low
+
+  * Typo in debian/gnome-terminal.postinst
+  * Add gnome-terminal manpage (Closes: #69188)
+  * Closes: #63103 already closed in 1.2.1-0.2 (typo in debian/changelog)
+  * Gnome-terminal write to /var/run/utmp (Closes: #59053)
+  * delete/backspace keys works (Closes: #57198)
+  * Install GnomeHelp file in /etc/gnome/config (Closes: #73012)
+  * Convert png icons in xpm for Debian menu.
+  * Rearange documentation for dhelp (Closes: #56672)
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  5 Oct 2000 00:59:44 +0200
+
+gnome-core (1.2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Patch all manpages (Closes: #70009)
+  * gnome-panel 1.0.55-2.0.1 (sparc) is now installable (Closes: #69075, #71570)
+  * gmenu don't jam up all translations (Closes: #46446)
+  * panel remember its configuration between session
+    (Closes: #47734, #54190)
+  * Icons are now centered (Closes: #63868)
+  * Bugs closed by previous NMU in gnome-panel (Closes: #40036, #52584, #54755,
+    #58278, #61083, #69428))
+  * libgen_util_applet.so installed in 1.2.1-0.2 (Closes: #69463)
+  * debian/control remove Conflicts: asclock (Closes: #52077)
+  * gnome-help 1.0.55-2.0.1 (sparc) is now installable (Closes: #69356)
+  * Bugs closed by previous NMU in gnome-help (Closes: #49734, #56081, #58679, #58973)
+  * debian/control move gmc from Recommends to Suggests (Closes: #59415)
+  * The first search in gnome-wm search is x-window-manager
+    (Closes: #50940, #65969, #62143)
+  * Bug closed in 1.2.2-1 (README.debian in gnome-session package) (Closes: #66219)
+  * Bugs closed by previous NMU in gnome-terminal
+    (Closes: #64579, #63592, #63332, #56584, #55477, #54428)
+  * gnome-terminal provide x-terminal-emulator (Closes: #61805, #53994, #56225)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 27 Sep 2000 16:02:16 +0200
+
+gnome-core (1.2.2-1) unstable; urgency=low
+
+  * New maintainer, thanks James.
+  * New upstream release.
+  * Switch to debhelper V2
+  * Move README.debian in gnome-session package (Closes: #65235) and
+    update this file (Closes: #71339)
+  * Bug closed in 1.2.1-0.2 (Install missing libraries) (Closes: #69590, #70483)
+  * Bugs closed in 1.2.1-0.1 (typo close instead closes) (Closes: #53764, #54050)
+  * Remove gtkhtml patch.
+  * The desk guide show thumbnail (Closes: #72359)
+  * Missing package under sparc (Closes: #71438)
+  * debian/control add Conflicts: libgnome32 (<< 1.2.0-1) for gnome-panel (Closes: #72039)
+  * Added icons in Debian menu.
+  * Eject in drivemount check if '-u' is available (Closes: #63954)
+  * Patch gmenu to find Debian menu.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 26 Sep 2000 17:34:23 +0200
+
+gnome-core (1.2.1-0.2) unstable; urgency=low
+
+  * NMU.
+  * Install these libraries libfish_applet.so libgen_util_applet.so
+    libpanel_status.so (Closes: #69428, #69590)
+  * Copy latest gnome aclocal in macros/ and run macros/autogen.sh
+    This is needed to build gnome-help-browser against libgtkhtml4.
+  * In debian/control
+        gnome-session depends on gnome-panel (>= ${Source-Version}).
+        gnome-help depends on gnome-core (>= 1.2.0-0.1) no Source-Version.
+        gnome-terminal don't depends on gnome-core.
+  * URL's are clickable in gnome-terminal (Closes: 63103).
+  * debian/gnome-panel.undocumented removed printer_applet.1
+  * Cut and paste work in gnome-terminal (Closes: #63592).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 23 Aug 2000 21:23:36 +0200
+
+gnome-core (1.2.1-0.1) unstable; urgency=low
+
+  * New upstream release (Closes: #58806, #66467)
+  * NMU.
+  * Standards-Version to 3.1.1.1 Added Build-depends field.
+  * Removed patches: dialer, drivemount-floppy, modemlights, term,
+   help-browser, debian-menu, url-match.
+  * Added patches: gtkhtml.
+  * Build against libgtkhtml3. Closes: #58679, #36806, #49734
+  * Default manpath and infopath are wrong. Closes: #56081
+  * gmenu segfaults. Close: #53764, #54050
+  * gnome-panel: panel no longer works. Closes: #58278
+  * gnome-panel: gnomepager-applet should put braces around. Closes: #52584
+  * Backspace and delete work correctly. Closes: #54428
+  * TERM never select xterm-debian. Closes: #56584, #55477, #64579
+  * Disable arrows option is now saved. Closes: #54755
+  * No more files in /usr/share. Closes: #61083
+  * Show debian menus. Closes #66214
+  * New help documentation for panel. Closes: #40036
+  * Gnome-terminal write to /var/run/utmp. Closes #59053
+  * gnome-terminal provide x-terminal-emulator. Closes #61805, #56225
+  * README.Debian is here. Closes: #65235
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 25 Jul 2000 19:09:21 +0200
+
+gnome-core (1.0.55-2) frozen unstable; urgency=low
+
+  * Make x-window-manager run first by gnome-wm script to conform to
+    debian policy (Closes: #61617) (This is an important bug)
+
+ -- James LewisMoss <dres@debian.org>  Sun, 21 May 2000 19:31:19 -0400
+
+gnome-core (1.0.55-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- James LewisMoss <dres@debian.org>  Sun,  2 Jan 2000 07:32:36 -0500
+
+gnome-core (1.0.54-2) unstable; urgency=low
+
+  * Fix the gnome-pager forgets size settings bug (was saved to wrong
+    section). Closes: #49839, #46845.
+
+ -- James LewisMoss <dres@debian.org>  Fri, 12 Nov 1999 07:54:46 -0500
+
+gnome-core (1.0.54-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- James LewisMoss <dres@debian.org>  Thu,  4 Nov 1999 23:20:14 -0500
+
+gnome-core (1.0.53-4) unstable; urgency=low
+
+  * New maintainer.
+
+ -- James LewisMoss <dres@debian.org>  Mon, 25 Oct 1999 23:17:31 -0400
+
+gnome-core (1.0.53-3) unstable; urgency=low
+
+  * Ok, I made a mistake by setgiding gnome-terminal to
+    utmp. Reverted the change. Closes: #47960
+
+ -- Raphael Hertzog <hertzog@debian.org>  Mon, 18 Oct 1999 19:17:27 +0200
+
+gnome-core (1.0.53-2) unstable; urgency=low
+
+  * gnome-session does launch a default window-manager. It does launch
+    gnome-wm if no other information has been found. gnome-wm now
+    reads the list of window managers from /etc/X11/window-managers
+    once it has tried gnome compliant wm. Closes: #38347, #47370
+  * Patched gnome-terminal. TERM=xterm-debian again ... actually this
+    closes: #47552, #44960, #41065
+  * gnome-terminal is now setgid utmp and can thus register itself
+    in the UTMP database. Closes: #40507
+  * The URL match does now accept % characters. Closes: #47281
+  * libpanel-applet0.postinst check for the changelog.gz mysteriously
+    staying around. Closes: #45871
+  * Unreproducable bugs without answer from the submitter.
+    Closes: #41195, #42865
+
+ -- Raphael Hertzog <hertzog@debian.org>  Sat, 16 Oct 1999 19:52:38 +0200
+
+gnome-core (1.0.53-1) unstable; urgency=low
+
+  * New upstream version. 
+  * gnome-session does now depend on gnome-panel and recommends
+    gmc (both are needed for a full Gnome desktop).
+  * gnome-terminal does not have a border. Closes: #38972
+
+ -- Raphael Hertzog <hertzog@debian.org>  Tue, 12 Oct 1999 21:17:58 +0200
+
+gnome-core (1.0.52-1) unstable; urgency=low
+
+  * New maintainer. Steve said that he wanted to give away some of
+    his packages. I've asked to take gnome-core, he never replied, so
+    I'm taking it but I will give it back to him if he wanted to
+    keep it. In the meantime I can better manage bugs with my name 
+    in the Maintainer field.
+  * New upstream version.
+
+ -- Raphael Hertzog <hertzog@debian.org>  Mon,  4 Oct 1999 21:28:18 +0200
+
+gnome-core (1.0.50-0.1) unstable; urgency=low
+
+  * New upstream version.
+  * NMU again.
+
+ -- Raphael Hertzog <hertzog@debian.org>  Thu, 30 Sep 1999 22:10:03 +0200
+
+gnome-core (1.0.41-0.1) unstable; urgency=low
+
+  * New upstream version.
+  * NMU again.
+
+ -- Raphael Hertzog <hertzog@debian.org>  Mon, 27 Sep 1999 13:10:31 +0200
+
+gnome-core (1.0.9-0.1) unstable; urgency=low
+
+  * New upstream version. Closes: #43253, #44098
+  * Apply patches before configuring (and relaunch automake && autoconf
+    because one of the patches is applied on Makefile.am).
+  * NMU. Thanks to Christian Marillat <marillat@alpes-net.fr> for his work.
+  * Imlib bug corrected: closes: #39085
+  * X11 binaries don't have to go /usr/X11R6/bin. Closes: #24031
+  * The panel does start correctly wihout complaining about a
+    missing name service. Closes: #39380, #39634, #40478
+  * The panel doesn't consume all CPU resources. Closes: #30654
+  * The panel launches apps from where it has been launched itself.
+    Closes: #32319
+  * The panel keeps the settings. Closes: #37052, #40579, #43496
+  * Old core dump corrected upstream. Closes: #39400, #40328, #42167
+    Closes: #44344, #44724, #44732, #44759, #44773
+  * Bug in menu-method, not in gnome-panel. Already reported against
+    menu. Closes: #40089
+  * cdplayer_applet works again. Closes: #42192
+  * gnome pager works well: Closes: #42499, #42610
+  * modem_lights draws itself correctly. Closes: #43861, #45055
+  * The dialer applets doesn't exit when stopping while 
+    not yet connected. Closes: #45287
+  * No more Debian menu in the panel. Closes: #41040
+  * GnomeICU works with this panel. Closes: #39626, #39515
+  * gnome-panel-data conflicts with asclock. 
+    Closes: #40712, #40715, #40808, #41430
+    A better solution will be needed. Maybe put asclock in his own
+    package or create a asclock-data package that will be shared.
+  * Updated the modemlights patch. Closes: #43512
+  * Added a patch for gnome-wm. Closes: #38366
+  * Move lib{gkb,fish}_applet.so files to libgnome-applet0 (those are
+    not libraries to be linked with, just simple modules). Closes: #38596
+  * Asclock works well without xearth (the code still mentions xearth
+    however). Closes: #40530
+  * New patch (help-browser) for changing the default MANPATH and INFOPATH in
+    gnome-help-browser.c  Closes: #41452
+  * Moved help-browser to the new "Help" menu section.
+  * Added gnome-help.mime. Closes: #42205
+  * Gnome-session does launch gnome-panel ! (I suppose that it failed
+    to launch since panel was broken). Closes: #42937
+  * gnome-sesion doesn't core dump. Closes: #36640
+  * The terminal does remember the TERM var. Closes: #43067
+  * The terminal keeps its size when dragging the manu bar in and out.
+    Closes: #44762
+  * The menu section of gnome-terminal corrected. Closes: #37635
+    
+ -- Raphael Hertzog <hertzog@debian.org>  Wed, 22 Sep 1999 13:24:34 +0200
+
+gnome-core (1.0.7-1) unstable; urgency=low
+
+  * New upstream version.
+  * Removed "term" patch
+
+ -- Steve Haslam <araqnid@debian.org>  Mon, 28 Jun 1999 01:36:31 +0100
+
+gnome-core (1.0.6-2) unstable; urgency=low
+
+  * debian-menu.dpatch: created to fix guessing Debian menus
+    (/etc/menu-methods/gnome-panel now) and to make Debian menus the default
+    instead of GNOME system menus.
+  * gnome-help now suggests gnome-users-guide-en (closes: #35724)
+  * /etc/menu-methods/gnome-panel now creates .directory files and searches
+    /usr/X11R6/include/X11/pixmaps for menu icons
+
+ -- Steve Haslam <araqnid@debian.org>  Sun, 13 Jun 1999 15:28:52 +0100
+
+gnome-core (1.0.6-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Steve Haslam <araqnid@debian.org>  Sat,  5 Jun 1999 12:57:08 +0100
+
+gnome-core (1.0.5-3) unstable; urgency=low
+
+  * debian/gnome-terminal.menu: managed to lose change mentioned in last
+    revision. Replaced.
+  * debian/gnome-core.undocumented: removed gnome-wm.1 (it was in
+    gnome-session.undocumented too).
+
+ -- Steve Haslam <araqnid@debian.org>  Mon, 31 May 1999 19:15:54 +0100
+
+gnome-core (1.0.5-2) unstable; urgency=low
+
+  * debian/gnome-terminal.menu: changed section to XShells (Bug#37635)
+  * debian/rules: added gnome-wm and gnome-edit to dh_undocumented call
+    (Bug#37632)
+  * debian/gnome.menu-method: added patch to honour needs=text (Bug#36928)
+    from Decklin Foster
+  * Call dh_strip when making libpanel-applet-dev (Closes Bug#31244)
+  * Removed /usr/share/gnome/apps/Debian symlink, (closes #38100)
+  * Sanified build system a la gnome-libs
+  * debian/control: made gnome-help, gnome-help-data and gnome-panel-data
+    packages.
+
+ -- Steve Haslam <araqnid@debian.org>  Sun, 23 May 1999 14:35:44 +0100
+
+gnome-core (1.0.5-1) unstable; urgency=low
+
+  * New maintainer.
+
+ -- Steve Haslam <araqnid@debian.org>  Tue, 11 May 1999 01:01:12 +0100
+
+gnome-core (1.0.5-0.2) unstable; urgency=low
+
+  * gnome-panel.files.in: added asclock themes, libgkb_applet.a
+  * gnome-core.files.in: added gnome-wm, gnome-edit
+  * term.dpatch: gnome-terminal TERM to xterm-debian rather than xterm
+  * gsm/Makefile.am: put default.session, default.wm in /etc/gnome
+  * debian/gnome-session.conffiles.in: added above two files
+  * debian/gnome-session.files.in: updated this too
+
+ -- Steve Haslam <araqnid@debian.org>  Sun, 18 Apr 1999 16:47:23 +0100
+
+gnome-core (1.0.5-0.1) unstable; urgency=low
+
+  * Non-maintainer upload
+  * New upstream version
+
+ -- Steve Haslam <araqnid@debian.org>  Thu, 15 Apr 1999 23:22:23 +0100
+
+gnome-core (1.0.1-0.3) unstable; urgency=low
+
+  * Weehay!  More broken dependencies. This one libghttp -1.1,
+    a bogus package that only ever existed on my machine.
+
+ -- Jules Bean <jules@debian.org>  Mon,  8 Mar 1999 08:24:00 +0000
+
+gnome-core (1.0.1-0.2) unstable; urgency=low
+
+  * Another NMU, this time to fix bogus dependencies on libgtop0
+    and libglib1.1
+
+ -- Jules Bean <jules@debian.org>  Sun,  7 Mar 1999 14:21:12 +0000
+
+gnome-core (1.0.1-0.1) unstable; urgency=low
+
+  * NMU for GNOME-1.0
+  * Hacked to patch SIGPIPE bug
+  * Don't delete GIFs in rules
+
+ -- Jules Bean <jules@debian.org>  Fri,  5 Mar 1999 18:36:29 +0100
+
+gnome-core (0.99.99pre1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Fri, 26 Feb 1999 23:18:10 -0800
+
+gnome-core (0.99.3.2-4) unstable; urgency=low
+
+  * Recompiled yet again - dual dependency on libglib.
+    Fixes: BUG#32510
+
+ -- Jim Pick <jim@jimpick.com>  Thu, 28 Jan 1999 00:00:22 -0800
+
+gnome-core (0.99.3.2-3) unstable; urgency=low
+
+  * Recompiled again to due to dependencies.
+
+ -- Jim Pick <jim@jimpick.com>  Sun, 24 Jan 1999 01:10:07 -0800
+
+gnome-core (0.99.3.2-2) unstable; urgency=low
+
+  * Recompiled with libgnome 0.99.4.
+
+ -- Jim Pick <jim@jimpick.com>  Fri, 22 Jan 1999 16:44:45 -0800
+
+gnome-core (0.99.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Wed, 20 Jan 1999 11:42:46 -0800
+
+gnome-core (0.30-2) frozen unstable; urgency=low
+
+  * Recompiled with new libs.
+  * Fixed reference to /usr/X11R6 in README.Debian.
+  * Added warnings (Gnome is ALPHA).
+  * Patched dialer_applet to use pon/poff.
+  * Patched drivemount_applet to default to /floppy.
+
+ -- Jim Pick <jim@jimpick.com>  Tue, 24 Nov 1998 10:56:08 -0800
+
+gnome-core (0.30-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Thu, 24 Sep 1998 21:28:02 -0700
+
+gnome-core (0.28.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Hopefully fixes panel applet bug.
+
+ -- Jim Pick <jim@jimpick.com>  Wed, 19 Aug 1998 20:12:25 -0700
+
+gnome-core (0.28-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Mon, 17 Aug 1998 12:59:26 -0700
+
+gnome-core (0.27-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added /usr/doc/gnome
+
+ -- Jim Pick <jim@jimpick.com>  Sat, 15 Aug 1998 14:21:06 -0700
+
+gnome-core (0.25-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Thu,  6 Aug 1998 22:51:22 -0700
+
+gnome-core (0.20-2) unstable; urgency=low
+
+  * Added Debian menu-method for gnome-panel.  Fixed Bug #24025
+    (Thanks to Ray Dassen for reporting the bug, and Riku Voipio
+     who wrote the menu method for Gnome 0.12)
+
+ -- Jim Pick <jim@jimpick.com>  Wed, 22 Jul 1998 20:22:00 -0700
+
+gnome-core (0.20-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jim Pick <jim@jimpick.com>  Mon,  8 Jun 1998 12:00:08 -0700
+
+gnome-core (0.13-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Jim Pick <jim@jimpick.com>  Mon, 16 Mar 1998 15:27:43 -0800

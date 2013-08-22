@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="ca">
+   <articleinfo>
+    <title>Llicència de documentació lliure de GNU</title>
+      <releaseinfo>Versió 1.1, Març de 2000</releaseinfo>
+      
+      <copyright>
+	<year>2000</year><holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Projecte de documentació del GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>1.1</revnumber>
+          <date>2000-03</date>
+        </revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Everyone is permitted to
+	    copy and distribute verbatim copies of this license
+	    document, but changing it is not allowed.
+	</para>
+      </legalnotice>
+
+      <abstract role="description"><para>La finalitat d'aquesta Llicència és crear manuals, llibres de text o altres documents escrits <quote>lliures</quote> pel que fa a la llibertat; per assegurar tothom la llibertat real de copiar-los i redistribuir-los, modificant-los o no, amb finalitats comercials o no. Addicionalment, aquesta Llicència assegura l'autor i l'editor una manera d'obtenir crèdit per la seva obra sense ser considerat responsables de les modificacions fetes pels altres.</para></abstract>
+    </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>PREÀMBUL</title>
+    <para>La finalitat d'aquesta Llicència és crear manuals, llibres de text o altres documents escrits <quote>lliures</quote> pel que fa a la llibertat; per assegurar tothom la llibertat real de copiar-los i redistribuir-los, modificant-los o no, amb finalitats comercials o no. Addicionalment, aquesta Llicència assegura l'autor i l'editor una manera d'obtenir crèdit per la seva obra sense ser considerat responsables de les modificacions fetes pels altres.</para>
+    
+    <para>Aquesta Llicència és una mena de <quote>copyleft</quote>, el que significa que les obres que es derivin del document també han de ser lliures en el mateix sentit, i complementa la Llicència pública general de GNU, que és una llicència de copyleft dissenyada per al programari lliure.</para>
+    
+    <para>Hem dissenyat aquesta Llicència per tal d'utilitzar-la en manuals de programari lliure, perquè el programari lliure necessita documentació lliure: un programa lliure ha de venir amb manuals que tinguin les mateixes llibertats que té el programari. Però aquesta Llicència no es limita als manuals de programari; es pot utilitzar per a qualsevol obra de text, independentment del seu tema o de si s'ha publicat en forma impresa o no. Recomanem aquesta Llicència especialment per a obres la finalitat de les quals sigui formació o consulta.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>CAMP D'APLICACIÓ I DEFINICIONS</title>
+    <para id="fdl-document">Aquesta Llicència s'aplica a qualsevol manual o altra mena d'obra que inclogui un avís del propietari del copyright que digui que es pot distribuir sota els termes d'aquesta Llicència. Amb <quote>Document</quote> ens referirem a aquest manual o obra. Qualsevol membre del públic és un <quote>autoritzat</quote> i ens hi adreçarem com a <quote>vós</quote>.</para>
+    
+    <para id="fdl-modified">Una <quote>Versió modificada</quote> del document significa qualsevol obra que contingui el document o una part d'ell, ja sigui copiat literalment o amb modificacions i/o traduït a un altre idioma.</para>
+	
+    <para id="fdl-secondary">Una <quote>Secció secundària</quote> és un apèndix amb títol o una secció preliminar del <link linkend="fdl-document">Document</link> que té a veure exclusivament amb la relació dels editors o autors del Document amb el tema general del Document (o amb temes relacionats) i no conté res que pugui entrar directament dins d'aquest tema general (per exemple, si el Document és en part un llibre de matemàtiques, una Secció secundària pot no parlar gens de matemàtiques). La relació pot ser un assumpte de connexió històrica amb el tema o amb assumptes relacionats, o de posicions legals, comercials, filosòfiques, ètiques o polítiques relatives a ells.</para>
+
+    <para id="fdl-invariant">Les <quote>Seccions invariables</quote> són determinades <link linkend="fdl-secondary">Seccions secundàries</link> els títols de les quals indiquen que són Seccions invariables en l'avís que indica que el <link linkend="fdl-document">Document</link> es distribueix sota aquesta Llicència.</para>
+    
+    <para id="fdl-cover-texts">Els <quote>Textos de portada</quote> són determinats fragments breus de text que consten com a Textos de portada o Textos de contraportada en l'avís que indica que el <link linkend="fdl-document">Document</link> es distribueix sota aquesta Llicència.</para>
+	
+    <para id="fdl-transparent">Una còpia <quote>Transparent</quote> del <link linkend="fdl-document">Document</link> significa una còpia que pugui ser llegida per una màquina, presentada en un format les especificacions del qual siguin accessibles al públic en general, els continguts de la qual es poden visualitzar i editar directament amb editors de text genèrics, o, per a imatges composades de píxels, amb programes gràfics genèrics, o, per a dibuixos, amb editors de dibuix fàcilment accessibles, i que es pugui introduir a formatadors de text, o a traductors automàtics en una varietat de formats que es puguin introduir a formatadors de text. Una còpia feta en un format de fitxer Transparent, l'etiquetatge del qual s'hagi dissenyat per obstaculitzar o dissuadir als lectors de fer-hi ulteriors modificacions no és Transparent. Una còpia que no és <quote>Transparent</quote> s'anomena <quote>Opaca</quote>.</para>
+    
+    <para>Alguns dels formats adequats per a còpies Transparents són: ASCII net sense etiquetatge, format d'entrada Texinfo, format d'entrada LaTeX, SGML o XML que utilitzin un DTD accessible per a tothom, i HTML senzill que compleixi amb els estàndards que estigui dissenyat per a la modificació humana. Els formats opacs inclouen PostScript, PDF, els formats de propietat que només es poden llegir i editar per processadors de textos de propietat, SGML o XML el DTD i/o eines de processament dels quals no siguin fàcilment accessibles, i HTML generat automàticament per alguns processadors de textos només per a la sortida.</para>
+    
+    <para id="fdl-title-page">La <quote>Pàgina de títol</quote> significa, per a un llibre imprès, la pròpia pàgina de títol, més totes aquelles pàgines que siguin necessàries per contenir, de manera llegible, el material que aquesta Llicència requereix que aparegui a la pàgina de títol. Per a les obres que, a causa del format de les quals, no tinguin pròpiament una pàgina de títol, la <quote>Pàgina de títol</quote> significa el text proper a l'aparició més destacada del títol de l'obra, precedint el començament del cos del text.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>CÒPIES LITERALS</title>
+    <para>Podeu copiar i distribuir el <link linkend="fdl-document">Document</link> en qualsevol suport, de manera comercial o no, sempre que aquesta Llicència, els avisos de copyright, i l'avís de llicència que diu que aquesta Llicència s'aplica al Document, es reprodueixin en totes les còpies, i que no hi afegiu altres condicions que les d'aquesta Llicència. No podeu utilitzar mitjans tècnics per impedir o controlar la lectura de successives còpies de les còpies que feu o distribuïu. Podeu acceptar, però, una compensació a canvi de les còpies. Si distribuïu un nombre prou gran de còpies també heu de seguir les condicions de la <link linkend="fdl-section3">secció 3</link>.</para>
+    
+    <para>També podeu prestar-ne còpies, amb les mateixes condicions esmentades, i exhibir-ne còpies públicament.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>CÒPIES EN GRANS QUANTITATS</title>
+    <para>Si publiqueu més de 100 còpies impreses, o en un suport que habitualment tingui cobertes impreses, del <link linkend="fdl-document">Document</link>, i l'avís de llicència del Document requereix <link linkend="fdl-cover-texts">Textos de portada</link>, heu d'acompanyar les còpies de cobertes que portin, clarament llegible, tots aquests Textos de portada: Textos de portada a la portada i Textos de contraportada a la contraportada. A totes dues cobertes s'ha d'indicar, clarament llegible, que sou l'editor d'aquestes còpies. La portada ha d'indicar el títol complet, i totes les paraules han de destacar i veure's d'igual manera. Podeu afegir material addicional a les cobertes. Les còpies amb canvis només a les cobertes, mentre conservin el títol del <link linkend="fdl-document">Document</link> i satisfacin aquestes condicions, es poden considerar còpies literals en altres aspectes.</para>
+    
+    <para>Si els textos requerits per a qualsevol de les cobertes són massa densos per encabir-los de manera que quedin llegibles, cal que poseu els primers (tants com sigui raonablement possible) en la coberta real, i la resta en pàgines adjacents.</para>
+    
+    <para>Si publiqueu o distribuïu més de 100 còpies <link linkend="fdl-transparent">Opaques</link> del <link linkend="fdl-document">Document</link>, heu d'incloure amb cadascuna d'elles una còpia <link linkend="fdl-transparent">Transparent</link>, llegible per una màquina, o bé incloure-hi, o indicar-hi, una ubicació de xarxa accessible públicament que contingui una còpia Transparent completa del Document i sense material afegit des d'on tothom que utilitzi la xarxa pugui baixar-se, utilitzant protocols de xarxa públics. Si utilitzeu aquesta darrera opció, en començar la distribució de gran quantitat de còpies Opaques heu de prendre les mesures raonablement necessàries per tal d'assegurar que la còpia Transparent a què s'accedeix seguirà disponible, en la ubicació indicada, com a mínim durant un any a comptar des del moment en que distribuïu al públic (directament o a través dels vostres representants o minoristes) l'última còpia Opaca d'aquesta edició.</para>
+    
+    <para>Es prega, però no s'exigeix, que us poseu en contacte amb els autors del <link linkend="fdl-document">Document</link> abans de redistribuir un gran nombre de còpies; d'aquesta manera, els autors us podran facilitar una versió actualitzada del Document, si és que n'hi ha alguna.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>MODIFICACIONS</title>
+    <para>Podeu copiar i distribuir una <link linkend="fdl-modified">Versió modificada</link> del <link linkend="fdl-document">Document</link> d'acord amb les condicions de les seccions <link linkend="fdl-section2">2</link> i <link linkend="fdl-section3">3</link>, més amunt, sempre que distribuïu la Versió modificada d'acord precisament amb aquesta Llicència, amb la Versió modificada actuant com a Document, autoritzant d'aquesta manera la distribució i modificació de la Versió modificada a qualsevol que en posseeixi una còpia. A més, a la Versió modificada hi heu de fer el següent:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>Utilitzeu a la <link linkend="fdl-title-page">Pàgina de títol</link> (i a les cobertes, si n'hi ha) un títol diferent del <link linkend="fdl-document">Document</link> i del de les versions anteriors (que, si n'hi ha, han d'estar detallades a la secció Historial del Document). Podeu utilitzar el mateix títol d'una versió anterior si l'editor original d'aquesta versió ho autoritza.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Relacioneu a la <link linkend="fdl-title-page">Pàgina de títol</link>, com a autors, una o més persones o entitats responsables de la realització de les modificacions de la <link linkend="fdl-modified">Versió modificada</link>, juntament amb almenys cinc dels autors principals del <link linkend="fdl-document">Document</link> (o tots els autors principals, si són menys de cinc).</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Indiqueu a la <link linkend="fdl-title-page">Pàgina de títol</link> el nom de l'editor de la <link linkend="fdl-modified">Versió modificada</link>, com a editor.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conserveu tots els avisos de copyright del <link linkend="fdl-document">Document</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Afegiu, al costat dels altres avisos de copyright, un avís de copyright adequat per a les vostres modificacions.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Incloeu, immediatament després dels avisos de copyright, un avís de llicència donant autorització pública per utilitzar la <link linkend="fdl-modified">Versió modificada</link> d'acord amb els termes d'aquesta llicència, en el formulari que s'indica a l'addendum de més avall.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conserveu, en aquest avís de llicència, la relació completa de <link linkend="fdl-invariant">Seccions invariables</link> i <link linkend="fdl-cover-texts">Textos de coberta</link> necessaris que s'indiquen a l'avís de llicència del <link linkend="fdl-document">Document</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Incloeu una còpia no alterada d'aquesta Llicència.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conserveu la secció titulada <quote>Historial</quote> amb el seu títol, i afegiu-hi almenys el títol, any, nous autors i editor de la <link linkend="fdl-modified">Versió modificada</link>, com s'indica a la <link linkend="fdl-title-page">Pàgina de títol</link>. Si al <link linkend="fdl-document">Document</link> no hi cap secció titulada <quote>Historial</quote> creeu-ne una indicant-hi el títol, any, autors i editor del Document com s'indica a la seva Pàgina de títol, descrivint-hi també la Versió modificada com s'indica al punt anterior.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conserveu la ubicació de xarxa, si n'hi ha, indicada al <link linkend="fdl-document">Document</link> per a l'accés públic a una còpia <link linkend="fdl-transparent">Transparent</link> del Document, i també les ubicacions de xarxa indicades al Document on es poden trobar les versions anteriors en què s'ha basat, que es poden incloure a la secció <quote>Historial</quote>. Podeu ometre les ubicacions de xarxa d'obres publicades al menys quatre anys abans del propi Document, o si l'editor original de la versió a què fa referència us hi autoritza. </para>
+      </listitem>
+      
+      <listitem>
+	  <para>En qualsevol secció titulada <quote>Agraïments</quote> o <quote>Dedicatòries</quote>, conserveu-ne el títol, i conserveu-hi tota l'essència i to de cadascun dels agraïments dels col·laboradors i/o dedicatòries que hi apareguin. </para>
+      </listitem>
+      
+      <listitem>
+	  <para>Conserveu totes les <link linkend="fdl-invariant">Seccions invariables</link> del <link linkend="fdl-document">Document</link>, sense canviar-ne els textos ni els títols. La numeració de seccions o sistemes equivalents no es consideren part dels títols de secció.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Suprimiu qualsevol secció titulada <quote>Aprovacions</quote>. Aquestes seccions no es poden incloure a la <link linkend="fdl-modified">Versió modificada</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>No reanomeneu cap secció existent com <quote>Aprovacions</quote>, ni tampoc de cap altra manera que pugui entrar en conflicte amb el títol de qualsevol <link linkend="fdl-invariant">Secció invariable</link>.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Si la <link linkend="fdl-modified">Versió modificada</link> inclou noves seccions preliminars o apèndixs que es considerin <link linkend="fdl-secondary">Seccions secundàries</link> i no continguin material copiat del Document, si ho voleu podeu anomenar totes o algunes d'elles com invariables. Per fer-ho, afegiu-ne els títols a la relació de <link linkend="fdl-invariant">Seccions invariables</link> de l'avís de llicència de la Versió modificada. Aquests títols han de ser diferents de tots els altres títols de secció.</para>
+    
+    <para>Podeu afegir una secció titulada <quote>Aprovacions</quote>, sempre que contingui solament aprovacions de la vostra <link linkend="fdl-modified">Versió modificada</link> fetes per diverses parts; per exemple, declaracions d'experts o afirmant que el text ha estat aprovat per una organització com a definició autoritzada d'un estàndard.</para>
+    
+    <para>Al final de la relació de <link linkend="fdl-cover-texts">Texts de portada</link> de la <link linkend="fdl-modified">Versió modificada</link> podeu afegir un text de fins a cinc paraules com a <link linkend="fdl-cover-texts">Text de portada</link>, i un altre de fins a 25 paraules com a <link linkend="fdl-cover-texts">Text de contraportada</link>. Cada entitat només pot afegir (o arranjar) un Text de portada i un Text de contraportada. Si el <link linkend="fdl-document">Document</link> ja inclou un text de coberta per a la mateixa coberta, que hagueu afegit anteriorment o que s'hagi afegit mitjançant un arranjament efectuat per la mateixa entitat en nom de la qual actueu, no en podeu afegir cap més, però podeu reemplaçar l'antiga amb l'autorització expressa de l'editor anterior que la va afegir.</para>
+    
+    <para>Per virtut d'aquesta Llicència, el(s) autor(s) i editor(s) del <link linkend="fdl-document">Document</link> no us autoritza(en) a utilitzar-ne el(s) nom(s) amb finalitats publicitàries, ni afirmen ni queda implícita l'aprovació de qualsevol <link linkend="fdl-modified">Versió modificada</link>.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>COMBINACIÓ DE DOCUMENTS</title>
+    <para>Podeu combinar el <link linkend="fdl-document">Document</link> amb altres documents publicats d'acord amb aquesta Llicència, d'acord amb els termes exposats a la <link linkend="fdl-section4">secció 4</link>, més amunt, per a les versions modificades, sempre que incloeu a l'obra resultant totes les Seccions invariables de tots els documents originals, sense modificar, les relacioneu com a <link linkend="fdl-invariant">Seccions invariables</link> de l'obra resultant en el seu avís de llicència.</para>
+    
+    <para>A l'obra resultant només cal incloure una còpia d'aquesta Llicència, i diverses <link linkend="fdl-invariant">Seccions invariables</link> idèntiques es poden substituir per una sola còpia. Si hi ha diverses Seccions invariables amb el mateix nom, però amb continguts diferents, feu que el títol de cadascuna d'elles sigui únic afegint-hi, al final i entre parèntesis, el nom de l'autor o editor original de la secció (si es coneix) o un nombre únic. Feu la mateixa operació als títols de la secció que són a la relació de Seccions invariables a l'avís de llicència de l'obra resultant.</para>
+    
+    <para>A l'obra resultant podeu combinar totes les seccions titulades <quote>Historial</quote> dels diversos documents originals, donant com a resultat una secció titulada <quote>Historial</quote>; combineu de la mateixa manera totes les seccions titulades <quote>Agraïments</quote> i totes les titulades <quote>Dedicatòries</quote>. Heu de suprimir totes les seccions titulades <quote>Aprovacions</quote>.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>RECOPILACIONS DE DOCUMENTS</title>
+    <para>Podeu crear una recopilació que estigui formada pel <link linkend="fdl-document">Document</link> i altres documents publicats sota aquesta Llicència, i reemplaçar les còpies individuals d'aquesta Llicència dels diversos documents per una de sola que quedi inclosa a la recopilació, sempre que seguiu les normes d'aquesta Llicència pel que fa a la còpia literal de cadascun dels documents en tots els altres aspectes.</para>
+    
+    <para>Podeu extreure un document individual d'aquesta col·lecció i distribuir-lo individualment sota aquesta Llicència, sempre que inseriu una còpia d'aquesta Llicència en el document que ha estat extret i que seguiu aquesta Llicència en tots els altres aspectes relatius a la còpia literal del document.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>AGRUPAMENT AMB OBRES INDEPENDENTS</title>
+    <para>Una compilació del <link linkend="fdl-document">Document</link> o els seus derivats amb altres documents o obres separades i independents, en qualsevol mena de distribució o suport d'emmagatzematge, no es té en compte com una <link linkend="fdl-modified">Versió modificada</link> del Document, sempre que no es reclami cap copyright per a la compilació. Aquesta compilació s'anomena un <quote>agrupament</quote> i aquesta Llicència no s'aplica a les altres obres autocontingudes compilades amb el Document, tenint en compte que estan compilades, si no són les mateixes obres derivades del Document. Si el requeriment del <link linkend="fdl-cover-texts">Text de portada</link> de la <link linkend="fdl-section3">secció 3</link> és aplicable a aquestes còpies del Document, i si el Document és inferior a la quarta part de tot l'agrupament, els Textos de portada del Document es poden col·locar en cobertes que encerclin solament el Document dins de l'agrupament. En cas contrari, han d'aparèixer en cobertes impreses que encerclin tot l'agrupament.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>TRADUCCIÓ</title>
+    <para>La traducció es considera una mena de modificació, i, per tant, podeu distribuir traduccions del <link linkend="fdl-document">Document</link> d'acord amb els termes de la <link linkend="fdl-section4">secció 4</link>. La substitució de les <link linkend="fdl-invariant"> Seccions invariables</link> per traduccions requereix un permís especial dels propietaris del copyright, però podeu incloure traduccions d'algunes o totes les Seccions invariables a més de les seves versions originals. Podeu incloure una traducció d'aquesta Llicència sempre que també incloeu la versió original en anglès d'aquesta Llicència. En cas de desacord entre la traducció i la versió original en anglès d'aquesta Llicència, prevaldrà la versió original.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>CLOENDA</title>
+    <para>No podeu copiar, modificar, subllicenciar ni distribuir el <link linkend="fdl-document">Document</link> excepte en els casos previstos expressament per aquesta Llicència. Qualsevol altre intent de copiar, modificar, subllicenciar o distribuir el Document serà nul i causarà la finalització immediata dels vostres drets d'acord amb aquesta Llicència. No obstant això, les parts que hagin rebut còpies o drets a través vostre, d'acord amb aquesta Llicència, en seguiran gaudint, atès que aquestes parts en segueixen complint els acords. </para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>REVISIONS FUTURES D'AQUESTA LLICÈNCIA</title>
+    <para>De tant en tant, la Free Software Foundation pot publicar noves versions revisades de la Llicència de documentació lliure de GNU. L'essència d'aquestes versions serà similar a la de la present, però poden diferir en els detalls per contemplar nous problemes o assumptes. Consulteu http://www.gnu.org/copyleft/.</para>
+    
+    <para>Cada versió de la Llicència té un número de versió únic; si el <link linkend="fdl-document">Document</link> indica que s'hi aplica una determinada versió numerada d'aquesta Llicència <quote>o qualsevol versió posterior</quote>, teniu l'opció de seguir els termes i condicions d'aquella versió o de qualsevol versió posterior que hagi estat publicada (no com a esborrany) per la Free Software Foundation. Si el Document no indica cap versió de la Llicència, podeu escollir qualsevol versió que hagi estat publicada (no com a esborrany) per la Free Software Foundation.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Addendum</title>
+    <para>Per utilitzar aquesta Llicència en un document que hagueu escrit, incloeu-hi una còpia de la Llicència i afegiu els avisos de copyright i de llicència següents immediatament després de la pàgina de títol:</para>
+    
+    <blockquote>
+      <para>Copyright © ANY EL VOSTRE NOM.</para>
+      <para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure de GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation; amb les <link linkend="fdl-invariant">Seccions invariables</link> sent RELACIÓ DELS TÍTOLS, amb els <link linkend="fdl-cover-texts">Textos de portada</link> sent RELACIÓ, i amb els <link linkend="fdl-cover-texts">Textos de contraportada</link> sent RELACIÓ. S'inclou una còpia de la llicència a la secció <quote>Llicència de documentació lliure de GNU</quote>.</para>
+    </blockquote>
+      
+    <para>Si no teniu <link linkend="fdl-invariant">Seccions invariables</link> escriviu <quote>sense Seccions invariables</quote> enlloc d'indicar quines són invariables. Si no teniu <link linkend="fdl-cover-texts">Textos de portada</link>, escriviu <quote>sense Textos de portada</quote> enlloc de <quote>Textos de portada sent RELACIÓ</quote>; de la mateixa manera per a <link linkend="fdl-cover-texts">Textos de contraportada</link>.</para>
+    
+    <para>Si el vostre document conté exemples no trivials de codi de programa, recomanem publicar-los de forma paral·lela sota una llicència de programari lliure, com ara la <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">Llicència General Pública de GNU</ulink>, per permetre'n l'ús en programari lliure.</para>
+  </sect1>
+</article>

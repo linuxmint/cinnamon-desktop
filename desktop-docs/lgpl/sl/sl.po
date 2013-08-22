@@ -1,0 +1,440 @@
+#'gnome-desktop/desktop-docs/lgpl/
+# Slovenian translations for desktop LGPL licence.
+# Copyright (C) 2009 desktop GLPL COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop LGPL dokument.
+#
+# Matej Urbančič <mateju@svn.gnome.org>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop GPL help master\n"
+"POT-Creation-Date: 2012-09-20 03:33+0000\n"
+"PO-Revision-Date: 2012-09-20 09:58+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language: Slovenian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Primož Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
+"Matej Urbančič <mateju@svn.gnome.org>\n"
+"Roman Maurer <roman.maurer@amis.net>\n"
+"Martin Srebotnjak <miles@filmsi.net>"
+
+#: C/index.docbook:17(articleinfo/title)
+msgid "GNU Lesser General Public License"
+msgstr "Manj splošno dovoljenje GNU"
+
+#: C/index.docbook:18(articleinfo/copyright)
+msgid "<year>2000</year> <holder>Free Software Foundation, Inc.</holder>"
+msgstr "<year>2000</year> <holder>Free Software Foundation, Inc.</holder>"
+
+#: C/index.docbook:22(articleinfo/author)
+msgid "<surname>Free Software Foundation</surname>"
+msgstr "<surname>Free Software Foundation</surname>"
+
+#: C/index.docbook:26(publisher/publishername)
+msgid "GNOME Documentation Project"
+msgstr "Projekt dokumentacije GNOME"
+
+#: C/index.docbook:29(revhistory/revision)
+msgid "<revnumber>2.1</revnumber> <date>1999-02</date>"
+msgstr "<revnumber>2.1</revnumber> <date>1999-02</date>"
+
+#: C/index.docbook:36(para/address)
+#, no-wrap
+msgid ""
+"Free Software Foundation, Inc. \n"
+"\t    <street>51 Franklin Street, Fifth Floor</street>, \n"
+"\t    <city>Boston</city>, \n"
+"\t    <state>MA</state> <postcode>02110-1301</postcode>\n"
+"\t    <country>USA</country>\n"
+"\t  "
+msgstr ""
+"Free Software Foundation, Inc. \n"
+"\t    <street>51 Franklin Street, Fifth Floor</street>, \n"
+"\t    <city>Boston</city>, \n"
+"\t    <state>MA</state> <postcode>02110-1301</postcode>\n"
+"\t    <country>USA</country>\n"
+"\t  "
+
+#: C/index.docbook:35(legalnotice/para)
+msgid "<_:address-1/>."
+msgstr "<_:address-1/>."
+
+#: C/index.docbook:43(legalnotice/para)
+msgid "Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed."
+msgstr "Vsakdo sme razmnoževati in razširjati dobesedne kopije tega dokumenta, ni pa ga dovoljeno spreminjati."
+
+#: C/index.docbook:48(articleinfo/releaseinfo)
+msgid "Version 2.1, February 1999"
+msgstr "Različica 2.1, februar 1999"
+
+#: C/index.docbook:51(abstract/para)
+msgid "The licenses for most software are designed to take away your freedom to share and change it. By contrast, the GNU General Public Licenses are intended to guarantee your freedom to share and change free software - to make sure the software is free for all its users."
+msgstr "Licančne pogodbe večine programske opreme so zasnovane tako, da vam preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa vam Splošna dovoljenja GNU (angl. GNU General Public Licenses, GPL) jamčijo svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovljajo, da ostane ta prosta za vse njene uporabnike."
+
+#: C/index.docbook:61(sect1/title)
+msgid "Preamble"
+msgstr "Predgovor"
+
+#: C/index.docbook:63(sect1/para)
+msgid "The licenses for most software are designed to take away your freedom to share and change it. By contrast, the GNU General Public Licenses are intended to guarantee your freedom to share and change free software--to make sure the software is free for all its users."
+msgstr "Licenčne pogodbe večine programske opreme so zasnovane tako, da vam preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa vam Splošna dovoljenja GNU (angl. GNU General Public Licenses, GPL) jamčijo svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovljajo, da ostane ta prosta za vse njene uporabnike."
+
+#: C/index.docbook:70(sect1/para)
+msgid "When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for this service if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs; and that you know you can do these things."
+msgstr "Ko govorimo o prosti programski opremi, imamo s tem v mislih svobodo, ne cene. Splošna dovoljenja GNU zagotavlja pravico razširjanja kopij proste programske opreme (in po želji zaračunavati za to storitev); pravico do dostopa do izvorne kode; pravico spreminjanja programske opreme ali uporabljanja njenih delov v novi prosti programski opremi; in seznanjanje z vsemi temi pravicami."
+
+#: C/index.docbook:79(sect1/para)
+msgid "This license, the Lesser General Public License, applies to some specially designated software packages--typically libraries--of the Free Software Foundation and other authors who decide to use it. You can use it too, but we suggest you first think carefully about whether this license or the ordinary General Public License is the better strategy to use in any particular case, based on the explanations below."
+msgstr "To dovoljenje, Manj splošno dovoljenje, se nanaša na nekatere posebej zasnovane programske pakete - navadno knjižnice - ustanove Free Software Foundation in na vse druge programe, katerih avtorji so se zavezali k njeni uporabi. Tudi vi ga lahko uporabljate, a najprej vam priporočamo, da glede na razlago spodaj pazljivo razmislite, ali je v določenem primeru bolje uporabljati to dovoljenje ali morda navadno Splošno dovoljenje."
+
+#: C/index.docbook:88(sect1/para)
+msgid "When we speak of free software, we are referring to freedom of use, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for this service if you wish); that you receive source code or can get it if you want it; that you can change the software and use pieces of it in new free programs; and that you are informed that you can do these things."
+msgstr "Ko govorimo o prosti programski opremi, imamo s tem v mislih svobodo, ne cene. Splošna dovoljenja GNU zagotavlja pravico razširjanja kopij proste programske opreme (in po želji zaračunavati za to storitev); pravico do dostopa do izvorne kode; pravico spreminjanja programske opreme ali uporabljanja njenih delov v novi prosti programski opremi; in seznanjanje z vsemi temi pravicami."
+
+#: C/index.docbook:98(sect1/para)
+msgid "To protect your rights, we need to make restrictions that forbid distributors to deny you these rights or to ask you to surrender these rights. These restrictions translate to certain responsibilities for you if you distribute copies of the library or if you modify it."
+msgstr "Zaradi zavarovanja vaših pravic je uvedena omejitev, ki prepoveduje vsakomur, da bi vam te pravice kratil ali od vas zahteval predajo teh pravic. Te omejitve se prevedejo v določeno vašo odgovornost, če razširjate kopije knjižnice ali jo spreminjate."
+
+#: C/index.docbook:105(sect1/para)
+msgid "For example, if you distribute copies of the library, whether gratis or for a fee, you must give the recipients all the rights that we gave you. You must make sure that they, too, receive or can get the source code. If you link other code with the library, you must provide complete object files to the recipients, so that they can relink them with the library after making changes to the library and recompiling it. And you must show them these terms so they know their rights."
+msgstr "Na primer, če razširjate kopije neke knjižnice, bodisi zastonj ali za plačilo, morate dati prejemnikom vse pravice, ki jih imate sami. Prepričati se morate, da bodo tudi oni prejeli ali imeli dostop do izvorne kode. Če s knjižnico povezujete drugo kodo, morate prejemnikom ponuditi popolne objektne datoteke, tako da jih lahko potem, ko knjižnico spremenijo, vnovič povežejo s knjižnico in prevedejo. In morate jim pokazati te pogoje (pravzaprav izvirnik, opomba prevajalca), da bodo poznali svoje pravice."
+
+#: C/index.docbook:115(sect1/para)
+msgid "We protect your rights with a two-step method: (1) we copyright the library, and (2) we offer you this license, which gives you legal permission to copy, distribute and/or modify the library."
+msgstr "Vaše pravice ščitimo v dveh potezah: (1) avtorsko zaščitimo knjižnico in (2) vam ponujamo to dovoljenje, ki vam daje pravno dovoljenje za razmnoževanje, razširjanje in/ali spreminjanje knjižnice."
+
+#: C/index.docbook:121(sect1/para)
+msgid "To protect each distributor, we want to make it very clear that there is no warranty for the free library. Also, if the library is modified by someone else and passed on, the recipients should know that what they have is not the original version, so that the original author's reputation will not be affected by problems that might be introduced by others."
+msgstr "Prav tako, za zaščito vsakega avtorja in zaradi naše zaščite želimo zagotoviti, da vsakdo razume, da za to prosto programsko opremo ni nobenega jamstva. Če je programsko opremo spremenil nekdo drug in ga posredoval naprej, želimo, da njegovi prejemniki vedo, da to, kar imajo, ni izvirnik, zato da se problemi, ki jih povzročijo drugi, ne bodo odražali na ugledu izvornega avtorja. Zaradi zaščite vsakega razširjevalca želimo zagotoviti, da vsakdo razume, da za to prosto knjižnico ni nikakršnega jamstva. Če je knjižnico spremenil nekdo drug in jo posredoval naprej, želimo, da njeni prejemniki vedo, da to, kar imajo, ni izvirnik, da problemi, ki jih povzročijo drugi, ne bodo kvarili ugleda izvornega avtorja."
+
+#: C/index.docbook:130(sect1/para)
+msgid "Finally, software patents pose a constant threat to the existence of any free program. We wish to make sure that a company cannot effectively restrict the users of a free program by obtaining a restrictive license from a patent holder. Therefore, we insist that any patent license obtained for a version of the library must be consistent with the full freedom of use specified in this license."
+msgstr "Končno, vsak prosti program nenehno ogrožajo programski patenti. Želimo se izogniti nevarnosti, da bi podjetja učinkovito omejevala uporabnike prostega programa s pridobivanjem omejujočih licenc od lastnikov patentov. Za preprečitev tega jasno zahtevamo, da mora biti vsak patent za katerokoli izpeljano različico knjižnice licenciran tako, da je popolnoma konsistenten s popolno svobodo rabe, kot jo določa to dovoljenje."
+
+#: C/index.docbook:139(sect1/para)
+msgid "Most GNU software, including some libraries, is covered by the ordinary GNU General Public License. This license, the GNU Lesser General Public License, applies to certain designated libraries, and is quite different from the ordinary General Public License. We use this license for certain libraries in order to permit linking those libraries into non-free programs."
+msgstr "Večino programja GNU, vključno z nekaterimi knjižnicami, pokriva navadno Splošno dovoljenje GNU. To dovoljenje, Manj splošno dovoljenje GNU, se nanaša na določene posebne knjižnice, in se precej razlikuje od navadnega Splošnega dovoljenja. To dovoljenje uporabljamo za tiste knjižnice, za katere želimo omogočiti tudi povezovanje v neproste programe."
+
+#: C/index.docbook:148(sect1/para)
+msgid "When a program is linked with a library, whether statically or using a shared library, the combination of the two is legally speaking a combined work, a derivative of the original library. The ordinary General Public License therefore permits such linking only if the entire combination fits its criteria of freedom. The Lesser General Public License permits more lax criteria for linking other code with the library."
+msgstr "Ko se program poveže s knjižnico, najsibo statično ali pa s pomočjo deljene knjižnice, je kombinacija obojega skupaj, pravno gledano, združeno delo, izpeljanka izvirne knjižnice. Navadno Splošno dovoljenje torej dovoljuje takšno povezovanje le, če celotna kombinacija zadošča prav tam določenim kriterijem svobode. Manj splošno dovoljenje dovoljuje bolj ohlapne pogoje za povezovanje druge kode s knjižnico."
+
+#: C/index.docbook:158(sect1/para)
+msgid "We call this license the <quote>Lesser</quote> General Public License because it does Less to protect the user's freedom than the ordinary General Public License. It also provides other free software developers Less of an advantage over competing non-free programs. These disadvantages are the reason we use the ordinary General Public License for many libraries. However, the Lesser license provides advantages in certain special circumstances."
+msgstr "Tem dovoljenju pravimo <quote>Manj</quote> splošno dovoljenje, saj manj zavaruje svobodo uporabnika kot pa navadno Splošno dovoljenje. Drugim razvijalcem prostega programja tudi ponuja manj prednosti pred konkurenčnimi neprostimi programi. Te pomanjkljivosti so razlog, da smo za številne knjižnice uporabili navadno Splošno dovoljenje. Vendar Manj splošno dovoljenje v določenih pogojih pomeni prednost."
+
+#: C/index.docbook:168(sect1/para)
+msgid "For example, on rare occasions, there may be a special need to encourage the widest possible use of a certain library, so that it becomes a de-facto standard. To achieve this, non-free programs must be allowed to use the library. A more frequent case is that a free library does the same job as widely used non-free libraries. In this case, there is little to gain by limiting the free library to free software only, so we use the Lesser General Public License."
+msgstr "Denimo, da v redkih primerih obstaja posebna potreba spodbuditi kar najširšo rabo določene knjižnice, da bi ta postala de-facto standard. Da lahko to dosežemo, mora biti neprostim programom dovoljeno uporabljati to knjižnico. Pogosteje se zgodi, da prosta knjižnica opravi enako delo kot široko uporabljane neproste knjižnice. V tem primeru pridobimo le malo, če omejimo rabo proste knjižnice le na prosto programje, zato raje uporabimo Manj splošno dovoljenje."
+
+#: C/index.docbook:178(sect1/para)
+msgid "In other cases, permission to use a particular library in non-free programs enables a greater number of people to use a large body of free software. For example, permission to use the GNU C Library in non-free programs enables many more people to use the whole GNU operating system, as well as its variant, the GNU/Linux operating system."
+msgstr "V drugih primerih dovoljenje rabe določene knjižnice v neprostih programih omogoči večjemu številu ljudi, da uporabljajo večji obseg prostega programja. Dovoljenje za uporabo knjižnice GNU C v neprostih programih je, denimo, omogočilo mnogim ljudem, da so uporabljali popoln operacijski sistem GNU, kot tudi njegovo inačico, operacijski sistem GNU/Linux."
+
+#: C/index.docbook:187(sect1/para)
+msgid "Although the Lesser General Public License is Less protective of the users' freedom, it does ensure that the user of a program that is linked with the Library has the freedom and the wherewithal to run that program using a modified version of the Library."
+msgstr "Čeprav Manj splošno dovoljenje manj zaščiti uporabnikovo svobodo, pa vendarle zagotavlja, da ima uporabnik programa, ki je povezan s knjižnico, proste roke pri poganjanju tega programa s spremenjeno različico te knjižnice."
+
+#: C/index.docbook:194(sect1/para)
+msgid "The precise terms and conditions for copying, distribution and modification follow. Pay close attention to the difference between a <quote>work based on the library</quote> and a <quote>work that uses the library</quote>. The former contains code derived from the library, whereas the latter must be combined with the library in order to run."
+msgstr "Sledijo natančne določitve in pogoji za razmnoževanje, razširjanje in spreminjanje. Pozorni bodite na razliko med <quote>delom, ki temelji na knjižnici</quote> in <quote>delom, ki uporablja knjižnico</quote>. Prvo vsebuje kodo, izpeljano iz knjižnice, medtem, ko mora biti drugo kombinirano s knjižnico, da lahko teče."
+
+#: C/index.docbook:205(sect1/title)
+msgid "TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION"
+msgstr "DOLOČILA IN POGOJI ZA RAZMNOŽEVANJE, RAZŠIRJANJE IN SPREMINJANJE"
+
+#: C/index.docbook:208(sect2/title)
+msgid "Section 0"
+msgstr "Razdelek 0"
+
+#: C/index.docbook:209(sect2/para)
+msgid "This License Agreement applies to any software library or other program which contains a notice placed by the copyright holder or other authorized party saying it may be distributed under the terms of this Lesser General Public License (also called <quote>this License</quote>). Each licensee is addressed as <quote>you</quote>."
+msgstr "Ta licenca se nanaša na vsako programsko knjižnico ali drug program, ki vsebuje obvestilo lastnika avtorskih pravic (angl. copyright holder) ali druge pooblaščene osebe, z izjavo, da se lahko razširja pod pogoji Manj splošnega dovoljenja GNU (angl. Lesser General Public License), imenovanega tudi <quote>ta licenca</quote>. Vsakega izdajatelja licence naslavljamo z <quote>vi</quote>. "
+
+#: C/index.docbook:217(sect2/para)
+msgid "A <quote>library</quote> means a collection of software functions and/or data prepared so as to be conveniently linked with application programs (which use some of those functions and data) to form executables."
+msgstr "<quote>Knjižnica</quote> pomeni zbirko programskih funkcij in/ali podatkov, pripravljenih tako, da jih je moč priročno povezovati z uporabnimi programi (ki uporabljajo nekatere teh funkcij in podatkov), da s tem oblikujemo izvedljive datoteke."
+
+#: C/index.docbook:223(sect2/para)
+msgid "The <quote>Library</quote>, below, refers to any such software library or work which has been distributed under these terms. A <quote>work based on the Library</quote> means either the Library or any derivative work under copyright law: that is to say, a work containing the Library or a portion of it, either verbatim or with modifications and/or translated straightforwardly into another language. (Hereinafter, translation is included without limitation in the term <quote>modification</quote>.)"
+msgstr "<quote>Knjižnica</quote> v nadaljevanju pomeni vsako takšno programsko knjižnico ali delo, ki se razširja pod temi pogoji. <quote>Delo, ki temelji na knjižnici</quote> pomeni bodisi knjižnico ali pa katerokoli izvedeno delo po zakonu o avtorski in sorodnih pravicah (angl. copyright law): se pravi delo, ki vsebuje knjižnico ali njen del, bodisi dobesedno ali s spremembami in/ali prevedeno v drug jezik. (Tukaj in povsod v nadaljevanju je prevod vključen brez omejitev v pojem <quote>spremembe</quote>.)"
+
+#: C/index.docbook:233(sect2/para)
+msgid "<quote>Source code</quote> for a work means the preferred form of the work for making modifications to it. For a library, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the library."
+msgstr "<quote>Izvorna koda</quote> pri delih pomeni obliko dela, najprimernejšo za izdelavo sprememb. Pri knjižnici pomeni izvorna koda vso izvorno kodo za vse module, ki jih vsebuje, poleg tega pa še morebitne datoteke z definicijami vmesnika, povezanega s tem delom, ter skripte za nadzor prevajanja in namestitev knjižnice."
+
+#: C/index.docbook:241(sect2/para)
+msgid "Activities other than copying, distribution and modification are not covered by this License; they are outside its scope. The act of running a program using the Library is not restricted, and output from such a program is covered only if its contents constitute a work based on the Library (independent of the use of the Library in a tool for writing it). Whether that is true depends on what the Library does and what the program that uses the Library does."
+msgstr "Dovoljenje ne pokriva nobenih drugih dejavnosti razen razmnoževanja, razširjanja in spreminjanja; ostale so izven njegovega dosega. Dejanje zagona programa z uporabo knjižnice ni omejeno in odvodni zapis programa je zajet le, če njegova vsebina predstavlja delo, ki je izpeljano iz knjižnice (ne glede na to, da je bila pri orodju za njegovo pisanje uporabljena knjižnica). Ali je to res ali ne, je odvisno od tega, kaj knjižnica dela in kaj dela program, ki knjižnico uporablja."
+
+#: C/index.docbook:254(sect2/title)
+msgid "Section 1"
+msgstr "Razdelek 1"
+
+#: C/index.docbook:255(sect2/para)
+msgid "You may copy and distribute verbatim copies of the Library's complete source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and distribute a copy of this License along with the Library."
+msgstr "Dovoljeno je razmnoževati in razširjati dobesedne izvode izvorne kode programa v enaki obliki, kot jo dobite, preko kateregakoli nosilca, če je le na vsakem izvodu razločno in primerno objavljeno obvestilo o pravicah razširjanja in zanikanje jamstva; vsa obvestila, ki se nanašajo na to dovoljenje in odsotnost vsakršnega jamstva pustite nedotaknjena; in da prejmejo vsi drugi prejemniki programa poleg programa še izvod tega dovoljenja.Razmnožujete in razširjate lahko dobesedne izvode izvorne kode knjižnice v enaki obliki, kot jo dobite, preko kateregakoli medija, če le na vsakem izvodu razločno in primerno objavite obvestilo o pravicah razširjanja in zanikanju jamstva; vsa obvestila, ki se nanašajo na to dovoljenje in odsotnost vsakršnega jamstva pustite nedotaknjena; in da prejmejo vsi drugi prejemniki programa poleg programa še izvod tega dovoljenja."
+
+#: C/index.docbook:265(sect2/para)
+msgid "You may charge a fee for the physical act of transferring a copy, and you may at your option offer warranty protection in exchange for a fee."
+msgstr "Za fizično dejanje prenosa kopije lahko zaračunavate in po vaši presoji lahko ponudite garancijsko zaščito v zameno za plačilo."
+
+#: C/index.docbook:273(sect2/title)
+msgid "Section 2"
+msgstr "Razdelek 2"
+
+#: C/index.docbook:283(listitem/para)
+msgid "The modified work must itself be a software library."
+msgstr "Spremenjeno delo mora biti programska knjižnica."
+
+#: C/index.docbook:288(listitem/para)
+msgid "You must cause the files modified to carry prominent notices stating that you changed the files and the date of any change."
+msgstr "Zagotoviti je treba, da spremenjene datoteke nosijo vidna obvestila o tem, da so spremenjena, in datum vsake spremembe."
+
+#: C/index.docbook:294(listitem/para)
+msgid "You must cause the whole of the work to be licensed at no charge to all third parties under the terms of this License."
+msgstr "Zagotoviti morate, da je celotno delo brezplačno licencirano tretjim osebamo pod pogoji te licence."
+
+#: C/index.docbook:300(listitem/para)
+msgid "If a facility in the modified Library refers to a function or a table of data to be supplied by an application program that uses the facility, other than as an argument passed when the facility is invoked, then you must make a good faith effort to ensure that, in the event an application does not supply such function or table, the facility still operates, and performs whatever part of its purpose remains meaningful."
+msgstr "Če se funkcionalnost v spremenjeni knjižnici sklicuje na funkcijo ali tabelo podatkov, ki jih priskrbi uporabni program, ki to funkcionalnost uporablja, na drug način kot argument ob klicu funkcionalnosti, morate v dobri veri poskrbeti, da tudi v primeru, ko program ne ponuja take funkcije ali tabele, funkcionalnost še vedno deluje, in izvaja katerikoli del svojega namena, ki še ostaja smiseln."
+
+#: C/index.docbook:310(listitem/para)
+msgid "(For example, a function in a library to compute square roots has a purpose that is entirely well-defined independent of the application. Therefore, Subsection 2d requires that any application-supplied function or table used by this function must be optional: if the application does not supply it, the square root function must still compute square roots.)"
+msgstr "(Funkcija, ki v neki knjižnici skrbi za izračun kvadratnih korenov, ima namen, ki je popolnoma dobro definiran in neodvisen od programa. Podrazdelek 2.d. torej zahteva, da katerakoli funkcija ali tabela, ki jo glavni program ponuja tej funkciji, ni obvezna za pravilno delovanje funkcije za izračuna kvadratnih korenov.)"
+
+#: C/index.docbook:319(listitem/para)
+msgid "These requirements apply to the modified work as a whole. If identifiable sections of that work are not derived from the Library, and can be reasonably considered independent and separate works in themselves, then this License, and its terms, do not apply to those sections when you distribute them as separate works. But when you distribute the same sections as part of a whole which is a work based on the Library, the distribution of the whole must be on the terms of this License, whose permissions for other licensees extend to the entire whole, and thus to each and every part regardless of who wrote it."
+msgstr "Te zahteve se nanašajo na spremenjeno delo kot celoto. Če razdelki tega dela, ki jih je mogoče prepoznati, niso izpeljani iz knjižnice in jih je mogoče same po sebi utemeljeno obravnavati kot neodvisna in ločena dela, potem to dovoljenje in njegova določila za te razdelke ne velja, če jih razširjate kot ločena dela. A če razširjate iste razdelke kot dele celote, ki je delo, ki temelji na knjižnici, mora biti razširjanje celote izvedeno pod pogoji tega dovoljenja, katerega dovoljenja uporabe za druge uporabnike dovoljenja se razširijo na vso celoto, in torej na vsak njen del, ne glede na to, kdo ga je napisal."
+
+#: C/index.docbook:332(listitem/para)
+msgid "Thus, it is not the intent of this section to claim rights or contest your rights to work written entirely by you; rather, the intent is to exercise the right to control the distribution of derivative or collective works based on the Library."
+msgstr "Namen tega razdelka torej ni, da bi zanikal ali spodbijal vaše pravice do dela, ki ste ga v celoti napisali sami; namesto tega je namen razdelka razširiti pravico nadzora nad razširjanjem izpeljanih ali združenih del, ki temeljijo na knjižnici."
+
+#: C/index.docbook:339(listitem/para)
+msgid "In addition, mere aggregation of another work not based on the Library with the Library (or with a work based on the Library) on a volume of a storage or distribution medium does not bring the other work under the scope of this License."
+msgstr "Poleg tega zgolj uvrščanje drugega dela, ki ne temelji na knjižnici, poleg knjižnice (ali poleg dela, ki temelji na knjižnici), na enoti nosilca ali mediju za razširjanje, se dovoljenje na to drugo delo ne nanaša."
+
+#: C/index.docbook:274(sect2/para)
+msgid "You may modify your copy or copies of the Library or any portion of it, thus forming a work based on the Library, and copy and distribute such modifications or work under the terms of <link linkend=\"sect1\">Section 1</link> above, provided that you also meet all of these conditions: <_:orderedlist-1/>"
+msgstr "Dovoljeno je spreminjati svoj izvod ali izvode knjižnice ali katerega koli njenega dela, in tako narediti delo, ki temelji na knjižnici, ter razmnoževati in razširjati takšne spremembe ali dela pod pogoji zgornjega <link linkend=\"sect1\">razdelka 1</link>, če je zadoščeno tudi vsem naslednjim pogojem: <_:orderedlist-1/>"
+
+#: C/index.docbook:352(sect2/title)
+msgid "Section 3"
+msgstr "Razdelek 3"
+
+#: C/index.docbook:354(sect2/para)
+msgid "You may opt to apply the terms of the ordinary GNU General Public License instead of this License to a given copy of the Library. To do this, you must alter all the notices that refer to this License, so that they refer to the ordinary GNU General Public License, version 2, instead of to this License. (If a newer version than version 2 of the ordinary GNU General Public License has appeared, then you can specify that version instead if you wish.) Do not make any other change in these notices."
+msgstr "Po želji lahko uporabite namesto tega dovoljenja za dani izvod knjižnice tudi pogoje navadnega Splošnega dovoljenja GNU. Če želite to storiti, morate spremeniti vsa sklicevanja na to dovoljenje tako, da se, namesto na to dovoljenje, sklicujejo na navadno Splošno dovoljenje GNU (angl. GNU General Public License) različice 2. (Če obstaja različica navadnega Splošnega dovoljenja GNU številke, večje od 2, potem lahko, če tako želite, določite to številko različice.) V teh obvestilih ne spreminjajte ničesar drugega."
+
+#: C/index.docbook:365(sect2/para)
+msgid "Once this change is made in a given copy, it is irreversible for that copy, so the ordinary GNU General Public License applies to all subsequent copies and derivative works made from that copy."
+msgstr "Ko se enkrat zgodi opisana sprememba za dani izvod, je za ta izvod to nepovratno, torej Splošno dovoljenje GNU velja tudi za vse nadaljnje izvode in izpeljana dela, ki izvirajo iz tega izvoda."
+
+#: C/index.docbook:371(sect2/para)
+msgid "This option is useful when you wish to copy part of the code of the Library into a program that is not a library."
+msgstr "Ta možnost je uporabna, če želite prepisati del kode knjižnice v program, ki ni knjižnica."
+
+#: C/index.docbook:378(sect2/title)
+msgid "Section 4"
+msgstr "Razdelek 4"
+
+#: C/index.docbook:380(sect2/para)
+msgid "You may copy and distribute the Library (or a portion or derivative of it, under <link linkend=\"sect2\">Section 2</link> ) in object code or executable form under the terms of Sections <link linkend=\"sect1\">1</link> and <link linkend=\"sect2\">2</link> above provided that you accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Sections <link linkend=\"sect1\">1</link> and <link linkend=\"sect2\">2</link> above on a medium customarily used for software interchange."
+msgstr "Knjižnico (ali delo, ki temelji na njej, pod določili <link linkend=\"sect2\">razdelka 2</link>) je dovoljeno razmnoževati in razširjati v objektni kodi ali izvedljivi obliki pod pogoji zgornjih <link linkend=\"sect1\">razdelkov 1</link> in <link linkend=\"sect2\">2</link>, če jo pospremite s popolno ustrezno strojno berljivo izvorno kodo, ki mora biti razširjana pod pogoji zgornjih razdelkov <link linkend=\"sect1\">1</link> in <link linkend=\"sect2\">2</link> na nosilcu, navadno uporabljanem za izmenjavo programja."
+
+#: C/index.docbook:392(sect2/para)
+msgid "If distribution of object code is made by offering access to copy from a designated place, then offering equivalent access to copy the source code from the same place satisfies the requirement to distribute the source code, even though third parties are not compelled to copy the source along with the object code."
+msgstr "Če se razširjanje objektne kode omogoča s ponujanjem dostopa do izvoda z določenega mesta, potem pogoju za razširjanje izvorne kode zadošča tudi omogočenje enakega dostopa do izvoda izvorne kode, čeprav tretje osebe niso dolžne razmnoževati izvorne kode poleg objektne kode."
+
+#: C/index.docbook:403(sect2/title)
+msgid "Section 5"
+msgstr "Razdelek 5"
+
+#: C/index.docbook:405(sect2/para)
+msgid "A program that contains no derivative of any portion of the Library, but is designed to work with the Library by being compiled or linked with it, is called a <quote>work that uses the Library</quote>. Such a work, in isolation, is not a derivative work of the Library, and therefore falls outside the scope of this License."
+msgstr "Program, ki ne vsebuje izpeljanke nobenega dela knjižnice, a je zasnovan tako, da deluje s to knjižnico tako, da je z njo preveden ali povezan, se imenuje <quote>delo, ki uporablja knjižnico</quote>. Tako delo samo po sebi ni iz knjižnice izpeljano delo, in torej ni predmet te licence. "
+
+#: C/index.docbook:413(sect2/para)
+msgid "However, linking a <quote>work that uses the Library</quote> with the Library creates an executable that is a derivative of the Library (because it contains portions of the Library), rather than a <quote>work that uses the library</quote>. The executable is therefore covered by this License. <link linkend=\"sect6\">Section 6</link> states terms for distribution of such executables."
+msgstr "Vendar povezovanje <quote>dela, ki uporablja knjižnico</quote> s knjižnico naredi izvedljivo datoteko, ki je izpeljanka te knjižnice (ker vsebuje dele knjižnice), in ne <quote>delo, ki uporablja knjižnico</quote>. Izvedljiva datoteka je torej pokrita s to licenco. Pogoje razširjanja takšnih programov določa<link linkend=\"sect6\">razdelek 6</link>."
+
+#: C/index.docbook:422(sect2/para)
+msgid "When a <quote>work that uses the Library</quote> uses material from a header file that is part of the Library, the object code for the work may be a derivative work of the Library even though the source code is not. Whether this is true is especially significant if the work can be linked without the Library, or if the work is itself a library. The threshold for this to be true is not precisely defined by law."
+msgstr "Če <quote>delo, ki uporablja knjižnico</quote> uporablja snov material iz glave, ki je del knjižnice, je lahko objektna koda za delo izpeljano delo iz knjižnice, čeprav morda izvorna koda ni. Ali je to res je posebej pomembno, če je delo moč povezati brez knjižnice, ali pa je delo samo po sebi knjižnica. Zakon povsem ne določa pogojev, pod katerimi to velja."
+
+#: C/index.docbook:431(sect2/para)
+msgid "If such an object file uses only numerical parameters, data structure layouts and accessors, and small macros and small inline functions (ten lines or less in length), then the use of the object file is unrestricted, regardless of whether it is legally a derivative work. (Executables containing this object code plus portions of the Library will still fall under <link linkend=\"sect6\">Section 6</link>.)"
+msgstr "Če takšna objektna datoteka uporablja le numerične parametre, podatkovne strukture in načine dostopa, in male makroukaze in male vključene funkcije (dolge deset vrstic ali manj), potem uporaba objektne datoteke ni omejena, ne glede na to, da je pravno gledano to izpeljano delo. (Izvedljive datoteke, ki vsebujejo objektno kodo in dele knjižnice, še vedno sodijo pod <link linkend=\"sect6\">razdelek 6</link>.)"
+
+#: C/index.docbook:440(sect2/para)
+msgid "Otherwise, if the work is a derivative of the Library, you may distribute the object code for the work under the terms of <link linkend=\"sect6\">Section 6</link>. Any executables containing that work also fall under <link linkend=\"sect6\">Section 6</link>, whether or not they are linked directly with the Library itself."
+msgstr "Če je sicer delo izpeljano iz knjižnice, lahko razširjate izvorno kodo dela pod pogoji <link linkend=\"sect6\">razdelka 6</link>. Katerekoli izvedljive datoteke, ki tudi vsebujejo delo, sodijo pod <link linkend=\"sect6\">razdelek 6</link>, ne glede na to, ali so neposredno povezane s samo knjižnico ali ne."
+
+#: C/index.docbook:451(sect2/title)
+msgid "Section 6"
+msgstr "Razdelek 6"
+
+#: C/index.docbook:453(sect2/para)
+msgid "As an exception to the Sections above, you may also combine or link a <quote>work that uses the Library</quote> with the Library to produce a work containing portions of the Library, and distribute that work under terms of your choice, provided that the terms permit modification of the work for the customer's own use and reverse engineering for debugging such modifications."
+msgstr "Kot izjemo glede na zgornje razdelke lahko tudi kombinirate ali povezujete <quote>delo, ki uporablja knjižnico</quote> s knjižnico, ki izdela delo, ki vsebuje dele knjižnice, in razširjate to delo pod pogoji po vaši izbiri, če ti pogoji dovoljujejo spreminjanje dela za uporabnikovo lastno rabo in obratni inženiring za razhroščevanje takšnih sprememb."
+
+#: C/index.docbook:473(listitem/para)
+msgid "Accompany the work with the complete corresponding machine-readable source code for the Library including whatever changes were used in the work (which must be distributed under Sections <link linkend=\"sect1\">1</link> and <link linkend=\"sect2\">2</link> above); and, if the work is an executable linked with the Library, with the complete machine-readable <quote>work that uses the Library</quote>, as object code and/or source code, so that the user can modify the Library and then relink to produce a modified executable containing the modified Library. (It is understood that the user who changes the contents of definitions files in the Library will not necessarily be able to recompile the application to use the modified definitions.)"
+msgstr "Opremite delo s popolno ustrezno strojno berljivo izvorno kodo za knjižnico, vključno z vsemi spremembami v tem delu (ki mora biti razširjano pod pogoji zgornjih razdelkov <link linkend=\"sect1\">1</link> in <link linkend=\"sect2\">2</link>); in, če delo ni izvedljivo povezano s knjižnico, popolno strojno berljivo <quote>delo, ki uporablja knjižnico</quote>, kot objektno kodo in/ali izvorno kodo, tako da lahko uporabnik spremeni knjižnico in potem vnovič poveže program, da izdela spremenjeno izvedljivo datoteko, ki vsebuje spremenjeno knjižnico. (Razume se, da uporabnik, ki spremeni vsebino definicijskih datotek v knjižnici, morda ne bo mogel vnovič prevesti programa, da bi uporabil spremenjene definicije.) "
+
+#: C/index.docbook:489(listitem/para)
+msgid "Use a suitable shared library mechanism for linking with the Library. A suitable mechanism is one that (1) uses at run time a copy of the library already present on the user's computer system, rather than copying library functions into the executable, and (2) will operate properly with a modified version of the library, if the user installs one, as long as the modified version is interface-compatible with the version that the work was made with."
+msgstr "Za povezovanje s knjižnico uporabite primeren mehanizem deljenih knjižnic. Primeren mehanizem (1) ob teku uporablja izvod programa, ki že obstaja v uporabnikovem računalniškem sistemu, namesto, da bi prepisal knjižnične funkcije v samo izvedljivo datoteko, in (2) pravilno deluje s spremenjeno različico knjižnice, če jo uporabnik namesti, če je le vmesnik spremenjene različice združljiv z različico, za katero je bilo delo izdelano."
+
+#: C/index.docbook:500(listitem/para)
+msgid "Accompany the work with a written offer, valid for at least three years, to give the same user the materials specified in <link linkend=\"sect6a\">Subsection 6a</link> , above, for a charge no more than the cost of performing this distribution."
+msgstr "Opremite delo s pisno ponudbo, veljavno vsaj tri leta, ki ponuja istemu uporabniku gradiva, določena v zgornjem <link linkend=\"sect6a\">podrazdelku 6a</link>, proti plačilu zneska, ki ne presega dejanskih stroškov takšnega razširjanja. "
+
+#: C/index.docbook:509(listitem/para)
+msgid "If distribution of the work is made by offering access to copy from a designated place, offer equivalent access to copy the above specified materials from the same place."
+msgstr "Če se razširjanje dela izvede s ponujenim dostopom do izvoda z določenega mesta, potem ponujanje ekvivalentnega dostopa za razmnoževanje zgoraj navedenih gradiv z istega mesta šteje kot razširjanje izvorne kode."
+
+#: C/index.docbook:516(listitem/para)
+msgid "Verify that the user has already received a copy of these materials or that you have already sent this user a copy."
+msgstr "Preverite, da je uporabnik že prejel izvod teh gradiv ali da ste temu uporabniku izvod že poslali."
+
+#: C/index.docbook:462(sect2/para)
+msgid "You must give prominent notice with each copy of the work that the Library is used in it and that the Library and its use are covered by this License. You must supply a copy of this License. If the work during execution displays copyright notices, you must include the copyright notice for the Library among them, as well as a reference directing the user to the copy of this License. Also, you must do one of these things: <_:orderedlist-1/>"
+msgstr "Poleg vsakega izvoda dela morate dodati jasno obvestilo, da delo uporablja knjižnico in da rabo knjižnice določa ta licenca. Oddati morate tudi izvod te licence. Če delo med izvajanjem izpisuje pravice razširjanja, morate med njimi vključiti tudi sporočilo o pravicah razširjanja za knjižnico, kot tudi sklic, ki usmerja uporabnika na izvod te licence. Narediti morate tudi eno od teh stvari: <_:orderedlist-1/>"
+
+#: C/index.docbook:524(sect2/para)
+msgid "For an executable, the required form of the <quote>work that uses the Library</quote> must include any data and utility programs needed for reproducing the executable from it. However, as a special exception, the materials to be distributed need not include anything that is normally distributed (in either source or binary form) with the major components (compiler, kernel, and so on) of the operating system on which the executable runs, unless that component itself accompanies the executable."
+msgstr "Pri izvedljivem delu mora zahtevana oblika <quote>dela, ki uporablja knjižnico</quote> vključevati vse podatke in pomožne programe, potrebne za ponovno izdelavo izvedljive datoteke iz nje. Vendar - kot posebna izjema - ni nujno, da razširjano gradivo vključuje vse, kar se navadno razširja (v izvorni ali strojni obliki) z večjimi komponentami (prevajalnik, jedro, itn.) operacijskega sistema, na katerem teče izvedljiva datoteka, razen če ta komponenta spremlja izvedljivo datoteko."
+
+#: C/index.docbook:535(sect2/para)
+msgid "It may happen that this requirement contradicts the license restrictions of other proprietary libraries that do not normally accompany the operating system. Such a contradiction means you cannot use both them and the Library together in an executable that you distribute."
+msgstr "Lahko se zgodi, da te zahteve nasprotujejo licenčnim omejitvam drugih lastniških knjižnic, ki navadno ne spremljajo operacijskega sistema. Takšno nasprotovanje pomeni, da jih ne morete uporabljati hkrati s knjižnico v izvedljivi datoteki, ki jo boste razširjali."
+
+#: C/index.docbook:546(sect2/title)
+msgid "Section 7"
+msgstr "Razdelek 7"
+
+#: C/index.docbook:548(sect2/para)
+msgid "You may place library facilities that are a work based on the Library side-by-side in a single library together with other library facilities not covered by this License, and distribute such a combined library, provided that the separate distribution of the work based on the Library and of the other library facilities is otherwise permitted, and provided that you do these two things:"
+msgstr "Dele knjižnice, ki so dela, temelječa na Knjižnici, lahko uvrstite v skupno knjižnico z drugimi deli knjižnice, ki jih ta Licenca ne pokriva, ter razširjate takšno kombinirano knjižnico, če je sicer dovoljeno ločeno razširjati Knjižnico in druge dele knjižnice, in če naredite naslednji stvari:"
+
+#: C/index.docbook:559(listitem/para)
+msgid "Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities. This must be distributed under the terms of the Sections above."
+msgstr "Kombinirano knjižnico pospremite z izvodom istega dela, ki temelji na Knjižnici, brez kakršnihkoli dodatnih delov knjižnice. To se mora razširjati pod pogoji iz zgornjih razdelkov."
+
+#: C/index.docbook:567(listitem/para)
+msgid "Give prominent notice with the combined library of the fact that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work."
+msgstr "Poleg kombinirane knjižice podajte vidno obvestilo, da deli knjižnice temeljijo na Knjižnici, in pojasnite, kje najti ustrezno nekombinirano obliko istega dela. "
+
+#: C/index.docbook:577(sect2/title)
+msgid "Section 8"
+msgstr "Razdelek 8"
+
+#: C/index.docbook:579(sect2/para)
+msgid "You may not copy, modify, sublicense, link with, or distribute the Library except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense, link with, or distribute the Library is void, and will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance."
+msgstr "Knjižnice ni dovoljeno razmnoževati, spreminjati, podrejati dovoljenja, jo povezovati ali razširjati, če to ni izrecno dovoljeno s pričujočim dovoljenjem. Vsak siceršnji poskus razmnoževanja, spreminjanja, podrejanja dovoljenja, povezovanja ali razširjanja knjižnice je ničen in vam samodejno odvzame pravice, izhajajoče iz tega dovoljenja. Vendar pa se osebam, ki so svoj izvod ali pravice dobile od vas pod tem dovoljenjem, dovoljenje ne prekine, dokler jo v celoti spoštujejo. "
+
+#: C/index.docbook:591(sect2/title)
+msgid "Section 9"
+msgstr "Razdelek 9"
+
+#: C/index.docbook:593(sect2/para)
+msgid "You are not required to accept this License, since you have not signed it. However, nothing else grants you permission to modify or distribute the Library or its derivative works. These actions are prohibited by law if you do not accept this License. Therefore, by modifying or distributing the Library (or any work based on the Library), you indicate your acceptance of this License to do so, and all its terms and conditions for copying, distributing or modifying the Library or works based on it."
+msgstr "Ni vam treba sprejeti pogojev dovoljenja, saj ga niste podpisali. Vendar vam brez slednjega nič ne dovoljuje spreminjanja ali razširjanja knjižnice ali iz nje izpeljanih del. Če ne sprejmete tega dovoljenja, so ta dejanja nezakonita. Torej, s spremembo ali razširjanjem knjižnice (ali kateregakoli dela, ki temelji na knjižnici) pokažete svoje strinjanje s tem dovoljenjem in z vsemi njegovimi določili in pogoji za razmnoževanje, razširjanje ali spreminjanje knjižnice ali del, ki temeljijo na njej."
+
+#: C/index.docbook:606(sect2/title)
+msgid "Section 10"
+msgstr "Razdelek 10"
+
+#: C/index.docbook:608(sect2/para)
+msgid "Each time you redistribute the Library (or any work based on the Library), the recipient automatically receives a license from the original licensor to copy, distribute, link with or modify the Library subject to these terms and conditions. You may not impose any further restrictions on the recipients' exercise of the rights granted herein. You are not responsible for enforcing compliance by third parties with this License."
+msgstr "Vsakič, ko razširjate knjižnico (ali katerokoli delo, ki temelji na knjižnici), prejemnik samodejno prejme dovoljenje izvornega izdajatelja dovoljenja (angl. original licensor) za razmnoževanje, razširjanje, povezovanje ali spreminjanje knjižnice glede na ta določila in pogoje. Ni dovoljeno vsiljevati nobenih nadaljnjih omejitev izvajanja prejemnikovih pravic, podeljenih tukaj. Niste odgovorni za vsiljevanje strinjanja tretjih oseb s tem dovoljenjem."
+
+#: C/index.docbook:620(sect2/title)
+msgid "Section 11"
+msgstr "Razdelek 11"
+
+#: C/index.docbook:622(sect2/para)
+msgid "If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not distribute the Library at all. For example, if a patent license would not permit royalty-free redistribution of the Library by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Library."
+msgstr "Če so vam, kot posledica presoje sodišča ali suma kršitve patenta ali iz katerega koli drugega razloga (ne omejenega zgolj na patentna vprašanja), vsiljeni pogoji (bodisi z odlokom sodišča, sporazumom ali drugače), ki nasprotujejo pogojem tega dovoljenja, vas ne odvezujejo spoštovanja pogojev tega dovoljenja. Če knjižnice ne morete razširjati tako, da hkrati zadostite svojim obvezam pod tem dovoljenjem in vsem drugim ustreznim obvezam, potem posledično sploh ne smete razširjati knjižnice. Na primer, če patentno dovoljenje ne dovoli razširjanja knjižnice brez plačevanja avtorskega honorarja vseh, ki prejmejo izvode neposredno ali posredno od vas, potem je edina možna pot, da zadostite temu pogoju in temu dovoljenju, ta, da se v celoti vzdržite razširjanja knjižnice."
+
+#: C/index.docbook:637(sect2/para)
+msgid "If any portion of this section is held invalid or unenforceable under any particular circumstance, the balance of the section is intended to apply, and the section as a whole is intended to apply in other circumstances."
+msgstr "Če se za katerikoli del tega razdelka ugotovi, da je neveljaven ali da ga ni mogoče izvajati pod nobenim določenim pogojem, je mišljeno, da velja usmeritev tega razdelka (angl. balance of the section) in razdelek kot celota velja v drugih primerih."
+
+#: C/index.docbook:643(sect2/para)
+msgid "It is not the purpose of this section to induce you to infringe any patents or other property right claims or to contest validity of any such claims; this section has the sole purpose of protecting the integrity of the free software distribution system which is implemented by public license practices. Many people have made generous contributions to the wide range of software distributed through that system in reliance on consistent application of that system; it is up to the author/donor to decide if he or she is willing to distribute software through any other system and a licensee cannot impose that choice."
+msgstr "Namen tega razdelka ni, da bi vas napeljeval h kršitvi patentov ali drugih trditev lastništva pravic ali izpodbijal veljavnost katerihkoli takšnih trditev; edini namen tega razdelka je ščitenje integritete sistema razširjanja proste programske opreme, ki je izveden s prakso javnih dovoljenj. Mnogi ljudje so radodarno prispevali k širokemu naboru programske opreme, razširjane preko tega sistema, v upanju na njegovo dosledno izvajanje; od avtorja/dajalca je odvisno, če je pripravljen razširjati programje skozi katerikoli drug sistem, in izdajatelj dovoljenja ne more vsiljevati te izbire."
+
+#: C/index.docbook:656(sect2/para)
+msgid "This section is intended to make thoroughly clear what is believed to be a consequence of the rest of this License."
+msgstr "Ta razdelek namerava temeljito pojasniti, kaj so predvidene posledice preostalega besedila dovoljenja."
+
+#: C/index.docbook:663(sect2/title)
+msgid "Section 12"
+msgstr "Razdelek 12"
+
+#: C/index.docbook:665(sect2/para)
+msgid "If the distribution and/or use of the Library is restricted in certain countries either by patents or by copyrighted interfaces, the original copyright holder who places the Library under this License may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License."
+msgstr "Če sta razširjanje in/ali uporaba knjižnice v določenih državah omejena, bodisi zaradi patentov ali avtorsko zaščitenih vmesnikov, lahko izvorni lastnik ali lastnica avtorskih pravic, ki postavlja knjižnico pod to dovoljenje, doda izrecno zemljepisno omejitev razširjanja, ki izključuje te države, tako da je razširjanje dovoljeno le v in med državami, ki niso na tak način izključene. V takem primeru to dovoljenje vključuje omejitve, kot da so zapisane v besedilu tega dovoljenja."
+
+#: C/index.docbook:677(sect2/title)
+msgid "Section 13"
+msgstr "Razdelek 13"
+
+#: C/index.docbook:679(sect2/para)
+msgid "The Free Software Foundation may publish revised and/or new versions of the Lesser General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns."
+msgstr "Ustanova Free Software Foundation lahko od časa do časa izdaja preurejene in/ali nove različice Manj splošnega dovoljenja (angl. Lesser General Public License). Nove različice bodo pisane v duhu trenutne različice, vendar se lahko razlikujejo v podrobnostih, ki bodo obravnavale nove težave ali poglede."
+
+#: C/index.docbook:686(sect2/para)
+msgid "Each version is given a distinguishing version number. If the Library specifies a version number of this License which applies to it and <quote>any later version</quote>, you have the option of following the terms and conditions either of that version or of any later version published by the Free Software Foundation. If the Library does not specify a license version number, you may choose any version ever published by the Free Software Foundation."
+msgstr "Vsaki različici je določena razločevalna številka različice. Če knjižnica določa številko različice tega dovoljenja, ki se nanaša nanjo in <quote>na katero koli poznejšo različico</quote>, imate izbiro upoštevanja pogojev in določil bodisi te različice ali poljubne kasnejše različice, ki jo je izdala ustanova Free Software Foundation. Če knjižnica ne določa številke različice tega dovoljenja, lahko izberete poljubno različico, ki jo je kdajkoli izdala ustanova Free Software Foundation."
+
+#: C/index.docbook:698(sect2/title)
+msgid "Section 14"
+msgstr "Razdelek 14"
+
+#: C/index.docbook:700(sect2/para)
+msgid "If you wish to incorporate parts of the Library into other free programs whose distribution conditions are incompatible with these, write to the author to ask for permission. For software which is copyrighted by the Free Software Foundation, write to the Free Software Foundation; we sometimes make exceptions for this. Our decision will be guided by the two goals of preserving the free status of all derivatives of our free software and of promoting the sharing and reuse of software generally."
+msgstr "Če želite vključiti dele knjižnice v drugo prosto programsko opremo, katere pogoji razširjanja so drugačni od teh, pišite avtorju in ga prosite za dovoljenje. Za programje, katerega pravice razširjanja ima Free Software Foundation, pišite na Free Software Foundation; včasih pri tem naredimo izjemo. Našo odločitev bosta vodila dva cilja: ohranitev prostega statusa vseh izvedenih del iz naše proste programske opreme in spodbujanje razdeljevanja in ponovne uporabe programja na splošno."
+
+#: C/index.docbook:713(sect2/title)
+msgid "NO WARRANTY"
+msgstr "BREZ JAMSTVA"
+
+#: C/index.docbook:714(sect2/subtitle)
+msgid "Section 15"
+msgstr "Razdelek 15"
+
+#: C/index.docbook:716(sect2/para)
+msgid "BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE LIBRARY <quote>AS IS</quote> WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE LIBRARY IS WITH YOU. SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+msgstr "KER JE KNJIŽNICA Z DOVOLJENJEM OPREDELJENA KOT BREZPLAČNA, NI NOBENEGA JAMSTVA ZA KNJIŽNICO DO MEJE, KI JO DOLOČA PRISTOJNI ZAKON. ČE NI DRUGAČE ZAPISANO, IMETNIKI PRAVIC RAZŠIRJANJA IN/ALI DRUGE OSEBE PONUJAJO KNJIŽNICO <quote>TAKŠNO, KOT JE</quote>, BREZ ZAGOTOVILA KAKRŠNE KOLI VRSTE, NEPOSREDNEGA ALI POSREDNEGA, KAR VKLJUČUJE, A NI OMEJENO NA POSREDNA JAMSTVA CENOVNE VREDNOSTI IN PRIMERNOSTI ZA DOLOČENO RABO. CELOTNO TVEGANJE GLEDE KAKOVOSTI IN DELOVANJA KNJIŽNICE PREVZAMETE SAMI. ČE SE KNJIŽNICA IZKAŽE ZA OKVARJENO, SAMI NOSITE STROŠKE VSEH POTREBNIH STORITEV, POPRAVIL ALI POPRAVKOV."
+
+#: C/index.docbook:730(sect2/title)
+msgid "Section 16"
+msgstr "Razdelek 16"
+
+#: C/index.docbook:732(sect2/para)
+msgid "IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "V NOBENEM PRIMERU, RAZEN ČE TAKO PRAVI VELJAVNI ZAKON ALI JE PISNO DOGOVORJENO, NE BO LASTNIK PRAVIC RAZŠIRJANJA ALI KATERAKOLI DRUGA OSEBA, KI LAHKO SPREMENI IN/ALI PONOVNO RAZŠIRJA KNJIŽNICO, KOT JE DOVOLJENO ZGORAJ, PREVZEL ODGOVORNOSTI ZARADI ŠKODE, NAJSI GRE ZA SPLOŠNO, POSEBNO, NENAMERNO ŠKODO ALI ŠKODO, IZHAJAJOČO IZ UPORABE ALI NEZMOŽNOSTI UPORABE KNJIŽNICE (VKLJUČNO Z, A NE OMEJENO NA, IZGUBO PODATKOV ALI NENATANČNO OBDELAVO PODATKOV ALI IZGUBO, POVZROČENO VAM ALI TRETJIM OSEBAM ALI NEZMOŽNOST KNJIŽNICE, DA BI DELOVALA S KAKO DRUGO PROGRAMSKO OPREMO), ČETUDI JE BIL TAK LASTNIK ALI DRUGA OSEBA OBVEŠČEN O MOŽNOSTI NASTANKA TAKŠNE ŠKODE."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/lgpl.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Primož Peterlin, <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
+"Matej Urbančič <mateju@svn.gnome.org>"
+

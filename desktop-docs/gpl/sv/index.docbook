@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="sv">
+  <articleinfo>
+    <title>GNU General Public License</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Dokumentationsprojekt för GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Var och en äger kopiera och distribuera exakta kopior av det här licensavtalet, men att ändra det är inte tillåtet.</para>
+    </legalnotice>
+
+    <releaseinfo>Version 2, Juni 1991</releaseinfo>
+
+    <abstract role="description"><para>De flesta programvarulicenser är skapade för att ta bort din frihet att ändra och dela med dig av programvaran. GNU General Public License är tvärtom skapad för att garantera din frihet att dela med dig av och förändra fri programvara - för att försäkra att programvaran är fri för alla dess användare.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>BAKGRUND</title>
+    
+    <para>De flesta programvarulicenser är skapade för att ta bort din frihet att ändra och dela med dig av programvaran. GNU General Public License är tvärtom skapad för att garantera din frihet att dela med dig av och förändra fri programvara -- för att försäkra att programvaran är fri för alla dess användare. Den här licensen [General Public License] används för de flesta av Free Software Foundations programvaror och för alla andra program vars upphovsmän använder sig av General Public License. (Viss programvara från Free Software Foundation använder istället GNU Library General Public License.) Du kan använda licensen för dina program.</para>
+
+    <para>När vi talar om fri programvara syftar vi på frihet och inte på pris. Våra [General Public License-] licenser är skapade för att garantera din rätt distribuera och sprida kopior av fri programvara (och ta betalt för den här tjänsten om du önskar), att garantera att du får källkoden till programvaran eller kan få den om du så önskar, att garantera att du kan ändra och modifiera programvaran eller använda dess delar i ny fri programvara samt slutligen att garantera att du är medveten om dessa rättigheter.</para>
+
+    <para>För att skydda dina rättigheter, måste vi begränsa var och ens möjlighet att hindra dig från att använda dig av dessa rättigheter samt från att kräva att du ger upp dessa rättigheter. Dessa begränsningar motsvaras av en förpliktelse för dig om du distribuerar kopior av programvaran eller om du ändrar eller modifierar programvaran.</para>
+
+    <para>Om du exempelvis distribuerar kopior av en fri programvara, oavsett om du gör det gratis eller mot en avgift, måste du ge mottagaren alla de rättigheter du själv har. Du måste också tillse att mottagaren får källkoden eller kan få den om mottagaren så önskar. Du måste också visa dessa licensvillkor för mottagaren så att mottagaren känner till sina rättigheter.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>För varje upphovsmans säkerhet och vår säkerhet vill vi för tydlighets skull klargöra att det inte lämnas några garantier för den här fria programvaran. Om programvaran förändras av någon annan än upphovsmannen vill vi klargöra för mottagaren att det som mottagaren har är inte originalversionen av programvaran och att förändringar av och felaktigheter i programvaran inte skall belasta den ursprunglige upphovsmannen.</para>
+
+    <para>Slutligen skall det sägas att all fri programvara ständigt hotas av programvarupatent. Vi vill undvika att en distributör [eller vidareutvecklare] av fri programvara individuellt skaffar patentlicenser till programvaran och därmed gör programvaran till föremål för äganderätt. För att undvika det här har vi gjort det tydligt att samtliga programvarupatent måste registreras för allas fria användning eller inte registreras alls.</para>
+
+    <para>Här nedan följer licensvillkoren för att kopiera, distribuera och ändra programvaran.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>VILLKOR FÖR ATT KOPIERA, DISTRIBUERA OCH ÄNDRA PROGRAMVARAN</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Paragraf 0</title>
+      <para>Dessa licensvillkor gäller varje programvara eller annat verk som innehåller en hänvisning till dessa licensvillkor där upphovsrättsinnehavaren stadgat att programvaran kan distribueras enligt [General Public License] dessa villkor. <quote>Programvaran</quote> enligt nedan syftar på varje sådan programvara eller verk och <quote>Verk baserat på Programvaran</quote> syftar på antingen Programvaran eller på derivativa verk, såsom ett verk som innehåller Programvaran eller en del av Programvaran, antingen en exakt kopia eller en ändrad kopia och/eller översatt till ett annat språk. (översättningar ingår nedan utan begränsningar i begreppet <quote>förändringar</quote>.) Varje licenstagare benämns som <quote>Du</quote>.</para>
+
+      <para>Åtgärder utom kopiering, distribution och ändringar täcks inte av dessa licensvillkor. Användningen av Programvaran är inte begränsad och resultatet av användningen av Programvaran täcks endast av dessa licensvillkor om resultatet utgör ett Verk baserat på Programvaran (oberoende av att det skapats av att programmet körts). Det beror på vad Programvaran gör.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Paragraf 1</title>
+      <para>Du äger kopiera och distribuera exakta kopior av Programvarans källkod såsom du mottog den, i alla medier, förutsatt att Du tydligt och på ett skäligt sätt på varje exemplar fäster en riktig upphovsrättsklausul och garantiavsägelse, vidhåller alla hänvisningar till dessa licensvillkor och till alla garantiavsägelser samt att till alla mottagaren av Programvaran ge en kopia av dessa licensvillkor tillsammans med Programvaran.</para>
+      
+      <para>Du äger utta en avgift för mekaniseringen [att fysiskt fästa Programvaran på ett medium, såsom en diskett eller en cd-romskiva] eller överföringen av en kopia och du äger erbjuda en garanti för Programvaran mot en avgift.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Paragraf 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Dessa krav gäller det förändrade verket i dess helhet. Om identifierbara delar av verket inte härrör från Programvaran och skäligen kan anses vara fristående och självständiga verk i sig, då skall dessa licensvillkor inte gälla i de delarna när de distribueras som egna verk. Men om samma delar distribueras tillsammans med en helhet som innehåller verk som härrör från Programvaran, måste distributionen i sin helhet ske enligt dessa licensvillkor. Licensvillkoren skall i sådant fall gälla för andra licenstagare för hela verket och sålunda till alla delar av Programvaran, oavsett vem som är upphovsman till vilka delar av verket.</para>
+
+      <para>Den här paragrafen skall sålunda inte tolkas som att anspråk görs på rättigheter eller att ifrågasätta Dina rättigheter till programvara som skrivits helt av Dig. Syftet är att tillse att rätten att kontrollera distributionen av derivativa eller samlingsverk av Programvaran.</para>
+
+      <para>Förekomsten av ett annat verk på ett lagringsmedium eller samlingsmedium som innehåller Programvaran eller Verk baserat på Programvaran leder inte till att det andra verket omfattas av dessa licensvillkor.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Paragraf 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Källkoden för ett verk avser den form av ett verk som är att föredra för att göra förändringar av verket. För ett körbart verk avser källkoden all källkod för moduler det innehåller, samt alla tillhörande gränssnittsfiler, definitioner, scripts för att kontrollera kompilering och installation av den körbara Programvaran. Ett undantag kan dock göras för sådant som normalt distribueras, antingen i binär form eller som källkod, med huvudkomponterna i operativsystemet (kompliator, kärna och så vidare) i vilket den körbara programvaran körs, om inte den här komponenten medföljer den körbara programvaran.</para>
+      
+      <para>Om distributionen av körbar Programvara eller objektkod görs genom att erbjuda tillgång till att kopiera från en bestämd plats, då skall motsvarande tillgång till att kopiera källkoden från samma plats räknas som distribution av källkoden, även om trejde man inte behöver kopiera källkoden tillsammans med objektkoden.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Paragraf 4</title>
+      
+      <para>Du äger inte kopiera, ändra, licensiera eller distribuera Programvaran utom på dessa licensvillkor. All övrig kopiering, ändringar, licensiering eller distribution av Programvaran är ogiltig och kommer automatiskt medföra att Du förlorar Dina rättigheter enligt dessa licensvillkor. Tredje man som har mottagit kopior eller rättigheter från Dig enligt dessa licensvillkor kommer dock inte att förlora sina rättigheter så länge de följer licensvillkoren.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Paragraf 5</title>
+
+      <para>Du åläggs inte att acceptera licensvillkoren, då du inte har skrivit under det här avtalet. Du har dock ingen rätt att ändra eller distribuera Programvaran eller Verk baserat på Programvaran. Sådan verksamhet är förbjuden i lag om du inte accepterar och följer dessa licensvillkor. Genom att ändra eller distribuera Programvaran (eller verk baserat på Programvaran) visar du med genom ditt handlande att du accepterar licensvillkoren och alla villkor för att kopiera, distribuera eller ändra Programvaran eller Verk baserat på Programvaran.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Paragraf 6</title>
+
+      <para>Var gång du distributerar Progamvaran (eller Verk baserat på Programvaran), kommer mottagaren per automatik att få en licens från den första licensgivaren att kopiera, distribuera eller ändra Programvaran enligt dessa licensvillkor. Du äger inte ålägga mottagaren några andra restriktioner än de som följer av licensvillkoren. Du är inte skyldig att tillse att tredje man följer licensvillkoren.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Paragraf 7</title>
+
+      <para>Om Du på grund av domstolsdom eller anklagelse om patentintrång eller på grund av annan anledning (ej begränsat till patentfrågor), Du får villkor (oavsett om de kommer via domstols dom, avtal eller på annat sätt) som strider mot dessa licensvillkor så fråntar de inte Dina förpliktelser enligt dessa licensvillkor. Om du inte kan distribuera Programvaran och samtidigt uppfylla licensvillkor och andra skyldigheter, får du som en konsekvens inte distribuera Programvaran. Om exempelvis ett patent gör att Du inte distribuera Programvaran fritt till alla de som mottager kopior direkt eller indirekt från Dig, så måste Du helt sluta distribuera Programvaran.</para>
+
+      <para>Om delar av den här paragrafen förklaras ogiltig eller annars inte kan verkställas skall resten av paragrafen äga fortsatt giltighet och paragrafen i sin helhet äga fortsatt giltighet i andra sammanhang.</para>
+
+      <para>Syftet med den här paragrafen är inte att förmå Dig att begå patentintrång eller att begå intrång i andra rättigheter eller att förmå Dig att betrida giltigheten i sådana rättigheter. Den här paragrafen har ett enda syfte, vilket är att skydda distributionssystemet för fri programvara vilket görs genom användandet av dessa licensvillkor. Många har bidragit till det stora utbudet av programvara som distribueras med hjälp av dessa licensvillkor och den fortsatta giltigheten och användningen av det här systemet, men det är upphovsmannen själv som måste besluta om han eller hon vill distribuera Programvaran genom det här systemet eller ett annat och en licenstagare kan inte tvinga en upphovsman till ett annat beslut.</para>
+
+      <para>Den här paragrafen har till syfte att ställa det utom tvivel vad som anses följa av resten av dessa licensvillkor.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Paragraf 8</title>
+
+      <para>Om distributionen och/eller användningen av Programvaran är begränsad i vissa länder på grund av patent eller upphovsrättsligt skyddade gränssnitt kan upphovsmannen till Programvaran lägga till en geografisk spridningsklausul, enligt vilken distribution är tillåten i länder förutom dem i vilket det är förbjudet. Om så är fallet kommer begränsningen att utgöra en fullvärdig del av licensvillkoren.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Paragraf 9</title>
+      
+      <para>The Free Software Foundation kan offentliggöra ändrade och/eller nya versioner av the General Public License från tid till annan. Sådana nya versioner kommer i sin helhet att påminna om nuvarande version av the General Public License, men kan vara ändrade i detaljer för att behandla nya problem eller göra nya överväganden.</para>
+
+      <para>Varje version ges ett särskiljande versionsnummer. Om Programvaran specificerar ett versionsnummer av licensvillkoren samt "alla senare versioner" kan Du välja mellan att följa dessa licensvillkor eller licensvillkoren i alla senare versioner offentliggjorda av the Free Software Foundation. Om Programvaran inte specificerar ett versionnummer av licensvillkoren kan Du välja fritt bland samtliga versioner som någonsin offentligjorts av the Free Software Foundation.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Paragraf 10</title>
+
+      <para>Om du vill använda delar av Programvaran i annan fri programvara som distribueras enligt andra licensvillkor, begär tillstånd från upphovsmannen. För Programvaran var upphovsrätt innehas av Free Software Foundation, skriv till Free Software Foundation, vi gör ibland undantag för det här. Vårt beslut grundas på våra två mål att bibehålla den fria statusen av alla verk som härleds från vår Programvara och främjandet av att dela med sig av och återanvända programvara i allmänhet.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>INGEN GARANTI</title>
+      <subtitle>Paragraf 11</subtitle>
+
+      <para>DÅ DENNA PROGRAMVARA LICENSIERAS UTAN KOSTNAD GES INGEN GARANTI FÖR PROGRAMMET, UTOM SÅDAN GARANTI SOM MÅSTE GES ENLIGT TILLÄMPLIG LAG. FÖRUTOM DÅ DET UTTRYCKS I SKRIFT TILLHANDAHÅLLER UPPHOVSRÄTTSINNEHAVAREN OCH/ELLER ANDRA PARTER PROGRAMMET "I BEFINTLIGT SKICK" ("AS IS") UTAN GARANTIER AV NÅGRA SLAG, VARKEN UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, UNDERFÖRSTÅDDA GARANTIER VID KÖP OCH LÄMPLIGHET FÖR ETT SÄRSKILT ÄNDAMÅL. HELA RISKEN FÖR KVALITET OCH ANVÄNDBARHET BÄRS AV DIG. OM PROGRAMMET SKULLE VISA SIG HA DEFEKTER SKALL DU BÄRA ALLA KOSTNADER FÖR FELETS AVHJÄLPANDE, REPARATIONER ELLER NÖDVÄNDIGSERVICE.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Paragraf 12</title>
+
+      <para>INTE I NÅGOT FALL, UTOM NÄR DET GÄLLER ENLIGT TILLÄMPLIG LAG ELLER NÄR DET ÖVERENSKOMMITS SKRIFTLIGEN, SKALL EN UPPHOVSRÄTTSINNEHAVARE ELLER ANNAN PART SOM ÄGER ÄNDRA OCH/ELLER DISTRIBUERA PROGRAMVARAN ENLIGT OVAN, VARA SKYLDIG UTGE ERSÄTTNING FÖR SKADA DU LIDER, INKLUSIVE ALLMÄN, DIREKT ELLER INDIREKT SKADA SOM FÖLJER PÅ GRUND AV ANVÄNDNING ELLER OMÖJLIGHET ATT ANVÄNDA PROGRAMVARAN (INKLUSIVE MEN INTE BEGRÄNSAT TILL FÖRLUST AV DATA OCH INFORMATION ELLER DATA OCH INFORMATION SOM FRAMSTÄLLTS FELAKTIGT AV DIG ELLER TREDJE PART ELLER FEL DÄR PROGRAMMET INTE KUNNAT KÖRAS SAMTIDIGT MED ANNAN PROGRAMVARA), ÄVEN OM EN SÅDAN UPPHOVSRÄTTSINNEHAVAREN ELLER ANNAN PART UPPLYSTS OM MÖJLIGHETEN TILL SÅDAN SKADA.</para>
+    </sect2>
+  </sect1>
+</article>

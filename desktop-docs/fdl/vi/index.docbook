@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="vi">
+   <articleinfo>
+    <title>Giấy Phép Tài liệu Tự Do GNU</title>
+      <releaseinfo>Phiên bản 1.1, Tháng 3/2000</releaseinfo>
+      
+      <copyright>
+	<year>2000</year><holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Dự án Tài liệu GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>1.1</revnumber>
+          <date>2000-03</date>
+        </revision>
+      </revhistory>
+      
+      <legalnotice id="legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+             <street>51 Franklin Street, Fifth Floor</street>, 
+             <city>Boston</city>, 
+             <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country></address>. Everyone is permitted to
+	    copy and distribute verbatim copies of this license
+	    document, but changing it is not allowed.
+	</para>
+      </legalnotice>
+
+      <abstract role="description"><para>Giấy Phép này nhằm mục đích làm cho sổ tay, cuốn sách giáo hay tài liệu ghi ra khác là <quote>tự do</quote>: để đảm bảo mọi người có quyền sao chép và phát hành lại tài liệu đó, có sửa đổi nó hay không, một cách thương mại hay không. Thứ hai, Giấy Phép này bảo tồn cho tác giả và nhà xuất bản có cách hưởng công trạng về sự cố gắng của mình, còn họ không được coi có chịu trách nhiệm về sự sửa đổi của người khác.</para></abstract>
+    </articleinfo>
+      
+
+  <sect1 id="fdl-preamble" label="0">
+    <title>LỜI MỞ ĐẦU</title>
+    <para>Giấy Phép này nhằm mục đích làm cho sổ tay, cuốn sách giáo hay tài liệu ghi ra khác là <quote>tự do</quote>: để đảm bảo mọi người có quyền sao chép và phát hành lại tài liệu đó, có sửa đổi nó hay không, một cách thương mại hay không. Thứ hai, Giấy Phép này bảo tồn cho tác giả và nhà xuất bản có cách hưởng công trạng về sự cố gắng của mình, còn họ không được coi có chịu trách nhiệm về sự sửa đổi của người khác.</para>
+    
+    <para>Giấy phép này là kiểu <quote>tác quyền ngược</quote>, có nghĩa là mọi sản phẩm bắt nguồn từ tài liệu này cũng phải là tự do về cùng ý nghĩa. Nó bổ trợ Giấy Phép Công cộng GNU (GPL), một giấy phép tác quyền ngược được thiết kế cho phần mềm dùng tự do.</para>
+    
+    <para>Chúng tôi đã thiết kế Giấy phép này để dùng nó với sổ tay hướng dẫn cách sử dụng phần mềm tự do, vì phần mềm tự do cần thiết tài liệu cũng tự do: chương trình tự do nên có sẵn sổ tay cung cấp cùng những quyền tự do với phần mềm đó. Tuy nhiên Giấy phép này không bị hạn chế trong các sổ tay phần mềm; nó có thể được dùng với bất cứ văn bản nào, bất chấp chủ đề, bất chấp nó là cuốn sách được in ra hay không. Chúng tôi đề nghị Giấy phép này chính cho tài liệu nhằm mục đích hướng dẫn hay tham khảo.</para>
+  </sect1>
+  <sect1 id="fdl-section1" label="1">
+    <title>SỰ THÍCH HỢP VÀ LỜI ĐỊNH NGHĨA</title>
+    <para id="fdl-document">Giấy phép này áp dụng cho bất kỳ sổ tay nào hay văn bản khác chứa thông báo được chèn bởi người giữ tác quyền, nói rằng nó có thể được phát hành với điều kiện của Giấy phép này. <quote>Tài liệu</quote> bên dưới đại diện bất cứ sổ tay hay văn bản nào như vậy. Bất cứ người riêng nào là người được cấp bản quyền, và được gọi là « bạn ».</para>
+    
+    <para id="fdl-modified"><quote>Phiên bản đã Sửa đổi</quote> của Tài liệu có nghĩa là bất cứ văn bản chứa Tài liệu hay đoạn nào của nó, hoặc được sao chép đúng nguyên văn, hoặc với sự sửa đổi và/hay được dịch sang ngôn ngữ khác.</para>
+	
+    <para id="fdl-secondary"><quote>Tiết đoạn Phụ</quote> là phụ lục có tên hay tiết đoạn trước của <link linkend="fdl-document">Tài liệu</link> mà diễn tả chỉ quan hệ của nhà xuất bản hay tác giả của Tài liệu với chủ đề chính của Tài liệu (hoặc với chủ đề liên quan) và không chứa gì nằm trong chủ đề chính đó. (Lấy thí dụ, nếu Tài liệu có tiết đoạn là cuốn sách giáo toán học, Tiết đoạn Phụ không thể diễn tả gì về toán học.) Quan hệ này có thể là liến kết lịch sử với chủ đề hay với chủ đề liên quan, hoặc là luận điểm hợp pháp, thương mại, thuộc triết học, thuộc đạo đức hay chính trị về chúng.</para>
+
+    <para id="fdl-invariant"><quote>Tiết đoạn Bất Biến</quote> là <link linkend="fdl-secondary">Tiết đoạn Phụ</link> có tiêu đề được xác định là Tiết đoạn Bất Biến trong thông báo nói rằng <link linkend="fdl-document">Tài liệu</link> được phát hành dưới Giấy phép này.</para>
+    
+    <para id="fdl-cover-texts"><quote>Đoạn Bìa</quote> là văn bản ngắn được liệt kê là Đoạn Bìa Trước hay Đoạn Bìa Sau trong thông báo nói rằng <link linkend="fdl-document">Tài liệu</link> được phát hành dưới Giấy phép này.</para>
+	
+    <para id="fdl-transparent">Bản sao <quote>Trong Suốt</quote> của <link linkend="fdl-document">Tài liệu</link> nghĩa là bản sao cho máy đọc được, được đại diện theo một định dạng có đặc tả công bố cho mọi người xem, có nội dung cho người dùng xem và sửa đổi một cách trực tiếp và rõ ràng bằng trình soạn thảo văn bản giống loài hay (đối với ảnh được cấu trúc theo điểm ảnh) trình sơn giống loài hay (đối với bức vẽ) trình hiệu chỉnh bức vẽ được công bố rộng rãi, mà thích hợp để nhập vào trình định dạng văn bản hay để dịch tự động sang nhiều định dạng khác nhau thích hợp để nhập vào trình định dạng văn bản. Bản sao được tạo theo một định dạng tập tin Trong Suốt bằng cách khác trừ nó có mã định dạng được thiết kế để chặn hay can ngăn người đọc sửa đổi thì không phải là Trong Suốt. Bản sao không phải là Trong Suốt được gọi là <quote>Đục</quote>.</para>
+    
+    <para>Những định dạng thích hợp với bản sao Trong Suốt gồm có ASCII chuẩn không có mã định dạng, định dạng nhập vào Texinfo, định dạng nhập vào LaTeX, SGML hay XML dùng một DTD được công bố, và HTML đơn giản phù hợp với tiêu chuẩn được thiết kế cho người sửa đổi. Những định dạng Đục gồm có PostScript, PDF, định dạng sở hửu có thể được đọc và sửa đổi chỉ bằng trình xử lý từ sở hữu, SGML hay XML cho đó DTD hay/và công cụ xử lý không được công bố, và HTML do máy tạo ra được tạo bởi một số trình xử lý từ chỉ cho mục đích xuất.</para>
+    
+    <para id="fdl-title-page"><quote>Trang Tiêu đề</quote> có nghĩa là, đối với cuốn sách được in ra, trang tiêu đề chính nó, cộng với trang sau nào cần thiết để hiển thị rõ ràng nguyên liệu phải xuất hiện trên trang tiêu đề, tùy theo Giấy phép này. Đối với văn bản theo định dạng không có trang tiêu đề như thế, <quote>Trang Tiêu đề</quote> nghĩa là văn bản gần vị trí hiển thị rõ ràng nhất tiêu đề của văn bản, nằm trước thân văn bản.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2" label="2">
+    <title>SAO CHÉP ĐÚNG NGUYÊN VĂN</title>
+    <para>Cho phép bạn sao chép và phát hành <link linkend="fdl-document">Tài liệu</link> trong bất cứ vật chứa nào, thương mại hay không, miễn là Giấy phép này, những thông báo tác quyền, và thông báo giấy phép nói rằng Giấy phép này áp dụng cho Tài liệu được tạo lại trong mọi bản sao, và bạn không thêm điều kiện khác nào vào những điều kịện của Giấy phép này. Không cho phép bạn sử dụng biện pháp kỹ thuật để gây trở ngại cho hay điều khiển hoạt động đọc hay sao chép thêm nữa những bản sao bạn tạo hay phát hành. Tuy nhiên, cho phép bạn chấp nhận sự đền bù trao cho bản sao. Nếu bạn phát hành số bản sao đủ lớn, bạn cũng phải tuân theo điều kiện trong <link linkend="fdl-section3">phần 3</link>.</para>
+    
+    <para>Cũng cho phép bạn cho mượn bản sao, với cùng điều kiện nói trên, và cho phép bạn trình bày công khai bản sao.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3" label="3">
+    <title>SAO CHÉP HÀNG LOẠT</title>
+    <para>Nếu bạn xuất bản số bản sao được in ra của <link linkend="fdl-document">Tài liệu</link> hơn 100, và thông báo giấy phép của Tài liệu cần thiết <link linkend="fdl-cover-texts">Đoạn Bìa</link>, bạn phải vây quanh mỗi bản sao trong bìa hiển thị rõ ràng tất cả các Đoạn Bìa này : Đoạn Bìa Trước trên bìa trước, còn Đoạn Bìa Sau trên bìa sau. Cả hai bìa cũng phải hiển thị rõ ràng bạn là nhà xuất bản những bản sao này. Bìa trước phải hiển thị tiêu đề đầy đủ có mỗi từ rõ ràng đều. Cho phép bạn thêm nguyên liệu nữa trên bìa. Việc sao chép chỉ thay đổi bìa, miễn là bìa bảo tồn tiêu đề của <link linkend="fdl-document">Tài liệu</link> và thoả những điều kiện này, có thể được coi là việc sao chép đúng nguyên văn bằng cách khác.</para>
+    
+    <para>Nếu những văn bản bắt buộc phải nằm trên bìa nào là quá dài để hiển thị rõ ràng, bạn nên hiển thị những đoạn thứ nhất được liệt kê (nhiều nhất hiển thị được rõ) trên bìa đó, và hiển thị văn bản còn lại trên các trang tiếp cận.</para>
+    
+    <para>Nếu bạn xuất bản hay phát hành số bản sao <link linkend="fdl-transparent">Đục</link> của <link linkend="fdl-document">Tài liệu</link> hơn 100, bạn phải hoặc phát hành một bản sao <link linkend="fdl-transparent">Trong Suốt</link> cho máy đọc được cùng với mỗi bản sao Đục, hoặc phát biểu trong hay với mỗi bản sao Đục một địa điểm trên mạng máy tính cho mọi người truy cập mà chứa một bản sao Trong Suốt hoàn thành của Tài liệu, không có nguyên liệu được thêm, vào đómọi người sử dụng mạng chung có thể truy cập để tải xuống vô danh và miễn phí bằng giao thức chạy mạng tiêu chuẩn công cộng. Nếu bạn sử dụng tùy chọn thứ hai, bạn cần phải theo một số bước hơi cẩn thận, khi bạn bắt đầu phát hành hàng loạt bản sao Đục, để chắc chắn là bản sao Trong Suốt này sẽ vẫn còn cho người dùng truy cập ở địa điểm đã ghi rõ trong ít nhất một năm sau lần cuối cùng bạn phát hành một bản sao Đục (một cách trực tiếp hay qua đại lý hay hãng bán) của bản sửa đổi đó cho công cộng.</para>
+    
+    <para>Yêu cầu, nhưng không cần thiết bạn liên lạc với những tác giả của <link linkend="fdl-document">Tài liệu</link> khá trước khi phát hành hàng loạt bản sao, để cho họ có dịp cung cấp phiên bản Tài liệu được cập nhật.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4" label="4">
+    <title>SỬA ĐỔI</title>
+    <para>Cho phép bạn sao chép và phát hành <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> của <link linkend="fdl-document">Tài liệu</link> với điều kiện của phần <link linkend="fdl-section2">2</link> và <link linkend="fdl-section3">3</link> trên, miễn là bạn phát hành Phiên bản đã Sửa đổi dưới chính xác Giấy Phép này, còn Phiên bản đã Sửa đổi làm nhiệm vụ của Tài liệu thì cấp quyền phát hành và sửa đổi Phiên bản đã Sửa đổi cho ai có bản sao của nó. Hơn nữa, bạn phải làm những việc này trong Phiên bản đã Sửa đổi:</para>
+    
+    <itemizedlist mark="upper-alpha">
+      <listitem>
+	  <para>Dùng trên <link linkend="fdl-title-page">Trang Tiêu đề</link> (cũng trên những bìa, nếu có) một tiêu đề khác biệt với tiêu đề của <link linkend="fdl-document">Tài liệu</link> và với tiêu đề của phiên bản nào trước (các phiên bản trước, nếu có, nên được liệt kê trong phần Lịch sử của Tài liệu). Nhà xuất bản gốc cho phép thì bạn có quyền sử dụng cùng một tiêu đề với phiên bản trước.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Liệt kê trên <link linkend="fdl-title-page">Trang Tiêu đề</link>, làm tác giả, một hay nhiều người hay thực thể chịu trách nhiệm tạo sự sửa đổi trong <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link>, cùng với ít nhất năm tác giả chính của <link linkend="fdl-document">Tài liệu</link> (tất cả các tác giả chính, nếu số ít hơn năm).</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Ghi rõ trên <link linkend="fdl-title-page">Trang Tiêu đề</link> tên của nhà xuất bản <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link>, làm nhà xuất bản.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bảo tồn tất cả các thông báo tác quyền của <link linkend="fdl-document">Tài Liệu</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Thêm một thông báo tác quyền thích hợp với sự sửa đổi của bạn, tiếp cận với các thông báo tác quyền khác.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Chèn vào, đúng sau những thông báo tác quyền, một thông báo giấy phép cho phép mọi người sử dụng <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> với điều kiện của Giấy phép này, dùng mẫu được hiển thị trong Phụ lục bên dưới.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bảo tồn trong thông báo giấy phép đó những danh sách đầy đủ các <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link> và các <link linkend="fdl-cover-texts">Đoạn Bìa</link> cần thiết đưa ra trong thông báo giấy phép của <link linkend="fdl-document">Tài liệu</link>.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Gồm có một bản sao chưa thay đổi của Giấy phép này.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bảo tồn phần tên <quote>Lịch sử</quote>, cùng với tiêu đề của nó, và thêm vào nó một mục phát biểu ít nhất tiêu đề, năm xuất bản, các tác giả mới và nhà xuất bản của <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> như đưa ra trên <link linkend="fdl-title-page">Trang Tiêu đề</link>. Không có phần tên <quote>Lịch Sử</quote> trong <link linkend="fdl-document">Tài liệu</link> thì bạn tạo một điều phát biểu ít nhất tiêu đề, năm xuất bản, các tác giả và nhà xuất bản của <link linkend="fdl-document">Tài liệu</link> như đưa ra trên <link linkend="fdl-title-page">Trang Tiêu đề</link> của nó, rồi thêm một mục diễn tả <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> như được phát biểu trong câu trước.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bảo tồn địa điểm trên mạng, nếu có, đưa ra trong <link linkend="fdl-document">Tài liệu</link> cho mọi người truy cập một bản sao <link linkend="fdl-transparent">Trong Suốt</link> của <link linkend="fdl-document">Tài liệu</link>, cũng vậy địa điểm mạng đưa ra trong <link linkend="fdl-document">Tài liệu</link> cho các phiên bản trước vào đó nó dưa. Cho phép bạn chèn những điều này vào phần <quote>Lịch sử</quote>. Cho phép bạn bỏ sót một địa điểm mạng đối với văn bản đã xuất bản ít nhất bốn năm trước <link linkend="fdl-document">Tài liệu</link> chính nó, hoặc nếu nhà xuất bản gốc của phiên bản nó đề cập có cho phép.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Đối với bất cứ phần nào tên <quote>Lời Báo Nhận</quote> hay <quote>Lời Đề Tặng</quote>, bảo tồn tiêu đề của phần, cũng bảo tồn trong nó toàn bộ nguyên liệu và giọng điệu đều của mỗi lời báo nhận và/hay lời đề tặng người đóng góp đã cho.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Bảo tồn tất cả các <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link> của <link linkend="fdl-document">Tài liệu</link>, cả văn bản lẫn tiêu đề đều không thay đổi. Số hiệu tiết đoạn hay tương đương không được xem là phần của tiêu đề tiết đoạn.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Xoá bỏ tiết đoạn nào có tiêu đề <quote>Sự Xác nhận</quote>. Không cho phép <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> chứa tiết đoạn như vậy.</para>
+      </listitem>
+      
+      <listitem>
+	  <para>Đừng thay đổi tiêu đề của kỳ cứ tiết đoạn tồn tại thành <quote>Sự Xác nhận</quote> hoặc thành gì xung đột với tiêu đề của bất cứ <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link> nào.</para>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Nếu <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> gồm có tiết đoạn trước hay phụ lục thoả tiêu chuẩn của <link linkend="fdl-secondary">Tiết đoạn Phụ</link> và không chứa nguyên liệu được sao chép từ <link linkend="fdl-document">Tài liệu</link>, cho phép bạn tùy chọn xác định một số hay tất cả những tiết đoạn này là bất biến. Để làm như thế, hãy thêm các tiêu đề của chúng vào danh sách các <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> trong thông báo giấy phép của <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link>. Những tiêu đề này phải riêng biệt với bất kỳ tiêu đề tiết đoạn khác.</para>
+    
+    <para>Cho phép bạn thêm một tiết đoạn có tiêu đề <quote>Sự Xác nhận</quote>, miễn là nó chứa chỉ sự xác nhận <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> của các bên khác nhau — lấy thí dụ, bài phê bình ngang hàng hay lời phát biểu rằng văn bản đã được tán thành bởi một tổ chức nào đó làm sự xác định có căn cứ của một tiêu chuẩn.</para>
+    
+    <para>Cho phép bạn thêm một đoạn chứa đến năm từ làm <link linkend="fdl-cover-texts">Đoạn Bìa Trước</link>, và một đoạn chứa đến 25 từ làm <link linkend="fdl-cover-texts">Đoạn Bìa Sau</link>, vào kết thúc của danh sách các <link linkend="fdl-cover-texts">Đoạn Bìa</link> trong <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link>. Cho phép mỗi thực thể thêm (hay thu xếp thêm) chỉ một <link linkend="fdl-cover-texts">Đoạn Bìa Trước</link> và chỉ một <link linkend="fdl-cover-texts">Đoạn Bìa Sau</link>. Nếu <link linkend="fdl-document">Tài liệu</link> đã chứa một đoạn bìa trên bìa đó, được thêm trước bởi bạn (hoặc được thu xếp thêm bởi cùng một thực thể bạn đại diện), không cho phép bạn thêm đoạn nữa; nhưng bạn có thể thay thế điều cũ nếu nhà xuất bản đã thêm nó cho phép dứt khoát.</para>
+    
+    <para>(Những) tác giả và nhà xuất bản của <link linkend="fdl-document">Tài liệu</link> không phải bằng Giấy Phép này cho phép sử dụng tên của họ trong tính công khai hoặc để xác nhận (trực tiếp hay được ngụ ý) bất cứ <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> nào.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5" label="5">
+    <title>KẾT HỢP TÀI LIỆU</title>
+    <para>Cho phép bạn kết hợp <link linkend="fdl-document">Tài liệu</link> với các tài liệu khác được phát hành dưới Giấy phép này, với điều kiện được xác định trong <link linkend="fdl-section4">phần 4</link> trên về phiên bản đã sửa đổi, miễn là bạn gồm trong sự kết hợp đó tất cả các <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link> của tất cả các tài liệu gốc, chưa sửa đổi, và liệt kê tất cả chúng là <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> của văn bản đã kết hợp, trong thông báo giấy phép của nó.</para>
+    
+    <para>Văn bản đã kết hợp cần phải chứa chỉ một bản sao của Giấy phép này; cũng cho phép thay thế nhiều <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> trùng bằng cùng một bản sao. Nếu có nhiều <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> cùng tên nhưng khác nội dung, khiến mỗi tiêu đề tiết đoạn là duy nhất, bằng cách phụ thêm (trong ngoặc) tên của tác giả hay nhà xuất bản gốc của tiết đoạn đó, nếu được biết, hoặc một số hiệu. Điều chỉnh tương ứng những tiêu đề tiết đoạn trong danh sách các <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link>, trong thông báo giấy phép của văn bản đã kết hợp.</para>
+    
+    <para>Trong sự kết hợp, bạn phải kết hợp bất kỳ tiết đoạn có tiêu đề <quote>Lịch sử</quote> của những tài liệu gốc khác nhau, thì tạo cùng một tiết đoạn có tiêu đề <quote>Lịch sử</quote>; cũng vậy kết hợp bất kỳ tiết đoạn có tiêu đề <quote>Lời Báo Nhận</quote>, và bất kỳ tiết đoạn có tiêu đề <quote>Lời Đề Tặng</quote>. Bạn phải xoá bỏ mọi tiết đoạn có tiêu đề <quote>Sự Xác Nhận</quote>.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6" label="6">
+    <title>TẬP HỢP TÀI LIỆU</title>
+    <para>Cho phép bạn tạo một tập hợp chứa <link linkend="fdl-document">Tài liệu</link> và các tài liệu khác nhau cũng được phát hành dưới Giấy phép này, và thay thế những bản sao riêng của Giấy phép này trong nhửng tài liệu khác nhau bằng cùng một bản sao được bao gồm trong tập hợp đó, miễn là bạn theo những quy tắc của Giấy phép này mọi phương diện khác đối với việc sao chép đúng nguyên văn mỗi tài liệu.</para>
+    
+    <para>Cho phép bạn trích một tài liệu riêng lẻ ra tập hợp như vậy, và phát hành nó một cách riêng dưới Giấy phép này, miễn là bạn chèn một bản sao của Giấy phép này vào tài liệu đã trích ra, và theo Giấy phép này mọi phương diện khác đối với việc sao chép đúng nguyên văn tài liệu đó.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7" label="7">
+    <title>TẬP HỢP VỚI SẢN PHẨM ĐỘC LẬP</title>
+    <para>Sự sưu tập <link linkend="fdl-document">Tài liệu</link> hay các tài liệu dẫn xuất với các tài liệu hay sản phẩm riêng và độc lập khác, trong hay trên một khối tin của phương tiện lưu trữ hay phát hành, toàn bộ không phải được tính đến một <link linkend="fdl-modified">Phiên bản đã Sửa đổi</link> của <link linkend="fdl-document">Tài liệu</link>, miễn là không có tác quyền sưu tập được tuyên bố về sự sưu tập đó. Sự sưu tập tài liệu như vậy được gọi là <quote>khối tập hợp</quote>, và Giấy phép này không áp dụng cho những sản phẩm độc lập khác được sưu tập với <link linkend="fdl-document">Tài liệu</link> do chúng đã được sưu tập như thế, nếu bản thân chúng không phải là sản phẩm dẫn xuất của <link linkend="fdl-document">Tài liệu</link>. Nếu như cầu <link linkend="fdl-cover-texts">Đoạn Bìa</link> của <link linkend="fdl-section3">phần 3</link> có thể được áp dụng cho những bản sao này của <link linkend="fdl-document">Tài liệu</link> thì nếu <link linkend="fdl-document">Tài liệu</link> có kích cỡ ít hơn một phần tư của toàn bộ kích cỡ của khối tập hợp, cho phép bạn hiển thị những <link linkend="fdl-cover-texts">Đoạn Bìa</link> của <link linkend="fdl-document">Tài liệu</link> trên bìa chung quanh chỉ <link linkend="fdl-document">Tài liệu</link> bên trong khối tập hợp. Không thì những <link linkend="fdl-cover-texts">Đoạn Bìa</link> của <link linkend="fdl-document">Tài liệu</link> phải xuất hiện trên bìa chung quanh toàn bộ khối tập hợp.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8" label="8">
+    <title>THÔNG DỊCH</title>
+    <para>Sự thông dịch được coi là kiểu sự sửa đổi, vì vậy cho phép bạn phát hành các bản dịch của <link linkend="fdl-document">Tài liệu</link> với điều kiện của <link linkend="fdl-section4">phần 4</link> trên. Khả năng thay thế <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> bằng bản dịch cần thiết sự cho phép đặc biệt của mỗi người giữ tác quyền của nó, nhưng mà cho phép bạn gồm các bản dịch của một số hay tất cả các <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link>, thêm vào những phiên bản gốc của mỗi <link linkend="fdl-invariant"> Tiết Đoạn Bất Biến</link>. Cho phép bạn gồm một bản dịch của Giấy phép này, miễn là bạn cũng gồm phiên bản tiếng Anh gốc của Giấy phép này. Trong trường hợp xung đột giữa bản dịch và phiên bản tiếng Anh gốc của Giấy phép này, phiên bản gốc có quyền cao hơn.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9" label="9">
+    <title>KẾT THÚC</title>
+    <para>Không cho phép bạn sao chép, sửa đổi, cấp phụ hay phát hành <link linkend="fdl-document">Tài liệu</link>, trừ phi với những điều kiện dứt khoát của Giấy phép này. Bất cứ sự cố gắng khác nào để sao chép, sửa đổi, cấp phụ hay phát hành Tài liệu bị bãi bỏ, và sẽ kết thúc tự động các quyền của bạn dưới Giấy phép này. Tuy nhiên, những người đã nhận bản sao, hay quyền, từ bạn dưới Giấy phép này sẽ không có giấy phép bị kết thúc miễn là họ tiếp tục tuân theo hoàn toàn.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10" label="10">
+    <title>BẢN SỬA ĐỔI TƯƠNG LAI CỦA GIẤY PHÉP NÀY</title>
+    <para><ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Tổ Chức Phần Mềm Tự Do</ulink> có quyền công bố thỉng thoảng phiên bản đã sửa đổi mới của Giấy phép Tài liệu Tự do GNU (GFDL). Phiên bản mới như vậy sẽ có tinh thần tương tự với phiên bản hiện thời, còn có thể khác biệt trong chi tiết để giải quyết vấn đề hay sự quan tâm mới. Xem <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>Mỗi phiên bản của Giấy phép nhận một số hiệu phiên bản riêng. Nếu <link linkend="fdl-document">Tài liệu</link> xác định rằng một phiên bản có số hiệu riêng của Giấy phép này <quote>hay bất cứ phiên bản sau nào</quote> áp dụng cho nó, bạn có tùy chọn tuân theo điều kiện hoặc của phiên bản đã xác định, hoặc của bất cứ phiên bản sau nào đã được công bố (không phải là nháp) bởi Tổ chức Phần mềm Tự do. Nếu <link linkend="fdl-document">Tài liệu</link> không xác định một số hiệu phiên bản riêng của Giấy phép này, cho phép bạn chọn bất cứ phiên bản nào đã được công bố (không phải là nháp) bởi Tổ chức Phần mềm Tự do.</para>
+  </sect1>
+
+  <sect1 id="fdl-using" label="none">
+    <title>Phụ Lục</title>
+    <para>Để dùng Giấy phép này trong một tài liệu bạn đã tạo, hãy gồm một bản sao của Giấy phép trong tài liệu, và thêm những thông báo tác quyền và giấy phép này đúng sau trang tiêu đề:</para>
+    
+    <blockquote>
+      <para>Tác quyền © NĂM HỌ TÊN CỦA BẠN</para>
+      <para>Có cấp quyền sao chép, phát hành và/hay sửa đổi tài liệu này với điều kiện của Giấy phép Tài liệu Tự do GNU (GFDL), Phiên bản 1.1 hay bất cứ phiên bản sau nào được công bố bởi Tổ chức Phần mềm Tự do; còn những <link linkend="fdl-invariant">Tiết đoạn Bất Biến</link> là LIỆT KÊ CÁC TIÊU ĐỀ, còn những <link linkend="fdl-cover-texts">Đoạn Bìa Trước</link> là LIỆT KÊ, và còn những <link linkend="fdl-cover-texts">Đoạn Bìa Sau</link> là LIỆT KÊ. Một bản sao của giấy phép được gồm trong tiết đoạn có tiêu đề <quote>Giấy phép Tài liệu Tự do GNU </quote>.</para>
+    </blockquote>
+      
+    <para>Nếu bạn không có <link linkend="fdl-invariant"> Tiết đoạn Bất Biến</link>, hãy viết <quote>không có Tiết đoạn Bất Biến</quote> thay cho liệt kê những tiết đoạn bất biến. Vậy nếu bạn không có <link linkend="fdl-cover-texts">Đoạn Bìa Trước</link>, viết <quote>không có Đoạn Bìa Trước</quote> thay cho liệt kê chúng; cũng vậy đối với <link linkend="fdl-cover-texts">Đoạn Bìa Sau</link>.</para>
+    
+    <para>Nếu tài liệu của bạn chứa mẫu thí dụ đáng kể của mã nguồn chương trình, khuyên bạn phát hành những mẫu này một cách song song dưới giấy phépphần mềm tự do đã muốn, v.d. <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html"> Giấy phép Công cộng GNU</ulink> (GPL), để cho phép người khác dùng mã này trong phần mềm tự do.</para>
+  </sect1>
+</article>

@@ -1,0 +1,420 @@
+# Slovak translation for gnome-desktop.
+# Copyright (C) 2002, 2003, 2005, 2006, 2008, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+# Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2002, 2003.
+# Stanislav Višňovský <visnov@suse.cz>, 2003.
+# Marcel Telka <marcel@telka.sk>, 2005, 2006, 2008, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&component=general\n"
+"POT-Creation-Date: 2010-04-21 07:53+0000\n"
+"PO-Revision-Date: 2010-04-21 23:17+0200\n"
+"Last-Translator: Marcel Telka <marcel@telka.sk>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:60
+msgid "About GNOME"
+msgstr "O GNOME"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Naučiť sa viac o GNOME"
+
+#: ../gnome-about/gnome-about.in:61
+msgid "News"
+msgstr "Novinky"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "GNOME Library"
+msgstr "Knižnica GNOME"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "Friends of GNOME"
+msgstr "Priatelia GNOME"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ../gnome-about/gnome-about.in:68
+msgid "The Mysterious GEGL"
+msgstr "Tajomný GEGL"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Squeaky Rubber GNOME"
+msgstr "GNOME vŕzgavá guma"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "Wanda The GNOME Fish"
+msgstr "GNOME ryba menom Wanda"
+
+#: ../gnome-about/gnome-about.in:567
+msgid "_Open URL"
+msgstr "_Otvoriť URL"
+
+#: ../gnome-about/gnome-about.in:574
+msgid "_Copy URL"
+msgstr "_Kopírovať URL"
+
+#: ../gnome-about/gnome-about.in:826
+msgid "About the GNOME Desktop"
+msgstr "O prostredí GNOME"
+
+#: ../gnome-about/gnome-about.in:859
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:873
+msgid "Welcome to the GNOME Desktop"
+msgstr "Víta vás prostredie GNOME"
+
+#: ../gnome-about/gnome-about.in:890
+msgid "Brought to you by:"
+msgstr "Vám priniesli:"
+
+#: ../gnome-about/gnome-about.in:914
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:975
+msgid "Version"
+msgstr "Verzia"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Distributor"
+msgstr "Distribútor"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Dátum zostavenia"
+
+#: ../gnome-about/gnome-about.in:1024
+msgid "Display information on this GNOME version"
+msgstr "Zobraziť informácie o tejto verzii GNOME"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME obsahuje aj kompletnú vývojovú platformu pre programátorov aplikácií, "
+"ktorá umožňuje vytváranie výkonných a zložitých aplikácií."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME obsahuje väčšinu toho, čo vidíte na svojom počítači, vrátane správcu "
+"súborov, internetového prehliadača, ponúk a veľa aplikácií."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME je slobodné, použiteľné, stabilné a dostupné pracovné prostredie pre "
+"rodinu operačných systémov podobných Unix-u."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Zameranie GNOME na použiteľnosť a prístupnosť, pravidelné uvoľňovanie nových "
+"verzií a silné firemné zázemie ho robí jedinečným medzi ostatnými slobodnými "
+"prostrediami."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"Najväčšia sila GNOME je silná komunita. Prakticky každý, programátor alebo "
+"neprogramátor, sa môže zapojiť do vylepšovania GNOME."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Stovky ľudí prispeli kódom do GNOME od doby, ako vzniklo v roku 1997. Veľa "
+"ďalších prispelo iným významným spôsobom, napríklad prekladmi, dokumentáciou "
+"a kontrolou kvality."
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Neznámy"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:220
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Chyba pri čítaní súboru '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:288
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Chyba pri presune v súbore '%s': %s"
+
+#. Translators: the "name" mentioned
+#. * here is the name of an application or
+#. * a document
+#. Translators: the "name" mentioned here is the name of
+#. * an application or a document
+#: ../libgnome-desktop/gnome-desktop-item.c:380
+#: ../libgnome-desktop/gnome-desktop-item.c:3524
+msgid "No name"
+msgstr "Bez názvu"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:607
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Súbor '%s' nie je normálny súbor alebo adresár."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:791
+#, c-format
+msgid "Cannot find file '%s'"
+msgstr "Nepodarilo sa nájsť súbor '%s'"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:837
+#, c-format
+msgid "No filename to save to"
+msgstr "Nezadaný názov súboru pre uloženie"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1822
+#, c-format
+msgid "Starting %s"
+msgstr "Spúšťa sa %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2058
+#, c-format
+msgid "No URL to launch"
+msgstr "Nezadané URL, ktoré sa má spustiť"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2074
+#, c-format
+msgid "Not a launchable item"
+msgstr "Položka nie je spustiteľná"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2084
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Nezadaný príkaz (Exec), ktorý sa má spustiť"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2097
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Neplatný príkaz (Exec), ktorý sa má spustiť"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3581
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Neznáme kódovanie pre: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"Nepodarilo sa nájsť terminál. Použije sa xterm, aj napriek tomu, že nemusí "
+"fungovať"
+
+# * https://bugzilla.gnome.org/show_bug.cgi?id=610571
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "nepodarilo sa získať zdroje obrazovky (CRTC, výstupy, režimy)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "neobslúžená chyba X pri získavaní rozsahu veľkostí obrazovky"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "nepodarilo sa získať rozsah veľkostí obrazovky"
+
+#: ../libgnome-desktop/gnome-rr.c:715
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "rozšírenie RANDR nie je prítomné"
+
+#: ../libgnome-desktop/gnome-rr.c:1037
+#, c-format
+msgid "could not get information about output %d"
+msgstr "nepodarilo sa získať informácie o výstupe %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1424
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"vyžiadaná poloha/veľkosť pre CRTC %d je mimo povolenú hranicu: poloha=(%d, "
+"%d), veľkosť=(%d, %d), maximum=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1460
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "nepodarilo sa nastaviť konfiguráciu pre CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1576
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "nepodarilo sa získať informáciu o CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "Prenosný počítač"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1162
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"žiadna z uložených konfigurácií displeja nezodpovedá aktívnej konfigurácii"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1423
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d nemôže obsluhovať výstup %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1430
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "výstup %s nepodporuje režim %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1441
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d nepodporuje otočenie=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1455
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"výstup %s nemá rovnaké parametre ako iný klonovaný výstup:\n"
+"existujúci režim = %d, nový režim = %d\n"
+"existujúce súradnice = (%d, %d), nové súradnice = (%d, %d)\n"
+"existujúca otočenie = %s, nové otočenie = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1470
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "nepodarilo sa klonovať na výstup %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1639
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Skúšanie režimov pre CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1663
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: skúšanie režimu %dx%d@%dHz s výstupom %dx%d@%dHz (prechod %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1710
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"nepodarilo sa priradiť CRTC na výstupy:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1714
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"žiaden z vybraných režimov nebol kompatibilný s možnými režimami:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1796
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d, "
+"%d), minimum=(%d, %d), maximum=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:212
+msgid "Mirror Screens"
+msgstr "Zrkadliť obrazovky"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:162
+msgid "%a %b %e, %R:%S"
+msgstr "%A %e. %B, %R:%S"
+
+#: ../js/ui/dateMenu.js:163
+msgid "%a %b %e, %R"
+msgstr "%A %e. %B, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:167
+msgid "%a %R:%S"
+msgstr "%A, %R:%S"
+
+#: ../js/ui/dateMenu.js:168
+msgid "%a %R"
+msgstr "%A, %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:175
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%A, %e. %B, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:176
+msgid "%a %b %e, %l:%M %p"
+msgstr "%A, %e. %B, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:180
+msgid "%a %l:%M:%S %p"
+msgstr "%A, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:181
+msgid "%a %l:%M %p"
+msgstr "%A, %l:%M %p"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "nepodarilo sa nájsť použiteľnú konfiguráciu obrazoviek"

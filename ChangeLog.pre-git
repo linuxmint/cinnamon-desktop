@@ -1,0 +1,2491 @@
+2009-04-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.26.2
+
+==================== 2.26.1 ====================
+
+2009-04-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.26.1
+
+2009-03-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: remove --with-kde-datadir configure option. It's
+	useless since 2.25 (when some API got removed).
+
+2009-03-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* gnome-version.xml.in.in: add a --disable-date-in-gnome-version
+	configure option to not put the build date in gnome-version.xml. The
+	build date is actually not that useful since it's not the build date
+	for all of GNOME, but for this specific package. So it can be
+	confusing.
+
+2009-03-26  Vincent Untz  <vuntz@gnome.org>
+
+	* gnome-about/gnome-about.in: make the code returning the content of
+	gnome-version.xml a bit more solid, so that we can handle a file
+	that doesn't contain the date, the distributor or the version.
+
+2009-03-16  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.26.1
+
+==================== 2.26.0 ====================
+
+2009-03-16  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.26.0
+
+2009-03-09  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: remove scrollkeeper check. This has to be done by
+	gnome-doc-utils, not ourselves.
+
+2009-03-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.26.0
+
+==================== 2.25.92 ====================
+
+2009-03-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.92
+
+2009-02-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.92
+
+==================== 2.25.91 ====================
+
+2009-02-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.91
+
+2009-02-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.91
+
+==================== 2.25.90 ====================
+
+2009-02-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.90
+
+2009-02-03  Federico Mena Quintero  <federico@novell.com>
+
+	* configure.in (LT_VERSION): Increment the revision/age now that
+	gnome_rr_config_apply_stored() is the same as before; plus we have
+	the addition of gnome_rr_config_get_*_filename().
+
+2009-01-19  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.90
+
+==================== 2.25.5 ====================
+
+2009-01-19  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.5
+
+2009-01-06  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.5
+
+==================== 2.25.4 ====================
+
+2009-01-06  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.4
+
+2008-12-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.4
+
+==================== 2.25.3 ====================
+
+2008-12-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.3
+
+2008-12-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.3
+
+==================== 2.25.2 ====================
+
+2008-12-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.2
+
+2008-12-01  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require GTK+ 2.14. Fix bug #556252.
+
+2008-12-01  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/Makefile.am: add
+	-DGNOME_DESKTOP_USE_UNSTABLE_API to CFLAGS so that it works.
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/gnome-desktop-docs.sgml:
+	* docs/reference/gnome-desktop/gnome-desktop-sections.txt:
+	* docs/reference/gnome-desktop/gnome-desktop.types: add most stuff to
+	have all API listed in the doc. The API is not documented, though :/
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/tmpl/gnome-desktop-unused.sgml:
+	* docs/reference/gnome-desktop/tmpl/gnome-ditem-edit.sgml:
+	* docs/reference/gnome-desktop/tmpl/gnome-hint.sgml: remove doc from
+	objects that were removed from the library.
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require glib 2.19.1 again
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.2
+
+==================== 2.25.1.1 ====================
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.1.1
+
+2008-11-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require glib 2.18.0, since 2.19.1 wasn't released yet
+
+2008-11-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.25.2
+
+==================== 2.25.1 ====================
+
+2008-11-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.25.1
+
+2008-11-04  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/*: fix build
+
+2008-10-21  Alexander Larsson  <alexl@redhat.com>
+
+        * configure.in:
+	Require glib 2.19.1 for G_FILE_ATTRIBUTE_PREVIEW_ICON
+
+2008-10-07  Alexander Larsson  <alexl@redhat.com>
+
+        * configure.in:
+	Bump version to 2.25.1
+	Remove dependencies on libgnome*
+
+2008-09-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.24.1
+
+==================== 2.24.0 ====================
+
+2008-09-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.24.0
+
+2008-09-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.24.0
+
+==================== 2.23.92 ====================
+
+2008-09-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.92
+
+2008-09-01  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.92
+
+==================== 2.23.91 ====================
+
+2008-09-01  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.91
+
+2008-09-01  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: fix compilation when we don't have Xorg .pc files
+	Fix bug #549182
+
+2008-08-25  Adam Jackson  <ajax@redhat.com>
+
+	* libgnome-desktop/gnome-rr.c: (read_edid_data): Allow E-EDID blocks.
+
+2008-08-18  Olav Vitters  <olav@bkor.dhs.org>
+
+	* configure.in: post-release bump to 2.23.91
+
+==================== 2.23.90 ====================
+
+2008-08-18  Olav Vitters  <olav@bkor.dhs.org>
+
+	* NEWS:
+	* README:
+	* configure.in: version 2.23.90
+
+2008-08-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.90
+
+==================== 2.23.6 ====================
+
+2008-08-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.6
+
+2008-07-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.6
+
+==================== 2.23.5 ====================
+
+2008-07-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.5
+
+2008-07-03  Murray Cumming  <murrayc@murrayc.com>
+
+	* configure.in: Check for xrandr. This fixes the build when GTK+ was not 
+	built with it already.
+
+2008-06-20  Christian Persch  <chpe@gnome.org>
+
+	* libgnome-desktop/libgnomeui/gnome-ditem-edit.h: Don't use deprecated
+	gtk macros. Bug #539169.
+
+Tue Jun 17 19:35:39 2008  Søren Sandmann  <sandmann@redhat.com>
+
+	* Merge randr-12 branch
+
+2008-06-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.5
+
+==================== 2.23.4 ====================
+
+2008-06-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.4
+
+2008-06-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require intltool 0.40.0
+	* Makefile.am: remove old intltool cruft
+
+2008-06-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.4
+
+==================== 2.23.3 ====================
+
+2008-06-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.3
+
+2008-05-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.3
+
+==================== 2.23.2 ====================
+
+2008-05-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.2
+
+2008-05-05  Vincent Untz  <vuntz@gnome.org>
+
+	* autogen.sh: touch gnome-about/foundation-members.list when gvfs-copy
+	fails
+
+2008-04-21  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.23.2
+
+==================== 2.23.1 ====================
+
+2008-04-21  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.23.1
+
+2008-04-07  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.22.2
+
+==================== 2.22.1 ====================
+
+2008-04-07  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.22.1
+
+2008-03-10  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.22.1
+
+==================== 2.22.0 ====================
+
+2008-03-10  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.22.0
+
+2008-02-26  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.22.0
+
+==================== 2.21.92 ====================
+
+2008-02-26  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.92
+
+2008-02-11  Vincent Untz  <vuntz@gnome.org>
+
+	* autogen.sh: use gvfs-copy instead of gnomevfs-copy
+
+2008-02-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.21.92
+
+==================== 2.21.91 ====================
+
+2008-02-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.91
+
+2008-02-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: do not require gnome-vfs
+
+2008-02-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require gio
+
+2008-02-05  Vincent Untz  <vuntz@gnome.org>
+
+	* libgnome-desktop/gnome-desktop-item.c: (ditem_load): free the
+	readbuf after its last use, not before...
+	Fix bug #514560.
+
+2008-01-28  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.21.91
+
+==================== 2.21.90 ====================
+
+2008-01-28  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.90
+
+2008-01-15  Vincent Untz  <vuntz@gnome.org>
+
+	* autogen.sh: Test that `which gnomevfs-copy` is NOT empty before
+	attempting to download the foundation-members.list -- this resulted in
+	the foundation members never being downloaded.  fixes Bug #509730
+	Patch by Jonathon Jongsma  <jjongsma@gnome.org>
+
+2008-01-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.21.90
+
+==================== 2.21.5 ====================
+
+2008-01-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.5
+
+2008-01-07  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: pkg-config (and old checks) for X11
+	* libgnome-desktop/Makefile.am: add X11 libs and cflags
+	Fix bug #504635
+
+2007-12-18  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.21.5
+
+==================== 2.21.4 ====================
+
+2007-12-18  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.4
+
+2007-11-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.21.3
+
+==================== 2.21.2 ====================
+
+2007-11-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.21.2
+
+2007-11-12  Vincent Untz  <vuntz@gnome.org>
+
+	Rewrite of gnome-about in python. It's now much better, and it's
+	accessible. Closes a lot of bugs, see bug #481585.
+	Based on work by Guillaume Seguin <guillaume@segu.in>
+
+	* configure.in: remove gnomecanvas dependency, and check for python
+	* gnome-about/Makefile.am: updated
+	* gnome-about/contributors.[ch]: killed
+	* gnome-about/gnome-about.c: killed
+	* gnome-about/gnome-about.in: new file
+
+2007-10-15  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.20.2
+
+==================== 2.20.1 ====================
+
+2007-10-15  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.20.1
+
+2007-09-18  Vincent Untz  <vuntz@gnome.org>
+
+	* autogen.sh: always touch the foundation-members.list file, since
+	gnomevfs-copy doesn't set the right timestamp on it. And it doesn't
+	harm :-)
+
+2007-09-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.20.1
+
+==================== 2.20.0 ====================
+
+2007-09-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.20.0
+
+2007-09-11  Vincent Untz  <vuntz@gnome.org>
+
+	* HACKING:
+	* Makefile.am:
+	* configure.in:
+	* gnome-desktop.spec.in: remove the spec file since nobody maintains
+	it, and it's probably outdated. Also remove all references to it.
+
+2007-09-11  Vincent Untz  <vuntz@gnome.org>
+
+	* autogen.sh: download foundation-members.list from api.gnome.org
+
+2007-09-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: make gnome-about not depend on gnome-vfs
+
+2007-09-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.20.0
+
+==================== 2.19.92 ====================
+
+2007-09-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.92
+
+2007-08-31  Vincent Untz  <vuntz@gnome.org>
+
+	* MAINTAINERS: update to new format
+
+2007-08-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* configure.in: post-release bump to 2.19.91
+
+==================== 2.19.90 ====================
+
+2007-08-13  Lucas Rocha  <lucasr@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.90
+
+2007-07-30  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.90
+
+==================== 2.19.6 ====================
+
+2007-07-30  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.6
+
+2007-07-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.6
+
+==================== 2.19.5 ====================
+
+2007-07-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.5
+
+2007-06-30  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: make gnome-about depend on gnome-vfs
+
+2007-06-29  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Add checks for gconf so we get the
+	include path added to CFLAGS.
+
+2007-06-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.5
+
+==================== 2.19.4 ====================
+
+2007-06-17  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.4
+
+2007-06-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require gtk+ 2.11.3
+
+2007-06-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require glib 2.13.0
+
+2007-06-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.4
+
+==================== 2.19.3.1 ====================
+
+2007-06-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.3.1
+
+2007-06-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.4
+
+==================== 2.19.3 ====================
+
+2007-06-03  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.3
+
+2007-05-28  Vincent Untz  <vuntz@gnome.org>
+
+	* pixmaps/apple-green.png:
+	* pixmaps/gnome-computer.png:
+	* pixmaps/gnome-gmush.png:
+	* pixmaps/gnome-aorta.png:
+	* pixmaps/gnome-gimp.png:
+	* pixmaps/gnome-laptop.png:
+	* pixmaps/gnome-debian.png:
+	* pixmaps/gnome-color-browser.png:
+	* pixmaps/apple-red.png:
+	* pixmaps/gnome-irc.png:
+	* pixmaps/gnome-set-time.png: tango-ified versions, by Frédéric
+	Bellaiche <frederic.bellaiche@gmail.com>
+	Part of bug #343570
+
+2007-05-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.19.3
+
+==================== 2.19.2 ====================
+
+2007-05-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.19.2
+
+2007-04-28  Vincent Untz  <vuntz@gnome.org>
+
+	* desktop-links/: kill old directory
+
+2007-04-10  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.18.2
+
+==================== 2.18.1 ====================
+
+2007-04-10  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.18.1
+
+2007-03-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.18.1
+
+==================== 2.18.0 ====================
+
+2007-03-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.18.0
+
+2007-03-11  Christian Kirbach  <Christian.Kirbach@googlemail.com>
+
+        * gnome-about/gnome-about.desktop.in.in:
+	"Application" is not a valid category in the freedesktop.org
+        specification.
+
+2007-02-26  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.18.0
+
+==================== 2.17.92 ====================
+
+2007-02-26  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.17.92
+
+2007-02-20  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* Makefile.am: Dist MAINTAINERS
+
+2007-02-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.17.92
+
+==================== 2.17.91 ====================
+
+2007-02-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.17.91
+
+2007-01-21  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.17.91
+
+==================== 2.17.90 ====================
+
+2007-01-21  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.17.90
+
+2007-01-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.17.90
+
+==================== 2.17.5 ====================
+
+2007-01-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.17.5
+
+2007-01-08  Christian Persch  <chpe@svn.gnome.org>
+
+	* Makefile.am:
+	* autogen.sh:
+	* configure.in:
+	* gnome-about/Makefile.am:
+	* gnome-about/gnome-about.c: (get_description_messages), (main):
+	* libgnome-desktop/Makefile.am:
+	* libgnome-desktop/gnome-desktop-item.c:
+	* libgnome-desktop/gnome-ditem-edit.c: (gnome_ditem_edit_init),
+	(gnome_ditem_edit_destroy), (gnome_ditem_edit_finalize):
+	* libgnome-desktop/gnome-hint.c: (gnome_hint_finalize),
+	(get_i18n_string), (read_hints_from_file), (gnome_hint_new):
+	* libgnome-desktop/test-ditem-edit.c:
+	* libgnome-desktop/test-ditem.c:
+	* libgnome-desktop/test-hint.c:
+	Fix all compiler warnings, and use undeprecated functions (mostly).
+	Bug #394228.
+
+2006-12-23  Ales Nyakhaychyk  <nab@mail.by>
+
+	* be.po: Updated Belarusian Translation by Ihar Hrachyshka.
+
+2006-12-20  Paolo Borelli  <pborelli@katamail.com>
+
+	* configure.in: check for libxml to fix the build. bug #387961.
+
+2006-11-13  Vincent Untz  <vuntz@gnome.org>
+
+	* pixmaps/kterm.png
+	* pixmaps/sourceforge.png
+	* pixmaps/vnterm.png: kill files we don't even ship...
+
+2006-11-13  Vincent Untz  <vuntz@gnome.org>
+
+	* MAINTAINERS: add myself and change format to the correct one.
+
+2006-11-13  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/tmpl/*: add to CVS
+	Fix bug #354318
+
+2006-11-09  Shaun McCance  <shaunm@gnome.org>
+
+	* configure.in:
+	* desktop-docs/Makefile.am:
+	- Removing gnome-feedback from the build
+
+	* desktop-docs/fdl/fdl.omf.in:
+	* desktop-docs/fdl/C/fdl.xml:
+	* desktop-docs/gpl/gpl.omf.in:
+	* desktop-docs/gpl/C/gpl.xml:
+	* desktop-docs/lgpl/lgpl.omf.in:
+	* desktop-docs/lgpl/C/lgpl.xml:
+	- Changes to make sure db2omf works
+
+2006-11-06  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.17.3
+
+==================== 2.17.2 ====================
+
+2006-11-06  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.17.2
+
+2006-10-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.16.2
+
+==================== 2.16.1 ====================
+
+2006-10-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.16.1
+
+2006-09-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.16.1
+
+==================== 2.16.0 ====================
+
+2006-09-04  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.16.0
+
+2006-08-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.16.0
+
+==================== 2.15.92 ====================
+
+2006-08-22  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.92
+
+2006-08-08  Vincent Untz  <vuntz@gnome.org>
+
+	* pixmaps/gnome-workspace.png:
+	* pixmaps/Makefile.am: remove this icon
+
+2006-08-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.15.92
+
+==================== 2.15.91 ====================
+
+2006-08-08  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.91
+
+2006-07-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.15.91
+
+==================== 2.15.90 ====================
+
+2006-07-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.90
+
+2006-07-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.15.5
+
+==================== 2.15.4 ====================
+
+2006-07-11  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.4
+
+2006-06-03  Christian Persch  <chpe@cvs.gnome.org>
+
+	* libgnome-desktop/Makefile.am:
+	* libgnome-desktop/test-ditem-edit.c: (main): Set
+	GNOME_PARAM_APP_DATADIR. Fixes bug #343320.
+
+2006-05-15  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.15.3
+
+==================== 2.15.2 ====================
+
+2006-05-15  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.2
+
+2006-05-15  Vincent Untz  <vuntz@gnome.org>
+
+	* Makefile.am: revert unapproved change (probably committed by error)
+
+2006-05-15  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require intltool 0.35.0
+
+2006-04-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.15.2
+
+==================== 2.15.1 ====================
+
+2006-04-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.15.1
+
+2006-04-24  Vincent Untz  <vuntz@gnome.org>
+
+	* docs/reference/gnome-desktop/Makefile.am: fix distcheck
+
+2006-04-15  Brian Pepple  <bdpepple@gmail.com>
+
+	* configure.in: Use po/LINGUAS instead of including all languages
+	directly in this file. See the wiki for more information:
+	http://live.gnome.org/GnomeGoals/PoLinguas
+
+2006-04-15  Christian Persch  <chpe@cvs.gnome.org>
+
+	* gnome-about/gnome-about.c: (get_description_messages),
+	(display_version_info): Fix compile warnings and refcount leak.
+	Bug #336068.
+
+2006-04-15  Christian Persch  <chpe@cvs.gnome.org>
+
+	* gnome-about/Makefile.am:
+	* gnome-about/gnome-about.c: (load_random_header), (load_logo),
+	(display_version_info), (main): Try to locate files in the app prefix
+	and not in the system prefix. Bug #336340.
+
+2006-04-08  Simos Xenitellis  <simos@gnome.org>
+
+	* configure.in: Added "mg" (Malagasy) to ALL_LINGUAS.
+
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
+
+	* gnome-about/contributors.h: fixed my name.
+
+2006-03-26  Vincent Untz  <vuntz@gnome.org>
+
+	* .cvsignore: updated
+	* m4/.cvsignore: added
+	* Makefile.am: build docs/ and enable gtk-doc for distcheck
+	* configure.in: add macro dir, check for gtk-doc
+	* docs/*: add API documentation
+	Fix bug #166160
+
+2006-03-25  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: require GTK+ 2.8.0
+
+2006-03-22  Tommi Vainikainen  <thv@iki.fi>
+
+	* configure.in (ALL_LINGUAS): Added Dzongkha (dz).
+
+2006-03-19  Vladimer Sichinava  <vlsichinava@gmail.com>
+
+        * configure.in: Added "ka" (Georgian) to ALL_LINGUAS
+
+2006-03-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.14.1
+
+==================== 2.14.0 ====================
+
+2006-03-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.14.0
+
+2006-02-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.14.0
+
+==================== 2.13.92 ====================
+
+2006-02-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.92
+
+2006-02-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.92
+
+==================== 2.13.91 ====================
+
+2006-02-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.91
+
+2006-01-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.91
+
+==================== 2.13.90 ====================
+
+2006-01-27  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.90
+
+2006-01-16  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.90
+
+==================== 2.13.5 ====================
+
+2006-01-16  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.5
+
+2006-01-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.5
+
+==================== 2.13.4 ====================
+
+2006-01-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.4
+
+2005-12-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.4
+
+==================== 2.13.3 ====================
+
+2005-12-12  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.3
+
+2005-12-12  Vincent Untz  <vuntz@gnome.org>
+
+	Fix warnings. Patch by Kjartan Maraas.
+
+	* gnome-about/gnome-about.c: (display_contributors): remove
+	contributor_rect
+	(display_introduction_message): remove intro_rect
+	* libgnome-desktop/gnome-desktop-item.c: (do_percent_subst): remove
+	useless break
+	* libgnome-desktop/test-ditem.c: (test_ditem): fix type warning
+	* libgnome-desktop/test-hint.c: (main): remove unused code
+
+2005-11-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.3
+
+==================== 2.13.2 ====================
+
+2005-11-14  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.2
+
+2005-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: require glib >= 2.8.0 for g_listenv()
+
+2005-10-31  Simos Xenitellis  <simos@gnome.org>
+
+	* configure.in: Added ky (Kirghiz) to ALL_LINGUAS.
+
+2005-10-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.13.2
+
+==================== 2.13.1 ====================
+
+2005-10-24  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.13.1
+
+2005-10-03  Vincent Untz  <vuntz@gnome.org>
+
+	* Makefile.am: remove scrollkeeper hack. Thanks gnome-doc-utils!
+
+2005-09-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.12.1
+
+==================== 2.12.0 ====================
+
+2005-09-05  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.12.0
+
+2005-08-31  Baris Cicek <baris@teamforce.name.tr>
+
+	* configure.in: Added ku to ALL_LINGUAS
+
+2005-08-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.93
+	
+==================== 2.11.92 ====================
+
+2005-08-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.92.
+
+2005-08-04  Sunil Mohan Adapa  <sunil@atc.tcs.co.in>
+
+	* configure.in: Added "te" to ALL_LINGUAS.
+
+2005-08-02 Abduxukur Abdurixit <abdurixit@gmail.com>
+
+	* configure.in: Added "ug" to ALL_LINGUAS.
+
+2005-07-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.91.
+
+==================== 2.11.90 ====================
+
+2005-07-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.90.
+
+2005-07-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* Makefile.am: remove xmldocs.make
+
+2005-07-25  Mark McLoughlin  <mark@skynet.ie>
+
+	Patch from Christian Persch <chpe@gnome.org> in bug #156687
+
+	* configure.in: require gtk+ 2.4.0 and libgnomeui 2.6.0
+	so we can use GtkIconTheme
+
+2005-07-20  Vincent Untz  <vuntz@gnome.org>
+	
+	* Makefile.am: add gnome-doc-utils.make where it's needed
+	* autogen.sh: remove USE_COMMON_DOC_BUILD
+	* configure.in: call GNOME_DOC_INIT and don't generate old help
+	Makefiles
+
+2005-07-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.11.90
+
+==================== 2.11.5 ====================
+
+2005-07-13  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.11.5
+
+2005-07-02  Vincent Untz  <vuntz@gnome.org>
+
+	* .cvsignore: updated
+
+2005-07-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.11.5
+
+==================== 2.11.4 ====================
+
+2005-07-02  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.11.4
+
+2005-06-13  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* libgnome-desktop/gnome-ditem-edit.c: (translations_select_row):
+	Don't leak the category name. Closes bug #307494.
+
+2005-06-07  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in: post-release bump to 2.11.4
+
+==================== 2.11.3 ====================
+
+2005-06-07  Vincent Untz  <vuntz@gnome.org>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.11.3 (skipping 2.11.2...)
+
+2005-06-01  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "hy" to ALL_LINGUAS.
+
+2005-05-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.1.
+
+==================== 2.11.1 ====================
+
+2005-05-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.1.
+	
+2005-05-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: bump version to 2.11.1 - 2.10.x
+	development continues on the gnome-2-10 branch.
+
+2005-04-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.10.2.
+	
+==================== 2.10.1 ====================
+
+2005-04-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.10.1.
+
+2005-03-31  Steve Murphy  <murf@e-tools.com>
+
+        * configure.in: Added "rw" to ALL_LINGUAS.
+
+2005-03-07  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.10.1
+
+==================== 2.10.0 ====================
+
+2005-03-07  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.10.0
+
+2005-02-28  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.10.0
+
+==================== 2.9.92 ====================
+
+2005-02-28  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.9.92
+
+2005-02-17  Adi Attar  <aattar@cvs.gnome.org>
+
+	* configure.in: Added "xh" to ALL_LINGUAS.
+
+2005-02-07  Vincent Untz  <vincent@vuntz.net>
+
+	* pixmaps/Makefile.am:
+	* pixmaps/advanced-directory.png:
+	* pixmaps/gnome-applications.png:
+	* pixmaps/gnome-favorites.png:
+	* pixmaps/gnome-monitor.png:
+	* pixmaps/gnome-networktool.png:
+	* pixmaps/gnome-session.png:
+	* pixmaps/gnome-util.png: remove these icons, they're in
+	gnome-icon-theme now
+
+2005-02-07  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.9.92
+
+==================== 2.9.91 ====================
+
+2005-02-07  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.9.91
+
+2005-01-25  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.9.91 (again)
+
+==================== 2.9.90.1 ====================
+
+2005-01-25  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: and fix GNOME version before I really do the release
+	:-)
+
+2005-01-25  Vincent Untz  <vincent@vuntz.net>
+
+	* NEWS:
+	* README:
+	* configure.in: brown paper bag release. Version 2.9.90.1
+
+2005-01-25  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.9.91
+
+==================== 2.9.90 ====================
+
+2005-01-25  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* NEWS:
+	* README: version 2.9.90
+
+2005-01-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.9.5.
+
+==================== 2.9.4 ====================
+
+2005-01-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.9.4.
+
+2005-01-09  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: create gnome-about/gnome-about.desktop.in
+	* gnome-version.in: killed
+
+2004-12-21  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.9.4.
+
+==================== 2.9.3 ====================
+
+2004-12-21  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* NEWS: version 2.9.3
+	* README: updated the download url.
+
+2004-12-02  Dwayne Bailey  <dwayne@translate.org.za>
+
+	* configure.in: Add "zu" to ALL_LINGUAS.
+
+2004-11-30  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: post-release bump to 2.9.3.
+
+==================== 2.9.2 ====================
+
+2004-11-30  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in:
+	* README:
+	* NEWS: version 2.9.2
+
+2004-11-29  Dwayne Bailey  <dwayne@translate.org.za>
+
+	* configure.in: Add "nso" to ALL_LINGUAS.
+
+2004-11-18  Vincent Untz  <vincent@vuntz.net>
+
+	* configure.in: we depend on glib >= 2.5.3
+	* libgnome-desktop/Makefile.am: updated after gnome-desktop-i18n.[ch]
+	removal
+	* libgnome-desktop/gnome-desktop-i18n.[ch]: die!
+	* libgnome-desktop/gnome-desktop-item.c: (lookup_locale): use
+	g_get_language_names instead of deprecated gnome_i18n_get_language_list
+	(gnome_desktop_item_get_attr_locale): ditto
+	(get_language): ditto
+	* libgnome-desktop/gnome-ditem-edit.c: use gi18n.h
+	* libgnome-desktop/gnome-hint.c: (find_lang): updated
+	(get_i18n_string): use g_get_language_names instead of deprecated
+	gnome_i18n_get_language_list
+
+2004-11-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Remove .directory files - they're in gnome-menus now.
+
+	* configure.in: don't build desktop-links/Makefile
+	
+	* desktop-links/*: remove.
+	
+	* README: update.
+
+2004-11-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/Makefile.am,
+	  pixmaps/launcher-program.png: remove old launcher
+	icon - its in the panel now.
+
+2004-10-27  Davyd Madeley  <davyd@madeley.id.au>
+
+	* pixmaps/Makefile.am: Move gnome-{mailcheck,money,modem}.png to
+	  the appropriate places in gnome-applets.
+
+	R pixmaps/gnome-mailcheck.png
+	R pixmaps/gnome-modem.png
+	R pixmaps/gnome-money.png
+
+2004-10-27  Davyd Madeley  <davyd@madeley.id.au>
+
+	Branched. Stable tree is gnome-2-8, development towards GNOME 2.10 to
+	continue in HEAD.
+
+2004-10-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.8.2.
+
+==================== 2.8.1 ====================
+
+2004-10-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.8.1.
+
+2004-10-10  Shaun McCance  <shaunm@gnome.org>
+
+	* gnome-about/contributors.h:
+	- Added myself
+
+2004-10-06  James Henstridge  <james@jamesh.id.au>
+
+	* acconfig.h: remove unneeded file.
+
+	* configure.in: pass a comment string to each AC_DEFINE() call.
+
+	Fixes bug #154647:
+
+	* configure.in: modernise the configure script a bit.
+
+	* Makefile.am: add some files to clean lists.
+
+	* autogen.sh (REQUIRED_AUTOMAKE_VERSION): require >= 1.7.
+
+2004-09-29  Mark McLoughlin  <mark@skynet.ie>
+
+	Sent by James Ogley <james@rubberturnip.org.uk>
+
+	* pixmaps/gnome-suse.png: more recent icon.
+
+2004-09-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/gnome-modem.png,
+	  pixmaps/gnome-money.png: new icons from
+	Jakub Steiner.
+
+2004-09-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.8.1.
+
+==================== 2.8.0 ====================
+
+2004-09-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.8.0.
+
+2004-08-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.93.
+
+==================== 2.7.92 ====================
+
+2004-08-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.92.
+
+2004-08-16  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Add nb to ALL_LINGUAS.
+
+2004-08-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.92.
+
+==================== 2.7.91 ====================
+
+2004-08-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.91.
+
+2004-08-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.91.
+
+==================== 2.7.90 ====================
+
+2004-08-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.90.
+
+2004-07-30  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "yo" to ALL_LINGUAS.
+
+2004-07-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.5.
+
+==================== 2.7.4 ====================
+
+2004-07-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.4.
+
+2004-07-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.4.
+
+==================== 2.7.3 ====================
+
+2004-07-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.3.
+
+2004-05-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.2.
+
+==================== 2.7.1 ====================
+
+2004-05-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.1.
+
+2004-05-28  Fernando Herrera  <fherrera@onirica.com>
+
+	* configure.in: Update GNOME_MINOR version number.
+
+2004-05-13  Mark McLoughlin  <mark@skynet.ie>
+	
+	* configure.in: bump version to 2.7.1. 2.6.x development
+	is now on the gnome-2-6 branch.
+
+2004-04-25  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* docs/*/eu/: Added Basque help files
+
+2004-04-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.6.2
+
+==================== 2.6.1 ====================
+
+2004-04-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.6.1.
+
+2004-04-09  Guntupalli Karunakar  <karunakar@freedomink.org>
+
+        * configure.in: Added "gu" (Gujarati) to ALL_LINGUAS.
+
+2004-04-09  John C Barstow  <jbowtie@amathaine.com>
+
+	* configure.in: Added "mi" to ALL_LINGUAS.
+
+2004-03-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.6.1.
+
+==================== 2.6.0.1 ====================
+
+2004-03-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.6.0.1.
+
+2004-03-31  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "af" to ALL_LINGUAS.
+
+==================== 2.6.0 ====================
+
+2004-03-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.6.0
+
+==================== 2.5.92 ====================
+
+2004-03-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.92.
+
+2004-03-13  Danilo Šegan  <dsegan@gmx.net>
+
+	* configure.in: Added "tk" to ALL_LINGUAS.
+
+2004-03-12  Alexander Winston  <alexander.winston@comcast.net>
+
+	* configure.in: Added en_CA to ALL_LINGUAS.
+
+==================== 2.5.91 ====================
+
+2004-03-09  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.91.
+
+2004-03-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: remove the XOPEN_SOUCE define since
+	we don't use strptime anymore.
+
+2004-03-04  Guntupalli Karunakar  <karunakar@freedomink.org>
+
+	* configure.in: Added "pa" (Punjabi) to ALL_LINGUAS.
+
+2004-02-23  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Add a check for scrollkeeper - bug #134986.
+
+==================== 2.5.90 ====================
+
+2004-02-23  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.90.
+
+2004-02-18  Laszlo Peter  <laca@sun.com>
+
+	Moving 3 headers around to make it possible to build against
+	uninstalled gnome-desktop; adding uninstalled.pc file.
+
+	* libgnome-desktop/gnome-desktop-item.c: 
+
+	* libgnome-desktop/gnome-desktop-item.h: move this to libgnome/
+	  subdir
+
+	* libgnome-desktop/gnome-ditem-edit.h: move to libgnomeui/ subdir
+
+	* libgnome-desktop/gnome-hint.h: move to libgnomeui/ subdir
+
+	* libgnome-desktop/libgnome/Makefile.am: new file
+
+	* libgnome-desktop/libgnomeui/Makefile.am: new file
+
+	* libgnome-desktop/gnome-ditem-edit.c: update #include's of the moved
+	  headers
+
+	* libgnome-desktop/gnome-hint.c: update #include
+
+	* libgnome-desktop/test-ditem-edit.c: update #include
+
+	* libgnome-desktop/test-ditem.c: update #include
+
+	* libgnome-desktop/test-hint.c: update #include
+
+	* libgnome-desktop/gnome-desktop-2.0-uninstalled.pc.in: new file
+
+	* libgnome-desktop/Makefile.am: remove the installed headers
+          from here, add libgnome, libgnomeui subdirs
+
+	* configure.in: add the new pc file and Makefiles.
+
+==================== 2.5.5 ====================
+
+2004-02-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.5.
+
+==================== 2.5.4 ====================
+
+2004-02-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.4.
+	
+2004-02-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* Makefile.am: don't try and dist non-existant sgmldocs.make.
+
+2004-02-03  Alexander Winston  <alexander.winston@comcast.net>
+
+	* acinclude.m4: Quoted definition of macro AM_PATH_ESD. Fixes
+	#133215.
+
+2004-02-03  Tomasz K³oczko <kloczek@pld.org.pl>
+
+	* configure.in: Trival cleanup: remove AC_SUBST(CFLAGS),
+	  AC_SUBST(CPPFLAGS) and AC_SUBST(LDFLAGS). This variables are substed
+	  by default.
+
+2004-01-26  Malcolm Tredinnick <malcolm@commsecure.com.au>
+
+	* autogen.sh: Update the build system to use the makefile
+	fragments from gnome-common for the docs build. Should fix the
+	last part of bug #131607.
+
+	* xmldocs.make, omf.make, sgmldocs.make: Removed. The first two
+	are now supplied from gnome-common when autogen.sh is run. The
+	latter has not been used in a long time.
+
+	* .cvsignore: Ignore copied files.
+
+==================== 2.5.3 ====================
+
+2004-01-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.3
+
+==================== 2.5.2 ====================
+
+2003-12-08  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.2.
+
+2003-11-12  Dennis Cranston <dennis_cranston at yahoo com>
+
+	* gnome-desktop-item.c: (ditem_execute) prevent crash if
+	g_filename_form_utf8() returns NULL.
+	
+==================== 2.5.1 ====================
+
+2003-11-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.5.1.
+
+2003-11-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add a --enable-deprecations flag.
+
+2003-11-11  Padraig O'Briain  <padraig.obriain@sun.com>
+
+	* libgnome-desktop/gnome-ditem.edit.c (make_easy_page):
+	Set mnemonic widget for Command to be GtkCombo withing GomeFileEntry
+	widget. Fixes bug #126175.
+
+2003-11-09  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Added "hr" to ALL_LINGUAS.
+
+==================== 2.4.1.1 ====================
+
+2003-10-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.4.1.1.
+
+==================== 2.4.1 ====================
+
+2003-10-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.4.1.
+
+2003-10-06  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "mr" to ALL_LINGUAS.
+
+Fri Sep 19 15:49:50 2003  George Lebl <jirka@5z.com>
+
+	* configure.in, acconfig.h: whack the definition of GNOME_ICONDIR here,
+	  it's not neccessary as only gnome-about uses it and it was wrong anyway
+	  if --prefix was not given it would start with NULL.  gnome-about
+	  correctly does it inside the Makefile.am
+
+2003-09-18  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "br" to ALL_LINGUAS.
+
+==================== 2.4.0 ====================
+
+2003-09-09  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.4.0.
+
+==================== 2.3.90 ====================
+
+2003-09-02  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.90.
+
+==================== 2.3.7 ====================
+
+2003-08-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.7.
+
+2003-08-14  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "ne" to ALL_LINGUAS.
+
+==================== 2.3.6.1 ====================
+
+2003-08-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: 2.3.6.1.
+
+==================== 2.3.6 ====================
+2003-08-08  Luis Villa <louie@ximian.com>
+
+	* gnome-version.xml.in.in: reduce wordiness, increase focus
+	
+2003-08-07  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.6.
+
+2003-08-05  Thomas Vander Stichele  <thomas at apestaart dot org>
+
+	* configure.in: add ACLOCAL_AMFLAGS to configure.in
+
+Tue Jul 29 15:03:56 2003  George Lebl <jirka@5z.com>
+
+	* libgnome-desktop/gnome-desktop-item.c: Follow KDE behaviour on %i,
+	  %m, %c and %k to launch KDE apps properly.  The spec is incredibly
+	  vague on these and no GNOME apps really use these.
+
+2003-07-29  Malcolm Tredinnick <malcolm@commsecure.com.au>
+
+	* configure.in, Makefile.am, gnome-version.xml.in.in,
+	* po/POTFILES.in: Internationalise the gnome-version.xml file.
+	Fixes bug #115193. A side-effect of this is that the option to
+	set the build date on the configure command line has been
+	removed; the build date is computed using date(1) now.
+
+	* gnome-version.xml.in: Removed.
+
+	* gnome-version.xml.in.in: Include some new paragraph text from
+	Luis Villa.
+
+==================== 2.3.4 ====================
+
+2003-07-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.4.
+
+2003-07-11  Frederic Crozat  <fcrozat@mandrakesoft.com>
+
+	* configure.in: Allow GNOME Distributor and
+	Date to be set on configure command-line.
+
+==================== 2.3.3.1 ====================
+
+2003-07-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.3.1.
+
+2003-06-29 Mark Finlay <sisob@eircom.net>
+
+	* pixmaps/gnome-background-pattern.png:
+        Add a background pattern to be used with solid background color #76848F
+
+2003-06-20 Andrew Sobala  <aes@gnome.org>
+
+	* gnome-version.xml.in: use macros to get the right GNOME version
+	in the blurb.
+
+2003-06-13 Mark Finlay <sisob@eircom.net>
+
+	* pixmaps/gnome-background-image.png:
+	Replace with a less shiny, more gnomey one.
+
+2003-06-07 Mark Finlay <sisob@eircom.net>
+
+	* pixmaps/gnome-background-image.png:
+
+	Adding translucent gnome foot background image.
+
+2003-06-06 Mark Finlay <sisob@eircom.net>
+	
+	* pixmaps/gnome-ccthemes.png 
+	* pixmaps/gnome-cckeyboard-bell.png 
+	* pixmaps/gnome-cckeyboard.png
+	* pixmaps/Makefile.am
+
+	Removing icons - they're in the control center already
+
+==================== 2.3.3 ====================
+
+2003-06-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.3.3.
+
+2003-06-06 Mark Finlay <sisob@eircom.net>
+	
+	* pixmaps/gnome-audio2.png:
+	* pixmaps//gnome-joystick.png:
+	* pixmaps/gnome-globe.png:
+	* pixmaps/gnome-graphics.png:
+	* pixmaps/gnome-help.png:
+	* pixmaps/gnome-multimedia.png:
+	* pixmaps/gnome-devel.png:
+	* pixmaps/gnome-settings.png:
+	* pixmaps/gnome-unknown.png:
+	* pixmaps/gnome-system.png:
+	* pixmaps/MakeFile.am:
+
+	Removing Icons, they've been moved to gnome-icon-theme
+
+Thu Jun  5 21:25:23 2003  Kristian Rietveld  <kris@gtk.org>
+
+	New GNOME about mergepoint.
+
+Sat Mar 31 22:19:23 2003  Kristian Rietveld  <kris@gtk.org>
+
+	* configure.in: add gnome-about/headers/Makefile to AC_OUTPUT.
+
+	* gnome-version.xml.in: Rewritten description with paragraphs and
+	stuff. I think it's from Glynn Foster, but I am not sure.
+
+2003-05-26  Kenneth Rohde Christiansen  <kenneth@gnu.org>
+
+	* configure.in: Added 'li' to ALL_LINGUAS
+
+==================== 2.3.2 ====================
+
+2003-05-20  Mark McLoughlin <mark@skynet.ie>
+
+	* configure.in: Version 2.3.2.
+		
+2003-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/Makefile.am: remove gnome-games pixmaps.
+
+2003-05-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* sgmldocs.make: replace leading spaces with tabs.
+	Fix from Art Haas.
+
+2003-05-14  Masahiro Sakai  <sakai@tom.sfc.keio.ac.jp>
+
+	* configure.in: call AC_LIBTOOL_WIN32_DLL which is necessary for
+	building shared library on win32 platform.
+
+	* libgnome-desktop/Makefile.am (libgnome_desktop_2_la_LDFLAGS):
+	add -no-undefined which is necessary for building shared library
+	on some platforms (e.g. Win32 and BeOS).
+
+2003-05-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/Makefile.am:
+	* pixmaps/cdeappmenu.png:
+	* pixmaps/gnome-amusements.png:
+	* pixmaps/gnome-clock.png:
+	* pixmaps/gnome-gegl.png:
+	* pixmaps/gnome-gegl2-2.png:
+	* pixmaps/gnome-gegl2.png:
+	* pixmaps/gnome-lockscreen.png:
+	* pixmaps/gnome-panel-type-corner.png:
+	* pixmaps/gnome-panel-type-edge.png:
+	* pixmaps/gnome-panel-type-floating.png:
+	* pixmaps/gnome-panel-type-menu.png:
+	* pixmaps/gnome-panel-type-sliding.png:
+	* pixmaps/gnome-panel.png:
+	* pixmaps/gnome-run.png:
+	* pixmaps/gnome-screenshot.png:
+	* pixmaps/panel-arrow-down.png:
+	* pixmaps/panel-arrow-left.png:
+	* pixmaps/panel-arrow-right.png:
+	* pixmaps/panel-arrow-up.png:
+	* pixmaps/panel-corner-left.png:
+	* pixmaps/panel-corner-right.png:
+	* pixmaps/panel-drawer.png:
+	* pixmaps/panel-folder.png:
+	* pixmaps/panel-knob.png:
+	* pixmaps/panel-menu-main.png:
+	* pixmaps/tile-blue-down.png:
+	* pixmaps/tile-blue-up.png:
+	* pixmaps/tile-coral-down.png:
+	* pixmaps/tile-coral-up.png:
+	* pixmaps/tile-drc-1-down.png:
+	* pixmaps/tile-drc-1-up.png:
+	* pixmaps/tile-drc-2-down.png:
+	* pixmaps/tile-drc-2-up.png:
+	* pixmaps/tile-drc-4-down.png:
+	* pixmaps/tile-drc-4-up.png:
+	* pixmaps/tile-green-down.png:
+	* pixmaps/tile-green-up.png:
+	* pixmaps/tile-moon-down.png:
+	* pixmaps/tile-moon-up.png:
+	* pixmaps/tile-normal-down.png:
+	* pixmaps/tile-normal-up.png:
+	* pixmaps/tile-purple-down.png:
+	* pixmaps/tile-purple-up.png:
+	* pixmaps/tile-sand-down.png:
+	* pixmaps/tile-sand-up.png: remove all these. They've either
+	been moved to gnome-panel or aren't used by the panel anymore.
+
+2003-05-06  Danilo Å egan  <dsegan@gmx.net>
+
+	* configure.in: Removed "sp" and added "sr@Latn" to ALL_LINGUAS.
+
+2003-05-05  Telsa Gwynne  <hobbit@aloss.ukuu.org.uk>
+                                                                                
+        * configure.in: Added cy to ALL_LINGUAS
+        * po/cy.po: Added
+
+2003-05-04  Arvind Samptur <arvind.samptur>
+
+	* configure.in: Version 2.3.1
+	* News: Update for 2.3.1
+
+2003-04-05  Mike Newman  <mike@gtnorthern.demon.co.uk>
+
+	* configure.in: s/vendor/distributor/ everywhere.
+	* gnome-version.xml.in:
+	* gnome-about/gnome-about.c:
+
+2003-04-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: s/Gnome/GNOME/
+
+2003-03-26  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "yi" to ALL_LINGUAS.
+
+2003-03-26  Arvind Samptur  <arvind.samptur@wipro.com>
+
+	* configure.in: bump version back to 2.3.0.
+	Guess, Mark missed that 2.3.0 was on.
+
+2003-03-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: bump version number to 2.3.1.
+
+2003-03-13  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "ml" to ALL_LINGUAS.
+
+2002-03-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.2.1.
+
+2003-03-04  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "eo" to ALL_LINGUAS.
+
+2003-03-02  SamÃºel JÃ³n Gunnarsson  <sammi@techattack.nu>
+
+	* configure.in: Added "is" to ALL_LINUGUAS
+
+2003-02-21  Roozbeh Pournader  <roozbeh@sharif.edu>
+
+	* configure.in: Added "fa" to ALL_LINGUAS.
+
+2003-02-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/gnome-screenshot.png: add a 48x48 version
+	of this. From jimmac via Alex Duggan.
+
+2003-02-10  Mohammad DAMT  <mdamt@bisnisweb.com>
+
+	* po/id.po: Added Indonesian translation
+	* configure.in: Added "id" to ALL_LINGUAS
+
+2003-02-09  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "kn" to ALL_LINGUAS.
+
+2003-02-07  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "bn" to ALL_LINGUAS.
+
+2003-02-05  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Added "am" to ALL_LINGUAS.
+
+2003-01-24  Laurent Dhima  <laurenti@alblinux.net>
+
+	* configure.in: Added "sq" to ALL_LINGUAS.
+
+2003-01-22  Frederic Crozat  <fcrozat@mandrakesoft.com>
+
+	* libgnome-desktop/Makefile.am:
+	* libgnome-desktop/gnome-desktop-i18n.c: (_gnome_desktop_gettext):
+	* libgnome-desktop/gnome-desktop-i18n.h:
+	* libgnome-desktop/gnome-desktop-item.c:
+	* libgnome-desktop/gnome-ditem-edit.c:
+	(gnome_ditem_edit_class_init):
+	* libgnome-desktop/gnome-hint.c:
+	ensure gettext is correctly initialized before using it
+
+2003-01-22  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "mn" to ALL_LINGUAS.
+
+2002-01-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.2.0.
+
+2003-01-20  Havoc Pennington  <hp@pobox.com>
+
+	* configure.in: require startup-notification 0.5
+
+2002-01-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.90.
+
+2002-12-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.5.
+
+2002-12-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.4.
+
+2002-12-06  Glynn Foster  <glynn.foster@sun.com>
+
+	* pixmaps/Makefile.am: Add new icon.
+	* pixmaps/advanced-directory.png: Move icon from gnome-control-center
+	to here, since it's now used in the context panel menu.
+
+2002-11-30  Havoc Pennington  <hp@pobox.com>
+
+	* configure.in (STARTUP_NOTIFICATION_REQUIRED): require startup notification 0.4
+
+2002-11-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.3.
+
+2002-11-22  Ross Burton  <ross@burtonini.com>
+
+	* pixmaps/gnome-cardgame.png: Updated icon with a new icon, via
+	Tim Musson <trmusson@ihug.co.nz>, via Jakub Steiner (as usual).
+
+2002-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.2.
+
+2002-11-03  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
+
+	* configure.in: Added Belarusian to ALL_LINGUAS
+
+2002-11-01  Dennis Cranston <dennis_cranston@yahoo.com>
+
+	* pixmaps/gnome-logo-icon.png, pixmaps/gnome-logo-large.png:
+	Replaced logos with the GNOME 2.x version.
+	
+2002-10-31  Havoc Pennington  <hp@pobox.com>
+
+	* configure.in (STARTUP_NOTIFICATION_PACKAGE): AC_SUBST this for
+	inclusion in gnome-desktop-2.0.pc
+
+2002-10-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add AC_PATH_PROG(PKG_CONFIG, pkg-config)
+	to make it build.
+
+2002-10-29  Havoc Pennington  <hp@pobox.com>
+
+	* configure.in (HAVE_STARTUP_NOTIFICATION): optionally build with
+	libstartup-notification
+
+2002-09-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.0.
+
+2002-09-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: kill gconftool check.
+
+2002-09-27  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am:
+	* desktop_gnome_icon_theme.schemas
+	Remove schemas file.
+
+2002-09-27  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.in:
+	Bump major due to removed gnome-icon-loader.
+
+2002-09-18  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am:
+	* configure.in:
+	* desktop_gnome_icon_theme.schemas:
+	Add schemas file with icon_theme default.
+
+2002-09-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: libtool versioning update
+	to reflect Alex's ABI compatible additions.
+	Current++, Revision=0, Age++.
+
+2002-09-12  John Fleck <jfleck@inkstain.net>
+
+	* configure.in: add
+	desktop-docs/gnome-feedback/Makefile and
+	desktop-docs/gnome-feedback/C/Makefile.
+
+2002-09-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: set version to 2.1.0, and
+	GNOME version to 2.1.0. 2.0.x development
+	is now happening on the gnome-2-0 branch.
+
+2002-09-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.8.
+	Libtool version revision++.
+
+2002-09-03  Christophe Fergeau <teuf@users.sourceforge.net>
+
+	* configure.in: added he.po to ALL_LINGUAS
+
+2002-08-27  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.7.
+	Libtool version revision++.
+	GNOME_MICRO++;
+
+2002-08-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.6.
+	Libtool version revision++.
+	GNOME_MICRO++;
+
+2002-08-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.5.
+	Libtool version revision++.
+
+2002-07-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.4.
+	Libtool version revision++.
+
+2002-07-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add libtool versioning info	
+	variable, LT_VERSION.
+
+2002-07-25  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* configure.in: Added Bosnian (bs) to ALL_LINGUAS
+
+2002-07-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.3.
+
+2002-06-17  Frank Worsley  <fworsley@shaw.ca>
+
+	* libgnome-desktop/gnome-desktop-item.c:
+	(stringify_files):
+	correctly determine local path for %f and %F parameters
+	in Exec field
+	
+	(ditem_execute), (gnome_desktop_item_launch):
+	support new launch options
+	
+	* libgnome-desktop/gnome-desktop-item.h:
+	added new GNOME_DESKTOP_ITEM_LAUNCH_APPEND_URIS option
+	to always append command line parameters even if no
+	Exec field parameters are present
+
+2002-06-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.2.
+
+2002-06-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/gnome-logo-icon-transparent.png:
+	new pretty foot.
+
+2002-06-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: enable compile warnings.
+
+2002-06-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.1.
+
+2002-06-12  Jody Goldberg <jody@gnome.org>
+
+	* libgnome-desktop/gnome-desktop-item.c (ditem_load) : avoid using
+	  freed memory.
+
+2002-06-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.0.
+
+2002-06-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.22.
+
+2002-06-02  Frank Worsley  <fworsley@shaw.ca>
+
+	* libgnome-desktop/gnome-desktop-item.c:
+	don't forget to copy the languages list
+	
+	* libgnome-desktop/gnome-ditem-edit.c:
+	make the translation list (almost) work right
+
+2002-05-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.21.
+
+2002-05-27  Alexander Larsson  <alla@lysator.liu.se>
+
+	* configure.in:
+	Bump version to 1.5.21, since nautilus needs to depend on it.
+
+2002-050-25  Glynn Foster <glynn.foster@sun.com>
+	
+	* Makefile.am: Update for new icon.
+	* pixmaps/gnome-calc3.png: Add awesome calculator icon from
+	Jakub Steiner. He rocks once again.
+
+2002-05-23  Sander Vesik  <sander.vesik@sun.com>
+
+	* configure.in, Makefile.am, gnome-version.xml.in:
+	The new world order of xml-ified gnome version information
+
+2002-05-21  Frank Worsley  <fworsley@shaw.ca>
+
+	* libgnome-desktop/gnome-desktop-item.c:
+	(gnome_desktop_item_new_from_uri): make sure we only load
+	valid files and fix a bug where we created a new item although
+	we weren't supposed to
+
+	* libgnome-desktop/gnome-desktop-item.h: add a new error type
+	
+Mon May 20 16:05:29 2002  George Lebl <jirka@5z.com>
+
+	* libgnomedesktop/gnome-desktop-item.c: some strings which were not
+	  to be translated, were.  Whoops!
+
+2002-05-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.20.
+
+2002-05-18  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added "mk" to ALL_LINGUAS.
+	
+2002-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* HACKING, README: make a little more helpful.
+
+2002-05-13  Naba Kumar <kh_naba@users.sourceforge.net>
+
+	* configure.in: Added hi in ALL_LINGUAS
+	
+2002-05-13  Glynn Foster <glynn.foster@sun.com>
+
+	* configure.in: Version 1.5.19.
+	* NEWS: Update
+
+2002-04-29  Seth Nickell  <snickell@stanford.edu>
+
+	* pixmaps/gnome-audio2.png:
+
+	Change the horribly horribly ugly old sound icon
+	to something more reasonable.
+
+2002-04-29  Glynn Foster  <glynn.foster@sun.com>
+
+	* NEWS: Update for 1.5.18.
+
+2002-04-29  Glynn Foster <glynn.foster@sun.com>
+
+	* configure.in: Version 1.5.18.
+
+2002-04-25  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* configure.in: Added "vi" to ALL_LINGUAS.
+
+2002-04-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.17.
+
+2002-04-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: update our requirements so
+	people aren't using crufty libraries.
+
+2002-04-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* pixmaps/Makefile.am: actually install the cde icon.
+
+2002-04-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.16.
+
+2002-04-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* xmldocs.make: use tabs instead of spaces.
+
+2002-04-15  Stephen Browne <stephen.browne@sun.com>
+
+	* pixmaps/cdeappmenu.png: Added file 
+
+2002-04-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.15.
+
+2002-03-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.14.
+
+2002-03-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.13.
+
+2002-03-13  Gregory Leblanc  <gleblanc@linuxweasel.com>
+
+	* gnome-desktop.spec.in:  Rewrite from Chris Chabot
+
+2002-03-11  Glynn Foster <glynn.foster@sun.com>
+
+	* autogen.sh: Silly update.
+
+2002-03-06  Glynn Foster  <glynn.foster@sun.com>
+
+	* .cvsignore: foobar it
+	* Makefile.am: Update for new version string
+	* configure.in: Update for new version string
+	* gnome-version.in: Our new GNOME desktop version
+	string.
+
+2002-03-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.12.
+
+2002-02-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.11.
+
+2002-02-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* man/Makefile.am: remove manpages not installed
+	by this package.
+
+2002-02-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.10.
+
+2002-02-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.9.
+
+2002-02-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* AUTHORS: update to reflect libgnome-desktop and
+	gnome-about authors.
+
+	* MAINTAINERS, HACKING: me and george for the moment.
+
+	* gnome-core.spec.in:
+	* Makefile.am: change spec file name to gnome-desktop.spec.in.
+
+	* README: update.
+
+	* configure.in: remove cruft
+
+2002-02-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: change GETTEXT_PACKAGE. Thanks Jacob.
+
+2002-02-12  Mark McLoughlin  <mark@skynet.ie>
+
+	gnome-desktop module split off from gnome-core.
+
+	* Makefile.am, autogen.sh, configure.in: initial work
+	to get things building.
+

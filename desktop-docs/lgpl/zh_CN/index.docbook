@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="zh-CN">
+    <articleinfo>
+      <title>GNU 宽通用公共许可证</title>
+      <copyright>
+	<year>2000</year>
+	<holder>Free Software Foundation, Inc.</holder>
+      </copyright>
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+      <publisher role="maintainer">
+        <publishername>GNOME 文档项目</publishername>
+      </publisher>
+      <revhistory>
+        <revision>
+          <revnumber>2.1</revnumber>
+          <date>1999-02</date>
+        </revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para>
+	  <address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.
+	</para>
+	<para>允许任何人复制和发布这一许可证原始文档的副本，但绝对不允许对它进行任何修改。</para>
+      </legalnotice>
+      <releaseinfo>1999年2月，版本2.1</releaseinfo>
+    <abstract role="description"><para>
+      The licenses for most software are designed to take away your
+      freedom to share and change it.  By contrast, the GNU General Public
+      Licenses are intended to guarantee your freedom to share and change
+      free software - to make sure the software is free for all its users.
+    </para></abstract>
+
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>序言</title>
+    
+    <para>大多数软件许可证决意剥夺你的共享和修改软件的自由。相反，GNU 通用公共许可证力图保证你的共享和修改自由软件的自由——保证自由软件对所有用户是自由的。</para>
+
+    <para>当我们谈到自由软件时，我们指的是自由而不是价格。我们的 GNU 通用公共许可证决意保证你有发布自由软件的自由(如果你愿意，你可以对此项服务收取一定的费用)；保证你能收到源程序或者在你需要时能够得到它；保证你能修改软件或将它的一部分用于新的自由软件；而且还保证你知道你能做这些事情。</para>
+
+    <para>此许可证，较宽松通用公共许可证，适用于自由软件基金会以及那些决定使用此许可证的作者所特殊设计的软件包——特别是库。您也可以使用此许可证，但是我们建议您先根据下面的解释仔细考查一下究竟是此许可证还是传统的通用公共许可证较适合在任何特定用途中使用。</para>
+
+    <para>当我们谈到自由软件时，我们指的是用途自由而不是价格。我们的 GNU 通用公共许可证决意保证你有发布自由软件的自由(如果你愿意，你可以对此项服务收取一定的费用)；保证你能收到源程序或者在你需要时能够得到它；保证你能修改软件或将它的一部分用于新的自由软件；而且还保证你知道你能做这些事情。</para>
+
+    <para>为了保护你的权利，我们需要作出规定：禁止任何人否认你的权利，或者要求你放弃这些权利。如果你修改了库或者发布了库的副本，这些规定就转化为你的责任。</para>
+
+    <para>例如，如果你发布这样一个库的副本，不管是收费的还是免费的，你必须将你具有的一切权利给予你的接受者；你必须保证他们能收到或得到源程序；如果你把该库与某个程序进行连接，你必须把完整的目标文件提供给接受者，以使他们在修改了库并重新进行了编译之后可以重新与该库进行连接。并且，你必须向他们展示这些条款，使他们了解自己的的权利。</para>
+
+    <para>我们采取两项措施来保护你的权利：(1) 我们保护库的版权，(2) 我们为您提供了此许可证，它给你复制、发布和修改库的法律许可。</para>
+
+    <para>为了保护发布者，我们需要清楚地让每个人明白，自由库没有担保。同时，如果由于其他某个人修改了库，并继续加以传播，我们需要它的接受者明白：他们所得到的并不是原来的版本。任何由其他人引入的任何问题，不应损害原作者的声誉。</para>
+
+    <para>最后，任何自由软件不断受到软件专利的威胁。我们想要确保公司无法通过专利持有人的限制性许可证来限制自由软件的用户。因此，我们坚持库的任何版本所获得的任何专利许可都必须与此许可证所指定的完全自由用途相吻合。</para>
+
+    <para>大多数 GNU 软件，包括某些库，都是由传统的 GNU 通用公共许可证所管理的。此协议，GNU 宽通用公共许可证，适用于某些特殊设计的库，因而与传统的 GNU 通用公共许可证有所不同。我们对特定的库使用这一许可是为了允许将这些库与非自由的程序链接在一起。</para>
+
+    <para>当程序与库链接在一起的时候，不管是静态还是共享库，此二者的组合可以被称为结合的作品，或称原始库的派生作品。传统的 GNU 通用公共许可证仅当整个组合符合其自由条件时才允许这样链接。宽通用公共许可证则在将其它代码与库链接在一起时条件更为宽松。</para>
+
+    <para>我们把这份许可证称为<quote>宽(Lesser)</quote>通用公共许可证，因为它在保护用户自由方面比原通用公共许可证相比要弱。对于自由软件开发者与纯非自由软件的竞争，它提供的优势也更少。这些优势是我们的许多库使用常规的通用公共许可证的原因。然而，更宽松的许可在某些特定环境中有自己的优势。</para>
+
+    <para>例如，在一些少见的情形下，需要鼓励尽量广泛的使用某个特定库，以使它成为一种事实标准。要实现这一目的，必须允许非自由软件使用该库。更常见的例子是，一个自由库实现了某个广泛使用的非自由库的相同功能。这时，将自由库限定于自由软件才能使用得不偿失，因此我们使用宽通用公共许可证。</para>
+
+    <para>在其他情形下，允许在非自由程序中使用某个特定的库使得更多的人可以广泛地使用自由软件。例如，允许在非自由程序中使用 GNU C 库允许更多的人使用整个 GNU操作系统和它的变体，GNU/Linux 操作系统。</para>
+
+    <para>尽管宽通用公共许可证在保护用户自由上弱一些，它仍然能保证与自由库链接的程序的用户使用该库的修改版本运行那个程序的自由和必要条件。</para>
+
+    <para>以下是有关复制、传播和修改的条款和条件的详细阐述。请特别留意<quote>基于库的作品</quote>与<quote>使用库的作品</quote>之间的差别。前者包含从库中衍生的代码，而后者必须与该库一起才能运行。</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>复制、传播和修改的条款及条件</title>
+
+    <sect2 id="sect0" label="0">
+      <title>第 0 节</title>
+      <para>此许可协议适用于任何软件库或其他程序，条件是它们包含一条由版权拥有者或其他授权方置入的声明，言明它可以在此宽通用公共许可证(也称<quote>此协议</quote> )条款约束下传播。各获授权者由<quote>你</quote>指定。</para>
+
+      <para>一个<quote>库</quote>是指一系列编译好的软件函数和/或数据的集合，可以方便地与应用程序(它使用了其中的一些函数和数据)链接来组成可执行程序。</para>
+
+      <para>下文所说的<quote>库</quote>，是指任何在这些条款下发布的软件库或作品。一件<quote>基于库的作品</quote>是指该库或任何在版权法规定下的派生作品：即包含该库或部分库和作品，无论是原样使用还是经过修改和/或直接翻译为另一种语言。(下文中，翻译将不作限制地包含在术语<quote>修改</quote>的范围内。)</para>	
+
+      <para>一件作品的<quote>源代码</quote>是指用来对作品作修改的优先形式。对于库，完整的源代码意味着它包含的所有模块的所有源代码，以及任何与接口定义相关的文件，还有使用和控制编译和安装库的脚本。</para>
+
+      <para>此许可证不影响复制、传播和修改以外的活动；这些活动超出了约束范围。执行使用了库的程序的行为不受限制，这类程序的输出也不在约束范围内，除非输出内容构成了一件基于库的作品(与在编写它的工具中使用库的情况无关)。判断是否约束取决于库所发挥的作用以及使用库的程序的行为。</para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>第 1 节</title>
+      <para>在收到库后，你可以使用任何媒介原样复制和传播库的源代码，只要你以明确和适当的方式在每份副本中公布一个恰当的版权提示和担保声明；保持所有提及此许可证和缺少保证的提示的完整性；并与在库发布时附一份此许可的副本。</para>
+      
+      <para>你可以为转让副本的实际行动索要费用，也可以选择通过提供担保来获取费用。</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>第 2 节</title>
+      <para>
+	You may modify your copy or copies of the Library or any portion
+	of it, thus forming a work based on the Library, and copy and
+	distribute such modifications or work under the terms of 
+	<link linkend="sect1">Section 1</link> above, provided that 
+	you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	       The modified work must itself be a software library.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the files modified to carry prominent notices
+	      stating that you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause the whole of the work to be licensed at no
+	      charge to all third parties under the terms of this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If a facility in the modified Library refers to a function or a
+	      table of data to be supplied by an application program that uses
+	      the facility, other than as an argument passed when the facility
+	      is invoked, then you must make a good faith effort to ensure that,
+	      in the event an application does not supply such function or
+	      table, the facility still operates, and performs whatever part of
+	      its purpose remains meaningful.
+	    </para>
+
+	    <para>
+	      (For example, a function in a library to compute square roots has
+	      a purpose that is entirely well-defined independent of the
+	      application.  Therefore, Subsection 2d requires that any
+	      application-supplied function or table used by this function must
+	      be optional: if the application does not supply it, the square
+	      root function must still compute square roots.)
+	    </para>
+	      
+	    <para>
+	      These requirements apply to the modified work as a whole.  If
+	      identifiable sections of that work are not derived from the Library,
+	      and can be reasonably considered independent and separate works in
+	      themselves, then this License, and its terms, do not apply to those
+	      sections when you distribute them as separate works.  But when you
+	      distribute the same sections as part of a whole which is a work based
+	      on the Library, the distribution of the whole must be on the terms of
+	      this License, whose permissions for other licensees extend to the
+	      entire whole, and thus to each and every part regardless of who wrote
+	      it.
+	    </para>
+
+	    <para>
+	      Thus, it is not the intent of this section to claim rights or contest
+	      your rights to work written entirely by you; rather, the intent is to
+	      exercise the right to control the distribution of derivative or
+	      collective works based on the Library.
+	    </para>
+
+	    <para>
+	      In addition, mere aggregation of another work not based on the Library
+	      with the Library (or with a work based on the Library) on a volume of
+	      a storage or distribution medium does not bring the other work under
+	      the scope of this License.
+	    </para>
+	  </listitem>	      
+	</orderedlist>
+      </para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>第 3 节</title>
+
+      <para>你可以选择向库的副本应用原 GNU 通用公共许可证而非此许可证。为此，你必须调整所有提及此许可证的声明，让它们指向原通用公共许可证第 2 版，而不是本许可证。(如果出现了原通用公共许可证比第 2 版更新的版本，你可以转而指定那个版本，取决于你的意愿。)不要对声明其他部分作任何更改。</para>
+
+      <para>一旦对给定副本作出修改，该副本就无法恢复，因此原 GNU 通用公共许可证将应用于该副本的所有后续副本和衍生作品。</para>
+      
+      <para>此选项在你希望将库的部分代码复制到一个非库的程序中时有用。</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>第 4 节</title>
+      
+      <para>你可以在上面第<link linkend="sect2">1</link>、<link linkend="sect2">2</link>节条款的约束下以目标代码或可执行文件的形式复制和传播<link linkend="sect2">第 2 节</link>中的库(或其部分或衍生内容)，前提是你随之附带相应的机器可读的完整源代码，代码必须在第<link linkend="sect2">1</link>、<link linkend="sect2">2</link>节条款约束下通过常用的软件交换媒介分发。</para>
+
+      <para>如果传播目标代码是通过提供从某个指定位置复制的访问权限的形式进行的，则提供从相同位置访问并复制源代码的同等权限即满足发布源代码的要求，尽管不强制第三方与目标代码一起复制源代码。</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>第 5 节</title>
+
+      <para>一个未包含该库的衍生或部分内容，但设计为通过和库一起编译和链接的方式与库一同工作的程序，称为<quote>使用库的作品</quote>。这样的作品从个体来讲，不是库的衍生作品，因此不在此许可证的约束范围内。</para>
+
+      <para>然而，将<quote>使用库的作品</quote>与库链接生成的可执行文件是库的衍生作品(因为它包含库的一部分)，而非<quote>使用库的作品</quote>。因此该可执行文件受此许可证约束。<link linkend="sect6">第 6 节</link>阐述了此类可执行文件的发布条款。</para>
+
+      <para>当<quote>使用库的作品</quote>使用了来自组成库的头文件的内容时，该作品的目标代码可能成为库的衍生作品，尽管源代码不是。这一事实是否成立可以从该作品离开该库能否链接或它是否本身就是库很明显的判断出来。判断的标准没有精确的法律定义。</para>
+
+      <para>如果这样的目标文件只使用了数值参数、数据结构布局和访问接口、小的宏以及小的内嵌函数(10 行或更短)，则使用该目标文件不作限制，不管它在法律上是不是衍生作品。(包含此目标代码加上部分库的可执行文件仍然符合<link linkend="sect6">第 6 节</link>)的约束。</para>
+
+      <para>否则，如果该作品是库的衍生作品，你可以遵照<link linkend="sect6">第 6 节</link>的条款发布此作品的目标代码。任何包含该作品的可执行文件也受<link linkend="sect6">第 6 节</link>的约束，不管它们是否与该库直接链接。</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>第 6 节</title>
+
+      <para>
+	As an exception to the Sections above, you may also combine or
+	link a <quote>work that uses the Library</quote> with the Library to
+	produce a work containing portions of the Library, and distribute that
+	work under terms of your choice, provided that the terms permit
+	modification of the work for the customer's own use and reverse
+	engineering for debugging such modifications.
+      </para>
+
+      <para>
+	You must give prominent notice with each copy of the work that the
+	Library is used in it and that the Library and its use are covered by
+	this License.  You must supply a copy of this License.  If the work
+	during execution displays copyright notices, you must include the
+	copyright notice for the Library among them, as well as a reference
+	directing the user to the copy of this License.  Also, you must do one
+	of these things:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">
+	      Accompany the work with the complete corresponding
+	      machine-readable source code for the Library including whatever
+	      changes were used in the work (which must be distributed under
+	      Sections <link linkend="sect1">1</link> and 
+	      <link linkend="sect2">2</link> above); and, if the work is an 
+	      executable linked with the Library, with the complete machine-readable 
+	      <quote>work that uses the Library</quote>, as object code and/or source 
+	      code, so that the user can modify the Library and then relink to 
+	      produce a modified executable containing the modified Library.  (It is 
+	      understood that the user who changes the contents of definitions files 
+	      in the Library will not necessarily be able to recompile the application
+	      to use the modified definitions.)
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Use a suitable shared library mechanism for linking with the
+	      Library.  A suitable mechanism is one that (1) uses at run time a
+	      copy of the library already present on the user's computer system,
+	      rather than copying library functions into the executable, and (2)
+	      will operate properly with a modified version of the library, if
+	      the user installs one, as long as the modified version is
+	      interface-compatible with the version that the work was made with.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany the work with a written offer, valid for at
+	      least three years, to give the same user the materials
+	      specified in <link linkend="sect6a">Subsection 6a</link>
+	      , above, for a charge no more than the cost of performing 
+	      this distribution.	      
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If distribution of the work is made by offering access to copy
+	      from a designated place, offer equivalent access to copy the above
+	      specified materials from the same place.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Verify that the user has already received a copy of these
+	      materials or that you have already sent this user a copy.
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+	<para>
+	  For an executable, the required form of the <quote>work that uses the
+	  Library</quote> must include any data and utility programs needed for
+	  reproducing the executable from it.  However, as a special exception,
+	  the materials to be distributed need not include anything that is
+	  normally distributed (in either source or binary form) with the major
+	  components (compiler, kernel, and so on) of the operating system on
+	  which the executable runs, unless that component itself accompanies
+	  the executable.
+	</para>
+
+	<para>
+	  It may happen that this requirement contradicts the license
+	  restrictions of other proprietary libraries that do not normally
+	  accompany the operating system.  Such a contradiction means you cannot
+	  use both them and the Library together in an executable that you
+	  distribute.
+	</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>第 7 节</title>
+
+      <para>
+	You may place library facilities that are a work based on the
+	Library side-by-side in a single library together with other library
+	facilities not covered by this License, and distribute such a combined
+	library, provided that the separate distribution of the work based on
+	the Library and of the other library facilities is otherwise
+	permitted, and provided that you do these two things:
+      </para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	    Accompany the combined library with a copy of the same work
+	    based on the Library, uncombined with any other library
+	    facilities.  This must be distributed under the terms of the
+	    Sections above.
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    Give prominent notice with the combined library of the fact
+	    that part of it is a work based on the Library, and explaining
+	    where to find the accompanying uncombined form of the same work.
+	  </para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>第 8 节</title>
+
+      <para>
+	You may not copy, modify, sublicense, link with, or distribute
+	the Library except as expressly provided under this License.  Any
+	attempt otherwise to copy, modify, sublicense, link with, or
+	distribute the Library is void, and will automatically terminate your
+	rights under this License.  However, parties who have received copies,
+	or rights, from you under this License will not have their licenses
+	terminated so long as such parties remain in full compliance.
+      </para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>第 9 节</title>
+      
+      <para>
+	You are not required to accept this License, since you have not
+	signed it.  However, nothing else grants you permission to modify or
+	distribute the Library or its derivative works.  These actions are
+	prohibited by law if you do not accept this License.  Therefore, by
+	modifying or distributing the Library (or any work based on the
+	Library), you indicate your acceptance of this License to do so, and
+	all its terms and conditions for copying, distributing or modifying
+	the Library or works based on it.
+      </para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>第 10 节</title>
+
+      <para>
+	Each time you redistribute the Library (or any work based on the
+	Library), the recipient automatically receives a license from the
+	original licensor to copy, distribute, link with or modify the Library
+	subject to these terms and conditions.  You may not impose any further
+	restrictions on the recipients' exercise of the rights granted herein.
+	You are not responsible for enforcing compliance by third parties with
+	this License.
+      </para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>第 11 节</title>
+
+      <para>
+	If, as a consequence of a court judgment or allegation of patent
+	infringement or for any other reason (not limited to patent issues),
+	conditions are imposed on you (whether by court order, agreement or
+	otherwise) that contradict the conditions of this License, they do not
+	excuse you from the conditions of this License.  If you cannot
+	distribute so as to satisfy simultaneously your obligations under this
+	License and any other pertinent obligations, then as a consequence you
+	may not distribute the Library at all.  For example, if a patent
+	license would not permit royalty-free redistribution of the Library by
+	all those who receive copies directly or indirectly through you, then
+	the only way you could satisfy both it and this License would be to
+	refrain entirely from distribution of the Library.
+      </para>
+
+      <para>
+	If any portion of this section is held invalid or unenforceable under any
+	particular circumstance, the balance of the section is intended to apply,
+	and the section as a whole is intended to apply in other circumstances.
+      </para>
+
+      <para>
+	It is not the purpose of this section to induce you to infringe any
+	patents or other property right claims or to contest validity of any
+	such claims; this section has the sole purpose of protecting the
+	integrity of the free software distribution system which is
+	implemented by public license practices.  Many people have made
+	generous contributions to the wide range of software distributed
+	through that system in reliance on consistent application of that
+	system; it is up to the author/donor to decide if he or she is willing
+	to distribute software through any other system and a licensee cannot
+	impose that choice.
+      </para>
+
+      <para>
+	This section is intended to make thoroughly clear what is believed to
+	be a consequence of the rest of this License.
+      </para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>第 12 节</title>
+
+      <para>
+	If the distribution and/or use of the Library is restricted in
+	certain countries either by patents or by copyrighted interfaces, the
+	original copyright holder who places the Library under this License may add
+	an explicit geographical distribution limitation excluding those countries,
+	so that distribution is permitted only in or among countries not thus
+	excluded.  In such case, this License incorporates the limitation as if
+	written in the body of this License.
+      </para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>第 13 节</title>
+
+      <para>
+	The Free Software Foundation may publish revised and/or new
+	versions of the Lesser General Public License from time to time.
+	Such new versions will be similar in spirit to the present version,
+	but may differ in detail to address new problems or concerns.
+      </para>
+
+      <para>
+	Each version is given a distinguishing version number.  If the Library
+	specifies a version number of this License which applies to it and
+	<quote>any later version</quote>, you have the option of following the terms and
+	conditions either of that version or of any later version published by
+	the Free Software Foundation.  If the Library does not specify a
+	license version number, you may choose any version ever published by
+	the Free Software Foundation.
+      </para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>第 14 节</title>
+
+      <para>
+	If you wish to incorporate parts of the Library into other free
+	programs whose distribution conditions are incompatible with these,
+	write to the author to ask for permission.  For software which is
+	copyrighted by the Free Software Foundation, write to the Free
+	Software Foundation; we sometimes make exceptions for this.  Our
+	decision will be guided by the two goals of preserving the free status
+	of all derivatives of our free software and of promoting the sharing
+	and reuse of software generally.
+      </para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>没有担保</title>
+      <subtitle>第 15 节</subtitle>
+
+      <para>
+	BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
+	WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+	EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+	OTHER PARTIES PROVIDE THE LIBRARY <quote>AS IS</quote> WITHOUT WARRANTY
+	OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED
+	TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+	PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE
+	OF THE LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU
+	ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+      </para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>第 16 节</title>
+
+      <para>
+	IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+	WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+	AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU
+	FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+	CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+	LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+	RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+	FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+	SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+	DAMAGES.
+      </para>
+    </sect2>
+  </sect1>
+</article>

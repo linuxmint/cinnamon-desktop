@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="es">
+    <articleinfo>
+      <title>Licencia Pública General Menor de GNU</title>
+      <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+      <author><surname>Free Software Foundation</surname></author>
+      <publisher role="maintainer">
+        <publishername>Proyecto de Documentación de GNOME</publishername>
+      </publisher>
+      <revhistory>
+        <revision><revnumber>2.1</revnumber> <date>02/1999</date></revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.</para>
+	<para>Se permite a todo el mundo copiar y distribuir copias literales de este documento de licencia, pero no se permite modificarlo.</para>
+      </legalnotice>
+      <releaseinfo>Versión 2.1, Febrero de 1999</releaseinfo>
+    <abstract role="description"><para>Las licencias que cubren la mayor parte del software están diseñadas para quitarle a usted la libertad de compartirlo y modificarlo, las Licencias Públicas Generales de GNU pretenden garantizarle la libertad de compartir y modificar el software libre, para asegurar que el software es libre para todos sus usuarios.</para></abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Daniel Mustieles</firstname>
+      </personname>
+      <email>daniel.mustieles@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2012</year>
+      
+      <holder>Daniel Mustieles</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Rafael Palomino</firstname>
+      </personname>
+      <email>rafaelus4@eresmas.net</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2001</year>
+      
+      <holder>Rafael Palomino</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Francisco Javier F. Serrador</firstname>
+      </personname>
+      <email>serrador@cvs.gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2005</year>
+      
+      <holder>Francisco Javier F. Serrador</holder>
+    </copyright>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Preámbulo</title>
+    
+    <para>Las licencias que cubren la mayor parte del software están diseñadas para quitarle a usted la libertad de compartirlo y modificarlo, las Licencias Públicas Generales de GNU pretenden garantizarle la libertad de compartir y modificar el software libre, para asegurar que el software es libre para todos sus usuarios.</para>
+
+    <para>Cuando hablamos de software libre, estamos refiriéndonos a libertad, no a precio. Nuestras Licencias Públicas Generales están diseñadas para asegurarnos de que tenga la libertad de distribuir copias de software libre (y cobrar por ese servicio si quiere), de que reciba el código fuente o que pueda conseguirlo si lo quiere, de que pueda modificar el software o usar fragmentos de él en programas nuevos libres, y de que sepa que puede hacer todas estas cosas.</para>
+
+    <para>Esta licencia, la Licencia Pública General Menor (Lesser General Public Licence), se aplica a algunos paquetes de software diseñados específicamente —típicamente bibliotecas— de la Free Software Foundation y de otros autores que deciden usarla. Usted puede usarla también, pero le sugerimos que piense primero cuidadosamente si esta licencia o la General Public Licence ordinaria, es o no la estrategia mejor a usar en un caso particular, basándose en las explicaciones siguientes.</para>
+
+    <para>Cuando hablamos de software libre, nos referimos a libertad de uso, no a precio. Nuestras Licencias Públicas Generales están diseñadas para asegurar que usted tiene la libertad de distribuir copias de software libre (y cobrar por este servicio si quiere); que recibe el código fuente o que puede obtenerlo si lo quiere; que puede modificar el software y usar partes de él en nuevos programas libres; y de que ha sido informado de que puede hacer estas cosas.</para>
+
+    <para>Para proteger sus derechos necesitamos algunas restricciones que prohíban a cualquiera negarle a usted estos derechos o pedirle que renuncie a ellos. Estas restricciones se traducen en ciertas obligaciones que le afectan si distribuye copias de la biblioteca, o si la modifica.</para>
+
+    <para>Por ejemplo, si distribuye copias de la biblioteca, sea gratuitamente, o a cambio de una contraprestación, debe dar a los receptores todos los derechos que tiene. Debe asegurarse de que ellos también reciben, o pueden conseguir, el código fuente. Si enlaza otro código con la biblioteca, debe proporcionar archivos objeto completos a los receptores, para que ellos puedan reenlazarlos con la biblioteca después de hacer cambios a la biblioteca y recompilarla.  Y debe mostrarles estas condiciones de forma que conozcan sus derechos.</para>
+
+    <para>Protegemos sus derechos con la combinación de dos medidas: 
+(1) Derechos de copia de la Biblioteca (copyright), y 
+(2) le ofrecemos esta licencia, que le da permiso legal para copiar, distribuir y/o modificar la biblioteca.</para>
+
+    <para>Para proteger a cada uno de los distribuidores, queremos dejar muy claro que no existe garantía para la biblioteca libre. Además, si la biblioteca es modificada por alguien y se transmite, los receptores deberían saber que lo que ellos tienen no es la versión original, de forma que la reputación del autor original no se vea afectada por problemas que podrían ser introducidos por otros.</para>
+
+    <para>Finalmente, cualquier programa libre está constantemente amenazado por patentes sobre el software. Queremos evitar el peligro de que una compañía no pueda restringir efectivamente a los usuarios de un programa libre obteniendo una licencia restrictiva de un propietario de una patente. Para evitar esto, insistimos en que cualquier licencia de patente obtenida por una versión de la biblioteca deba ser consistente con la completa libertad de uso especificada en esta licencia.</para>
+
+    <para>La mayoría del software de GNU, incluyendo algunas bibliotecas, están cubiertos por la Licencia Licencia Pública General ordinaria. Esta licencia, la GNU Licencia Pública General Menor, se aplica a ciertas bibliotecas designadas, y es un poco diferente de la Licencia Pública General. Usamos esta licencia para ciertas bibliotecas con el fin de permitir enlazar esas bibliotecas en programas no libres.</para>
+
+    <para>Cuando un programa está enlazado con una biblioteca, ya sea estáticamente o usando una biblioteca compartida, la combinación de los des es hablando legalmente un trabajo combinado, una derivación de la biblioteca original. La Licencia Pública General entonces permite dicho enlazado sólo si la combinación entera cumple con este criterio de libertad. La Licencia Pública General Menor permite un criterio más relajado para enlazar otro código con la biblioteca.</para>
+
+    <para>Llamamos a esta licencia Licencia Pública General <quote>Menor</quote> porque hace Menos para proteger la libertad del usuario que la Licencia Licencia Pública General ordinaria. También proporciona otros desarrolladores de software libre Menos de las ventajas respecto a competir con programas que no sean software libre. Estas desventajas son la razón por la que usamos la licencia Licencia Pública General para muchas bibliotecas. Sin embargo, la licencia Menor proporciona ventajas en ciertas circunstancias especiales.</para>
+
+    <para>Por ejemplo, en raras ocasiones puede haber una necesidad especial de fomentar lo más ampliamente posible el uso de una determinada biblioteca, de forma que esta se convierta en un estándar. Para conseguir esto, se debe permitir a los programas no libres el uso de estas bibliotecas. Un caso más frecuente es aquel en el que una biblioteca libre hace el mismo trabajo que el que realizan las bibliotecas no libres más ampliamente usadas. En este caso, hay poco que ganar limitando la biblioteca únicamente al software libre, de manera que usamos la Licencia Pública General Menor.</para>
+
+    <para>En otros casos, el permiso para usar una biblioteca determinada en programas no libres posibilita a un mayor número de gente a usar una gran cantidad de software libre. Por ejemplo, el permiso para utilizar la biblioteca GNU C en programas no libres posibilita a mucha más gente a usar al completo el sistema operativo GNU, así como su variante, el sistema operativo GNU/LINUX.</para>
+
+    <para>Aunque la Licencia Pública General Menor es menos protectora para las libertades del usuario, asegura que el usuario de un programa que está enlazado con la biblioteca tiene la libertad y los medios para ejecutar ese programa usando una versión modificada de la biblioteca.</para>
+
+    <para>Los términos y las condiciones exactas para la copia, distribución y modificación se indican a continuación. Preste especial atención a la diferencia entre un <quote>trabajo basado en la biblioteca</quote> y un <quote>trabajo que utiliza la biblioteca</quote>. El primero contiene código derivado de la biblioteca, mientras que el último debe estar unido con la biblioteca para ser ejecutado.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>Términos y condiciones para la copia, distribución y modificación</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Sección 0</title>
+      <para>Este Acuerdo de Licencia se aplica a cualquier biblioteca de software u otro programa que contenga una notificación colocada por el poseedor del copyright u otra parte autorizada diciendo que puede distribuirse bajo los términos de la licencia Licencia Pública General Menor (también llamada <quote>esta Licencia</quote>. Cada licenciatario será referido como <quote>Usted</quote>.</para>
+
+      <para>Una <quote>biblioteca</quote> significa una colección de funciones y/o datos de software, preparados para ser enlazados de una forma cómoda con programas de aplicación (que usan algunas de estas funciones y datos) para formar ejecutables.</para>
+
+      <para>La <quote>Biblioteca</quote> en lo que sigue, se refiere a cualquier trabajo o biblioteca de software que haya sido distribuido bajo estos términos. Un <quote>trabajo basado en la Biblioteca</quote> significa que, o la Biblioteca o cualquier trabajo derivado, están bajo la ley de derechos de autor: es decir, un trabajo que contiene a la Biblioteca o a una parte de ella, ya sea de forma literal o con modificaciones y/o traducida de forma clara a otro idioma (mas abajo se incluye la traducción sin restricción en el término <quote>modificación</quote>).</para>	
+
+      <para>El <quote>código fuente</quote> para un trabajo se refiere a la forma preferida del trabajo para hacer modificaciones en él. Para una Biblioteca, el código fuente completo significa todos los códigos fuente para todos los módulos que contenga la biblioteca, más cualquier fichero de definición de interfaz asociado, y los scripts asociados para controlar la compilación y la instalación de la biblioteca.</para>
+
+      <para>Otras actividades que no sean la copia, distribución y modificación no se encuentran cubiertas por esta Licencia; se encuentran fuera de su objetivo. La opción de ejecutar un programa utilizando la Biblioteca no esta restringido, y el resultado de dicho programa esta cubierto únicamente si su contenido constituye un trabajo basado en la Biblioteca (independientemente del uso de la Biblioteca como herramienta para escribirlo). Que esto sea cierto va a depender de lo que haga la Biblioteca y de lo que haga el programa que utiliza la Biblioteca.</para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Sección 1</title>
+      <para>Puede copiar y distribuir copias literales del código fuente completo de la Biblioteca tal y como la recibe, en cualquier medio, a condición de que usted publique de forma manifiesta y apropiada, en cada una de las copias, un aviso conveniente de derechos de autor y una renuncia de garantía; mantenga intactas todas las notificaciones que se refieran a esta Licencia y a la ausencia de cualquier garantía; y distribuya una copia de esta Licencia junto con la Biblioteca.</para>
+      
+      <para>Puede cobrar un importe por el acto físico de traspasar una copia y puede, a opción suya, ofrecer una protección de garantía a cambio de un importe.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Sección 2</title>
+      <para>Puede modificar su copia o copias de la Biblioteca o de cualquier parte de ella, formando así un trabajo basado en la Biblioteca, y copiar y distribuir tales modificaciones o trabajo bajo los términos de la <link linkend="sect1">Sección 1</link> de arriba, siempre que usted también cumpla con todas estas condiciones: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>El trabajo modificado debe ser por sí mismo una biblioteca.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Debe hacer que los ficheros modificados lleven avisos llamativos, declarando que usted cambió los ficheros y la fecha de cualquier cambio.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Debe hacer que a todo el trabajo le sea concedida una licencia, sin cargo a terceras partes, bajo los términos de esta Licencia.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Si una facilidad en la Biblioteca modificada se refiere a una función o a una tabla de datos, que deba ser suministrada por un programa de aplicación que usa la facilidad de otra manera que como un argumento pasado cuando la facilidad es invocada, entonces debe hacer un esfuerzo de buena fe para asegurar que, en caso de que una aplicación no suministre tal función o tabla, la facilidad aun funcione y haga que cualquier parte de su finalidad siga siendo significativa.</para>
+
+	    <para>(Por ejemplo, una función en una biblioteca para computar raíces cuadradas tiene un propósito que está bien definido completamente, independientemente de la aplicación. Por tanto, la Subsección 2d exige que cualquier función o tabla suministrada por la aplicación y usada por esa función debe ser opcional: si la aplicación no la suministra, la función raíz cuadrada debe seguir computando raíces cuadradas).</para>
+	      
+	    <para>Estos requisitos se aplican al trabajo modificado como un todo. Si hay secciones identificables de ese trabajo que no derivan de la Biblioteca, y se pueden considerar razonablemente independientes y trabajos separados, por ellas mismas, entonces esta Licencia y sus términos, no se aplicarán a aquellas secciones cuando usted los distribuya como trabajos separados. Pero cuando usted distribuya las mismas secciones como parte de un todo, que sea un trabajo basado en la Biblioteca, la distribución del todo debe estar bajo los términos de esta Licencia cuyos permisos para otros licenciatarios se extienden a todo el conjunto, y así para todas y cada una de las partes, sin tener en cuenta quien las escribió.</para>
+
+	    <para>Así pues, la intención de esta sección no es exigir derechos o discutir los derechos de un trabajo escrito completamente por usted; más bien, la intención es ejercer el derecho a controlar la distribución de trabajos derivados o colectivos basados en la Biblioteca.</para>
+
+	    <para>Además, la mera agregación de otro trabajo no basado en la Biblioteca con la Biblioteca (o con un trabajo basado en la Biblioteca) en un volumen de almacenaje o en un medio de distribución, no pone al otro trabajo bajo los objetivos de esta Licencia.</para>
+	  </listitem>	      
+	</orderedlist></para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Sección 3</title>
+
+      <para>Usted puede optar por aplicar a una determinada copia de la Biblioteca, los términos de la Licencia Pública General GNU ordinaria en vez de los de esta Licencia. Para hacer esto, debe alterar todas las notificaciones que se refieren a esta Licencia, para que se refieran a la Licencia Pública General GNU ordinaria, versión 2, en vez de a esta Licencia. (Si ha aparecido una versión más reciente que la versión 2 de la Licencia Pública General GNU ordinaria, entonces, si quiere, puede especificar esa nueva versión). No haga ningún otro cambio en estas notificaciones.</para>
+
+      <para>Una vez que se haya hecho este cambio en una copia dada, es irreversible para esa copia, de modo que la Licencia Pública General GNU ordinaria se aplica a todas las copias siguientes y a trabajos derivados realizados a partir de esa copia.</para>
+      
+      <para>Esta opción es útil cuando usted quiere copiar parte del código de la Biblioteca dentro de un programa que no es una biblioteca.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Sección 4</title>
+      
+      <para>Puede copiar y distribuir la Biblioteca (o una porción o derivado de ella, bajo la Sección 2) en código objeto o forma ejecutable bajo los términos de las Secciones 1 y 2 arriba indicadas, siempre que la acompañe con el correspondiente código fuente legible (a máquina) completo, que debe ser distribuido bajo los términos de las Secciones 1 y 2 de arriba, en un medio usado habitualmente para el intercambio de software.</para>
+
+      <para> Si la distribución del código objeto se hace ofreciendo el acceso a su copia desde un lugar designado, entonces ofreciendo un acceso equivalente a la copia del código fuente desde el mismo sitio se satisfacen los requisitos para la distribución del código fuente, aunque las terceras partes no estén obligadas a copiar el código fuente junto con el código objeto.</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Sección 5</title>
+
+      <para>Un programa que no contiene derivado de ninguna porción de la Biblioteca, pero está diseñado para trabajar con la Biblioteca al ser compilado o enlazado con ella, se denomina un <quote>trabajo que usa la Biblioteca</quote> . Dicho trabajo, por separado, no es un trabajo derivado de la Biblioteca, y por tanto cae fuera del ámbito de esta Licencia.</para>
+
+      <para>Sin embargo, enlazar un <quote>trabajo que usa la Biblioteca</quote> con la Biblioteca, crea un ejecutable que es un derivado de la Biblioteca (porque contiene porciones de la Biblioteca). , en vez de un <quote>trabajo que usa la Biblioteca</quote>. El ejecutable está por tanto cubierto por esta Licencia. La <link linkend="sect6">Sección 6</link> expone los términos para la distribución de tales ejecutables.</para>
+
+      <para>Cuando un <quote>trabajo que usa la Biblioteca</quote> utiliza material de un fichero cabecera que forma parte de la Biblioteca, el código objeto del trabajo puede ser un trabajo derivado de la Biblioteca aunque el código fuente no lo sea. Que esto sea cierto es especialmente significativo si el trabajo puede ser enlazado sin la Biblioteca, o si el trabajo es por si mismo una biblioteca. El límite para que esto sea cierto no está definido con precisión por la ley.</para>
+
+      <para>Si dicho fichero objeto utiliza solo parámetros numéricos, esquema de estructura de datos, y pequeñas macros y pequeñas funciones en línea (diez líneas o menos de longitud), entonces el uso del fichero objeto no está restringido, sin tener en cuenta si esto es legalmente un trabajo derivado. (Ejecutables que contengan este código objeto y porciones de la Biblioteca estarán aun bajo la <link linkend="sect6">Sección 6</link>).</para>
+
+      <para>En caso contrario, si el trabajo es un derivado de la Biblioteca, usted puede distribuir el código objeto del trabajo bajo los términos de la <link linkend="sect6">Sección 6</link>. Cualquier ejecutable que contenga ese trabajo también cae bajo la <link linkend="sect6">Sección 6</link>, esté o no enlazado con la Biblioteca.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Sección 6</title>
+
+      <para>Como excepción a las secciones anteriores, puede también combinar o enlazar un <quote>trabajo que usa la Biblioteca</quote> con la Biblioteca para producir un trabajo que contenga porciones de la Biblioteca, y distribuir ese trabajo bajo los términos de su elección, siempre que los términos permitan la modificación del trabajo por el uso propio del cliente y la ingeniería inversa para la depuración de tales modificaciones.</para>
+
+      <para>Debe incluir con cada copia del trabajo una notificación de que la Biblioteca se utiliza en él, y de que la Biblioteca y su uso están cubiertos por esta Licencia. Debe suministrar una copia de esta Licencia. Si el trabajo, durante su ejecución, muestra notas de derechos de autor, usted deberá incluir entre ellas las notas de derechos de autor de la Biblioteca, así como una referencia que dirija al usuario a la copia de esta Licencia. Además, usted debe hacer una de estas cosas: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">Acompañar el trabajo con el correspondiente código fuente legible (a máquina) completo de la Biblioteca, incluyendo cualquier cambio que fuera utilizado en el trabajo (el cual debe ser distribuido bajo las Secciones <link linkend="sect1">1</link> y <link linkend="sect2">2</link> de arriba); y, si el trabajo es un ejecutable enlazado con la Biblioteca, con el completo, legible (a maquina) <quote>trabajo que usa la Biblioteca</quote>, como código objeto y/o código fuente, de forma que el usuario pueda modificar la Biblioteca y reenlazar entonces para producir un ejecutable modificado que contenga la Biblioteca modificada. (Se entiende que el usuario que cambia los contenidos de los archivos de definiciones en la Biblioteca no necesariamente será capaz de recompilar la aplicación para usar las definiciones modificadas).</para>
+	  </listitem>
+	  <listitem>
+	    <para>Usar un mecanismo de biblioteca compartida adecuado para enlazar con la Biblioteca. Un mecanismo adecuado es uno que (1) utiliza en tiempo de ejecución una copia de la biblioteca que está ya presente en el ordenador del usuario, en vez de copiar funciones de biblioteca dentro del ejecutable, y (2) funcionará correctamente con una versión modificada de la biblioteca, si el usuario instala una, mientras que la versión modificada sea de interfaz compatible con la versión con la que se hizo el trabajo.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Acompañar el trabajo con una oferta escrita, válida por tres años al menos, para proporcionar a dicho usuario los materiales especificados en la <link linkend="sect6a">Subsección 6a</link> de arriba, por un precio no superior al coste de realizar esta distribución.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Si la distribución del trabajo se hace ofreciendo el acceso a la copia desde un lugar determinado, ofrecer un acceso equivalente para la copia de los materiales especificados anteriormente desde el mismo lugar.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Verificar que el usuario ha recibido ya una copia de estos materiales o que usted ya le ha enviado una copia a este usuario.</para>
+	  </listitem>
+	</orderedlist></para>
+
+	<para>Para un ejecutable, la forma requerida del <quote>trabajo que usa la Biblioteca</quote> debe incluir todos los programas de datos y utilidades necesitados para reproducir el ejecutable desde él. Sin embargo, como una excepción especial, los materiales a distribuir no necesitan incluir nada de lo que es distribuido normalmente (ya sea en forma binaria o fuente) con los componentes principales (compilador, núcleo, y demás) del sistema operativo en el cual funciona el ejecutable, a menos que el componente por él mismo acompañe al ejecutable.</para>
+
+	<para>Puede suceder que este requisito contradiga las restricciones de la licencia de otras bibliotecas propietarias que no acompañan normalmente al sistema operativo. Dicha contradicción significa que no puede usar estas y la Biblioteca juntas en un ejecutable que usted distribuya.</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Sección 7</title>
+
+      <para>Puede colocar facilidades de biblioteca, que son un trabajo basado en la Biblioteca, juntas en una sola biblioteca junto con otras facilidades de biblioteca no cubiertas por esta Licencia, y distribuir dicha biblioteca combinada, con tal que la distribución separada del trabajo basado en la Biblioteca y de las otras facilidades de biblioteca esté, por lo demás, permitida, y con tal que usted haga estas dos cosas:</para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Acompañar la biblioteca combinada con una copia del mismo trabajo basado en la Biblioteca, no combinado con cualquier otra facilidad de biblioteca. Esto debe ser distribuido bajo los términos de las Secciones superiores.</para>
+	</listitem>
+	<listitem>
+	  <para>Incluir una notificación destacada con la biblioteca combinada del hecho de que parte de ella es un trabajo basado en la Biblioteca, y explicando donde encontrar las formas sin combinar acompañantes del mismo trabajo.</para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Sección 8</title>
+
+      <para>Usted no puede copiar, modificar, sublicenciar o distribuir la Biblioteca salvo por lo permitido expresamente por esta Licencia. Cualquier otro intento de copia, modificación, sublicenciamiento o distribución de la Biblioteca es nulo, y dará por terminados automáticamente sus derechos bajo esa Licencia. Sin embargo, los terceros que hayan recibido copias, o derechos, de usted bajo esta Licencia no verán terminadas sus licencias, siempre que permanezcan en total conformidad con ella.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Sección 9</title>
+      
+      <para>No se le exige que acepte esta Licencia, puesto que no la ha firmado. Sin embargo, ninguna otra cosa le concede a usted el permiso para modificar o distribuir la Biblioteca o sus trabajos derivados. Estas acciones están prohibidas por ley si usted no acepta esta Licencia. Por tanto, al modificar o distribuir la Biblioteca (o cualquier trabajo basado en la Biblioteca), usted indica su aceptación de esta Licencia para hacerlo, y todos sus términos y condiciones para copiar, distribuir o modificar la Biblioteca o los trabajos basados en ella.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Sección 10</title>
+
+      <para>Cada vez que usted distribuye la Biblioteca (o cualquier trabajo basado en la Biblioteca), el receptor recibe automáticamente una licencia del titular original de la Licencia para copiar, distribuir, enlazar con o modificar la Biblioteca sujeto a estos términos y condiciones. Usted no debe imponer ninguna restricción posterior sobre el ejercicio de los receptores de los derechos otorgados aquí mencionados. Usted no es responsable de imponer conformidad con esta Licencia por terceras partes.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>Sección 11</title>
+
+      <para>Si, como consecuencia de un juicio o infracción de patente o por cualquier otra razón (no limitada a asuntos de patente) a usted se le imponen condiciones (sea orden judicial, acuerdo u otras) que contradigan las condiciones de esta Licencia, eso no le dispensa de las condiciones de esta Licencia. Si usted no puede distribuirla de tal forma que satisfaga simultáneamente sus obligaciones con respecto a esta licencia y cualquier otras obligaciones pertinentes, entonces como consecuencia, no debe en absoluto distribuir la Biblioteca. Por ejemplo, si una licencia de patente no permitiera la redistribución libre de derechos de autor de la Biblioteca a todo aquellos que reciben copias directamente o indirectamente a través de usted, entonces la única forma en la que podría satisfacer tanto esto como esta Licencia sería abstenerse completamente de la distribución de la Biblioteca.</para>
+
+      <para>Si cualquier parte de esta sección se considera invalida o inaplicable bajo cualquier circunstancia particular, se intentará aplicar el balance de la sección, y en otras circunstancias se intentará aplicar la sección como un todo.</para>
+
+      <para>No es el propósito de esta sección el inducirle a usted a infringir cualquier demanda de derechos de patente u otros derechos de propiedad o el impugnar la validez de tales demandas; esta sección tiene el único propósito de proteger la integridad del sistema de distribución de software libre, lo cual se lleva a cabo mediante prácticas de licencia pública. Mucha gente ha hecho generosas contribuciones al amplio rango de software distribuido a través de este sistema, confiando en la firme aplicación de este sistema; es decisión de autor/donante decidir si el o ella quiere distribuir software a través de cualquier otro sistema y una licencia no puede imponer esa elección.</para>
+
+      <para>Esta sección tiene el propósito de esclarecer a fondo lo que se cree ser una consecuencia del resto de esta licencia.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Sección 12</title>
+
+      <para>Si la distribución y/o uso de la Biblioteca está restringida en ciertos países mediante patentes o interfaces con derechos de autor, el propietario de los derechos de autor originales, el cual puso la Biblioteca bajo esta Licencia, puede añadir una limitación a la distribución geográfica explícita excluyendo estos países, de forma que esta distribución se permita solamente en o entre países no excluidos. En tal caso, esta Licencia incorpora la limitación como si estuviera escrita en el cuerpo de esta Licencia.</para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>Sección 13</title>
+
+      <para>La Free Software Foundation puede publicar versiones nuevas y revisadas de la Licencia Licencia Pública General Menor de vez en cuando. Dichas versiones nuevas serán similares en espíritu a la presente versión, pero pueden diferir en detalles para solucionar nuevos problemas o preocupaciones.</para>
+
+      <para>Cada versión tiene un número de versión que la distingue. Si la Biblioteca especifica que se aplica un número de versión en particular de esta Licencia y «cualquier versión posterior», usted tiene la opción de seguir los términos y condiciones de la versión especificada o cualquiera posterior que haya sido publicada por la Free Software Foundation. Si la Biblioteca no especifica un número de versión de esta Licencia, puede escoger cualquier versión que haya sido publicada por la Free Software Foundation.</para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>Sección 14</title>
+
+      <para>Si quiere incorporar partes de la Biblioteca en otros programas libres cuyas condiciones de distribución son incompatibles con estos, escriba al autor para pedirle permiso. Para el software cuyos derechos de autor pertenecen a la Free Software Foundation, escriba a la Free Software Foundation; nosotros hacemos a veces excepciones a esto. Nuestra decisión se guiará generalmente por los dos objetivos de preservar el estatus libre de todo lo derivado de nuestro software libre y de promover la compartición y reutilización de software.</para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>AUSENCIA DE GARANTÍA</title>
+      <subtitle>Sección 15</subtitle>
+
+      <para>DEBIDO A QUE LA BIBLIOTECA ESTÁ LICENCIADA LIBRE DE CARGO, NO HAY GARANTÍA para LA BIBLIOTECA EN LA EXTENSIÓN PERMITIDA POR LA LEY APLICABLE. EXCEPTO CUANDO SE ESTABLEZCA DE OTRO MODO POR ESCRITO, LOS POSEEDORES DEL DERECHO DE AUTOR Y/O OTRAS PARTES SUMINISTRAN LA BIBLIOTECA <quote>TAL CUAL</quote> SIN GARANTÍA DE NINGUNA CLASE, YA SEA DE FORMA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO LIMITADA A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD Y ADECUACIÓN PARA UN PROPÓSITO PARTICULAR. TODO EL RIESGO EN CUANTO A CALIDAD Y EJECUCIÓN DE LA BIBLIOTECAS ES SUYO. SI LA BIBLIOTECA RESULTARA ESTAR DEFECTUOSA, USTED ASUME EL COSTE DE TODO EL MANTENIMIENTO, REPARACIÓN O CORRECCIÓN NECESARIA.</para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>Sección 16</title>
+
+      <para>BAJO NINGÚN CONCEPTO, A MENOS QUE SEA REQUERIDO POR LA LEY APLICABLE O DE ACUERDO A UN ESCRITO, CUALQUIER POSEEDOR DE DERECHOS DE AUTOR O CUALQUIER OTRA PARTE QUE PUEDA MODIFICAR Y/O REDISTRIBUIR LA BIBLIOTECA COMO SE PERMITE ARRIBA, SERÁ RESPONSABLE CON USTED POR DAÑOS, INCLUYENDO CUALQUIER DAÑO GENERAL, ESPECIAL, ACCIDENTAL O CONSECUENTE ORIGINADO POR EL USO O INCAPACIDAD DE USAR LA BIBLIOTECA(INCLUYENDO PERO NO LIMITANDO, A LAS PÉRDIDAS DE DATOS O A LA PRODUCCIÓN DE DATOS INCORRECTOS, O PÉRDIDAS SUFRIDAS POR USTED O TERCERAS PARTES O UN FALLO DE LA BIBLIOTECA PARA FUNCIONAR CON CUALQUIER OTRO SOFTWARE) INCLUSO SI TAL TITULAR U OTRA PARTE HA SIDO NOTIFICADA DE LA POSIBILIDAD DE TALES DAÑOS.</para>
+    </sect2>
+  </sect1>
+</article>

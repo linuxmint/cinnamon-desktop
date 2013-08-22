@@ -1,0 +1,517 @@
+# translation of gnome-desktop.HEAD.po to Punjabi
+# Copyright (C) 2004 THE gnome-desktop'S COPYRIGHT HOLDER
+#
+#
+# Amanpreet Singh Alam <amanliunx@netscapet.net>, 2004.
+# A S Alam <aalam@users.sf.net>, 2005,2006, 2007,2008, 2009, 2010.
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2009, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"PO-Revision-Date: 2012-09-12 07:21+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "ਅਣਜਾਣ"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+"ਟਰਮੀਨਲ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ, xtrerm ਦੀ ਵਰਤੋਂ, ਭਾਵੇਂ ਇਹ ਵੀ ਸ਼ਾਇਦ ਹੀ ਕੰਮ ਕਰੇ"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ਸਕਰੀਨ ਸਰੋਤ ਲਏ ਨਹੀਂ ਜਾ ਸਕੇ (CRTC,ਆਉਟਪੁੱਟ,ਮੋਡ)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "ਸਕਰੀਨ ਅਕਾਰ ਦੀ ਸੀਮਾ ਲੈਣ ਲਈ ਨਾ-ਸੰਭਾਲੀ X ਗਲਤੀ"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ਸਕਰੀਨ ਅਕਾਰ ਦੀ ਸੀਮਾ ਨਹੀਂ ਲਈ ਜਾ ਸਕੀ"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR ਸਹਿਯੋਗੀ ਮੌਜੂਦ ਨਹੀਂ"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "ਆਉਟਪੁੱਟ %d ਬਾਰੇ ਜਾਣਕਾਰੀ ਨਹੀਂ ਲਈ ਜਾ ਸਕੀ"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"CRTC %d ਲਈ ਲੋੜੀਦੀ ਸਥਿਤੀ/ਅਕਾਰ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਸਥਿਤੀ=(%d, %d), ਆਕਾਰ=(%"
+"d, "
+"%d), ਵੱਧੋ-ਵੱਧ=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "CRTC %d ਲਈ ਸੰਰਚਨਾ ਸੈੱਟ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "CRTC %d ਬਾਰੇ ਜਾਣਕਾਰੀ ਨਹੀਂ ਲਈ ਜਾ ਸਕੀ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "ਲੈਪਟਾਪ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "ਕੋਈ ਵੀ ਸੰਭਾਲੀ ਵੇਖਣ ਸੰਰਚਨਾ ਚਾਲੂ ਸੰਰਚਨਾ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ਆਉਟਪੁੱਟ %s ਡਰਾਇਵ ਨਹੀਂ ਕਰ ਸਕਦਾ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "ਆਉਟਪੁੱਟ %s %dx%d@%dHz ਮੋਡ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d ਘੁੰਮਾਉਣ=%s ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"ਆਉਟਪੁੱਟ %s ਦੇ ਉਹੀ ਪੈਰਾਮੀਟਰ ਨਹੀਂ ਹਨ, ਜੋ ਕਿ ਹੋਰ ਕਲੋਨ ਕੀਤੀ ਆਉਟਪੁੱਟ ਦੇ ਹਨ:\n"
+"ਮੌਜੂਦਾ ਮੋਡ:  %d, ਨਵਾਂ ਮੋਡ = %d\n"
+"ਮੌਜੂਦਾ ਕੋਆਰਡੀਨੇਟ = (%d, %d), ਨਵੇਂ ਕੋਆਰਡੀਨੇਟ = (%d, %d)\n"
+"ਮੌਜੂਦਾ ਘੁੰਮਾਉਣ ਦਿਸ਼ਾ= %s, ਨਵੀਂ ਘੁੰਮਾਉਣ ਦਿਸ਼ਾ = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "%s ਆਉਟਪੁੱਟ ਕਲੋਨ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "CRTC %d ਲਈ ਮੋਡ ਨਾਲ ਕੋਸ਼ਿਸ਼ ਜਾਰੀ\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: %dx%d@%dHz ਮੋਡ ਨਾਲ %dx%d@%dHz ਉੱਤੇ ਆਉਟਪੁੱਟ ਨਾਲ ਕੋਸ਼ਿਸ਼(ਪਾਸ %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"CRTCs ਆਉਟਪੁੱਟ ਨੂੰ ਦਿੱਤਾ ਨਹੀਂ ਜਾ ਸਕਿਆ:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"ਚੁਣੇ ਮੋਡ 'ਚੋਂ ਕੋਈ ਵੀ ਸੰਭਵ ਮੋਡ ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ ਹੈ:\n"
+" %s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ਲੋੜੀਦਾ ਫ਼ਰਜ਼ੀ ਅਕਾਰ ਉਪਲੱਬਧ ਆਕਾਰ ਲਈ ਫਿੱਟ ਨਹੀਂ: ਲੋੜੀਦਾ=(%d, %d), ਘੱਟੋ-ਘੱਟ=(%d, %"
+"d), ਵੱਧੋ-ਵੱਧ="
+"(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "ਮਿਰਰ ਕੀਤੇ ਡਿਸਪਲੇਅ"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a, %e %b %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %e %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %e %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %e %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "ਮਿੱਰਰ ਸਕਰੀਨਾਂ"
+
+#~ msgid "About GNOME"
+#~ msgstr "ਗਨੋਮ ਬਾਰੇ"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "ਗਨੋਮ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲਵੋ"
+
+#~ msgid "News"
+#~ msgstr "ਖ਼ਬਰਾਂ"
+
+#~ msgid "GNOME Library"
+#~ msgstr "ਗਨੋਮ ਲਾਇਬਰੇਰੀ"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "ਗਨੋਮ ਦੇ ਸਾਥੀ"
+
+#~ msgid "Contact"
+#~ msgstr "ਸੰਪਰਕ"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "ਗੁੱਝਾ GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "ਸਕੁਕਉ ਰਬਰ ਗਨੋਮ"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "ਵਾਂਡਾ ਗਨੋਮ ਮੱਛੀ"
+
+#~ msgid "_Open URL"
+#~ msgstr "URL ਖੋਲ੍ਹੋ(_O)"
+
+#~ msgid "_Copy URL"
+#~ msgstr "URL ਕਾਪੀ ਕਰੋ(_C)"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ ਬਾਰੇ"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "ਤੁਹਾਡੇ ਲਈ ਲੈਕੇ ਆਏ ਨੇ:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "ਵਰਜਨ"
+
+#~ msgid "Distributor"
+#~ msgstr "ਡਿਸਟਰੀਬਿਊਟਰ"
+
+#~ msgid "Build Date"
+#~ msgstr "ਬਣਾਉਣ ਮਿਤੀ"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "ਇਹ ਗਨੋਮ ਵਰਜਨ ਬਾਰੇ ਜਾਣਕਾਰੀ ਵੇਖੋ"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "ਗਨੋਮ ਵਿੱਚ ਤਾਕਤਵਰ ਅਤੇ ਗੁੰਝਲਦਾਰ ਕਾਰਜ ਵਿਕਾਸ ਲਈ ਕਾਰਜ ਖੋਜੀਆਂ ਲਈ ਗੁੰਝਲਦਾਰ ਡਿਵੈਲਪਮੈਂਟ "
+#~ "ਪਲੇਟਫਾਰਮ ਸ਼ਾਮਲ ਹੈ।"
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "ਗਨੋਮ ਵਿੱਚ ਉਹ ਸਭ ਕੁਝ ਹੈ, ਜੋ ਤੁਸੀ ਆਪਣੀ ਮਸ਼ੀਨ ਤੇ ਵੇਖਣਾ ਚਾਹੋਗੇ, ਜਿਵੇਂ ਕਿ ਫਾਇਲ ਪਰਬੰਧਕ, ਵੈੱਬ "
+#~ "ਬਰਾਊਜ਼ਰ, ਮੇਨੂ ਅਤੇ ਹੋਰ ਕੰਮ ਦੀਆਂ ਕਾਰਜ।"
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "ਗਨੋਮ ਯੂਨੈਕਸ ਵਰਗੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਲਈ ਇਕ ਮੁਫਤ, ਇਸਤੇਮਾਲ ਲਈ ਤਿਆਰ, ਟਿਕਾਊ ਡੈਸਕਟਾਪ ਹੈ।"
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "ਗਨੋਮ ਨੂੰ ਇਸ ਦੀ ਸਹੂਲਤਾਂ ਅਤੇ ਪਹੁੰਚ ਉੱਤੇ ਕੇਂਦਰਿਤ ਰਹਿਣਾ, ਨਿਯਮਿਤ ਜਾਰੀ ਕਰਨਾ ਅਤੇ ਸ਼ਕਤੀਸ਼ਾਲੀ "
+#~ "ਸਹਿਕਾਰੀ ਸਹਿਯੋਗ , ਇਸ ਨੂੰ ਮੁਫਤ ਸਾਫਟਵੇਅਰ ਡੈਸਕਟਾਪਾਂ ਵਿੱਚੋਂ ਵੱਖਰਾ ਕਰਦਾ ਹੈ।"
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "ਗਨੋਮ ਦੀ ਅਸਲੀ ਮਜ਼ਬੂਤੀ ਇਸ ਦਾ ਮਜ਼ਬੂਤ ਸੰਗਠਨ ਹੈ। ਸਹੀ ਤਾਂ ਇਹ ਹੈ ਕਿ ਕੋਈ ਵੀ, ਭਾਵੇਂ ਉਹ ਜਾਣਕਾਰ "
+#~ "ਹੈ ਜਾਂ ਨਹੀ, ਗਨੋਮ ਨੂੰ ਚੰਗਾ ਬਣਾਉਣ ਲਈ ਕੰਮ ਕਰ ਸਕਦਾ ਹੈ।"
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "੧੯੯੭ ਤੋਂ ਕਈ ਸੈਂਕਡ਼ੈ ਲੋਕ ਗਨੋਮ ਨੂੰ ਕੋਡ ਬਣਾਉਣ ਲਈ ਸਹਿਯੋਗ ਕਰ ਰਹੇ ਹਨ, ਕਈ ਹੋਰ ਲੋਕ ਹੋਰ ਤਰ੍ਹਾਂ ਸਹਿਯੋਗ "
+#~ "ਕਰ ਰਹੇ ਹਨ ਜਿਵੇਂ ਕਿ ਭਾਸ਼ਾ ਅਨੁਵਾਦ, ਦਸਤਾਵੇਜ਼ ਜਾਂ ਕੁਆਲਟੀ ਚੈੱਕ ਲਈ।"
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "'%s' ਫਾਇਲ ਪੜ੍ਹਨ ਵਿੱਚ ਗਲਤੀ: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "'%s' ਫਾਇਲ ਮੁਡ਼-ਵਿੰਡਿੰਗ ਵਿੱਚ ਗਲਤੀ : %s"
+
+# libgnome-desktop/gnome-desktop-item.c:334
+# libgnome-desktop/gnome-desktop-item.c:3026
+#~ msgid "No name"
+#~ msgstr "ਕੋਈ ਨਾਂ ਨਹੀਂ"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "ਫਾਇਲ '%s' ਇੱਕ ਰੈਗੂਲਰ ਫਾਇਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਨਹੀਂ ਹੈ।"
+
+# libgnome-desktop/gnome-desktop-item.c:3307
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "ਫਾਇਲ '%s' ਲੱਭੀ ਨਹੀਂ ਜਾ ਸਕਦੀ"
+
+#~ msgid "No filename to save to"
+#~ msgstr "ਸੰਭਾਲਣ ਲਈ ਫਾਇਲ ਨਾਂ ਨਹੀਂ"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
+
+#~ msgid "No URL to launch"
+#~ msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੋਈ URL ਨਹੀਂ ਹੈ"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "ਕੋਈ ਚੱਲਣਯੋਗ ਇਕਾਈ ਨਹੀਂ"
+
+# libgnome-desktop/gnome-desktop-item.c:1565
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "ਕੋਈ ਚੱਲਣਯੋਗ ਕਮਾਂਡ (Exec) ਨਹੀਂ"
+
+# libgnome-desktop/gnome-desktop-item.c:1578
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "ਚਲਾਉਣ ਲਈ ਗਲਤ ਕਮਾਂਡ (Exec)"
+
+# libgnome-desktop/gnome-desktop-item.c:3083
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "%s: ਦੀ ਅਣਜਾਣੀ ਇੰਕੋਡਿੰਗ"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "ਸਕਰੀਨਾਂ ਲਈ ਢੁੱਕਵੀਂ ਸੰਰਚਨਾ ਲੱਭੀ ਨਹੀਂ ਜਾ ਸਕੀ"
+
+# libgnome-desktop/gnome-desktop-item.c:3307
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "'%s' ਫਾਇਲ ਲਿਖਣ ਵਿੱਚ ਗਲਤੀ: %s"
+
+#~ msgid "Directory"
+#~ msgstr "ਡਾਇਰੈਕਟਰੀ"
+
+# desktop-links/Applications.directory.in.h:1
+#~ msgid "Application"
+#~ msgstr "ਐਪਲੀਕੇਸ਼ਨ"
+
+#~ msgid "Link"
+#~ msgstr "ਲਿੰਕ"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSDevice"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME ਟਾਈਪ"
+
+#~ msgid "Service"
+#~ msgstr "ਸੇਵਾ"
+
+#~ msgid "ServiceType"
+#~ msgstr "ਸਰਵਿਸ-ਟਾਈਪ"
+
+# libgnome-desktop/gnome-ditem-edit.c:257
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+# libgnome-desktop/gnome-ditem-edit.c:337
+#~ msgid "Comm_and:"
+#~ msgstr "ਕਮਾਂਡ(_a):"
+
+# libgnome-desktop/gnome-ditem-edit.c:288
+#~ msgid "_Name:"
+#~ msgstr "ਨਾਂ(_N):"
+
+# libgnome-desktop/gnome-ditem-edit.c:306
+#~ msgid "_Generic name:"
+#~ msgstr "ਆਮ ਨਾਂ(_G):"
+
+# libgnome-desktop/gnome-ditem-edit.c:324
+#~ msgid "Co_mment:"
+#~ msgstr "ਟਿੱਪਣੀ(_m):"
+
+# libgnome-desktop/gnome-ditem-edit.c:381
+#~ msgid "Browse"
+#~ msgstr "ਝਲਕ"
+
+# libgnome-desktop/gnome-ditem-edit.c:260
+# libgnome-desktop/gnome-ditem-edit.c:351
+#~ msgid "_Type:"
+#~ msgstr "ਟਾਈਪ(_T):"
+
+# libgnome-desktop/gnome-ditem-edit.c:371
+#~ msgid "_Icon:"
+#~ msgstr "ਆਈਕਾਨ(_I):"
+
+# libgnome-desktop/gnome-ditem-edit.c:381
+#~ msgid "Browse icons"
+#~ msgstr "ਆਈਕਾਨ ਵੇਖੋ"
+
+# libgnome-desktop/gnome-ditem-edit.c:396
+#~ msgid "Run in t_erminal"
+#~ msgstr "ਟਰਮੀਨਲ 'ਚ ਚਲਾਓ(_e)"
+
+# libgnome-desktop/gnome-ditem-edit.c:611
+# libgnome-desktop/gnome-ditem-edit.c:710
+#~ msgid "Language"
+#~ msgstr "ਭਾਸ਼ਾ"
+
+# libgnome-desktop/gnome-ditem-edit.c:616
+# libgnome-desktop/gnome-ditem-edit.c:718
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+# libgnome-desktop/gnome-ditem-edit.c:621
+# libgnome-desktop/gnome-ditem-edit.c:726
+#~ msgid "Generic name"
+#~ msgstr "ਆਮ ਨਾਂ"
+
+# libgnome-desktop/gnome-ditem-edit.c:626
+# libgnome-desktop/gnome-ditem-edit.c:736
+#~ msgid "Comment"
+#~ msgstr "ਟਿੱਪਣੀ"
+
+# libgnome-desktop/gnome-ditem-edit.c:667
+#~ msgid "_Try this before using:"
+#~ msgstr "ਵਰਤਣ ਤੋਂ ਪਹਿਲਾਂ ਪੜਤਾਲ(_T):"
+
+# libgnome-desktop/gnome-ditem-edit.c:679
+#~ msgid "_Documentation:"
+#~ msgstr "ਡੌਕੂਮੈਂਟੇਸ਼ਨ(_D):"
+
+# libgnome-desktop/gnome-ditem-edit.c:691
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "ਨਾਂ/ਟਿੱਪਣੀ ਅਨੁਵਾਦ(_N):"
+
+# libgnome-desktop/gnome-ditem-edit.c:739
+#~ msgid "_Add/Set"
+#~ msgstr "ਸ਼ਾਮਲ/ਸੈੱਟ(_A)"
+
+# libgnome-desktop/gnome-ditem-edit.c:745
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "ਨਾਂ/ਟਿੱਪਣੀ ਅਨੁਵਾਦ ਟਿੱਪਣੀ ਸ਼ਾਮਲ ਜਾਂ ਦਿਓ"
+
+# libgnome-desktop/gnome-ditem-edit.c:747
+#~ msgid "Re_move"
+#~ msgstr "ਹਟਾਓ(_m)"
+
+# libgnome-desktop/gnome-ditem-edit.c:752
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "ਨਾਂ/ਟਿੱਪਣੀ ਅਨੁਵਾਦ ਹਟਾਓ"
+
+# libgnome-desktop/gnome-ditem-edit.c:768
+#~ msgid "Basic"
+#~ msgstr "ਮੂਲ"
+
+# libgnome-desktop/gnome-ditem-edit.c:776
+#~ msgid "Advanced"
+#~ msgstr "ਤਕਨੀਕੀ"
+
+# libgnome-desktop/gnome-hint.c:175
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "ਸ਼ੁਰੂ ਵੇਲੇ ਇਸ਼ਾਰੇ ਵੇਖੋ(_S)"

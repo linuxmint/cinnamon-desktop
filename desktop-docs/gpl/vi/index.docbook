@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="vi">
+  <articleinfo>
+    <title>Giấy Phép Công Cộng GNU</title>    
+    <copyright>
+      <year>2000</year>
+      <holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+
+      <author>
+        <surname>Free Software Foundation</surname>
+      </author>
+
+      <publisher role="maintainer">
+        <publishername>Dự án Tài liệu GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision>
+          <revnumber>2</revnumber>
+          <date>1991-06</date>
+        </revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>
+	<address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.
+      </para>
+
+      <para>Mọi người đều đuợc quyền sao chép và phân phối nguyên văn tài liệu giấy phép này, nhưng không được phép thay đổi nó.</para>
+    </legalnotice>
+
+    <releaseinfo>Phiên bản 2, tháng 6/1991</releaseinfo>
+
+    <abstract role="description"><para>Giấy phép sử dụng của hầu hết các phần mềm được thiết kế để bạn không được tự do chia sẻ và thay đổi phần mềm đó. Trái lại, Giấy phép Công cộng GNU dự định đảm bảo cho bạn được tự do chia sẻ và thay đổi phần mềm một cách tự do, và đảm bảo phần mềm tự do cho mọi người sử dụng.</para></abstract>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Lời mở đầu</title>
+    
+    <para>Giấy phép sử dụng của hầu hết các phần mềm được thiết kế để bạn không được tự do chia sẻ và thay đổi phần mềm đó. Trái lại, Giấy phép Công cộng GNU dự định đảm bảo cho bạn được tự do chia sẻ và thay đổi phần mềm một cách tự do, và đảm bảo phần mềm tự do cho mọi người sử dụng. Giấy phép Công cộng GNU này áp dụng cho hầu hết những phần mềm của Tổ chức Phần mềm Tự do, và cho bất kỳ chương trình máy tính nào khác mà tác giả của nó cam kết sử dụng nó. (Một số phần mềm khác của Tổ chức Phần mềm Tự do dùng Giấy phép Thư viện Công cộng GNU thay thế.) Bạn cũng có thể áp dụng giấy phép này cho các chương trình do bạn làm ra.</para>
+
+    <para>Khi chúng tôi nói về phần mềm tự do, chúng tôi đề cập đến sự tự do sử dụng, chứ không phải là giá cả. Giấy phép Công cộng GNU của chúng tôi được thiết kế để đảm bảo bạn có quyền tự do phát hành bản sao của phần mềm tự do (và thu tiền dịch vụ này nếu muốn), nhận mã nguồn hoặc có khả năng lấy nó nếu bạn muốn, bạn có thể thay đổi phần mềm hay sử dụng bất kỳ đoạn nào của nó trong chương trình tự do mới; và để giúp bạn biết rõ là bạn có thể làm những điều này.</para>
+
+    <para>Để bảo vệ quyền lợi của bạn, chúng tôi cần đưa ra những hạn chế để cấm bất cứ ai phủ nhận bạn có những quyền này hay đòi hỏi bạn từ bỏ nó. Những sự hạn chế này được hiểu là một số trách nhiệm nhất thiết của bạn nếu bạn phát hành bản sao của phần mềm hoặc sửa đổi nó.</para>
+
+    <para>Chẳng hạn, nếu bạn phát hành bản sao của chương trình như vậy, dù là cho không hay thu tiền, bạn phải trao cho người nhận tất cả những quyền bạn có. Bạn phải chắc chắn là họ cũng nhận được hay có thể lấy mã nguồn. Và bạn cũng phải cho họ biết những điều kiện này, để họ biết những quyền của họ.</para>
+
+    <para>
+      We protect your rights with two steps:
+
+      <orderedlist numeration="arabic">
+	<listitem>
+	  <para>
+	    copyright the software, and
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    offer you this license which gives you legal permission to copy, 
+	    distribute and/or modify the software.
+	  </para>
+	</listitem>
+      </orderedlist>
+    </para>
+
+    <para>Hơn nữa, để bảo vệ tác giả và chính chúng tôi, chúng tôi muốn chắc chắn là mọi người hiểu rằng phần mềm tự do này không có bảo hành. Nếu phần mềm bị sửa đổi bởi người khác và được phân phát tiếp, chúng tôi muốn người nhận biết rằng cái mà họ có đó không phải là bản gốc, vì vậy, bất kỳ lỗi nào do người khác gây ra sẽ không làm mang tiếng đến tác giả gốc.</para>
+
+    <para>Cuối cùng, chương trình tự do nào cũng luôn bị đe dọa bởi bằng sáng chế phần mềm. Chúng tôi muốn tránh nguy cơ việc những người phát hành lại chương trình tự do sẽ giành bằng sáng chế riêng, sở hữu chương trình đó. Để ngăn ngừa điều này, chúng tôi đã làm rõ rằng bằng sáng chế phải cấp cho mọi người sử dụng tự do, hoặc không cấp cho bất kỳ ai hết.</para>
+
+    <para>Sau đây là những điều kiện và điều khoản chính xác đối với việc sao chép, phát hành và sửa đổi.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>ĐIỀU KIỆN SAO CHÉP, PHÁT HÀNH VÀ SỬA ĐỔI</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Phần 0</title>
+      <para>Giấy phép này áp dụng cho bất kỳ chương trình nào hay sản phẩm nào khác có thông báo được chèn vào bởi người giữ tác quyền nói rằng nó có thể được phát hành theo các điều khoản của GPL này. Cụm từ « Chương trình » dưới đây có nghĩa là bất kỳ chương trình máy tính hay sản phẩm như vậy, và « sản phẩm dựa trên Chương trình » có nghĩa là Chương trình hay bất kỳ sản phẩm nào bắt nguồn từ nó dưới luật bản quyền: tức là, sản phẩm chứa Chương trình đó hay một phần của nó, hoặc đúng nguyên văn hoặc với sự sửa đổi và/hoặc được dịch sang một ngôn ngữ khác. (Kể từ câu này, việc dịch ngôn ngữ được bao gồm vô hạn trong thuật ngữ « sự sửa đổi ».) Người được cấp Giấy phép được gọi là « bạn ».</para>
+
+      <para>Những hoạt động khác ngoài sự sao chép, phát hành và sửa đổi không được kiểm soát bởi Giấy phép này; nó ở ngoài phạm vi của giấy phép này. Hành động chạy Chương trình không bị hạn chế, và dữ liệu xuất từ Chương trình chỉ bị khống chế nếu nội dung của nó tạo thành một sản phẩm dựa vào Chương trình (không phụ thuộc vào việc vận hành Chương trình). Điều đó đúng hay không phụ thuộc vào điều mà Chương trình tạo ra.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Phần 1</title>
+      <para>Bạn có quyền sao chép và phát hành bản sao đúng nguyên văn của mã nguồn của Chương trình như bạn đã nhận nó, bằng bất kỳ cách nào, miễn là bạn công bố rõ ràng và thích đáng trên mỗi bản sao một thông báo tác quyền thích hợp và miễn trừ bảo hành; giữ nguyên vẹn mọi thông báo liên quan đến Giấy phép này và miễn trừ bảo hành; và đưa cho những người nhận Chương trình khác một bản sao của Giấy phép cùng với Chương trình.</para>
+      
+      <para>Bạn có thể thu phí cho việc gởi bản sao, và bạn có thể tùy ý đề nghị cung cấp dịch vụ bảo hành có thu phí.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Phần 2</title>
+      <para>
+	You may modify your copy or copies of the Program or any portion of it, thus 
+	forming a work based on the Program, and copy and distribute such modifications 
+	or work under the terms of <link linkend="sect1">Section 1</link> above, provided 
+	that you also meet all of these conditions:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      You must cause the modified files to carry prominent notices stating that 
+	      you changed the files and the date of any change.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      You must cause any work that you distribute or publish, that in whole or 
+	      in part contains or is derived from the Program or any part thereof, to be 
+	      licensed as a whole at no charge to all third parties under the terms of 
+	      this License.
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      If the modified program normally reads commands interactively when run, you 
+	      must cause it, when started running for such interactive use in the most 
+	      ordinary way, to print or display an announcement including an appropriate 
+	      copyright notice and a notice that there is no warranty (or else, saying 
+	      that you provide a warranty) and that users may redistribute the program 
+	      under these conditions, and telling the user how to view a copy of this 
+	      License. 
+
+	      <note>
+		<title>Exception:</title>
+		<para>
+		  If the Program itself is interactive but does not normally print such an 
+		  announcement, your work based on the Program is not required to print an 
+		  announcement. 
+		</para>
+	      </note>
+
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Những điều kiện này áp dụng cho toàn bộ sản phẩm bị sửa đổi. Nếu có thể nhận ra phần riêng của sản phẩm đó không bắt nguồn từ Chương trình, và các phần này có thể được xem một cách hợp lý là sản phẩm riêng và không phụ thuộc, thì Giấy phép này, và các điều kiện của nó, không áp dụng cho những phần riêng đó khi bạn phát hành chúng là sản phẩm riêng. Tuy nhiên, khi bạn phát hành những phần đó cùng với toàn bộ sản phẩm dựa vào Chương trình, sự phát hành toàn bộ này phải tuân theo điều kiện của Giấy phép này, cung cấp cho mọi người có quyền bao trùm toàn bộ sản phẩm, bao quát tất cả mọi phần của nó, bất kể ai đã tạo nó.</para>
+
+      <para>Như thế thì phần này không đự định yêu cầu quyền hay không thừa nhận quyền của bạn về sản phẩm mà toàn bộ là do bạn tạo ra; mà phần này định nói về quyền hạn trong điều khiển sự phát hành sản phẩm bắt nguồn từ hay sản phẩm hợp tác tập thể dựa vào Chương trình.</para>
+
+      <para>Hơn nữa, việc chứa các sản phẩm khác không dựa vào Chương trình cùng với Chương trình (hay với sản phẩm dựa vào Chương trình) trên thiết bị lưu trữ hay vật phát hành không nằm trong phạm vi của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Phần 3</title>
+
+      <para>
+	You may copy and distribute the Program (or a work based on it, under 
+	<link linkend="sect2">Section 2</link>) in object code or executable form under the terms of 
+	<link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above provided that 
+	you also do one of the following:
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>
+	      Accompany it with the complete corresponding machine-readable source code, which 
+	      must be distributed under the terms of <link linkend="sect1">Sections 1</link> and <link linkend="sect2">2</link> above on a medium 
+	      customarily used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with a written offer, valid for at least three years, to give any 
+	      third party, for a charge no more than your cost of physically performing source 
+	      distribution, a complete machine-readable copy of the corresponding source code, 
+	      to be distributed under the terms of Sections 1 and 2 above on a medium customarily 
+	      used for software interchange; or,
+	    </para>
+	  </listitem>
+	  <listitem>
+	    <para>
+	      Accompany it with the information you received as to the offer to distribute 
+	      corresponding source code. (This alternative is allowed only for noncommercial 
+	      distribution and only if you received the program in object code or executable form 
+	      with such an offer, in accord with Subsection b above.)
+	    </para>
+	  </listitem>
+	</orderedlist>
+      </para>
+
+      <para>Mã nguồn của sản phẩm có nghĩa là dạng thức sản phẩm được ưa thích khi sửa đổi nó. Đối với sản phẩm là tập tin chạy được, toàn bộ mã nguồn có nghĩa là tất cả các mã nguồn cho mọi mô-đun đã chứa, cộng với bất cứ tập tin xác định giao diện tương ứng, cộng với các tập lệnh được dùng để điều khiển tiến trình biên dịch và cài đặt tập tin chạy được. Tuy nhiên, ngoại lệ đặc biệt là mã nguồn được phát hành không cần phải bao gồm những gì được phát hành bình thường (trong dạng thức hoặc nguồn hoặc nhị phân) với các thành phần chính (bộ biên dịch, hạt nhân v.v.) của hệ điều hành nơi tập tin chạy được hoạt động, trừ khi thành phần kèm theo cần thiết để chạy tập tin.</para>
+      
+      <para>Nếu việc phát hành mã chạy được hay mã đối tượng được làm bằng cách trao truy cập sao chép từ một nơi đã xác định, thì việc trao các truy cập sao chép tương đương đến mã nguồn đó từ cùng nơi đó được tính là sự phát hành mã nguồn, mặc dù người khác không bắt buộc phải sao chép mã nguồn cùng với mã đối tượng.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Phần 4</title>
+      
+      <para>Không cho phép bạn sao chép, sửa đổi, cấp giấy phép phụ hay phát hành Chương trình, trừ với điều kiện được diễn tả dứt khoát trong Giấy phép này. Bất kỳ sự cố gắng nào trong việc sao chép, sửa đổi, cấp giấy phép phụ hay phát hành Chương trình bằng cách khác bị bãi bỏ, và sẽ kết thúc các quyền của bạn dưới Giấy phép này. Tuy nhiên, người khác đã nhận bản sao hay quyền từ bạn dưới Giấy phép này sẽ không bị ảnh hưởng, miễn là họ tiếp tục tuân theo hoàn toàn.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Phần 5</title>
+
+      <para>Bạn không bắt buộc phải chấp nhận Giấy phép này, vì bạn chưa ký tên vào nó. Tuy nhiên, không có gì khác cho phép bạn sửa đổi hay phát hành Chương trình hay sản phẩm bắt nguồn từ nó. Các hành động này bị pháp luật cấm nếu bạn không chấp nhận Giấy phép này. Vì vậy, bằng cách sửa đổi hay phát hành Chương trình (hay sản phẩm dựa vào nó), bạn ngụ ý sự chấp nhận Giấy phép này để làm như thế, gồm mọi điều kiện sao chép, phát hành hay sửa đổi Chương trình hay sản phẩm dựa vào nó.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Phần 6</title>
+
+      <para>Mỗi lần bạn phát hành lại Chương trình (hay sản phẩm dựa vào nó), người nhận có thể nhận tự động một giấy phép từ người cấp gốc, để sao chép, phát hành hay sửa đổi Chương trình với điều kiện này. Không cho phép bạn hạn chế thêm cách người dùng sử dụng các quyền đã được cấp trong Giấy phép này. Bạn cũng không phải chịu trách nhiệm về việc ép buộc người khác tuân theo điều kiện của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Phần 7</title>
+
+      <para>Nếu, do kết quả của quyết định của toà án hay các cáo buộc vi phạm bằng sáng chế hay vì bất cứ lý do nào (không bị giới hạn trong vấn đề bằng sáng chế), bạn bị ép buộc chấp nhận điều kiện (hoặc vì quyết định của toà án, sự thoả thuận hoặc cách khác nào) mà mâu thuẫn điều kiện của Giấy phép này, trường hợp này không miễn cho bạn không phải thỏa mãn điều kiện của Giấy phép này. Nếu bạn không thể phát hành bằng cách thỏa mãn đồng thời các giao ước của bạn dưới Giấy phép này và bất kỳ giao ước thích hợp khác, thì kết quả là không cho phép bạn phát hành Chương trình bằng cách nào cả. Lấy thí dụ, nếu một bằng sáng chế nào đó không cho phép sự phát hành lại Chương trình một cách miễn tiền bản quyền phát minh cho mọi người nhận bản sao từ bạn một cách trực tiếp hay gián tiếp, thì cách duy nhất bạn có thể thỏa cả bằng đó và Giấy phép này là hoàn toàn không phát hành Chương trình.</para>
+
+      <para>Nếu đoạn nào trong phần này được quyết định là không hợp lệ hay không thể được ép buộc trong bất kỳ trường hợp riêng nào, đoạn còn lại dự định áp dụng được, và toàn bộ phần dự định áp dụng trong các trường hợp khác.</para>
+
+      <para>Không phải là mục đích của phần này để xúi giục bạn vi phạm bằng sáng chế nào hay lời yêu sách quyền tài sản khác, hoặc để không thừa nhận sự hợp lệ của lời yêu sách như vậy; phần này có mục đích duy nhất là bảo vệ tình trạng nguyên vẹn của hệ thống phát hành phần mềm tự do, mà được thực thi bởi các áp dụng giấy phép công cộng. Nhiều người đã đóng góp rộng lượng cho một phạm vị rộng của các phần mềm được phát hành qua hệ thống đó, nhờ sự thực thi nền bỉ hệ thống đó: tùy tác giả / người tặng quyết định nếu họ muốn phát hành phần mềm qua hệ thống khác nào, và người được cấp Giấy phép không thể điều khiển cách quyết định đó.</para>
+
+      <para>Phần này dự định diễn tả rõ ràng hoàn toàn kết quả được hiểu của phần còn lại của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Phần 8</title>
+
+      <para>Nếu sự phát hành và/hay cách sử dụng Chương trình bị hạn chế trong một số quốc gia nào đó, hoặc bởi bằng sáng chế hoặc bởi giao diện có bản quyền tác giả, người giữ tác quyền gốc đã đặt Chương trình dưới Giấy phép này có khả năng thêm sự hạn chế phát hành địa lý riêng loại trừ những quốc gia đó, để cho phép phát hành chỉ trong hay giữa các quốc gia không bị loại trừ như thế. Trong trường hợp như vậy, Giấy phép này hợp nhất sự hạn chế đó như là nó được ghi trong thân của Giấy phép này.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Phần 9</title>
+      
+      <para>Tổ chức Phần mềm Tự do có thể xuất bản phiên bản đã sửa đổi và/hay mới của Giấy phép Công cộng GNU. Phiên bản mới như vậy sẽ có tinh thần tương tự với phiên bản hiện thời, nhưng có thể khác biệt trong chi tiết để giải quyết vấn đề mới.</para>
+
+      <para>Mỗi phiên bản được gán một số hiệu phân biệt phiên bản đó. Nếu Chương trình xác định số phiên bản riêng của Giấy phép này áp dụng cho nó, « và bất kỳ phiên bản sau nào », bạn có tùy chọn thỏa điều kiện hoặc của phiên bản đó, hoặc của bất kỳ phiên bản sau nào được xuất bản bởi Tổ chức Phần mềm Tự do. Nếu Chương trình không xác định số phiên bản riêng của Giấy phép này, bạn có khả năng chọn bất kỳ phiên bản nào của Giấy phép này đã được xuất bản bởi Tổ chức Phần mềm Tự do.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Phần 10</title>
+
+      <para>Nếu bạn muốn hợp nhất phần nào của Chương trình vào chương trình tự do khác có điều kiện phát hành khác GPL, hãy xin phép tác giả. Đối với phần mềm có bản quyền tác giả của Tổ chức Phần mềm Tự do, hãy viết thư cho Tổ chức Phần mềm Tự do : thỉng thoảng chúng tôi cho phép ngoại lệ trong trường hợp này. Quyết định của chúng tôi sẽ được hướng dẫn bởi hai mục đích là sự bảo tồn trạng thái tự do của mọi điều bắt nguồn từ phần mềm tự do của chúng tôi, và sự đẩy mạnh sự chia sẻ và sử dụng lại phần mềm một cách chung.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>KHÔNG BẢO HÀNH</title>
+      <subtitle>Phần 11</subtitle>
+
+      <para>VÌ CHƯƠNG TRÌNH ĐÃ ĐƯỢC CẤP PHÉP MIỄN PHÍ, KHÔNG CÓ BẢO HÀNH ĐỐI VỚI CHƯƠNG TRÌNH NÀY, VỚI ĐIỀU KIỆN ĐƯỢC PHÁP LUẬT CHO PHÉP. TRỪ KHI XÁC ĐỊNH KHÁC BẰNG TÀI LIỆU GIẤY TỜ, CÁC NGƯỜI GIỮ BẢN QUYỀN TÁC GIẢ VÀ/HAY NGƯỜI KHÁC CUNG CẤP CHƯƠNG TRÌNH NÀY « NHƯ THẾ », KHÔNG CÓ BẢO HÀNH GÌ CẢ, KHÔNG PHÁT BIỂU NÓ, CŨNG KHÔNG NGỤ Ý NÓ, GỒM, NHƯNG KHÔNG BỊ HẠN CHẾ BỞI, SỰ BẢO ĐẢM ĐÃ NGỤ Ý TÌNH TRẠNG CÓ THỂ BÁN ĐƯỢC VÀ SỰ THÍCH HỢP VỚI MỘT MỤC ĐÍCH DỨT KHOÁT. MỌI RỦI RO VỀ CHẤT LƯỢNG, ĐỘ CHÍNH XÁC VÀ HIỆU SUẤT CỦA CHƯƠNG TRÌNH NÀY BẠN SẼ TỰ CHỊU. NẾU CHƯƠNG TRÌNH NÀY GÂY RA HƯ HỎNG, BẠN GÁNH VÁC HOÀN TOÀN TRÁCH NGHIỆM TRẢ TIỀN DỊCH VỤ GIÚP ĐỠ HAY SỪA CHỮA.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Phần 12</title>
+
+      <para>KHÔNG CÓ TRƯỜNG HỢP NÀO (TRỪ KHI PHÁP LUẬT YÊU CẦU HAY KHI ĐƯỢC THỎA THUẬN BẰNG TÀI LIỆU GIẤY TỜ) MÀ BẤT KỲ NGƯỜI GIỮ BẢN QUYỀN TÁC GIẢ NÀO, HAY BẤT KỲ NGƯỜI KHÁC NÀO CÓ THỂ SỬA ĐỔI VÀ/HAY PHÁT HÀNH LẠI CHƯƠNG TRÌNH NHƯ ĐƯỢC PHÉP BÊN TRÊN, SẼ CÓ TRÁCH NHIỆM VỀ PHÁP LÝ BỒI THƯỜNG, GỒM BẤT KỲ BỒI THƯỜNG KIỂU TỔNG QUÁT, ĐẶC BIỆT, NGẪU NHIÊN HAY DO HẬU QUẢ DO SỬ DỤNG HAY SỰ KHÔNG CÓ KHẢ NĂNG SỬ DỤNG CHƯƠNG TRÌNH NÀY (GỒM NHƯNG KHÔNG PHẢI BỊ HẠN THẾ BỞI SỰ MẤT DỮ LIỆU HAY DỮ LIỆU BỊ LÀM CHO KHÔNG CHÍNH XÁC HAY CÁC MẤT MÁT CỦA BẠN HAY NGƯỜI KHÁC HAY SỰ KHÔNG HOẠT ĐỘNG ĐƯỢC CHƯƠNG TRÌNH NÀY VỚI CHƯƠNG TRÌNH KHÁC), THẬM CHÍ NẾU BẠN HAY NGƯỜI KHÁC ĐÃ ĐƯỢC BÁO BIẾT CÓ KHẢ NĂNG THIỆT HẠI NHƯ VẬY.</para>
+    </sect2>
+  </sect1>
+</article>

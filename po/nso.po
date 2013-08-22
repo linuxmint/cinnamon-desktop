@@ -1,0 +1,434 @@
+# Northern Sotho translation of gnome-desktop.
+# Copyright (C) 2004 Zuza Software Foundation (Translate.org.za)
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Zuza Software Foundation <info@translate.org.za>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-11 08:59+0000\n"
+"PO-Revision-Date: 2004-11-29 13:02+0200\n"
+"Last-Translator: Zuza Software Foundation <info@translate.org.za>\n"
+"Language-Team: Northern Sotho <translate-discuss-nso@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gnome-about/contributors.h:107
+msgid "The Mysterious GEGL"
+msgstr "GEGL e Makatago"
+
+#: gnome-about/contributors.h:292
+msgid "The Squeaky Rubber Gnome"
+msgstr "Gnome yeo e Tswinyago ya Raba"
+
+#: gnome-about/contributors.h:325
+msgid "Wanda The GNOME Fish"
+msgstr "Wanda Hlapi ya GNOME"
+
+#: gnome-about/gnome-about.c:139
+msgid "The End!"
+msgstr "Bofelo!"
+
+#: gnome-about/gnome-about.c:428
+msgid "Could not locate the directory with header images."
+msgstr "Ga se ya kgona go hweta thupeto ka diswantho ta hlogwana."
+
+#: gnome-about/gnome-about.c:437
+#, c-format
+msgid "Failed to open directory with header images: %s"
+msgstr "E paletwe go bula thupeto yeo e nago le diswantho ta hlogwana: %s"
+
+#: gnome-about/gnome-about.c:470
+#, c-format
+msgid "Unable to load header image: %s"
+msgstr "Ga e kgone go laia seswantho sa hlogwana sa: %s"
+
+#: gnome-about/gnome-about.c:495
+msgid "Could not locate the GNOME logo button."
+msgstr "Ga se ya kgona go hweta konope ya leswao ya GNOME."
+
+#: gnome-about/gnome-about.c:504
+#, c-format
+msgid "Unable to load '%s': %s"
+msgstr "Ga e kgone go laia '%s': %s"
+
+#: gnome-about/gnome-about.c:557
+#, c-format
+msgid "Could not open the address \"%s\": %s"
+msgstr "Ga se ya kgona go bula aterese ya \"%s\": %s"
+
+#: gnome-about/gnome-about.c:809
+msgid "Could not locate the file with GNOME version information."
+msgstr ""
+"Ga se ya kgona go hweta faele yeo e nago le tshedimoo ya kgatio ya GNOME."
+
+#: gnome-about/gnome-about.c:878
+msgid "Version"
+msgstr "Kgatio"
+
+#: gnome-about/gnome-about.c:897
+msgid "Distributor"
+msgstr "Moabi"
+
+#: gnome-about/gnome-about.c:916
+msgid "Build Date"
+msgstr "Letati la go Aga"
+
+#: gnome-about/gnome-about.c:998 gnome-about/gnome-about.desktop.in.in.h:1
+msgid "About GNOME"
+msgstr "Mabapi le GNOME"
+
+#: gnome-about/gnome-about.c:1012
+msgid "News"
+msgstr "Ditaba"
+
+#: gnome-about/gnome-about.c:1022
+msgid "Software"
+msgstr "Lenaneo le tsenywago khomphuthareng"
+
+#: gnome-about/gnome-about.c:1028
+msgid "Developers"
+msgstr "Batwetapele"
+
+#: gnome-about/gnome-about.c:1034
+msgid "Friends of GNOME"
+msgstr "Bagwera ba GNOME"
+
+#: gnome-about/gnome-about.c:1040
+msgid "Contact"
+msgstr "Kgokagano"
+
+#: gnome-about/gnome-about.c:1077
+msgid "Welcome to the GNOME Desktop"
+msgstr "O a amogelwa Tesekeng ya GNOME"
+
+#: gnome-about/gnome-about.c:1094
+msgid "Brought to you by:"
+msgstr "E tliitwe go wena ke:"
+
+#: gnome-about/gnome-about.c:1142
+msgid "About the GNOME Desktop"
+msgstr "Mabapi le Teseke GNOME"
+
+#: gnome-about/gnome-about.desktop.in.in.h:2
+#, fuzzy
+msgid "Know more about GNOME"
+msgstr "Mabapi le GNOME"
+
+#: gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME gape e akareta twelopele e feletego ya sethala bakeng sa barulaganyi "
+"ba ditirio, e dumelela go hlangwa ga ditirio te matla le te di raraganego."
+
+#: gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME e akareta bontsi bja seo o se bonago khomphuthareng ya gago, go "
+"akareta le molaodi wa faele, go fetleka wepe, malokelelo a dikagare, le "
+"ditirio te dinti."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME ke tikologo ya teseke ya Bolokologi, e diriegago, e sa uthego, e "
+"tsenegago bakeng sa lapa le swanago le Unix la ditshepedio te omago."
+
+#: gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Go lebia tlhokomelo ga GNOME tabeng ya go diriwa le go fihlelelega, "
+"modikologo wa go lokolla ka mehla le thekgo ya tiriano e matla go dira gore "
+"e be ya moswana-noi gare ga diteseke ta Software ya Bolokologi."
+
+#: gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"Thekgo e kgolo yeo GNOME e nago le yona ke sethaba sa rena se matla. Motho "
+"le ge e le ofe yo mongwe tweletong ya go itiragalela, a ka ba a e na le "
+"bokgoni bja ta molao goba a se na bjona, a ka tsenya letsogo go kaonafateng "
+"GNOME."
+
+#: gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Batho ba makgolo ba tsenthite letsogo khoutung go GNOME ga e sa le e thoma "
+"ka 1997; ba banti ba tsenthite letsogo ka ditsela te dingwe te bohlokwa, go "
+"akaretwa diphetolelo, ditweleto, le kgonthieto ya khwaliti."
+
+#: libgnome-desktop/gnome-desktop-item.c:209
+#: libgnome-desktop/gnome-desktop-item.c:579
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Phoo ya go bala faele ya '%s': %s"
+
+#: libgnome-desktop/gnome-desktop-item.c:277
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Phoo ya go bueta faele ya '%s': %s morago"
+
+#: libgnome-desktop/gnome-desktop-item.c:361
+#: libgnome-desktop/gnome-desktop-item.c:3586
+msgid "No name"
+msgstr "Ga go na leina"
+
+#: libgnome-desktop/gnome-desktop-item.c:594
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Faele ya '%s' ga se faele ya ka mehla goba thupeto."
+
+#: libgnome-desktop/gnome-desktop-item.c:745
+msgid "No filename to save to"
+msgstr "Ga go na leina la faele yeo go ka bolokelwago go yona"
+
+#: libgnome-desktop/gnome-desktop-item.c:1700
+#, c-format
+msgid "Starting %s"
+msgstr "Go thoma %s"
+
+#: libgnome-desktop/gnome-desktop-item.c:1930
+msgid "No URL to launch"
+msgstr "Ga go na STS ye e ka tsebagatwago"
+
+#: libgnome-desktop/gnome-desktop-item.c:1940
+msgid "Not a launchable item"
+msgstr "Ga se selo se se ka tsebagatwago"
+
+#: libgnome-desktop/gnome-desktop-item.c:1950
+msgid "No command (Exec) to launch"
+msgstr "Ga go na taelo (Phetho) ya gore go tsebagatwe"
+
+#: libgnome-desktop/gnome-desktop-item.c:1963
+msgid "Bad command (Exec) to launch"
+msgstr "Taelo e mpe (Phetho) ya gore go tsebagatwe"
+
+#: libgnome-desktop/gnome-desktop-item.c:3643
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Go tsenya khoutu mo go sa tsebjego ga: %s"
+
+#: libgnome-desktop/gnome-desktop-item.c:3874
+#, c-format
+msgid "Error writing file '%s': %s"
+msgstr "Phošo ya go ngwala faele ya '%s': %s"
+
+#: libgnome-desktop/gnome-ditem-edit.c:205
+#: libgnome-desktop/gnome-ditem-edit.c:213
+msgid "Directory"
+msgstr "Thupeto"
+
+#: libgnome-desktop/gnome-ditem-edit.c:209
+msgid "Application"
+msgstr "Tirio"
+
+#: libgnome-desktop/gnome-ditem-edit.c:216
+msgid "Link"
+msgstr "Kgokaganyo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:218
+msgid "FSDevice"
+msgstr "Sediriwa sa FS"
+
+#: libgnome-desktop/gnome-ditem-edit.c:220
+msgid "MIME Type"
+msgstr "Mohuta wa MIME"
+
+#: libgnome-desktop/gnome-ditem-edit.c:222
+msgid "Service"
+msgstr "Tirelo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:224
+msgid "ServiceType"
+msgstr "Mohuta wa Tirelo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:310
+msgid "_URL:"
+msgstr "_STS:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:313
+#: libgnome-desktop/gnome-ditem-edit.c:380
+msgid "Comm_and:"
+msgstr "Tae_lo:"
+
+#. Name
+#: libgnome-desktop/gnome-ditem-edit.c:334
+msgid "_Name:"
+msgstr "_Leina:"
+
+#. Generic Name
+#: libgnome-desktop/gnome-ditem-edit.c:351
+msgid "_Generic name:"
+msgstr "_Leina la kakareto:"
+
+#. Comment
+#: libgnome-desktop/gnome-ditem-edit.c:368
+msgid "Co_mment:"
+msgstr "Tlh_aloso:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:384
+msgid "Browse"
+msgstr "Fetleka"
+
+#: libgnome-desktop/gnome-ditem-edit.c:395
+msgid "_Type:"
+msgstr "_Mohuta:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:412
+msgid "_Icon:"
+msgstr "_Leswao:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:422
+msgid "Browse icons"
+msgstr "Fetleka maswao"
+
+#: libgnome-desktop/gnome-ditem-edit.c:436
+msgid "Run in t_erminal"
+msgstr "Diria kgoka_gano ya dithapo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:652
+#: libgnome-desktop/gnome-ditem-edit.c:750
+msgid "Language"
+msgstr "Leleme"
+
+#: libgnome-desktop/gnome-ditem-edit.c:657
+#: libgnome-desktop/gnome-ditem-edit.c:757
+msgid "Name"
+msgstr "Leina"
+
+#: libgnome-desktop/gnome-ditem-edit.c:662
+#: libgnome-desktop/gnome-ditem-edit.c:764
+msgid "Generic name"
+msgstr "Leina la kakareto"
+
+#: libgnome-desktop/gnome-ditem-edit.c:667
+#: libgnome-desktop/gnome-ditem-edit.c:773
+msgid "Comment"
+msgstr "Tlhaloso"
+
+#: libgnome-desktop/gnome-ditem-edit.c:702
+msgid "_Try this before using:"
+msgstr "_Leka se pele o ka diria:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:713
+msgid "_Documentation:"
+msgstr "_Go Tweleta:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:724
+msgid "_Name/Comment translations:"
+msgstr "_Leina/Tlhaloso ya Diphetolelo:"
+
+#: libgnome-desktop/gnome-ditem-edit.c:775
+msgid "_Add/Set"
+msgstr "_Oketa/Beakanya"
+
+#: libgnome-desktop/gnome-ditem-edit.c:781
+msgid "Add or Set Name/Comment Translations"
+msgstr "Oketa goba Beakanya Leina/Tlhaloso ya Diphetolelo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:783
+msgid "Re_move"
+msgstr "Tl_oa"
+
+#: libgnome-desktop/gnome-ditem-edit.c:788
+msgid "Remove Name/Comment Translation"
+msgstr "Tloa Leina/Tlhaloso ya Diphetolelo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:804
+msgid "Basic"
+msgstr "Motheo"
+
+#: libgnome-desktop/gnome-ditem-edit.c:812
+msgid "Advanced"
+msgstr "Twete pele"
+
+#: libgnome-desktop/gnome-hint.c:175
+msgid "_Show Hints at Startup"
+msgstr "_Bontha Keleto Mathomong"
+
+#~ msgid "Accessories"
+#~ msgstr "Dithuo"
+
+#~ msgid "Accessories menu"
+#~ msgstr "Lelokelelo la dikagare la dithuo"
+
+#~ msgid "Applications"
+#~ msgstr "Ditirio"
+
+#~ msgid "Programming"
+#~ msgstr "Go rulaganya"
+
+#~ msgid "Tools for software development"
+#~ msgstr "Didiriwa ta twelopele ya software"
+
+#~ msgid "Games"
+#~ msgstr "Dipapadi"
+
+#~ msgid "Games menu"
+#~ msgstr "Lelokelelo la dikagare la dipapadi"
+
+#~ msgid "Graphics"
+#~ msgstr "Diswantho"
+
+#~ msgid "Graphics menu"
+#~ msgstr "Lelokelelo la dikagare la diswantho"
+
+#~ msgid "Internet"
+#~ msgstr "Inthanete"
+
+#~ msgid "Programs for Internet and networks"
+#~ msgstr "Mananeo a Inthanete le dineteweke"
+
+#~ msgid "Multimedia"
+#~ msgstr "Methopo e fapa-fapanego ya ditaba"
+
+#~ msgid "Multimedia menu"
+#~ msgstr "Lelokelelo la dikagare la methopo e fapa-fapanego ya ditaba"
+
+#~ msgid "Office"
+#~ msgstr "Ofisi"
+
+#~ msgid "Office Applications"
+#~ msgstr "Ditirio ta Ofisi"
+
+#~ msgid "Applications without a category"
+#~ msgstr "Ditirio teo di se nago legoro"
+
+#~ msgid "Other"
+#~ msgstr "Te dingwe"
+
+#~ msgid "Programs"
+#~ msgstr "Mananeo"
+
+#~ msgid "Programs menu"
+#~ msgstr "Lelokelelo la dikagare la mananeo"
+
+#~ msgid "Desktop Preferences"
+#~ msgstr "Dilo te di ratwago ta teseke"
+
+#~ msgid "Preferences that affect the whole GNOME desktop"
+#~ msgstr "Dilo te di ratwago te di kgomago teseke ka moka ya GNOME"
+
+#~ msgid "System Tools"
+#~ msgstr "Didiriwa ta Tshepedio"
+
+#~ msgid "System menu"
+#~ msgstr "Lelokelelo la dikagare la tshepedio"

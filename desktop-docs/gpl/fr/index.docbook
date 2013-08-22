@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="fr">
+  <articleinfo>
+    <title>Licence Publique Générale GNU</title>    
+    <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>Projet de documentation GNOME</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>2</revnumber> <date>06/1991</date></revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para><address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.</para>
+
+      <para>Chacun est libre de copier et de distribuer des copies conformes de cette Licence, mais nul n'est autorisé à la modifier.</para>
+    </legalnotice>
+
+    <releaseinfo>Version 2, Juin 1991</releaseinfo>
+
+    <abstract role="description"><para>Les licences de la plupart des logiciels sont conçues pour vous enlever toute liberté de les partager et de les modifier. A contrario, la Licence Publique Générale est destinée à garantir votre liberté de partager et de modifier les logiciels libres, et à assurer que ces logiciels soient libres pour tous leurs utilisateurs.</para></abstract>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Benjamin Drieu</firstname>
+      </personname>
+      <email>bdrieu@april.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Benjamin Drieu</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Mélanie Clément-Fontaine</firstname>
+      </personname>
+      <email>melanie@amberlab.net</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Mélanie Clément-Fontaine</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Arnaud Fontaine</firstname>
+      </personname>
+      <email>arnaud@crao.net</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Arnaud Fontaine</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Loïc Dachary</firstname>
+      </personname>
+      <email>loic@gnu.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Loïc Dachary</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Frédéric Couchet</firstname>
+      </personname>
+      <email>fcouchet@fsffrance.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Frédéric Couchet</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Vincent Untz</firstname>
+      </personname>
+      <email>vuntz@gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Vincent Untz</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Damien Durand</firstname>
+      </personname>
+      <email>splinux@fedoraproject.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2006.</year>
+      
+      <holder>Damien Durand</holder>
+    </copyright>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Préambule</title>
+    
+    <para>Les licences de la plupart des logiciels sont conçues pour vous enlever toute liberté de les partager et de les modifier. A contrario, la Licence Publique Générale est destinée à garantir votre liberté de partager et de modifier les logiciels libres, et à assurer que ces logiciels soient libres pour tous leurs utilisateurs. La présente Licence Publique Générale s'applique à la plupart des logiciels de la Free Software Foundation, ainsi qu'à tout autre programme pour lequel ses auteurs s'engagent à l'utiliser. (Certains autres logiciels de la Free Software Foundation sont couverts par la GNU Lesser General Public License à la place.) Vous pouvez aussi l'appliquer aux programmes qui sont les vôtres.</para>
+
+    <para>Quand nous parlons de logiciels libres, nous parlons de liberté, non de prix. Nos licences publiques générales sont conçues pour vous donner l'assurance d'être libres de distribuer des copies des logiciels libres (et de facturer ce service, si vous le souhaitez), de recevoir le code source ou de pouvoir l'obtenir si vous le souhaitez, de pouvoir modifier les logiciels ou en utiliser des éléments dans de nouveaux programmes libres et de savoir que vous pouvez le faire.</para>
+
+    <para>Pour protéger vos droits, il nous est nécessaire d'imposer des limitations qui interdisent à quiconque de vous refuser ces droits ou de vous demander d'y renoncer. Certaines responsabilités vous incombent en raison de ces limitations si vous distribuez des copies de ces logiciels, ou si vous les modifiez.</para>
+
+    <para>Par exemple, si vous distribuez des copies d'un tel programme, à titre gratuit ou contre une rémunération, vous devez accorder aux destinataires tous les droits dont vous disposez. Vous devez vous assurer qu'eux aussi reçoivent ou puissent disposer du code source. Et vous devez leur montrer les présentes conditions afin qu'ils aient connaissance de leurs droits.</para>
+
+    <para>Nous protégeons vos droits en deux étapes : <orderedlist numeration="arabic">
+	<listitem>
+	  <para>nous sommes titulaires des droits d'auteur du logiciel, et</para>
+	</listitem>
+	<listitem>
+	  <para>nous vous délivrons cette licence, qui vous donne l'autorisation légale de copier, distribuer et/ou modifier le logiciel.</para>
+	</listitem>
+      </orderedlist></para>
+
+    <para>En outre, pour la protection de chaque auteur ainsi que la nôtre, nous voulons nous assurer que chacun comprenne que ce logiciel libre ne fait l'objet d'aucune garantie. Si le logiciel est modifié par quelqu'un d'autre puis transmis à des tiers, nous voulons que les destinataires soient mis au courant que ce qu'ils ont reçu n'est pas le logiciel d'origine, de sorte que tout problème introduit par d'autres ne puisse entacher la réputation de l'auteur originel.</para>
+
+    <para>En définitive, un programme libre restera à la merci des brevets de logiciels. Nous souhaitons éviter le risque que les redistributeurs d'un programme libre fassent des demandes individuelles de licence de brevet, ceci ayant pour effet de rendre le programme propriétaire. Pour éviter cela, nous établissons clairement que toute licence de brevet doit être concédée de façon à ce que l'usage en soit libre pour tous ou bien qu'aucune licence ne soit concédée.</para>
+
+    <para>Les termes exacts et les conditions de copie, distribution et modification sont les suivants.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>CONDITIONS DE COPIE, DISTRIBUTION ET MODIFICATION</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Article 0</title>
+      <para>La présente Licence s'applique à tout programme ou tout autre ouvrage contenant un avis, apposé par le titulaire des droits d'auteur, stipulant qu'il peut être distribué au titre des conditions de la présente Licence Publique Générale. Ci-après, le <quote>Programme</quote> désigne l'un quelconque de ces programmes ou ouvrages, et un <quote>ouvrage fondé sur le Programme</quote> désigne soit le Programme, soit un ouvrage qui en dérive au titre des lois sur le droit d'auteur : en d'autres termes, un ouvrage contenant le Programme ou une partie de ce dernier, soit à l'identique, soit avec des modifications et/ou traduit dans un autre langage. (Ci-après, le terme <quote>modification</quote> implique, sans s'y réduire, le terme traduction) Chaque concessionaire sera désigné par <quote>vous</quote>.</para>
+
+      <para>Les activités autres que la copie, la distribution et la modification ne sont pas couvertes par la présente Licence ; elles sont hors de son champ d'application. L'opération consistant à exécuter le Programme n'est soumise à aucune limitation et les sorties du programme ne sont couvertes que si leur contenu constitue un ouvrage fondé sur le Programme (indépendamment du fait qu'il ait été réalisé par l'exécution du Programme). La validité de ce qui précède dépend de ce que fait le Programme.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Article 1</title>
+      <para>Vous pouvez copier et distribuer des copies à l'identique du code source du Programme tel que vous l'avez reçu, sur n'importe quel support, du moment que vous apposiez sur chaque copie, de manière ad hoc et parfaitement visible, l'avis de droit d'auteur adéquat et une exonération de garantie ; que vous gardiez intacts tous les avis faisant référence à la présente Licence et à l'absence de toute garantie ; et que vous fournissiez à tout destinataire du Programme autre que vous même un exemplaire de la présente Licence en même temps que le Programme.</para>
+      
+      <para>Vous pouvez faire payer l'acte physique de transmission d'une copie, et vous pouvez, à votre discrétion, proposer une garantie contre rémunération.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Article 2</title>
+      <para>Vous pouvez modifier votre copie ou des copies du Programme ou n'importe quelle partie de celui-ci, créant ainsi un ouvrage fondé sur le Programme, et copier et distribuer de telles modifications ou ouvrage selon les termes de l'<link linkend="sect1">Article 1</link> ci-dessus, à condition de vous conformer également à chacune des obligations suivantes : <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Vous devez munir les fichiers modifiés d'avis bien visibles stipulants que vous avez modifié ces fichiers, ainsi que la date de chaque modification ;</para>
+	  </listitem>
+	  <listitem>
+	    <para>Vous devez prendre les dispositions nécessaires pour que tout ouvrage que vous distribuez ou publiez, et qui, en totalité ou en partie, contient ou est fondé sur le Programme - ou une partie quelconque de ce dernier - soit concédé comme un tout, à titre gratuit, à n'importe quel tiers, au titre des conditions de la présente Licence ;</para>
+	  </listitem>
+	  <listitem>
+	    <para>Si le programme modifié lit habituellement des instructions de façon interactive lorsqu'on l'exécute, vous devez, quand il commence son exécution pour ladite utilisation interactive de la manière la plus usuelle, faire en sorte qu'il imprime ou affiche une annonce comprenant un avis de droit d'auteur ad hoc, et un avis stipulant qu'il n'y a pas de garantie (ou bien indiquant que c'est vous qui fournissez la garantie), et que les utilisateurs peuvent redistribuer le programme en respectant les présentes obligations, et expliquant à l'utilisateur comment voir une copie de la présente Licence. <note>
+		<title>Exception :</title>
+		<para>Si le Programme est lui-même interactif mais n'imprime pas habituellement une telle annonce, votre ouvrage fondé sur le Programme n'est pas obligé d'imprimer une annonce.</para>
+	      </note></para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Ces obligations s'appliquent à l'ouvrage modifié pris comme un tout. Si des éléments identifiables de cet ouvrage ne sont pas fondées sur le Programme et peuvent raisonnablement être considérées comme des ouvrages indépendants distincts en eux mêmes, alors la présente Licence et ses conditions ne s'appliquent pas à ces éléments lorsque vous les distribuez en tant qu'ouvrages distincts. Mais lorsque vous distribuez ces mêmes éléments comme partie d'un tout, lequel constitue un ouvrage fondé sur le Programme, la distribution de ce tout doit être soumise aux conditions de la présente Licence, et les autorisations qu'elle octroie aux autres concessionaires s'étendent à l'ensemble de l'ouvrage et par conséquent à chaque et toute partie indifférement de qui l'a écrite.</para>
+
+      <para>Par conséquent, l'objet du présent article n'est pas de revendiquer des droits ou de contester vos droits sur un ouvrage entièrement écrit par vous ; son objet est plutôt d'exercer le droit de contrôler la distribution d'ouvrages dérivés ou d'ouvrages collectifs fondés sur le Programme.</para>
+
+      <para>De plus, la simple proximité du Programme avec un autre ouvrage qui n'est pas fondé sur le Programme (ou un ouvrage fondé sur le Programme) sur une partition d'un espace de stockage ou un support de distribution ne place pas cet autre ouvrage dans le champ d'application de la présente Licence.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Article 3</title>
+
+      <para>Vous pouvez copier et distribuer le Programme (ou un ouvrage fondé sur lui, selon l'<link linkend="sect2">Article 2</link>) sous forme de code objet ou d'exécutable, selon les termes des <link linkend="sect1">Articles 1</link> et <link linkend="sect2">2</link> ci-dessus, à condition que vous accomplissiez l'un des points suivants : <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>L'accompagner de l'intégralité du code source correspondant, sous une forme lisible par un ordinateur, lequel doit être distribué au titre des termes des <link linkend="sect1">Articles 1</link> et <link linkend="sect2">2</link> ci-dessus, sur un support habituellement utilisé pour l'échange de logiciels ; ou,</para>
+	  </listitem>
+	  <listitem>
+	    <para>L'accompagner d'une proposition écrite, valable pendant au moins trois ans, de fournir à tout tiers, à un tarif qui ne soit pas supérieur à ce que vous coûte l'acte physique de réaliser une distribution source, une copie intégrale du code source correspondant sous une forme lisible par un ordinateur, qui sera distribuée au titre des termes des Articles 1 et 2 ci-dessus, sur un support habituellement utilisé pour l'échange de logiciels ; ou,</para>
+	  </listitem>
+	  <listitem>
+	    <para>L'accompagner des informations reçues par vous concernant la proposition de distribution du code source correspondant. (Cette solution n'est autorisée que dans le cas d'une distribution non-commerciale et seulement si vous avez reçu le programme sous forme de code objet ou d'éxécutable accompagné d'une telle proposition - en conformité avec le sous-Article b ci-dessus.)</para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Le code source d'un ouvrage désigne la forme favorite pour travailler à des modifications de cet ouvrage. Pour un ouvrage exécutable, le code source intégral désigne la totalité du code source de la totalité des modules qu'il contient, ainsi que les éventuels fichiers de définition des interfaces qui y sont associés, ainsi que les scripts utilisés pour contrôler la compilation et l'installation de l'exécutable. Cependant, par exception spéciale, le code source distribué n'est pas censé inclure quoi que ce soit de normalement distribué (que ce soit sous forme source ou binaire) avec les composants principaux (compilateur, noyau, et autre) du système d'exploitation sur lequel l'exécutable tourne, à moins que ce composant lui-même n'accompagne l'exécutable.</para>
+      
+      <para>Si distribuer un exécutable ou un code objet consiste à offrir un accès permettant leur copie depuis un endroit particulier, alors l'offre d'un accès équivalent pour copier le code source depuis le même endroit compte comme une distribution du code source - même si les tiers ne sont pas contraints de copier le source en même temps que le code objet.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Article 4</title>
+      
+      <para>Vous ne pouvez copier, modifier, concéder en sous-licence, ou distribuer le Programme, sauf tel qu'expressément prévu par la présente Licence. Toute tentative de copier, modifier, concéder en sous-licence, ou distribuer le Programme d'une autre manière est réputée non valable, et met immédiatement fin à vos droits au titre de la présente Licence. Toutefois, les tiers ayant reçu de vous des copies, ou des droits, au titre de la présente Licence ne verront pas leurs autorisations résiliées aussi longtemps que ledits tiers se conforment pleinement à elle.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Article 5</title>
+
+      <para>Vous n'êtes pas obligé d'accepter la présente Licence étant donné que vous ne l'avez pas signée. Cependant, rien d'autre ne vous accorde l'autorisation de modifier ou distribuer le Programme ou les ouvrages fondés sur lui. Ces actions sont interdites par la loi si vous n'acceptez pas la présente Licence. En conséquence, en modifiant ou distribuant le Programme (ou un ouvrage quelconque fondé sur le Programme), vous signifiez votre acceptation de la présente Licence en le faisant, et de toutes ses conditions concernant la copie, la distribution ou la modification du Programme ou d'ouvrages fondés sur lui.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Article 6</title>
+
+      <para>Chaque fois que vous redistribuez le Programme (ou n'importe quel ouvrage fondé sur le Programme), une licence est automatiquement concédée au destinataire par le concédant originel de la licence, l'autorisant à copier, distribuer ou modifier le Programme, sous réserve des présentes conditions. Vous ne pouvez imposer une quelconque limitation supplémentaire à l'exercice des droits octroyés au titre des présentes par le destinataire. Vous n'avez pas la responsabilité d'imposer le respect de la présente Licence à des tiers.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Article 7</title>
+
+      <para>Si, conséquement à une décision de justice ou l'allégation d'une transgression de brevet ou pour toute autre raison (non limitée à un probleme de brevet), des obligations vous sont imposées (que ce soit par jugement, conciliation ou autre) qui contredisent les conditions de la présente Licence, elles ne vous excusent pas des conditions de la présente Licence. Si vous ne pouvez distribuer de manière à satisfaire simultanément vos obligations au titre de la présente Licence et toute autre obligation pertinente, alors il en découle que vous ne pouvez pas du tout distribuer le Programme. Par exemple, si une licence de brevet ne permettait pas une redistribution sans redevance du Programme par tous ceux qui reçoivent une copie directement ou indirectement par votre intermédiaire, alors la seule façon pour vous de satisfaire à la fois à la licence du brevet et à la présente Licence serait de vous abstenir totalement de toute distribution du Programme.</para>
+
+      <para>Si une partie quelconque de cet article est tenue pour nulle ou inopposable dans une circonstance particulière quelconque, l'intention est que le reste de l'article s'applique. La totalité de la section s'appliquera dans toutes les autres circonstances.</para>
+
+      <para>Cet article n'a pas pour but de vous induire à transgresser un quelconque brevet ou d'autres revendications à un droit de propriété ou à contester la validité de la moindre de ces revendications ; cet article a pour seul objectif de protéger l'intégrité du système de distribution du logiciel libre, qui est mis en oeuvre par la pratique des licenses publiques. De nombreuses personnes ont fait de généreuses contributions au large spectre de logiciels distribués par ce système en se fiant à l'application cohérente de ce système ; il appartient à chaque auteur/donateur de décider si il ou elle veut distribuer du logiciel par l'intermédiaire d'un quelconque autre système et un concessionaire ne peut imposer ce choix.</para>
+
+      <para>Cet article a pour but de rendre totalement limpide ce que l'on pense être une conséquence du reste de la présente Licence.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Article 8</title>
+
+      <para>Si la distribution et/ou l'utilisation du Programme est limitée dans certains pays que ce soit par des brevets ou par des interfaces soumises au droit d'auteur, le titulaire originel des droits d'auteur qui décide de couvrir le Programme par la présente Licence peut ajouter une limitation géographique de distribution explicite qui exclue ces pays afin que la distribution soit permise seulement dans ou entre les pays qui ne sont pas ainsi exclus. Dans ce cas, la présente Licence incorpore la limitation comme si elle était écrite dans le corps de la présente Licence.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Article 9</title>
+      
+      <para>La Free Software Foundation peut, de temps à autre, publier des versions révisées et/ou nouvelles de la Licence Publique Générale. De telles nouvelles versions seront similaires à la présente version dans l'esprit mais pourront différer dans le détail pour prendre en compte de nouvelles problématiques ou inquiétudes.</para>
+
+      <para>Chaque version possède un numéro de version la distinguant. Si le Programme précise le numéro de version de la présente Licence qui s'y applique et <quote>une version ultérieure quelconque</quote>, vous avez le choix de suivre les conditions de la présente version ou de toute autre version ultérieure publiée par la Free Software Foundation. Si le Programme ne spécifie aucun numéro de version de la présente Licence, vous pouvez choisir une version quelconque publiée par la Free Software Foundation à quelque moment que ce soit.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Article 10</title>
+
+      <para>Si vous souhaitez incorporer des parties du Programme dans d'autres programmes libres dont les conditions de distribution sont différentes, écrivez à l'auteur pour lui en demander l'autorisation. Pour les logiciels dont la Free Software Foundation est titulaire des droits d'auteur, écrivez à la Free Software Foundation ; nous faisons parfois des exceptions dans ce sens. Notre décision sera guidée par le double objectif de préserver le statut libre de tous les dérivés de nos logiciels libres et de promouvoir le partage et la réutilisation des logiciels en général.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>ABSENCE DE GARANTIE</title>
+      <subtitle>Article 11</subtitle>
+
+      <para>COMME LA LICENCE DU PROGRAMME EST CONCÉDÉE À TITRE GRATUIT, AUCUNE GARANTIE NE S'APPLIQUE AU PROGRAMME, DANS LES LIMITES AUTORISÉES PAR LA LOI APPLICABLE. SAUF MENTION CONTRAIRE ÉCRITE, LES TITULAIRES DU DROIT D'AUTEUR ET/OU LES AUTRES PARTIES FOURNISSENT LE PROGRAMME <quote>TEL QUEL</quote>, SANS AUCUNE GARANTIE DE QUELQUE NATURE QUE CE SOIT, EXPRESSE OU IMPLICITE, Y COMPRIS, MAIS SANS Y ÊTRE LIMITÉ, LES GARANTIES IMPLICITES DE MARCHANDABILITÉ ET D'ADÉQUATION À UN OBJECTIF PARTICULIER. VOUS ASSUMEZ LA TOTALITÉ DES RISQUES LIÉS À LA QUALITÉ ET AUX PERFORMANCES DU PROGRAMME. SI LE PROGRAMME SE RÉVÉLAIT DÉFECTUEUX, LE COÛT DE L'ENTRETIEN, DES RÉPARATIONS OU DES CORRECTIONS NÉCESSAIRES VOUS INCOMBENT INTÉGRALEMENT.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Article 12</title>
+
+      <para>EN AUCUN CAS, SAUF LORSQUE LA LOI APPLICABLE OU UNE CONVENTION ÉCRITE L'EXIGE, UN TITULAIRE DE DROIT D'AUTEUR QUEL QU'IL SOIT, OU TOUTE PARTIE QUI POURRAIT MODIFIER ET/OU REDISTRIBUER LE PROGRAMME COMME PERMIS CI-DESSUS, NE POURRAIT ÊTRE TENU POUR RESPONSABLE À VOTRE ÉGARD DES DOMMAGES, INCLUANT LES DOMMAGES GÉNÉRIQUES, SPÉCIFIQUES, SECONDAIRES OU CONSÉCUTIFS, RÉSULTANT DE L'UTILISATION OU DE L'INCAPACITÉ D'UTILISER LE PROGRAMME (Y COMPRIS, MAIS SANS Y ÊTRE LIMITÉ, LA PERTE DE DONNÉES, OU LE FAIT QUE DES DONNÉES SOIENT RENDUES IMPRÉCISES, OU LES PERTES ÉPROUVÉES PAR VOUS OU PAR DES TIERS, OU LE FAIT QUE LE PROGRAMME ÉCHOUE À INTÉROPÉRER AVEC UN AUTRE PROGRAMME QUEL QU'IL SOIT) MÊME SI LE DIT TITULAIRE DU DROIT D'AUTEUR OU LE PARTI CONCERNÉ A ÉTÉ AVERTI DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+    </sect2>
+  </sect1>
+</article>

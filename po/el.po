@@ -1,0 +1,449 @@
+# translation of gnome-desktop.HEAD.po to Greek
+# Gnome-core Greek PO file.
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
+# simos: 874 messages, 18Feb2001, (sgpbea).
+# simos: 897 messages, 01Mar2001, (regmtsgpbea).
+# simos: 959 messages, 04Jun2001, (micumple).
+# simos: 959 messages, 06Jun2001, (fixed minor typo).
+# simos: 897 messages, 28Nov2001, (feeling good to translate HEAD).
+# simos: 105 messages, 06Aug2002, file split from gnome-core, first full translation.
+# kostas: 105 messages, 06Jan2003, one more update.
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 1999.
+# Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
+# Sarantis Paskalis <paskalis@di.uoa.gr>, 2000.
+# Kostas Papadimas <pkst@gmx.net>, 2003.
+# Nikos Charonitakis <frolix68@yahoo.gr>, 2003.
+# Kostas Papadimas <pkst@gnome.org>, 2003.
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2005.
+# Fotis Tsamis <ftsamis@gmail.com>, 2009.
+# Comment: Most of the work done by Spiros (around 600 messages).
+# Comment: Simos/Sarantis did 12%.
+# Comment: Simos/Sarantis did review.
+# Comment: Simos did 10 new/unfuzzy 30.
+# Comment: Simos did 3 new/unfuzzy 1.
+# Comment: Simos did 2 new/unfuzzy 8.
+# Comment: Simos did 6 new/unfuzzy 8.
+# Comment: Simos did 2 new/unfuzzy 5.
+# kostas: 22Jul2003, one more update
+# kostas: 15Aug2003, one more update
+# Nikos: 18Aug2003, fixes
+# kostas: 12Nov2003, fixes
+# Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-04 10:03+0000\n"
+"PO-Revision-Date: 2013-03-09 08:44+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: team@gnome.gr\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:107
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Άγνωστος"
+
+#: ../libgnome-desktop/gnome-languages.c:804
+msgid "Unspecified"
+msgstr "Ακαθόριστο"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "αδυναμία λήψης των πηγών οθόνης (CRTCs, έξοδοι, λειτουργίες)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "Απρόσμενο σφάλμα X κατά τη λήψη του εύρους των μεγεθών οθόνης"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "αδύνατη η λήψη του εύρους των μεγεθών οθόνης"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "Δεν υπάρχει η επέκταση RANDR"
+
+#: ../libgnome-desktop/gnome-rr.c:1580
+#, c-format
+msgid "could not get information about output %d"
+msgstr "Αδυναμία εύρεσης πληροφοριών για την έξοδο %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1764
+msgid "Built-in Display"
+msgstr "Ενσωματωμένη οθόνη"
+
+#. Translators: %s is the size of the monitor in inches
+#: ../libgnome-desktop/gnome-rr.c:1782
+#, c-format
+msgid "%s Display"
+msgstr "%s οθόνη"
+
+#: ../libgnome-desktop/gnome-rr.c:1789
+#| msgctxt "Monitor vendor"
+#| msgid "Unknown"
+msgid "Unknown Display"
+msgstr "Άγνωστη οθόνη"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2234
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"η ζητούμενη θέση/μέγεθος για το CRTC %d είναι έξω από το επιτρεπτό όριο: "
+"θέση=(%d, %d), μέγεθος=(%d, %d), μέγιστο=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2270
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "αδυναμία ορισμού της ρύθμισης για το CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2421
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "αδυναμία εύρεσης πληροφοριών για το CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:708
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"καμία από τις αποθηκευμένες ρυθμίσεις οθόνης δεν ταίριαζε με την ενεργή "
+"ρύθμιση"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1464
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "Το CRTC %d δεν μπορεί να οδηγήσει την έξοδο %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1471
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "η έξοδος %s δεν υποστηρίζει την κατάσταση λειτουργίας %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1482
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "Το CRTC %d δεν υποστηρίζει περιστροφή=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1496
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"η έξοδος %s δεν έχει τις ίδιες παραμέτρους όπως μια άλλη κλωνοποιημένη "
+"έξοδος:\n"
+"υπάρχουσα κατάσταση = %d, νέα κατάσταση = %d\n"
+"υπάρχουσες συντεταγμένες = (%d, %d), νέες συντεταγμένες = (%d, %d)\n"
+"υπάρχουσα περιστροφή = %s, νέα περιστροφή = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1511
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "αδυναμία κλωνοποίησης στην έξοδο %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1680
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Δοκιμή καταστάσεων λειτουργίας για το CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1704
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"Το CRTC %d: δοκιμάζει την κατάσταση λειτουργίας %dx%d@%dHz με την έξοδο στα "
+"%dx%d@%dHz (επιτυχής %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1751
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"αδύνατη η αντιστοίχιση CRTC σε εξόδους\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1755
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"καμία από τις επιλεγμένες καταστάσεις λειτουργίας δεν ήταν συμβατή με τις "
+"δυνατές καταστάσεις:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1833
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"το απαιτούμενο εικονικό μέγεθος δεν ταιριάζει με το διαθέσιμο μέγεθος: "
+"αιτήθηκε=(%d, %d), ελάχιστο=(%d, %d), μέγιστο=(%d, %d)"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#. The character between %R and %S is U+2236 RATIO
+#: ../libgnome-desktop/gnome-wall-clock.c:268
+msgid "%a %b %e, %R∶%S"
+msgstr "%a %e %b, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:269
+msgid "%a %b %e, %R"
+msgstr "%a %e %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#. The character between %R and %S is U+2236 RATIO
+#: ../libgnome-desktop/gnome-wall-clock.c:274
+msgid "%a %R∶%S"
+msgstr "%a %R∶%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:275
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#. The character between %R and %S is U+2236 RATIO
+#: ../libgnome-desktop/gnome-wall-clock.c:280
+msgid "%R∶%S"
+msgstr "%R∶%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:280
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#. The Unicode characters are U+2236 RATIO and
+#. U+2009 THIN SPACE
+#: ../libgnome-desktop/gnome-wall-clock.c:288
+msgid "%a %b %e, %l∶%M∶%S %p"
+msgstr "%a %e %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:289
+msgid "%a %b %e, %l∶%M %p"
+msgstr "%a %e %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#. The Unicode characters are U+2236 RATIO and
+#. U+2009 THIN SPACE
+#: ../libgnome-desktop/gnome-wall-clock.c:295
+msgid "%a %l∶%M∶%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:296
+msgid "%a %l∶%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#. The Unicode characters are U+2236 RATIO and
+#. U+2009 THIN SPACE
+#: ../libgnome-desktop/gnome-wall-clock.c:302
+msgid "%l∶%M∶%S %p"
+msgstr "%l∶%M∶%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:303
+msgid "%l∶%M %p"
+msgstr "%l∶%M %p"
+
+#~ msgid "Cannot find a terminal, using xterm, even if it may not work"
+#~ msgstr ""
+#~ "Αδύνατη η εύρεση τερματικού, χρήση xterm, παρόλο που μπορεί να μην "
+#~ "λειτουργήσει"
+
+#~ msgid "Laptop"
+#~ msgstr "Φορητός υπολογιστής"
+
+#~ msgid "Mirrored Displays"
+#~ msgstr "Κατοπτρισμός οθονών"
+
+#~ msgid "%R:%S"
+#~ msgstr "%R:%S"
+
+#~ msgid "%l:%M:%S %p"
+#~ msgstr "%l:%M:%S %p"
+
+#~ msgid "%l:%M %p"
+#~ msgstr "%l:%M %p"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Καθρεπτισμός οθονών"
+
+#~ msgid "About GNOME"
+#~ msgstr "Περί GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Μάθετε περισσότερα για το GNOME"
+
+#~ msgid "News"
+#~ msgstr "Νέα"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Βιβλιοθήκη του GNOME "
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Φίλοι του GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Επικοινωνία"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "O Μυστηριώδης GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Το Τσιριχτό και Ελαστικό GNOME"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Γουάντα το Ψάρι του GNOME"
+
+#~ msgid "_Open URL"
+#~ msgstr "Ά_νοιγμα URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "Αντι_γραφή URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Περί της επιφάνειας εργασίας του GNOME"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Καλώς ήλθατε στην επιφάνεια εργασίας του GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Φτάνει σε εσάς από:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Έκδοση"
+
+#~ msgid "Distributor"
+#~ msgstr "Διανομέας"
+
+#~ msgid "Build Date"
+#~ msgstr "Ημερομηνία Κατασκευής"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Εμφάνιση πληροφοριών για αυτήν την έκδοση του GNOME"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "Το GNOME ακόμα περιλαμβάνει μια πλήρη πλατφόρμα ανάπτυξης για "
+#~ "προγραμματιστές εφαρμογών, και επιτρέπει τη δημιουργία δυναμικών και "
+#~ "πολύπλοκων εφαρμογών."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "Το GNOME περιλαμβάνει τα περισσότερα από όσα βλέπετε στον υπολογιστή σας, "
+#~ "συμπεριλαμβανομένου του διαχειριστή αρχείων, του περιηγητή στο διαδίκτυο, "
+#~ "των μενού και πολλών εφαρμογών."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "Το GNOME είναι ένα ελεύθερο, σταθερό, εύχρηστο και προσιτό περιβάλλον "
+#~ "επιφάνειας εργασίας για την οικογένεια των λειτουργικών συστημάτων Unix."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "Η εστίαση του GNOME στη χρηστικότητα και προσιτότητα, στο σταθερό κύκλο "
+#~ "εκδόσεων και τη δυναμική εταιρική υποστήριξη, το κάνουν μοναδικό ανάμεσα "
+#~ "στις επιφάνειες εργασίας του Ελεύθερου λογισμικού."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "Η μεγαλύτερη δύναμη του GNOME είναι η ίδια η δυνατή μας κοινότητα. Ο "
+#~ "καθένας με ή χωρίς ικανότητες προγραμματιστή, μπορεί να συμβάλλει στο να "
+#~ "κάνει το GNOME καλύτερο."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Εκατοντάδες άνθρωποι έχουν συμβάλλει κώδικα στο GNOME από τότε που "
+#~ "ξεκίνησε το 1997. Ακόμη πάρα πολλοί έχουν συμβάλλει με άλλους σημαντικούς "
+#~ "τρόπους, συμπεριλαμβανομένων των μεταφράσεων, της τεκμηρίωσης και του "
+#~ "έλεγχου ποιότητας."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Σφάλμα στην ανάγνωση του αρχείου '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Σφάλμα επαναφοράς αρχείου '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "Χωρίς όνομα"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Το αρχείο '%s' δεν είναι κανονικό αρχείο ή κατάλογος."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Αδυναμία εύρεσης του αρχείου '%s'"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Δεν υπάρχει όνομα αρχείου για την αποθήκευση"
+
+#~ msgid "Starting %s"
+#~ msgstr "Εκκίνηση %s "
+
+#~ msgid "No URL to launch"
+#~ msgstr "Δεν υπάρχει URL προς εκκίνηση"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Δεν είναι εκκινήσιμο αντικείμενο"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Δεν υπάρχει εντολή (Exec) για εκκίνηση"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Εσφαλμένη εντολή (Exec) για εκκίνηση"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Άγνωστη κωδικοποίηση: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "δεν είναι δυνατή η εύρεση μιας κατάλληλης ρύθμισης οθονών"

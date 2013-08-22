@@ -1,0 +1,538 @@
+<!-- ##### SECTION Title ##### -->
+gnome-rr
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT GnomeRRScreen ##### -->
+<para>
+
+</para>
+
+@parent: 
+@priv: 
+
+<!-- ##### TYPEDEF GnomeRROutput ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF GnomeRRCrtc ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF GnomeRRMode ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM GnomeRRRotation ##### -->
+<para>
+
+</para>
+
+@GNOME_RR_ROTATION_NEXT: 
+@GNOME_RR_ROTATION_0: 
+@GNOME_RR_ROTATION_90: 
+@GNOME_RR_ROTATION_180: 
+@GNOME_RR_ROTATION_270: 
+@GNOME_RR_REFLECT_X: 
+@GNOME_RR_REFLECT_Y: 
+
+<!-- ##### MACRO GNOME_RR_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION gnome_rr_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### ENUM GnomeRRError ##### -->
+<para>
+
+</para>
+
+@GNOME_RR_ERROR_UNKNOWN: 
+@GNOME_RR_ERROR_NO_RANDR_EXTENSION: 
+@GNOME_RR_ERROR_RANDR_ERROR: 
+@GNOME_RR_ERROR_BOUNDS_ERROR: 
+@GNOME_RR_ERROR_CRTC_ASSIGNMENT: 
+@GNOME_RR_ERROR_NO_MATCHING_CONFIG: 
+@GNOME_RR_ERROR_NO_DPMS_EXTENSION: 
+
+<!-- ##### MACRO GNOME_RR_CONNECTOR_TYPE_PANEL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION gnome_rr_screen_new ##### -->
+<para>
+
+</para>
+
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_list_outputs ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_list_crtcs ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_list_modes ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_list_clone_modes ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_set_size ##### -->
+<para>
+
+</para>
+
+@screen: 
+@width: 
+@height: 
+@mm_width: 
+@mm_height: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_get_crtc_by_id ##### -->
+<para>
+
+</para>
+
+@screen: 
+@id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_refresh ##### -->
+<para>
+
+</para>
+
+@screen: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_get_output_by_id ##### -->
+<para>
+
+</para>
+
+@screen: 
+@id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_get_output_by_name ##### -->
+<para>
+
+</para>
+
+@screen: 
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_get_ranges ##### -->
+<para>
+
+</para>
+
+@screen: 
+@min_width: 
+@max_width: 
+@min_height: 
+@max_height: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_get_timestamps ##### -->
+<para>
+
+</para>
+
+@screen: 
+@change_timestamp_ret: 
+@config_timestamp_ret: 
+
+
+<!-- ##### FUNCTION gnome_rr_screen_set_primary_output ##### -->
+<para>
+
+</para>
+
+@screen: 
+@output: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_id ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_name ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_is_connected ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_size_inches ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_width_mm ##### -->
+<para>
+
+</para>
+
+@outout: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_height_mm ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_edid_data ##### -->
+<para>
+
+</para>
+
+@output: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_possible_crtcs ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_current_mode ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_crtc ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_connector_type ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_is_laptop ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_position ##### -->
+<para>
+
+</para>
+
+@output: 
+@x: 
+@y: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_can_clone ##### -->
+<para>
+
+</para>
+
+@output: 
+@clone: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_list_modes ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_preferred_mode ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_supports_mode ##### -->
+<para>
+
+</para>
+
+@output: 
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_output_get_is_primary ##### -->
+<para>
+
+</para>
+
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_mode_get_id ##### -->
+<para>
+
+</para>
+
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_mode_get_width ##### -->
+<para>
+
+</para>
+
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_mode_get_height ##### -->
+<para>
+
+</para>
+
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_mode_get_freq ##### -->
+<para>
+
+</para>
+
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_id ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_set_config_with_time ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@timestamp: 
+@x: 
+@y: 
+@mode: 
+@rotation: 
+@outputs: 
+@n_outputs: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_can_drive_output ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_current_mode ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_position ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@x: 
+@y: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_current_rotation ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_rotations ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_supports_rotation ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@rotation: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_gamma ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@size: 
+@red: 
+@green: 
+@blue: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_set_gamma ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@size: 
+@red: 
+@green: 
+@blue: 
+
+

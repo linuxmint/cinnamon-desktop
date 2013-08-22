@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop-2.10.0\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&component=general\n"
+"POT-Creation-Date: 2009-01-13 00:10+0000\n"
+"PO-Revision-Date: 2006-04-28 09:56+0100\n"
+"Last-Translator: saudat mohammed <saudat@wazobialinux>\n"
+"Language-Team: hausa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:61
+msgid "About GNOME"
+msgstr "Game da GNOME"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+#, fuzzy
+msgid "Learn more about GNOME"
+msgstr "Ka ƙara jin labari game da GNOME"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "News"
+msgstr "Labarai"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "GNOME Library"
+msgstr ""
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Friends of GNOME"
+msgstr "Abokanen GNOME"
+
+#: ../gnome-about/gnome-about.in:65
+msgid "Contact"
+msgstr "Tuntuɓa"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Mysterious GEGL"
+msgstr "GEGL Mai Ɗaura Kai"
+
+#: ../gnome-about/gnome-about.in:70
+#, fuzzy
+msgid "The Squeaky Rubber GNOME"
+msgstr "Gnome Mai Roba mai Ƙara"
+
+#: ../gnome-about/gnome-about.in:71
+msgid "Wanda The GNOME Fish"
+msgstr "Wanda, Kifin GNOME"
+
+#: ../gnome-about/gnome-about.in:568
+msgid "_Open URL"
+msgstr ""
+
+#: ../gnome-about/gnome-about.in:575
+msgid "_Copy URL"
+msgstr ""
+
+#: ../gnome-about/gnome-about.in:830
+msgid "About the GNOME Desktop"
+msgstr "Game da Kwamfyutan Tebur na GNOME"
+
+#: ../gnome-about/gnome-about.in:866
+msgid "%(name)s: %(value)s"
+msgstr ""
+
+#: ../gnome-about/gnome-about.in:880
+msgid "Welcome to the GNOME Desktop"
+msgstr "Barka da zuwa kwamfyutan tebur na GNOME"
+
+#: ../gnome-about/gnome-about.in:897
+msgid "Brought to you by:"
+msgstr "An kawo maka ta:"
+
+#: ../gnome-about/gnome-about.in:921
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr ""
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Version"
+msgstr "Siga"
+
+#: ../gnome-about/gnome-about.in:978
+msgid "Distributor"
+msgstr "Mai Rarrabawa"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Kwanan Wata da aka Gina"
+
+#: ../gnome-about/gnome-about.in:1023
+msgid "Display information on this GNOME version"
+msgstr ""
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME na ƙunsa da cikakken dandamalin na ci-gaban ayukan kwamfyuta wa masu "
+"shirya shiryoyin ayuka, kuma yana yarda a ƙiƙiro wasu shiryoyin ayuka masu "
+"ƙarfi da rikitacce."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME na ƙunsa da yawancin abubuwan da ka ke gani kan kwamfyutan ka, tare da "
+"manajan fayil, birawsar yana, mazaɓa, da shiryoyin ayuka masu yawa."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME wani muhallin kwamfyutan tebur ne da ake samu a kyauta, mai sauƙin "
+"amfani, mai zaman lafiya, da ake samu da sauƙi wa iyalin na'urori ayukan "
+"kwamfyuta mai kama da Unix"
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Don GNOME na kula da sauƙin amfanin sa da na fasahan mataimaki naƙasan "
+"mutum, sakar da sabon siga a koyaushe, kuma yana da goyon baya mai ƙarfi na "
+"kamfani masu rajista. Duk waɗannan tare sun sa GNOME ta zama na musamman "
+"cikin kwamfyutocin tebur masu Masarrafin Kwmafyuta wanda ake samu da Kyauta."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"Babbar ƙarfin GMOME itace jama'ar mu mai aminci. Kowa zasu iya ƙari ga GNOME "
+"ko da sun iya tsari ko idan basu iya ba, don GNOME ta ƙara kyau."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Ɗarurrukan mutane sun yi ƙari ga tsarin GNOME tun mafarinsa a shekara 1997; "
+"an sami mutane da yawa waɗannda suka yi karo-karo ta hanyoyi daban-daban na "
+"musamman, kamar fassarori, yin takardar aiki, da kuma ba da tabbacin ingaci."
+
+#: ../libgnome-desktop/display-name.c:213
+msgid "Laptop"
+msgstr ""
+
+#: ../libgnome-desktop/display-name.c:221
+msgid "Unknown"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-desktop-item.c:218
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Kuskure wajen karanta fayil '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:286
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Kuskure wajen yin rewind ga fayil '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:388
+#: ../libgnome-desktop/gnome-desktop-item.c:3530
+msgid "No name"
+msgstr "Babu suna"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:615
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Fayil na '%s' ba wani fayil ko gafaka na yau da kullum ba."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:799
+#, fuzzy, c-format
+msgid "Error cannot find file id '%s'"
+msgstr "Kuskure wajen karanta fayil '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:845
+#, c-format
+msgid "No filename to save to"
+msgstr "Babu sunan fayil da za'a adana zuwa"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1830
+#, c-format
+msgid "Starting %s"
+msgstr "Ana Fara %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2066
+#, c-format
+msgid "No URL to launch"
+msgstr "Babu URL wanda za'a gabatar"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2082
+#, c-format
+msgid "Not a launchable item"
+msgstr "Ba wani abun da za'a iya gabatar bane"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2092
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Babu umarni (Exec) wanda za'a gabatar"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2105
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Umarni mai maras kyau (Exec) wanda za'a gabatar"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3586
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Inkodin wanda ba'a sani ba na: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:130
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:346
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:355
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:579
+#, c-format
+msgid "RANDR extension is not present"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:809
+#, c-format
+msgid "could not get information about output %d"
+msgstr ""
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.
+#: ../libgnome-desktop/gnome-rr.c:1107
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:1140
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr.c:1249
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr-config.c:1152
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1528
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-rr-config.c:1542
+#, c-format
+msgid "could not find a suitable configuration of screens"
+msgstr ""
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Ƙara ko Daidaita Fassarori na Suna/Tsokaci"
+
+#~ msgid "Advanced"
+#~ msgstr "Na ci-gaba"
+
+#~ msgid "Application"
+#~ msgstr "Shirin Ayuka"
+
+#~ msgid "Basic"
+#~ msgstr "Na Ainihi"
+
+#~ msgid "Browse"
+#~ msgstr "Biraws"
+
+#~ msgid "Browse icons"
+#~ msgstr "Alamomin biraws"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Ts_okaci:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "Umar_ni:"
+
+#~ msgid "Comment"
+#~ msgstr "Tsokaci"
+
+#~ msgid "Could not locate the GNOME logo button."
+#~ msgstr "An kasa gane maɓallin logo na GNOME."
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "An kasa gane gafaka mai zane-zane na kanun sama."
+
+#~ msgid "Could not locate the file with GNOME version information."
+#~ msgstr "An kasa gane fayil mai bayani kan sigar GNOME."
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "An kasa buɗe adireshin \"%s\": %s"
+
+#~ msgid "Developers"
+#~ msgstr "Masu Bunƙasa"
+
+#~ msgid "Directory"
+#~ msgstr "Gafaka"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "Kuskure wajen rubuta fayil na '%s': %s"
+
+#~ msgid "FSDevice"
+#~ msgstr "AbunFS"
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "An kasa buɗe gafaka mai zane-zane na kanun sama: %s"
+
+#~ msgid "Generic name"
+#~ msgstr "Suna na Kowa"
+
+#~ msgid "Language"
+#~ msgstr "Harshe"
+
+#~ msgid "Link"
+#~ msgstr "Mahaɗi"
+
+#~ msgid "MIME Type"
+#~ msgstr "Nau'in MIME"
+
+#~ msgid "Name"
+#~ msgstr "Suna"
+
+#~ msgid "Re_move"
+#~ msgstr "Ci_re"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Cire Fassarori na Suna/Tsokaci"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "A tafiyar da shi kan t_asha"
+
+#~ msgid "Service"
+#~ msgstr "Aiki"
+
+#~ msgid "ServiceType"
+#~ msgstr "Nau'inAiki"
+
+#~ msgid "Software"
+#~ msgstr "Masarrafin Kwamfyuta"
+
+#~ msgid "The End!"
+#~ msgstr "Ƙarshen!"
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "An kasa loda '%s': %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "An kasa loda zane na kanun sama: %s"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Ƙara/Daidaita"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Yin Takardan Aiki:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Suna na Kowa:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Alama:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Fassarori na Suna/Tsokaci:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Suna:"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Nuna Matashiya idan an Kunna"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Gwada wannan kafin ka yi amfani da:"
+
+#~ msgid "_Type:"
+#~ msgstr "_Nau'i:"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"

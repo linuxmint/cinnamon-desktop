@@ -1,0 +1,512 @@
+# gnome-desktop Finnish translation
+# Suomennos: http://gnome-fi.sourceforge.net/
+# Copyright (C) 2002-2008 Free Software Foundation, Inc.
+#
+#
+# Ville Hautamäki <villeh@cs.joensuu.fi>, 1998, 2000.
+# Mikko Rauhala <mjr@iki.fi>, 1999.
+# Pauli Virtanen <pauli.virtanen@hut.fi>, 2000-2005.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2009.
+# Tommi Vainikainen <thv@iki.fi>, 2009-2011.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"PO-Revision-Date: 2012-09-14 19:17+0300\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Päätettä ei löytynyt, käytetään xtermiä vaikka se ei ehkä toimi"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "Näyttöresurssien tietoja ei saatu (CRTCt, ulostuloa, tilat)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "käsittelemätön X-virhe noudettaessa kelvollisia näytön kokoja"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "näytön kokoluetteloa ei saatu noudettua"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR-laajennos ei ole saatavilla"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "Tietoja ulostulosta %d ei saatu."
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"pyydetty sijainti tai koko CRTC:lle %d ei ole sallituissa rajoissa: sijainti="
+"(%d,%d), koko=(%d,%d), maksimi=(%d,%d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "Asetuksia CRTC:lle %d ei voitu asettaa"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "Tietoja CRTC:stä %d ei saatu."
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Kannettava"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"yksikään tallennetuista näyttöasetuksista ei vastaa aktiivista määrittelyä"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ei voi ajaa ulostuloa %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "ulostulo %s ei tue tilaa %d×%d@%d Hz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d ei tue kiertoa %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"ulostulolla %s ei ole samat parametrit kuin kloonatulla ulostulolla:\n"
+"nykyinen tila = %d, uusi tila = %d\n"
+"nykyiset koordinaatit = (%d, %d), uudet koordinaatit = (%d, %d)\n"
+"nykyinen kierto = %s, uusi kierto = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "ei voi kloonata ulostuloon %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Yritetään tiloja CRTC %d:lle\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: yritetään tilaa %d×%d@%d Hz ulostulolla %d×%d@%d Hz (vaihe %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ei voitu sijoittaa CRTC:itä ulostuloihin:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"mikään valituista tiloista ei ollut yhteensopiva mahdollisten tilojen "
+"kanssa:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"vaadittu virtuaalinen koko ei mahdu saatavilla olevaan kokoon: pyydetty=(%d,"
+"%d), minimi=(%d,%d), maksimi=(%d,%d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "Peilatut näytöt"
+
+# msgstr "%a %-d.%-m., %-H.%M.%S"
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %d.%m., %H.%M.%S"
+
+# msgstr "%a %-d.%-m., %-H.%M"
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %d.%m., %H.%M"
+
+# msgstr "%a %-H.%M.%S"
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %H.%M.%S"
+
+# msgstr "%a %-H.%M"
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %H.%M"
+
+# msgstr "%a %-H.%M.%S"
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+#| msgid "%a %R:%S"
+msgid "%R:%S"
+msgstr "%H.%M.%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%H.%M"
+
+# msgstr "%a %-d.%-m., %-I.%M.%S %p"
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %d.%m., %I.%M.%S %p"
+
+# msgstr "%a %-d.%-m., %-I.%M %p"
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %d.%m., %I.%M %p"
+
+# msgstr "%a %-I.%M.%S %p"
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %I.%M.%S %p"
+
+# msgstr "%a %-I.%M %p"
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %I.%M %p"
+
+# msgstr "%a %-I.%M.%S %p"
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+#| msgid "%a %l:%M:%S %p"
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+# msgstr "%a %-I.%M %p"
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+#| msgid "%a %l:%M %p"
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Peilatut näytöt"
+
+#~ msgid "About GNOME"
+#~ msgstr "Tietoja Gnomesta"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Opi lisää Gnomesta"
+
+#~ msgid "News"
+#~ msgstr "Uutiset"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Gnome-kirjasto"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Gnomen ystävät"
+
+#~ msgid "Contact"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Salaperäinen GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Vinkuva kumitonttu"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda, Gnome-kala"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Avaa URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Kopioi URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Tietoja Gnomesta"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Tervetuloa käyttämään Gnome-työpöytäympäristöä"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Työn ovat tehneet:"
+
+#~ msgid "Version"
+#~ msgstr "Versio"
+
+#~ msgid "Distributor"
+#~ msgstr "Jakelija"
+
+#~ msgid "Build Date"
+#~ msgstr "Kääntöpäivä"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Näytä tietoja tästä Gnomen versiosta"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "Gnomessa on myös täydellinen ohjelmistokehitysympäristö, jolla voi luoda "
+#~ "tehokkaita ja mutkikkaita ohjelmia."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "Gnomeen kuuluu suurin osa siitä, mitä tietokoneen ruudulla yleensä näkyy, "
+#~ "kuten tiedostonhallinta, WWW-selain, valikot ja monet sovellukset."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "Gnome on Vapaa, käytettävä, vakaa ja esteetön työpöytäympäristö Unix-"
+#~ "tyyppisille käyttöjärjestelmille."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "Gnomen keskittyminen käytettävyyteen ja esteettömyyteen, säännöllinen "
+#~ "julkaisutahti ja yhtiöiden tuki tekee Gnomesta ainutlaatuisen "
+#~ "vapaaohjelmistoihin perustuvien työpöytien joukossa."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "Gnomen suurin vahvuus on vahva yhteisö. Käytännössä kuka tahansa, "
+#~ "ohjelmointitaitoinen tai ei, voi osallistua Gnomen kehittämiseen."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Sadat ihmiset ovat ohjelmoineet Gnomen hyväksi projektin käynnistyttyä "
+#~ "vuonna 1997, ja monet muut ovat osallistuneet muilla tärkeillä tavoin, "
+#~ "kuten kääntämällä sitä toisille kielille, kirjoittamalla ohjeita ja "
+#~ "tarkkailemalla laatua."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Tiedoston ”%s” luku epäonnistui: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Tiedoston ”%s” kelaus epäonnistui: %s"
+
+#~ msgid "No name"
+#~ msgstr "Ei nimeä"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Tiedosto ”%s” ei ole tavallinen tiedosto tai kansio."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Tiedostoa ”%s” ei löytynyt"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Ei tiedostonimeä, johon tallentaa"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s käynnistyy"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Ei käynnistettävää URL:ia"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Ei käynnistettävää kohdetta"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Ei käynnistettävää komentoa (exec)"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Virheellinen käynnistettävä komento (exec)"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Tuntematon merkistö: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "sopivaa näyttöasetusten määrittelyä ei löytynyt"
+
+#~ msgid "Directory"
+#~ msgstr "Kansio"
+
+#~ msgid "Application"
+#~ msgstr "Sovellus"
+
+#~ msgid "Link"
+#~ msgstr "Linkki"
+
+#~ msgid "FSDevice"
+#~ msgstr "Levyjärjestelmä"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME-tyyppi"
+
+#~ msgid "Service"
+#~ msgstr "Palvelu"
+
+#~ msgid "ServiceType"
+#~ msgstr "Palvelutyyppi"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "_Komento:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Nimi:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Yleinen nimi:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "Ko_mmentti:"
+
+#~ msgid "Browse"
+#~ msgstr "Selaa"
+
+#~ msgid "_Type:"
+#~ msgstr "_Tyyppi:"
+
+#~ msgid "_Icon:"
+#~ msgstr "Ku_vake:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Selaa kuvakkeita"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "Suorita _päätteessä"
+
+#~ msgid "Language"
+#~ msgstr "Kieli"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Generic name"
+#~ msgstr "Yleinen nimi"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentti"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "_Yritä tätä ennen käyttöä:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "O_hjeet:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Nimen ja kommentin käännökset:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "_Lisää tai aseta"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Lisää tai aseta nimen tai kommentin käännökset"
+
+#~ msgid "Re_move"
+#~ msgstr "Po_ista"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Poista nimen tai kommentin käännökset"
+
+#~ msgid "Basic"
+#~ msgstr "Perusasetukset"
+
+#~ msgid "Advanced"
+#~ msgstr "Lisäasetukset"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Näytä vihjeet käynnistyksen yhteydessä"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "Kansiota, jossa otsakekuvat ovat, ei löytynyt."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "Otsakekuvat sisältävän kansion avaaminen ei onnistunut: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Otsakekuvan lataaminen ei onnistunut: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "Gnomen logoa ei löytynyt."
+
+#~ msgid "Software"
+#~ msgstr "Ohjelmistot"
+
+#~ msgid "Developers"
+#~ msgstr "Kehittäjät"
+
+#~ msgid "The End!"
+#~ msgstr "Loppu!"

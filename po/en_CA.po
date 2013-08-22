@@ -1,0 +1,382 @@
+# Canadian English translation of gnome-desktop
+# Copyright (C) 2004 Adam Weinberger and the GNOME Foundation
+# This file is distributed under the same licence as the gnome-desktop package.
+# Alexander Winston <alexander.winston@comcast.net>, 2004.
+# Adam Weinberger <adamw@gnome.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop 2.5.91\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-15 15:18-0400\n"
+"PO-Revision-Date: 2005-07-23 09:42-0400\n"
+"Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
+"Language-Team: Canadian English <adamw@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gnome-about/contributors.c:54
+msgid "The Mysterious GEGL"
+msgstr "The Mysterious GEGL"
+
+#: ../gnome-about/contributors.c:55
+msgid "The Squeaky Rubber GNOME"
+msgstr "The Squeaky Rubber GNOME"
+
+#: ../gnome-about/contributors.c:56
+msgid "Wanda The GNOME Fish"
+msgstr "Wanda The GNOME Fish"
+
+#: ../gnome-about/gnome-about.c:419
+msgid "Could not locate the directory with header images."
+msgstr "Could not locate the directory with header images."
+
+#: ../gnome-about/gnome-about.c:428
+#, c-format
+msgid "Failed to open directory with header images: %s"
+msgstr "Failed to open directory with header images: %s"
+
+#: ../gnome-about/gnome-about.c:461
+#, c-format
+msgid "Unable to load header image: %s"
+msgstr "Unable to load header image: %s"
+
+#: ../gnome-about/gnome-about.c:486
+msgid "Could not locate the GNOME logo."
+msgstr "Could not locate the GNOME logo."
+
+#: ../gnome-about/gnome-about.c:495
+#, c-format
+msgid "Unable to load '%s': %s"
+msgstr "Unable to load '%s': %s"
+
+#: ../gnome-about/gnome-about.c:548
+#, c-format
+msgid "Could not open the address \"%s\": %s"
+msgstr "Could not open the address \"%s\": %s"
+
+#: ../gnome-about/gnome-about.c:867 ../gnome-about/gnome-about.c:897
+#, c-format
+msgid "Could not get information about GNOME version."
+msgstr "Could not get information about GNOME version."
+
+#: ../gnome-about/gnome-about.c:871 ../gnome-about/gnome-about.c:872
+#: ../gnome-about/gnome-about.c:873
+#, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#: ../gnome-about/gnome-about.c:871 ../gnome-about/gnome-about.c:911
+msgid "Version"
+msgstr "Version"
+
+#: ../gnome-about/gnome-about.c:872 ../gnome-about/gnome-about.c:930
+msgid "Distributor"
+msgstr "Distributor"
+
+#: ../gnome-about/gnome-about.c:873 ../gnome-about/gnome-about.c:949
+msgid "Build Date"
+msgstr "Build Date"
+
+#: ../gnome-about/gnome-about.c:904
+#, c-format
+msgid "%s: "
+msgstr "%s: "
+
+#: ../gnome-about/gnome-about.c:1032
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+msgid "About GNOME"
+msgstr "About GNOME"
+
+#: ../gnome-about/gnome-about.c:1046
+msgid "News"
+msgstr "News"
+
+#: ../gnome-about/gnome-about.c:1056
+msgid "Software"
+msgstr "Software"
+
+#: ../gnome-about/gnome-about.c:1062
+msgid "Developers"
+msgstr "Developers"
+
+#: ../gnome-about/gnome-about.c:1068
+msgid "Friends of GNOME"
+msgstr "Friends of GNOME"
+
+#: ../gnome-about/gnome-about.c:1074
+msgid "Contact"
+msgstr "Contact"
+
+#: ../gnome-about/gnome-about.c:1111
+msgid "Welcome to the GNOME Desktop"
+msgstr "Welcome to the GNOME Desktop"
+
+#: ../gnome-about/gnome-about.c:1128
+msgid "Brought to you by:"
+msgstr "Brought to you by:"
+
+#: ../gnome-about/gnome-about.c:1176
+msgid "About the GNOME Desktop"
+msgstr "About the GNOME Desktop"
+
+#: ../gnome-about/gnome-about.c:1216
+msgid "Display information on this GNOME version"
+msgstr "Display information about this GNOME version"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Learn more about GNOME"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME also includes a complete development platform for application "
+"programmers, allowing the creation of powerful and complex applications."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"GNOME's greatest strength is its strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:210
+#: ../libgnome-desktop/gnome-desktop-item.c:598
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Error reading file '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:278
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Error rewinding file '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:377
+#: ../libgnome-desktop/gnome-desktop-item.c:3748
+msgid "No name"
+msgstr "No name"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:613
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "File '%s' is not a regular file or directory."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:789
+#, c-format
+msgid "Error cannot find file id '%s'"
+msgstr "Error cannot find file ID '%s'"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:835
+#, c-format
+msgid "No filename to save to"
+msgstr "No filename to save to"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1828
+#, c-format
+msgid "Starting %s"
+msgstr "Starting %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2066
+#, c-format
+msgid "No URL to launch"
+msgstr "No URL to launch"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2080
+#, c-format
+msgid "Not a launchable item"
+msgstr "Not a launchable item"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2090
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "No command (Exec) to launch"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2103
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Bad command (Exec) to launch"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3805
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Unknown encoding of: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:4036
+#, c-format
+msgid "Error writing file '%s': %s"
+msgstr "Error writing file '%s': %s"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:210
+#: ../libgnome-desktop/gnome-ditem-edit.c:218
+msgid "Directory"
+msgstr "Directory"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:214
+msgid "Application"
+msgstr "Application"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:221
+msgid "Link"
+msgstr "Link"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:223
+msgid "FSDevice"
+msgstr "FSDevice"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:225
+msgid "MIME Type"
+msgstr "MIME Type"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:227
+msgid "Service"
+msgstr "Service"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:229
+msgid "ServiceType"
+msgstr "ServiceType"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:315
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:318
+#: ../libgnome-desktop/gnome-ditem-edit.c:385
+msgid "Comm_and:"
+msgstr "Comm_and:"
+
+#. Name
+#: ../libgnome-desktop/gnome-ditem-edit.c:339
+msgid "_Name:"
+msgstr "_Name:"
+
+#. Generic Name
+#: ../libgnome-desktop/gnome-ditem-edit.c:356
+msgid "_Generic name:"
+msgstr "_Generic name:"
+
+#. Comment
+#: ../libgnome-desktop/gnome-ditem-edit.c:373
+msgid "Co_mment:"
+msgstr "Co_mment:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:389
+msgid "Browse"
+msgstr "Browse"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:400
+msgid "_Type:"
+msgstr "_Type:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:417
+msgid "_Icon:"
+msgstr "_Icon:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:427
+msgid "Browse icons"
+msgstr "Browse icons"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:441
+msgid "Run in t_erminal"
+msgstr "Run in t_erminal"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:658
+#: ../libgnome-desktop/gnome-ditem-edit.c:758
+msgid "Language"
+msgstr "Language"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:663
+#: ../libgnome-desktop/gnome-ditem-edit.c:764
+msgid "Name"
+msgstr "Name"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:668
+#: ../libgnome-desktop/gnome-ditem-edit.c:770
+msgid "Generic name"
+msgstr "Generic name"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:673
+#: ../libgnome-desktop/gnome-ditem-edit.c:778
+msgid "Comment"
+msgstr "Comment"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:711
+msgid "_Try this before using:"
+msgstr "_Try this before using:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:722
+msgid "_Documentation:"
+msgstr "_Documentation:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:733
+msgid "_Name/Comment translations:"
+msgstr "_Name/Comment translations:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:780
+msgid "_Add/Set"
+msgstr "_Add/Set"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:785
+msgid "Add or Set Name/Comment Translations"
+msgstr "Add or Set Name/Comment Translations"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:787
+msgid "Re_move"
+msgstr "Re_move"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:792
+msgid "Remove Name/Comment Translation"
+msgstr "Remove Name/Comment Translation"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:808
+msgid "Basic"
+msgstr "Basic"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:816
+msgid "Advanced"
+msgstr "Advanced"
+
+#: ../libgnome-desktop/gnome-hint.c:201
+msgid "_Show Hints at Startup"
+msgstr "_Show Hints at Startup"

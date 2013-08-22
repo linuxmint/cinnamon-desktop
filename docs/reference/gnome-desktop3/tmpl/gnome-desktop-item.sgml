@@ -1,0 +1,733 @@
+<!-- ##### SECTION Title ##### -->
+GnomeDesktopItem
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM GnomeDesktopItemType ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_TYPE_NULL: 
+@GNOME_DESKTOP_ITEM_TYPE_OTHER: 
+@GNOME_DESKTOP_ITEM_TYPE_APPLICATION: 
+@GNOME_DESKTOP_ITEM_TYPE_LINK: 
+@GNOME_DESKTOP_ITEM_TYPE_FSDEVICE: 
+@GNOME_DESKTOP_ITEM_TYPE_MIME_TYPE: 
+@GNOME_DESKTOP_ITEM_TYPE_DIRECTORY: 
+@GNOME_DESKTOP_ITEM_TYPE_SERVICE: 
+@GNOME_DESKTOP_ITEM_TYPE_SERVICE_TYPE: 
+
+<!-- ##### ENUM GnomeDesktopItemStatus ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_UNCHANGED: 
+@GNOME_DESKTOP_ITEM_CHANGED: 
+@GNOME_DESKTOP_ITEM_DISAPPEARED: 
+
+<!-- ##### STRUCT GnomeDesktopItem ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_ENCODING ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_NAME ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_GENERIC_NAME ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_FILE_PATTERN ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_TRY_EXEC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_NO_DISPLAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_COMMENT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_EXEC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_ACTIONS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_ICON ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_MINI_ICON ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_HIDDEN ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_PATH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_TERMINAL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_TERMINAL_OPTIONS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_SWALLOW_TITLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_SWALLOW_EXEC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_MIME_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_PATTERNS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_DEFAULT_APP ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_DEV ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_FS_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_MOUNT_POINT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_READ_ONLY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_UNMOUNT_ICON ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_SORT_ORDER ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_URL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_DOC_PATH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_CATEGORIES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_ONLY_SHOW_IN ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM GnomeDesktopItemLoadFlags ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_LOAD_ONLY_IF_EXISTS: 
+@GNOME_DESKTOP_ITEM_LOAD_NO_TRANSLATIONS: 
+
+<!-- ##### ENUM GnomeDesktopItemLaunchFlags ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_LAUNCH_ONLY_ONE: 
+@GNOME_DESKTOP_ITEM_LAUNCH_USE_CURRENT_DIR: 
+@GNOME_DESKTOP_ITEM_LAUNCH_APPEND_URIS: 
+@GNOME_DESKTOP_ITEM_LAUNCH_APPEND_PATHS: 
+@GNOME_DESKTOP_ITEM_LAUNCH_DO_NOT_REAP_CHILD: 
+
+<!-- ##### ENUM GnomeDesktopItemIconFlags ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_ICON_NO_KDE: 
+
+<!-- ##### ENUM GnomeDesktopItemError ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_ITEM_ERROR_NO_FILENAME: 
+@GNOME_DESKTOP_ITEM_ERROR_UNKNOWN_ENCODING: 
+@GNOME_DESKTOP_ITEM_ERROR_CANNOT_OPEN: 
+@GNOME_DESKTOP_ITEM_ERROR_NO_EXEC_STRING: 
+@GNOME_DESKTOP_ITEM_ERROR_BAD_EXEC_STRING: 
+@GNOME_DESKTOP_ITEM_ERROR_NO_URL: 
+@GNOME_DESKTOP_ITEM_ERROR_NOT_LAUNCHABLE: 
+@GNOME_DESKTOP_ITEM_ERROR_INVALID_TYPE: 
+
+<!-- ##### MACRO GNOME_DESKTOP_ITEM_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION gnome_desktop_item_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_new_from_file ##### -->
+<para>
+
+</para>
+
+@file: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_new_from_uri ##### -->
+<para>
+
+</para>
+
+@uri: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_new_from_string ##### -->
+<para>
+
+</para>
+
+@uri: 
+@string: 
+@length: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_new_from_basename ##### -->
+<para>
+
+</para>
+
+@basename: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_copy ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_save ##### -->
+<para>
+
+</para>
+
+@item: 
+@under: 
+@force: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_ref ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_unref ##### -->
+<para>
+
+</para>
+
+@item: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_launch ##### -->
+<para>
+
+</para>
+
+@item: 
+@file_list: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_launch_with_env ##### -->
+<para>
+
+</para>
+
+@item: 
+@file_list: 
+@flags: 
+@envp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_launch_on_screen ##### -->
+<para>
+
+</para>
+
+@item: 
+@file_list: 
+@flags: 
+@screen: 
+@workspace: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_drop_uri_list ##### -->
+<para>
+
+</para>
+
+@item: 
+@uri_list: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_drop_uri_list_with_env ##### -->
+<para>
+
+</para>
+
+@item: 
+@uri_list: 
+@flags: 
+@envp: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_exists ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_entry_type ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_entry_type ##### -->
+<para>
+
+</para>
+
+@item: 
+@type: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_location ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_location ##### -->
+<para>
+
+</para>
+
+@item: 
+@location: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_location_file ##### -->
+<para>
+
+</para>
+
+@item: 
+@file: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_file_status ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_icon ##### -->
+<para>
+
+</para>
+
+@item: 
+@icon_theme: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_find_icon ##### -->
+<para>
+
+</para>
+
+@icon_theme: 
+@icon: 
+@desired_size: 
+@flags: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_attr_exists ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_string ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_string ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@value: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_attr_locale ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_localestring ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_localestring_lang ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@language: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_languages ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_localestring ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@value: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_localestring_lang ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@language: 
+@value: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_clear_localestring ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_strings ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_strings ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@strings: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_get_boolean ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_boolean ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+@value: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_set_launch_time ##### -->
+<para>
+
+</para>
+
+@item: 
+@timestamp: 
+
+
+<!-- ##### MACRO gnome_desktop_item_clear_attr ##### -->
+<para>
+
+</para>
+
+@item: 
+@attr: 
+
+
+<!-- ##### FUNCTION gnome_desktop_item_clear_section ##### -->
+<para>
+
+</para>
+
+@item: 
+@section: 
+
+

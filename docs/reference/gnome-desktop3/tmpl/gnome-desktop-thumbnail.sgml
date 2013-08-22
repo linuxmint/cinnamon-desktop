@@ -1,0 +1,177 @@
+<!-- ##### SECTION Title ##### -->
+GnomeDesktopThumbnailFactory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM GnomeDesktopThumbnailSize ##### -->
+<para>
+
+</para>
+
+@GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL: 
+@GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE: 
+
+<!-- ##### STRUCT GnomeDesktopThumbnailFactory ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GnomeDesktopThumbnailFactoryClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_new ##### -->
+<para>
+
+</para>
+
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_lookup ##### -->
+<para>
+
+</para>
+
+@factory: 
+@uri: 
+@mtime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_has_valid_failed_thumbnail ##### -->
+<para>
+
+</para>
+
+@factory: 
+@uri: 
+@mtime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_can_thumbnail ##### -->
+<para>
+
+</para>
+
+@factory: 
+@uri: 
+@mime_type: 
+@mtime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_generate_thumbnail ##### -->
+<para>
+
+</para>
+
+@factory: 
+@uri: 
+@mime_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_save_thumbnail ##### -->
+<para>
+
+</para>
+
+@factory: 
+@thumbnail: 
+@uri: 
+@original_mtime: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_factory_create_failed_thumbnail ##### -->
+<para>
+
+</para>
+
+@factory: 
+@uri: 
+@mtime: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_has_uri ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_is_valid ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@uri: 
+@mtime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_md5 ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_path_for_uri ##### -->
+<para>
+
+</para>
+
+@uri: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_desktop_thumbnail_scale_down_pixbuf ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### STRUCT GnomeDesktopThumbnailFactoryPrivate ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,366 @@
+# Esperanto translation of gnome-desktop.
+# Copyright (C) 1998-2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Joël BRICH <joel.brich@laposte.net>, 2003.
+# Guillaume SAVATON <llumeao@tuxfamily.org>, 2006.
+# Michael MORONI < >, 2011.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop 2.3.6.1\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-05-11 22:39+0000\n"
+"PO-Revision-Date: 2011-05-14 21:28+0200\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-14 18:48+0000\n"
+"X-Generator: Launchpad (build 13037)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Nekonate"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Ne eblis trovi terminalon uzante xterm-on,  eĉ se ĝi ne funkcius"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:483
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ne eblis trovi la ekranajn rimedojn (CRTC-oj, eligaĵoj, reĝimoj)"
+
+#: ../libgnome-desktop/gnome-rr.c:503
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "netraktata X-eraro okazis, serĉante la aron de ekranaj grandoj"
+
+#: ../libgnome-desktop/gnome-rr.c:509
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ne eblis trovi la aron de ekranaj grandoj"
+
+#: ../libgnome-desktop/gnome-rr.c:730
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR-kromaĵo mankas"
+
+#: ../libgnome-desktop/gnome-rr.c:1284
+#, c-format
+msgid "could not get information about output %d"
+msgstr "ne eblis trovi informon pri la eligaĵo \"%d\""
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1725
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"petita pozicio/grando por CRTC \"%d\" estas ekster la permesita limo: "
+"pozicio=(%d, %d), grando=(%d, %d), maksimumo=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1761
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "ne eblis agordi la agordaron de la CRTC \"%d\""
+
+#: ../libgnome-desktop/gnome-rr.c:1910
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "ne eblis trovi informon pri la CRTC \"%d\""
+
+#: ../libgnome-desktop/gnome-rr-config.c:553
+msgid "Laptop"
+msgstr "Tekkomputilo"
+
+#: ../libgnome-desktop/gnome-rr-config.c:708
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"neniu el la konservitaj vidigaj agordaroj kongruas al la aktuala agordaro"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1493
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC \"%d\" ne subtenas la eligon \"%s\""
+
+#: ../libgnome-desktop/gnome-rr-config.c:1500
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "eligo %s ne subtenas la reĝimon %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1511
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC \"%d\" ne subtenas rotacion=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1525
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"eligo %s ne havas la samajn parametrojn kiel alia klonita eligo:\n"
+"ekztistanta reĝimo = %d, nova reĝimo = %d\n"
+"ekztistantaj koordinatoj = (%d, %d), novaj koordinatoj = (%d, %d)\n"
+"ekztistanta rotacio = %s, nova rotacio = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1540
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "ne eblas kloni al eligo %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Provreĝimo por CRTC \"%d\"\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1733
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC \"%d\": provreĝimo \"%dx%d@%dHz\" kun eligo ĉe \"%dx%d@%dHz\" (paso "
+"%d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1780
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ne eblis atribui CRTC-ojn al eligoj:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1784
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"neniu reĝimo de la elektitaj reĝimoj estas kongrua al la eblaj reĝimoj:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1866
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"bezonata virtuala grando ne kongruas al havebla grando: petita=(%d, %d), "
+"minimumo=(%d, %d), maksimumo=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:411
+msgid "Mirror Screens"
+msgstr "Spegulaj ekranoj"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:164
+msgid "%a %b %e, %R:%S"
+msgstr "%a, %e. %b, %R:%S"
+
+#: ../js/ui/dateMenu.js:165
+msgid "%a %b %e, %R"
+msgstr "%a, %e. %b, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:169
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../js/ui/dateMenu.js:170
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:177
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a, %e. %b, %l:%M:%S"
+
+#: ../js/ui/dateMenu.js:178
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a, %e. %b, %l:%M"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:182
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S"
+
+#: ../js/ui/dateMenu.js:183
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M"
+
+#~ msgid "About GNOME"
+#~ msgstr "Pri GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Eksciu pli pri GNOME"
+
+#~ msgid "News"
+#~ msgstr "Novaĵoj"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Biblioteko de GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Amikoj de GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Kontakto"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "La mistera GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "La knaranta kaŭĉuka GNOMO"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda la GNOME-fiŝo"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Malfermi URL-on"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Kopii URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Pri la GNOME Labortablo"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Bonvenon al la labortablo de GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Donite al vi de:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Versio"
+
+#~ msgid "Distributor"
+#~ msgstr "Distribuanto"
+
+#~ msgid "Build Date"
+#~ msgstr "Dato de kompilado"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Vidigi informojn pri ĉi tiu versio de GNOME"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME enhavas ankaŭ kompletan program-platformon por programistoj de "
+#~ "aplikaĵoj. Tiu platformo ebligas krei potencajn kaj kompleksajn "
+#~ "aplikaĵojn."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME enhavas plejmulton de tio, kion vi vidas en via komputilo: la "
+#~ "dosieradministrilo, TTT-retumilo, menuoj, kaj multaj aplikaĵoj."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME estas libera, uzebla, stabila, alirebla labortabla medio por la "
+#~ "Uniksa familio de mastrumaj sistemoj."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "GNOME atentas pri uzebleco kaj alirebleco, regulaj novaj versioj, kaj "
+#~ "forta korporacia subteno. Tio faras ĝin unika en la liberaj komputilaj "
+#~ "labortabloj."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "La plej granda potenco de GNOME estas nia forta komunumo. Iu ajn, kun aŭ "
+#~ "sen kapablo programi, povas helpi por fari GNOME pli bona."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Centoj da homoj kontribuis per kodo al GNOME ekde ties komenco en 1997; "
+#~ "multaj aliaj kontribuis per aliaj gravaj manieroj kiel tradukoj, "
+#~ "dokumentaro, kaj kvalitkontrolo."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Eraro legante dosieron '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Eraro revolvante dosieron '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "Sen nomo"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Dosiero '%s' ne estas normala dosiero aŭ dosierujo."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Ne eblis trovi dosieron '%s'"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Neniu dosiernomo por konservi"
+
+#~ msgid "Starting %s"
+#~ msgstr "Lanĉante je %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Neniu URLo por lanĉi"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Ero ne lanĉebla"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Neniu komando (Exec) por lanĉi"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Malbona komando (Exec) por lanĉi"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Nekonata kodo de : %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "ne povis trovi taŭgan agordaron de ekranoj"

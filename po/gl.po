@@ -1,0 +1,393 @@
+# translation of gnome-desktop-master-po-gl-54183.merged.po to Galician
+# Galician translation of gnome-desktop.
+# Copyright (C) 1999-2004 Jesús Bravo Álvarez
+# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
+# colaborar connosco, podes atopar máis información en http://www.trasno.net
+# Jesús Bravo Álvarez <suso@trasno.net>, 1999-2004.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Ignacio Casal Quinteiro <icq@cvs.gnome.org>, 2007.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Antón Méixome <meixome@mancomun.org>, 2009.
+# Antón Méixome <meixome@certima.net>, 2010.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010, 2011.
+# Fran Dieguez <frandieguez@gnome.org>, 2012.
+# Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop-master-po-gl-54183.merged\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-04 22:38+0200\n"
+"PO-Revision-Date: 2012-09-04 22:39+0200\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Project-Style: gnome\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Descoñecido"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Non é posíbel atopar un terminal, usando xterm, aínda que non funcione"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "non foi posíbel obter os recursos da pantalla (CRTC, saídas, modos)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
+"produciuse un erro de X non manipulado ao obter o intervalo de tamaños de "
+"pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "non foi posíbel obter o intervalo de tamaños de pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "A extensión RANDR non está presente"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "non foi posíbel obter información sobre a saída %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"a posición ou tamaño solicitados ao CRTC %d está fóra do límite permitido: "
+"posición=(%d, %d), tamaño=(%d, %d), máximo=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "non foi posíbel definir a configuración do CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "non foi posíbel obter información sobre o CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Portátil"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"ningunha das configuracións de pantalla gardadas coincide coa configuración "
+"activa"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "o CRTC %d non pode conducir a saída %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "a saída %s non admite o modo %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CRTC %d non é admite rotation=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"a saída %s non ten os mesmos parámetros que a outra saída clonada:\n"
+"modo existente = %d, new mode = %d\n"
+"coordenadas existentes = (%d, %d), novas coordenadas = (%d, %d)\n"
+"rotación existente = %s, nova rotación = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "non é posíbel clonar a saída %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Tentando os modos para CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+"CRTC %d: tentando o modo %dx%d@%dHz coa saída en %dx%d@%dHz (paso %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"non foi posíbel asignar os CRTC a saídas:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"ningún dos modos seleccionados era compatíbel cos modos posíbeis:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"o tamaño virtual solicitado non se axusta ao tamaño dispoñíbel: solicitado="
+"(%d, %d), mínimo=(%d, %d), máximo=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "Espellar pantallas"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %e de %b, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %e de %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %e de %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %e de %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Pantallas de réplica"
+
+#~ msgid "About GNOME"
+#~ msgstr "Sobre GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Aprenda máis sobre GNOME"
+
+#~ msgid "News"
+#~ msgstr "Noticias"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Biblioteca de GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Amigos de GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Contacto"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "O misterioso GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "O gnomo de goma que chía"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda, o peixe de GNOME"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Abrir URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Copiar URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Sobre o escritorio GNOME"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Benvido/a ao escritorio GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Feito para vostede por:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Versión"
+
+#~ msgid "Distributor"
+#~ msgstr "Distribuidor"
+
+#~ msgid "Build Date"
+#~ msgstr "Data de compilación"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Mostrar información sobre esta versión de GNOME"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME inclúe tamén unha completa plataforma de desenvolvemento para os "
+#~ "programadores. Así, permítelle crear aplicativos potentes e complexos."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME inclúe a maior parte do que verá no seu computador, como o xestor "
+#~ "de ficheiros, o navegador web, os menús e moitos aplicativos."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME é un contorno de escritorio libre, usábel, estábel e accesíbel para "
+#~ "a familia de sistemas operativos do estilo Unix."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "O enfoque de GNOME na usabilidade e accesibilidade, o ciclo regular de "
+#~ "publicación de versións e un forte apoio empresarial fai que sexa único "
+#~ "entre os escritorios de software libre."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "A maior fortaleza do GNOME é a nosa grande comunidade. Virtualmente "
+#~ "calquera persoa, con ou sen habilidades para programar, pode contribuír á "
+#~ "mellora do GNOME."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Centos de persoas levan contribuído con código ao GNOME desde que se "
+#~ "iniciou en 1997; moitos máis contribuíron doutras maneiras importantes, "
+#~ "que inclúen traducións, documentación e a comprobación de calidade."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Produciuse un erro ao ler o ficheiro «%s»: %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Produciuse un erro ao rebobinar o ficheiro «%s»: %s"
+
+#~ msgid "No name"
+#~ msgstr "Sen nome"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "O ficheiro «%s» non é un ficheiro ou cartafol regular."
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Non é posíbel encontrar o ficheiro «%s»"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Non hai ningún nome de ficheiro para gardar en"
+
+#~ msgid "Starting %s"
+#~ msgstr "Iniciando %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Ningún URL para iniciar"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Non é un elemento executábel"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Non hai ningunha orde (exec) para iniciar"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "É incorrecta a orde (exec) para iniciar"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "A codificación de %s é descoñecida"

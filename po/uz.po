@@ -1,0 +1,380 @@
+# translation of gnome-desktop to uzbek
+# Copyright (C) 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Nurali Abdurahmonov <nurali@paradox-neo.uz>, 2007.
+# Nurali Abdurahmonov <mavnur@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-06-27 21:15+0200\n"
+"PO-Revision-Date: 2008-03-06 11:02+0500\n"
+"Last-Translator: Nurali Abdurahmonov <mavnur@gmail.com>\n"
+"Language-Team: uzbek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../gnome-about/contributors.h:166
+msgid "The Mysterious GEGL"
+msgstr "Sirli GEGL"
+
+#: ../gnome-about/contributors.h:468
+msgid "The Squeaky Rubber GNOME"
+msgstr "Chiyilloq rezina GNOME"
+
+#: ../gnome-about/contributors.h:527
+msgid "Wanda The GNOME Fish"
+msgstr "Vanda -- GNOME baligʻi"
+
+#: ../gnome-about/gnome-about.c:429
+msgid "Could not locate the directory with header images."
+msgstr "Sarlavha rasmlari direktoriyasini joylashtirib boʻlmadi."
+
+#: ../gnome-about/gnome-about.c:438
+#, c-format
+msgid "Failed to open directory with header images: %s"
+msgstr "Sarlavha rasmlari direktoriyasini ochib boʻlmadi: %s"
+
+#: ../gnome-about/gnome-about.c:471
+#, c-format
+msgid "Unable to load header image: %s"
+msgstr "Sarlavha rasmini yuklab boʻlmadi: %s"
+
+#: ../gnome-about/gnome-about.c:496
+msgid "Could not locate the GNOME logo."
+msgstr "GNOME logosini joylashtirib boʻlmadi."
+
+#: ../gnome-about/gnome-about.c:505
+#, c-format
+msgid "Unable to load '%s': %s"
+msgstr "'%s' yuklanmadi: %s"
+
+#: ../gnome-about/gnome-about.c:558
+#, c-format
+msgid "Could not open the address \"%s\": %s"
+msgstr "\"%s\" manzilini ochib boʻlmadi: %s"
+
+#: ../gnome-about/gnome-about.c:877 ../gnome-about/gnome-about.c:907
+msgid "Could not get information about GNOME version."
+msgstr "GNOME versiyasi haqidagi maʼlumotni olib boʻlmadi."
+
+#: ../gnome-about/gnome-about.c:881 ../gnome-about/gnome-about.c:882
+#: ../gnome-about/gnome-about.c:883
+#, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#: ../gnome-about/gnome-about.c:881 ../gnome-about/gnome-about.c:921
+msgid "Version"
+msgstr "Versiyasi"
+
+#: ../gnome-about/gnome-about.c:882 ../gnome-about/gnome-about.c:940
+msgid "Distributor"
+msgstr "Tarqatuvchi"
+
+#: ../gnome-about/gnome-about.c:883 ../gnome-about/gnome-about.c:959
+msgid "Build Date"
+msgstr "Yaratilgan sanasi"
+
+#: ../gnome-about/gnome-about.c:914
+#, c-format
+msgid "%s: "
+msgstr "%s: "
+
+#: ../gnome-about/gnome-about.c:1042
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+msgid "About GNOME"
+msgstr "GNOME haqida"
+
+#: ../gnome-about/gnome-about.c:1056
+msgid "News"
+msgstr "Yangiliklar"
+
+#: ../gnome-about/gnome-about.c:1066
+msgid "Software"
+msgstr "Dastur"
+
+#: ../gnome-about/gnome-about.c:1072
+msgid "Developers"
+msgstr "Tuzuvchilar"
+
+#: ../gnome-about/gnome-about.c:1078
+msgid "Friends of GNOME"
+msgstr "GNOME doʻstlari"
+
+#: ../gnome-about/gnome-about.c:1084
+msgid "Contact"
+msgstr "Aloqa"
+
+#: ../gnome-about/gnome-about.c:1121
+msgid "Welcome to the GNOME Desktop"
+msgstr "GNOME ish stoliga xush kelibsiz"
+
+#: ../gnome-about/gnome-about.c:1138
+msgid "Brought to you by:"
+msgstr "GNOME ish stolini Siz uchun tuzganlar:"
+
+#: ../gnome-about/gnome-about.c:1186
+msgid "About the GNOME Desktop"
+msgstr "GNOME ish stoli haqida"
+
+#: ../gnome-about/gnome-about.c:1256
+msgid "Display information on this GNOME version"
+msgstr "Ushbu GNOME versiyasi maʼlumotini koʻrsatish"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "GNOME haqida koʻproq bilish"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"Bundan tashqari GNOME'da dasturchilar uchun yetarlicha dasturlash vositalari "
+"mavjud."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME'da kompyuteringiz uchun kerak boʻlgan fayl boshqaruvchisi, veb brauzer, "
+"menyular va koʻplab boshqa dasturlar mavjud."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME UNIX oilasidagi operatsion tizimlar uchun erkin, moʻʼtadil, qulay ish "
+"stoli muhitidir."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"GNOME asosiy eʼtiborni qulayliklarga (shu bilan birga imkoniyati cheklangan "
+"insonlar uchun) qaratgani va kuchli korporativ koʻmak tizimiga egaligi bilan "
+"boshqa ish stollaridan ajralib turadi."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"GNOME'ning eng kuchi bizning mustahkam jamoamizdadir. Har kim, xoh "
+"dasturlashni bilsin, xoh bilmasin, GNOME muhitini rivojlantirish oʻz hissasini "
+"qoʻsha oladi."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"1997 yil GNOME loyihasi boshlangandan beri, yuzlab insonlar uning asl kodiga "
+"oʻz hissalarini qoʻshdilar, ammo bundan ham koʻp insonlar tarjimalar, "
+"qoʻllanmalar va sifatni oshirish boʻyicha oʻz hissalarini qoʻshdilar."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:210
+#: ../libgnome-desktop/gnome-desktop-item.c:598
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "\"%s\" faylini oʻqish xatosi: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:278
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-desktop-item.c:377
+#: ../libgnome-desktop/gnome-desktop-item.c:3748
+msgid "No name"
+msgstr "Nomsiz"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:613
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "'%s' fayl yoki direktoriya emas."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:789
+#, c-format
+msgid "Error cannot find file id '%s'"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-desktop-item.c:835
+msgid "No filename to save to"
+msgstr "Saqlash uchun fayl nomi koʻrsatilmagan"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1828
+#, c-format
+msgid "Starting %s"
+msgstr "%s ishga tushirilmoqda"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2066
+msgid "No URL to launch"
+msgstr "ishga tushirish uchun URL koʻrsatilmagan"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2080
+msgid "Not a launchable item"
+msgstr "Element ishga tushiriladigan emas"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2090
+msgid "No command (Exec) to launch"
+msgstr "Ishga tushirish uchun buyruq (Exec) yoʻq"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2103
+msgid "Bad command (Exec) to launch"
+msgstr "Ishga tushirish uchun xato buyruq (Exec)"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3805
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Nomaʼlum kodlash usuli: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:4036
+#, c-format
+msgid "Error writing file '%s': %s"
+msgstr "\"%s\" fayliga yozishdagi xato: %s"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:210
+#: ../libgnome-desktop/gnome-ditem-edit.c:218
+msgid "Directory"
+msgstr "Direktoriya"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:214
+msgid "Application"
+msgstr "Dastur"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:221
+msgid "Link"
+msgstr "Bogʻlama"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:223
+msgid "FSDevice"
+msgstr "FSUskuna"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:225
+msgid "MIME Type"
+msgstr "MIME turi"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:227
+msgid "Service"
+msgstr "Xizmat"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:229
+msgid "ServiceType"
+msgstr "Xizmat turi"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:315
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:318
+#: ../libgnome-desktop/gnome-ditem-edit.c:385
+msgid "Comm_and:"
+msgstr "Buy_ruq:"
+
+#. Name
+#: ../libgnome-desktop/gnome-ditem-edit.c:339
+msgid "_Name:"
+msgstr "_Ismi:"
+
+#. Generic Name
+#: ../libgnome-desktop/gnome-ditem-edit.c:356
+msgid "_Generic name:"
+msgstr "_Umumiy nom:"
+
+#. Comment
+#: ../libgnome-desktop/gnome-ditem-edit.c:373
+msgid "Co_mment:"
+msgstr "I_zoh:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:389
+msgid "Browse"
+msgstr "Tanlash"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:400
+msgid "_Type:"
+msgstr "_Turi:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:417
+msgid "_Icon:"
+msgstr "_Nishoncha:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:427
+msgid "Browse icons"
+msgstr "Nishonchalarni tanlash"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:441
+msgid "Run in t_erminal"
+msgstr "T_yerminalda bajarish"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:658
+#: ../libgnome-desktop/gnome-ditem-edit.c:760
+msgid "Language"
+msgstr "Til"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:663
+#: ../libgnome-desktop/gnome-ditem-edit.c:769
+msgid "Name"
+msgstr "Ismi"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:668
+#: ../libgnome-desktop/gnome-ditem-edit.c:778
+msgid "Generic name"
+msgstr "Umumiy nom"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:673
+#: ../libgnome-desktop/gnome-ditem-edit.c:789
+msgid "Comment"
+msgstr "Izoh"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:712
+msgid "_Try this before using:"
+msgstr "_Qoʻllashdan avval quyidagidan foydalanish:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:723
+msgid "_Documentation:"
+msgstr "_Qoʻllanmalar:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:734
+msgid "_Name/Comment translations:"
+msgstr "_Nom/izoh tarjimalari:"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:793
+msgid "_Add/Set"
+msgstr "_Qoʻshish/Oʻrnatish"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:798
+msgid "Add or Set Name/Comment Translations"
+msgstr ""
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:803
+msgid "Re_move"
+msgstr "_Olib tashlash"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:808
+msgid "Remove Name/Comment Translation"
+msgstr "Nom/izoh tarjimalarini olib tashlash"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:827
+msgid "Basic"
+msgstr "Asosiy"
+
+#: ../libgnome-desktop/gnome-ditem-edit.c:835
+msgid "Advanced"
+msgstr "Qoʻshimcha"
+
+#: ../libgnome-desktop/gnome-hint.c:201
+msgid "_Show Hints at Startup"
+msgstr "Ishga tushayotganda maslahatlarni _koʻrsatish"
+

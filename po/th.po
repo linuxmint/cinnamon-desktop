@@ -1,0 +1,597 @@
+# Thai translation for gnome-desktop.
+# Copyright (C) 2004-2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-desktop package.
+# Paisa Seeluangsawat <paisa@users.sf.net>, 2003, 2004.
+# Theppitak Karoonboonyanan <thep@linux.thai.net> 2005-2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"PO-Revision-Date: 2012-09-07 15:21+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "ไม่พบเทอร์มินัล จะใช้ xterm แม้อาจไม่ได้ผล"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "ไม่สามารถอ่านค่าทรัพยากรของหน้าจอ (CRTC, เอาต์พุต, โหมด)"
+
+#: ../libgnome-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "เกิดข้อผิดพลาดของ X ที่ไม่ได้เตรียมรับมือไว้ขณะอ่านค่าช่วงของขนาดหน้าจอ"
+
+#: ../libgnome-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "ไม่สามารถอ่านค่าช่วงของขนาดหน้าจอ"
+
+#: ../libgnome-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "ไม่มีส่วนขยาย RANDR"
+
+#: ../libgnome-desktop/gnome-rr.c:1570
+#, c-format
+msgid "could not get information about output %d"
+msgstr "ไม่สามารถอ่านข้อมูลเกี่ยวกับเอาต์พุต %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:2163
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position="
+"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ตำแหน่ง/ขนาดสำหรับ CRTC %d ที่ร้องขอ มีค่าอยู่นอกขีดจำกัดที่กำหนด: ตำแหน่ง=(%d, %d), ขนาด="
+"(%d, %d), ค่าสูงสุด=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:2199
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "ไม่สามารถกำหนดค่าสำหรับ CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr.c:2344
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "ไม่สามารถอ่านข้อมูลเกี่ยวกับ CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "แล็ปท็อป"
+
+#: ../libgnome-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr "ไม่มีค่าตั้งดิสเพลย์ที่บันทึกไว้รายการใดที่ตรงกับค่าตั้งที่ใช้งานอยู่"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "CRTC %d ไม่สามารถสั่งการอุปกรณ์แสดงผล %s ได้"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "อุปกรณ์แสดงผล %s ไม่รองรับโหมด %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "CTRC %d ไม่รองรับมุมหมุน=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"อุปกรณ์แสดงผล %s มีพารามิเตอร์ไม่ตรงกับอุปกรณ์แสดงผลอีกอันที่ผลิตซ้ำออกไป:\n"
+"โหมดเดิม = %d, โหมดใหม่ = %d\n"
+"พิกัดเดิม = (%d, %d), พิกัดใหม่ = (%d, %d)\n"
+"มุมหมุนเดิม = %s, มุมหมุนใหม่ = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "ไม่สามารถผลิตซ้ำอุปกรณ์แสดงผล %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "กำลังลองโหมดต่างๆ สำหรับ CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr "CRTC %d: กำลังลองใช้โหมด %dx%d@%dHz โดยแสดงผลที่ %dx%d@%dHz (รอบที่ %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"ไม่สามารถกำหนด CRTC ให้กับอุปกรณ์แสดงผล:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"โหมดที่เลือกไว้นั้น ไม่มีโหมดใดเข้ากันได้กับโหมดที่เป็นไปได้:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"ขนาดเสมือนที่ต้องการไม่เข้ากับขนาดที่มี: ที่ร้องขอ=(%d, %d), ค่าต่ำสุด=(%d, %d), ค่าสูงสุด=(%d, "
+"%d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:381
+msgid "Mirrored Displays"
+msgstr "จอแสดงผลแสดงเหมือนกัน"
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:238
+msgid "%a %b %e, %R:%S"
+msgstr "%a %d %b, %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:239
+msgid "%a %b %e, %R"
+msgstr "%a %d %b, %R"
+
+#. Translators: This is the time format with day used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:243
+msgid "%a %R:%S"
+msgstr "%a %R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:244
+msgid "%a %R"
+msgstr "%a %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:248
+msgid "%R"
+msgstr "%R"
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:254
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %d %b, %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:255
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %d %b, %l:%M %p"
+
+#. Translators: This is a time format with day used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:259
+msgid "%a %l:%M:%S %p"
+msgstr "%a %l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:260
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libgnome-desktop/gnome-wall-clock.c:264
+msgid "%l:%M:%S %p"
+msgstr "%l:%M:%S %p"
+
+#: ../libgnome-desktop/gnome-wall-clock.c:265
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#~ msgid "About GNOME"
+#~ msgstr "เกี่ยวกับ GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "ข้อมูลเพิ่มเติมเกี่ยวกับ GNOME"
+
+#~ msgid "News"
+#~ msgstr "ข่าว"
+
+#~ msgid "GNOME Library"
+#~ msgstr "ห้องสมุด GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "เพื่อนของ GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "ติดต่อ"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "GEGL อันลึกลับ"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "GNOME ยางเอี๊ยดอ๊าด"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda ปลา GNOME"
+
+#~ msgid "_Open URL"
+#~ msgstr "เ_ปิด URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_คัดลอก URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "เกี่ยวกับเดสก์ท็อป GNOME"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "ยินดีต้อนรับสู่เดสก์ท็อป GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "นำเสนอสู่ท่านโดย:"
+
+#~ msgid "Version"
+#~ msgstr "รุ่น"
+
+#~ msgid "Distributor"
+#~ msgstr "ผู้จัดแจก"
+
+#~ msgid "Build Date"
+#~ msgstr "วันสร้าง"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "แสดงข้อมูลของรุ่น GNOME รุ่นนี้"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "นอกจากนี้ GNOME ยังมีระบบรองรับ ที่ช่วยให้นักเขียนโปรแกรม สามารถสร้างโปรแกรมที่ทรงพลัง "
+#~ "และมีความสามารถ"
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME ประกอบไปด้วย สิ่งที่คุณเห็นอยู่บนจอเกือบทั้งหมด เช่น ตัวจัดการแฟ้ม เว็บเบราว์เซอร์ เมนู "
+#~ "และ โปรแกรมอื่น ๆ อีกมากมาย"
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME เป็นระบบเดสก์ท็อปที่ให้เสรีภาพ สะดวกใช้ เสถียร "
+#~ "และมีสิ่งอำนวยความสะดวกผู้ใช้ประเภทต่างๆ สำหรับระบบปฏิบัติการตระกูลยูนิกซ์"
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "GNOME เน้นความง่ายในการใช้ คอยพัฒนารุ่นใหม่สม่ำเสมอ "
+#~ "และได้รับการอุปถัมภ์จากองค์กรธุรกิจอย่างต่อเนื่อง ทั้งหมดนี้ทำให้ GNOME "
+#~ "เป็นระบบเดสก์ท็อปที่ไม่เหมือนใครในหมู่เดสก์ท็อปที่เป็นซอฟต์แวร์เสรี"
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "จุดที่แข็งแกร่งที่สุดของ GNOME ก็คือชุมชนที่เข้มแข็ง ทุก ๆ คน ไม่ว่าจะเป็นใคร "
+#~ "ถนัดเขียนโปรแกรมหรือไม่ ก็สามารถร่วมกันพัฒนา GNOME ให้ดีขึ้นได้"
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "ผู้คนหลายร้อยได้ร่วมกันพัฒนาโปรแกรมสำหรับ GNOME นับแต่เริ่มโครงการเมื่อปี 2540 "
+#~ "และยังมีอีกมาก ที่ช่วยส่งเสริมในทางอื่น ๆ เช่น การแปล เขียนเอกสารคู่มือ และ ตรวจสอบคุณภาพ"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "หน้าจอแสดงเหมือนกัน"
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "เกิดข้อผิดพลาดขณะอ่านแฟ้ม '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "เกิดข้อผิดพลาดขณะกรอแฟ้ม '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "ไม่มีชื่อ"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "แฟ้ม '%s' ไม่ใช่แฟ้มหรือโฟลเดอร์ปรกติ"
+
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "หาแฟ้ม '%s' ไม่พบ"
+
+#~ msgid "No filename to save to"
+#~ msgstr "ไม่มีชื่อแฟ้มสำหรับใช้ในการบันทึก"
+
+#~ msgid "Starting %s"
+#~ msgstr "กำลังเริ่ม %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "ไม่มี URL จะเปิด"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "เรียกใช้ไม่ได้"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "ไม่มีคำสั่ง (Exec) จะเรียก"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "คำสั่งที่เรียก (Exec) นั้นใช้ไม่ได้"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "ไม่รู้จักรหัสอักขระของ: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "ไม่พบค่าตั้งหน้าจอที่เหมาะสม"
+
+#~ msgid "Directory"
+#~ msgstr "โฟลเดอร์"
+
+#~ msgid "Application"
+#~ msgstr "โปรแกรม"
+
+#~ msgid "Link"
+#~ msgstr "จุดเชื่อม"
+
+#~ msgid "FSDevice"
+#~ msgstr "FSDevice"
+
+#~ msgid "MIME Type"
+#~ msgstr "MIME Type"
+
+#~ msgid "Service"
+#~ msgstr "บริการ"
+
+#~ msgid "ServiceType"
+#~ msgstr "ชนิดบริการ"
+
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "_คำสั่ง:"
+
+#~ msgid "_Name:"
+#~ msgstr "_ชื่อ:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "ชื่อทั่วไ_ป:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "_หมายเหตุ:"
+
+#~ msgid "Browse"
+#~ msgstr "เรียกดู"
+
+#~ msgid "_Type:"
+#~ msgstr "ช_นิด:"
+
+#~ msgid "_Icon:"
+#~ msgstr "ไ_อคอน:"
+
+#~ msgid "Browse icons"
+#~ msgstr "เรียกดูไอคอน"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "เรียกใช้ในเ_ทอร์มินัล"
+
+#~ msgid "Language"
+#~ msgstr "ภาษา"
+
+#~ msgid "Name"
+#~ msgstr "ชื่อ"
+
+#~ msgid "Generic name"
+#~ msgstr "ชื่อทั่วไป"
+
+#~ msgid "Comment"
+#~ msgstr "หมายเหตุ"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "ล_องนี่ก่อนที่จะใช้:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_วิธีใช้:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_คำแปลของชื่อและหมายเหตุ:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "เ_พิ่ม/ตั้ง"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "เพิ่มหรือตั้งคำแปลของชื่อและหมายเหตุ"
+
+#~ msgid "Re_move"
+#~ msgstr "_ลบ"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "ลบคำแปลของชื่อและหมายเหตุ"
+
+#~ msgid "Basic"
+#~ msgstr "พื้นฐาน"
+
+#~ msgid "Advanced"
+#~ msgstr "ขั้นสูง"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "แ_สดงคำแนะนำเมื่อเริ่มโปรแกรม"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "เกิดข้อผิดพลาดขณะเขียนแฟ้ม '%s': %s"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "ไม่พบโฟลเดอร์ที่บรรจุภาพหัวเอกสาร"
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "ไม่สามารถเปิดโฟลเดอร์ที่บรรจุภาพหัวเอกสาร: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "ไม่สามารถเปิดภาพหัวเอกสาร: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "ไม่พบโลโก้ของ GNOME"
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "ไม่สามารถเปิด '%s': %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "ไม่สามารถเปิดที่อยู่ \"%s\": %s"
+
+#~ msgid "Software"
+#~ msgstr "ซอฟต์แวร์"
+
+#~ msgid "Developers"
+#~ msgstr "ผู้พัฒนาโปรแกรม"
+
+#~ msgid "The End!"
+#~ msgstr "จบ!"
+
+#~ msgid "Accessories"
+#~ msgstr "อำนวยความสะดวก"
+
+#~ msgid "Accessories menu"
+#~ msgstr "เมนูเครื่องอำนวยความสะดวก"
+
+#~ msgid "Applications"
+#~ msgstr "โปรแกรม"
+
+#~ msgid "Programming"
+#~ msgstr "เขียนโปรแกรม"
+
+#~ msgid "Tools for software development"
+#~ msgstr "เครื่องมือสำหรับพัฒนาซอฟต์แวร์"
+
+#~ msgid "Games"
+#~ msgstr "เกม"
+
+#~ msgid "Games menu"
+#~ msgstr "เมนูเกม"
+
+#~ msgid "Graphics"
+#~ msgstr "รูปภาพ"
+
+#~ msgid "Graphics menu"
+#~ msgstr "เมนูรูปภาพ"
+
+#~ msgid "Internet"
+#~ msgstr "อินเทอร์เน็ต"
+
+#~ msgid "Programs for Internet and networks"
+#~ msgstr "โปรแกรมสำหรับอินเทอร์เน็ตและระบบเครือข่าย"
+
+#~ msgid "Multimedia"
+#~ msgstr "มัลติมีเดีย"
+
+#~ msgid "Multimedia menu"
+#~ msgstr "เมนูมัลติมีเดีย"
+
+#~ msgid "Office"
+#~ msgstr "สำนักงาน"
+
+#~ msgid "Office Applications"
+#~ msgstr "โปรแกรมสำหรับสำนักงาน"
+
+#~ msgid "Applications without a category"
+#~ msgstr "โปรแกรมที่ไม่มีประเภทเฉพาะ"
+
+#~ msgid "Other"
+#~ msgstr "อื่นๆ"
+
+#~ msgid "Programs"
+#~ msgstr "โปรแกรม"
+
+#~ msgid "Programs menu"
+#~ msgstr "เมนูโปรแกรม"
+
+#~ msgid "Desktop Preferences"
+#~ msgstr "ปรับแต่งพื้นโต๊ะ"
+
+#~ msgid "Preferences that affect the whole GNOME desktop"
+#~ msgstr "ปรับแต่งปัจจัยที่ส่งผลกระทบกับ GNOME โดยรวม"
+
+#~ msgid "System Tools"
+#~ msgstr "เครื่องมือดูแลระบบ"
+
+#~ msgid "System menu"
+#~ msgstr "เมนูระบบ"
+
+#~ msgid "Sound & Video"
+#~ msgstr "ภาพและเสียง"
+
+#~ msgid "Click here to visit the site : "
+#~ msgstr "เยี่ยมชมเว็บไซต์ : "
+
+#~ msgid "List of GNOME Contributors"
+#~ msgstr "รายชื่อผู้ร่วมมือสร้าง GNOME"
+
+#~ msgid "GNOME Logo Image"
+#~ msgstr "สัญลักษณ์ GNOME"
+
+#~ msgid "Contributors' Names"
+#~ msgstr "ชื่อผู้ร่วมมือสร้าง GNOME"
+
+#~ msgid "And Many More ..."
+#~ msgstr "และอื่นๆอีกมาก..."
+
+#~ msgid "GNOME News Site"
+#~ msgstr "ไซต์รวมข่าว GNOME"
+
+#~ msgid "GNOME Main Site"
+#~ msgstr "ไซต์หลักของ GNOME"
+
+#~ msgid "GNOME is a part of the GNU Project"
+#~ msgstr "GNOME เป็นส่วนหนึ่งของ GNU Project"
+
+#~ msgid "File '%s' has invalid MIME type: %s"
+#~ msgstr "แฟ้ม '%s' มี MIME type ที่ใช้ไม่ได้: %s"
+
+#~ msgid "Home"
+#~ msgstr "บ้าน"

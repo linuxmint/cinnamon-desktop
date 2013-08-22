@@ -1,0 +1,336 @@
+# translation of gnome-desktop-2.0.po to Asturian
+# Asturian translation for gnome-desktop
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+# Xose S. Puente <xspuente@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop-2.0\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-desktop&component=general\n"
+"POT-Creation-Date: 2010-11-27 02:14+0000\n"
+"PO-Revision-Date: 2011-02-14 19:32+0100\n"
+"Last-Translator: ivarela <ivarela@softastur.org>\n"
+"Language-Team: Asturian <gnome@softastur.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-02-09 14:44+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libgnome-desktop/display-name.c:265
+#| msgid "Unknown"
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Desconocíu"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Nun se ye p'atopar un terminal, va usase xterm inda si mesmo nun funciona"
+
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "nun se pudieron algamar los recursos de paltalla (monitores, salides, modos)"
+
+#: ../libgnome-desktop/gnome-rr.c:464
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "error X nun remanáu mientres s'algamaba el rangu de tamaños de pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:470
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "nun se pudo algamar el rangu de tamaños de pantalla"
+
+#: ../libgnome-desktop/gnome-rr.c:714
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "la estensión RANDR nun ta presente"
+
+#: ../libgnome-desktop/gnome-rr.c:1090
+#, c-format
+msgid "could not get information about output %d"
+msgstr "nun se pudo algamar información de la salida %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1477
+#, c-format
+msgid "requested position/size for CRTC %d is outside the allowed limit: position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr "la posición/tamañu pidida pal monitor %d ta fuera la llende permitida: posición=(%d, %d), tamañu=(%d, %d), másimu=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1513
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "nun se pudo afitar la configuración pal monitor %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1629
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "nun se pudo algamar información del monitor %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:501
+msgid "Laptop"
+msgstr "Ordenador portátil"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1227
+#, c-format
+msgid "none of the saved display configurations matched the active configuration"
+msgstr "denguna de les configuraciones de pantalla guardaes concasa cola configuración activa"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1489
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr "el CRTC %d nun pue conducir la salida %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1496
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr "la salida %s nun sofita'l mou %dx%d@%dHz"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1507
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr "el CRTC %d nun sofita la rotación=%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1521
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+"la salida %s nun tien los mesmos parámetros qu'otra salida clonada:\n"
+"mou esistente = %d, mou nuevu = %d\n"
+"coordenaes esistentes = (%d, %d), coordenaes nueves = (%d, %d)\n"
+"rotación esistente = %s, rotación nueva = %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1536
+#, c-format
+msgid "cannot clone to output %s"
+msgstr "nun pue clonase la salida en %s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1705
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr "Intentando moos pal CRTC %d\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1729
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr "CRTC %d: intentando'l mou %dx%d@%dHz con salida en %dx%d@%dHz (pasada %d)\n"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1776
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+"nun pudieron asignase los CRTC a les salides:\n"
+"%s"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1780
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+"dengún de los moos esbillaos ye compatible colos modos posibles:\n"
+"%s"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1862
+#, c-format
+msgid "required virtual size does not fit available size: requested=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"
+msgstr "el tamañu virtual pidíu nun concasa col tamañu disponible: pidíu=(%d, %d), mínimu=(%d, %d), másimu=(%d, %d)"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:336
+msgid "Mirror Screens"
+msgstr "Espeyar pantalles"
+
+#~ msgid "About GNOME"
+#~ msgstr "Tocante a GNOME"
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Deprende más so GNOME"
+#~ msgid "News"
+#~ msgstr "Noticies"
+#~ msgid "GNOME Library"
+#~ msgstr "Llibrería GNOME"
+#~ msgid "Friends of GNOME"
+#~ msgstr "Collacios de GNOME"
+#~ msgid "Contact"
+#~ msgstr "Contautu"
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "El Misteriosu GEGL"
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "The Squeaky Rubber (Goma cruxente) GNOME"
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda, el pexe de Gnome"
+#~ msgid "_Open URL"
+#~ msgstr "_Abrir URL"
+#~ msgid "_Copy URL"
+#~ msgstr "_Copiar URL"
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Alrodiu del Escritoriu de GNOME"
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Bienllegáu al Escritoriu de GNOME"
+#~ msgid "Brought to you by:"
+#~ msgstr "Apurriéronte esta compilación:"
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+#~ msgid "Version"
+#~ msgstr "Versión"
+#~ msgid "Distributor"
+#~ msgstr "Distribuidor"
+#~ msgid "Build Date"
+#~ msgstr "Data de compilación"
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Ver información d'esta versión de GNOME"
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME inclúi tamién una completa plataforma de desendolcu pa los "
+#~ "programadores d'aplicaciones, que permite la creación de potentes y "
+#~ "complexos programes."
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME inclúi la mayoría de lo que pues atopar nel to ordenador, como "
+#~ "l'alministrador de ficheros, el navegador web y delles más aplicaciones."
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME ye un entornu d'escritoriu Llibre, afayadizu, estable y accesible "
+#~ "pa los sistemes operativos de la familia UNIX y asemeyaos."
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "L'enfotu de GNOME na usabilidá y l'accesibilidá, con actualizaciones "
+#~ "regulares y un fuerte sofitu corporativu, faenlu único pente los "
+#~ "escritorios de Software Llibre."
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "La mayor fuercia de GNOME ye la fuerte comunidá de nueso. Dafechu tol "
+#~ "mundu, con o sin conocimientos de programación, podría echar un gabitu pa "
+#~ "facer un GNOME meyor."
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Cientos de persones contribuyeron al códigu de GNOME dende que s'entamara "
+#~ "en 1997; munchos más sofitaronlu d'una bayura maneres, incluyendo tornes, "
+#~ "documentación y afitando la so seguridá."
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Error al lleer l'archivu '%s': %s"
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Error al rebobinar l'archivu '%s': %s"
+#~ msgid "No name"
+#~ msgstr "Ensin nome"
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "El ficheru '%s' nun ye un ficheru o direutoriu normal."
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "Fallu. Nun pudo atopase la id de ficheru '%s'"
+#~ msgid "No filename to save to"
+#~ msgstr "Nun hai nome de ficheru pa guardar"
+#~ msgid "Starting %s"
+#~ msgstr "Entamando %s"
+#~ msgid "No URL to launch"
+#~ msgstr "Nun hai una URL que llanzar"
+#~ msgid "Not a launchable item"
+#~ msgstr "Nun ye un elementu llanzable"
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Nun hai dengún comandu (Exec) pa llanzar"
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Mal comandu (Exec) pa llanzar"
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Codificación desconocida de: %s"
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "nun s'atopó una configuración de pantalles afayadiza"
+#~ msgid "Directory"
+#~ msgstr "Direutoriu"
+#~ msgid "Application"
+#~ msgstr "Aplicación"
+#~ msgid "Link"
+#~ msgstr "Enllaz"
+#~ msgid "FSDevice"
+#~ msgstr "DispositivuFS"
+#~ msgid "MIME Type"
+#~ msgstr "Tipu MIME"
+#~ msgid "Service"
+#~ msgstr "Serviciu"
+#~ msgid "_URL:"
+#~ msgstr "_URL:"
+#~ msgid "Comm_and:"
+#~ msgstr "Co_mandu:"
+#~ msgid "_Name:"
+#~ msgstr "_Nome"
+#~ msgid "_Generic name:"
+#~ msgstr "Nome _xenéricu:"
+#~ msgid "Co_mment:"
+#~ msgstr "Co_mentariu:"
+#~ msgid "Browse"
+#~ msgstr "Esplorar"
+#~ msgid "_Type:"
+#~ msgstr "_Triba:"
+#~ msgid "_Icon:"
+#~ msgstr "_Iconu:"
+#~ msgid "Browse icons"
+#~ msgstr "Esplorar iconos"
+#~ msgid "Run in t_erminal"
+#~ msgstr "Executar nel t_erminal"
+#~ msgid "Language"
+#~ msgstr "Llingua"
+#~ msgid "Name"
+#~ msgstr "Nome"
+#~ msgid "Generic name"
+#~ msgstr "Nome xenéricu"
+#~ msgid "ServiceType"
+#~ msgstr "Tipu de Serviciu"
+#~ msgid "Comment"
+#~ msgstr "Comentariu"
+#~ msgid "_Try this before using:"
+#~ msgstr "_Procura esto enantes d'usar:"
+#~ msgid "_Documentation:"
+#~ msgstr "_Documentación:"
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "Tornes del _nome/comentariu:"
+#~ msgid "_Add/Set"
+#~ msgstr "_Amestar/Afitar"
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Amestar o afitar les tornes del nome/comentariu"
+#~ msgid "Re_move"
+#~ msgstr "D_esaniciar"
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Esborrar la torna de nome/comentariu"
+#~ msgid "Basic"
+#~ msgstr "Básicu"
+#~ msgid "Advanced"
+#~ msgstr "Avanzáu"
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "Amo_sar conseyos nel entamu"
+

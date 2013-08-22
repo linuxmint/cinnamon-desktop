@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!--
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Dec 16, 2000
+-->
+<article id="index" lang="hu">
+  <articleinfo>
+    <title>GNU General Public License</title>    
+    <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+
+      <author><surname>Free Software Foundation</surname></author>
+
+      <publisher role="maintainer">
+        <publishername>GNOME Dokumentációs projekt</publishername>
+      </publisher>
+
+      <revhistory>
+        <revision><revnumber>2</revnumber> <date>1991-06</date></revision>
+      </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para><address>Free Software Foundation, Inc. 
+	  <street>51 Franklin Street, Fifth Floor</street>, 
+	  <city>Boston</city>, 
+	  <state>MA</state> <postcode>02110-1301</postcode>
+	  <country>USA</country>
+	</address>.</para>
+
+      <para>A jelen licencdokumentumot bárki szabadon lemásolhatja és a pontos másolatait terjesztheti, de a módosítása tilos.</para>
+    </legalnotice>
+
+    <releaseinfo>1991. júnus, 2. változat</releaseinfo>
+
+    <abstract role="description"><para>A legtöbb szoftver licencei azzal a szándékkal készültek, hogy minél kevesebb lehetőséget adjanak a szoftver megváltoztatására és terjesztésére. Ezzel szemben a GNU GPL célja, hogy garantálja a szabad szoftver másolásának és terjesztésének szabadságát, ezáltal biztosítva a szoftver szabad felhasználhatóságát minden felhasználó számára.</para></abstract>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Kalman Kemenczy</firstname>
+      </personname>
+      <email>kkemenczy at novell dot com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Kalman Kemenczy</holder>
+    </copyright>
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Előszó</title>
+    
+    <para>A legtöbb szoftver licencei azzal a szándékkal készültek, hogy minél kevesebb lehetőséget adjanak a szoftver megváltoztatására és terjesztésére. Ezzel szemben a GNU GPL célja, hogy garantálja a szabad szoftver másolásának és terjesztésének szabadságát, ezáltal biztosítva a szoftver szabad felhasználhatóságát minden felhasználó számára. A GPL szabályai vonatkoznak a Free Software Foundation legtöbb szoftverére, illetve minden olyan programra, melynek szerzője úgy dönt, hogy ezt használja a szerzői jog megjelölésekor. (A Free Software Foundation egyes szoftvereire a GNU LGPL érvényes.) Bárki használhatja a programjaiban a GPL-t a szerzői jogi megjegyzésnél.</para>
+
+    <para>A szabad szoftver megjelölés nem jelenti azt, hogy a szoftvernek nem lehet ára. A GPL licencek célja, hogy garantálja a szabad szoftver másolatainak szabad terjesztését (és e szolgáltatásért akár díj felszámítását), a forráskód elérhetőségét, hogy bárki szabadon módosíthassa a szoftvert, vagy felhasználhassa a részeit új szabad programokban; és hogy mások megismerhessék ezt a lehetőséget.</para>
+
+    <para>A szerző jogainak védelmében korlátozásokat kell hozni, amelyek megtiltják, hogy bárki megtagadhassa ezeket a jogokat másoktól, vagy ezekről való lemondásra kényszerítsen bárki mást. Ezek a megszorítások bizonyos felelősségeket jelentenek azok számára, akik a szoftver másolatait terjesztik vagy módosítják.</para>
+
+    <para>Ha valaki például ilyen program másolatait terjeszti, akár ingyen vagy bizonyos összeg fejében, a szoftverre vonatkozó minden jogot tovább kell adnia a fogadó feleknek. Biztosítani kell továbbá, hogy megkapják vagy legalábbis megkaphassák a forráskódot is. És persze ezeket a licencfeltételeket is el kell juttatni, hogy tisztában legyenek a jogaikkal. </para>
+
+    <para>A jogok védelme két lépésből áll: <orderedlist numeration="arabic">
+	<listitem>
+	  <para>a szoftver szerzői jogainak védelméből és</para>
+	</listitem>
+	<listitem>
+	  <para>a jelen licenc biztosításából, amely jogalapot biztosít a szoftver másolására, terjesztésére és/vagy módosítására.</para>
+	</listitem>
+      </orderedlist></para>
+
+    <para>Az egyes szerzők és a magunk védelmében biztosítani akarjuk, hogy mindenki megértse: a jelen szabad szoftverre nincs jótállás. Ha a szoftvert módosították és továbbadták, akkor mindenkinek, aki a módosított változatot kapja, tudnia kell, hogy az nem az eredeti, így a mások által okozott hibáknak nem lehet hatása az eredeti szerző hírnevére.</para>
+
+    <para>Végül, a szabad szoftver létét állandóan fenyegetik a szoftverszabadalmak. El szeretnénk kerülni annak veszélyét, hogy a szabad program terjesztői szabadalmat jegyezhessenek be rá, ezáltal saját szellemi tulajdont képezővé tegyék a programot. Ennek megelőzéséhez tisztázni kívánjuk: szabadalom szabad szoftverrel kapcsolatban csak mindenki általi szabad használatra jegyezhető be, vagy egyáltalán nem jegyezhető be.</para>
+
+    <para>A másolásra, terjesztésre, módosításra vonatkozó pontos szabályok és feltételek:</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>A MÁSOLÁSRA, TERJESZTÉSRE ÉS MÓDOSÍTÁSRA VONATKOZÓ FELTÉTELEK ÉS KIKÖTÉSEK</title>
+
+    <sect2 id="sect0" label="0">
+      <title>0. szakasz</title>
+      <para>Ez a licenc minden olyan programra vagy munkára vonatkozik, amelynek a szerzői jogi megjegyzésében a jog tulajdonosa a következő szöveget helyezte el: a GPL-ben foglaltak alapján terjeszthető. Az alábbiakban a <quote>Program</quote> kifejezés bármely ilyen programra vagy munkára vonatkozik, a Programon alapuló munka pedig magát a programot vagy egy szerzői joggal védett munkát jelenti: vagyis olyan munkát, amely tartalmazza a programot vagy annak egy részletét, módosítottan vagy módosítatlanul és/vagy más nyelvre fordítva. (Az alábbiakban a fordítás minden egyéb megkötés nélkül beletartozik a  <quote>módosítás</quote> fogalmába.) Minden engedélyezés címzettje <quote>Ön</quote>.</para>
+
+      <para>A jelen licenc a másoláson, terjesztésen és módosításon kívül más tevékenységre nem vonatkozik, azok a hatályán kívül esnek. A Program futtatása nincs korlátozva, illetve a Program kimenetére is csak abban az esetben vonatkozik ez a szabályozás, ha az tartalmazza a Programon alapuló munka egy részletét (függetlenül attól, hogy ez a Program futtatásával jött-e létre). Ez tehát a Program működésétől függ.</para>
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>1. szakasz</title>
+      <para>A Program forráskódja módosítás nélkül másolható és bármely adathordozón terjeszthető, feltéve, hogy minden egyes példányon pontosan szerepel a megfelelő szerzői jogi megjegyzés, illetve a garanciavállalás elutasítása; érintetlenül kell hagyni minden erre a szabályozásra és a garancia teljes hiányára utaló szöveget és a jelen licencdokumentumot is el kell juttatni mindazokhoz, akik a Programot kapják.</para>
+      
+      <para>Felszámítható díj a másolat fizikai továbbítása fejében, illetve ellenszolgáltatás fejében a Programhoz garanciális támogatás is biztosítható.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>2. szakasz</title>
+      <para>A Program vagy annak egy része módosítható, így a Programon alapuló munka jön létre. A módosítás ezután az <link linkend="sect1">1. szakaszban</link> adott feltételek szerint tovább terjeszthető, ha az alábbi feltételek is teljesülnek: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>A módosított fájlokat el kell látni olyan megjegyzéssel, amely feltünteti a módosítást végző nevét és a módosítások dátumát.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Minden olyan munkát, amely részben vagy egészben tartalmazza a Programot vagy a Programon alapul, olyan szabályokkal kell kiadni vagy terjeszteni, hogy annak használati joga harmadik személy részére licencdíjmentesen hozzáférhető legyen, a jelen dokumentumban található feltételeknek megfelelően.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Ha a módosított Program interaktívan olvassa a parancsokat futás közben, akkor úgy kell elkészíteni, hogy a megszokott módon történő indításkor megjelenítsen egy üzenetet a megfelelő szerzői jogi megjegyzéssel és a garancia hiányára utaló közléssel (vagy éppen azzal az információval, hogy miként juthat valaki garanciához), illetve azzal az információval, hogy bárki terjesztheti a Programot a jelen feltételeknek megfelelően, és arra is utalást kell tenni, hogy a felhasználó miként tekintheti meg a licenc egy példányát. <note>
+		<title>Kivétel:</title>
+		<para>ha a Program interaktív ugyan, de nem jelenít meg hasonló üzenetet, akkor a Programon alapuló munkának sem kell ezt tennie.</para>
+	      </note></para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Ezek a feltételek a módosított munkára, mint egészre vonatkoznak. Ha a munka azonosítható részei nem a Programon alapulnak és független munkákként elkülönülten azonosíthatók, akkor ez a szabályozás nem vonatkozik ezekre a részekre, ha azok külön munkaként kerülnek terjesztésre. Viszont, ha ugyanez a rész az egész részeként kerül terjesztésre, amely a Programon alapuló munka, akkor az egész terjesztése csak a jelen dokumentum alapján lehetséges, amely ebben az esetben a jogokat minden egyes felhasználó számára kiterjeszti az egészre tekintet nélkül arra, hogy melyik részt ki írta.</para>
+
+      <para>E szövegrésznek tehát nem az a célja, hogy mások jogait elvegye vagy korlátozza a kizárólag saját maga által írt munkákra; a cél az, hogy a jogok gyakorlása szabályozva legyen a Programon alapuló illetve a gyűjteményes munkák terjesztése esetében.</para>
+
+      <para>Ezenkívül más munkáknak, amelyek nem a Programon alapulnak, a Programmal (vagy a Programon alapuló munkával) közös adathordozón vagy adattárolón szerepeltetése nem jelenti a jelen szabályok érvényességét azokra is.</para>
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>3. szakasz</title>
+
+      <para>A Program (vagy a Programon alapuló munka a <link linkend="sect2">2. szakasznak</link> megfelelően) másolható és terjeszthető tárgykódú vagy végrehajtható kódú formájában az <link linkend="sect1">1. szakaszban</link> és a <link linkend="sect2">2. szakaszban</link> foglaltak szerint, amennyiben az alábbi feltételek is teljesülnek: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>a teljes, gép által értelmezhető forráskód kíséri az anyagot, amelynek terjesztése az <link linkend="sect1">1. szakaszban</link> és a <link linkend="sect2">2. szakaszban</link> foglaltak szerint történik, jellemzően szoftverterjesztésre használt adathordozón; vagy,</para>
+	  </listitem>
+	  <listitem>
+	    <para>legalább három évre szólóan írásban vállalja, hogy bármely külső személynek rendelkezésre áll a teljes gép által értelmezhető forráskód, a fizikai továbbítást fedező összegnél nem nagyobb díjért az 1. és 2. szakaszban foglaltak szerint szoftverterjesztésre használt adathordozón; vagy,</para>
+	  </listitem>
+	  <listitem>
+	    <para>a megfelelő forráskód terjesztésére vonatkozóan megkapott tájékoztatás kíséri az anyagot. (Ez az alternatíva csak nem kereskedelmi terjesztés esetén alkalmazható abban az esetben, ha a terjesztő a Programhoz a tárgykódú vagy forráskódú formájában jutott hozzá az ajánlattal együtt a fenti b. cikkelynek megfelelően.)</para>
+	  </listitem>
+	</orderedlist></para>
+
+      <para>Egy munka forráskódja a munkának azt a formáját jelenti, amelyben a módosításokat elsődlegesen végezni szokás. Egy végrehajtható program esetében a teljes forráskód a tartalmazott összes modul forráskódját jelenti, továbbá a kapcsolódó felületdefiníciós fájlokat és a fordítást vezérlő parancsfájlokat. Egy speciális kivételként a forráskódnak nem kell tartalmaznia normál esetben a végrehajtható kód futtatására szolgáló operációs rendszer főbb részeiként (kernel, fordítóprogram stb.) terjesztett részeit (forrás vagy bináris formában), kivéve, ha a komponens maga a végrehajtható állományt kíséri.</para>
+      
+      <para>Ha a végrehajtható program vagy tárgykód terjesztése a forráskód hozzáférését egy megadott helyen biztosító írásban vállalja, akkor ez egyenértékű a forráskód terjesztésével, bár másoknak nem kell a forrást lemásolniuk a tárgykóddal együtt.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>4. szakasz</title>
+      
+      <para>A Programot csak a jelen Licencben leírtaknak megfelelően szabad lemásolni, terjeszteni, módosítani és allicencbe adni. Az egyéb módon történő másolás, módosítás, terjesztés és allicencbe adás érvénytelen, és azonnal érvényteleníti a dokumentumban megadott jogosultságokat. Mindazonáltal azok, akik a Licencet megszegőtől kaptak példányokat vagy jogokat, tovább gyakorolhatják a Licenc által meghatározott jogaikat mindaddig, amíg teljesen megfelelnek a Licenc feltételeinek.</para>
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>5. szakasz</title>
+
+      <para>Önnek nem kötelező elfogadnia ezt a szabályozást, hiszen nem írta alá. Ezen kívül viszont semmi más nem ad jogokat a Program terjesztésére és módosítására. Ezeket a cselekedeteket a törvény bünteti, ha nem a jelen szerzői jogi szabályozás keretei között történnek. Mindezek miatt a Program (vagy a Programon alapuló munka) terjesztése vagy módosítása a jelen dokumentum szabályainak, és azon belül a Program vagy a munka módosítására, másolására vagy terjesztésére vonatkozó összes feltételének elfogadását jelenti.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>6. szakasz</title>
+
+      <para>Minden alkalommal, amikor a Program (vagy az azon alapuló munka) továbbadása történik, a Programot megkapó személy automatikusan hozzájut az eredeti licenctulajdonostól származó licenchez, amely a jelen szabályok szerint biztosítja a jogot a Program másolására, terjesztésére és módosítására. Nem lehet semmilyen módon tovább korlátozni a fogadó félnek az itt megadott jogait. A Program továbbadója nem felelős harmadik személyekkel betartatni a jelen szabályokat.</para>
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>7. szakasz</title>
+
+      <para>Ha bírósági határozat, szabadalomsértés vélelme, vagy egyéb (nem kizárólag szabadalmakkal kapcsolatos) okból olyan feltételeknek kell megfelelnie (akár bírósági határozat, akár megállapodás, akár bármi más eredményeképp), amelyek ellentétesek a jelen feltételekkel, az nem menti fel a terjesztőt a jelen feltételek figyelembevétele alól. Ha a terjesztés nem lehetséges a jelen Licenc és az egyéb feltételek kötelezettségeinek együttes betartásával, akkor tilos a Program terjesztése. Ha például egy szabadalmi szerződés nem engedi meg egy program jogdíj nélküli továbbterjesztését azok számára, akik közvetve vagy közvetlenül megkapják, akkor az egyetlen módja, hogy eleget tegyen valaki mindkét feltételnek az, hogy eláll a program terjesztésétől.</para>
+
+      <para>Ha ennek a szakasznak bármely része érvénytelen, vagy nem érvényesíthető valamely körülmény folytán, akkor a szakasz maradék részét kell alkalmazni, egyéb esetekben pedig a szakasz egésze alkalmazandó.</para>
+
+      <para>Ennek a szakasznak nem az a célja, hogy a szabadalmak vagy egyéb hasonló jogok megsértésére ösztönözzön bárkit is; mindössze meg szeretné védeni a szabad szoftver terjesztési rendszerének egységét, amelyet a szabad közreadást szabályozó feltételrendszerek teremtenek meg. Sok ember nagymértékben járult hozzá az e rendszer keretében terjesztett, különféle szoftverekhez, és számít a rendszer következetes alkalmazására; azt a szerző/adományozó dönti el, hogy a szoftverét más rendszer szerint is közzé kívánja-e tenni, és a licencet kapók ezt nem befolyásolhatják.</para>
+
+      <para>E szakasz célja, hogy pontosan tisztázza azt, ami elgondolásunk szerint a jelen licenc többi részének a következménye.</para>
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>8. szakasz</title>
+
+      <para>Ha a Program terjesztése és/vagy használata egyes országokban nem lehetséges akár szabadalmak, akár szerzői jogokkal védett felületek miatt, akkor a Program szerzői jogainak eredeti tulajdonosa, aki a Programot ezen szabályozás alapján adja közre, egy explicit földrajzi megkötést adhat a terjesztésre, és egyes országokat kizárhat. Ebben az esetben úgy tekintendő, hogy a jelen licenc ezt a megkötést is tartalmazza, ugyanúgy mintha csak a fő szövegében lenne leírva.</para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>9. szakasz</title>
+      
+      <para>A Free Software Foundation időről időre kiadja a General Public License dokumentum felülvizsgált és/vagy újabb változatait. Ezek az újabb dokumentumok az előzőek szellemében készülnek, de részletekben különbözhetnek, hogy új problémákat vagy aggályokat is kezeljenek.</para>
+
+      <para>A dokumentum minden változata egy megkülönböztető verziószámmal ellátva jelenik meg. Ha a Program szerzői jogi megjegyzésében egy bizonyos vagy annál <quote>újabb verzió</quote> van megjelölve, akkor lehetőség van akár a megjelölt, vagy a Free Software Foundation által kiadott későbbi verzióban leírt feltételek követésére. Ha nincs ilyen megjelölt verzió, akkor lehetőség van a Free Software Foundation által valaha kibocsátott bármelyik dokumentum alkalmazására.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>10. szakasz</title>
+
+      <para>A Programot más szabad szoftverbe, amelynek szerzői jogi szabályozása különbözik, csak akkor építheti be, ha a szerzőtől erre engedélyt szerzett. Abban az esetben, ha a program szerzői jogainak tulajdonosa a Free Software Foundation, akkor a Free Software Foundation címére kell írni; néha kivételt teszünk. A döntés a következő két cél szem előtt tartásával fog történni: megmaradjon a szabad szoftveren alapuló munkák szabad állapota, valamint segítse elő a szoftver újrafelhasználását és megosztását.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>GARANCIAVÁLLALÁS HIÁNYA</title>
+      <subtitle>11. szakasz</subtitle>
+
+      <para>MIVEL A JELEN PROGRAM HASZNÁLATI JOGA DÍJMENTES, AZ ALKALMAZHATÓ JOGSZABÁLYOK ÁLTAL BIZTOSÍTOTT MAXIMÁLIS MÉRTÉKBEN VISSZAUTASÍTJUK A PROGRAMHOZ A GARANCIA BIZTOSÍTÁSÁT. AMENNYIBEN A SZERZŐI JOGOK TULAJDONOSAI ÍRÁSBAN MÁSKÉNT NEM NYILATKOZNAK, A PROGRAM A <quote>JELEN ÁLLAPOTÁBAN</quote> KERÜL KIADÁSRA, MINDENFÉLE GARANCIAVÁLLALÁS NÉLKÜL, LEGYEN AZ KIFEJEZETT VAGY BELEÉRTETT, BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN A FORGALOMBA HOZHATÓSÁGRA VAGY ALKALMAZHATÓSÁGRA VONATKOZÓ GARANCIÁKAT. A PROGRAM MINŐSÉGÉBŐL ÉS MŰKÖDÉSÉBŐL FAKADÓ ÖSSZES KOCKÁZAT A FELHASZNÁLÓT TERHELI. HA A PROGRAM HIBÁSAN MŰKÖDIK, A FELHASZNÁLÓNAK MAGÁNAK KELL VÁLLALNIA A JAVÍTÁSHOZ SZÜKSÉGES MINDEN KÖLTSÉGET.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>12. szakasz</title>
+
+      <para>AMENNYIBEN A HATÁLYOS JOGSZABÁLYOK VAGY A SZERZŐI JOGOK TULAJDONOSAI ÍRÁSOS MEGÁLLAPODÁSBAN MÁSKÉNT NEM RENDELKEZNEK, SEM A PROGRAM SZERZŐJE, SEM MÁSOK, AKIK MÓDOSÍTOTTÁK ÉS/VAGY TERJESZTETTÉK A PROGRAMOT A FENTIEKNEK MEGFELELŐEN, NEM TEHETŐK FELELŐSSÉ A KÁROKÉRT, BELEÉRTVE MINDEN VÉLETLEN, VAGY KÖVETKEZMÉNYES KÁRT, AMELY A PROGRAM HASZNÁLATÁBÓL VAGY A HASZNÁLAT MEGAKADÁLYOZÁSÁBÓL SZÁRMAZIK (BELEÉRTVE, DE NEM KIZÁRÓLAGOSAN AZ ADATVESZTÉST ÉS A HELYTELEN ADATFELDOLGOZÁST, VALAMINT A MÁS PROGRAMOKKAL VALÓ HIBÁS EGYÜTTMŰKÖDÉST), MÉG AKKOR SEM, HA EZEN FELEK TUDATÁBAN VOLTAK, HOGY ILYEN KÁROK KELETKEZHETNEK.</para>
+    </sect2>
+  </sect1>
+</article>

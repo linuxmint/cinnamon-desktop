@@ -1,0 +1,4 @@
+gnome_bg_crossfade_get_type
+gnome_bg_get_type
+gnome_desktop_thumbnail_factory_get_type
+gnome_rr_labeler_get_type

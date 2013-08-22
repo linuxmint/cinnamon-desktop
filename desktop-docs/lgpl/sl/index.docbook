@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<!-- 
+     The GNU Public License 2 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Feb. 5, 2001
+-->
+<article id="index" lang="sl">
+    <articleinfo>
+      <title>Manj splošno dovoljenje GNU</title>
+      <copyright><year>2000</year> <holder>Free Software Foundation, Inc.</holder></copyright>
+      <author><surname>Free Software Foundation</surname></author>
+      <publisher role="maintainer">
+        <publishername>Projekt dokumentacije GNOME</publishername>
+      </publisher>
+      <revhistory>
+        <revision><revnumber>2.1</revnumber> <date>1999-02</date></revision>
+      </revhistory>
+      <legalnotice id="gpl-legalnotice">
+	<para><address>Free Software Foundation, Inc. 
+	    <street>51 Franklin Street, Fifth Floor</street>, 
+	    <city>Boston</city>, 
+	    <state>MA</state> <postcode>02110-1301</postcode>
+	    <country>USA</country>
+	  </address>.</para>
+	<para>Vsakdo sme razmnoževati in razširjati dobesedne kopije tega dokumenta, ni pa ga dovoljeno spreminjati.</para>
+      </legalnotice>
+      <releaseinfo>Različica 2.1, februar 1999</releaseinfo>
+    <abstract role="description"><para>Licančne pogodbe večine programske opreme so zasnovane tako, da vam preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa vam Splošna dovoljenja GNU (angl. GNU General Public Licenses, GPL) jamčijo svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovljajo, da ostane ta prosta za vse njene uporabnike.</para></abstract>
+
+  </articleinfo>
+
+  <sect1 id="preamble" label="none">
+    <title>Predgovor</title>
+    
+    <para>Licenčne pogodbe večine programske opreme so zasnovane tako, da vam preprečujejo njegovo svobodno razširjanje in spreminjanje. Za razliko od teh pa vam Splošna dovoljenja GNU (angl. GNU General Public Licenses, GPL) jamčijo svobodo pri razširjanju in spreminjanju proste programske opreme ter s tem zagotovljajo, da ostane ta prosta za vse njene uporabnike.</para>
+
+    <para>Ko govorimo o prosti programski opremi, imamo s tem v mislih svobodo, ne cene. Splošna dovoljenja GNU zagotavlja pravico razširjanja kopij proste programske opreme (in po želji zaračunavati za to storitev); pravico do dostopa do izvorne kode; pravico spreminjanja programske opreme ali uporabljanja njenih delov v novi prosti programski opremi; in seznanjanje z vsemi temi pravicami.</para>
+
+    <para>To dovoljenje, Manj splošno dovoljenje, se nanaša na nekatere posebej zasnovane programske pakete - navadno knjižnice - ustanove Free Software Foundation in na vse druge programe, katerih avtorji so se zavezali k njeni uporabi. Tudi vi ga lahko uporabljate, a najprej vam priporočamo, da glede na razlago spodaj pazljivo razmislite, ali je v določenem primeru bolje uporabljati to dovoljenje ali morda navadno Splošno dovoljenje.</para>
+
+    <para>Ko govorimo o prosti programski opremi, imamo s tem v mislih svobodo, ne cene. Splošna dovoljenja GNU zagotavlja pravico razširjanja kopij proste programske opreme (in po želji zaračunavati za to storitev); pravico do dostopa do izvorne kode; pravico spreminjanja programske opreme ali uporabljanja njenih delov v novi prosti programski opremi; in seznanjanje z vsemi temi pravicami.</para>
+
+    <para>Zaradi zavarovanja vaših pravic je uvedena omejitev, ki prepoveduje vsakomur, da bi vam te pravice kratil ali od vas zahteval predajo teh pravic. Te omejitve se prevedejo v določeno vašo odgovornost, če razširjate kopije knjižnice ali jo spreminjate.</para>
+
+    <para>Na primer, če razširjate kopije neke knjižnice, bodisi zastonj ali za plačilo, morate dati prejemnikom vse pravice, ki jih imate sami. Prepričati se morate, da bodo tudi oni prejeli ali imeli dostop do izvorne kode. Če s knjižnico povezujete drugo kodo, morate prejemnikom ponuditi popolne objektne datoteke, tako da jih lahko potem, ko knjižnico spremenijo, vnovič povežejo s knjižnico in prevedejo. In morate jim pokazati te pogoje (pravzaprav izvirnik, opomba prevajalca), da bodo poznali svoje pravice.</para>
+
+    <para>Vaše pravice ščitimo v dveh potezah: (1) avtorsko zaščitimo knjižnico in (2) vam ponujamo to dovoljenje, ki vam daje pravno dovoljenje za razmnoževanje, razširjanje in/ali spreminjanje knjižnice.</para>
+
+    <para>Prav tako, za zaščito vsakega avtorja in zaradi naše zaščite želimo zagotoviti, da vsakdo razume, da za to prosto programsko opremo ni nobenega jamstva. Če je programsko opremo spremenil nekdo drug in ga posredoval naprej, želimo, da njegovi prejemniki vedo, da to, kar imajo, ni izvirnik, zato da se problemi, ki jih povzročijo drugi, ne bodo odražali na ugledu izvornega avtorja. Zaradi zaščite vsakega razširjevalca želimo zagotoviti, da vsakdo razume, da za to prosto knjižnico ni nikakršnega jamstva. Če je knjižnico spremenil nekdo drug in jo posredoval naprej, želimo, da njeni prejemniki vedo, da to, kar imajo, ni izvirnik, da problemi, ki jih povzročijo drugi, ne bodo kvarili ugleda izvornega avtorja.</para>
+
+    <para>Končno, vsak prosti program nenehno ogrožajo programski patenti. Želimo se izogniti nevarnosti, da bi podjetja učinkovito omejevala uporabnike prostega programa s pridobivanjem omejujočih licenc od lastnikov patentov. Za preprečitev tega jasno zahtevamo, da mora biti vsak patent za katerokoli izpeljano različico knjižnice licenciran tako, da je popolnoma konsistenten s popolno svobodo rabe, kot jo določa to dovoljenje.</para>
+
+    <para>Večino programja GNU, vključno z nekaterimi knjižnicami, pokriva navadno Splošno dovoljenje GNU. To dovoljenje, Manj splošno dovoljenje GNU, se nanaša na določene posebne knjižnice, in se precej razlikuje od navadnega Splošnega dovoljenja. To dovoljenje uporabljamo za tiste knjižnice, za katere želimo omogočiti tudi povezovanje v neproste programe.</para>
+
+    <para>Ko se program poveže s knjižnico, najsibo statično ali pa s pomočjo deljene knjižnice, je kombinacija obojega skupaj, pravno gledano, združeno delo, izpeljanka izvirne knjižnice. Navadno Splošno dovoljenje torej dovoljuje takšno povezovanje le, če celotna kombinacija zadošča prav tam določenim kriterijem svobode. Manj splošno dovoljenje dovoljuje bolj ohlapne pogoje za povezovanje druge kode s knjižnico.</para>
+
+    <para>Tem dovoljenju pravimo <quote>Manj</quote> splošno dovoljenje, saj manj zavaruje svobodo uporabnika kot pa navadno Splošno dovoljenje. Drugim razvijalcem prostega programja tudi ponuja manj prednosti pred konkurenčnimi neprostimi programi. Te pomanjkljivosti so razlog, da smo za številne knjižnice uporabili navadno Splošno dovoljenje. Vendar Manj splošno dovoljenje v določenih pogojih pomeni prednost.</para>
+
+    <para>Denimo, da v redkih primerih obstaja posebna potreba spodbuditi kar najširšo rabo določene knjižnice, da bi ta postala de-facto standard. Da lahko to dosežemo, mora biti neprostim programom dovoljeno uporabljati to knjižnico. Pogosteje se zgodi, da prosta knjižnica opravi enako delo kot široko uporabljane neproste knjižnice. V tem primeru pridobimo le malo, če omejimo rabo proste knjižnice le na prosto programje, zato raje uporabimo Manj splošno dovoljenje.</para>
+
+    <para>V drugih primerih dovoljenje rabe določene knjižnice v neprostih programih omogoči večjemu številu ljudi, da uporabljajo večji obseg prostega programja. Dovoljenje za uporabo knjižnice GNU C v neprostih programih je, denimo, omogočilo mnogim ljudem, da so uporabljali popoln operacijski sistem GNU, kot tudi njegovo inačico, operacijski sistem GNU/Linux.</para>
+
+    <para>Čeprav Manj splošno dovoljenje manj zaščiti uporabnikovo svobodo, pa vendarle zagotavlja, da ima uporabnik programa, ki je povezan s knjižnico, proste roke pri poganjanju tega programa s spremenjeno različico te knjižnice.</para>
+
+    <para>Sledijo natančne določitve in pogoji za razmnoževanje, razširjanje in spreminjanje. Pozorni bodite na razliko med <quote>delom, ki temelji na knjižnici</quote> in <quote>delom, ki uporablja knjižnico</quote>. Prvo vsebuje kodo, izpeljano iz knjižnice, medtem, ko mora biti drugo kombinirano s knjižnico, da lahko teče.</para>
+
+  </sect1>
+
+  <sect1 id="terms" label="none">
+    <title>DOLOČILA IN POGOJI ZA RAZMNOŽEVANJE, RAZŠIRJANJE IN SPREMINJANJE</title>
+
+    <sect2 id="sect0" label="0">
+      <title>Razdelek 0</title>
+      <para>Ta licenca se nanaša na vsako programsko knjižnico ali drug program, ki vsebuje obvestilo lastnika avtorskih pravic (angl. copyright holder) ali druge pooblaščene osebe, z izjavo, da se lahko razširja pod pogoji Manj splošnega dovoljenja GNU (angl. Lesser General Public License), imenovanega tudi <quote>ta licenca</quote>. Vsakega izdajatelja licence naslavljamo z <quote>vi</quote>. </para>
+
+      <para><quote>Knjižnica</quote> pomeni zbirko programskih funkcij in/ali podatkov, pripravljenih tako, da jih je moč priročno povezovati z uporabnimi programi (ki uporabljajo nekatere teh funkcij in podatkov), da s tem oblikujemo izvedljive datoteke.</para>
+
+      <para><quote>Knjižnica</quote> v nadaljevanju pomeni vsako takšno programsko knjižnico ali delo, ki se razširja pod temi pogoji. <quote>Delo, ki temelji na knjižnici</quote> pomeni bodisi knjižnico ali pa katerokoli izvedeno delo po zakonu o avtorski in sorodnih pravicah (angl. copyright law): se pravi delo, ki vsebuje knjižnico ali njen del, bodisi dobesedno ali s spremembami in/ali prevedeno v drug jezik. (Tukaj in povsod v nadaljevanju je prevod vključen brez omejitev v pojem <quote>spremembe</quote>.)</para>	
+
+      <para><quote>Izvorna koda</quote> pri delih pomeni obliko dela, najprimernejšo za izdelavo sprememb. Pri knjižnici pomeni izvorna koda vso izvorno kodo za vse module, ki jih vsebuje, poleg tega pa še morebitne datoteke z definicijami vmesnika, povezanega s tem delom, ter skripte za nadzor prevajanja in namestitev knjižnice.</para>
+
+      <para>Dovoljenje ne pokriva nobenih drugih dejavnosti razen razmnoževanja, razširjanja in spreminjanja; ostale so izven njegovega dosega. Dejanje zagona programa z uporabo knjižnice ni omejeno in odvodni zapis programa je zajet le, če njegova vsebina predstavlja delo, ki je izpeljano iz knjižnice (ne glede na to, da je bila pri orodju za njegovo pisanje uporabljena knjižnica). Ali je to res ali ne, je odvisno od tega, kaj knjižnica dela in kaj dela program, ki knjižnico uporablja.</para>
+
+    </sect2>
+
+    <sect2 id="sect1" label="1">
+      <title>Razdelek 1</title>
+      <para>Dovoljeno je razmnoževati in razširjati dobesedne izvode izvorne kode programa v enaki obliki, kot jo dobite, preko kateregakoli nosilca, če je le na vsakem izvodu razločno in primerno objavljeno obvestilo o pravicah razširjanja in zanikanje jamstva; vsa obvestila, ki se nanašajo na to dovoljenje in odsotnost vsakršnega jamstva pustite nedotaknjena; in da prejmejo vsi drugi prejemniki programa poleg programa še izvod tega dovoljenja.Razmnožujete in razširjate lahko dobesedne izvode izvorne kode knjižnice v enaki obliki, kot jo dobite, preko kateregakoli medija, če le na vsakem izvodu razločno in primerno objavite obvestilo o pravicah razširjanja in zanikanju jamstva; vsa obvestila, ki se nanašajo na to dovoljenje in odsotnost vsakršnega jamstva pustite nedotaknjena; in da prejmejo vsi drugi prejemniki programa poleg programa še izvod tega dovoljenja.</para>
+      
+      <para>Za fizično dejanje prenosa kopije lahko zaračunavate in po vaši presoji lahko ponudite garancijsko zaščito v zameno za plačilo.</para>
+    </sect2>
+
+    <sect2 id="sect2" label="2">
+      <title>Razdelek 2</title>
+      <para>Dovoljeno je spreminjati svoj izvod ali izvode knjižnice ali katerega koli njenega dela, in tako narediti delo, ki temelji na knjižnici, ter razmnoževati in razširjati takšne spremembe ali dela pod pogoji zgornjega <link linkend="sect1">razdelka 1</link>, če je zadoščeno tudi vsem naslednjim pogojem: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Spremenjeno delo mora biti programska knjižnica.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Zagotoviti je treba, da spremenjene datoteke nosijo vidna obvestila o tem, da so spremenjena, in datum vsake spremembe.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Zagotoviti morate, da je celotno delo brezplačno licencirano tretjim osebamo pod pogoji te licence.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Če se funkcionalnost v spremenjeni knjižnici sklicuje na funkcijo ali tabelo podatkov, ki jih priskrbi uporabni program, ki to funkcionalnost uporablja, na drug način kot argument ob klicu funkcionalnosti, morate v dobri veri poskrbeti, da tudi v primeru, ko program ne ponuja take funkcije ali tabele, funkcionalnost še vedno deluje, in izvaja katerikoli del svojega namena, ki še ostaja smiseln.</para>
+
+	    <para>(Funkcija, ki v neki knjižnici skrbi za izračun kvadratnih korenov, ima namen, ki je popolnoma dobro definiran in neodvisen od programa. Podrazdelek 2.d. torej zahteva, da katerakoli funkcija ali tabela, ki jo glavni program ponuja tej funkciji, ni obvezna za pravilno delovanje funkcije za izračuna kvadratnih korenov.)</para>
+	      
+	    <para>Te zahteve se nanašajo na spremenjeno delo kot celoto. Če razdelki tega dela, ki jih je mogoče prepoznati, niso izpeljani iz knjižnice in jih je mogoče same po sebi utemeljeno obravnavati kot neodvisna in ločena dela, potem to dovoljenje in njegova določila za te razdelke ne velja, če jih razširjate kot ločena dela. A če razširjate iste razdelke kot dele celote, ki je delo, ki temelji na knjižnici, mora biti razširjanje celote izvedeno pod pogoji tega dovoljenja, katerega dovoljenja uporabe za druge uporabnike dovoljenja se razširijo na vso celoto, in torej na vsak njen del, ne glede na to, kdo ga je napisal.</para>
+
+	    <para>Namen tega razdelka torej ni, da bi zanikal ali spodbijal vaše pravice do dela, ki ste ga v celoti napisali sami; namesto tega je namen razdelka razširiti pravico nadzora nad razširjanjem izpeljanih ali združenih del, ki temeljijo na knjižnici.</para>
+
+	    <para>Poleg tega zgolj uvrščanje drugega dela, ki ne temelji na knjižnici, poleg knjižnice (ali poleg dela, ki temelji na knjižnici), na enoti nosilca ali mediju za razširjanje, se dovoljenje na to drugo delo ne nanaša.</para>
+	  </listitem>	      
+	</orderedlist></para>
+
+    </sect2>
+
+    <sect2 id="sect3" label="3">
+      <title>Razdelek 3</title>
+
+      <para>Po želji lahko uporabite namesto tega dovoljenja za dani izvod knjižnice tudi pogoje navadnega Splošnega dovoljenja GNU. Če želite to storiti, morate spremeniti vsa sklicevanja na to dovoljenje tako, da se, namesto na to dovoljenje, sklicujejo na navadno Splošno dovoljenje GNU (angl. GNU General Public License) različice 2. (Če obstaja različica navadnega Splošnega dovoljenja GNU številke, večje od 2, potem lahko, če tako želite, določite to številko različice.) V teh obvestilih ne spreminjajte ničesar drugega.</para>
+
+      <para>Ko se enkrat zgodi opisana sprememba za dani izvod, je za ta izvod to nepovratno, torej Splošno dovoljenje GNU velja tudi za vse nadaljnje izvode in izpeljana dela, ki izvirajo iz tega izvoda.</para>
+      
+      <para>Ta možnost je uporabna, če želite prepisati del kode knjižnice v program, ki ni knjižnica.</para>
+    </sect2>
+
+    <sect2 id="sect4" label="4">
+      <title>Razdelek 4</title>
+      
+      <para>Knjižnico (ali delo, ki temelji na njej, pod določili <link linkend="sect2">razdelka 2</link>) je dovoljeno razmnoževati in razširjati v objektni kodi ali izvedljivi obliki pod pogoji zgornjih <link linkend="sect1">razdelkov 1</link> in <link linkend="sect2">2</link>, če jo pospremite s popolno ustrezno strojno berljivo izvorno kodo, ki mora biti razširjana pod pogoji zgornjih razdelkov <link linkend="sect1">1</link> in <link linkend="sect2">2</link> na nosilcu, navadno uporabljanem za izmenjavo programja.</para>
+
+      <para>Če se razširjanje objektne kode omogoča s ponujanjem dostopa do izvoda z določenega mesta, potem pogoju za razširjanje izvorne kode zadošča tudi omogočenje enakega dostopa do izvoda izvorne kode, čeprav tretje osebe niso dolžne razmnoževati izvorne kode poleg objektne kode.</para>
+
+    </sect2>
+
+    <sect2 id="sect5" label="5">
+      <title>Razdelek 5</title>
+
+      <para>Program, ki ne vsebuje izpeljanke nobenega dela knjižnice, a je zasnovan tako, da deluje s to knjižnico tako, da je z njo preveden ali povezan, se imenuje <quote>delo, ki uporablja knjižnico</quote>. Tako delo samo po sebi ni iz knjižnice izpeljano delo, in torej ni predmet te licence. </para>
+
+      <para>Vendar povezovanje <quote>dela, ki uporablja knjižnico</quote> s knjižnico naredi izvedljivo datoteko, ki je izpeljanka te knjižnice (ker vsebuje dele knjižnice), in ne <quote>delo, ki uporablja knjižnico</quote>. Izvedljiva datoteka je torej pokrita s to licenco. Pogoje razširjanja takšnih programov določa<link linkend="sect6">razdelek 6</link>.</para>
+
+      <para>Če <quote>delo, ki uporablja knjižnico</quote> uporablja snov material iz glave, ki je del knjižnice, je lahko objektna koda za delo izpeljano delo iz knjižnice, čeprav morda izvorna koda ni. Ali je to res je posebej pomembno, če je delo moč povezati brez knjižnice, ali pa je delo samo po sebi knjižnica. Zakon povsem ne določa pogojev, pod katerimi to velja.</para>
+
+      <para>Če takšna objektna datoteka uporablja le numerične parametre, podatkovne strukture in načine dostopa, in male makroukaze in male vključene funkcije (dolge deset vrstic ali manj), potem uporaba objektne datoteke ni omejena, ne glede na to, da je pravno gledano to izpeljano delo. (Izvedljive datoteke, ki vsebujejo objektno kodo in dele knjižnice, še vedno sodijo pod <link linkend="sect6">razdelek 6</link>.)</para>
+
+      <para>Če je sicer delo izpeljano iz knjižnice, lahko razširjate izvorno kodo dela pod pogoji <link linkend="sect6">razdelka 6</link>. Katerekoli izvedljive datoteke, ki tudi vsebujejo delo, sodijo pod <link linkend="sect6">razdelek 6</link>, ne glede na to, ali so neposredno povezane s samo knjižnico ali ne.</para>
+    </sect2>
+
+    <sect2 id="sect6" label="6">
+      <title>Razdelek 6</title>
+
+      <para>Kot izjemo glede na zgornje razdelke lahko tudi kombinirate ali povezujete <quote>delo, ki uporablja knjižnico</quote> s knjižnico, ki izdela delo, ki vsebuje dele knjižnice, in razširjate to delo pod pogoji po vaši izbiri, če ti pogoji dovoljujejo spreminjanje dela za uporabnikovo lastno rabo in obratni inženiring za razhroščevanje takšnih sprememb.</para>
+
+      <para>Poleg vsakega izvoda dela morate dodati jasno obvestilo, da delo uporablja knjižnico in da rabo knjižnice določa ta licenca. Oddati morate tudi izvod te licence. Če delo med izvajanjem izpisuje pravice razširjanja, morate med njimi vključiti tudi sporočilo o pravicah razširjanja za knjižnico, kot tudi sklic, ki usmerja uporabnika na izvod te licence. Narediti morate tudi eno od teh stvari: <orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para id="sect6a">Opremite delo s popolno ustrezno strojno berljivo izvorno kodo za knjižnico, vključno z vsemi spremembami v tem delu (ki mora biti razširjano pod pogoji zgornjih razdelkov <link linkend="sect1">1</link> in <link linkend="sect2">2</link>); in, če delo ni izvedljivo povezano s knjižnico, popolno strojno berljivo <quote>delo, ki uporablja knjižnico</quote>, kot objektno kodo in/ali izvorno kodo, tako da lahko uporabnik spremeni knjižnico in potem vnovič poveže program, da izdela spremenjeno izvedljivo datoteko, ki vsebuje spremenjeno knjižnico. (Razume se, da uporabnik, ki spremeni vsebino definicijskih datotek v knjižnici, morda ne bo mogel vnovič prevesti programa, da bi uporabil spremenjene definicije.) </para>
+	  </listitem>
+	  <listitem>
+	    <para>Za povezovanje s knjižnico uporabite primeren mehanizem deljenih knjižnic. Primeren mehanizem (1) ob teku uporablja izvod programa, ki že obstaja v uporabnikovem računalniškem sistemu, namesto, da bi prepisal knjižnične funkcije v samo izvedljivo datoteko, in (2) pravilno deluje s spremenjeno različico knjižnice, če jo uporabnik namesti, če je le vmesnik spremenjene različice združljiv z različico, za katero je bilo delo izdelano.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Opremite delo s pisno ponudbo, veljavno vsaj tri leta, ki ponuja istemu uporabniku gradiva, določena v zgornjem <link linkend="sect6a">podrazdelku 6a</link>, proti plačilu zneska, ki ne presega dejanskih stroškov takšnega razširjanja. </para>
+	  </listitem>
+	  <listitem>
+	    <para>Če se razširjanje dela izvede s ponujenim dostopom do izvoda z določenega mesta, potem ponujanje ekvivalentnega dostopa za razmnoževanje zgoraj navedenih gradiv z istega mesta šteje kot razširjanje izvorne kode.</para>
+	  </listitem>
+	  <listitem>
+	    <para>Preverite, da je uporabnik že prejel izvod teh gradiv ali da ste temu uporabniku izvod že poslali.</para>
+	  </listitem>
+	</orderedlist></para>
+
+	<para>Pri izvedljivem delu mora zahtevana oblika <quote>dela, ki uporablja knjižnico</quote> vključevati vse podatke in pomožne programe, potrebne za ponovno izdelavo izvedljive datoteke iz nje. Vendar - kot posebna izjema - ni nujno, da razširjano gradivo vključuje vse, kar se navadno razširja (v izvorni ali strojni obliki) z večjimi komponentami (prevajalnik, jedro, itn.) operacijskega sistema, na katerem teče izvedljiva datoteka, razen če ta komponenta spremlja izvedljivo datoteko.</para>
+
+	<para>Lahko se zgodi, da te zahteve nasprotujejo licenčnim omejitvam drugih lastniških knjižnic, ki navadno ne spremljajo operacijskega sistema. Takšno nasprotovanje pomeni, da jih ne morete uporabljati hkrati s knjižnico v izvedljivi datoteki, ki jo boste razširjali.</para>
+
+    </sect2>
+
+    <sect2 id="sect7" label="7">
+      <title>Razdelek 7</title>
+
+      <para>Dele knjižnice, ki so dela, temelječa na Knjižnici, lahko uvrstite v skupno knjižnico z drugimi deli knjižnice, ki jih ta Licenca ne pokriva, ter razširjate takšno kombinirano knjižnico, če je sicer dovoljeno ločeno razširjati Knjižnico in druge dele knjižnice, in če naredite naslednji stvari:</para>
+
+	<orderedlist numeration="loweralpha">
+	  <listitem>
+	    <para>Kombinirano knjižnico pospremite z izvodom istega dela, ki temelji na Knjižnici, brez kakršnihkoli dodatnih delov knjižnice. To se mora razširjati pod pogoji iz zgornjih razdelkov.</para>
+	</listitem>
+	<listitem>
+	  <para>Poleg kombinirane knjižice podajte vidno obvestilo, da deli knjižnice temeljijo na Knjižnici, in pojasnite, kje najti ustrezno nekombinirano obliko istega dela. </para>
+	</listitem>
+      </orderedlist>	    
+    </sect2>
+
+    <sect2 id="sect8" label="8">
+      <title>Razdelek 8</title>
+
+      <para>Knjižnice ni dovoljeno razmnoževati, spreminjati, podrejati dovoljenja, jo povezovati ali razširjati, če to ni izrecno dovoljeno s pričujočim dovoljenjem. Vsak siceršnji poskus razmnoževanja, spreminjanja, podrejanja dovoljenja, povezovanja ali razširjanja knjižnice je ničen in vam samodejno odvzame pravice, izhajajoče iz tega dovoljenja. Vendar pa se osebam, ki so svoj izvod ali pravice dobile od vas pod tem dovoljenjem, dovoljenje ne prekine, dokler jo v celoti spoštujejo. </para>
+    </sect2>
+
+    <sect2 id="sect9" label="9">
+      <title>Razdelek 9</title>
+      
+      <para>Ni vam treba sprejeti pogojev dovoljenja, saj ga niste podpisali. Vendar vam brez slednjega nič ne dovoljuje spreminjanja ali razširjanja knjižnice ali iz nje izpeljanih del. Če ne sprejmete tega dovoljenja, so ta dejanja nezakonita. Torej, s spremembo ali razširjanjem knjižnice (ali kateregakoli dela, ki temelji na knjižnici) pokažete svoje strinjanje s tem dovoljenjem in z vsemi njegovimi določili in pogoji za razmnoževanje, razširjanje ali spreminjanje knjižnice ali del, ki temeljijo na njej.</para>
+    </sect2>
+
+    <sect2 id="sect10" label="10">
+      <title>Razdelek 10</title>
+
+      <para>Vsakič, ko razširjate knjižnico (ali katerokoli delo, ki temelji na knjižnici), prejemnik samodejno prejme dovoljenje izvornega izdajatelja dovoljenja (angl. original licensor) za razmnoževanje, razširjanje, povezovanje ali spreminjanje knjižnice glede na ta določila in pogoje. Ni dovoljeno vsiljevati nobenih nadaljnjih omejitev izvajanja prejemnikovih pravic, podeljenih tukaj. Niste odgovorni za vsiljevanje strinjanja tretjih oseb s tem dovoljenjem.</para>
+    </sect2>
+
+    <sect2 id="sect11" label="11">
+      <title>Razdelek 11</title>
+
+      <para>Če so vam, kot posledica presoje sodišča ali suma kršitve patenta ali iz katerega koli drugega razloga (ne omejenega zgolj na patentna vprašanja), vsiljeni pogoji (bodisi z odlokom sodišča, sporazumom ali drugače), ki nasprotujejo pogojem tega dovoljenja, vas ne odvezujejo spoštovanja pogojev tega dovoljenja. Če knjižnice ne morete razširjati tako, da hkrati zadostite svojim obvezam pod tem dovoljenjem in vsem drugim ustreznim obvezam, potem posledično sploh ne smete razširjati knjižnice. Na primer, če patentno dovoljenje ne dovoli razširjanja knjižnice brez plačevanja avtorskega honorarja vseh, ki prejmejo izvode neposredno ali posredno od vas, potem je edina možna pot, da zadostite temu pogoju in temu dovoljenju, ta, da se v celoti vzdržite razširjanja knjižnice.</para>
+
+      <para>Če se za katerikoli del tega razdelka ugotovi, da je neveljaven ali da ga ni mogoče izvajati pod nobenim določenim pogojem, je mišljeno, da velja usmeritev tega razdelka (angl. balance of the section) in razdelek kot celota velja v drugih primerih.</para>
+
+      <para>Namen tega razdelka ni, da bi vas napeljeval h kršitvi patentov ali drugih trditev lastništva pravic ali izpodbijal veljavnost katerihkoli takšnih trditev; edini namen tega razdelka je ščitenje integritete sistema razširjanja proste programske opreme, ki je izveden s prakso javnih dovoljenj. Mnogi ljudje so radodarno prispevali k širokemu naboru programske opreme, razširjane preko tega sistema, v upanju na njegovo dosledno izvajanje; od avtorja/dajalca je odvisno, če je pripravljen razširjati programje skozi katerikoli drug sistem, in izdajatelj dovoljenja ne more vsiljevati te izbire.</para>
+
+      <para>Ta razdelek namerava temeljito pojasniti, kaj so predvidene posledice preostalega besedila dovoljenja.</para>
+    </sect2>
+
+    <sect2 id="sect12" label="12">
+      <title>Razdelek 12</title>
+
+      <para>Če sta razširjanje in/ali uporaba knjižnice v določenih državah omejena, bodisi zaradi patentov ali avtorsko zaščitenih vmesnikov, lahko izvorni lastnik ali lastnica avtorskih pravic, ki postavlja knjižnico pod to dovoljenje, doda izrecno zemljepisno omejitev razširjanja, ki izključuje te države, tako da je razširjanje dovoljeno le v in med državami, ki niso na tak način izključene. V takem primeru to dovoljenje vključuje omejitve, kot da so zapisane v besedilu tega dovoljenja.</para>
+    </sect2>
+
+    <sect2 id="sect13" label="13">
+      <title>Razdelek 13</title>
+
+      <para>Ustanova Free Software Foundation lahko od časa do časa izdaja preurejene in/ali nove različice Manj splošnega dovoljenja (angl. Lesser General Public License). Nove različice bodo pisane v duhu trenutne različice, vendar se lahko razlikujejo v podrobnostih, ki bodo obravnavale nove težave ali poglede.</para>
+
+      <para>Vsaki različici je določena razločevalna številka različice. Če knjižnica določa številko različice tega dovoljenja, ki se nanaša nanjo in <quote>na katero koli poznejšo različico</quote>, imate izbiro upoštevanja pogojev in določil bodisi te različice ali poljubne kasnejše različice, ki jo je izdala ustanova Free Software Foundation. Če knjižnica ne določa številke različice tega dovoljenja, lahko izberete poljubno različico, ki jo je kdajkoli izdala ustanova Free Software Foundation.</para>
+    </sect2>
+
+    <sect2 id="sect14" label="14">
+      <title>Razdelek 14</title>
+
+      <para>Če želite vključiti dele knjižnice v drugo prosto programsko opremo, katere pogoji razširjanja so drugačni od teh, pišite avtorju in ga prosite za dovoljenje. Za programje, katerega pravice razširjanja ima Free Software Foundation, pišite na Free Software Foundation; včasih pri tem naredimo izjemo. Našo odločitev bosta vodila dva cilja: ohranitev prostega statusa vseh izvedenih del iz naše proste programske opreme in spodbujanje razdeljevanja in ponovne uporabe programja na splošno.</para>
+    </sect2>
+
+    <sect2 id="sect15" label="15">
+      <title>BREZ JAMSTVA</title>
+      <subtitle>Razdelek 15</subtitle>
+
+      <para>KER JE KNJIŽNICA Z DOVOLJENJEM OPREDELJENA KOT BREZPLAČNA, NI NOBENEGA JAMSTVA ZA KNJIŽNICO DO MEJE, KI JO DOLOČA PRISTOJNI ZAKON. ČE NI DRUGAČE ZAPISANO, IMETNIKI PRAVIC RAZŠIRJANJA IN/ALI DRUGE OSEBE PONUJAJO KNJIŽNICO <quote>TAKŠNO, KOT JE</quote>, BREZ ZAGOTOVILA KAKRŠNE KOLI VRSTE, NEPOSREDNEGA ALI POSREDNEGA, KAR VKLJUČUJE, A NI OMEJENO NA POSREDNA JAMSTVA CENOVNE VREDNOSTI IN PRIMERNOSTI ZA DOLOČENO RABO. CELOTNO TVEGANJE GLEDE KAKOVOSTI IN DELOVANJA KNJIŽNICE PREVZAMETE SAMI. ČE SE KNJIŽNICA IZKAŽE ZA OKVARJENO, SAMI NOSITE STROŠKE VSEH POTREBNIH STORITEV, POPRAVIL ALI POPRAVKOV.</para>
+    </sect2>
+
+    <sect2 id="sect16" label="16">
+      <title>Razdelek 16</title>
+
+      <para>V NOBENEM PRIMERU, RAZEN ČE TAKO PRAVI VELJAVNI ZAKON ALI JE PISNO DOGOVORJENO, NE BO LASTNIK PRAVIC RAZŠIRJANJA ALI KATERAKOLI DRUGA OSEBA, KI LAHKO SPREMENI IN/ALI PONOVNO RAZŠIRJA KNJIŽNICO, KOT JE DOVOLJENO ZGORAJ, PREVZEL ODGOVORNOSTI ZARADI ŠKODE, NAJSI GRE ZA SPLOŠNO, POSEBNO, NENAMERNO ŠKODO ALI ŠKODO, IZHAJAJOČO IZ UPORABE ALI NEZMOŽNOSTI UPORABE KNJIŽNICE (VKLJUČNO Z, A NE OMEJENO NA, IZGUBO PODATKOV ALI NENATANČNO OBDELAVO PODATKOV ALI IZGUBO, POVZROČENO VAM ALI TRETJIM OSEBAM ALI NEZMOŽNOST KNJIŽNICE, DA BI DELOVALA S KAKO DRUGO PROGRAMSKO OPREMO), ČETUDI JE BIL TAK LASTNIK ALI DRUGA OSEBA OBVEŠČEN O MOŽNOSTI NASTANKA TAKŠNE ŠKODE.</para>
+    </sect2>
+  </sect1>
+</article>

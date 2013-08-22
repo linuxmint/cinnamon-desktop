@@ -1,0 +1,118 @@
+<!-- ##### SECTION Title ##### -->
+GnomeBGCrossfade
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT GnomeBGCrossfade ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL GnomeBGCrossfade::finished ##### -->
+<para>
+
+</para>
+
+@bgcrossfade: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG GnomeBGCrossfade:height ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG GnomeBGCrossfade:width ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT GnomeBGCrossfadeClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@finished: 
+
+<!-- ##### FUNCTION gnome_bg_crossfade_new ##### -->
+<para>
+
+</para>
+
+@width: 
+@height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_crossfade_set_start_surface ##### -->
+<para>
+
+</para>
+
+@fade: 
+@surface: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_crossfade_set_end_surface ##### -->
+<para>
+
+</para>
+
+@fade: 
+@surface: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_crossfade_start ##### -->
+<para>
+
+</para>
+
+@fade: 
+@window: 
+
+
+<!-- ##### FUNCTION gnome_bg_crossfade_is_started ##### -->
+<para>
+
+</para>
+
+@fade: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_crossfade_stop ##### -->
+<para>
+
+</para>
+
+@fade: 
+
+
+<!-- ##### STRUCT GnomeBGCrossfadePrivate ##### -->
+<para>
+
+</para>
+
+
