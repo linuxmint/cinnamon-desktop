@@ -41,13 +41,6 @@ if test "x$enable_deprecation_flags" = "xyes"; then
    AC_SUBST(DISABLE_DEPRECATED_CFLAGS)
 fi
 
-# Should we build shared desktop docs? Useful for people who
-# need to build two gnome-desktop using two different versions of GTK+
-AC_ARG_ENABLE([desktop-docs],
-	[AS_HELP_STRING([--disable-desktop-docs],[do not build desktop-wide help documents])],
-	[],[enable_desktop_docs=yes])
-AM_CONDITIONAL(DESKTOP_DOCS_ENABLED, test "x$enable_desktop_docs" = "xyes")
-
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
 
@@ -129,10 +122,6 @@ if test x"$gnome_cv_timerfd" = x"yes"; then
   AC_DEFINE(HAVE_TIMERFD, 1, [we have the timerfd_create(2) system call])
 fi
 
-dnl Documentation support
-
-YELP_HELP_INIT
-
 dnl Language Support
 
 GETTEXT_PACKAGE=cinnamon-desktop
@@ -144,22 +133,12 @@ AM_GLIB_GNU_GETTEXT
 
 GOBJECT_INTROSPECTION_CHECK([0.9.7])
 
-# check for gtk-doc
-GTK_DOC_CHECK([1.4])
-
 AC_CONFIG_FILES([
 Makefile
 libcinnamon-desktop/Makefile
 libcinnamon-desktop/cinnamon-desktop.pc
 libcinnamon-desktop/cinnamon-desktop-uninstalled.pc
-docs/Makefile
-docs/reference/Makefile
-docs/reference/cinnamon-desktop/Makefile
 po/Makefile.in
-desktop-docs/Makefile
-desktop-docs/fdl/Makefile
-desktop-docs/gpl/Makefile
-desktop-docs/lgpl/Makefile
 ])
 
 AC_OUTPUT
@@ -183,9 +162,5 @@ echo "
         cflags:                       ${CFLAGS}
         Maintainer mode:              ${USE_MAINTAINER_MODE}
         Use *_DISABLE_DEPRECATED:     ${enable_deprecation_flags}
-
-         Build desktop-wide docs:      ${enable_desktop_docs}
-         Use external pnp.ids:         ${EXTERNAL_PNP_IDS}
-        Build gtk-doc documentation:  ${enable_gtk_doc}
 
 "
