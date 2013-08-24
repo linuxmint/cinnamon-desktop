@@ -28,7 +28,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-wall-clock.h"
-#include <gdesktop-enums.h>
+#include <cdesktop-enums.h>
 #include "gnome-datetime-source.h"
 
 struct _GnomeWallClockPrivate {

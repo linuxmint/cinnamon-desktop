@@ -31,9 +31,9 @@
 
 #include <gdk/gdk.h>
 #include <gio/gio.h>
-#include <gdesktop-enums.h>
-#include <libgnome-desktop/gnome-desktop-thumbnail.h>
-#include <libgnome-desktop/gnome-bg-crossfade.h>
+#include <cdesktop-enums.h>
+#include <libcinnamon-desktop/gnome-desktop-thumbnail.h>
+#include <libcinnamon-desktop/gnome-bg-crossfade.h>
 
 G_BEGIN_DECLS
 

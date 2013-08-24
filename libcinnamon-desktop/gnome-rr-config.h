@@ -32,7 +32,7 @@
 
 #include <glib.h>
 #include <glib-object.h>
-#include <libgnome-desktop/gnome-rr.h>
+#include <libcinnamon-desktop/gnome-rr.h>
 
 typedef struct GnomeRROutputInfoPrivate GnomeRROutputInfoPrivate;
 typedef struct GnomeRRConfigPrivate GnomeRRConfigPrivate;

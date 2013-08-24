@@ -20,7 +20,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 
-#include <libgnome-desktop/gnome-pnp-ids.h>
+#include <libcinnamon-desktop/gnome-pnp-ids.h>
 
 #define NUM_ITERS 500 * 1000
 

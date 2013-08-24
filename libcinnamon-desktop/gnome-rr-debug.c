@@ -23,7 +23,7 @@
 #include <gdk/gdkx.h>
 #include <glib.h>
 #include <gtk/gtk.h>
-#include <libgnome-desktop/gnome-rr.h>
+#include <libcinnamon-desktop/gnome-rr.h>
 #include <X11/extensions/Xrandr.h>
 #include <X11/Xatom.h>
 
