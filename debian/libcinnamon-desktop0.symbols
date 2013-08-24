@@ -1,4 +1,4 @@
-libgnome-desktop-3.so.4 libgnome-desktop-3-4 #MINVER#
+libcinnamon-desktop.so.4 libgnome-desktop0 #MINVER#
  gnome_bg_changes_with_time@Base 3.2.0
  gnome_bg_create_frame_thumbnail@Base 3.2.0
  gnome_bg_create_surface@Base 3.2.0

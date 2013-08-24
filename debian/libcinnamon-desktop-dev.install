@@ -1,5 +1,5 @@
 usr/include
 usr/lib/pkgconfig
-usr/lib/libgnome-desktop-3.so
+usr/lib/libcinnamon-desktop.so
 usr/share/gir-1.0
-usr/share/gtk-doc
+usr/include/*
