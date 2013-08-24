@@ -3,7 +3,6 @@ desktop_gschemas_in_in =						\
 	org.cinnamon.desktop.interface.gschema.xml.in.in			\
 	org.cinnamon.desktop.lockdown.gschema.xml.in.in			\
 	org.cinnamon.system.locale.gschema.xml.in.in			\
-	org.cinnamon.system.proxy.gschema.xml.in.in			\
 	org.cinnamon.desktop.sound.gschema.xml.in.in			\
 	org.cinnamon.desktop.thumbnail-cache.gschema.xml.in.in		\
 	org.cinnamon.desktop.a11y.keyboard.gschema.xml.in.in		\
