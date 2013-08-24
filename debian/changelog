@@ -1,7 +1,5 @@
-cinnamon-desktop (1.0) olivia; urgency=low
+cinnamon-desktop (1.0.0) nadia; urgency=low
 
-  * Fork from gnome-desktop3 3.6.3-0ubuntu1
-    + quilt patches removed
+  * Initial fork from Ubuntu gnome-desktop3 3.6.3
 
--- Michael Webster <miketwebster@gmail.com>  Thu, 22 Aug 2013 04:39:00 -0500
-
+ -- Michael Webster <miketwebster@gmail.com>  Fri, 23 Aug 2013 20:07:42 -0400
