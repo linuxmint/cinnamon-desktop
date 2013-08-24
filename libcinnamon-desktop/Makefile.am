@@ -126,12 +126,12 @@ MAINTAINERCLEANFILES = \
 	pnp.ids
 
 libexec_PROGRAMS =		\
-	gnome-rr-debug
+	cinnamon-rr-debug
 
-gnome_rr_debug_SOURCES =	\
-	gnome-rr-debug.c
+cinnamon_rr_debug_SOURCES =	\
+	cinnamon-rr-debug.c
 
-gnome_rr_debug_LDADD =		\
+cinnamon_rr_debug_LDADD =		\
 	$(CINNAMON_DESKTOP_LIBS)	\
 	$(lib_LTLIBRARIES)	\
 	$(XLIB_LIBS)
