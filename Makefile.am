@@ -1,8 +1,8 @@
-SUBDIRS = libcinnamon-desktop po
+SUBDIRS = libcinnamon-desktop po headers schemas
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
+DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-introspection
 
 
 @INTLTOOL_XML_RULE@

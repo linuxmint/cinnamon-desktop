@@ -1,0 +1,59 @@
+<schemalist gettext-domain="gsettings-desktop-schemas">
+  <schema id="org.cinnamon.desktop.default-applications" path="/org/cinnamon/desktop/applications/">
+    <child name="office" schema="org.cinnamon.desktop.default-applications.office"/>
+    <child name="terminal" schema="org.cinnamon.desktop.default-applications.terminal"/>
+  </schema>
+  <schema id="org.cinnamon.desktop.default-applications.office" path="/org/cinnamon/desktop/applications/office/">
+    <child name="calendar" schema="org.cinnamon.desktop.default-applications.office.calendar"/>
+    <child name="tasks" schema="org.cinnamon.desktop.default-applications.office.tasks"/>
+  </schema>
+  <schema id="org.cinnamon.desktop.default-applications.office.calendar" path="/org/cinnamon/desktop/applications/office/calendar/">
+    <key name="exec" type="s">
+      <default>'evolution -c calendar'</default>
+      <_summary>Default calendar</_summary>
+      <_description>
+        Default calendar application
+      </_description>
+    </key>
+    <key name="needs-term" type="b">
+      <default>false</default>
+      <_summary>Calendar needs terminal</_summary>
+      <_description>
+        Whether the default calendar application needs a terminal to run.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.desktop.default-applications.office.tasks" path="/org/cinnamon/desktop/applications/office/tasks/">
+    <key name="exec" type="s">
+      <default>'evolution -c tasks'</default>
+      <_summary>Default tasks</_summary>
+      <_description>
+        Default tasks application.
+      </_description>
+    </key>
+    <key name="needs-term" type="b">
+      <default>false</default>
+      <_summary>Tasks needs terminal</_summary>
+      <_description>
+        Whether the default tasks application needs a terminal to run.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.desktop.default-applications.terminal" path="/org/cinnamon/desktop/applications/terminal/">
+    <key name="exec" type="s">
+      <default>'gnome-terminal'</default>
+      <_summary>Terminal application</_summary>
+      <_description>
+        Terminal program to use when starting applications that require one.
+      </_description>
+    </key>
+    <key name="exec-arg" type="s">
+      <default>'-x'</default>
+      <_summary>Exec Arguments</_summary>
+      <_description>
+        Argument used to execute programs in the terminal defined by the 
+        'exec' key.
+      </_description>
+    </key>
+  </schema>
+</schemalist>

@@ -138,6 +138,8 @@ Makefile
 libcinnamon-desktop/Makefile
 libcinnamon-desktop/cinnamon-desktop.pc
 libcinnamon-desktop/cinnamon-desktop-uninstalled.pc
+headers/Makefile
+schemas/Makefile
 po/Makefile.in
 ])
 

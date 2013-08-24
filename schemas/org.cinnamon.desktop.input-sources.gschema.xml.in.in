@@ -1,0 +1,45 @@
+<schemalist gettext-domain="gsettings-desktop-schemas">
+  <schema id="org.cinnamon.desktop.input-sources"
+          path="/org/cinnamon/desktop/input-sources/">
+    <key name="current" type="u">
+      <default>0</default>
+      <_summary>Current input source</_summary>
+      <_description>
+        The zero-based index into the input sources list specifying
+        the current one in effect. The value is automatically capped
+        to remain in the range [0, sources_length) as long as the
+        sources list isn't empty.
+      </_description>
+    </key>
+    <key name="sources" type="a(ss)">
+      <default>[]</default>
+      <_summary>List of input sources</_summary>
+      <_description>
+        List of input source identifiers available. Each source is
+        specified as a tuple of 2 strings. The first string is the
+        type and can be one of 'xkb' or 'ibus'. For 'xkb' sources the
+        second string is 'xkb_layout+xkb_variant' or just 'xkb_layout'
+        if a XKB variant isn't needed. For 'ibus' sources the second
+        string is the IBus engine name. An empty list means that the X
+        server's current XKB layout and variant won't be touched and
+        IBus won't be used.
+      </_description>
+    </key>
+    <key name="xkb-options" type="as">
+      <default>[]</default>
+      <_summary>List of XKB options</_summary>
+      <_description>
+        List of XKB options. Each option is an XKB option string as
+        defined by xkeyboard-config's rules files.
+      </_description>
+    </key>
+    <key name="show-all-sources" type="b">
+      <default>false</default>
+      <_summary>Show all installed input sources</_summary>
+      <_description>
+        Makes all installed input sources available for choosing in
+        System Settings.
+      </_description>
+    </key>
+  </schema>
+</schemalist>

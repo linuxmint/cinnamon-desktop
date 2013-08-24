@@ -1,0 +1,169 @@
+<schemalist gettext-domain="gsettings-desktop-schemas">
+  <schema id="org.cinnamon.system.proxy" path="/system/proxy/">
+    <child name="http" schema="org.cinnamon.system.proxy.http"/>
+    <child name="https" schema="org.cinnamon.system.proxy.https"/>
+    <child name="ftp" schema="org.cinnamon.system.proxy.ftp"/>
+    <child name="socks" schema="org.cinnamon.system.proxy.socks"/>
+    <key name="mode" enum="org.cinnamon.desktop.CDesktopProxyMode">
+      <default>'none'</default>
+      <_summary>Proxy configuration mode</_summary>
+      <_description>
+        Select the proxy configuration mode. Supported values are "none", 
+        "manual", "auto".
+
+        If this is "none", then proxies are not used.
+
+        If it is "auto", the autoconfiguration URL described by the
+        "autoconfig-url" key is used.
+
+        If it is "manual", then the proxies described by
+        "/system/proxy/http", "/system/proxy/https",
+        "/system/proxy/ftp" and "/system/proxy/socks" will be used.
+        Each of the 4 proxy types is enabled if its "host" key is
+        non-empty and its "port" key is non-0.
+
+        If an http proxy is configured, but an https proxy is not,
+        then the http proxy is also used for https.
+
+        If a SOCKS proxy is configured, it is used for all protocols,
+        except that the http, https, and ftp proxy settings override
+        it for those protocols only.
+      </_description>
+    </key>
+    <key name="autoconfig-url" type="s">
+      <default>''</default>
+      <_summary>Automatic proxy configuration URL</_summary>
+      <_description>
+        URL that provides proxy configuration values. When mode is
+        "auto", this URL is used to look up proxy information for all
+        protocols.
+      </_description>
+    </key>
+    <key name="ignore-hosts" type="as">
+      <default>[ 'localhost', '127.0.0.0/8' ]</default>
+      <_summary>Non-proxy hosts</_summary>
+      <_description>
+        This key contains a list of hosts which are connected to directly, 
+        rather than via the proxy (if it is active). The values can be 
+        hostnames, domains (using an initial wildcard like *.foo.com), IP host 
+        addresses (both IPv4 and IPv6) and network addresses with a netmask 
+        (something like 192.168.0.0/24).
+      </_description>
+    </key>
+    <key name="use-same-proxy" type="b">
+      <default>true</default>
+      <_summary>Unused; ignore</_summary>
+      <_description>
+        This key is not used, and should not be read or modified.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.system.proxy.http" path="/system/proxy/http/">
+    <key name="enabled" type="b">
+      <default>false</default>
+      <_summary>Unused; ignore</_summary>
+      <_description>
+        This key is not used; HTTP proxying is enabled when the host
+        key is non-empty and the port is non-0.
+      </_description>
+    </key>
+    <key name="host" type="s">
+      <default>''</default>
+      <_summary>HTTP proxy host name</_summary>
+      <_description>
+        The machine name to proxy HTTP through.
+      </_description>
+    </key>
+    <key name="port" type="i">
+      <range min="0" max="65535"/>
+      <default>8080</default>
+      <_summary>HTTP proxy port</_summary>
+      <_description>
+        The port on the machine defined by "/system/proxy/http/host" that you 
+        proxy through.
+      </_description>
+    </key>
+    <key name="use-authentication" type="b">
+      <default>false</default>
+      <_summary>Authenticate proxy server connections</_summary>
+      <_description>
+        If true, then connections to the proxy server require authentication. 
+        The username/password combo is defined by 
+        "/system/proxy/http/authentication-user" and 
+        "/system/proxy/http/authentication-password".
+
+        This applies only to the http proxy; when using a separate
+        https proxy, there is currently no way to specify that it
+        should use authentication.
+      </_description>
+    </key>
+    <key name="authentication-user" type="s">
+      <default>''</default>
+      <_summary>HTTP proxy username</_summary>
+      <_description>
+        User name to pass as authentication when doing HTTP proxying.
+      </_description>
+    </key>
+    <key name="authentication-password" type="s">
+      <default>''</default>
+      <_summary>HTTP proxy password</_summary>
+      <_description>
+        Password to pass as authentication when doing HTTP proxying.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.system.proxy.https" path="/system/proxy/https/">
+    <key name="host" type="s">
+      <default>''</default>
+      <_summary>Secure HTTP proxy host name</_summary>
+      <_description>
+        The machine name to proxy secure HTTP through.
+      </_description>
+    </key>
+    <key name="port" type="i">
+      <range min="0" max="65535"/>
+      <default>0</default>
+      <_summary>Secure HTTP proxy port</_summary>
+      <_description>
+        The port on the machine defined by "/system/proxy/https/host" that you 
+        proxy through.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.system.proxy.ftp" path="/system/proxy/ftp/">
+    <key name="host" type="s">
+      <default>''</default>
+      <_summary>FTP proxy host name</_summary>
+      <_description>
+        The machine name to proxy FTP through.
+      </_description>
+    </key>
+    <key name="port" type="i">
+      <range min="0" max="65535"/>
+      <default>0</default>
+      <_summary>FTP proxy port</_summary>
+      <_description>
+        The port on the machine defined by "/system/proxy/ftp/host" that you 
+        proxy through.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.system.proxy.socks" path="/system/proxy/socks/">
+    <key name="host" type="s">
+      <default>''</default>
+      <_summary>SOCKS proxy host name</_summary>
+      <_description>
+        The machine name to use as a SOCKS proxy.
+      </_description>
+    </key>
+    <key name="port" type="i">
+      <range min="0" max="65535"/>
+      <default>0</default>
+      <_summary>SOCKS proxy port</_summary>
+      <_description>
+        The port on the machine defined by "/system/proxy/socks/host" that you 
+        proxy through.
+      </_description>
+    </key>
+  </schema>
+</schemalist>

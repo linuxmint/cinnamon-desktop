@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.cinnamon.desktop.a11y.applications" path="/org/cinnamon/desktop/a11y/applications/">
+    <key name="screen-keyboard-enabled" type="b">
+      <default>false</default>
+      <_summary>On-screen keyboard</_summary>
+      <_description>Whether the on-screen keyboard is turned on.</_description>
+    </key>
+    <key name="screen-magnifier-enabled" type="b">
+      <default>false</default>
+      <_summary>Screen magnifier</_summary>
+      <_description>Whether the screen magnifier is turned on.</_description>
+    </key>
+    <key name="screen-reader-enabled" type="b">
+      <default>false</default>
+      <_summary>Screen reader</_summary>
+      <_description>Whether the screen reader is turned on.</_description>
+    </key>
+  </schema>
+</schemalist>

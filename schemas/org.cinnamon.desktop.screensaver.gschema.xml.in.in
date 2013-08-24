@@ -1,0 +1,59 @@
+<schemalist>
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.cinnamon.desktop.screensaver" path="/org/cinnamon/desktop/screensaver/">
+    <key name="idle-activation-enabled" type="b">
+      <default>true</default>
+      <_summary>Activate when idle</_summary>
+      <_description>Set this to TRUE to activate the screensaver when the session is idle.</_description>
+    </key>
+    <key name="lock-enabled" type="b">
+      <default>true</default>
+      <_summary>Lock on activation</_summary>
+      <_description>Set this to TRUE to lock the screen when the screensaver goes active.</_description>
+    </key>
+    <key name="lock-delay" type="u">
+      <default>0</default>
+      <_summary>Time before locking</_summary>
+      <_description>The number of seconds after screensaver activation before locking the screen.</_description>
+    </key>
+    <key name="show-notifications" type="b">
+      <default>false</default>
+      <_summary>Show notifications in the lock screen</_summary>
+      <_description>Whether notifications are shown in the lock screen or not. This only affects the standard experience.</_description>
+    </key>
+    <key name="embedded-keyboard-enabled" type="b">
+      <default>false</default>
+      <_summary>Allow embedding a keyboard into the window</_summary>
+      <_description>Set this to TRUE to allow embedding a keyboard into the window when trying to unlock.  The "keyboard_command" key must be set with the appropriate command.</_description>
+    </key>
+    <key name="embedded-keyboard-command" type="s">
+      <default>''</default>
+      <_summary>Embedded keyboard command</_summary>
+      <_description>The command that will be run, if the "embedded_keyboard_enabled" key is set to TRUE, to embed a keyboard widget into the window. This command should implement an XEMBED plug interface and output a window XID on the standard output.</_description>
+    </key>
+    <key name="logout-enabled" type="b">
+      <default>false</default>
+      <_summary>Allow logout</_summary>
+      <_description>Set this to TRUE to offer an option in the unlock dialog to allow logging out after a delay.  The delay is specified in the "logout_delay" key.</_description>
+    </key>
+    <key name="logout-delay" type="u">
+      <default>7200</default>
+      <_summary>Time before logout option</_summary>
+      <_description>The number of seconds after the screensaver activation before a logout option will appear in the unlock dialog. This key has effect only if the "logout_enable" key is set to TRUE.</_description>
+    </key>
+    <key name="logout-command" type="s">
+      <default>''</default>
+      <_summary>Logout command</_summary>
+      <_description>The command to invoke when the logout button is clicked.  This command should simply log the user out without any interaction. This key has effect only if the "logout_enable" key is set to TRUE.</_description>
+    </key>
+    <key name="user-switch-enabled" type="b">
+      <default>true</default>
+      <_summary>Allow user switching</_summary>
+      <_description>Set this to TRUE to offer an option in the unlock dialog to switch to a different user account.</_description>
+    </key>
+    <key name="status-message-enabled" type="b">
+      <default>true</default>
+      <_summary>Allow the session status message to be displayed</_summary>
+      <_description>Allow the session status message to be displayed when the screen is locked.</_description>
+    </key>
+  </schema>
+</schemalist>
