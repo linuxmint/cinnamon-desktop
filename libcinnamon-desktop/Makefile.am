@@ -3,9 +3,6 @@ CLEANFILES =
 noinst_LTLIBRARIES =
 lib_LTLIBRARIES = libcinnamon-desktop.la
 
-cdesktopincludedir = $(includedir)/cinnamon-desktop
-cdesktopinclude_HEADERS = cdesktop-enums.h
-
 AM_CPPFLAGS =							\
 	-I$(top_srcdir)						\
 	-I$(srcdir)/libgsystem					\
@@ -74,7 +71,8 @@ libcinnamon_desktop_HEADERS = \
         gnome-rr-labeler.h		\
         gnome-pnp-ids.h			\
         gnome-wall-clock.h		\
-	gnome-xkb-info.h
+	gnome-xkb-info.h		\
+	cdesktop-enums.h
 
 if USE_INTERNAL_PNP_IDS
 pnpdatadir = $(datadir)/libcinnamon-desktop

@@ -31,7 +31,7 @@
 
 #include <gdk/gdk.h>
 #include <gio/gio.h>
-#include <cdesktop-enums.h>
+#include "cdesktop-enums.h"
 #include <libcinnamon-desktop/gnome-desktop-thumbnail.h>
 #include <libcinnamon-desktop/gnome-bg-crossfade.h>
 
