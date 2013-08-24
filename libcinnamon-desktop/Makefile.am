@@ -3,6 +3,9 @@ CLEANFILES =
 noinst_LTLIBRARIES =
 lib_LTLIBRARIES = libcinnamon-desktop.la
 
+cdesktopincludedir = $(includedir)/cinnamon-desktop
+cdesktopinclude_HEADERS = cdesktop-enums.h
+
 AM_CPPFLAGS =							\
 	-I$(top_srcdir)						\
 	-I$(srcdir)/libgsystem					\
@@ -89,6 +92,11 @@ INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir)
 
 if HAVE_INTROSPECTION
 
+
+CDesktopEnums_3_0_gir_CFLAGS = -I$(srcdir)
+CDesktopEnums_3_0_gir_FILES = cdesktop-enums.h
+CDesktopEnums_3_0_gir_SCANNERFLAGS = --header-only --identifier-prefix=CDesktop
+INTROSPECTION_GIRS += CDesktopEnums-3.0.gir
 CinnamonDesktop-3.0.gir: libcinnamon-desktop.la
 CinnamonDesktop_3_0_gir_INCLUDES = GObject-2.0 Gtk-3.0
 CinnamonDesktop_3_0_gir_PACKAGES = gdk-pixbuf-2.0 glib-2.0 gobject-2.0 gio-2.0 gtk+-3.0
