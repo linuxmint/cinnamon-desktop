@@ -34,7 +34,7 @@ Author: Soren Sandmann <sandmann@redhat.com>
 
 #include <glib/gstdio.h>
 #include <gio/gio.h>
-#include <headers/cdesktop-enums.h>
+#include <cdesktop-enums.h>
 
 #include <gdk/gdkx.h>
 #include <X11/Xlib.h>

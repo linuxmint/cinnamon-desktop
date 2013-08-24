@@ -21,7 +21,7 @@ desktop_gschemas_in_in =						\
 @INTLTOOL_XML_NOMERGE_RULE@
 
 gsettings_ENUM_NAMESPACE = org.cinnamon.desktop
-gsettings_ENUM_FILES = $(top_srcdir)/headers/*.h
+gsettings_ENUM_FILES = $(top_srcdir)/libcinnamon-desktop/*.h
 
 desktop_gschemas_in = $(desktop_gschemas_in_in:.xml.in.in=.xml.in)
 gsettings_SCHEMAS = $(desktop_gschemas_in:.xml.in=.xml)
