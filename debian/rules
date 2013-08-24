@@ -21,8 +21,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
 			--with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
 			--disable-scrollkeeper \
-			--enable-gtk-doc \
-			--enable-desktop-docs \
 			--enable-introspection
 
 DEB_DH_MAKESHLIBS_ARGS_libcinnamon-desktop0 += -- -c4
