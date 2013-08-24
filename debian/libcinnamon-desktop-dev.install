@@ -1,5 +1,4 @@
-usr/include
+usr/include/*
 usr/lib/pkgconfig
 usr/lib/libcinnamon-desktop.so
 usr/share/gir-1.0
-usr/include/*
