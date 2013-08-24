@@ -5044,7 +5044,7 @@ Date:   Wed Aug 4 14:37:12 2010 +0200
 
     Drop GnomeDesktopItem API
     
-    This is replaced by GKeyFile and GDesktopAppInfo now.
+    This is replaced by GKeyFile and CDesktopAppInfo now.
     
     See http://mail.gnome.org/archives/desktop-devel-list/2010-July/msg00017.html
     for discussion.

@@ -28,7 +28,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-wall-clock.h"
-#include <cdesktop-enums.h>
+#include <headers/cdesktop-enums.h>
 #include "gnome-datetime-source.h"
 
 struct _GnomeWallClockPrivate {
@@ -202,7 +202,7 @@ static gboolean
 update_clock (gpointer data)
 {
 	GnomeWallClock   *self = data;
-	GDesktopClockFormat clock_format;
+	CDesktopClockFormat clock_format;
 	const char *format_string;
 	gboolean show_full_date;
 	gboolean show_weekday;
@@ -231,7 +231,7 @@ update_clock (gpointer data)
 	self->priv->clock_update_id = g_source_attach (source, NULL);
 	g_source_unref (source);
 
-	if (clock_format == G_DESKTOP_CLOCK_FORMAT_24H) {
+	if (clock_format == C_DESKTOP_CLOCK_FORMAT_24H) {
 		if (show_full_date) {
 			/* Translators: This is the time format with full date used
 			   in 24-hour mode. */

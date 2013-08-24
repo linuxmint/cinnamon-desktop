@@ -31,7 +31,7 @@
 
 #include <gdk/gdk.h>
 #include <gio/gio.h>
-#include <cdesktop-enums.h>
+#include <headers/cdesktop-enums.h>
 #include <libcinnamon-desktop/gnome-desktop-thumbnail.h>
 #include <libcinnamon-desktop/gnome-bg-crossfade.h>
 
@@ -57,18 +57,18 @@ void             gnome_bg_save_to_preferences   (GnomeBG               *bg,
 void             gnome_bg_set_filename          (GnomeBG               *bg,
 						 const char            *filename);
 void             gnome_bg_set_placement         (GnomeBG               *bg,
-						 GDesktopBackgroundStyle placement);
+						 CDesktopBackgroundStyle placement);
 void             gnome_bg_set_color             (GnomeBG               *bg,
-						 GDesktopBackgroundShading type,
+						 CDesktopBackgroundShading type,
 						 GdkColor              *primary,
 						 GdkColor              *secondary);
 void             gnome_bg_set_draw_background   (GnomeBG               *bg,
 						 gboolean               draw_background);
 /* Getters */
-GDesktopBackgroundStyle gnome_bg_get_placement  (GnomeBG               *bg);
+CDesktopBackgroundStyle gnome_bg_get_placement  (GnomeBG               *bg);
 gboolean         gnome_bg_get_draw_background   (GnomeBG               *bg);
 void		 gnome_bg_get_color             (GnomeBG               *bg,
-						 GDesktopBackgroundShading *type,
+						 CDesktopBackgroundShading *type,
 						 GdkColor              *primary,
 						 GdkColor              *secondary);
 const gchar *    gnome_bg_get_filename          (GnomeBG               *bg);

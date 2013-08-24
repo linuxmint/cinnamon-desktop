@@ -34,7 +34,7 @@ Author: Soren Sandmann <sandmann@redhat.com>
 
 #include <glib/gstdio.h>
 #include <gio/gio.h>
-#include <cdesktop-enums.h>
+#include <headers/cdesktop-enums.h>
 
 #include <gdk/gdkx.h>
 #include <X11/Xlib.h>
@@ -96,8 +96,8 @@ struct _GnomeBG
 {
 	GObject                 parent_instance;
 	char *			filename;
-	GDesktopBackgroundStyle	placement;
-	GDesktopBackgroundShading	color_type;
+	CDesktopBackgroundStyle	placement;
+	CDesktopBackgroundShading	color_type;
 	GdkColor		primary;
 	GdkColor		secondary;
 	gboolean		is_enabled;
@@ -330,9 +330,9 @@ gnome_bg_load_from_preferences (GnomeBG   *bg,
 {
 	char    *tmp;
 	char    *filename;
-	GDesktopBackgroundShading ctype;
+	CDesktopBackgroundShading ctype;
 	GdkColor c1, c2;
-	GDesktopBackgroundStyle placement;
+	CDesktopBackgroundStyle placement;
 
 	g_return_if_fail (GNOME_IS_BG (bg));
 	g_return_if_fail (G_IS_SETTINGS (settings));
@@ -480,7 +480,7 @@ gnome_bg_new (void)
 
 void
 gnome_bg_set_color (GnomeBG *bg,
-		    GDesktopBackgroundShading type,
+		    CDesktopBackgroundShading type,
 		    GdkColor *primary,
 		    GdkColor *secondary)
 {
@@ -503,7 +503,7 @@ gnome_bg_set_color (GnomeBG *bg,
 
 void
 gnome_bg_set_placement (GnomeBG                 *bg,
-			GDesktopBackgroundStyle  placement)
+			CDesktopBackgroundStyle  placement)
 {
 	g_return_if_fail (bg != NULL);
 	
@@ -514,7 +514,7 @@ gnome_bg_set_placement (GnomeBG                 *bg,
 	}
 }
 
-GDesktopBackgroundStyle
+CDesktopBackgroundStyle
 gnome_bg_get_placement (GnomeBG *bg)
 {
 	g_return_val_if_fail (bg != NULL, -1);
@@ -524,7 +524,7 @@ gnome_bg_get_placement (GnomeBG *bg)
 
 void
 gnome_bg_get_color (GnomeBG                   *bg,
-		    GDesktopBackgroundShading *type,
+		    CDesktopBackgroundShading *type,
 		    GdkColor                  *primary,
 		    GdkColor                  *secondary)
 {
@@ -578,7 +578,7 @@ get_wallpaper_cache_dir ()
 
 static inline gchar *
 get_wallpaper_cache_prefix_name (gint                     num_monitor,
-				 GDesktopBackgroundStyle  placement,
+				 CDesktopBackgroundStyle  placement,
 				 gint                     width,
 				 gint                     height)
 {
@@ -588,7 +588,7 @@ get_wallpaper_cache_prefix_name (gint                     num_monitor,
 static char *
 get_wallpaper_cache_filename (const char              *filename,
 			      gint                     num_monitor,
-			      GDesktopBackgroundStyle  placement,
+			      CDesktopBackgroundStyle  placement,
 			      gint                     width,
 			      gint                     height)
 {
@@ -764,7 +764,7 @@ draw_color_area (GnomeBG *bg,
         gdk_rectangle_intersect (rect, &extent, rect);
 	
 	switch (bg->color_type) {
-	case G_DESKTOP_BACKGROUND_SHADING_SOLID:
+	case C_DESKTOP_BACKGROUND_SHADING_SOLID:
 		/* not really a big deal to ignore the area of interest */
 		pixel = ((bg->primary.red >> 8) << 24)      |
 			((bg->primary.green >> 8) << 16)    |
@@ -774,11 +774,11 @@ draw_color_area (GnomeBG *bg,
 		gdk_pixbuf_fill (dest, pixel);
 		break;
 		
-	case G_DESKTOP_BACKGROUND_SHADING_HORIZONTAL:
+	case C_DESKTOP_BACKGROUND_SHADING_HORIZONTAL:
 		pixbuf_draw_gradient (dest, TRUE, &(bg->primary), &(bg->secondary), rect);
 		break;
 		
-	case G_DESKTOP_BACKGROUND_SHADING_VERTICAL:
+	case C_DESKTOP_BACKGROUND_SHADING_VERTICAL:
 		pixbuf_draw_gradient (dest, FALSE, &(bg->primary), &(bg->secondary), rect);
 		break;
 		
@@ -849,7 +849,7 @@ pixbuf_clip_to_fit (GdkPixbuf *src,
 }
 
 static GdkPixbuf *
-get_scaled_pixbuf (GDesktopBackgroundStyle placement,
+get_scaled_pixbuf (CDesktopBackgroundStyle placement,
 		   GdkPixbuf *pixbuf,
 		   int width, int height,
 		   int *x, int *y,
@@ -864,24 +864,24 @@ get_scaled_pixbuf (GDesktopBackgroundStyle placement,
 #endif
 	
 	switch (placement) {
-	case G_DESKTOP_BACKGROUND_STYLE_SPANNED:
+	case C_DESKTOP_BACKGROUND_STYLE_SPANNED:
                 new = pixbuf_scale_to_fit (pixbuf, width, height);
 		break;
-	case G_DESKTOP_BACKGROUND_STYLE_ZOOM:
+	case C_DESKTOP_BACKGROUND_STYLE_ZOOM:
 		new = pixbuf_scale_to_min (pixbuf, width, height);
 		break;
 		
-	case G_DESKTOP_BACKGROUND_STYLE_STRETCHED:
+	case C_DESKTOP_BACKGROUND_STYLE_STRETCHED:
 		new = gdk_pixbuf_scale_simple (pixbuf, width, height,
 					       GDK_INTERP_BILINEAR);
 		break;
 		
-	case G_DESKTOP_BACKGROUND_STYLE_SCALED:
+	case C_DESKTOP_BACKGROUND_STYLE_SCALED:
 		new = pixbuf_scale_to_fit (pixbuf, width, height);
 		break;
 		
-	case G_DESKTOP_BACKGROUND_STYLE_CENTERED:
-	case G_DESKTOP_BACKGROUND_STYLE_WALLPAPER:
+	case C_DESKTOP_BACKGROUND_STYLE_CENTERED:
+	case C_DESKTOP_BACKGROUND_STYLE_WALLPAPER:
 	default:
 		new = pixbuf_clip_to_fit (pixbuf, width, height);
 		break;
@@ -913,16 +913,16 @@ draw_image_area (GnomeBG         *bg,
 	scaled = get_scaled_pixbuf (bg->placement, pixbuf, dest_width, dest_height, &x, &y, &w, &h);
 
 	switch (bg->placement) {
-	case G_DESKTOP_BACKGROUND_STYLE_WALLPAPER:
+	case C_DESKTOP_BACKGROUND_STYLE_WALLPAPER:
 		pixbuf_tile (scaled, dest);
 		break;
-	case G_DESKTOP_BACKGROUND_STYLE_ZOOM:
-	case G_DESKTOP_BACKGROUND_STYLE_CENTERED:
-	case G_DESKTOP_BACKGROUND_STYLE_STRETCHED:
-	case G_DESKTOP_BACKGROUND_STYLE_SCALED:
+	case C_DESKTOP_BACKGROUND_STYLE_ZOOM:
+	case C_DESKTOP_BACKGROUND_STYLE_CENTERED:
+	case C_DESKTOP_BACKGROUND_STYLE_STRETCHED:
+	case C_DESKTOP_BACKGROUND_STYLE_SCALED:
 		pixbuf_blend (scaled, dest, 0, 0, w, h, x + area->x, y + area->y, 1.0);
 		break;
-	case G_DESKTOP_BACKGROUND_STYLE_SPANNED:
+	case C_DESKTOP_BACKGROUND_STYLE_SPANNED:
 		pixbuf_blend (scaled, dest, 0, 0, w, h, x, y, 1.0);
 		break;
 	default:
@@ -1010,14 +1010,14 @@ gnome_bg_draw (GnomeBG *bg,
 	if (!bg)
 		return;
 
-	if (is_root && (bg->placement != G_DESKTOP_BACKGROUND_STYLE_SPANNED)) {
+	if (is_root && (bg->placement != C_DESKTOP_BACKGROUND_STYLE_SPANNED)) {
 		draw_color_each_monitor (bg, dest, screen);
-		if (bg->placement != G_DESKTOP_BACKGROUND_STYLE_NONE) {
+		if (bg->placement != C_DESKTOP_BACKGROUND_STYLE_NONE) {
 			draw_each_monitor (bg, dest, screen);
 		}
 	} else {
 		draw_color (bg, dest);
-		if (bg->placement != G_DESKTOP_BACKGROUND_STYLE_NONE) {
+		if (bg->placement != C_DESKTOP_BACKGROUND_STYLE_NONE) {
 			draw_once (bg, dest);
 		}
 	}
@@ -1061,13 +1061,13 @@ gnome_bg_get_pixmap_size (GnomeBG   *bg,
 
 	if (!bg->filename) {
 		switch (bg->color_type) {
-		case G_DESKTOP_BACKGROUND_SHADING_SOLID:
+		case C_DESKTOP_BACKGROUND_SHADING_SOLID:
 			*pixmap_width = 1;
 			*pixmap_height = 1;
 			break;
 			
-		case G_DESKTOP_BACKGROUND_SHADING_HORIZONTAL:
-		case G_DESKTOP_BACKGROUND_SHADING_VERTICAL:
+		case C_DESKTOP_BACKGROUND_SHADING_HORIZONTAL:
+		case C_DESKTOP_BACKGROUND_SHADING_VERTICAL:
 			break;
 		}
 		
@@ -1129,7 +1129,7 @@ gnome_bg_create_surface (GnomeBG	    *bg,
 		return NULL;
 
 	cr = cairo_create (surface);
-	if (!bg->filename && bg->color_type == G_DESKTOP_BACKGROUND_SHADING_SOLID) {
+	if (!bg->filename && bg->color_type == C_DESKTOP_BACKGROUND_SHADING_SOLID) {
 		gdk_cairo_set_source_color (cr, &(bg->primary));
 		average.red = bg->primary.red / 65535.0;
 		average.green = bg->primary.green / 65535.0;
@@ -1173,7 +1173,7 @@ gnome_bg_is_dark (GnomeBG *bg,
 	
 	g_return_val_if_fail (bg != NULL, FALSE);
 	
-	if (bg->color_type == G_DESKTOP_BACKGROUND_SHADING_SOLID) {
+	if (bg->color_type == C_DESKTOP_BACKGROUND_SHADING_SOLID) {
 		color = bg->primary;
 	} else {
 		color.red = (bg->primary.red + bg->secondary.red) / 2;
@@ -1354,7 +1354,7 @@ gnome_bg_create_thumbnail (GnomeBG               *bg,
 	
 	draw_color (bg, result);
 	
-	if (bg->placement != G_DESKTOP_BACKGROUND_STYLE_NONE) {
+	if (bg->placement != C_DESKTOP_BACKGROUND_STYLE_NONE) {
 		thumb = create_img_thumbnail (bg, factory, screen, dest_width, dest_height, -1);
 		
 		if (thumb) {
@@ -1884,9 +1884,9 @@ get_as_pixbuf_for_size (GnomeBG    *bg,
 			if (tmp != NULL &&
 			    strcmp (tmp, "svg") == 0 &&
 			    (best_width > 0 && best_height > 0) &&
-			    (bg->placement == G_DESKTOP_BACKGROUND_STYLE_STRETCHED ||
-			     bg->placement == G_DESKTOP_BACKGROUND_STYLE_SCALED ||
-			     bg->placement == G_DESKTOP_BACKGROUND_STYLE_ZOOM))
+			    (bg->placement == C_DESKTOP_BACKGROUND_STYLE_STRETCHED ||
+			     bg->placement == C_DESKTOP_BACKGROUND_STYLE_SCALED ||
+			     bg->placement == C_DESKTOP_BACKGROUND_STYLE_ZOOM))
 				pixbuf = gdk_pixbuf_new_from_file_at_size (filename, best_width, best_height, NULL);
 			else
 				pixbuf = gdk_pixbuf_new_from_file (filename, NULL);
@@ -2049,7 +2049,7 @@ get_mtime (const char *filename)
 }
 
 static GdkPixbuf *
-scale_thumbnail (GDesktopBackgroundStyle placement,
+scale_thumbnail (CDesktopBackgroundStyle placement,
 		 const char *filename,
 		 GdkPixbuf *thumb,
 		 GdkScreen *screen,
@@ -2059,8 +2059,8 @@ scale_thumbnail (GDesktopBackgroundStyle placement,
 	int o_width;
 	int o_height;
 	
-	if (placement != G_DESKTOP_BACKGROUND_STYLE_WALLPAPER &&
-	    placement != G_DESKTOP_BACKGROUND_STYLE_CENTERED) {
+	if (placement != C_DESKTOP_BACKGROUND_STYLE_WALLPAPER &&
+	    placement != C_DESKTOP_BACKGROUND_STYLE_CENTERED) {
 		
 		/* In this case, the pixbuf will be scaled to fit the screen anyway,
 		 * so just return the pixbuf here
@@ -2085,7 +2085,7 @@ scale_thumbnail (GDesktopBackgroundStyle placement,
 		new_width = floor (thumb_width * f + 0.5);
 		new_height = floor (thumb_height * f + 0.5);
 
-		if (placement == G_DESKTOP_BACKGROUND_STYLE_WALLPAPER) {
+		if (placement == C_DESKTOP_BACKGROUND_STYLE_WALLPAPER) {
 			/* Heuristic to make sure tiles don't become so small that
 			 * they turn into a blur.
 			 *
@@ -3154,7 +3154,7 @@ gnome_bg_create_frame_thumbnail (GnomeBG			*bg,
 
 	draw_color (bg, result);
 
-	if (bg->placement != G_DESKTOP_BACKGROUND_STYLE_NONE) {
+	if (bg->placement != C_DESKTOP_BACKGROUND_STYLE_NONE) {
 		thumb = create_img_thumbnail (bg, factory, screen, dest_width, dest_height, frame_num + skipped);
 
 		if (thumb) {
