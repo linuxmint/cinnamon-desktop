@@ -3,10 +3,10 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
 
-Name: gnome-desktop-3.0
+Name: cinnamon-desktop
 Description: Utility library for loading .desktop files
-Requires: gtk+-3.0 gsettings-desktop-schemas
+Requires: gtk+-3.0
 Requires.private: xkbfile
 Version: @VERSION@
-Libs: -L${libdir} -lgnome-desktop-3
-Cflags: -I${includedir}/gnome-desktop-3.0
+Libs: -L${libdir} -lcinnamon-desktop
+Cflags: -I${includedir}/cinnamon-desktop
