@@ -39,7 +39,7 @@
       </_description>
     </key>
     <key name="menus-have-icons" type="b">
-      <default>false</default>
+      <default>true</default>
       <_summary>Menus Have Icons</_summary>
       <_description>
         Whether menus may display an icon next to a menu entry.
@@ -118,7 +118,7 @@
       </_description>
     </key>
     <key name="font-name" type="s">
-      <default>'Cantarell 11'</default>
+      <default>'Sans 9'</default>
       <_summary>Default font</_summary>
       <_description>
         Name of the default font used by gtk+.
@@ -154,14 +154,14 @@
       </_description>
     </key>
     <key name="document-font-name" type="s">
-      <default>'Sans 11'</default>
+      <default>'Sans 10'</default>
       <_summary>Document font</_summary>
       <_description>
         Name of the default font used for reading documents.
       </_description>
     </key>
     <key name="monospace-font-name" type="s">
-      <default>'Monospace 11'</default>
+      <default>'Monospace 10'</default>
       <_summary>Monospace font</_summary>
       <_description>
         Name of a monospaced (fixed-width) font for use in locations like

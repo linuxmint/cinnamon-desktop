@@ -4,7 +4,7 @@
           path="/org/cinnamon/desktop/wm/preferences/"
           gettext-domain="@GETTEXT_PACKAGE@">
     <key name="mouse-button-modifier" type="s">
-      <default><![CDATA['<Super>']]></default>
+      <default><![CDATA['<Alt>']]></default>
       <_summary>Modifier to use for modified window click actions</_summary>
       <_description>
         Clicking a window while holding down this modifier key  will move the
@@ -25,7 +25,7 @@
        </_description>
     </key>
     <key name="button-layout" type="s">
-      <default>':minimize,maximize,close'</default>
+      <default>'menu:minimize,maximize,close'</default>
       <_summary>Arrangement of buttons on the titlebar</_summary>
       <_description>
         Arrangement of buttons on the titlebar. The value should be a string,
@@ -204,7 +204,7 @@
       </_description>
     </key>
     <key name="titlebar-font" type="s">
-      <default>'Cantarell Bold 11'</default>
+      <default>'Sans Bold 10'</default>
       <_summary>Window title font</_summary>
       <_description>
         A font description string describing a font for window titlebars.

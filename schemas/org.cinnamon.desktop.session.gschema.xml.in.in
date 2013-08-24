@@ -6,7 +6,7 @@
       <_description>The number of seconds of inactivity before the session is considered idle.</_description>
     </key>
     <key name="session-name" type="s">
-      <default>"gnome"</default>
+      <default>"cinnamon"</default>
       <summary>Session type</summary>
       <description>The name of the session to use.  Known values are
       "gnome" and "gnome-fallback".</description>

@@ -1,5 +1,5 @@
 <schemalist gettext-domain="gsettings-desktop-schemas">
-  <schema id="org.cinnamon.system.proxy" path="/system/proxy/">
+  <schema id="org.cinnamon.system.proxy" path="org/cinnamon/system/proxy/">
     <child name="http" schema="org.cinnamon.system.proxy.http"/>
     <child name="https" schema="org.cinnamon.system.proxy.https"/>
     <child name="ftp" schema="org.cinnamon.system.proxy.ftp"/>
@@ -58,7 +58,7 @@
       </_description>
     </key>
   </schema>
-  <schema id="org.cinnamon.system.proxy.http" path="/system/proxy/http/">
+  <schema id="org.cinnamon.system.proxy.http" path="org/cinnamon/system/proxy/http/">
     <key name="enabled" type="b">
       <default>false</default>
       <_summary>Unused; ignore</_summary>
@@ -112,7 +112,7 @@
       </_description>
     </key>
   </schema>
-  <schema id="org.cinnamon.system.proxy.https" path="/system/proxy/https/">
+  <schema id="org.cinnamon.system.proxy.https" path="org/cinnamon/system/proxy/https/">
     <key name="host" type="s">
       <default>''</default>
       <_summary>Secure HTTP proxy host name</_summary>
@@ -148,7 +148,7 @@
       </_description>
     </key>
   </schema>
-  <schema id="org.cinnamon.system.proxy.socks" path="/system/proxy/socks/">
+  <schema id="org.cinnamon.system.proxy.socks" path="org/cinnamon/system/proxy/socks/">
     <key name="host" type="s">
       <default>''</default>
       <_summary>SOCKS proxy host name</_summary>

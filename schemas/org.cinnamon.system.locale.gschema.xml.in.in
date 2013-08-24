@@ -1,5 +1,5 @@
 <schemalist gettext-domain="gsettings-desktop-schemas">
-  <schema id="org.cinnamon.system.locale" path="/system/locale/">
+  <schema id="org.cinnamon.system.locale" path="org/cinnamon/system/locale/">
     <key name="region" type="s">
       <default>''</default>
       <_summary>The locale to use for dates / numbers formats</_summary>
