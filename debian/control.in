@@ -1,5 +1,5 @@
 Source: cinnamon-desktop
-Section: cinnamon
+Section: x11
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
 Standards-Version: 3.9.3
