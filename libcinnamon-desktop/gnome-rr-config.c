@@ -1374,7 +1374,7 @@ gnome_rr_config_apply_from_filename_with_time (GnomeRRScreen *screen, const char
 /**
  * gnome_rr_config_get_outputs:
  *
- * Returns: (array zero-terminated=1) (element-type GnomeDesktop.RROutputInfo) (transfer none): the output configuration for this #GnomeRRConfig
+ * Returns: (array zero-terminated=1) (element-type CinnamonDesktop.RROutputInfo) (transfer none): the output configuration for this #GnomeRRConfig
  */
 GnomeRROutputInfo **
 gnome_rr_config_get_outputs (GnomeRRConfig *self)
