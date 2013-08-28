@@ -47,7 +47,6 @@ Author: Soren Sandmann <sandmann@redhat.com>
 #include "gnome-bg.h"
 #include "gnome-bg-crossfade.h"
 
-#define BG_KEY_DRAW_BACKGROUND    "draw-background"
 #define BG_KEY_PRIMARY_COLOR      "primary-color"
 #define BG_KEY_SECONDARY_COLOR    "secondary-color"
 #define BG_KEY_COLOR_TYPE         "color-shading-type"
@@ -100,7 +99,6 @@ struct _GnomeBG
 	CDesktopBackgroundShading	color_type;
 	GdkColor		primary;
 	GdkColor		secondary;
-	gboolean		is_enabled;
 
 	GFileMonitor *		file_monitor;
 
@@ -337,8 +335,6 @@ gnome_bg_load_from_preferences (GnomeBG   *bg,
 	g_return_if_fail (GNOME_IS_BG (bg));
 	g_return_if_fail (G_IS_SETTINGS (settings));
 
-	bg->is_enabled = g_settings_get_boolean (settings, BG_KEY_DRAW_BACKGROUND);
-
 	/* Filename */
 	filename = g_settings_get_mapped (settings, BG_KEY_PICTURE_URI, bg_gsettings_mapping, NULL);
 
@@ -385,7 +381,6 @@ gnome_bg_save_to_preferences (GnomeBG   *bg,
 		uri = g_filename_to_uri (bg->filename, NULL, NULL);
 	if (uri == NULL)
 		uri = g_strdup ("");
-	g_settings_set_boolean (settings, BG_KEY_DRAW_BACKGROUND, bg->is_enabled);
 	g_settings_set_string (settings, BG_KEY_PICTURE_URI, uri);
 	g_settings_set_string (settings, BG_KEY_PRIMARY_COLOR, primary);
 	g_settings_set_string (settings, BG_KEY_SECONDARY_COLOR, secondary);
@@ -539,28 +534,6 @@ gnome_bg_get_color (GnomeBG                   *bg,
 	if (secondary)
 		*secondary = bg->secondary;
 }
-
-void
-gnome_bg_set_draw_background (GnomeBG  *bg,
-			      gboolean  draw_background)
-{
-	g_return_if_fail (bg != NULL);
-	
-	if (bg->is_enabled != draw_background) {
-		bg->is_enabled = draw_background;
-		
-		queue_changed (bg);
-	}
-}
-
-gboolean
-gnome_bg_get_draw_background (GnomeBG *bg)
-{
-	g_return_val_if_fail (bg != NULL, FALSE);
-
-	return bg->is_enabled;
-}
-
 
 const gchar *
 gnome_bg_get_filename (GnomeBG *bg)

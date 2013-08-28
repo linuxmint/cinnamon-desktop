@@ -1,10 +1,5 @@
 <schemalist gettext-domain="gsettings-desktop-schemas">
   <schema id="org.cinnamon.desktop.background" path="/org/cinnamon/desktop/background/">
-    <key name="draw-background" type="b">
-      <default>true</default>
-      <_summary>Draw Desktop Background</_summary>
-      <_description>Have GNOME draw the desktop background.</_description>
-    </key>
     <key name="picture-options" enum="org.cinnamon.desktop.CDesktopBackgroundStyle">
       <default>'zoom'</default>
       <_summary>Picture Options</_summary>

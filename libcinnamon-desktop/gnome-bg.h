@@ -62,11 +62,8 @@ void             gnome_bg_set_color             (GnomeBG               *bg,
 						 CDesktopBackgroundShading type,
 						 GdkColor              *primary,
 						 GdkColor              *secondary);
-void             gnome_bg_set_draw_background   (GnomeBG               *bg,
-						 gboolean               draw_background);
 /* Getters */
 CDesktopBackgroundStyle gnome_bg_get_placement  (GnomeBG               *bg);
-gboolean         gnome_bg_get_draw_background   (GnomeBG               *bg);
 void		 gnome_bg_get_color             (GnomeBG               *bg,
 						 CDesktopBackgroundShading *type,
 						 GdkColor              *primary,
