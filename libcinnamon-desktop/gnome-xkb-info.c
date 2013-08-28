@@ -396,7 +396,10 @@ parse_end_element (GMarkupParseContext  *context,
 
       if (g_hash_table_contains (priv->layouts_table, priv->current_parser_layout->id))
         {
-          g_clear_pointer (&priv->current_parser_layout, free_layout);
+          if (priv->current_parser_layout != NULL) {
+            free_layout (priv->current_parser_layout);
+            priv->current_parser_layout = NULL;
+          }
           return;
         }
 
@@ -589,12 +592,36 @@ parse_rules (GnomeXkbInfo *self)
 
  cleanup:
   g_warning ("Failed to load XKB rules file %s: %s", file_path, error->message);
-  g_clear_pointer (&error, g_error_free);
-  g_clear_pointer (&file_path, g_free);
-  g_clear_pointer (&priv->option_groups_table, g_hash_table_destroy);
-  g_clear_pointer (&priv->layouts_by_short_desc, g_hash_table_destroy);
-  g_clear_pointer (&priv->layouts_by_iso639, g_hash_table_destroy);
-  g_clear_pointer (&priv->layouts_table, g_hash_table_destroy);
+
+  if (error != NULL) {
+    g_error_free (error);
+    error = NULL;
+  }
+
+  if (file_path != NULL) {
+    g_free (file_path);
+    file_path = NULL;
+  }
+
+  if (priv->option_groups_table != NULL) {
+    g_hash_table_destroy (priv->option_groups_table);
+    priv->option_groups_table = NULL;
+  }
+
+  if (priv->layouts_by_short_desc != NULL) {
+    g_hash_table_destroy (priv->layouts_by_short_desc);
+    priv->layouts_by_short_desc = NULL;
+  }
+
+  if (priv->layouts_by_iso639 != NULL) {
+    g_hash_table_destroy (priv->layouts_by_iso639);
+    priv->layouts_by_iso639 = NULL;
+  }
+
+  if (priv->layouts_table != NULL) {
+    g_hash_table_destroy (priv->layouts_table);
+    priv->layouts_table = NULL;
+  }
 }
 
 static gboolean
