@@ -16,5 +16,15 @@
       <_summary>Input feedback sounds</_summary>
       <_description>Whether to play sounds on input events.</_description>
     </key>
+    <key name="volume-sound-enabled" type="b">
+      <default>false</default>
+      <_summary>Whether to play a sound when the volume is changed</_summary>
+      <_description>Whether to play a sound when the volume is changed.</_description>
+    </key>    
+    <key name="volume-sound-file" type="s">
+      <default>""</default>
+      <_summary>Which sound to play when the volume is changed</_summary>
+      <_description>Which sound to play when the volume is changed.</_description>
+    </key>     
   </schema>
 </schemalist>
