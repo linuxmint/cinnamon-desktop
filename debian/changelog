@@ -1,3 +1,9 @@
+cinnamon-desktop (2.0.0) petra; urgency=low
+
+  * 2.0.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Oct 2013 13:46:35 +0100
+
 cinnamon-desktop (1.9.1) petra; urgency=low
 
   * 1.9.1
