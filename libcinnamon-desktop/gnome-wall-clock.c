@@ -76,7 +76,7 @@ gnome_wall_clock_init (GnomeWallClock *self)
 	
 	g_signal_connect (self->priv->tz_monitor, "changed", G_CALLBACK (on_tz_changed), self);
 	
-	self->priv->desktop_settings = g_settings_new ("org.gnome.desktop.interface");
+	self->priv->desktop_settings = g_settings_new ("org.cinnamon.desktop.interface");
 	g_signal_connect (self->priv->desktop_settings, "changed", G_CALLBACK (on_schema_change), self);
 
 	update_clock (self);
