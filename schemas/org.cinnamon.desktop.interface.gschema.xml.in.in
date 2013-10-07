@@ -152,22 +152,7 @@
       <_description>
         Name of the input method module used by GTK+.
       </_description>
-    </key>
-    <key name="document-font-name" type="s">
-      <default>'Sans 10'</default>
-      <_summary>Document font</_summary>
-      <_description>
-        Name of the default font used for reading documents.
-      </_description>
-    </key>
-    <key name="monospace-font-name" type="s">
-      <default>'Monospace 10'</default>
-      <_summary>Monospace font</_summary>
-      <_description>
-        Name of a monospaced (fixed-width) font for use in locations like
-        terminals.
-      </_description>
-    </key>
+    </key>   
     <key name="menubar-accel" type="s">
       <default>'F10'</default>
       <_summary>Menubar accelerator</_summary>
