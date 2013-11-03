@@ -3,7 +3,7 @@
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
-PKG_NAME="nemo"
+PKG_NAME="cinnamon-desktop"
 
 which gnome-autogen.sh || {
     echo "You need to install gnome-common from GNOME Git (or from"
