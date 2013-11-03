@@ -103,12 +103,17 @@ GdkPixbuf *      gnome_bg_create_frame_thumbnail (GnomeBG              *bg,
 						 int                    dest_height,
 						 int                    frame_num);
 
+void             gnome_bg_create_and_set_surface_as_root (GnomeBG            *bg,
+                                                          GdkWindow          *root_window,
+                                                          GdkScreen          *screen);
+
 /* Set a surface as root - not a GnomeBG method. At some point
  * if we decide to stabilize the API then we may want to make
  * these object methods, drop gnome_bg_create_surface, etc.
  */
 void             gnome_bg_set_surface_as_root   (GdkScreen             *screen,
 						 cairo_surface_t       *surface);
+
 
 GnomeBGCrossfade *gnome_bg_set_surface_as_root_with_crossfade (GdkScreen *screen,
                                                               cairo_surface_t *surface);
