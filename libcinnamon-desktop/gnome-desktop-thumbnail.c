@@ -444,6 +444,13 @@ _gdk_pixbuf_new_from_uri_at_scale (const char *uri,
 	}
     }
 
+    if (!GDK_IS_PIXBUF_LOADER (loader)) {
+        g_input_stream_close (input_stream, NULL, NULL);
+        g_object_unref (input_stream);
+        g_object_unref (file);
+        return NULL;
+    }
+
     gdk_pixbuf_loader_close (loader, NULL);
 
     if (!result) {
