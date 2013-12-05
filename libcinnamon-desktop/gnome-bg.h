@@ -49,6 +49,7 @@ typedef struct _GnomeBGClass GnomeBGClass;
 
 GType            gnome_bg_get_type              (void);
 GnomeBG *        gnome_bg_new                   (void);
+void             gnome_bg_set_accountsservice_background (const gchar *background);
 void             gnome_bg_load_from_preferences (GnomeBG               *bg,
 						 GSettings             *settings);
 void             gnome_bg_save_to_preferences   (GnomeBG               *bg,
