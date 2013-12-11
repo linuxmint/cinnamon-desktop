@@ -10,7 +10,7 @@ Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.15.1),
                dh-autoreconf,
-               libglib2.0-dev (>= 2.32.3),
+               libglib2.0-dev (>= 2.32),
                intltool (>= 0.40.6),
                scrollkeeper,
                cdbs (>= 0.4.41),
