@@ -1705,8 +1705,8 @@ int copied = 0; //Condition variable
  * Function to be spawned in a separate thread, 
  * sets the background surface on the root window.
  **/ 
-void
-*gnome_bg_create_and_set_surface_as_root_thread (void *args)
+static void
+gnome_bg_create_and_set_surface_as_root_thread (void *args)
 {
 	struct gnome_bg_cassar_args *args_struct = (struct gnome_bg_cassar_args*) args;
 
@@ -1718,7 +1718,7 @@ void
 	GdkWindow *root_window = (GdkWindow*)malloc(sizeof(struct _GdkWindowClass));
 	GdkScreen *screen = (GdkScreen*)malloc(query.class_size);
 
-	//Copy variables to allocated memory
+	//Copy variables to alloca1ted memory
 	memcpy(bg,args_struct->thread_bg,sizeof(*args_struct->thread_bg));
 	memcpy(root_window,args_struct->thread_root_window,sizeof(struct _GdkWindowClass));
 	memcpy(screen,args_struct->thread_screen,query.class_size);
@@ -1740,9 +1740,8 @@ void
 	cairo_surface_destroy (surface);
 
 	//Free the allocated memory
-	free(bg);
-	free(root_window);
-	free(screen);
+    free (root_window);
+    free (screen);
 }
 
 /**
