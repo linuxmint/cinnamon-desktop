@@ -245,6 +245,7 @@ queue_changed (GnomeBG *bg)
 {
 	if (bg->changed_id > 0) {
 		g_source_remove (bg->changed_id);
+		bg->changed_id = 0;
 	}
 
 	/* We unset this here to allow apps to set it if they don't want
@@ -282,6 +283,7 @@ queue_transitioned (GnomeBG *bg)
 {
 	if (bg->transitioned_id > 0) {
 		g_source_remove (bg->transitioned_id);
+		bg->transitioned_id = 0;
 	}
 
 	bg->transitioned_id = g_timeout_add_full (G_PRIORITY_LOW,
@@ -2521,7 +2523,6 @@ clear_cache (GnomeBG *bg)
 
 	if (bg->timeout_id) {
 		g_source_remove (bg->timeout_id);
-
 		bg->timeout_id = 0;
 	}
 }

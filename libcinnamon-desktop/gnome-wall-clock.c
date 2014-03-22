@@ -222,8 +222,10 @@ update_clock (gpointer data)
 	else
 		expiry = g_date_time_add_seconds (now, 60 - g_date_time_get_second (now));
   
-	if (self->priv->clock_update_id)
+	if (self->priv->clock_update_id) {
 		g_source_remove (self->priv->clock_update_id);
+		self->priv->clock_update_id = 0;
+	}
   
 	source = _gnome_datetime_source_new (now, expiry, TRUE);
 	g_source_set_priority (source, G_PRIORITY_HIGH);
