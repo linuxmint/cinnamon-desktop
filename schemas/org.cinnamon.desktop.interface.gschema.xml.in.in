@@ -139,6 +139,14 @@
         Name of the GTK+ input method Preedit Style used by gtk+.
       </_description>
     </key>
+    <key name="scaling-factor" type="u">
+      <default>0</default>
+      <_summary>Window scaling factor</_summary>
+      <_description>
+        Integer factor used to scale windows by. For use on high-dpi screens.
+   0 means pick automatically based on monitor.
+      </_description>
+    </key>
     <key name="gtk-im-status-style" type="s">
       <default>'callback'</default>
       <_summary>GTK IM Status Style</_summary>
@@ -184,7 +192,8 @@
     <key name="cursor-size" type="i">
       <default>24</default>
       <_summary>Cursor size</_summary>
-      <_description>Size of the cursor used as cursor theme.</_description>
+      <_description>Size of the cursor used as cursor theme.  Note, depending on the ui scale (hidpi), this number
+      may not represent the actual cursor size</_description>
     </key>
     <key name="gtk-timeout-initial" type="i">
       <default>200</default>
