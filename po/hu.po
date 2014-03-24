@@ -183,22 +183,22 @@ msgstr "Tükrözött kijelzők"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:238
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e, %k.%M.%S"
+msgid "%A %B %e, %R:%S"
+msgstr "%A %B %e, %k.%M.%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:239
-msgid "%a %b %e, %R"
-msgstr "%a %b %e, %k.%M"
+msgid "%A %B %e, %R"
+msgstr "%A %B %e, %k.%M"
 
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%a %R:%S"
-msgstr "%a %k.%M.%S"
+msgid "%A %R:%S"
+msgstr "%A %k.%M.%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%a %R"
-msgstr "%a %k.%M"
+msgid "%A %R"
+msgstr "%A %k.%M"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -213,22 +213,22 @@ msgstr "%R"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:254
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %b %e, %p %l.%M.%S"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%A %B %e, %p %l.%M.%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:255
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %b %e, %p %l.%M"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%A %B %e, %p %l.%M"
 
 #. Translators: This is a time format with day used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%a %l:%M:%S %p"
-msgstr "%a, %p %l.%M.%S"
+msgid "%A %l:%M:%S %p"
+msgstr "%A, %p %l.%M.%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%a %l:%M %p"
-msgstr "%a, %p %l.%M"
+msgid "%A %l:%M %p"
+msgstr "%A, %p %l.%M"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.

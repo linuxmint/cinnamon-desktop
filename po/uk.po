@@ -181,22 +181,22 @@ msgstr "Дзеркальні покази"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:238
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e, %R:%S"
+msgid "%A %B %e, %R:%S"
+msgstr "%A %B %e, %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:239
-msgid "%a %b %e, %R"
-msgstr "%a %b %e, %R"
+msgid "%A %B %e, %R"
+msgstr "%A %B %e, %R"
 
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
+msgid "%A %R:%S"
+msgstr "%A %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%a %R"
-msgstr "%a %R"
+msgid "%A %R"
+msgstr "%A %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -211,22 +211,22 @@ msgstr "%R"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:254
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %b %e, %l:%M:%S %p"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%A %B %e, %l:%M:%S %p"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:255
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %b %e, %l:%M %p"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%A %B %e, %l:%M %p"
 
 #. Translators: This is a time format with day used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
+msgid "%A %l:%M:%S %p"
+msgstr "%A %l:%M:%S %p"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
+msgid "%A %l:%M %p"
+msgstr "%A %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.

@@ -215,11 +215,11 @@
       <_summary>List of symbolic names and color equivalents</_summary>
       <_description>A '\n' separated list of "name:color" as defined by the 'gtk-color-scheme' setting</_description>
     </key>
-    <key name="clock-format" enum="org.cinnamon.desktop.CDesktopClockFormat">
-      <default>'24h'</default>
-      <_summary>Whether the clock displays in 24h or 12h format</_summary>
+    <key name="clock-use-24h" type="b">
+      <default>true</default>
+      <_summary>Whether the clock displays in 24h format</_summary>
       <_description>
-        Whether the clock displays in 24h or 12h format
+        Whether the clock displays in 24h format
       </_description>
     </key>
     <key name="clock-show-seconds" type="b">

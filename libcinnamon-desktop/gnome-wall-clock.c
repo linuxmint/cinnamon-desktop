@@ -202,18 +202,16 @@ static gboolean
 update_clock (gpointer data)
 {
 	GnomeWallClock   *self = data;
-	CDesktopClockFormat clock_format;
 	const char *format_string;
-	gboolean show_full_date;
-	gboolean show_weekday;
+	gboolean use_24h;
+	gboolean show_full_date;	
 	gboolean show_seconds;
 	GSource *source;
 	GDateTime *now;
 	GDateTime *expiry;
 
-	clock_format = g_settings_get_enum (self->priv->desktop_settings, "clock-format");
-	show_weekday = !self->priv->time_only;
-	show_full_date = show_weekday && g_settings_get_boolean (self->priv->desktop_settings, "clock-show-date");
+	use_24h = g_settings_get_enum (self->priv->desktop_settings, "clock-use-24h");
+	show_full_date = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-date");
 	show_seconds = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-seconds");
 
 	now = g_date_time_new_now_local ();
@@ -233,17 +231,12 @@ update_clock (gpointer data)
 	self->priv->clock_update_id = g_source_attach (source, NULL);
 	g_source_unref (source);
 
-	if (clock_format == C_DESKTOP_CLOCK_FORMAT_24H) {
+	if (use_24h) {
 		if (show_full_date) {
 			/* Translators: This is the time format with full date used
 			   in 24-hour mode. */
-			format_string = show_seconds ? _("%a %b %e, %R:%S")
-				: _("%a %b %e, %R");
-		} else if (show_weekday) {
-			/* Translators: This is the time format with day used
-			   in 24-hour mode. */
-			format_string = show_seconds ? _("%a %R:%S")
-				: _("%a %R");
+			format_string = show_seconds ? _("%A %B %e, %R:%S")
+				: _("%A %B %e, %R");
 		} else {
 			/* Translators: This is the time format without date used
 			   in 24-hour mode. */
@@ -253,13 +246,8 @@ update_clock (gpointer data)
 		if (show_full_date) {
 			/* Translators: This is a time format with full date used
 			   for AM/PM. */
-			format_string = show_seconds ? _("%a %b %e, %l:%M:%S %p")
-				: _("%a %b %e, %l:%M %p");
-		} else if (show_weekday) {
-			/* Translators: This is a time format with day used
-			   for AM/PM. */
-			format_string = show_seconds ? _("%a %l:%M:%S %p")
-				: _("%a %l:%M %p");
+			format_string = show_seconds ? _("%A %B %e, %l:%M:%S %p")
+				: _("%A %B %e, %l:%M %p");
 		} else {
 			/* Translators: This is a time format without date used
 			   for AM/PM. */

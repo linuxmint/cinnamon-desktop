@@ -181,35 +181,35 @@ msgstr ""
 msgid "Mirrored Displays"
 msgstr "Peilatut näytöt"
 
-# msgstr "%a %-d.%-m., %-H.%M.%S"
+# msgstr "%A %-d.%-m., %-H.%M.%S"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:238
-msgid "%a %b %e, %R:%S"
-msgstr "%a %d.%m., %H.%M.%S"
+msgid "%A %B %e, %R:%S"
+msgstr "%A %d.%m., %H.%M.%S"
 
-# msgstr "%a %-d.%-m., %-H.%M"
+# msgstr "%A %-d.%-m., %-H.%M"
 #: ../libgnome-desktop/gnome-wall-clock.c:239
-msgid "%a %b %e, %R"
-msgstr "%a %d.%m., %H.%M"
+msgid "%A %B %e, %R"
+msgstr "%A %d.%m., %H.%M"
 
-# msgstr "%a %-H.%M.%S"
+# msgstr "%A %-H.%M.%S"
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%a %R:%S"
-msgstr "%a %H.%M.%S"
+msgid "%A %R:%S"
+msgstr "%A %H.%M.%S"
 
-# msgstr "%a %-H.%M"
+# msgstr "%A %-H.%M"
 #: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%a %R"
-msgstr "%a %H.%M"
+msgid "%A %R"
+msgstr "%A %H.%M"
 
-# msgstr "%a %-H.%M.%S"
+# msgstr "%A %-H.%M.%S"
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:248
-#| msgid "%a %R:%S"
+#| msgid "%A %R:%S"
 msgid "%R:%S"
 msgstr "%H.%M.%S"
 
@@ -217,41 +217,41 @@ msgstr "%H.%M.%S"
 msgid "%R"
 msgstr "%H.%M"
 
-# msgstr "%a %-d.%-m., %-I.%M.%S %p"
+# msgstr "%A %-d.%-m., %-I.%M.%S %p"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:254
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %d.%m., %I.%M.%S %p"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%A %d.%m., %I.%M.%S %p"
 
-# msgstr "%a %-d.%-m., %-I.%M %p"
+# msgstr "%A %-d.%-m., %-I.%M %p"
 #: ../libgnome-desktop/gnome-wall-clock.c:255
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %d.%m., %I.%M %p"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%A %d.%m., %I.%M %p"
 
-# msgstr "%a %-I.%M.%S %p"
+# msgstr "%A %-I.%M.%S %p"
 #. Translators: This is a time format with day used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%a %l:%M:%S %p"
-msgstr "%a %I.%M.%S %p"
+msgid "%A %l:%M:%S %p"
+msgstr "%A %I.%M.%S %p"
 
-# msgstr "%a %-I.%M %p"
+# msgstr "%A %-I.%M %p"
 #: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%a %l:%M %p"
-msgstr "%a %I.%M %p"
+msgid "%A %l:%M %p"
+msgstr "%A %I.%M %p"
 
-# msgstr "%a %-I.%M.%S %p"
+# msgstr "%A %-I.%M.%S %p"
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:264
-#| msgid "%a %l:%M:%S %p"
+#| msgid "%A %l:%M:%S %p"
 msgid "%l:%M:%S %p"
 msgstr "%l:%M:%S %p"
 
-# msgstr "%a %-I.%M %p"
+# msgstr "%A %-I.%M %p"
 #: ../libgnome-desktop/gnome-wall-clock.c:265
-#| msgid "%a %l:%M %p"
+#| msgid "%A %l:%M %p"
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
 

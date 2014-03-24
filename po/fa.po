@@ -184,27 +184,27 @@ msgstr "نمایشگرهای آینه‌ای"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:238
-msgid "%a %b %e, %R:%S"
-msgstr "%a %Od %b %OH:%OM:%OS"
+msgid "%A %B %e, %R:%S"
+msgstr "%A %Od %B %OH:%OM:%OS"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:239
-msgid "%a %b %e, %R"
-msgstr "%a %Od %b %OH:%OM"
+msgid "%A %B %e, %R"
+msgstr "%A %Od %B %OH:%OM"
 
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%a %R:%S"
-msgstr "%a %OH:%OM:%OS"
+msgid "%A %R:%S"
+msgstr "%A %OH:%OM:%OS"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%a %R"
-msgstr "%a %OH:%OM"
+msgid "%A %R"
+msgstr "%A %OH:%OM"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:248
-#| msgid "%a %R:%S"
+#| msgid "%A %R:%S"
 msgid "%R:%S"
 msgstr "%OH:%OM:%OS"
 
@@ -215,32 +215,32 @@ msgstr "%OH:%OM"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:254
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a Od% %b %OH:%OM:%OS"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%A Od% %B %OH:%OM:%OS"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:255
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %Od %b %OH:%OM"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%A %Od %B %OH:%OM"
 
 #. Translators: This is a time format with day used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%a %l:%M:%S %p"
-msgstr "%a %OH:%OM:%OS"
+msgid "%A %l:%M:%S %p"
+msgstr "%A %OH:%OM:%OS"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%a %l:%M %p"
-msgstr "%a %OH:%OM"
+msgid "%A %l:%M %p"
+msgstr "%A %OH:%OM"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:264
-#| msgid "%a %l:%M:%S %p"
+#| msgid "%A %l:%M:%S %p"
 msgid "%l:%M:%S %p"
 msgstr "%OI:%OM:%OS %p"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:265
-#| msgid "%a %l:%M %p"
+#| msgid "%A %l:%M %p"
 msgid "%l:%M %p"
 msgstr "%OI:%OM %p"
 

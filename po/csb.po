@@ -176,39 +176,39 @@ msgstr "Zwielokrotnianié ekranu"
 #. Translators: This is the time format with date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:195
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e, %R:%S"
+msgid "%A %B %e, %R:%S"
+msgstr "%A %B %e, %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:196
-msgid "%a %b %e, %R"
-msgstr "%a %b %e, %R"
+msgid "%A %B %e, %R"
+msgstr "%A %B %e, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:200
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
+msgid "%A %R:%S"
+msgstr "%A %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:201
-msgid "%a %R"
-msgstr "%a %R"
+msgid "%A %R"
+msgstr "%A %R"
 
 #. Translators: This is a time format with date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:206
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %e %b, %l:%M:%S %p"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%A %e %B, %l:%M:%S %p"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:207
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %e %b, %l:%M %p"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%A %e %B, %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:211
-msgid "%a %l:%M:%S %p"
-msgstr "%a, %l:%M:%S %p"
+msgid "%A %l:%M:%S %p"
+msgstr "%A, %l:%M:%S %p"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:212
-msgid "%a %l:%M %p"
-msgstr "%a, %l:%M %p"
+msgid "%A %l:%M %p"
+msgstr "%A, %l:%M %p"

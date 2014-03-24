@@ -177,22 +177,22 @@ msgstr "동일한 화면"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:238
-msgid "%a %b %e, %R:%S"
-msgstr "%b %e일 (%a), %R:%S"
+msgid "%A %B %e, %R:%S"
+msgstr "%B %e일 (%A), %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:239
-msgid "%a %b %e, %R"
-msgstr "%b %e일 (%a), %R"
+msgid "%A %B %e, %R"
+msgstr "%B %e일 (%A), %R"
 
 #. Translators: This is the time format with day used
 #. in 24-hour mode.
 #: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%a %R:%S"
-msgstr "(%a) %R:%S"
+msgid "%A %R:%S"
+msgstr "(%A) %R:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%a %R"
-msgstr "(%a) %R"
+msgid "%A %R"
+msgstr "(%A) %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -207,22 +207,22 @@ msgstr "%R"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:254
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%b %e일 (%a), %p %l:%M:%S"
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr "%B %e일 (%A), %p %l:%M:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:255
-msgid "%a %b %e, %l:%M %p"
-msgstr "%b %e일 (%a), %p %l:%M"
+msgid "%A %B %e, %l:%M %p"
+msgstr "%B %e일 (%A), %p %l:%M"
 
 #. Translators: This is a time format with day used
 #. for AM/PM.
 #: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%a %l:%M:%S %p"
-msgstr "(%a) %p %l:%M:%S"
+msgid "%A %l:%M:%S %p"
+msgstr "(%A) %p %l:%M:%S"
 
 #: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%a %l:%M %p"
-msgstr "(%a) %p %l:%M"
+msgid "%A %l:%M %p"
+msgstr "(%A) %p %l:%M"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
