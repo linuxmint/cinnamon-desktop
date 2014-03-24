@@ -210,7 +210,7 @@ update_clock (gpointer data)
 	GDateTime *now;
 	GDateTime *expiry;
 
-	use_24h = g_settings_get_enum (self->priv->desktop_settings, "clock-use-24h");
+	use_24h = g_settings_get_boolean (self->priv->desktop_settings, "clock-use-24h");
 	show_full_date = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-date");
 	show_seconds = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-seconds");
 
