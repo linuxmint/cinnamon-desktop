@@ -168,6 +168,15 @@
                target="toggle-maximize-vertically"/>
       </aliases>
     </key>
+    <key name="action-scroll-titlebar"
+         enum="org.cinnamon.desktop.CDesktopTitlebarScrollAction">
+      <default>'none'</default>
+      <_summary>Action on spinning the mouse wheel on the titlebar</_summary>
+      <_description>
+        This option determines the effects of using the mouse wheel on the title bar.
+        Current options are: opacity, shade
+      </_description>
+    </key>
     <key name="auto-raise" type="b">
       <default>false</default>
       <_summary>Automatically raises the focused window</_summary>
