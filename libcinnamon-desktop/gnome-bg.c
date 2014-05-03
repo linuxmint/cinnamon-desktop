@@ -1730,6 +1730,7 @@ gnome_bg_create_and_set_surface_as_root_thread (void *args)
         pthread_mutex_lock(&bgmutex);
         copied = 1;
         pthread_mutex_unlock(&bgmutex);
+        printf("!!!signal\n");
         pthread_cond_signal(&bgcv);
 
         int width, height;
@@ -1765,7 +1766,10 @@ gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, Gd
         pthread_create(&thread, NULL, gnome_bg_create_and_set_surface_as_root_thread, &thread_args);
         pthread_mutex_lock(&bgmutex);
         while(copied == 0)
+        {
+                printf("waiting\n");
                 pthread_cond_wait(&bgcv,&bgmutex);
+        }
         pthread_mutex_unlock(&bgmutex);
 }
 
