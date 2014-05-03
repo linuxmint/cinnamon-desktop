@@ -1696,8 +1696,7 @@ struct gnome_bg_cassar_args{
 	GdkScreen *thread_screen;
 };
 
-int copied = 0; //Condition variable
-pthread_mutex_t bgmutex; //Mutex for condition variable
+pthread_mutex_t bgmutex; //Mutex for conditional wait
 pthread_cond_t bgcv; //Condition ID
 
 /**
@@ -1728,10 +1727,8 @@ gnome_bg_create_and_set_surface_as_root_thread (void *args)
         //The data will is now safe from the termination of the calling thread
         //Set copied to 1 and signal the calling thread to check it
         pthread_mutex_lock(&bgmutex);
-        copied = 1;
-        pthread_mutex_unlock(&bgmutex);
-        printf("!!!signal\n");
         pthread_cond_signal(&bgcv);
+        pthread_mutex_unlock(&bgmutex);
 
         int width, height;
         cairo_surface_t *surface;
@@ -1742,7 +1739,7 @@ gnome_bg_create_and_set_surface_as_root_thread (void *args)
         gnome_bg_set_surface_as_root (screen, surface);
         cairo_surface_destroy (surface);
 
-        //Free the allocated memory
+	//Free the allocated memory
         free (root_window);
         free (screen);
 }
@@ -1755,7 +1752,6 @@ gnome_bg_create_and_set_surface_as_root_thread (void *args)
 void
 gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, GdkScreen *screen)
 {
-        copied = 0;
         struct gnome_bg_cassar_args thread_args;
 
         thread_args.thread_bg = bg;
@@ -1765,11 +1761,7 @@ gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, Gd
         pthread_t thread;
         pthread_create(&thread, NULL, gnome_bg_create_and_set_surface_as_root_thread, &thread_args);
         pthread_mutex_lock(&bgmutex);
-        while(copied == 0)
-        {
-                printf("waiting\n");
-                pthread_cond_wait(&bgcv,&bgmutex);
-        }
+        pthread_cond_wait(&bgcv,&bgmutex);
         pthread_mutex_unlock(&bgmutex);
 }
 
