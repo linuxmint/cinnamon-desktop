@@ -47,8 +47,6 @@ Author: Soren Sandmann <sandmann@redhat.com>
 #include "gnome-bg.h"
 #include "gnome-bg-crossfade.h"
 
-#include "pthread.h"
-
 #define BG_KEY_PRIMARY_COLOR      "primary-color"
 #define BG_KEY_SECONDARY_COLOR    "secondary-color"
 #define BG_KEY_COLOR_TYPE         "color-shading-type"
@@ -1687,60 +1685,6 @@ gnome_bg_set_surface_as_root_with_crossfade (GdkScreen       *screen,
 	return fade;
 }
 
-struct gnome_bg_cassar_args{
-	GnomeBG *thread_bg;
-	GdkWindow *thread_root_window;
-	GdkScreen *thread_screen;
-};
-
-pthread_mutex_t bgmutex; //Mutex for thread condition variable
-pthread_cond_t bgcv; //Condition ID
-int copied = 0; //Condition variable
-
-void
-*gnome_bg_create_and_set_surface_as_root_thread (void *args)
-{
-	struct gnome_bg_cassar_args *args_struct = (struct gnome_bg_cassar_args*) args;
-
-	GTypeQuery query;
-	g_type_query(GDK_TYPE_SCREEN,&query); //This allows malloc() to know how big a GdkScreen is
-
-	//Allocate memory for variables
-	GnomeBG *bg = (GnomeBG*)malloc(sizeof(*args_struct->thread_bg));
-	GdkWindow *root_window = (GdkWindow*)malloc(sizeof(struct _GdkWindowClass));
-	GdkScreen *screen = (GdkScreen*)malloc(query.class_size);
-
-	//Copy variables to allocated memory
-	memcpy(bg,args_struct->thread_bg,sizeof(*args_struct->thread_bg));
-	memcpy(root_window,args_struct->thread_root_window,sizeof(struct _GdkWindowClass));
-	memcpy(screen,args_struct->thread_screen,query.class_size);
-
-	//The data will is now safe from the termination of the calling thread
-	//Set copied to 1 and signal the calling thread to check it
-	printf("trying to lock\n");
-	pthread_mutex_lock(&bgmutex);
-	copied = 1;
-	printf("locked\n");
-	pthread_mutex_unlock(&bgmutex);
-	printf("signalling\n");
-	pthread_cond_signal(&bgcv);
-	printf("signaled\n");
-
-	int width, height;
-	cairo_surface_t *surface;
-
-	width = gdk_screen_get_width (screen);
-	height = gdk_screen_get_height (screen);
-	surface = gnome_bg_create_surface (bg, root_window, width, height, TRUE);
-	gnome_bg_set_surface_as_root (screen, surface);
-	cairo_surface_destroy (surface);
-
-	//Free the allocated memory
-	free(bg);
-	free(root_window);
-	free(screen);
-}
-
 /**
  * gnome_bg_create_and_set_surface_as_root:
  * @root_window: the #GdkWindow
@@ -1749,32 +1693,17 @@ void
 void
 gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, GdkScreen *screen)
 {
-	copied = 0;
-	printf("cassar called\n");
-	struct gnome_bg_cassar_args thread_args;
-	thread_args.thread_bg = bg;
-	thread_args.thread_root_window = root_window;
-	thread_args.thread_screen = screen;
-	pthread_t thread;
-	pthread_create(&thread, NULL, gnome_bg_create_and_set_surface_as_root_thread, &thread_args);
-	int done = 0;
-	while(done == 0)
-	{
-		pthread_mutex_lock(&bgmutex);
-		int copiedcopy = copied; //Copy it to a different variable to be safe and fast
-		pthread_mutex_unlock(&bgmutex);
-		if(copiedcopy == 1){
-			printf("copiedcopy==1, done\n");
-			done = 1;
-		}
-		else{
-			printf("waiting\n");
-			pthread_cond_wait(&bgcv,&bgmutex);
-			pthread_mutex_unlock(&bgmutex); //Unlock the mutex because cond_wait locked it
-			done = 1;
-			printf("not longer waiting, done\n");
-		}
-	}
+    int width, height;
+    cairo_surface_t *surface;
+
+    width = gdk_screen_get_width (screen);
+    height = gdk_screen_get_height (screen);
+
+    surface = gnome_bg_create_surface (bg, root_window, width, height, TRUE);
+
+    gnome_bg_set_surface_as_root (screen, surface);
+
+    cairo_surface_destroy (surface);
 }
 
 /* Implementation of the pixbuf cache */
