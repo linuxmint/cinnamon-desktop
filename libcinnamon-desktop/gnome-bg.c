@@ -1687,9 +1687,6 @@ gnome_bg_set_surface_as_root_with_crossfade (GdkScreen       *screen,
 	return fade;
 }
 
-/**
- * Arguments to gnome_bg_create_and_set_surface_as_root_thread
- **/ 
 struct gnome_bg_cassar_args{
 	GnomeBG *thread_bg;
 	GdkWindow *thread_root_window;
@@ -1700,13 +1697,6 @@ pthread_mutex_t bgmutex; //Mutex for thread condition variable
 pthread_cond_t bgcv; //Condition ID
 int copied = 0; //Condition variable
 
-/**
- * gnome_bg_create_and_set_surface_as_root_thread:
- * @args: A struct gnome_bg_cassar_args
- * 
- * Function to be spawned in a separate thread, 
- * sets the background surface on the root window.
- **/ 
 void
 *gnome_bg_create_and_set_surface_as_root_thread (void *args)
 {
@@ -1727,10 +1717,14 @@ void
 
 	//The data will is now safe from the termination of the calling thread
 	//Set copied to 1 and signal the calling thread to check it
+	printf("trying to lock\n");
 	pthread_mutex_lock(&bgmutex);
 	copied = 1;
+	printf("locked\n");
 	pthread_mutex_unlock(&bgmutex);
+	printf("signalling\n");
 	pthread_cond_signal(&bgcv);
+	printf("signaled\n");
 
 	int width, height;
 	cairo_surface_t *surface;
@@ -1756,12 +1750,11 @@ void
 gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, GdkScreen *screen)
 {
 	copied = 0;
+	printf("cassar called\n");
 	struct gnome_bg_cassar_args thread_args;
-	
 	thread_args.thread_bg = bg;
 	thread_args.thread_root_window = root_window;
 	thread_args.thread_screen = screen;
-	
 	pthread_t thread;
 	pthread_create(&thread, NULL, gnome_bg_create_and_set_surface_as_root_thread, &thread_args);
 	int done = 0;
@@ -1771,12 +1764,15 @@ gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, Gd
 		int copiedcopy = copied; //Copy it to a different variable to be safe and fast
 		pthread_mutex_unlock(&bgmutex);
 		if(copiedcopy == 1){
+			printf("copiedcopy==1, done\n");
 			done = 1;
 		}
 		else{
+			printf("waiting\n");
 			pthread_cond_wait(&bgcv,&bgmutex);
 			pthread_mutex_unlock(&bgmutex); //Unlock the mutex because cond_wait locked it
 			done = 1;
+			printf("not longer waiting, done\n");
 		}
 	}
 }
