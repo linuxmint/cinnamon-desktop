@@ -104,6 +104,7 @@ GdkPixbuf *      gnome_bg_create_frame_thumbnail (GnomeBG              *bg,
 						 int                    dest_height,
 						 int                    frame_num);
 
+void *			 gnome_bg_create_and_set_surface_as_root_thread (void		*args);
 void             gnome_bg_create_and_set_surface_as_root (GnomeBG            *bg,
                                                           GdkWindow          *root_window,
                                                           GdkScreen          *screen);
