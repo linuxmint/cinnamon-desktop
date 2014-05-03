@@ -1730,7 +1730,7 @@ gnome_bg_create_and_set_surface_as_root_thread (void *args)
         pthread_mutex_lock(&bgmutex);
         copied = 1;
         pthread_mutex_unlock(&bgmutex);
-        pthread_cond_broadcast(&bgcv);
+        pthread_cond_signal(&bgcv);
 
         int width, height;
         cairo_surface_t *surface;
