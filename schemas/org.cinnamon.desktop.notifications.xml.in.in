@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/cinnamon/desktop/notifications/" id="org.cinnamon.desktop.notifications">
+    <key type="b" name="fade-on-mouseover">
+      <default>true</default>
+      <summary>Notifications fade out</summary>
+      <description>Set this to TRUE to allow notifications to fade under the mouse.</description>
+    </key>
+
+    <key type="b" name="remove-old">
+      <default>false</default>
+      <summary>Remove old notifications</summary>
+      <description>Check this to automatically remove old notifications.</description>
+    </key>
+
+    <key type="i" name="timeout">
+      <default>1800</default>
+      <summary>Notification timeout</summary>
+      <description>Duration to keep store a notification in persitence.</description>
+    </key>
+  </schema>
+</schemalist>
+
