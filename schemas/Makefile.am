@@ -14,6 +14,7 @@ desktop_gschemas_in_in =						\
 	org.cinnamon.desktop.media-handling.gschema.xml.in.in		\
 	org.cinnamon.desktop.screensaver.gschema.xml.in.in			\
 	org.cinnamon.desktop.wm.preferences.gschema.xml.in.in		\
+	org.cinnamon.desktop.notifications.gschema.xml.in.in		\
 	org.cinnamon.desktop.input-sources.gschema.xml.in.in
 
 @INTLTOOL_XML_NOMERGE_RULE@
