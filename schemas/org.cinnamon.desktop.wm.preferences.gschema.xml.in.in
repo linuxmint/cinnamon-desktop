@@ -177,6 +177,15 @@
         Current options are: opacity, shade
       </_description>
     </key>
+    <key name="min-window-opacity" type="i">
+      <range min="0" max="255"/>
+      <default>75</default>
+      <_summary>Minimum allowable window opacity via user adjustment</_summary>
+      <_description>
+        This is the minimum opacity a user can adjust the window to when
+        using keybindings or the mouse wheel.
+      </_description>
+    </key>
     <key name="auto-raise" type="b">
       <default>false</default>
       <_summary>Automatically raises the focused window</_summary>
