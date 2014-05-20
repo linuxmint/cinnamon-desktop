@@ -178,11 +178,11 @@
       </_description>
     </key>
     <key name="min-window-opacity" type="i">
-      <range min="0" max="255"/>
-      <default>75</default>
-      <_summary>Minimum allowable window opacity via user adjustment</_summary>
+      <range min="0" max="100"/>
+      <default>30</default>
+      <_summary>Minimum allowable window opacity (by percent) via user adjustment</_summary>
       <_description>
-        This is the minimum opacity a user can adjust the window to when
+        This is the minimum opacity (by percent) a user can adjust the window to when
         using keybindings or the mouse wheel.
       </_description>
     </key>
