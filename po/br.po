@@ -1,231 +1,62 @@
-# Breton translation for the gnome-desktop.
+# Breton translation for the cinnamon-desktop.
 # Copyright (C) 2006 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-desktop package.
+# This file is distributed under the same license as the cinnamon-desktop package.
 #
 # Jérémy Ar Floc'h <jeremy.lefloch@gmail.com>, 2006-2010.
 # Oublieuse <oublieuse@gmail.com>, 2007
 # Francis Tyers <francis.tyers@hp.com>, 2003.
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-desktop 2.2.2\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-desktop&component=general\n"
-"POT-Creation-Date: 2010-03-10 14:22+0000\n"
+"Project-Id-Version: cinnamon-desktop 2.2.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2010-03-12 18:23+0100\n"
 "Last-Translator: Denis <denisarnuad@yahoo.fr>\n"
 "Language-Team: Breton <jeremy.lefloch@gmail.com>\n"
+"Language: br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2010-03-11 18:16+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../gnome-about/gnome-about.desktop.in.in.h:1
-#: ../gnome-about/gnome-about.in:60
-msgid "About GNOME"
-msgstr "Diwar-benn GNOME"
-
-#: ../gnome-about/gnome-about.desktop.in.in.h:2
-msgid "Learn more about GNOME"
-msgstr "Gouzout hiroc'h diwar-benn GNOME"
-
-#: ../gnome-about/gnome-about.in:61
-msgid "News"
-msgstr "Keloù"
-
-#: ../gnome-about/gnome-about.in:62
-msgid "GNOME Library"
-msgstr "Levraoueg GNOME"
-
-#: ../gnome-about/gnome-about.in:63
-msgid "Friends of GNOME"
-msgstr "Mignoned GNOME"
-
-#: ../gnome-about/gnome-about.in:64
-msgid "Contact"
-msgstr "Daremprediñ"
-
-#: ../gnome-about/gnome-about.in:68
-msgid "The Mysterious GEGL"
-msgstr "Ar GEGL Kevrinus"
-
-#: ../gnome-about/gnome-about.in:69
-msgid "The Squeaky Rubber GNOME"
-msgstr "Ar chourrig lastikenn GNOME"
-
-#: ../gnome-about/gnome-about.in:70
-msgid "Wanda The GNOME Fish"
-msgstr "Wanda ar pesk GNOME"
-
-#: ../gnome-about/gnome-about.in:567
-msgid "_Open URL"
-msgstr "_Digeriñ un URL"
-
-#: ../gnome-about/gnome-about.in:574
-msgid "_Copy URL"
-msgstr "_Eilañ an URL"
-
-#: ../gnome-about/gnome-about.in:826
-msgid "About the GNOME Desktop"
-msgstr "Diwar-benn Burev GNOME"
-
-#: ../gnome-about/gnome-about.in:859
-msgid "%(name)s: %(value)s"
-msgstr "%(name)s : %(value)s"
-
-#: ../gnome-about/gnome-about.in:873
-msgid "Welcome to the GNOME Desktop"
-msgstr "Degemer mat war vBurev GNOME"
-
-#: ../gnome-about/gnome-about.in:890
-msgid "Brought to you by:"
-msgstr "Kaset deoc'h gant :"
-
-#: ../gnome-about/gnome-about.in:914
-msgid "<b>%(name)s:</b> %(value)s"
-msgstr "<b>%(name)s :</b> %(value)s"
-
-#: ../gnome-about/gnome-about.in:975
-msgid "Version"
-msgstr "Handelv"
-
-#: ../gnome-about/gnome-about.in:977
-msgid "Distributor"
-msgstr "Embanner"
-
-#: ../gnome-about/gnome-about.in:979
-msgid "Build Date"
-msgstr "Savet e"
-
-#: ../gnome-about/gnome-about.in:1024
-msgid "Display information on this GNOME version"
-msgstr "Diskouez titouroù diwar-benn handelv GNOME-mañ"
-
-#: ../gnome-version.xml.in.in.h:1
-msgid "GNOME also includes a complete development platform for applications programmers, allowing the creation of powerful and complex applications."
-msgstr "GNOME a ginnig ur steudad klok a ostilhoù evit ar saverien meziantoù. Tu 'zo da grouiñ meziantoù luzius ha galloudus."
-
-#: ../gnome-version.xml.in.in.h:2
-msgid "GNOME includes most of what you see on your computer, including the file manager, web browser, menus, and many applications."
-msgstr "Kavet 'vez 'barzh GNOME pep tra a-benn implijout ho urzhiataer, an evezhier restroù, ar merdeer kenrouedad, lañserioù, ha lod a meziantoù a bep seurt."
-
-#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
-#. will be substituted by the configure script. Otherwise you will break
-#. the translations.
-#: ../gnome-version.xml.in.in.h:6
-msgid "GNOME is a Free, usable, stable, accessible desktop environment for the Unix-like family of operating systems."
-msgstr "Un endro burev aes d'an holl, stabil, frank hag arveradus eo GNOME evit savennoù ar familh Unix."
-
-#: ../gnome-version.xml.in.in.h:7
-msgid "GNOME's focus on usability and accessibility, regular release cycle, and strong corporate backing make it unique among Free Software desktops."
-msgstr "Klask 'ra GNOME chom efedus hag aes da implijout. Kempennet 'vez alies gant tud a-vicher. Chom a  ra brudet e-touez ar Burevioù mezianteg."
-
-#: ../gnome-version.xml.in.in.h:8
-msgid "GNOME's greatest strength is our strong community. Virtually anyone, with or without coding skills, can contribute to making GNOME better."
-msgstr "Nerzh pouezusañ GNOME eo hon bedig-bed kreñv. Forzh pehini gant gouiziegezh war ar programmiñ pe get a c'hell kas traoù a-benn gwellaat GNOME."
-
-#: ../gnome-version.xml.in.in.h:9
-msgid "Hundreds of people have contributed code to GNOME since it was started in 1997; many more have contributed in other important ways, including translations, documentation, and quality assurance."
-msgstr "Kantadoù a dud o deus kresket danvez diazez  GNOME abaoe ma oa krouet e 1997; kalz muioc'h ez eus bet o kenlabourat war dachennoù pouezhus all, troidigezhioù, teuliadur, surentezh ha savadur en o zouez."
-
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
 #. * vendor is used.
-#: ../libgnome-desktop/display-name.c:265
+#: ../libcinnamon-desktop/display-name.c:91
 msgctxt "Monitor vendor"
 msgid "Unknown"
 msgstr "Dianav"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:220
-#, c-format
-msgid "Error reading file '%s': %s"
-msgstr "Fazi o lenn restr '%s': %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:288
-#, c-format
-msgid "Error rewinding file '%s': %s"
-msgstr "Fazi o lenn restr '%s': %s"
-
-#. Translators: the "name" mentioned
-#. * here is the name of an application or
-#. * a document
-#. Translators: the "name" mentioned here is the name of
-#. * an application or a document
-#: ../libgnome-desktop/gnome-desktop-item.c:380
-#: ../libgnome-desktop/gnome-desktop-item.c:3524
-msgid "No name"
-msgstr "Anv ebet"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:607
-#, c-format
-msgid "File '%s' is not a regular file or directory."
-msgstr "Ar restr '%s' n'eo ket ur restr pe un teuliad reizh."
-
-#: ../libgnome-desktop/gnome-desktop-item.c:791
-#, fuzzy, c-format
-msgid "Cannot find file '%s'"
-msgstr "Fazi: dibosupl eo kavout niverenn-anaout ar restr '%s'"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:837
-#, c-format
-msgid "No filename to save to"
-msgstr "Anv restr ebet a-benn enrollañ anezhañ"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:1822
-#, c-format
-msgid "Starting %s"
-msgstr "O loc'hañ %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2058
-#, c-format
-msgid "No URL to launch"
-msgstr "URL ebet da zigeriñ"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2074
-#, c-format
-msgid "Not a launchable item"
-msgstr "N'eo ket un dra da zigeriñ"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2084
-#, c-format
-msgid "No command (Exec) to launch"
-msgstr "Urzhiad ebet da loc'hañ (Exec)"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2097
-#, c-format
-msgid "Bad command (Exec) to launch"
-msgstr "Urzhiad fall da loc'hañ (Exec)"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:3581
-#, c-format
-msgid "Unknown encoding of: %s"
-msgstr "Kodadur %s a zo dianav"
-
-#: ../libgnome-desktop/gnome-desktop-utils.c:133
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "Dibosupl eo kavout un dermenell, implijet e vo xterm met n'ez aio ket en-dro marteze"
+msgstr ""
+"Dibosupl eo kavout un dermenell, implijet e vo xterm met n'ez aio ket en-dro "
+"marteze"
 
-#: ../libgnome-desktop/gnome-rr.c:444
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
 msgstr "Dibosupl eo kaout al loazioù skramm (CRTCoù, ezkasoù, modoù)"
 
-#: ../libgnome-desktop/gnome-rr.c:464
+#: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr "fazi X dianav en ur adtapout al listennad mentoù skramm"
 
-#: ../libgnome-desktop/gnome-rr.c:470
+#: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
 msgid "could not get the range of screen sizes"
 msgstr "Dibosupl eo kaout al listennad mentoù skramm"
 
-#: ../libgnome-desktop/gnome-rr.c:715
+#: ../libcinnamon-desktop/gnome-rr.c:769
 #, c-format
 msgid "RANDR extension is not present"
 msgstr "N'eo ket amañ an askouezh RANDR"
 
-#: ../libgnome-desktop/gnome-rr.c:1034
+#: ../libcinnamon-desktop/gnome-rr.c:1577
 #, c-format
 msgid "could not get information about output %d"
 msgstr "Dibosupl eo kaout titouroù diwar-benn an ezkas %d"
@@ -233,53 +64,298 @@ msgstr "Dibosupl eo kaout titouroù diwar-benn an ezkas %d"
 #. Translators: the "position", "size", and "maximum"
 #. * words here are not keywords; please translate them
 #. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libgnome-desktop/gnome-rr.c:1421
+#: ../libcinnamon-desktop/gnome-rr.c:2170
 #, c-format
-msgid "requested position/size for CRTC %d is outside the allowed limit: position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr "Ar ment hag al lec'hiadur goulennet evit ar CRTC %d zo er-maez termenoù aotret: lec'hiadur=(%d, %d), ment=(%d, %d), uc'hek=(%d, %d)"
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"Ar ment hag al lec'hiadur goulennet evit ar CRTC %d zo er-maez termenoù "
+"aotret: lec'hiadur=(%d, %d), ment=(%d, %d), uc'hek=(%d, %d)"
 
-#: ../libgnome-desktop/gnome-rr.c:1457
+#: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
 msgid "could not set the configuration for CRTC %d"
 msgstr "Dibosupl eo termeniñ ar c'hefluniadur evit CRTC %d"
 
-#: ../libgnome-desktop/gnome-rr.c:1573
+#: ../libcinnamon-desktop/gnome-rr.c:2352
 #, c-format
 msgid "could not get information about CRTC %d"
 msgstr "Dibosupl eo kaout titouroù diwar-benn CRTC %d"
 
-#: ../libgnome-desktop/gnome-rr-config.c:501
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
 msgid "Laptop"
 msgstr "Urzhiataer hezoug"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1162
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
 #, c-format
-msgid "none of the saved display configurations matched the active configuration"
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
 msgstr ""
 
 #. Translators: the "requested", "minimum", and
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
-#: ../libgnome-desktop/gnome-rr-config.c:1689
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
 #, c-format
-msgid "required virtual size does not fit available size: requested=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"
-msgstr "N'eo ket mat ar ment galloudel goulennet war ar ment posubl: goulenn=(%d, %d), izek=(%d, %d), uc'hek=(%d, %d)"
-
-#: ../libgnome-desktop/gnome-rr-config.c:1703
-#, c-format
-msgid "could not find a suitable configuration of screens"
-msgstr "Dibosupl eo kavout ur c'hefluniadur skramm dereat"
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"N'eo ket mat ar ment galloudel goulennet war ar ment posubl: goulenn=(%d, "
+"%d), izek=(%d, %d), uc'hek=(%d, %d)"
 
 #. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your laptop's
-#. * screen is the same as your external monitor.  Here, "Mirror" is being
-#. * used as an adjective, not as a verb.  For example, the Spanish
-#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
 #.
-#: ../libgnome-desktop/gnome-rr-labeler.c:212
-msgid "Mirror Screens"
-msgstr "Skrammoù klon"
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
+msgid "Mirrored Displays"
+msgstr ""
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+msgid "%A %B %e, %R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+msgid "%A %B %e, %R"
+msgstr ""
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R"
+msgstr ""
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
+msgid "%A %B %e, %l:%M %p"
+msgstr ""
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+msgid "%l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+msgid "%l:%M %p"
+msgstr ""
+
+#~ msgid "About GNOME"
+#~ msgstr "Diwar-benn GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Gouzout hiroc'h diwar-benn GNOME"
+
+#~ msgid "News"
+#~ msgstr "Keloù"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Levraoueg GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Mignoned GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Daremprediñ"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Ar GEGL Kevrinus"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Ar chourrig lastikenn GNOME"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda ar pesk GNOME"
+
+#~ msgid "_Open URL"
+#~ msgstr "_Digeriñ un URL"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_Eilañ an URL"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Diwar-benn Burev GNOME"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s : %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Degemer mat war vBurev GNOME"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Kaset deoc'h gant :"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s :</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Handelv"
+
+#~ msgid "Distributor"
+#~ msgstr "Embanner"
+
+#~ msgid "Build Date"
+#~ msgstr "Savet e"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Diskouez titouroù diwar-benn handelv GNOME-mañ"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME a ginnig ur steudad klok a ostilhoù evit ar saverien meziantoù. Tu "
+#~ "'zo da grouiñ meziantoù luzius ha galloudus."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "Kavet 'vez 'barzh GNOME pep tra a-benn implijout ho urzhiataer, an "
+#~ "evezhier restroù, ar merdeer kenrouedad, lañserioù, ha lod a meziantoù a "
+#~ "bep seurt."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "Un endro burev aes d'an holl, stabil, frank hag arveradus eo GNOME evit "
+#~ "savennoù ar familh Unix."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "Klask 'ra GNOME chom efedus hag aes da implijout. Kempennet 'vez alies "
+#~ "gant tud a-vicher. Chom a  ra brudet e-touez ar Burevioù mezianteg."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "Nerzh pouezusañ GNOME eo hon bedig-bed kreñv. Forzh pehini gant "
+#~ "gouiziegezh war ar programmiñ pe get a c'hell kas traoù a-benn gwellaat "
+#~ "GNOME."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Kantadoù a dud o deus kresket danvez diazez  GNOME abaoe ma oa krouet e "
+#~ "1997; kalz muioc'h ez eus bet o kenlabourat war dachennoù pouezhus all, "
+#~ "troidigezhioù, teuliadur, surentezh ha savadur en o zouez."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Fazi o lenn restr '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Fazi o lenn restr '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "Anv ebet"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Ar restr '%s' n'eo ket ur restr pe un teuliad reizh."
+
+#, fuzzy
+#~ msgid "Cannot find file '%s'"
+#~ msgstr "Fazi: dibosupl eo kavout niverenn-anaout ar restr '%s'"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Anv restr ebet a-benn enrollañ anezhañ"
+
+#~ msgid "Starting %s"
+#~ msgstr "O loc'hañ %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "URL ebet da zigeriñ"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "N'eo ket un dra da zigeriñ"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Urzhiad ebet da loc'hañ (Exec)"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Urzhiad fall da loc'hañ (Exec)"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Kodadur %s a zo dianav"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "Dibosupl eo kavout ur c'hefluniadur skramm dereat"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Skrammoù klon"
 
 #~ msgid "unhandled X error while getting the screen resources"
 #~ msgstr "fazi X dianav en ur adtapout loazioù ar skramm"
-

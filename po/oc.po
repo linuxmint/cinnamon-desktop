@@ -1,7 +1,7 @@
 # Translation of oc.po to Occitan
-# Occitan translation of gnome-desktop.
+# Occitan translation of cinnamon-desktop.
 # Copyright (C) 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-desktop package.
+# This file is distributed under the same license as the cinnamon-desktop package.
 #
 #
 # Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007.
@@ -9,344 +9,427 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-02 08:58+0200\n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2008-02-26 22:13+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../gnome-about/gnome-about.desktop.in.in.h:1
-#: ../gnome-about/gnome-about.in:61
-msgid "About GNOME"
-msgstr "A prepaus de GNOME"
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libcinnamon-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr ""
 
-#: ../gnome-about/gnome-about.desktop.in.in.h:2
-msgid "Learn more about GNOME"
-msgstr "Aprene mai de GNOME"
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr ""
 
-#: ../gnome-about/gnome-about.in:62
-msgid "News"
-msgstr "Novetats"
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libcinnamon-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr ""
 
-#: ../gnome-about/gnome-about.in:63
-msgid "GNOME Library"
-msgstr "Bibliotèca GNOME"
+#: ../libcinnamon-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr ""
 
-#: ../gnome-about/gnome-about.in:64
-msgid "Friends of GNOME"
-msgstr "Los amics de GNOME"
+#: ../libcinnamon-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr ""
 
-#: ../gnome-about/gnome-about.in:65
-msgid "Contact"
-msgstr "Contacte"
+#: ../libcinnamon-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
+msgstr ""
 
-#: ../gnome-about/gnome-about.in:69
-msgid "The Mysterious GEGL"
-msgstr "Lo misteriós GEGL"
+#: ../libcinnamon-desktop/gnome-rr.c:1577
+#, fuzzy, c-format
+msgid "could not get information about output %d"
+msgstr "Impossible d'obténer las entresenhas sus aquesta version de GNOME."
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libcinnamon-desktop/gnome-rr.c:2170
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr.c:2204
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr.c:2352
+#, fuzzy, c-format
+msgid "could not get information about CRTC %d"
+msgstr "Impossible d'obténer las entresenhas sus aquesta version de GNOME."
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
+msgid "Mirrored Displays"
+msgstr ""
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+msgid "%A %B %e, %R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+msgid "%A %B %e, %R"
+msgstr ""
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R"
+msgstr ""
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
+msgid "%A %B %e, %l:%M %p"
+msgstr ""
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+msgid "%l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+msgid "%l:%M %p"
+msgstr ""
+
+#~ msgid "About GNOME"
+#~ msgstr "A prepaus de GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Aprene mai de GNOME"
+
+#~ msgid "News"
+#~ msgstr "Novetats"
+
+#~ msgid "GNOME Library"
+#~ msgstr "Bibliotèca GNOME"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "Los amics de GNOME"
+
+#~ msgid "Contact"
+#~ msgstr "Contacte"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Lo misteriós GEGL"
 
 # Voir bug #402587
-#: ../gnome-about/gnome-about.in:70
-msgid "The Squeaky Rubber GNOME"
-msgstr "Lo cruissiment d'elastic GNOME"
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Lo cruissiment d'elastic GNOME"
 
-#: ../gnome-about/gnome-about.in:71
-msgid "Wanda The GNOME Fish"
-msgstr "Vandà, lo peis GNOME"
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Vandà, lo peis GNOME"
 
-#: ../gnome-about/gnome-about.in:568
-msgid "_Open URL"
-msgstr "_Dobrir l'URL"
+#~ msgid "_Open URL"
+#~ msgstr "_Dobrir l'URL"
 
-#: ../gnome-about/gnome-about.in:575
-msgid "_Copy URL"
-msgstr "_Copiar l'URL"
+#~ msgid "_Copy URL"
+#~ msgstr "_Copiar l'URL"
 
-#: ../gnome-about/gnome-about.in:830
-msgid "About the GNOME Desktop"
-msgstr "A prepaus del burèu GNOME"
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "A prepaus del burèu GNOME"
 
-#: ../gnome-about/gnome-about.in:866
-msgid "%(name)s: %(value)s"
-msgstr ""
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Benvenguda al burèu GNOME"
 
-#: ../gnome-about/gnome-about.in:880
-msgid "Welcome to the GNOME Desktop"
-msgstr "Benvenguda al burèu GNOME"
+#~ msgid "Brought to you by:"
+#~ msgstr "Presentat per :"
 
-#: ../gnome-about/gnome-about.in:897
-msgid "Brought to you by:"
-msgstr "Presentat per :"
+#~ msgid "Version"
+#~ msgstr "Version"
 
-#: ../gnome-about/gnome-about.in:921
-msgid "<b>%(name)s:</b> %(value)s"
-msgstr ""
+#~ msgid "Distributor"
+#~ msgstr "Distributor"
 
-#: ../gnome-about/gnome-about.in:977
-msgid "Version"
-msgstr "Version"
+#~ msgid "Build Date"
+#~ msgstr "Data de construccion"
 
-#: ../gnome-about/gnome-about.in:978
-msgid "Distributor"
-msgstr "Distributor"
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Visualizar las entresenhas sus aquesta version de GNOME"
 
-#: ../gnome-about/gnome-about.in:979
-msgid "Build Date"
-msgstr "Data de construccion"
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME conten tanben una plataforma completa de desvolopament pels "
+#~ "programaires de logicials, çò que permet de crear de programas potents e "
+#~ "complèxes."
 
-#: ../gnome-about/gnome-about.in:1023
-msgid "Display information on this GNOME version"
-msgstr "Visualizar las entresenhas sus aquesta version de GNOME"
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME conten la màger part de çò que vesètz sus vòstre ordenador, enclaus "
+#~ "lo gestionari de fichièrs, lo navigador internet, los menuts e fòrça "
+#~ "logicials."
 
-#: ../gnome-version.xml.in.in.h:1
-msgid ""
-"GNOME also includes a complete development platform for applications "
-"programmers, allowing the creation of powerful and complex applications."
-msgstr ""
-"GNOME conten tanben una plataforma completa de desvolopament pels "
-"programaires de logicials, çò que permet de crear de programas potents e "
-"complèxes."
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME es un entorn de burèu liure, utilisable, estable e accessible per "
+#~ "la familha dels sistèmas d'esplech del tipe Unix."
 
-#: ../gnome-version.xml.in.in.h:2
-msgid ""
-"GNOME includes most of what you see on your computer, including the file "
-"manager, web browser, menus, and many applications."
-msgstr ""
-"GNOME conten la màger part de çò que vesètz sus vòstre ordenador, enclaus lo "
-"gestionari de fichièrs, lo navigador internet, los menuts e fòrça logicials."
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "L'atencion de GNOME sus l'utilisabilitat e l'accessibilitat, un cicle de "
+#~ "distribucion regulièr e lo sosten de grandas entrepresas fan d'el un "
+#~ "environament de burèu liure unenc."
 
-#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
-#. will be substituted by the configure script. Otherwise you will break
-#. the translations.
-#: ../gnome-version.xml.in.in.h:6
-msgid ""
-"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
-"like family of operating systems."
-msgstr ""
-"GNOME es un entorn de burèu liure, utilisable, estable e accessible per la "
-"familha dels sistèmas d'esplech del tipe Unix."
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "La fòrça màger de GNOME es nòstra comunitat potenta. Gaireben totes, amb "
+#~ "o sens competéncias de programacion, pòdon ajudar a melhorar GNOME."
 
-#: ../gnome-version.xml.in.in.h:7
-msgid ""
-"GNOME's focus on usability and accessibility, regular release cycle, and "
-"strong corporate backing make it unique among Free Software desktops."
-msgstr ""
-"L'atencion de GNOME sus l'utilisabilitat e l'accessibilitat, un cicle de "
-"distribucion regulièr e lo sosten de grandas entrepresas fan d'el un "
-"environament de burèu liure unenc."
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Centenats de personas participèron al còde del projècte GNOME dempuèi sa "
+#~ "creacion en 1997 ; encara mai participèron d'autres biaisses  importants, "
+#~ "coma las reviradas, la documentacion e l'assegurança qualitat."
 
-#: ../gnome-version.xml.in.in.h:8
-msgid ""
-"GNOME's greatest strength is our strong community. Virtually anyone, with or "
-"without coding skills, can contribute to making GNOME better."
-msgstr ""
-"La fòrça màger de GNOME es nòstra comunitat potenta. Gaireben totes, amb o "
-"sens competéncias de programacion, pòdon ajudar a melhorar GNOME."
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Error de lectura del fichièr '%s' : %s"
 
-#: ../gnome-version.xml.in.in.h:9
-msgid ""
-"Hundreds of people have contributed code to GNOME since it was started in "
-"1997; many more have contributed in other important ways, including "
-"translations, documentation, and quality assurance."
-msgstr ""
-"Centenats de personas participèron al còde del projècte GNOME dempuèi sa "
-"creacion en 1997 ; encara mai participèron d'autres biaisses  importants, "
-"coma las reviradas, la documentacion e l'assegurança qualitat."
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Error en rebobinar lo fichièr '%s': %s"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:219
-#, c-format
-msgid "Error reading file '%s': %s"
-msgstr "Error de lectura del fichièr '%s' : %s"
+#~ msgid "No name"
+#~ msgstr "Pas de nom"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:287
-#, c-format
-msgid "Error rewinding file '%s': %s"
-msgstr "Error en rebobinar lo fichièr '%s': %s"
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Lo fichièr '%s' es pas un fichièr normal o un repertòri."
 
-#: ../libgnome-desktop/gnome-desktop-item.c:389
-#: ../libgnome-desktop/gnome-desktop-item.c:3756
-msgid "No name"
-msgstr "Pas de nom"
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "Error : impossible de trobar l'id del fichièr '%s'"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:616
-#, c-format
-msgid "File '%s' is not a regular file or directory."
-msgstr "Lo fichièr '%s' es pas un fichièr normal o un repertòri."
+#~ msgid "No filename to save to"
+#~ msgstr "I a pas de nom de fichièr ont enregistrar"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:796
-#, c-format
-msgid "Error cannot find file id '%s'"
-msgstr "Error : impossible de trobar l'id del fichièr '%s'"
+#~ msgid "Starting %s"
+#~ msgstr "Aviada de %s"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:842
-#, c-format
-msgid "No filename to save to"
-msgstr "I a pas de nom de fichièr ont enregistrar"
+#~ msgid "No URL to launch"
+#~ msgstr "Pas cap d'URL de dobrir"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:1827
-#, c-format
-msgid "Starting %s"
-msgstr "Aviada de %s"
+#~ msgid "Not a launchable item"
+#~ msgstr "Se pòt pas aviar"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:2063
-#, c-format
-msgid "No URL to launch"
-msgstr "Pas cap d'URL de dobrir"
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Pas cap de comanda (Exec) d'executar"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:2076
-#, c-format
-msgid "Not a launchable item"
-msgstr "Se pòt pas aviar"
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Comanda incorrecta (Exec) d'aviar"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:2086
-#, c-format
-msgid "No command (Exec) to launch"
-msgstr "Pas cap de comanda (Exec) d'executar"
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Codatge inconegut de : %s"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:2099
-#, c-format
-msgid "Bad command (Exec) to launch"
-msgstr "Comanda incorrecta (Exec) d'aviar"
+#~ msgid "Directory"
+#~ msgstr "Repertòri"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:3812
-#, c-format
-msgid "Unknown encoding of: %s"
-msgstr "Codatge inconegut de : %s"
+#~ msgid "Application"
+#~ msgstr "Aplicacion"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:209
-#: ../libgnome-desktop/gnome-ditem-edit.c:217
-msgid "Directory"
-msgstr "Repertòri"
+#~ msgid "Link"
+#~ msgstr "Ligam"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:213
-msgid "Application"
-msgstr "Aplicacion"
+#~ msgid "FSDevice"
+#~ msgstr "Periferic del sistèma de fichièrs"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:220
-msgid "Link"
-msgstr "Ligam"
+#~ msgid "MIME Type"
+#~ msgstr "Tipe MIME"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:222
-msgid "FSDevice"
-msgstr "Periferic del sistèma de fichièrs"
+#~ msgid "Service"
+#~ msgstr "Servici"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:224
-msgid "MIME Type"
-msgstr "Tipe MIME"
+#~ msgid "ServiceType"
+#~ msgstr "ServiceType"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:226
-msgid "Service"
-msgstr "Servici"
+#~ msgid "_URL:"
+#~ msgstr "_URL :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:228
-msgid "ServiceType"
-msgstr "ServiceType"
+#~ msgid "Comm_and:"
+#~ msgstr "Com_anda :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:314
-msgid "_URL:"
-msgstr "_URL :"
+#~ msgid "_Name:"
+#~ msgstr "_Nom :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:317
-#: ../libgnome-desktop/gnome-ditem-edit.c:384
-msgid "Comm_and:"
-msgstr "Com_anda :"
+#~ msgid "_Generic name:"
+#~ msgstr "Nom _generic :"
 
-#. Name
-#: ../libgnome-desktop/gnome-ditem-edit.c:338
-msgid "_Name:"
-msgstr "_Nom :"
+#~ msgid "Co_mment:"
+#~ msgstr "Co_mentari :"
 
-#. Generic Name
-#: ../libgnome-desktop/gnome-ditem-edit.c:355
-msgid "_Generic name:"
-msgstr "Nom _generic :"
+#~ msgid "Browse"
+#~ msgstr "Navigar"
 
-#. Comment
-#: ../libgnome-desktop/gnome-ditem-edit.c:372
-msgid "Co_mment:"
-msgstr "Co_mentari :"
+#~ msgid "_Type:"
+#~ msgstr "_Tipe :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:388
-msgid "Browse"
-msgstr "Navigar"
+#~ msgid "_Icon:"
+#~ msgstr "_Icòna :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:399
-msgid "_Type:"
-msgstr "_Tipe :"
+#~ msgid "Browse icons"
+#~ msgstr "Examinar las icònas"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:416
-msgid "_Icon:"
-msgstr "_Icòna :"
+#~ msgid "Run in t_erminal"
+#~ msgstr "Executar dins un t_erminal"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:426
-msgid "Browse icons"
-msgstr "Examinar las icònas"
+#~ msgid "Language"
+#~ msgstr "Lenga"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:440
-msgid "Run in t_erminal"
-msgstr "Executar dins un t_erminal"
+#~ msgid "Name"
+#~ msgstr "Nom"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:621
-#: ../libgnome-desktop/gnome-ditem-edit.c:721
-msgid "Language"
-msgstr "Lenga"
+#~ msgid "Generic name"
+#~ msgstr "Nom generic"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:626
-#: ../libgnome-desktop/gnome-ditem-edit.c:727
-msgid "Name"
-msgstr "Nom"
+#~ msgid "Comment"
+#~ msgstr "Comentari"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:631
-#: ../libgnome-desktop/gnome-ditem-edit.c:733
-msgid "Generic name"
-msgstr "Nom generic"
+#~ msgid "_Try this before using:"
+#~ msgstr "_Ensajar aquò abans d'utilizar :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:636
-#: ../libgnome-desktop/gnome-ditem-edit.c:741
-msgid "Comment"
-msgstr "Comentari"
+#~ msgid "_Documentation:"
+#~ msgstr "_Documentacion :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:674
-msgid "_Try this before using:"
-msgstr "_Ensajar aquò abans d'utilizar :"
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "_Reviradas del nom e del comentari :"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:685
-msgid "_Documentation:"
-msgstr "_Documentacion :"
+#~ msgid "_Add/Set"
+#~ msgstr "_Apondre/modificar"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:696
-msgid "_Name/Comment translations:"
-msgstr "_Reviradas del nom e del comentari :"
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Apondre o modificar las reviradas de nom e de comentari"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:743
-msgid "_Add/Set"
-msgstr "_Apondre/modificar"
+#~ msgid "Re_move"
+#~ msgstr "_Suprimir"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:748
-msgid "Add or Set Name/Comment Translations"
-msgstr "Apondre o modificar las reviradas de nom e de comentari"
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Suprimir la revirada del nom e del comentari"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:750
-msgid "Re_move"
-msgstr "_Suprimir"
+#~ msgid "Basic"
+#~ msgstr "Basic"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:755
-msgid "Remove Name/Comment Translation"
-msgstr "Suprimir la revirada del nom e del comentari"
+#~ msgid "Advanced"
+#~ msgstr "Avançat"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:771
-msgid "Basic"
-msgstr "Basic"
-
-#: ../libgnome-desktop/gnome-ditem-edit.c:779
-msgid "Advanced"
-msgstr "Avançat"
-
-#: ../libgnome-desktop/gnome-hint.c:201
-msgid "_Show Hints at Startup"
-msgstr "_Visualizar las astúcias a l'aviada"
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "_Visualizar las astúcias a l'aviada"
 
 #~ msgid "Error writing file '%s': %s"
 #~ msgstr "Error al moment d'escriure lo fichièr '%s' : %s"
@@ -369,9 +452,6 @@ msgstr "_Visualizar las astúcias a l'aviada"
 
 #~ msgid "Could not open the address \"%s\": %s"
 #~ msgstr "Impossible de dobrir l'adreça \"%s\" : %s"
-
-#~ msgid "Could not get information about GNOME version."
-#~ msgstr "Impossible d'obténer las entresenhas sus aquesta version de GNOME."
 
 #~ msgid "%s: %s\n"
 #~ msgstr "%s : %s\n"

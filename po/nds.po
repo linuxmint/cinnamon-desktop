@@ -1,254 +1,59 @@
-# Low German translation for gnome-desktop.
-# Copyright (C) 2009 gnome-desktop's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-desktop package.
+# Low German translation for cinnamon-desktop.
+# Copyright (C) 2009 cinnamon-desktop's COPYRIGHT HOLDER
+# This file is distributed under the same license as the cinnamon-desktop package.
 # Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-desktop master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"desktop&component=general\n"
-"POT-Creation-Date: 2009-10-22 13:13+0000\n"
+"Project-Id-Version: cinnamon-desktop master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2009-10-22 19:01+0100\n"
 "Last-Translator: Nils-Christoph Fiedler <linux@medienkompanie.de>\n"
 "Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gnome-about/gnome-about.desktop.in.in.h:1
-#: ../gnome-about/gnome-about.in:60
-msgid "About GNOME"
-msgstr "Över GNOME"
-
-#: ../gnome-about/gnome-about.desktop.in.in.h:2
-msgid "Learn more about GNOME"
-msgstr "Mehr över GNOME rutkriegen"
-
-#: ../gnome-about/gnome-about.in:61
-msgid "News"
-msgstr "Nahrichten"
-
-#: ../gnome-about/gnome-about.in:62
-msgid "GNOME Library"
-msgstr "GNOME Bökerie"
-
-#: ../gnome-about/gnome-about.in:63
-msgid "Friends of GNOME"
-msgstr "GNOME-Frünnen"
-
-#: ../gnome-about/gnome-about.in:64
-msgid "Contact"
-msgstr "Kontakt"
-
-#: ../gnome-about/gnome-about.in:68
-msgid "The Mysterious GEGL"
-msgstr "Dat mysteriöse GEGL"
-
-#: ../gnome-about/gnome-about.in:69
-msgid "The Squeaky Rubber GNOME"
-msgstr "Dat Gummiaanten-GNOME"
-
-#: ../gnome-about/gnome-about.in:70
-msgid "Wanda The GNOME Fish"
-msgstr "Wanda, de Gnome-Fisch"
-
-#: ../gnome-about/gnome-about.in:567
-msgid "_Open URL"
-msgstr "URL _Opmaken"
-
-#: ../gnome-about/gnome-about.in:574
-msgid "_Copy URL"
-msgstr "_URL koperen"
-
-#: ../gnome-about/gnome-about.in:826
-msgid "About the GNOME Desktop"
-msgstr "Över de GNOME-Schrievdisk"
-
-#: ../gnome-about/gnome-about.in:859
-msgid "%(name)s: %(value)s"
-msgstr "%(name)s: %(value)s"
-
-#: ../gnome-about/gnome-about.in:873
-msgid "Welcome to the GNOME Desktop"
-msgstr "Willkoumen to'm GNOME-Schrievdisk"
-
-#: ../gnome-about/gnome-about.in:890
-msgid "Brought to you by:"
-msgstr "Ermöglicht döör:"
-
-#: ../gnome-about/gnome-about.in:914
-msgid "<b>%(name)s:</b> %(value)s"
-msgstr "<b>%(name)s:</b> %(value)s"
-
-#: ../gnome-about/gnome-about.in:975
-msgid "Version"
-msgstr "Verschoon"
-
-#: ../gnome-about/gnome-about.in:977
-msgid "Distributor"
-msgstr "Verdeeler"
-
-#: ../gnome-about/gnome-about.in:979
-msgid "Build Date"
-msgstr "Produktschoonsdag"
-
-#: ../gnome-about/gnome-about.in:1024
-msgid "Display information on this GNOME version"
-msgstr "Informatschoonen över düsse Verschoon vun GNOME opwiesen"
-
-#: ../gnome-version.xml.in.in.h:1
-msgid ""
-"GNOME also includes a complete development platform for applications "
-"programmers, allowing the creation of powerful and complex applications."
-msgstr ""
-"GNOME hett een kumplette Konstruktschoonsgrundlaag för Anwennenprogrammeerer "
-"to de Konstruktschoon vun mächdigen un veelschichtigen Programmen."
-
-#: ../gnome-version.xml.in.in.h:2
-msgid ""
-"GNOME includes most of what you see on your computer, including the file "
-"manager, web browser, menus, and many applications."
-msgstr ""
-"GNOME hett to'm bannig grooten Deel, wat je op dien Rekner siehst, ook de "
-"Dateioppasser, de Netkieker, Menüs un veelen anner Programme."
-
-#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
-#. will be substituted by the configure script. Otherwise you will break
-#. the translations.
-#: ../gnome-version.xml.in.in.h:6
-msgid ""
-"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
-"like family of operating systems."
-msgstr ""
-"GNOME is frie to kreegen un hett een sekern Schrievdisk för Unix-"
-"Bedreevsysteme, de eenfach to gebruken is."
-
-#: ../gnome-version.xml.in.in.h:7
-msgid ""
-"GNOME's focus on usability and accessibility, regular release cycle, and "
-"strong corporate backing make it unique among Free Software desktops."
-msgstr ""
-"Dat Ogenmark op eenfachen Gebruk, regelmatige Verschoonen un starke "
-"Unnerstütten vun Unnernehmen makt GNOME enkelartig unner de frien "
-"Schrievdisken."
-
-#: ../gnome-version.xml.in.in.h:8
-msgid ""
-"GNOME's greatest strength is our strong community. Virtually anyone, with or "
-"without coding skills, can contribute to making GNOME better."
-msgstr ""
-"De grodste Starke vun GNOME liggt in de starke Gemeinschapt. In'n Groten un "
-"Ganzen künn all, ob sei sik nu mit Programmeern utkennen or nich, bi'm "
-"Verbettern vun GNOME mithölpen."
-
-#: ../gnome-version.xml.in.in.h:9
-msgid ""
-"Hundreds of people have contributed code to GNOME since it was started in "
-"1997; many more have contributed in other important ways, including "
-"translations, documentation, and quality assurance."
-msgstr ""
-"Siet 'em Start vu'm GNOME-Projekt 1997 hebben hunnerte vun Minschen "
-"mithölpt, GNOME to programmeeren. Veele hunnert mehr hebben eehren Bidrag to "
-"GNOME in annern wichdigen Rebeeten as in de Översetten, Dokumentatschoon un "
-"Qualitätssekern leest."
-
-#: ../libgnome-desktop/display-name.c:262
-msgid "Laptop"
-msgstr "Klapprekner"
-
-#: ../libgnome-desktop/display-name.c:270
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libcinnamon-desktop/display-name.c:91
+#, fuzzy
+msgctxt "Monitor vendor"
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: ../libgnome-desktop/gnome-desktop-item.c:220
-#, c-format
-msgid "Error reading file '%s': %s"
-msgstr "Problem bi'm Lesen vun de Datei '%s': %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:288
-#, c-format
-msgid "Error rewinding file '%s': %s"
-msgstr "Fehler torüggspeelende Datei '%s': %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:377
-#: ../libgnome-desktop/gnome-desktop-item.c:3519
-msgid "No name"
-msgstr "Keen Naam"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:604
-#, c-format
-msgid "File '%s' is not a regular file or directory."
-msgstr "Datei '%s' is keen/e goode Datei or Verteeknis."
-
-#: ../libgnome-desktop/gnome-desktop-item.c:788
-#, c-format
-msgid "Error cannot find file id '%s'"
-msgstr "Fehler: Kann de Datei mit de ID '%s' nich finnen"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:834
-#, c-format
-msgid "No filename to save to"
-msgstr "Keen Dateinaam to'n spiekern"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:1819
-#, c-format
-msgid "Starting %s"
-msgstr "Starte %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2055
-#, c-format
-msgid "No URL to launch"
-msgstr "Keene URL to'm starten"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2071
-#, c-format
-msgid "Not a launchable item"
-msgstr "Keene startbare Datei"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2081
-#, c-format
-msgid "No command (Exec) to launch"
-msgstr "Keene Order (Exec) to'm starten"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2094
-#, c-format
-msgid "Bad command (Exec) to launch"
-msgstr "Ungültige Order (Exec) to'm starten"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:3575
-#, c-format
-msgid "Unknown encoding of: %s"
-msgstr "Unbekannte Koderen vun: %s"
-
-#: ../libgnome-desktop/gnome-desktop-utils.c:133
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
 "Künn keen Terminal finnen, dat xterm bruken deit, ook as dat nich geiht"
 
-#: ../libgnome-desktop/gnome-rr.c:405
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
 msgstr "künn de Billschirmmiddel nich rutkregen (CRTCs, outputs, modes)"
 
-#: ../libgnome-desktop/gnome-rr.c:425
+#: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr ""
 "X Fehler bi'n Holen vun de Avmessen vun de Billschirmgröte, de nich "
 "handtohebben is"
 
-#: ../libgnome-desktop/gnome-rr.c:431
+#: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
 msgid "could not get the range of screen sizes"
 msgstr "künn de Billschirmgröte nich rutkregen"
 
-#: ../libgnome-desktop/gnome-rr.c:657
+#: ../libcinnamon-desktop/gnome-rr.c:769
 #, c-format
 msgid "RANDR extension is not present"
 msgstr "RANDR Tosatt is nich verfögbar"
 
-#: ../libgnome-desktop/gnome-rr.c:923
+#: ../libcinnamon-desktop/gnome-rr.c:1577
 #, c-format
 msgid "could not get information about output %d"
 msgstr "künn keene Informatschoonen kreegen över Utgav %d"
@@ -256,26 +61,30 @@ msgstr "künn keene Informatschoonen kreegen över Utgav %d"
 #. Translators: the "position", "size", and "maximum"
 #. * words here are not keywords; please translate them
 #. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libgnome-desktop/gnome-rr.c:1261
+#: ../libcinnamon-desktop/gnome-rr.c:2170
 #, c-format
 msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: position=(%"
-"d, %d), size=(%d, %d), maximum=(%d, %d)"
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 "avfragte Positschoon/Gröte för CRTC %d is buten vun de tolaten Grenz: "
 "Positschoon(%d, %d), Grote=(%d, %d), Maximum=(%d, %d)"
 
-#: ../libgnome-desktop/gnome-rr.c:1297
+#: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
 msgid "could not set the configuration for CRTC %d"
 msgstr "künn nich de akerate Konfiguratschoon setten för CRTC %d"
 
-#: ../libgnome-desktop/gnome-rr.c:1409
+#: ../libcinnamon-desktop/gnome-rr.c:2352
 #, c-format
 msgid "could not get information about CRTC %d"
 msgstr "künn keene Informatschoonen rutkregen för CRTC %d"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1159
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
+msgid "Laptop"
+msgstr "Klapprekner"
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
 #, c-format
 msgid ""
 "none of the saved display configurations matched the active configuration"
@@ -283,10 +92,63 @@ msgstr ""
 "keener vun de spiekerten Billschirmkonfiguratschoonen passt to de aktive "
 "Konfiguratschoon"
 
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
+
 #. Translators: the "requested", "minimum", and
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
-#: ../libgnome-desktop/gnome-rr-config.c:1682
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
 #, c-format
 msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
@@ -295,17 +157,202 @@ msgstr ""
 "nödige virtuelle Gröte passt nich in verfögbare Gröte: nödig=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1696
-#, c-format
-msgid "could not find a suitable configuration of screens"
-msgstr "keene passende Konfiguratschoon för'n Billschirm funnen"
-
 #. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your laptop's
-#. * screen is the same as your external monitor.  Here, "Mirror" is being
-#. * used as an adjective, not as a verb.  For example, the Spanish
-#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
 #.
-#: ../libgnome-desktop/gnome-rr-labeler.c:210
-msgid "Mirror Screens"
-msgstr "Speegelbillschirme"
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
+msgid "Mirrored Displays"
+msgstr ""
+
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+msgid "%A %B %e, %R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+msgid "%A %B %e, %R"
+msgstr ""
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R:%S"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R"
+msgstr ""
+
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
+msgid "%A %B %e, %l:%M %p"
+msgstr ""
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+msgid "%l:%M:%S %p"
+msgstr ""
+
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+msgid "%l:%M %p"
+msgstr ""
+
+#~ msgid "About GNOME"
+#~ msgstr "Över GNOME"
+
+#~ msgid "Learn more about GNOME"
+#~ msgstr "Mehr över GNOME rutkriegen"
+
+#~ msgid "News"
+#~ msgstr "Nahrichten"
+
+#~ msgid "GNOME Library"
+#~ msgstr "GNOME Bökerie"
+
+#~ msgid "Friends of GNOME"
+#~ msgstr "GNOME-Frünnen"
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
+
+#~ msgid "The Mysterious GEGL"
+#~ msgstr "Dat mysteriöse GEGL"
+
+#~ msgid "The Squeaky Rubber GNOME"
+#~ msgstr "Dat Gummiaanten-GNOME"
+
+#~ msgid "Wanda The GNOME Fish"
+#~ msgstr "Wanda, de Gnome-Fisch"
+
+#~ msgid "_Open URL"
+#~ msgstr "URL _Opmaken"
+
+#~ msgid "_Copy URL"
+#~ msgstr "_URL koperen"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "Över de GNOME-Schrievdisk"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "Willkoumen to'm GNOME-Schrievdisk"
+
+#~ msgid "Brought to you by:"
+#~ msgstr "Ermöglicht döör:"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "Verschoon"
+
+#~ msgid "Distributor"
+#~ msgstr "Verdeeler"
+
+#~ msgid "Build Date"
+#~ msgstr "Produktschoonsdag"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "Informatschoonen över düsse Verschoon vun GNOME opwiesen"
+
+#~ msgid ""
+#~ "GNOME also includes a complete development platform for applications "
+#~ "programmers, allowing the creation of powerful and complex applications."
+#~ msgstr ""
+#~ "GNOME hett een kumplette Konstruktschoonsgrundlaag för "
+#~ "Anwennenprogrammeerer to de Konstruktschoon vun mächdigen un "
+#~ "veelschichtigen Programmen."
+
+#~ msgid ""
+#~ "GNOME includes most of what you see on your computer, including the file "
+#~ "manager, web browser, menus, and many applications."
+#~ msgstr ""
+#~ "GNOME hett to'm bannig grooten Deel, wat je op dien Rekner siehst, ook de "
+#~ "Dateioppasser, de Netkieker, Menüs un veelen anner Programme."
+
+#~ msgid ""
+#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
+#~ "Unix-like family of operating systems."
+#~ msgstr ""
+#~ "GNOME is frie to kreegen un hett een sekern Schrievdisk för Unix-"
+#~ "Bedreevsysteme, de eenfach to gebruken is."
+
+#~ msgid ""
+#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
+#~ "strong corporate backing make it unique among Free Software desktops."
+#~ msgstr ""
+#~ "Dat Ogenmark op eenfachen Gebruk, regelmatige Verschoonen un starke "
+#~ "Unnerstütten vun Unnernehmen makt GNOME enkelartig unner de frien "
+#~ "Schrievdisken."
+
+#~ msgid ""
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
+#~ "or without coding skills, can contribute to making GNOME better."
+#~ msgstr ""
+#~ "De grodste Starke vun GNOME liggt in de starke Gemeinschapt. In'n Groten "
+#~ "un Ganzen künn all, ob sei sik nu mit Programmeern utkennen or nich, bi'm "
+#~ "Verbettern vun GNOME mithölpen."
+
+#~ msgid ""
+#~ "Hundreds of people have contributed code to GNOME since it was started in "
+#~ "1997; many more have contributed in other important ways, including "
+#~ "translations, documentation, and quality assurance."
+#~ msgstr ""
+#~ "Siet 'em Start vu'm GNOME-Projekt 1997 hebben hunnerte vun Minschen "
+#~ "mithölpt, GNOME to programmeeren. Veele hunnert mehr hebben eehren Bidrag "
+#~ "to GNOME in annern wichdigen Rebeeten as in de Översetten, "
+#~ "Dokumentatschoon un Qualitätssekern leest."
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "Problem bi'm Lesen vun de Datei '%s': %s"
+
+#~ msgid "Error rewinding file '%s': %s"
+#~ msgstr "Fehler torüggspeelende Datei '%s': %s"
+
+#~ msgid "No name"
+#~ msgstr "Keen Naam"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr "Datei '%s' is keen/e goode Datei or Verteeknis."
+
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "Fehler: Kann de Datei mit de ID '%s' nich finnen"
+
+#~ msgid "No filename to save to"
+#~ msgstr "Keen Dateinaam to'n spiekern"
+
+#~ msgid "Starting %s"
+#~ msgstr "Starte %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "Keene URL to'm starten"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Keene startbare Datei"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "Keene Order (Exec) to'm starten"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "Ungültige Order (Exec) to'm starten"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "Unbekannte Koderen vun: %s"
+
+#~ msgid "could not find a suitable configuration of screens"
+#~ msgstr "keene passende Konfiguratschoon för'n Billschirm funnen"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Speegelbillschirme"
