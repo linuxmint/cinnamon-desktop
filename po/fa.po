@@ -1,6 +1,6 @@
-# Persian translation of gnome-desktop.
+# Persian translation of cinnamon-desktop.
 # Copyright (C) 1998-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-desktop package.
+# This file is distributed under the same license as the cinnamon-desktop package.
 # Roozbeh Pournader <roozbeh@farsiweb.info>, 2003.
 # Meelad Zakaria <meelad@farsiweb.info>, 2004.
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2006.
@@ -10,13 +10,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-desktop HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"desktop&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-03 19:06+0000\n"
+"Project-Id-Version: cinnamon-desktop HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2012-09-06 20:48+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,39 +25,39 @@ msgstr ""
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
 #. * vendor is used.
-#: ../libgnome-desktop/display-name.c:91
+#: ../libcinnamon-desktop/display-name.c:91
 msgctxt "Monitor vendor"
 msgid "Unknown"
 msgstr "ناشناخته"
 
-#: ../libgnome-desktop/gnome-desktop-utils.c:134
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
 "پایانه‌ای یافت نمی‌شود، با استفاده از مقلد پایانه در سیستم پنجرهٔ ایکس، حتی اگر "
 "ممکن است کار نکند"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libgnome-desktop/gnome-rr.c:452
+#: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
 msgstr "منابع صفحه نمایش گرفته نشد(کنترل کننده‌ی سی‌آر‌تی، خروجی‌ها، حالت‌ها)"
 
-#: ../libgnome-desktop/gnome-rr.c:472
+#: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr "خطای تصدی نشدهٔ ایکس هنگام گرفتن گسترهٔ اندازه‌ی صفحه‌نمایش"
 
-#: ../libgnome-desktop/gnome-rr.c:478
+#: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
 msgid "could not get the range of screen sizes"
 msgstr "گسترهٔ اندازه‌های صفحه نمایش گرفته نشد."
 
-#: ../libgnome-desktop/gnome-rr.c:769
+#: ../libcinnamon-desktop/gnome-rr.c:769
 #, c-format
 msgid "RANDR extension is not present"
 msgstr "پسوند RANDR موجود نیست."
 
-#: ../libgnome-desktop/gnome-rr.c:1570
+#: ../libcinnamon-desktop/gnome-rr.c:1577
 #, c-format
 msgid "could not get information about output %d"
 msgstr "اطلاعات درباره‌ی خروجی %d بدست نیامد."
@@ -65,30 +65,30 @@ msgstr "اطلاعات درباره‌ی خروجی %d بدست نیامد."
 #. Translators: the "position", "size", and "maximum"
 #. * words here are not keywords; please translate them
 #. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libgnome-desktop/gnome-rr.c:2163
+#: ../libcinnamon-desktop/gnome-rr.c:2170
 #, c-format
 msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: position="
-"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 "موقعیت/اندازه‌ی درخواست شده برای کنترل‌کننده‌ی سی‌آر‌تی %d در خارج از حد مجاز "
 "است: موقعیت=(%d, %d) ، , اندازه=(%d, %d), بیشینه=(%d, %d)"
 
-#: ../libgnome-desktop/gnome-rr.c:2199
+#: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
 msgid "could not set the configuration for CRTC %d"
 msgstr "پیکر‌بندی برای کنترلر سی‌آر‌تی %d تنظیم نشد"
 
-#: ../libgnome-desktop/gnome-rr.c:2344
+#: ../libcinnamon-desktop/gnome-rr.c:2352
 #, c-format
 msgid "could not get information about CRTC %d"
 msgstr "اطلاعات درباره‌ی کنترلر سی‌آر‌تی %d گرفته نشد"
 
-#: ../libgnome-desktop/gnome-rr-config.c:558
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
 msgid "Laptop"
 msgstr "لپ‌تاپ"
 
-#: ../libgnome-desktop/gnome-rr-config.c:713
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
 #, c-format
 msgid ""
 "none of the saved display configurations matched the active configuration"
@@ -96,22 +96,22 @@ msgstr ""
 "هیچ‌کدام از پیکربندی‌های ذخیره شده برای صفحهٔ نمایش با پیکربندی فعال فعلی "
 "مطابقت نیافت."
 
-#: ../libgnome-desktop/gnome-rr-config.c:1469
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
 #, c-format
 msgid "CRTC %d cannot drive output %s"
 msgstr "کنترلر سی‌آر‌تی %d نمی‌تواند خروجی %s را بگرداند"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1476
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
 #, c-format
 msgid "output %s does not support mode %dx%d@%dHz"
 msgstr "خروجی %s از حالت %dx%d@%dHz پشتیبانی نمی‌کند."
 
-#: ../libgnome-desktop/gnome-rr-config.c:1487
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
 #, c-format
 msgid "CRTC %d does not support rotation=%s"
 msgstr "کنترلر سی‌آر‌تی %d از چرخاندن=%s پشتیبانی نمی‌کند"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1501
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
 #, c-format
 msgid ""
 "output %s does not have the same parameters as another cloned output:\n"
@@ -124,24 +124,24 @@ msgstr ""
 "مختصات موجود = (%d, %d), مختصات جدید = (%d, %d)\n"
 "چرخش موجود =  %s, چرخش جدید = %s"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1516
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
 #, c-format
 msgid "cannot clone to output %s"
 msgstr "کپی‌برابر به خروجی %s انجام نمی‌شود."
 
-#: ../libgnome-desktop/gnome-rr-config.c:1685
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
 #, c-format
 msgid "Trying modes for CRTC %d\n"
 msgstr "در حال آزمودن حالت‌ها برای کنترلر سی‌آر‌تی %d  \n"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1709
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
 msgstr ""
 "کنترلر سی‌آر‌تی %d: در حال امتحان کردن حالت %dx%d@%dHz با خروجی در %dx%d@%dHz "
 "(گذر %d )\n"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1756
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
 #, c-format
 msgid ""
 "could not assign CRTCs to outputs:\n"
@@ -150,7 +150,7 @@ msgstr ""
 "کنترلرهای سی‌آر‌تی به خروجی‌ها منتسب نشد:\n"
 "%s"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1760
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
 #, c-format
 msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
@@ -162,7 +162,7 @@ msgstr ""
 #. Translators: the "requested", "minimum", and
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
-#: ../libgnome-desktop/gnome-rr-config.c:1838
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
 #, c-format
 msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
@@ -177,72 +177,61 @@ msgstr ""
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
 #.
-#: ../libgnome-desktop/gnome-rr-labeler.c:381
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "نمایشگرهای آینه‌ای"
 
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
-#: ../libgnome-desktop/gnome-wall-clock.c:238
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
 msgstr "%A %Od %B %OH:%OM:%OS"
 
-#: ../libgnome-desktop/gnome-wall-clock.c:239
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
 msgid "%A %B %e, %R"
 msgstr "%A %Od %B %OH:%OM"
 
-#. Translators: This is the time format with day used
-#. in 24-hour mode.
-#: ../libgnome-desktop/gnome-wall-clock.c:243
-msgid "%A %R:%S"
-msgstr "%A %OH:%OM:%OS"
-
-#: ../libgnome-desktop/gnome-wall-clock.c:244
-msgid "%A %R"
-msgstr "%A %OH:%OM"
-
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
-#: ../libgnome-desktop/gnome-wall-clock.c:248
-#| msgid "%A %R:%S"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
 msgid "%R:%S"
 msgstr "%OH:%OM:%OS"
 
-#: ../libgnome-desktop/gnome-wall-clock.c:248
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
 msgid "%R"
 msgstr "%OH:%OM"
 
 #. Translators: This is a time format with full date used
 #. for AM/PM.
-#: ../libgnome-desktop/gnome-wall-clock.c:254
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
 msgid "%A %B %e, %l:%M:%S %p"
 msgstr "%A Od% %B %OH:%OM:%OS"
 
-#: ../libgnome-desktop/gnome-wall-clock.c:255
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
 msgid "%A %B %e, %l:%M %p"
 msgstr "%A %Od %B %OH:%OM"
 
-#. Translators: This is a time format with day used
-#. for AM/PM.
-#: ../libgnome-desktop/gnome-wall-clock.c:259
-msgid "%A %l:%M:%S %p"
-msgstr "%A %OH:%OM:%OS"
-
-#: ../libgnome-desktop/gnome-wall-clock.c:260
-msgid "%A %l:%M %p"
-msgstr "%A %OH:%OM"
-
 #. Translators: This is a time format without date used
 #. for AM/PM.
-#: ../libgnome-desktop/gnome-wall-clock.c:264
-#| msgid "%A %l:%M:%S %p"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
 msgid "%l:%M:%S %p"
 msgstr "%OI:%OM:%OS %p"
 
-#: ../libgnome-desktop/gnome-wall-clock.c:265
-#| msgid "%A %l:%M %p"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%OI:%OM %p"
+
+#~ msgid "%A %R:%S"
+#~ msgstr "%A %OH:%OM:%OS"
+
+#~ msgid "%A %R"
+#~ msgstr "%A %OH:%OM"
+
+#~ msgid "%A %l:%M:%S %p"
+#~ msgstr "%A %OH:%OM:%OS"
+
+#~ msgid "%A %l:%M %p"
+#~ msgstr "%A %OH:%OM"
 
 #~ msgid "About GNOME"
 #~ msgstr "دربارهٔ گنوم"

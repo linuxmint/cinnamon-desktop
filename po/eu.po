@@ -10,44 +10,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu_to_be_translate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 22:04+0100\n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2011-01-27 22:13+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libgnome-desktop/gnome-desktop-utils.c:134
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libcinnamon-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
+msgstr "Ezezaguna"
+
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
 "Ezin izan da terminala aurkitu, xterm erabiliko da, nahiz eta agian ez "
 "funtzionatu"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libgnome-desktop/gnome-rr.c:483
+#: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
 msgstr "ezin izan da pantailen baliabideak lortu (CRTCak, irteerak, moduak)"
 
-#: ../libgnome-desktop/gnome-rr.c:503
+#: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr "kudeatu gabeko X errorea pantailen tamainen barrutia lortzean"
 
-#: ../libgnome-desktop/gnome-rr.c:509
+#: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
 msgid "could not get the range of screen sizes"
 msgstr "ezin izan da pantailen tamainen barrutia lortu"
 
-#: ../libgnome-desktop/gnome-rr.c:730
+#: ../libcinnamon-desktop/gnome-rr.c:769
 #, c-format
 msgid "RANDR extension is not present"
 msgstr "RANDR hedapena ez dago"
 
-#: ../libgnome-desktop/gnome-rr.c:1279
+#: ../libcinnamon-desktop/gnome-rr.c:1577
 #, c-format
 msgid "could not get information about output %d"
 msgstr "ezin izan da %d irteerari buruzko informazioa lortu"
@@ -55,30 +64,30 @@ msgstr "ezin izan da %d irteerari buruzko informazioa lortu"
 #. Translators: the "position", "size", and "maximum"
 #. * words here are not keywords; please translate them
 #. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libgnome-desktop/gnome-rr.c:1720
+#: ../libcinnamon-desktop/gnome-rr.c:2170
 #, c-format
 msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: position="
-"(%d, %d), size=(%d, %d), maximum=(%d, %d)"
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 "eskatutako %d. CRTCaren posizioa/tamaina baimendutako mugatik at dago: "
 "posizioa=(%d, %d), tamaina=(%d, %d), gehienezkoa=(%d, %d)"
 
-#: ../libgnome-desktop/gnome-rr.c:1756
+#: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
 msgid "could not set the configuration for CRTC %d"
 msgstr "ezin izan da %d. CRTCaren konfigurazioa ezarri"
 
-#: ../libgnome-desktop/gnome-rr.c:1905
+#: ../libcinnamon-desktop/gnome-rr.c:2352
 #, c-format
 msgid "could not get information about CRTC %d"
 msgstr "ezin izan da %d. CRTCari buruzko informazioa lortu"
 
-#: ../libgnome-desktop/gnome-rr-config.c:553
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
 msgid "Laptop"
 msgstr "Eramangarria"
 
-#: ../libgnome-desktop/gnome-rr-config.c:708
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
 #, c-format
 msgid ""
 "none of the saved display configurations matched the active configuration"
@@ -86,22 +95,22 @@ msgstr ""
 "pantailaren gordetako konfiguraziotariko bat bera ere ez dator bat "
 "konfigurazio aktiboarekin"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1492
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
 #, c-format
 msgid "CRTC %d cannot drive output %s"
 msgstr "%d CRTC ezin du %s irteera bideratu"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1499
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
 #, c-format
 msgid "output %s does not support mode %dx%d@%dHz"
 msgstr "%s irteerak ez du %dx%d@%dHz modua onartzen"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1510
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
 #, c-format
 msgid "CRTC %d does not support rotation=%s"
 msgstr "%d CRTCek ez du biraketa=%s onartzen"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1524
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
 #, c-format
 msgid ""
 "output %s does not have the same parameters as another cloned output:\n"
@@ -114,23 +123,23 @@ msgstr ""
 "dauden koordenatuak = (%d, %d), koordenatu berriak = (%d, %d)\n"
 "dagoen biraketa = %s, biraketa berria = %s"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1539
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
 #, c-format
 msgid "cannot clone to output %s"
 msgstr "ezin da %s irteerara klonatu"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1708
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
 #, c-format
 msgid "Trying modes for CRTC %d\n"
 msgstr "Moduak saiatzen %d CRTCrentzako\n"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1732
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
 msgstr ""
 "%d CRTC: %dx%d@%dHz modua saiatzen %dx%d@%dHz irteerarekin (%d. pasaldia)\n"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1779
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
 #, c-format
 msgid ""
 "could not assign CRTCs to outputs:\n"
@@ -139,7 +148,7 @@ msgstr ""
 "ezin izan da CRTrik esleitu irteeretara:\n"
 "%s"
 
-#: ../libgnome-desktop/gnome-rr-config.c:1783
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
 #, c-format
 msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
@@ -151,7 +160,7 @@ msgstr ""
 #. Translators: the "requested", "minimum", and
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
-#: ../libgnome-desktop/gnome-rr-config.c:1865
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
 #, c-format
 msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
@@ -161,54 +170,63 @@ msgstr ""
 "eskatutakoa=(%d, %d), gutxienekoa=(%d, %d), gehienezkoa=(%d, %d)"
 
 #. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your laptop's
-#. * screen is the same as your external monitor.  Here, "Mirror" is being
-#. * used as an adjective, not as a verb.  For example, the Spanish
-#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
 #.
-#: ../libgnome-desktop/gnome-rr-labeler.c:375
-msgid "Mirror Screens"
-msgstr "Ispilu-pantailak"
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
+msgid "Mirrored Displays"
+msgstr ""
 
-#. Translators: This is the time format with date used
+#. Translators: This is the time format with full date used
 #. in 24-hour mode.
-#: ../js/ui/dateMenu.js:164
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
 msgstr "%A %B %e, %R:%S"
 
-#: ../js/ui/dateMenu.js:165
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
 msgid "%A %B %e, %R"
 msgstr "%A %B %e, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
-#: ../js/ui/dateMenu.js:169
-msgid "%A %R:%S"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+#, fuzzy
+msgid "%R:%S"
 msgstr "%A %R:%S"
 
-#: ../js/ui/dateMenu.js:170
-msgid "%A %R"
-msgstr "%A %R"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R"
+msgstr ""
 
-#. Translators: This is a time format with date used
+#. Translators: This is a time format with full date used
 #. for AM/PM.
-#: ../js/ui/dateMenu.js:177
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
 msgid "%A %B %e, %l:%M:%S %p"
 msgstr "%A %B %e, %l:%M:%S %p"
 
-#: ../js/ui/dateMenu.js:178
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
 msgid "%A %B %e, %l:%M %p"
 msgstr "%A %B %e, %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
-#: ../js/ui/dateMenu.js:182
-msgid "%A %l:%M:%S %p"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+#, fuzzy
+msgid "%l:%M:%S %p"
 msgstr "%A %l:%M:%S %p"
 
-#: ../js/ui/dateMenu.js:183
-msgid "%A %l:%M %p"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+#, fuzzy
+msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+#~ msgid "Mirror Screens"
+#~ msgstr "Ispilu-pantailak"
+
+#~ msgid "%A %R"
+#~ msgstr "%A %R"
 
 #
 #~ msgid "About GNOME"
@@ -322,11 +340,6 @@ msgstr "%A %l:%M %p"
 #~ "Ehunka lagunek parte hartu dute GNOME kodetzen, 1997an hasi zenetik; "
 #~ "beste askok beste modu garrantzitsu batean hartu dute parte, adibidez, "
 #~ "itzulpenekin, dokumentazioarekin edo kalitatea bermatuz."
-
-#~| msgid "Unknown"
-#~ msgctxt "Monitor vendor"
-#~ msgid "Unknown"
-#~ msgstr "Ezezaguna"
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Errorea gertatu da '%s' fitxategia irakurtzean: %s"

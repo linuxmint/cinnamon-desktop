@@ -5,316 +5,370 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-desktop.head\n"
+"Project-Id-Version: cinnamon-desktop.head\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-05 03:41+0000\n"
+"POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2008-07-05 16:39-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
+"Language: ps\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Pashto, Pushto\n"
 "X-Poedit-Country: AFGHANISTAN\n"
 
-#: ../gnome-about/gnome-about.desktop.in.in.h:1
-#: ../gnome-about/gnome-about.in:61
-msgid "About GNOME"
-msgstr "د جنومي په اړه"
-
-#: ../gnome-about/gnome-about.desktop.in.in.h:2
-msgid "Learn more about GNOME"
-msgstr "د جنومي په اړه نور زده کول"
-
-#: ../gnome-about/gnome-about.in:62
-msgid "News"
-msgstr "خبرونه"
-
-#: ../gnome-about/gnome-about.in:63
-msgid "GNOME Library"
-msgstr "جنومي کتابتون"
-
-#: ../gnome-about/gnome-about.in:64
-msgid "Friends of GNOME"
-msgstr "د جنومي انډيوالان"
-
-#: ../gnome-about/gnome-about.in:65
-msgid "Contact"
-msgstr "اړيکه"
-
-#: ../gnome-about/gnome-about.in:69
-msgid "The Mysterious GEGL"
+#. Translators: "Unknown" here is used to identify a monitor for which
+#. * we don't know the vendor. When a vendor is known, the name of the
+#. * vendor is used.
+#: ../libcinnamon-desktop/display-name.c:91
+msgctxt "Monitor vendor"
+msgid "Unknown"
 msgstr ""
 
-#: ../gnome-about/gnome-about.in:70
-msgid "The Squeaky Rubber GNOME"
+#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
+msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
 
-#: ../gnome-about/gnome-about.in:71
-msgid "Wanda The GNOME Fish"
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
+#: ../libcinnamon-desktop/gnome-rr.c:452
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
 msgstr ""
 
-#: ../gnome-about/gnome-about.in:568
-msgid "_Open URL"
-msgstr "پرانيستل URL_"
-
-#: ../gnome-about/gnome-about.in:575
-msgid "_Copy URL"
-msgstr "لمېستل URL_"
-
-#: ../gnome-about/gnome-about.in:830
-msgid "About the GNOME Desktop"
-msgstr "د جنومي سرپاڼې په اړه"
-
-#: ../gnome-about/gnome-about.in:866
-msgid "%(name)s: %(value)s"
-msgstr "%(name)s: %(value)s"
-
-#: ../gnome-about/gnome-about.in:880
-msgid "Welcome to the GNOME Desktop"
-msgstr "د جنومي سرپاڼې ته ښه راغلاست"
-
-#: ../gnome-about/gnome-about.in:897
-msgid "Brought to you by:"
-msgstr ":تاسو ته وړاندې کړی دی"
-
-#: ../gnome-about/gnome-about.in:921
-msgid "<b>%(name)s:</b> %(value)s"
-msgstr "<b>%(name)s:</b> %(value)s"
-
-#: ../gnome-about/gnome-about.in:977
-msgid "Version"
-msgstr "نسخه"
-
-#: ../gnome-about/gnome-about.in:978
-msgid "Distributor"
-msgstr "خپروونکی"
-
-#: ../gnome-about/gnome-about.in:979
-msgid "Build Date"
-msgstr "د جوړېدو نېټه"
-
-#: ../gnome-about/gnome-about.in:1023
-msgid "Display information on this GNOME version"
-msgstr "د جنومي د دې نسخه په اړه خبرتياوې ښودل"
-
-#: ../gnome-version.xml.in.in.h:1
-msgid "GNOME also includes a complete development platform for applications programmers, allowing the creation of powerful and complex applications."
+#: ../libcinnamon-desktop/gnome-rr.c:472
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
 msgstr ""
 
-#: ../gnome-version.xml.in.in.h:2
-msgid "GNOME includes most of what you see on your computer, including the file manager, web browser, menus, and many applications."
+#: ../libcinnamon-desktop/gnome-rr.c:478
+#, c-format
+msgid "could not get the range of screen sizes"
 msgstr ""
 
-#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
-#. will be substituted by the configure script. Otherwise you will break
-#. the translations.
-#: ../gnome-version.xml.in.in.h:6
-msgid "GNOME is a Free, usable, stable, accessible desktop environment for the Unix-like family of operating systems."
+#: ../libcinnamon-desktop/gnome-rr.c:769
+#, c-format
+msgid "RANDR extension is not present"
 msgstr ""
 
-#: ../gnome-version.xml.in.in.h:7
-msgid "GNOME's focus on usability and accessibility, regular release cycle, and strong corporate backing make it unique among Free Software desktops."
+#: ../libcinnamon-desktop/gnome-rr.c:1577
+#, c-format
+msgid "could not get information about output %d"
 msgstr ""
 
-#: ../gnome-version.xml.in.in.h:8
-msgid "GNOME's greatest strength is our strong community. Virtually anyone, with or without coding skills, can contribute to making GNOME better."
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libcinnamon-desktop/gnome-rr.c:2170
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: "
+"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#: ../gnome-version.xml.in.in.h:9
-msgid "Hundreds of people have contributed code to GNOME since it was started in 1997; many more have contributed in other important ways, including translations, documentation, and quality assurance."
+#: ../libcinnamon-desktop/gnome-rr.c:2204
+#, c-format
+msgid "could not set the configuration for CRTC %d"
 msgstr ""
 
-#: ../libgnome-desktop/gnome-desktop-item.c:219
+#: ../libcinnamon-desktop/gnome-rr.c:2352
 #, c-format
-msgid "Error reading file '%s': %s"
-msgstr "%s :دوتنې په لوستلو کې تېروتنه '%s' د"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:287
-#, c-format
-msgid "Error rewinding file '%s': %s"
+msgid "could not get information about CRTC %d"
 msgstr ""
 
-#: ../libgnome-desktop/gnome-desktop-item.c:389
-#: ../libgnome-desktop/gnome-desktop-item.c:3756
-msgid "No name"
-msgstr "هېڅ نوم"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:616
-#, c-format
-msgid "File '%s' is not a regular file or directory."
-msgstr ".دوتنه ساده دوتنه يا درکموند نه دی '%s'"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:796
-#, c-format
-msgid "Error cannot find file id '%s'"
-msgstr "دوتنه پېژند نه شي موندلی '%s' تېروتنه!"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:842
-#, c-format
-msgid "No filename to save to"
-msgstr "کوم دوتنه نوم نشته چې ورکې وساتل شي"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:1827
-#, c-format
-msgid "Starting %s"
-msgstr "پېليږي %s"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2063
-#, c-format
-msgid "No URL to launch"
-msgstr "نشته چې پرانيستل شي URL"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2076
-#, c-format
-msgid "Not a launchable item"
-msgstr "پېلېدونکی توکی نه دی"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2086
-#, c-format
-msgid "No command (Exec) to launch"
-msgstr "کومه بولۍ نشته چې پېل شي"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:2099
-#, c-format
-msgid "Bad command (Exec) to launch"
-msgstr "ناسمه بولۍ چې پېل شي"
-
-#: ../libgnome-desktop/gnome-desktop-item.c:3812
-#, c-format
-msgid "Unknown encoding of: %s"
-msgstr "%s :ناسمه کوډيزونه ده"
-
-#: ../libgnome-desktop/gnome-ditem-edit.c:209
-#: ../libgnome-desktop/gnome-ditem-edit.c:217
-msgid "Directory"
-msgstr "درکموند"
-
-#: ../libgnome-desktop/gnome-ditem-edit.c:213
-msgid "Application"
-msgstr "کاريال"
-
-#: ../libgnome-desktop/gnome-ditem-edit.c:220
-msgid "Link"
-msgstr "تړنه"
-
-#: ../libgnome-desktop/gnome-ditem-edit.c:222
-msgid "FSDevice"
+#: ../libcinnamon-desktop/gnome-rr-config.c:558
+msgid "Laptop"
 msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:224
-msgid "MIME Type"
-msgstr "ډول MIME"
+#: ../libcinnamon-desktop/gnome-rr-config.c:713
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:226
-msgid "Service"
-msgstr "پالنه"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1469
+#, c-format
+msgid "CRTC %d cannot drive output %s"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:228
-msgid "ServiceType"
-msgstr "د پالنې ډول"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1476
+#, c-format
+msgid "output %s does not support mode %dx%d@%dHz"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:314
-msgid "_URL:"
-msgstr ":URL_"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1487
+#, c-format
+msgid "CRTC %d does not support rotation=%s"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:317
-#: ../libgnome-desktop/gnome-ditem-edit.c:384
-msgid "Comm_and:"
-msgstr ":بول_ۍ"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1501
+#, c-format
+msgid ""
+"output %s does not have the same parameters as another cloned output:\n"
+"existing mode = %d, new mode = %d\n"
+"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+"existing rotation = %s, new rotation = %s"
+msgstr ""
 
-#. Name
-#: ../libgnome-desktop/gnome-ditem-edit.c:338
-msgid "_Name:"
-msgstr ":نوم_"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1516
+#, c-format
+msgid "cannot clone to output %s"
+msgstr ""
 
-#. Generic Name
-#: ../libgnome-desktop/gnome-ditem-edit.c:355
-msgid "_Generic name:"
-msgstr ":ټولګړی نوم_"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1685
+#, c-format
+msgid "Trying modes for CRTC %d\n"
+msgstr ""
 
-#. Comment
-#: ../libgnome-desktop/gnome-ditem-edit.c:372
-msgid "Co_mment:"
-msgstr ":څر_ګندون"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1709
+#, c-format
+msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:388
-msgid "Browse"
-msgstr "لټول"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1756
+#, c-format
+msgid ""
+"could not assign CRTCs to outputs:\n"
+"%s"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:399
-msgid "_Type:"
-msgstr ":ډول_"
+#: ../libcinnamon-desktop/gnome-rr-config.c:1760
+#, c-format
+msgid ""
+"none of the selected modes were compatible with the possible modes:\n"
+"%s"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:416
-msgid "_Icon:"
-msgstr ":انځورن_"
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libcinnamon-desktop/gnome-rr-config.c:1838
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:426
-msgid "Browse icons"
-msgstr "انځورنونه لټول"
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your
+#. * laptop's screen is the same as your external projector.
+#. * Here, "Mirrored" is being used as an adjective.  For example,
+#. * the Spanish translation could be "Pantallas en Espejo".
+#.
+#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
+msgid "Mirrored Displays"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:440
-msgid "Run in t_erminal"
-msgstr "په پ_ايالي کې ځغلول"
+#. Translators: This is the time format with full date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+msgid "%A %B %e, %R:%S"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:621
-#: ../libgnome-desktop/gnome-ditem-edit.c:721
-msgid "Language"
-msgstr "ژبه"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+msgid "%A %B %e, %R"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:626
-#: ../libgnome-desktop/gnome-ditem-edit.c:727
-msgid "Name"
-msgstr "نوم"
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R:%S"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:631
-#: ../libgnome-desktop/gnome-ditem-edit.c:733
-msgid "Generic name"
-msgstr "ټولګړی نوم"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+msgid "%R"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:636
-#: ../libgnome-desktop/gnome-ditem-edit.c:741
-msgid "Comment"
-msgstr "څرګندون"
+#. Translators: This is a time format with full date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:249
+msgid "%A %B %e, %l:%M:%S %p"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:674
-msgid "_Try this before using:"
-msgstr ":د کارولو نه مخکې دا هڅه وکړﺉ_"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:250
+msgid "%A %B %e, %l:%M %p"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:685
-msgid "_Documentation:"
-msgstr ":لاسوندونه_"
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+msgid "%l:%M:%S %p"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:696
-msgid "_Name/Comment translations:"
-msgstr ":د نوم/څرګندون ژباړه_"
+#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+msgid "%l:%M %p"
+msgstr ""
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:743
-msgid "_Add/Set"
-msgstr "زياتول/ټاکل_"
+#~ msgid "About GNOME"
+#~ msgstr "د جنومي په اړه"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:748
-msgid "Add or Set Name/Comment Translations"
-msgstr "د نوم/څرګندون ژباړې زياتول يا ټاکل"
+#~ msgid "Learn more about GNOME"
+#~ msgstr "د جنومي په اړه نور زده کول"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:750
-msgid "Re_move"
-msgstr "ړن_ګول"
+#~ msgid "News"
+#~ msgstr "خبرونه"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:755
-msgid "Remove Name/Comment Translation"
-msgstr "د نوم/څرګندون ژباړه ړنګول"
+#~ msgid "GNOME Library"
+#~ msgstr "جنومي کتابتون"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:771
-msgid "Basic"
-msgstr "بنسټيز"
+#~ msgid "Friends of GNOME"
+#~ msgstr "د جنومي انډيوالان"
 
-#: ../libgnome-desktop/gnome-ditem-edit.c:779
-msgid "Advanced"
-msgstr "ژور"
+#~ msgid "Contact"
+#~ msgstr "اړيکه"
 
-#: ../libgnome-desktop/gnome-hint.c:201
-msgid "_Show Hints at Startup"
-msgstr "په پېلنګ کې اشارې ښودل_"
+#~ msgid "_Open URL"
+#~ msgstr "پرانيستل URL_"
 
+#~ msgid "_Copy URL"
+#~ msgstr "لمېستل URL_"
+
+#~ msgid "About the GNOME Desktop"
+#~ msgstr "د جنومي سرپاڼې په اړه"
+
+#~ msgid "%(name)s: %(value)s"
+#~ msgstr "%(name)s: %(value)s"
+
+#~ msgid "Welcome to the GNOME Desktop"
+#~ msgstr "د جنومي سرپاڼې ته ښه راغلاست"
+
+#~ msgid "Brought to you by:"
+#~ msgstr ":تاسو ته وړاندې کړی دی"
+
+#~ msgid "<b>%(name)s:</b> %(value)s"
+#~ msgstr "<b>%(name)s:</b> %(value)s"
+
+#~ msgid "Version"
+#~ msgstr "نسخه"
+
+#~ msgid "Distributor"
+#~ msgstr "خپروونکی"
+
+#~ msgid "Build Date"
+#~ msgstr "د جوړېدو نېټه"
+
+#~ msgid "Display information on this GNOME version"
+#~ msgstr "د جنومي د دې نسخه په اړه خبرتياوې ښودل"
+
+#~ msgid "Error reading file '%s': %s"
+#~ msgstr "%s :دوتنې په لوستلو کې تېروتنه '%s' د"
+
+#~ msgid "No name"
+#~ msgstr "هېڅ نوم"
+
+#~ msgid "File '%s' is not a regular file or directory."
+#~ msgstr ".دوتنه ساده دوتنه يا درکموند نه دی '%s'"
+
+#~ msgid "Error cannot find file id '%s'"
+#~ msgstr "دوتنه پېژند نه شي موندلی '%s' تېروتنه!"
+
+#~ msgid "No filename to save to"
+#~ msgstr "کوم دوتنه نوم نشته چې ورکې وساتل شي"
+
+#~ msgid "Starting %s"
+#~ msgstr "پېليږي %s"
+
+#~ msgid "No URL to launch"
+#~ msgstr "نشته چې پرانيستل شي URL"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "پېلېدونکی توکی نه دی"
+
+#~ msgid "No command (Exec) to launch"
+#~ msgstr "کومه بولۍ نشته چې پېل شي"
+
+#~ msgid "Bad command (Exec) to launch"
+#~ msgstr "ناسمه بولۍ چې پېل شي"
+
+#~ msgid "Unknown encoding of: %s"
+#~ msgstr "%s :ناسمه کوډيزونه ده"
+
+#~ msgid "Directory"
+#~ msgstr "درکموند"
+
+#~ msgid "Application"
+#~ msgstr "کاريال"
+
+#~ msgid "Link"
+#~ msgstr "تړنه"
+
+#~ msgid "MIME Type"
+#~ msgstr "ډول MIME"
+
+#~ msgid "Service"
+#~ msgstr "پالنه"
+
+#~ msgid "ServiceType"
+#~ msgstr "د پالنې ډول"
+
+#~ msgid "_URL:"
+#~ msgstr ":URL_"
+
+#~ msgid "Comm_and:"
+#~ msgstr ":بول_ۍ"
+
+#~ msgid "_Name:"
+#~ msgstr ":نوم_"
+
+#~ msgid "_Generic name:"
+#~ msgstr ":ټولګړی نوم_"
+
+#~ msgid "Co_mment:"
+#~ msgstr ":څر_ګندون"
+
+#~ msgid "Browse"
+#~ msgstr "لټول"
+
+#~ msgid "_Type:"
+#~ msgstr ":ډول_"
+
+#~ msgid "_Icon:"
+#~ msgstr ":انځورن_"
+
+#~ msgid "Browse icons"
+#~ msgstr "انځورنونه لټول"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "په پ_ايالي کې ځغلول"
+
+#~ msgid "Language"
+#~ msgstr "ژبه"
+
+#~ msgid "Name"
+#~ msgstr "نوم"
+
+#~ msgid "Generic name"
+#~ msgstr "ټولګړی نوم"
+
+#~ msgid "Comment"
+#~ msgstr "څرګندون"
+
+#~ msgid "_Try this before using:"
+#~ msgstr ":د کارولو نه مخکې دا هڅه وکړﺉ_"
+
+#~ msgid "_Documentation:"
+#~ msgstr ":لاسوندونه_"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr ":د نوم/څرګندون ژباړه_"
+
+#~ msgid "_Add/Set"
+#~ msgstr "زياتول/ټاکل_"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "د نوم/څرګندون ژباړې زياتول يا ټاکل"
+
+#~ msgid "Re_move"
+#~ msgstr "ړن_ګول"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "د نوم/څرګندون ژباړه ړنګول"
+
+#~ msgid "Basic"
+#~ msgstr "بنسټيز"
+
+#~ msgid "Advanced"
+#~ msgstr "ژور"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "په پېلنګ کې اشارې ښودل_"
