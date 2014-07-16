@@ -15,7 +15,7 @@
     </_description>
     </key>
     <key name="resize-with-right-button" type="b">
-      <default>false</default>
+      <default>true</default>
       <_summary>Whether to resize with the right button</_summary>
       <_description>
         Set this to true to resize with the right button and show a menu with
