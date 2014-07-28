@@ -42,6 +42,8 @@ G_BEGIN_DECLS
 /* prepend the terminal command to a vector */
 void gnome_desktop_prepend_terminal_to_vector (int *argc, char ***argv);
 
+const char *gnome_desktop_get_media_key_string (gint type);
+
 G_END_DECLS
 
 #endif /* GNOME_DITEM_H */

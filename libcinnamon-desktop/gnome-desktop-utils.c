@@ -30,6 +30,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-desktop-utils.h"
+#include "cdesktop-enums.h"
 
 #include "private.h"
 
@@ -177,3 +178,20 @@ _gnome_desktop_init_i18n (void) {
 	}
 }
 
+/**
+ * gnome_desktop_get_media_key_string:
+ * @type: The CDesktopMediaKeyType
+ *
+ * Description:  Returns the GSettings key string of the
+ * given media key type.
+ *
+ * Returns: (transfer none): the string corresponding to the
+ * provided media key type or %NULL
+ **/
+const gchar *
+gnome_desktop_get_media_key_string (gint type)
+{
+    g_return_val_if_fail (type >= 0 && type < G_N_ELEMENTS (media_keys), NULL);
+
+    return media_keys[type];
+}

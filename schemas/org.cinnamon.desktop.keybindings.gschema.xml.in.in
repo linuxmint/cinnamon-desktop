@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.cinnamon.desktop.keybindings" path="/org/cinnamon/desktop/keybindings/">
+    <key name="custom-list" type="as">
+      <default>[]</default>
+      <_summary>List of gsettings custom keybinding paths to look in</_summary>
+      <_description>
+      </_description>
+    </key>
+    <key name="looking-glass-keybinding" type="as">
+      <default>['&lt;Super&gt;l']</default>
+      <_summary>Keybinding for toggling the looking glass</_summary>
+      <_description>
+       Stores the keybinding for toggling the looking glass window
+      </_description>
+    </key>
+    <key name="magnifier-zoom-in" type="as">
+      <default>['&lt;Alt&gt;&lt;Super&gt;equal']</default>
+      <_summary>Magnifier zoom in</_summary>
+      <_description>Binding for the magnifier to zoom in</_description>
+    </key>
+    <key name="magnifier-zoom-out" type="as">
+      <default>['&lt;Alt&gt;&lt;Super&gt;minus']</default>
+      <_summary>Magnifier zoom out</_summary>
+      <_description>Binding for the magnifier to zoom out</_description>
+    </key>
+  </schema>
+
+  <schema id="org.cinnamon.desktop.keybindings.custom-keybinding">
+    <key name="name" type="s">
+      <default>''</default>
+      <_summary>Name</_summary>
+      <_description>Name of the custom binding</_description>
+    </key>
+    <key name="binding" type="as">
+      <default>[]</default>
+      <_summary>Binding</_summary>
+      <_description>Binding for the custom binding</_description>
+    </key>
+    <key name="command" type="s">
+      <default>''</default>
+      <_summary>Command</_summary>
+      <_description>Command to run when the binding is invoked</_description>
+    </key>
+  </schema>
+
+</schemalist>
