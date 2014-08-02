@@ -55,5 +55,19 @@
       <_summary>Allow the session status message to be displayed</_summary>
       <_description>Allow the session status message to be displayed when the screen is locked.</_description>
     </key>
+    <key name="default-message" type="s">
+      <default>""</default>
+      <summary>Default message for the screensaver</summary>
+      <description>
+        This is the message that appears on the lock screen by default.
+      </description>
+    </key>
+    <key name="ask-for-away-message" type="b">
+      <default>true</default>
+      <summary>Whether to ask for an away message when locking the screen</summary>
+      <description>
+        Whether to ask for an away message when locking the screen.
+      </description>
+    </key>
   </schema>
 </schemalist>
