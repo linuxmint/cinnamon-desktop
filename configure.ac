@@ -142,6 +142,7 @@ libcinnamon-desktop/cinnamon-desktop.pc
 libcinnamon-desktop/cinnamon-desktop-uninstalled.pc
 schemas/Makefile
 po/Makefile.in
+files/Makefile
 ])
 
 AC_OUTPUT
