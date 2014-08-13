@@ -14,16 +14,6 @@
        Stores the keybinding for toggling the looking glass window
       </_description>
     </key>
-    <key name="magnifier-zoom-in" type="as">
-      <default>['&lt;Alt&gt;&lt;Super&gt;equal']</default>
-      <_summary>Magnifier zoom in</_summary>
-      <_description>Binding for the magnifier to zoom in</_description>
-    </key>
-    <key name="magnifier-zoom-out" type="as">
-      <default>['&lt;Alt&gt;&lt;Super&gt;minus']</default>
-      <_summary>Magnifier zoom out</_summary>
-      <_description>Binding for the magnifier to zoom out</_description>
-    </key>
   </schema>
 
   <schema id="org.cinnamon.desktop.keybindings.custom-keybinding">
