@@ -131,11 +131,6 @@
       <_summary>Launch web browser</_summary>
       <_description>Binding to launch the web browser.</_description>
     </key>
-    <key name="magnifier" type="as">
-      <default>['&lt;Alt&gt;&lt;Super&gt;8']</default>
-      <_summary>Toggle magnifier</_summary>
-      <_description>Binding to show the screen magnifier</_description>
-    </key>
     <key name="screenreader" type="as">
       <default>['']</default>
       <_summary>Toggle screen reader</_summary>
