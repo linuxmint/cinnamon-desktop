@@ -18,6 +18,16 @@
       <summary>Notification timeout</summary>
       <description>Duration to keep store a notification in persitence.</description>
     </key>
+    <key type="i" name="fade-opacity">
+      <default>40</default>
+      <range min="0" max="100" />
+      <summary>Opacity (percent) to use when mousing over a notification</summary>
+      <description>Opacity (percent) to use for notification fades</description>
+    </key>
+    <key type="b" name="display-notifications">
+      <default>true</default>
+      <_summary>Whether notifications are to be displayed</_summary>
+    </key>
   </schema>
 </schemalist>
 
