@@ -91,10 +91,17 @@
       </description>
     </key>
     <key name="font-date" type="s">
-      <default>"Ubuntu 64"</default>
-      <summary>The date and time font</summary>
+      <default>"Ubuntu 24"</default>
+      <summary>The date time font</summary>
       <description>
-        This is the font that the date and time use for the screen locker.
+        This is the font that the date uses for the screen locker.
+      </description>
+    </key>
+    <key name="font-time" type="s">
+      <default>"Ubuntu 64"</default>
+      <summary>The time font</summary>
+      <description>
+        This is the font that the time uses for the screen locker.
       </description>
     </key>
     <key name="font-message" type="s">
