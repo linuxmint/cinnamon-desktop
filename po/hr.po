@@ -430,7 +430,7 @@ msgstr "%l:%M %p"
 #~ msgstr "_Dokumentacija:"
 
 #~ msgid "_Name/Comment translations:"
-#~ msgstr "_Naziv/komentar prijevoda:"
+#~ msgstr "_Naziv/Komentar prijevoda:"
 
 #~ msgid "_Add/Set"
 #~ msgstr "_Dodaj/Postavi"
