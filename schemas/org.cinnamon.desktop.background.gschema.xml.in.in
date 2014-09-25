@@ -79,8 +79,8 @@
         This key defines whether images are shown in order or chosen randomly.
       </description>
     </key>
-    <key name="change-enabled" type="b">
-      <default>true</default>
+    <key name="slideshow-paused" type="b">
+      <default>false</default>
       <summary>Whether the slideshow is currently playing or paused</summary>
       <description>
         This key defines whether the slideshow in currently in a playing or paused state.
