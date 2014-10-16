@@ -215,6 +215,11 @@
       <_summary>List of symbolic names and color equivalents</_summary>
       <_description>A '\n' separated list of "name:color" as defined by the 'gtk-color-scheme' setting</_description>
     </key>
+    <key name="gtk-decoration-layout" type="s">
+      <default>'menu:minimize,maximize,close'</default>
+      <_summary>Titlebar layout of GTK3 client-side decorated windows</_summary>
+      <_description>This setting determines which buttons should be put in the titlebar of client-side decorated windows, and whether they should be placed at the left of right. See https://developer.gnome.org/gtk3/stable/GtkSettings.html#GtkSettings--gtk-decoration-layout.</_description>
+    </key>
     <key name="clock-use-24h" type="b">
       <default>true</default>
       <_summary>Whether the clock displays in 24h format</_summary>
