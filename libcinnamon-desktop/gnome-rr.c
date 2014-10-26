@@ -61,7 +61,7 @@ enum {
     SCREEN_SIGNAL_LAST,
 };
 
-gint screen_signals[SCREEN_SIGNAL_LAST];
+static guint screen_signals[SCREEN_SIGNAL_LAST] = { 0 };
 
 struct GnomeRROutput
 {
