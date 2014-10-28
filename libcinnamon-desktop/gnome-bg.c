@@ -399,6 +399,8 @@ gnome_bg_set_accountsservice_background (const gchar *background)
 bail:
   if (proxy != NULL)
     g_object_unref (proxy);
+  if (user != NULL)
+    g_object_unref (user);
   if (variant != NULL)
     g_variant_unref (variant);
 }
