@@ -1279,6 +1279,7 @@ gnome_rr_config_save (GnomeRRConfig *configuration, GError **error)
 
     g_free (backup_filename);
     g_free (intended_filename);
+    g_string_free (output, TRUE);
 
     return result;
 }
