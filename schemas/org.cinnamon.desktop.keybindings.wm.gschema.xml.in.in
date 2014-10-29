@@ -283,6 +283,10 @@
       <default><![CDATA[['<Control><Shift><Alt>Down']]]></default>
       <summary>Move window one workspace down</summary>
     </key>
+    <key type="as" name="move-to-workspace-new">
+      <default>[]</default>
+      <summary>Move window to a new workspace</summary>
+    </key>
     <key type="as" name="raise-or-lower">
       <default>[]</default>
       <summary>Raise window if covered, otherwise lower it</summary>
