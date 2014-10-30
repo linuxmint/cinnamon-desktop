@@ -22,7 +22,7 @@
       <_description>Binding to launch the help browser.</_description>
     </key>
     <key name="home" type="as">
-      <default>['XF86Explorer']</default>
+      <default>['&lt;Super&gt;e', 'XF86Explorer']</default>
       <_summary>Home folder</_summary>
       <_description>Binding to open the Home folder.</_description>
     </key>
