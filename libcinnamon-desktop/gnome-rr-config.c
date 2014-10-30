@@ -143,6 +143,8 @@ stack_is (Parser *parser,
 	stack = g_list_prepend (stack, (gpointer)s);
 	s = va_arg (args, const char *);
     }
+
+    va_end (args);
 	
     l1 = stack;
     l2 = parser->stack->head;
@@ -1277,6 +1279,7 @@ gnome_rr_config_save (GnomeRRConfig *configuration, GError **error)
 
     g_free (backup_filename);
     g_free (intended_filename);
+    g_string_free (output, TRUE);
 
     return result;
 }
