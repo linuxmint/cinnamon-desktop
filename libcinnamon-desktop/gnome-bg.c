@@ -2827,7 +2827,12 @@ handle_text (GMarkupParseContext *context,
 	     GError             **err)
 {
 	SlideShow *parser = user_data;
-	Slide *slide = parser->slides->tail? parser->slides->tail->data : NULL;
+
+	g_return_if_fail (parser != NULL);
+	g_return_if_fail (parser->slides != NULL);
+	g_return_if_fail (parser->slides->tail != NULL);
+
+	Slide *slide = parser->slides->tail->data;
 	FileSize *fs;
 	gint i;
 
