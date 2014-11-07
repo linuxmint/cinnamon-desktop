@@ -62,6 +62,9 @@ def migrate_custom_keys():
         old_schema.apply()
         Gio.Settings.sync()
 
+if os.path.exists(os.path.expanduser("~/.cinnamon/.keybindings-migration-2.4-complete-do-not-erase")):
+    exit(0)
+
 print "Migrating keybindings from previous release..."
 
 try:
@@ -80,6 +83,9 @@ try:
         print "  ... custom keybindings: done."
 
     Gio.Settings.sync()
+
+    open(os.path.expanduser("~/.cinnamon/.keybindings-migration-2.4-complete-do-not-erase"), "w").close()
+
 except Exception, detail:
     print "  !! %s" % detail
 
