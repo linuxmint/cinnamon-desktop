@@ -62,35 +62,27 @@ def migrate_custom_keys():
         old_schema.apply()
         Gio.Settings.sync()
 
-have_old_media_keys = False
-have_old_wm_keys = False
+print "Migrating keybindings from previous release..."
 
-source = Gio.SettingsSchemaSource.get_default()
+try:
+    source = Gio.SettingsSchemaSource.get_default()
 
-# try:
-# Re-locate the two main keybinding schemas if necessary
-if source.lookup(OLD_MEDIA_KEYS_SCHEMA, True) != None:
-    have_old_media_keys = True
+    if source.lookup(OLD_MEDIA_KEYS_SCHEMA, True) != None:
+        migrate(OLD_MEDIA_KEYS_SCHEMA, NEW_MEDIA_KEYS_SCHEMA, False)
+        print "  ... media keybindings: done."
 
-if source.lookup(OLD_WM_KEYBINDINGS_SCHEMA, True) != None:
-    have_old_wm_keys = True
+    if source.lookup(OLD_WM_KEYBINDINGS_SCHEMA, True) != None:
+        migrate(OLD_WM_KEYBINDINGS_SCHEMA, NEW_WM_KEYBINDINGS_SCHEMA, True)
+        print "  ... wm keybindings: done."
 
-if have_old_wm_keys and have_old_media_keys:
-    print "cinnamon-desktop: relocating user keybindings"
+    if source.lookup(OLD_CUSTOM_KEYS_PARENT_SCHEMA, True) != None:
+        migrate_custom_keys()
+        print "  ... custom keybindings: done."
 
-if have_old_media_keys:
-    migrate(OLD_MEDIA_KEYS_SCHEMA, NEW_MEDIA_KEYS_SCHEMA, False)
+    Gio.Settings.sync()
+except Exception, detail:
+    print "  !! %s" % detail
 
-if have_old_wm_keys:
-    migrate(OLD_WM_KEYBINDINGS_SCHEMA, NEW_WM_KEYBINDINGS_SCHEMA, True)
-
-# Now, re-locate the custom keybindings to their new home
-
-if source.lookup(OLD_CUSTOM_KEYS_PARENT_SCHEMA, True) != None:
-    migrate_custom_keys()
-
-Gio.Settings.sync()
-# except:
-    # pass
+print "  Done."
 
 exit(0)
