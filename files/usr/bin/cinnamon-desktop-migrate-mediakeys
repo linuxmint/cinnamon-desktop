@@ -63,6 +63,7 @@ def migrate_custom_keys():
         Gio.Settings.sync()
 
 if os.path.exists(os.path.expanduser("~/.cinnamon/.keybindings-migration-2.4-complete-do-not-erase")):
+    print "Migration has been performed already for this user."
     exit(0)
 
 print "Migrating keybindings from previous release..."
