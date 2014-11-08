@@ -1,3 +1,9 @@
+cinnamon-desktop (2.4.1) rebecca; urgency=medium
+
+  * keybinding migration script: add run-once check
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 08 Nov 2014 09:59:23 +0100
+
 cinnamon-desktop (2.4.0) rebecca; urgency=medium
 
   * 2.4.0
