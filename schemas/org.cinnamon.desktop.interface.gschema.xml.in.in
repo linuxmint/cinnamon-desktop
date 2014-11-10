@@ -241,6 +241,13 @@
         If true, display date in the clock, in addition to time.
       </_description>
     </key>
+    <key name="first-day-of-week" type="i">
+      <default>7</default>
+      <_summary>First day of week in the calendar</_summary>
+      <_description>
+        Sets the first day of week, with 7 the locale default.
+      </_description>
+    </key>
     <key name="automatic-mnemonics" type="b">
       <default>true</default>
       <_summary>Only show mnemonics on when the Alt key is pressed</_summary>
