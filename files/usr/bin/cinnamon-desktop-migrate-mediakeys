@@ -27,13 +27,23 @@ def migrate(old, new, array):
     new_list = new_settings.list_keys()
 
     for k in new_list:
-        if k in old_list and old_settings.get_user_value(k) is not None:
-            if array:
-                new_settings.set_value(k, old_settings.get_value(k))
-            else:
-                ov = old_settings.get_string(k)
-                new_settings.set_strv(k, (ov,))
-
+        try:
+            try:
+                if k in old_list and old_settings.get_user_value(k) is not None:
+                    if array:
+                        new_settings.set_value(k, old_settings.get_value(k))
+                    else:
+                        ov = old_settings.get_string(k)
+                        new_settings.set_strv(k, (ov,))
+            except:
+                if k in old_list:
+                    if array:
+                        new_settings.set_value(k, old_settings.get_value(k))
+                    else:
+                        ov = old_settings.get_string(k)
+                        new_settings.set_strv(k, (ov,))
+        except:
+            print "Problem migrating key %s from %s to %s, skipping it" % (k, old, new)
     Gio.Settings.sync()
 
 def migrate_custom_keys():
