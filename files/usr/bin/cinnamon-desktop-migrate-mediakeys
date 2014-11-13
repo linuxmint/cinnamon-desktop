@@ -38,10 +38,12 @@ def migrate(old, new, array):
             except:
                 if k in old_list:
                     if array:
-                        new_settings.set_value(k, old_settings.get_value(k))
+                        if len(old_settings.get_strv(k)) > 0:
+                            new_settings.set_value(k, old_settings.get_value(k))
                     else:
                         ov = old_settings.get_string(k)
-                        new_settings.set_strv(k, (ov,))
+                        if ov != "":
+                            new_settings.set_strv(k, (ov,))
         except:
             print "Problem migrating key %s from %s to %s, skipping it" % (k, old, new)
     Gio.Settings.sync()
