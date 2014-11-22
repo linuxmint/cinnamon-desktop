@@ -1,3 +1,10 @@
+cinnamon-desktop (2.4.2) rebecca; urgency=medium
+
+  * Make migrate script compatible with glib < 2.40
+  * migration script: fix glib alternate code so it doesn't wipe out defaults in the new schema.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 22 Nov 2014 17:22:35 +0100
+
 cinnamon-desktop (2.4.1) rebecca; urgency=medium
 
   * keybinding migration script: add run-once check
