@@ -2,8 +2,7 @@ SUBDIRS = libcinnamon-desktop po schemas files
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-introspection
-
+DISTCHECK_CONFIGURE_FLAGS = --enable-introspection
 
 @INTLTOOL_XML_RULE@
 
@@ -11,8 +10,6 @@ EXTRA_DIST =			\
 	COPYING-DOCS		\
 	HACKING			\
 	MAINTAINERS
-
-
 
 MAINTAINERCLEANFILES = \
 	$(srcdir)/aclocal.m4 \
