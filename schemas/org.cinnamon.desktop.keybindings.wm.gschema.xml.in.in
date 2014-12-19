@@ -160,7 +160,7 @@
       <summary>Reverse switch system controls directly</summary>
     </key>
     <key type="as" name="show-desktop">
-      <default><![CDATA[['<Super>D']]]></default>
+      <default><![CDATA[['<Super>d']]]></default>
       <summary>Hide all normal windows</summary>
     </key>
     <key type="as" name="panel-run-dialog">
