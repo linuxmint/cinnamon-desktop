@@ -28,6 +28,18 @@
       <default>true</default>
       <_summary>Whether notifications are to be displayed</_summary>
     </key>
+    <key type="i" name="timeout-time">
+      <default>4000</default>
+      <range min="0" max="3600000" />
+      <summary>Amount of time in milliseconds</summary>
+      <description>Time in milliseconds until the notification is killed</description>
+    </key>
+    <key type="i" name="critical-timeout-time">
+      <default>10000</default>
+      <range min="0" max="3600000" />
+      <summary>Amount of time in milliseconds</summary>
+      <description>Time in milliseconds until a critical notification is sent to the tray</description>
+    </key>
   </schema>
 </schemalist>
 
