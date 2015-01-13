@@ -1,3 +1,9 @@
+cinnamon-desktop (2.5.1) unstable; urgency=medium
+
+  * 2.5.x
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Jan 2015 10:53:33 +0100
+
 cinnamon-desktop (2.4.2) rebecca; urgency=medium
 
   * Make migrate script compatible with glib < 2.40
