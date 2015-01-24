@@ -112,7 +112,7 @@
       </description>
     </key>
     <key name="screensaver-name" type="s">
-      <default>"xscreensaver"</default>
+      <default>"webkit"</default>
       <_summary>The name of the screensaver</_summary>
     </key>
 
