@@ -116,6 +116,11 @@
       <_summary>The name of the screensaver</_summary>
     </key>
 
+    <key name="screensaver-enabled" type="b">
+      <default>true</default>
+      <_summary>Whether a screensaver is to be used</_summary>
+    </key>
+
     <key name="xscreensaver-hack" type="s">
       <default>"fiberlamp"</default>
       <_summary>The screensaver hack to use when xscreensaver is used as screensaver</_summary>
