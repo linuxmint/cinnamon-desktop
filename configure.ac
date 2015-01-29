@@ -1,8 +1,8 @@
 
-AC_INIT(cinnamon-desktop, 2.4.2)
+AC_INIT(cinnamon-desktop, 2.5.1)
 AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
-AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar])
+AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar subdir-objects])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_CONFIG_HEADERS([config.h])
