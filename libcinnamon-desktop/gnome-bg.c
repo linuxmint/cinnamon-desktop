@@ -2218,7 +2218,7 @@ create_img_thumbnail (GnomeBG                      *bg,
 			SlideShow *show = get_as_slideshow (bg, bg->filename);
 
 			if (show) {
-				double alpha;
+				double alpha=255;
 				Slide *slide;
 
 				if (frame_num == -1)
@@ -2322,8 +2322,17 @@ find_best_size (GSList *sizes, gint width, gint height)
 				best = size;
 			} 
 			else if (d == distance) {
-				if (abs (size->width - width) < abs (best->width - width)) {
-					best = size;
+				if (best == NULL)
+				{
+					if (abs (size->width - width) < abs (width)) {
+						best = size;
+					}
+				}
+				else
+				{
+					if (abs (size->width - width) < abs (best->width - width)) {
+						best = size;
+					}
 				}
 			}
 		}

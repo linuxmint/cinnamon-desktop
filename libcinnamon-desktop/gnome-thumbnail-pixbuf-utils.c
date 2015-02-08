@@ -144,22 +144,25 @@ gnome_desktop_thumbnail_scale_down_pixbuf (GdkPixbuf *pixbuf,
 				src += source_rowstride;
 			}
 			
-			if (has_alpha) {
-				if (a != 0) {
-					*dest++ = r / a;
-					*dest++ = g / a;
-					*dest++ = b / a;
-					*dest++ = a / n_pixels;
+			if (n_pixels != 0)  /* avoid any possible divide by zero */
+			{			
+				if (has_alpha) {
+					if (a != 0) {
+						*dest++ = r / a;
+						*dest++ = g / a;
+						*dest++ = b / a;
+						*dest++ = a / n_pixels;
+					} else {
+						*dest++ = 0;
+						*dest++ = 0;
+						*dest++ = 0;
+						*dest++ = 0;
+					}
 				} else {
-					*dest++ = 0;
-					*dest++ = 0;
-					*dest++ = 0;
-					*dest++ = 0;
+					*dest++ = r / n_pixels;
+					*dest++ = g / n_pixels;
+					*dest++ = b / n_pixels;
 				}
-			} else {
-				*dest++ = r / n_pixels;
-				*dest++ = g / n_pixels;
-				*dest++ = b / n_pixels;
 			}
 			
 			s_x1 = s_x2;
