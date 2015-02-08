@@ -72,7 +72,6 @@ main (int argc, char *argv[])
 	guint8 *result = NULL;
 	guint i;
 
-	g_type_init ();
 	gtk_init (&argc, &argv);
 	screen = gnome_rr_screen_new (gdk_screen_get_default (), &error);
 	if (screen == NULL) {

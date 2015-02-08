@@ -19,8 +19,6 @@ int main (int argc, char **argv)
 
 	g_setenv ("G_MESSAGES_DEBUG", "all", TRUE);
 
-	g_type_init ();
-
 	loop = g_main_loop_new (NULL, FALSE);
 
 	clock = g_object_new (GNOME_TYPE_WALL_CLOCK, NULL);

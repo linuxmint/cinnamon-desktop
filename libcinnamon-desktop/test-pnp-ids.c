@@ -39,8 +39,6 @@ main (int argc, char *argv[])
 	GnomePnpIds *ids;
 	guint i;
 
-	g_type_init ();
-
 	ids = gnome_pnp_ids_new ();
 
 	if (argc == 2 &&
