@@ -1,28 +1,25 @@
 #!/usr/bin/make -f
 
-export DH_VERBOSE=1
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
-GNOME_MODULE=cinnamon-desktop
+%:
+	dh $@ --parallel --with=autoreconf,gir,gnome,python2
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/gnome.mk
-include /usr/share/cdbs/1/rules/utils.mk
-include /usr/share/cdbs/1/rules/autoreconf.mk
-include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+override_dh_gnome_clean:
+	dh_gnome_clean --no-control
 
-LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    --with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
+	    --with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
+	    --enable-introspection
 
-DEB_DH_AUTORECONF_ARGS = --as-needed
+override_dh_strip:
+	dh_strip --dbg-package=libcinnamon-desktop-dbg
 
-DEB_CONFIGURE_LIBEXECDIR := /usr/lib/libcinnamon-desktop0/
+override_dh_auto_install:
+	dh_auto_install -- typelibdir="/usr/lib/girepository-1.0"
 
-DEB_CONFIGURE_EXTRA_FLAGS += \
-			--with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
-			--with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
-			--enable-introspection
-
-DEB_DH_MAKESHLIBS_ARGS_libcinnamon-desktop0 += -- -c4
-DEB_DH_SHLIBDEPS_ARGS_libcinnamon-desktop0 := -X/usr/lib/libcinnamon-desktop0/check_gl_texture_size 
-
-common-binary-post-install-arch:: list-missing
+override_dh_install:
+	dh_install --list-missing

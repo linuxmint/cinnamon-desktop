@@ -1,4 +1,4 @@
-usr/include/*
-usr/lib/pkgconfig
-usr/lib/libcinnamon-desktop.so
+usr/include/cinnamon-desktop/libcinnamon-desktop
+usr/lib/*/libcinnamon-desktop.so
+usr/lib/*/pkgconfig
 usr/share/gir-1.0

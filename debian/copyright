@@ -1,49 +1,159 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: gnome-desktop
-Source: http://ftp.gnome.org/pub/GNOME/sources/gnome-desktop/
+Upstream-Name: cinnamon-desktop
+Source: https://github.com/linuxmint/cinnamon-desktop
 
 Files: *
-Copyright: 2007, 2008, 2010, 2011 Red Hat, Inc.
-           2008, 2009 Novell, Inc.
-           2000 Eazel, Inc.
-           2010 Carlos Garcia Campos <carlosgc@gnome.org>
-           1998 Tom Tromey
-           2010 Giovanni Campagna
+Copyright: 2006, @ Free Software Foundation, Inc
+           2004, Adam Weinberger and the GNOME Foundation
+           2005, Canonical Ltd
+           2010, Carlos Garcia Campos <carlosgc@gnome.org>
+           2012, Colin Walters <walters@verbum.org>
+           Croatian team
+           2000, Eazel, Inc.
+           2004, Free Software Foundation
+           2005-2011, Free Software Foundation, Andhra Pradesh
+           1991-2003, Free Software Foundation, Inc
+           2010, Giovanni Campagna
+           2009, GNOME i18n Project for Vietnamese
+           2006, Gnome i18n Project for Latvian
+           2010, HZ
+           1999-2004, Jesús Bravo Álvarez
+           2003, Jitendra Shah
+           Listed translators
+           2004-2005, Miloslav Trmac <mitr@volny.cz>
+           2008-2009, Novell, Inc.
+           2002-2011, Red Hat, Inc.
+           2004-2008, Rodney Dawes <dobey.pwns@gmail.com>
+           2007, Rosetta Contributors and Canonical Ltd 2007
+           2011, Rosetta Contributors and Canonical Ltd 2011
+           2006, The GNOME Foundation
+           2007-2010, The GNOME Project
+           1998, Tom Tromey
+           1995-1997, Ulrich Drepper <drepper@gnu.ai.mit.edu>
+           2012, William Jon McCann <mccann@redhat.com>
+           2004-2007, Zuza Software Foundation
+           2004, Zuza Software Foundation (Translate.org.za)
+           1999-2012, cinnamon-desktop
+           1999-2010, the author(s) of cinnamon-desktop
+           2003-2005, www.kyfieithu.co.uk, Dafydd Harries, Gareth Bowker
 License: LGPL-2+
- This package is free software; you can redistribute it and/or
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this program; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License can be found in "/usr/share/common-licenses/LGPL-2".
+
+Files: COPYING
+       libcinnamon-desktop/cinnamon-rr-debug.c
+       libcinnamon-desktop/gnome-pnp-ids.c
+       libcinnamon-desktop/gnome-pnp-ids.h
+       libcinnamon-desktop/gnome-xkb-info.c
+       libcinnamon-desktop/gnome-xkb-info.h
+       libcinnamon-desktop/test-pnp-ids.c
+       m4/intltool.m4
+Copyright: 2012, Bastien Nocera <hadess@hadess.net>
+           2001, Eazel, Inc
+           1989-1991, Free Software Foundation, Inc
+           2012, Red Hat, Inc
+           2009-2012, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: m4/ltoptions.m4
+       m4/ltsugar.m4
+       m4/ltversion.m4
+       m4/lt~obsolete.m4
+       m4/libtool.m4
+Copyright: 2004-2009, Free Software Foundation
+           2004, Free Software Foundation, Inc
+License: Permissive
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
+Files: libcinnamon-desktop/display-name.c
+       libcinnamon-desktop/edid-parse.c
+Copyright: 2007, Red Hat, Inc.
+License: MIT/X11
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ on the rights to use, copy, modify, merge, publish, distribute, sub
+ license, and/or sell copies of the Software, and to permit persons to whom
+ the Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice (including the next
+ paragraph) shall be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL
+ THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files: po/tk.po
+Copyright: 2004, Free Software Foundation
+           2004, Gurban Mühemmet Tewekgeli
+License: GPL
+ This file is distributed under the terms of GNU General Public License (GPL)
+ .
+ On Debian systems, the complete text of the GNU General Public License can be
+ found in "/usr/share/common-licenses/GPL".
+
+Files: libcinnamon-desktop/cdesktop-enums.h
+Copyright: 2010, Codethink Limited
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
  License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
+ version 2.1 of the License, or (at your option) any later version.
  .
- This package is distributed in the hope that it will be useful,
+ This library is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Lesser General Public License for more details.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>.
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
  .
- On Debian systems, the complete text of the GNU Lesser General
- Public License can be found in "/usr/share/common-licenses/LGPL-2".
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 2.1 can be found in "/usr/share/common-licenses/LGPL-2.1".
 
-Files: libgnome-desktop/edid-parse.c
-       libgnome-desktop/display-name.c
-Copyright: 2007 Red Hat, Inc.
-License: MIT/X11 (BSD like)
- Permission is hereby granted, free of charge, to any person obtaining a
- copy of this software and associated documentation files (the "Software"),
- to deal in the Software without restriction, including without limitation
- the rights to use, copy, modify, merge, publish, distribute, sublicense,
- and/or sell copies of the Software, and to permit persons to whom the
- Software is furnished to do so, subject to the following conditions:
+Files: debian/*
+Copyright: 2013, Clement Lefebvre <root@linuxmint.com>
+           2013, Maximiliano Curia <maxy@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2, or (at your option)
+ any later version.
  .
- The above copyright notice and this permission notice shall be included
- in all copies or substantial portions of the Software.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
  .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR
- OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- OTHER DEALINGS IN THE SOFTWARE.
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 2 can be found in "/usr/share/common-licenses/GPL-2".
