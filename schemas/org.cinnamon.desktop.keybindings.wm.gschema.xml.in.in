@@ -287,6 +287,22 @@
       <default>[]</default>
       <summary>Move window to a new workspace</summary>
     </key>
+    <key type="as" name="move-to-monitor-left">
+      <default><![CDATA[['<Super><Shift>Left']]]></default>
+      <summary>Move window one monitor to the left</summary>
+    </key>
+    <key type="as" name="move-to-monitor-right">
+      <default><![CDATA[['<Super><Shift>Right']]]></default>
+      <summary>Move window one monitor to the right</summary>
+    </key>
+    <key type="as" name="move-to-monitor-up">
+      <default><![CDATA[['<Super><Shift>Up']]]></default>
+      <summary>Move window one monitor up</summary>
+    </key>
+    <key type="as" name="move-to-monitor-down">
+      <default><![CDATA[['<Super><Shift>Down']]]></default>
+      <summary>Move window one monitor down</summary>
+    </key>
     <key type="as" name="raise-or-lower">
       <default>[]</default>
       <summary>Raise window if covered, otherwise lower it</summary>
