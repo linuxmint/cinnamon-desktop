@@ -117,7 +117,7 @@
     </key>
 
     <key name="screensaver-enabled" type="b">
-      <default>true</default>
+      <default>false</default>
       <_summary>Whether a screensaver is to be used</_summary>
     </key>
 
