@@ -14,6 +14,15 @@
         expressed as <![CDATA["<Alt>"]]> or <![CDATA["<Super>"]]> for example.
     </_description>
     </key>
+    <key name="mouse-button-zoom-modifier" type="s">
+      <default><![CDATA['<Alt>']]></default>
+      <_summary>Modifier to use for a11y mouse desktop zoom</_summary>
+      <_description>
+        Operating the mouse wheel while holding down this modifier key  will
+        zoom the desktop in and out if desktop magnifier is enabled. Modifier is
+        expressed as <![CDATA["<Alt>"]]> or <![CDATA["<Super>"]]> for example.
+    </_description>
+    </key>
     <key name="resize-with-right-button" type="b">
       <default>true</default>
       <_summary>Whether to resize with the right button</_summary>
