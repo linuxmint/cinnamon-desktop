@@ -63,7 +63,7 @@ Description: Cinnamon library for loading .desktop files - development files
 Package: gir1.2-cinnamondesktop-3.0
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${gir:Depends}, ${misc:Depends}, libcinnamon-desktop4 (= ${binary:Version})
 Description: Introspection data for CinnamonDesktop
  This package contains the introspection data for CinnamonDesktop.
 
