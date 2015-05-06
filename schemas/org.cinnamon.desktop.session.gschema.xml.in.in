@@ -11,5 +11,10 @@
       <description>The name of the session to use.  Known values are
       "gnome" and "gnome-fallback".</description>
     </key>
+    <key name="use-systemd" type="b">
+      <default>false</default>
+      <_summary>Whether or not Cinnamon should use systemd/logind, or rely on upower/consolekit when appropriate</_summary>
+      <_description>If true, Cinnamon interacts with systemd/logind. If false, Cinnamon interacts with upower/consolekit when appropriate.</_description>
+    </key>
   </schema>
 </schemalist>
