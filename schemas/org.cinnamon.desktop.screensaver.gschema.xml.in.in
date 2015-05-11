@@ -112,20 +112,13 @@
       </description>
     </key>
     <key name="screensaver-name" type="s">
-      <default>"webkit"</default>
-      <_summary>The name of the screensaver</_summary>
+      <default>""</default>
+      <_summary>The name of the screensaver. Empty string to disable</_summary>
     </key>
-
-    <key name="screensaver-enabled" type="b">
-      <default>false</default>
-      <_summary>Whether a screensaver is to be used</_summary>
-    </key>
-
     <key name="xscreensaver-hack" type="s">
       <default>"fiberlamp"</default>
       <_summary>The screensaver hack to use when xscreensaver is used as screensaver</_summary>
     </key>
-
     <key name="screensaver-webkit-theme" type="s">
       <default>"stars"</default>
       <_summary>Name of the theme used in the webkit screensaver engine</_summary>
