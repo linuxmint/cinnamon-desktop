@@ -36,6 +36,7 @@
 #include <string.h>
 #include <glib.h>
 #include <stdio.h>
+#include <pwd.h>
 
 #define GDK_PIXBUF_ENABLE_BACKEND
 #include <gdk-pixbuf/gdk-pixbuf.h>
@@ -788,9 +789,44 @@ external_thumbnailers_disabled_changed_cb (GSettings                    *setting
   g_mutex_unlock (&priv->lock);
 }
 
+/* There are various different behavior depending on whether the application
+   ran with sudo, pkexec, under the root user, and 'sudo su'...
+
+   - sudo (program) keeps the user's home folder (and their .cache folder)
+   - pkexec (program) uses root's .cache folder
+   - root terminal, running (program) uses root's .cache folder
+   - sudo su, then running (program), uses root's .cache folder
+
+   Using sudo, or sudo su, SUDO_UID and friends are set in the environment
+   Using pkexec, PKEXEC_UID is set
+
+   root terminal and pkexec cases don't need any extra work - they're thumbnailing
+   with the correct permissions (root-owned in root's .cache folder)
+
+   sudo and sudo su need help, and each in a different way:
+       - sudo su gives a false positive, since SUDO_UID is set, *but* the program
+         is using root's .cache folder, so we really don't want to fix these
+       - sudo (program) wants to use the user's cache folder, but will end up writing
+         them as root:root files, instead of user:user.  So, in this case, we make sure
+         to chmod those files to be owned by the original user, and not root.
+*/
+
 static void
 get_user_info (GnomeDesktopThumbnailFactory *factory)
 {
+
+    struct passwd *pwent;
+
+    pwent = getpwuid (0);
+
+    /* sudo su will use root's home dir (and cache) but still set
+       SUDO_UID to the user, so in this case we don't want to adjust
+       perms */
+    if (g_strcmp0 (pwent->pw_dir, g_get_home_dir ()) == 0) {
+        factory->priv->elevated = FALSE;
+        return;
+    }
+
     if (getuid () != geteuid ()) {
         factory->priv->real_uid = getuid ();
         factory->priv->real_gid = getgid ();
