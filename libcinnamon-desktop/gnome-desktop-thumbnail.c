@@ -1317,9 +1317,11 @@ static void
 maybe_fix_ownership (GnomeDesktopThumbnailFactory *factory, const gchar *path)
 {
     if (factory->priv->elevated) {
-        chown (path,
-               factory->priv->real_uid,
-               factory->priv->real_gid);
+        G_GNUC_UNUSED int res;
+
+        res = chown (path,
+                     factory->priv->real_uid,
+                     factory->priv->real_gid);
     }
 }
 
