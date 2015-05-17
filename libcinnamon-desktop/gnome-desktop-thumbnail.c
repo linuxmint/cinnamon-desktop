@@ -60,6 +60,10 @@ struct _GnomeDesktopThumbnailFactoryPrivate {
   gboolean loaded : 1;
   gboolean disabled : 1;
   gchar **disabled_types;
+
+  gboolean elevated;
+  uid_t real_uid;
+  gid_t real_gid;
 };
 
 static const char *appname = "gnome-thumbnail-factory";
@@ -785,6 +789,26 @@ external_thumbnailers_disabled_changed_cb (GSettings                    *setting
 }
 
 static void
+get_user_info (GnomeDesktopThumbnailFactory *factory)
+{
+    if (getuid () != geteuid ()) {
+        factory->priv->real_uid = getuid ();
+        factory->priv->real_gid = getgid ();
+        factory->priv->elevated = TRUE;
+        return;
+    }
+
+    if (g_getenv ("SUDO_UID") != NULL) {
+        factory->priv->real_uid = (int) g_ascii_strtoll (g_getenv ("SUDO_UID"), NULL, 10);
+        factory->priv->real_gid = (int) g_ascii_strtoll (g_getenv ("SUDO_GID"), NULL, 10);
+        factory->priv->elevated = TRUE;
+        return;
+    }
+
+    factory->priv->elevated = FALSE;
+}
+
+static void
 gnome_desktop_thumbnail_factory_init (GnomeDesktopThumbnailFactory *factory)
 {
   GnomeDesktopThumbnailFactoryPrivate *priv;
@@ -794,12 +818,15 @@ gnome_desktop_thumbnail_factory_init (GnomeDesktopThumbnailFactory *factory)
   priv = factory->priv;
 
   priv->size = GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL;
+  priv->elevated = FALSE;
   
   priv->mime_types_map = g_hash_table_new_full (g_str_hash,
                                                 g_str_equal,
                                                 (GDestroyNotify)g_free,
                                                 (GDestroyNotify)thumbnailer_unref);
-  
+
+  get_user_info (factory);
+
   g_mutex_init (&priv->lock);
 
   priv->settings = g_settings_new ("org.cinnamon.desktop.thumbnailers");
@@ -1286,6 +1313,16 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
   return pixbuf;
 }
 
+static void
+maybe_fix_ownership (GnomeDesktopThumbnailFactory *factory, const gchar *path)
+{
+    if (factory->priv->elevated) {
+        chown (path,
+               factory->priv->real_uid,
+               factory->priv->real_gid);
+    }
+}
+
 static gboolean
 make_thumbnail_dirs (GnomeDesktopThumbnailFactory *factory)
 {
@@ -1301,6 +1338,7 @@ make_thumbnail_dirs (GnomeDesktopThumbnailFactory *factory)
   if (!g_file_test (thumbnail_dir, G_FILE_TEST_IS_DIR))
     {
       g_mkdir (thumbnail_dir, 0700);
+      maybe_fix_ownership (factory, thumbnail_dir);
       res = TRUE;
     }
 
@@ -1310,6 +1348,7 @@ make_thumbnail_dirs (GnomeDesktopThumbnailFactory *factory)
   if (!g_file_test (image_dir, G_FILE_TEST_IS_DIR))
     {
       g_mkdir (image_dir, 0700);
+      maybe_fix_ownership (factory, image_dir);
       res = TRUE;
     }
 
@@ -1335,6 +1374,7 @@ make_thumbnail_fail_dirs (GnomeDesktopThumbnailFactory *factory)
   if (!g_file_test (thumbnail_dir, G_FILE_TEST_IS_DIR))
     {
       g_mkdir (thumbnail_dir, 0700);
+      maybe_fix_ownership (factory, thumbnail_dir);
       res = TRUE;
     }
 
@@ -1344,6 +1384,7 @@ make_thumbnail_fail_dirs (GnomeDesktopThumbnailFactory *factory)
   if (!g_file_test (fail_dir, G_FILE_TEST_IS_DIR))
     {
       g_mkdir (fail_dir, 0700);
+      maybe_fix_ownership (factory, fail_dir);
       res = TRUE;
     }
 
@@ -1353,6 +1394,7 @@ make_thumbnail_fail_dirs (GnomeDesktopThumbnailFactory *factory)
   if (!g_file_test (app_dir, G_FILE_TEST_IS_DIR))
     {
       g_mkdir (app_dir, 0700);
+      maybe_fix_ownership (factory, app_dir);
       res = TRUE;
     }
 
@@ -1463,6 +1505,7 @@ gnome_desktop_thumbnail_factory_save_thumbnail (GnomeDesktopThumbnailFactory *fa
     {
       g_chmod (tmp_path, 0600);
       g_rename (tmp_path, path);
+      maybe_fix_ownership (factory, path);
     }
   else
     {
@@ -1554,6 +1597,7 @@ gnome_desktop_thumbnail_factory_create_failed_thumbnail (GnomeDesktopThumbnailFa
     {
       g_chmod (tmp_path, 0600);
       g_rename(tmp_path, path);
+      maybe_fix_ownership (factory, path);
     }
 
   g_free (path);
