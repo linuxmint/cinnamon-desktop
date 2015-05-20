@@ -105,6 +105,11 @@ GdkPixbuf *gnome_desktop_thumbnail_scale_down_pixbuf (GdkPixbuf          *pixbuf
 						      int                 dest_width,
 						      int                 dest_height);
 
+/* Thumbnail folder checking and fixing utils */
+void       gnome_desktop_thumbnail_cache_fix_permissions (void);
+gboolean   gnome_desktop_thumbnail_cache_check_permissions (GnomeDesktopThumbnailFactory *factory, gboolean quick);
+
+
 G_END_DECLS
 
 #endif /* GNOME_DESKTOP_THUMBNAIL_H */

@@ -37,6 +37,7 @@
 #include <glib.h>
 #include <stdio.h>
 #include <pwd.h>
+#include <errno.h>
 
 #define GDK_PIXBUF_ENABLE_BACKEND
 #include <gdk-pixbuf/gdk-pixbuf.h>
@@ -62,7 +63,8 @@ struct _GnomeDesktopThumbnailFactoryPrivate {
   gboolean disabled : 1;
   gchar **disabled_types;
 
-  gboolean elevated;
+  gboolean permissions_problem;
+  gboolean needs_chown;
   uid_t real_uid;
   gid_t real_gid;
 };
@@ -71,6 +73,7 @@ static const char *appname = "gnome-thumbnail-factory";
 
 static void gnome_desktop_thumbnail_factory_init          (GnomeDesktopThumbnailFactory      *factory);
 static void gnome_desktop_thumbnail_factory_class_init    (GnomeDesktopThumbnailFactoryClass *class);
+static struct passwd *get_session_user_pwent (void);
 
 G_DEFINE_TYPE (GnomeDesktopThumbnailFactory,
 	       gnome_desktop_thumbnail_factory,
@@ -812,36 +815,24 @@ external_thumbnailers_disabled_changed_cb (GSettings                    *setting
 */
 
 static void
-get_user_info (GnomeDesktopThumbnailFactory *factory)
+get_user_info (GnomeDesktopThumbnailFactory *factory,
+                                   gboolean *adjust,
+                                      uid_t *uid,
+                                      gid_t *gid)
 {
-
     struct passwd *pwent;
 
-    pwent = getpwuid (0);
+    pwent = get_session_user_pwent ();
 
-    /* sudo su will use root's home dir (and cache) but still set
-       SUDO_UID to the user, so in this case we don't want to adjust
-       perms */
-    if (g_strcmp0 (pwent->pw_dir, g_get_home_dir ()) == 0) {
-        factory->priv->elevated = FALSE;
-        return;
-    }
+    *uid = pwent->pw_uid;
+    *gid = pwent->pw_gid;
 
-    if (getuid () != geteuid ()) {
-        factory->priv->real_uid = getuid ();
-        factory->priv->real_gid = getgid ();
-        factory->priv->elevated = TRUE;
-        return;
-    }
+    /* Only can (and need to) adjust if we're root, but
+       this process will be writing to the session user's
+       home folder */
 
-    if (g_getenv ("SUDO_UID") != NULL) {
-        factory->priv->real_uid = (int) g_ascii_strtoll (g_getenv ("SUDO_UID"), NULL, 10);
-        factory->priv->real_gid = (int) g_ascii_strtoll (g_getenv ("SUDO_GID"), NULL, 10);
-        factory->priv->elevated = TRUE;
-        return;
-    }
-
-    factory->priv->elevated = FALSE;
+    *adjust = geteuid () == 0 &&
+              g_strcmp0 (pwent->pw_dir, g_get_home_dir ()) == 0;
 }
 
 static void
@@ -852,16 +843,16 @@ gnome_desktop_thumbnail_factory_init (GnomeDesktopThumbnailFactory *factory)
   factory->priv = GNOME_DESKTOP_THUMBNAIL_FACTORY_GET_PRIVATE (factory);
 
   priv = factory->priv;
-
   priv->size = GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL;
-  priv->elevated = FALSE;
-  
+ 
   priv->mime_types_map = g_hash_table_new_full (g_str_hash,
                                                 g_str_equal,
                                                 (GDestroyNotify)g_free,
                                                 (GDestroyNotify)thumbnailer_unref);
 
-  get_user_info (factory);
+  get_user_info (factory, &priv->needs_chown, &priv->real_uid, &priv->real_gid);
+
+  priv->permissions_problem = !gnome_desktop_thumbnail_cache_check_permissions (NULL, TRUE);
 
   g_mutex_init (&priv->lock);
 
@@ -1109,6 +1100,9 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
 {
   gboolean have_script = FALSE;
 
+  if (factory->priv->permissions_problem)
+    return FALSE;
+
   /* Don't thumbnail thumbnails */
   if (uri &&
       strncmp (uri, "file:/", 6) == 0 &&
@@ -1352,7 +1346,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
 static void
 maybe_fix_ownership (GnomeDesktopThumbnailFactory *factory, const gchar *path)
 {
-    if (factory->priv->elevated) {
+    if (factory->priv->needs_chown) {
         G_GNUC_UNUSED int res;
 
         res = chown (path,
@@ -1756,4 +1750,228 @@ gnome_desktop_thumbnail_is_valid (GdkPixbuf          *pixbuf,
     return FALSE;
   
   return TRUE;
+}
+
+static void
+fix_owner (const gchar *path, uid_t uid, gid_t gid)
+{
+    G_GNUC_UNUSED int res;
+
+    res = chown (path, uid, gid);
+}
+
+static gboolean
+access_ok (const gchar *path, uid_t uid, gid_t gid)
+{
+    /* user mode will always trip on this */
+    if (g_access (path, R_OK|W_OK) != 0) {
+        if (errno != ENOENT)
+            return FALSE;
+        else
+            return TRUE;
+    }
+
+    /* root will need to check against the real user */
+
+    GStatBuf buf;
+
+    gint ret = g_stat (path, &buf);
+
+    if (ret == 0) {
+        if (buf.st_uid != uid || buf.st_gid != gid || (buf.st_mode & (S_IRUSR|S_IWUSR)) == 0)
+            return FALSE;
+    }
+
+    return TRUE;
+}
+
+static void
+recursively_fix_file (const gchar *path, uid_t uid, gid_t gid)
+{
+    if (!access_ok (path, uid, gid))
+        fix_owner (path, uid, gid);
+
+    if (g_file_test (path, G_FILE_TEST_IS_DIR)) {
+        GDir *dir = g_dir_open (path, 0, NULL);
+
+        if (dir) {
+            const char *name;
+
+            while ((name = g_dir_read_name (dir))) {
+                gchar *filename;
+
+                filename = g_build_filename (path, name, NULL);
+                recursively_fix_file (filename, uid, gid);
+                g_free (filename);
+            }
+
+            g_dir_close (dir);
+        }
+    }
+}
+
+static gboolean
+recursively_check_file (const gchar *path, uid_t uid, gid_t gid)
+{
+    if (!access_ok (path, uid, gid))
+        return FALSE;
+
+    gboolean ret = TRUE;
+
+    if (g_file_test (path, G_FILE_TEST_IS_DIR)) {
+        GDir *dir = g_dir_open (path, 0, NULL);
+
+        if (dir) {
+            const char *name;
+
+            while ((name = g_dir_read_name (dir))) {
+                gchar *filename;
+                filename = g_build_filename (path, name, NULL);
+
+                if (!recursively_check_file (filename, uid, gid)) {
+                    ret = FALSE;
+                }
+
+                g_free (filename);
+
+                if (!ret)
+                    break;
+            }
+
+            g_dir_close (dir);
+        }
+    }
+
+    return ret;
+}
+
+static gboolean
+check_subfolder_permissions_only (const gchar *path, uid_t uid, gid_t gid)
+{
+    gboolean ret = TRUE;
+
+    GDir *dir = g_dir_open (path, 0, NULL);
+
+    if (dir) {
+        const char *name;
+
+        while ((name = g_dir_read_name (dir))) {
+            gchar *filename;
+            filename = g_build_filename (path, name, NULL);
+
+            if (!access_ok (filename, uid, gid)) {
+                ret = FALSE;
+            }
+
+            g_free (filename);
+
+            if (!ret)
+                break;
+        }
+
+        g_dir_close (dir);
+    }
+
+    return ret;
+}
+
+static struct passwd *
+get_session_user_pwent (void)
+{
+    struct passwd *pwent = NULL;
+
+    if (getuid () != geteuid ()) {
+        gint uid = getuid ();
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("SUDO_UID") != NULL) {
+        gint uid = (int) g_ascii_strtoll (g_getenv ("SUDO_UID"), NULL, 10);
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("PKEXEC_UID") != NULL) {
+        gint uid = (int) g_ascii_strtoll (g_getenv ("PKEXEC_UID"), NULL, 10);
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("USERNAME") != NULL) {
+        pwent = getpwnam (g_getenv ("USERNAME"));
+    }
+
+    if (!pwent) {
+        g_printerr ("thumbnailer: Could not determine session user.\n");
+        return NULL;
+    }
+
+    return pwent;
+}
+
+/**
+ * gnome_desktop_cache_fix_permissions:
+ *
+ * Fixes any file or folder ownership issues for the *currently
+ * logged-in* user.  Note - this may not be the same as the uid
+ * of the user running this operation.
+ *
+ **/
+
+void
+gnome_desktop_thumbnail_cache_fix_permissions (void)
+{
+    struct passwd *pwent;
+
+    pwent = get_session_user_pwent ();
+
+    gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
+
+    if (!access_ok (cache_dir, pwent->pw_uid, pwent->pw_gid))
+        fix_owner (cache_dir, pwent->pw_uid, pwent->pw_gid);
+
+    recursively_fix_file (cache_dir, pwent->pw_uid, pwent->pw_gid);
+
+    g_free (cache_dir);
+}
+
+/**
+ * gnome_desktop_cache_check_permissions:
+ * @factory: (allow-none): an optional GnomeDesktopThumbnailFactory
+ * @quick: if TRUE, only do a quick check of directory ownersip
+ * This is more serious than thumbnail ownership issues, and is faster.
+ *
+ * Returns whether there are any ownership issues with the thumbnail
+ * folders and existing thumbnails for the *currently logged-in* user.
+ * Note - this may not be the same as the uid of the user running this
+ * check.
+ *
+ * if factory is not NULL, factory->priv->permissions_problem will be
+ * set to the result of the check.
+ * 
+ * Return value: TRUE if everything checks out in these folders for the
+ * logged in user.
+ *
+ **/
+
+gboolean
+gnome_desktop_thumbnail_cache_check_permissions (GnomeDesktopThumbnailFactory *factory, gboolean quick)
+{
+    gboolean checks_out = TRUE;
+
+    struct passwd *pwent;
+    pwent = get_session_user_pwent ();
+
+    gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
+
+    if (!access_ok (cache_dir, pwent->pw_uid, pwent->pw_gid)) {
+        checks_out = FALSE;
+        goto out;
+    }
+
+    if (quick) {
+        checks_out = check_subfolder_permissions_only (cache_dir, pwent->pw_uid, pwent->pw_gid);
+    } else {
+        checks_out = recursively_check_file (cache_dir, pwent->pw_uid, pwent->pw_gid);
+    }
+
+out:
+    g_free (cache_dir);
+
+    if (factory)
+        factory->priv->permissions_problem = !checks_out;
+
+    return checks_out;
 }
