@@ -1,3 +1,10 @@
+cinnamon-desktop (2.6.2) rafaela; urgency=medium
+
+  [ mtwebster ]
+  * gnome-desktop-thumbnail: always return a user.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 May 2015 12:28:14 +0200
+
 cinnamon-desktop (2.6.1) rafaela; urgency=medium
 
   * gnome-desktop-thumbnail: add public thumbnail utility functions. - Do quick self-check upon factory creation, self-disable if problems   are found - added check and fix functions
