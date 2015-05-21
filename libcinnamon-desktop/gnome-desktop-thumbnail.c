@@ -36,7 +36,6 @@
 #include <string.h>
 #include <glib.h>
 #include <stdio.h>
-#include <pwd.h>
 #include <errno.h>
 
 #define GDK_PIXBUF_ENABLE_BACKEND
@@ -44,6 +43,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-desktop-thumbnail.h"
+#include "gnome-desktop-utils.h"
 #include <glib/gstdio.h>
 #include <libgsystem.h>
 
@@ -73,7 +73,6 @@ static const char *appname = "gnome-thumbnail-factory";
 
 static void gnome_desktop_thumbnail_factory_init          (GnomeDesktopThumbnailFactory      *factory);
 static void gnome_desktop_thumbnail_factory_class_init    (GnomeDesktopThumbnailFactoryClass *class);
-static struct passwd *get_session_user_pwent (void);
 
 G_DEFINE_TYPE (GnomeDesktopThumbnailFactory,
 	       gnome_desktop_thumbnail_factory,
@@ -822,7 +821,7 @@ get_user_info (GnomeDesktopThumbnailFactory *factory,
 {
     struct passwd *pwent;
 
-    pwent = get_session_user_pwent ();
+    pwent = gnome_desktop_get_session_user_pwent ();
 
     *uid = pwent->pw_uid;
     *gid = pwent->pw_gid;
@@ -1875,33 +1874,6 @@ check_subfolder_permissions_only (const gchar *path, uid_t uid, gid_t gid)
     return ret;
 }
 
-static struct passwd *
-get_session_user_pwent (void)
-{
-    struct passwd *pwent = NULL;
-
-    if (getuid () != geteuid ()) {
-        gint uid = getuid ();
-        pwent = getpwuid (uid);
-    } else if (g_getenv ("SUDO_UID") != NULL) {
-        gint uid = (int) g_ascii_strtoll (g_getenv ("SUDO_UID"), NULL, 10);
-        pwent = getpwuid (uid);
-    } else if (g_getenv ("PKEXEC_UID") != NULL) {
-        gint uid = (int) g_ascii_strtoll (g_getenv ("PKEXEC_UID"), NULL, 10);
-        pwent = getpwuid (uid);
-    } else if (g_getenv ("USERNAME") != NULL) {
-        pwent = getpwnam (g_getenv ("USERNAME"));
-    } else if (g_getenv ("USER") != NULL) {
-        pwent = getpwnam (g_getenv ("USER"));
-    }
-
-    if (!pwent) {
-        return getpwuid (getuid ());
-    }
-
-    return pwent;
-}
-
 /**
  * gnome_desktop_cache_fix_permissions:
  *
@@ -1916,7 +1888,7 @@ gnome_desktop_thumbnail_cache_fix_permissions (void)
 {
     struct passwd *pwent;
 
-    pwent = get_session_user_pwent ();
+    pwent = gnome_desktop_get_session_user_pwent ();
 
     gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
 
@@ -1953,7 +1925,7 @@ gnome_desktop_thumbnail_cache_check_permissions (GnomeDesktopThumbnailFactory *f
     gboolean checks_out = TRUE;
 
     struct passwd *pwent;
-    pwent = get_session_user_pwent ();
+    pwent = gnome_desktop_get_session_user_pwent ();
 
     gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
 

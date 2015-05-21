@@ -36,6 +36,7 @@
 
 #include <gdk/gdk.h>
 #include <gtk/gtk.h>
+#include <pwd.h>
 
 G_BEGIN_DECLS
 
@@ -43,6 +44,7 @@ G_BEGIN_DECLS
 void gnome_desktop_prepend_terminal_to_vector (int *argc, char ***argv);
 
 const char *gnome_desktop_get_media_key_string (gint type);
+struct passwd *gnome_desktop_get_session_user_pwent (void);
 
 G_END_DECLS
 

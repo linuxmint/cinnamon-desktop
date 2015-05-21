@@ -195,3 +195,41 @@ gnome_desktop_get_media_key_string (gint type)
 
     return media_keys[type];
 }
+
+/**
+ * gnome_desktop_get_session_user_pwent: (skip)
+ *
+ * Description: Makes a best effort to retrieve the currently
+ * logged-in user's passwd struct (containing uid, gid, home, etc...)
+ * based on the process uid and various environment variables.
+ *
+ * Returns: (transfer none): the passwd struct corresponding to the
+ * session user (or, as a last resort, the user returned by getuid())
+ **/
+
+struct passwd *
+gnome_desktop_get_session_user_pwent (void)
+{
+    struct passwd *pwent = NULL;
+
+    if (getuid () != geteuid ()) {
+        gint uid = getuid ();
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("SUDO_UID") != NULL) {
+        gint uid = (int) g_ascii_strtoll (g_getenv ("SUDO_UID"), NULL, 10);
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("PKEXEC_UID") != NULL) {
+        gint uid = (int) g_ascii_strtoll (g_getenv ("PKEXEC_UID"), NULL, 10);
+        pwent = getpwuid (uid);
+    } else if (g_getenv ("USERNAME") != NULL) {
+        pwent = getpwnam (g_getenv ("USERNAME"));
+    } else if (g_getenv ("USER") != NULL) {
+        pwent = getpwnam (g_getenv ("USER"));
+    }
+
+    if (!pwent) {
+        return getpwuid (getuid ());
+    }
+
+    return pwent;
+}
