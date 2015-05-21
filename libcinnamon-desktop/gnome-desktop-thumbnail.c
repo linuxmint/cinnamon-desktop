@@ -1891,11 +1891,12 @@ get_session_user_pwent (void)
         pwent = getpwuid (uid);
     } else if (g_getenv ("USERNAME") != NULL) {
         pwent = getpwnam (g_getenv ("USERNAME"));
+    } else if (g_getenv ("USER") != NULL) {
+        pwent = getpwnam (g_getenv ("USER"));
     }
 
     if (!pwent) {
-        g_printerr ("thumbnailer: Could not determine session user.\n");
-        return NULL;
+        return getpwuid (getuid ());
     }
 
     return pwent;
