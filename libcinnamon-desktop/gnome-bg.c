@@ -627,7 +627,7 @@ gnome_bg_get_filename (GnomeBG *bg)
 }
 
 static inline gchar *
-get_wallpaper_cache_dir ()
+get_wallpaper_cache_dir (void)
 {
 	return g_build_filename (g_get_user_cache_dir(), "wallpaper", NULL);
 }
