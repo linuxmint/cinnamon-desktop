@@ -159,6 +159,14 @@
       <default><![CDATA[['<Alt>F10']]]></default>
       <summary>Toggle maximization state</summary>
     </key>
+    <key type="as" name="toggle-maximized-vertically">
+      <default>[]</default>
+      <summary>Toggle vertical maximization state</summary>
+    </key>
+    <key type="as" name="toggle-maximized-horizontally">
+      <default>[]</default>
+      <summary>Toggle horizontal maximization state</summary>
+    </key>
     <key type="as" name="toggle-above">
       <default>[]</default>
       <summary>Toggle window always appearing on top</summary>
