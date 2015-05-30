@@ -56,6 +56,11 @@
       <_summary>Shut down the computer</_summary>
       <_description>Binding to shut down.</_description>
     </key>
+    <key name="restart-cinnamon" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;Escape']</default>
+      <_summary>Restart Cinnamon</_summary>
+      <_description>Binding to restart Cinnamon.</_description>
+    </key>
     <key name="previous" type="as">
       <default>['XF86AudioPrev']</default>
       <_summary>Previous track</_summary>
