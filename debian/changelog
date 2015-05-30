@@ -1,3 +1,9 @@
+cinnamon-desktop (2.6.4) rafaela; urgency=medium
+
+  * Added keybinding to restart cinnamon (used by cinnamon-killer-daemon)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 30 May 2015 12:40:30 +0200
+
 cinnamon-desktop (2.6.3) rafaela; urgency=medium
 
   [ Michael Webster ]
