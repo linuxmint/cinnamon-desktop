@@ -120,7 +120,7 @@
       <_summary>The screensaver hack to use when xscreensaver is used as screensaver</_summary>
     </key>
     <key name="screensaver-webkit-theme" type="s">
-      <default>"stars"</default>
+      <default>"webkit-stars@cinnamon.org"</default>
       <_summary>Name of the theme used in the webkit screensaver engine</_summary>
     </key>
   </schema>
