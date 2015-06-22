@@ -1,3 +1,13 @@
+cinnamon-desktop (2.6.5) rafaela; urgency=medium
+
+  [ Dexter Chua ]
+  * screensaver schemas: use a default value that exists
+
+  [ Clement Lefebvre ]
+  * Ignore X errors when applying xrandr configuration (fixes CSD crashes with NVIDIA cards https://github.com/linuxmint/cinnamon-settings-daemon/issues/52) Ignore X errors when performing BG crossfade (should make it more stable and we might use it again in 2.8 as a result)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 22 Jun 2015 22:22:33 +0200
+
 cinnamon-desktop (2.6.4) rafaela; urgency=medium
 
   * Added keybinding to restart cinnamon (used by cinnamon-killer-daemon)

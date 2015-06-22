@@ -1,5 +1,5 @@
 
-AC_INIT(cinnamon-desktop, 2.6.4)
+AC_INIT(cinnamon-desktop, 2.6.5)
 AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
 AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar subdir-objects])
