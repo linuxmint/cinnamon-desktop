@@ -388,6 +388,7 @@ static void
 draw_background (GnomeBGCrossfade *fade)
 {
 	if (gdk_window_get_window_type (fade->priv->window) == GDK_WINDOW_ROOT) {
+		gdk_error_trap_push ();
                 XClearArea (GDK_WINDOW_XDISPLAY (fade->priv->window),
                             GDK_WINDOW_XID (fade->priv->window),
                             0, 0,
@@ -398,6 +399,7 @@ draw_background (GnomeBGCrossfade *fade)
                 send_root_property_change_notification (fade);
 
 		gdk_flush ();
+		gdk_error_trap_pop (); // ignore errors
 	} else {
 		gdk_window_invalidate_rect (fade->priv->window, NULL, FALSE);
 		gdk_window_process_updates (fade->priv->window, FALSE);

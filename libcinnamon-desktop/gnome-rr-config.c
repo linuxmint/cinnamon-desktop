@@ -1298,6 +1298,8 @@ gnome_rr_config_apply_with_time (GnomeRRConfig *config,
     g_return_val_if_fail (GNOME_IS_RR_CONFIG (config), FALSE);
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), FALSE);
 
+    gdk_error_trap_push ();
+
     outputs = make_outputs (config);
 
     assignment = crtc_assignment_new (screen, outputs, error);
@@ -1313,7 +1315,9 @@ gnome_rr_config_apply_with_time (GnomeRRConfig *config,
 
 	crtc_assignment_free (assignment);
 
+	
 	gdk_flush ();
+	gdk_error_trap_pop (); // ignore errors
     }
 
     return result;
