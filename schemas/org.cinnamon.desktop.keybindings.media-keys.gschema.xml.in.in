@@ -96,6 +96,11 @@
       <_summary>Volume up</_summary>
       <_description>Binding to raise the system volume.</_description>
     </key>
+    <key name="mic-mute" type="as">
+      <default>['XF86AudioMicMute']</default>
+      <_summary>Mic mute</_summary>
+      <_description>Binding to mute the system microphone.</_description>
+    </key>
     <key name="screenshot" type="as">
       <default>['Print']</default>
       <_summary>Take a screenshot</_summary>
