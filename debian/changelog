@@ -1,3 +1,19 @@
+cinnamon-desktop (2.8.0) rosa; urgency=medium
+
+  [ Dexter Chua ]
+  * Make cinnamon-desktop buildable with make
+
+  [ mtwebster ]
+  * gnome-desktop-thumbnailer.c: block known-buggy image types from being thumbnailed.
+
+  [ Mike Gerow ]
+  * Create keybinding for XF86AudioMicMute => mic-mute
+
+  [ leigh123linux ]
+  * fix xml bg warning
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 16 Oct 2015 13:59:41 +0100
+
 cinnamon-desktop (2.6.5) rafaela; urgency=medium
 
   [ Dexter Chua ]
