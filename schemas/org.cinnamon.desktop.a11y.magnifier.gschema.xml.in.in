@@ -31,7 +31,7 @@
     </key>
     <key name="mag-factor" type="d">
       <default>1.0</default>
-      <range min="1.0" max="32.0"/>
+      <range min="1.0" max="15.0"/>
       <_summary>Magnification factor</_summary>
       <_description>
         The power of the magnification. A value of 1.0 means no magnification.
