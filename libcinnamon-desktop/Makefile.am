@@ -26,6 +26,7 @@ introspection_sources = 		\
 	gnome-desktop-thumbnail.c 	\
 	gnome-thumbnail-pixbuf-utils.c 	\
 	gnome-bg.c			\
+    gnome-bg-slide-show.c       \
 	gnome-bg-crossfade.c		\
 	display-name.c			\
     gnome-installer.c       \
@@ -65,6 +66,7 @@ libcinnamon_desktopdir = $(includedir)/cinnamon-desktop/libcinnamon-desktop
 libcinnamon_desktop_HEADERS = \
         gnome-bg.h                      \
         gnome-bg-crossfade.h            \
+        gnome-bg-slide-show.h           \
         gnome-desktop-utils.h           \
         gnome-desktop-thumbnail.h       \
         gnome-installer.h               \
