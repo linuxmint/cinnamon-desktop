@@ -1,0 +1,47 @@
+#!/usr/bin/env python2
+
+import gi
+gi.require_version('CinnamonDesktop', '3.0')
+from gi.repository import CinnamonDesktop, GLib
+import sys
+
+
+def install_finished_cb(success, data=None):
+    if success:
+        print("Install Finished!")
+    else:
+        print("Install Failed!")
+    quit()
+
+def check_finished_cb(success, data=None):
+    if success:
+        print("Packages already installed!")
+    else:
+        print("Some packages missing!")
+    quit()
+
+
+if (len(sys.argv) < 3 or sys.argv[1] not in ("install", "check")):
+    print """
+
+Usage:
+        installer-test install|check package_1 [package_2 ...]
+
+"""
+    quit()
+
+i = 2
+pkgs = []
+
+while i < len(sys.argv):
+    pkgs.append(sys.argv[i])
+    i+=1
+print "Working with packages: %s" % pkgs
+
+if (sys.argv[1] == "install"):
+    CinnamonDesktop.installer_install_packages(pkgs, install_finished_cb, None)
+else:
+    CinnamonDesktop.installer_check_for_packages(pkgs, check_finished_cb, None)
+
+ml = GLib.MainLoop.new(None, True)
+ml.run()

@@ -28,6 +28,7 @@ introspection_sources = 		\
 	gnome-bg.c			\
 	gnome-bg-crossfade.c		\
 	display-name.c			\
+    gnome-installer.c       \
 	gnome-rr.c			\
 	gnome-rr-config.c		\
 	gnome-rr-output-info.c		\
@@ -66,6 +67,7 @@ libcinnamon_desktop_HEADERS = \
         gnome-bg-crossfade.h            \
         gnome-desktop-utils.h           \
         gnome-desktop-thumbnail.h       \
+        gnome-installer.h               \
         gnome-rr.h                      \
         gnome-rr-config.h               \
         gnome-rr-labeler.h		\
