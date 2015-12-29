@@ -21,6 +21,13 @@
         region, the contents are scrolled into view.
       </_description>
     </key>
+    <key name="lens-shape" enum="org.cinnamon.desktop.CDesktopMagnifierLensShape">
+      <default>'square'</default>
+      <_summary></_summary>
+      <_description>
+        The shape of lens to use in lens mode - a square, or a vertical or horizontal band.
+      </_description>
+    </key>
     <key name="screen-position" enum="org.cinnamon.desktop.CDesktopMagnifierScreenPosition">
       <default>'full-screen'</default>
       <_summary>Screen position</_summary>
