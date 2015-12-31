@@ -2,7 +2,7 @@
 
 import gi
 gi.require_version('CinnamonDesktop', '3.0')
-from gi.repository import CinnamonDesktop, GLib
+from gi.repository import CinnamonDesktop, GLib, GObject
 import sys
 
 
@@ -20,6 +20,9 @@ def check_finished_cb(success, data=None):
         print("Some packages missing!")
     quit()
 
+def working_cb():
+    print("working...")
+    return True
 
 if (len(sys.argv) < 3 or sys.argv[1] not in ("install", "check")):
     print """
@@ -38,10 +41,14 @@ while i < len(sys.argv):
     i+=1
 print "Working with packages: %s" % pkgs
 
+GObject.timeout_add(250, working_cb)
+
+
 if (sys.argv[1] == "install"):
     CinnamonDesktop.installer_install_packages(pkgs, install_finished_cb, None)
 else:
     CinnamonDesktop.installer_check_for_packages(pkgs, check_finished_cb, None)
+
 
 ml = GLib.MainLoop.new(None, True)
 ml.run()

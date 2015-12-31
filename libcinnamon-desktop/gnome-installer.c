@@ -103,41 +103,88 @@ install_package_names_cb (GObject      *source,
 }
 
 static void
-check_for_packages (GDBusProxy *proxy, ClientCtx *ctx)
+check_for_packages_cb (GObject      *source,
+                       GAsyncResult *result,
+                       gpointer      user_data)
 {
-    gboolean satisfied = TRUE;
-    gint i = 0;
-    GError *error = NULL;
+  ClientCtx *ctx = g_task_get_task_data (G_TASK (result));
+  GError *error = NULL;
 
-    for (i = 0; i < g_strv_length (ctx->packages); i++) {
-        GVariant *res = g_dbus_proxy_call_sync (proxy,
-                                                "IsInstalled",
-                                                g_variant_new ("(ss)", ctx->packages[i], ctx->options),
-                                                G_DBUS_CALL_FLAGS_NONE,
-                                                G_MAXINT, NULL, &error);
-        if (res == NULL) {
-            ctx_failed (ctx, error);
-            return;
-        }
+  G_GNUC_UNUSED gboolean success = g_task_propagate_boolean (G_TASK (result), &error);
 
-        gboolean is_installed = FALSE;
-        g_variant_get (res, "(b)", &is_installed);
-        g_variant_unref (res);
+  if (error != NULL) {
+    ctx_failed (ctx, error);
+    return;
+  }
 
-        if (!is_installed) {
-            error = g_error_new (g_quark_from_static_string ("GnomeInstaller"), 1,
-                                 "Missing package: %s", ctx->packages[i] );
-            satisfied = FALSE;
-            break;
-        }
-    }
-
-    if (satisfied)
-        ctx_complete (ctx);
-    else
-        ctx_failed (ctx, error);
+  ctx_complete (ctx);
 }
 
+static void
+check_for_packages_thread (GTask        *task,
+                           gpointer      source_object,
+                           gpointer      task_data,
+                           GCancellable *cancellable)
+{
+  GDBusProxy *proxy = G_DBUS_PROXY (source_object);
+  ClientCtx *ctx = (ClientCtx *) task_data;
+
+  gboolean satisfied = TRUE;
+  gint i = 0;
+  GError *error = NULL;
+
+  for (i = 0; i < g_strv_length (ctx->packages); i++) {
+    GVariant *res = g_dbus_proxy_call_sync (proxy,
+                                            "IsInstalled",
+                                            g_variant_new ("(ss)", ctx->packages[i], ctx->options),
+                                            G_DBUS_CALL_FLAGS_NONE,
+                                            G_MAXINT, NULL, &error);
+    if (error != NULL) {
+      satisfied = FALSE;
+      break;
+    }
+
+    gboolean is_installed = FALSE;
+    g_variant_get (res, "(b)", &is_installed);
+    g_variant_unref (res);
+
+    if (!is_installed) {
+      satisfied = FALSE;
+      break;
+    }
+  }
+
+  if (error != NULL) {
+    g_task_return_error (task, error);
+    return;
+  }
+
+  if (!satisfied) {
+    g_task_return_error (task,
+                         g_error_new (g_quark_from_static_string ("GnomeInstaller"),
+                         1,
+                         "%s", ctx->packages[i]));
+    return;
+  }
+
+  g_task_return_boolean (task, TRUE);
+}
+
+static void
+check_for_packages (GDBusProxy *proxy, ClientCtx *ctx)
+{
+  GTask *task;
+
+  task = g_task_new (proxy, NULL,
+                     check_for_packages_cb,
+                     NULL);
+
+  g_task_set_task_data (task, ctx, NULL);
+
+  g_task_run_in_thread (task, check_for_packages_thread);
+
+  g_object_unref (task);
+}
 
 static void
 pkg_kit_proxy_new_cb (GObject *source,
