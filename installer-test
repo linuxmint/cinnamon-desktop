@@ -41,6 +41,7 @@ while i < len(sys.argv):
     i+=1
 print "Working with packages: %s" % pkgs
 
+# Testing non-blocking-ness of the installer
 GObject.timeout_add(250, working_cb)
 
 

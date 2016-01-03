@@ -291,6 +291,10 @@
         <alias value="frame_flash" target="frame-flash"/>
       </aliases>
     </key>
+    <key name="bell-sound" type="s">
+      <default>'/usr/share/cinnamon/sounds/bell.ogg'</default>
+      <_summary>Sound to use for the event bell</_summary>
+    </key>
     <key name="application-based" type="b">
       <default>false</default>
       <_summary>
