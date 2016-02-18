@@ -762,7 +762,7 @@ gvc_card_collate (GvcMixerCard *a,
  * gvc_mixer_control_get_cards:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerCard):
+ * Returns: (transfer container) (element-type GvcMixerCard):
  */
 GSList *
 gvc_mixer_control_get_cards (GvcMixerControl *control)
@@ -798,7 +798,7 @@ gvc_stream_collate (GvcMixerStream *a,
  * gvc_mixer_control_get_streams:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerStream):
+ * Returns: (transfer container) (element-type GvcMixerStream):
  */
 GSList *
 gvc_mixer_control_get_streams (GvcMixerControl *control)
@@ -818,7 +818,7 @@ gvc_mixer_control_get_streams (GvcMixerControl *control)
  * gvc_mixer_control_get_sinks:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerSink):
+ * Returns: (transfer container) (element-type GvcMixerSink):
  */
 GSList *
 gvc_mixer_control_get_sinks (GvcMixerControl *control)
@@ -838,7 +838,7 @@ gvc_mixer_control_get_sinks (GvcMixerControl *control)
  * gvc_mixer_control_get_sources:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerSource):
+ * Returns: (transfer container) (element-type GvcMixerSource):
  */
 GSList *
 gvc_mixer_control_get_sources (GvcMixerControl *control)
@@ -858,7 +858,7 @@ gvc_mixer_control_get_sources (GvcMixerControl *control)
  * gvc_mixer_control_get_sink_inputs:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerSinkInput):
+ * Returns: (transfer container) (element-type GvcMixerSinkInput):
  */
 GSList *
 gvc_mixer_control_get_sink_inputs (GvcMixerControl *control)
@@ -878,7 +878,7 @@ gvc_mixer_control_get_sink_inputs (GvcMixerControl *control)
  * gvc_mixer_control_get_source_outputs:
  * @control:
  *
- * Returns: (transfer container) (element-type Gvc.MixerSourceOutput):
+ * Returns: (transfer container) (element-type GvcMixerSourceOutput):
  */
 GSList *
 gvc_mixer_control_get_source_outputs (GvcMixerControl *control)

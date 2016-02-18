@@ -566,9 +566,8 @@ gvc_mixer_ui_device_should_profiles_be_hidden (GvcMixerUIDevice *device)
 
 /**
  * gvc_mixer_ui_device_get_profiles:
- * @device:
  *
- * Returns: (transfer none) (element-type Gvc.MixerCardProfile):
+ * Returns: (transfer none) (element-type GvcMixerCardProfile):
  */
 GList*
 gvc_mixer_ui_device_get_profiles (GvcMixerUIDevice *device)
@@ -622,6 +621,21 @@ gvc_mixer_ui_device_get_description (GvcMixerUIDevice *device)
         g_return_val_if_fail (GVC_IS_MIXER_UI_DEVICE (device), NULL);
 
         return device->priv->first_line_desc;
+}
+
+/**
+ * gvc_mixer_ui_device_get_card:
+ *
+ * @control:
+ *
+ * Returns: (transfer none):
+ */
+GvcMixerCard *
+gvc_mixer_ui_device_get_card (GvcMixerUIDevice *device)
+{
+        g_return_val_if_fail (GVC_IS_MIXER_UI_DEVICE (device), NULL);
+
+        return device->priv->card;
 }
 
 const char *
