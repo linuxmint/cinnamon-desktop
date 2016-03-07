@@ -1,3 +1,13 @@
+cinnamon-desktop (2.8.1) rosa; urgency=medium
+
+  [ Michael Webster ]
+  * a11y schema: limit desktop zoom max magnification to 15x
+
+  [ monsta ]
+  * thumbnail: Fix a code path where the mutex is never unlocked
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 Mar 2016 14:22:01 +0000
+
 cinnamon-desktop (2.8.0) rosa; urgency=medium
 
   [ Dexter Chua ]
