@@ -1,0 +1,4 @@
+usr/include/cinnamon-desktop/libcvc
+usr/lib/*/libcvc.so
+usr/lib/*/pkgconfig/cvc.pc
+usr/share/gir-1.0/Cvc-1.0.gir

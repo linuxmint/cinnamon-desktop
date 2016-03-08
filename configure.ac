@@ -103,6 +103,8 @@ PKG_CHECK_MODULES(CINNAMON_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
                                     xkeyboard-config
                                     xkbfile)
 
+PKG_CHECK_MODULES(CVC, gio-2.0 libpulse libpulse-mainloop-glib gobject-2.0)
+
 XKB_BASE=$($PKG_CONFIG --variable xkb_base xkeyboard-config)
 AC_SUBST(XKB_BASE)
 
@@ -140,6 +142,9 @@ Makefile
 libcinnamon-desktop/Makefile
 libcinnamon-desktop/cinnamon-desktop.pc
 libcinnamon-desktop/cinnamon-desktop-uninstalled.pc
+libcvc/Makefile
+libcvc/cvc.pc
+libcvc/cvc-uninstalled.pc
 schemas/Makefile
 po/Makefile.in
 files/Makefile

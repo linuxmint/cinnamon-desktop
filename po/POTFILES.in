@@ -8,6 +8,7 @@ libcinnamon-desktop/gnome-rr.c
 libcinnamon-desktop/gnome-rr-config.c
 libcinnamon-desktop/gnome-rr-labeler.c
 libcinnamon-desktop/gnome-wall-clock.c
+libcvc/gvc-mixer-control.c
 schemas/org.cinnamon.desktop.a11y.applications.gschema.xml.in.in
 schemas/org.cinnamon.desktop.a11y.keyboard.gschema.xml.in.in
 schemas/org.cinnamon.desktop.a11y.magnifier.gschema.xml.in.in

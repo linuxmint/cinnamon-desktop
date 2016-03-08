@@ -16,7 +16,8 @@ override_dh_auto_configure:
 	    --enable-introspection
 
 override_dh_strip:
-	dh_strip --dbg-package=libcinnamon-desktop-dbg
+	dh_strip -Xdesktop -Xcinnamon --dbg-package=libcvc-dbg
+	dh_strip -Xcvc --dbg-package=libcinnamon-desktop-dbg
 
 override_dh_auto_install:
 	dh_auto_install -- typelibdir="/usr/lib/girepository-1.0"
