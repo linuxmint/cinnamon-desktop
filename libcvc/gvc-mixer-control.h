@@ -22,6 +22,7 @@
 #define __GVC_MIXER_CONTROL_H
 
 #include <glib-object.h>
+#include <pulse/pulseaudio.h>
 #include "gvc-mixer-stream.h"
 #include "gvc-mixer-card.h"
 #include "gvc-mixer-ui-device.h"

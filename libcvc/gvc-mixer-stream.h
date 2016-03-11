@@ -22,7 +22,6 @@
 #define __GVC_MIXER_STREAM_H
 
 #include <glib-object.h>
-#include "gvc-pulseaudio-fake.h"
 #include "gvc-channel-map.h"
 #include <gio/gio.h>
 

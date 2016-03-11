@@ -13,9 +13,11 @@ libcvc_la_gir_sources = 			\
 	gvc-channel-map.c			\
 	gvc-mixer-ui-device.c			\
 	gvc-mixer-sink.c			\
+    gvc-mixer-sink.h            \
 	gvc-mixer-source.c			\
 	gvc-mixer-sink-input.c			\
 	gvc-mixer-source-output.c		\
+    gvc-mixer-event-role.h          \
 	gvc-mixer-event-role.c			\
 	gvc-mixer-control.c			\
 	$(NULL)
@@ -42,11 +44,9 @@ libcvc_HEADERS = \
     gvc-mixer-stream.h          \
     gvc-channel-map.h           \
     gvc-mixer-ui-device.h           \
-    gvc-mixer-sink.h            \
     gvc-mixer-source.h          \
     gvc-mixer-sink-input.h          \
     gvc-mixer-source-output.h       \
-    gvc-mixer-event-role.h          \
     gvc-mixer-control.h
 
 if HAVE_INTROSPECTION
