@@ -579,7 +579,6 @@ gvc_mixer_ui_device_get_profiles (GvcMixerUIDevice *device)
 
 /**
  * gvc_mixer_ui_device_get_supported_profiles:
- * @device:
  *
  * Returns: (transfer none) (element-type GvcMixerCardProfile):
  */
@@ -625,8 +624,7 @@ gvc_mixer_ui_device_get_description (GvcMixerUIDevice *device)
 
 /**
  * gvc_mixer_ui_device_get_card:
- *
- * @control:
+ * @device:
  *
  * Returns: (transfer none):
  */
