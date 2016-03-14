@@ -111,7 +111,7 @@ gvc_channel_map_set_balance (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
 
         if (!gvc_channel_map_can_balance (map))
                 return;
@@ -151,7 +151,7 @@ gvc_channel_map_set_fade (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
 
         if (!gvc_channel_map_can_fade (map))
                 return;
@@ -193,7 +193,7 @@ gvc_channel_map_set_lfe (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
 
         if (!gvc_channel_map_has_lfe (map))
                 return;
@@ -229,8 +229,7 @@ gvc_channel_map_get_mapping (const GvcChannelMap  *map)
 
 /**
  * gvc_channel_map_has_position:
- * @map:
- * @position:
+ * @position: (type int)
  *
  * Returns:
  */
