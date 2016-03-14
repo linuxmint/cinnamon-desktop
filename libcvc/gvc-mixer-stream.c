@@ -85,6 +85,14 @@ enum
         PROP_STATE,
 };
 
+enum {
+        MONITOR_UPDATE,
+        MONITOR_SUSPEND,
+        LAST_SIGNAL
+};
+
+static guint signals [LAST_SIGNAL] = { 0, };
+
 static void     gvc_mixer_stream_finalize   (GObject            *object);
 
 G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE (GvcMixerStream, gvc_mixer_stream, G_TYPE_OBJECT)
@@ -884,6 +892,152 @@ gvc_mixer_stream_is_running (GvcMixerStream *stream)
 }
 
 static void
+on_monitor_suspended_callback (pa_stream *s,
+                               void      *userdata)
+{
+        GvcMixerStream *stream;
+
+        stream = userdata;
+
+        if (pa_stream_is_suspended (s)) {
+                g_debug ("Stream suspended");
+                g_signal_emit (stream, signals[MONITOR_SUSPEND], 0);
+        }
+}
+
+static void
+on_monitor_read_callback (pa_stream *s,
+                          size_t     length,
+                          void      *userdata)
+{
+        GvcMixerStream *stream;
+        const void     *data;
+        double          v;
+
+        stream = userdata;
+
+        if (pa_stream_peek (s, &data, &length) < 0) {
+                g_warning ("Failed to read data from stream");
+                return;
+        }
+
+        assert (length > 0);
+        assert (length % sizeof (float) == 0);
+
+        v = ((const float *) data)[length / sizeof (float) -1];
+
+        pa_stream_drop (s);
+
+        if (v < 0) {
+                v = 0;
+        }
+        if (v > 1) {
+                v = 1;
+        }
+        g_signal_emit (stream, signals[MONITOR_UPDATE], 0, v);
+}
+
+/**
+ * gvc_mixer_stream_create_monitor:
+ * @stream:
+ */
+void
+gvc_mixer_stream_create_monitor (GvcMixerStream *stream)
+{
+        pa_stream     *s;
+        char           t[16];
+        pa_buffer_attr attr;
+        pa_sample_spec ss;
+        pa_context    *context;
+        int            res;
+        pa_proplist   *proplist;
+        gboolean       has_monitor;
+
+        if (stream == NULL) {
+                return;
+        }
+        has_monitor = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (stream), "has-monitor"));
+        if (has_monitor != FALSE) {
+                return;
+        }
+
+        g_debug ("Create monitor for %u",
+                 gvc_mixer_stream_get_index (stream));
+
+        context = gvc_mixer_stream_get_pa_context (stream);
+
+        if (pa_context_get_server_protocol_version (context) < 13) {
+                return;
+        }
+
+        ss.channels = 1;
+        ss.format = PA_SAMPLE_FLOAT32;
+        ss.rate = 25;
+
+        memset (&attr, 0, sizeof (attr));
+        attr.fragsize = sizeof (float);
+        attr.maxlength = (uint32_t) -1;
+
+        snprintf (t, sizeof (t), "%u", gvc_mixer_stream_get_index (stream));
+
+        proplist = pa_proplist_new ();
+        pa_proplist_sets (proplist, PA_PROP_APPLICATION_ID, "org.gnome.VolumeControl");
+        s = pa_stream_new_with_proplist (context, "Peak detect", &ss, NULL, proplist);
+        pa_proplist_free (proplist);
+        if (s == NULL) {
+                g_warning ("Failed to create monitoring stream");
+                return;
+        }
+
+        pa_stream_set_read_callback (s, on_monitor_read_callback, stream);
+        pa_stream_set_suspended_callback (s, on_monitor_suspended_callback, stream);
+
+        res = pa_stream_connect_record (s,
+                                        t,
+                                        &attr,
+                                        (pa_stream_flags_t) (PA_STREAM_DONT_MOVE
+                                                             |PA_STREAM_PEAK_DETECT
+                                                             |PA_STREAM_ADJUST_LATENCY));
+        if (res < 0) {
+                g_warning ("Failed to connect monitoring stream");
+                pa_stream_unref (s);
+        } else {
+                g_object_set_data (G_OBJECT (stream), "has-monitor", GINT_TO_POINTER (TRUE));
+                g_object_set_data (G_OBJECT (stream), "pa_stream", s);
+        }
+}
+
+/**
+ * gvc_mixer_stream_remove_monitor:
+ * @stream:
+ */
+void
+gvc_mixer_stream_remove_monitor (GvcMixerStream *stream)
+{
+        pa_stream      *s;
+        pa_context     *context;
+        int             res;
+
+        s = g_object_get_data (G_OBJECT (stream), "pa_stream");
+        if (s == NULL)
+                return;
+        g_assert (stream != NULL);
+
+        g_debug ("Stopping monitor for %u", pa_stream_get_index (s));
+
+        context = gvc_mixer_stream_get_pa_context (stream);
+
+        if (pa_context_get_server_protocol_version (context) < 13) {
+                return;
+        }
+
+        res = pa_stream_disconnect (s);
+        if (res == 0)
+                g_object_set_data (G_OBJECT (stream), "has-monitor", GINT_TO_POINTER (FALSE));
+        g_object_set_data (G_OBJECT (stream), "pa_stream", NULL);
+}
+
+static void
 gvc_mixer_stream_class_init (GvcMixerStreamClass *klass)
 {
         GObjectClass   *gobject_class = G_OBJECT_CLASS (klass);
@@ -1031,6 +1185,22 @@ gvc_mixer_stream_class_init (GvcMixerStreamClass *klass)
                                                              "The index of the card for this stream",
                                                              PA_INVALID_INDEX, G_MAXLONG, PA_INVALID_INDEX,
                                                              G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
+        signals [MONITOR_UPDATE] =
+                g_signal_new ("monitor-update",
+                              G_TYPE_FROM_CLASS (klass),
+                              G_SIGNAL_RUN_LAST,
+                              G_STRUCT_OFFSET (GvcMixerStreamClass, monitor_update),
+                              NULL, NULL,
+                              g_cclosure_marshal_VOID__DOUBLE,
+                              G_TYPE_NONE, 1, G_TYPE_DOUBLE);
+        signals [MONITOR_SUSPEND] =
+                g_signal_new ("monitor-suspend",
+                              G_TYPE_FROM_CLASS (klass),
+                              G_SIGNAL_RUN_LAST,
+                              G_STRUCT_OFFSET (GvcMixerStreamClass, monitor_suspend),
+                              NULL, NULL,
+                              g_cclosure_marshal_VOID__VOID,
+                              G_TYPE_NONE, 0, G_TYPE_NONE);
 }
 
 static void
