@@ -22,6 +22,7 @@
 #define __GVC_CHANNEL_MAP_H
 
 #include <glib-object.h>
+#include <pulse/pulseaudio.h>
 
 G_BEGIN_DECLS
 
