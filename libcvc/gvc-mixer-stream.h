@@ -53,6 +53,9 @@ typedef struct
                                      gboolean        is_muted);
         gboolean (*change_port)     (GvcMixerStream *stream,
                                      const char     *port);
+        void (*monitor_update)      (GvcMixerStream *stream,
+                                     gdouble        v);
+        void (*monitor_suspend)     (GvcMixerStream *stream);
 } GvcMixerStreamClass;
 
 typedef struct
@@ -94,6 +97,8 @@ const char *        gvc_mixer_stream_get_application_id (GvcMixerStream *stream)
 gboolean            gvc_mixer_stream_is_event_stream (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_is_virtual      (GvcMixerStream *stream);
 guint               gvc_mixer_stream_get_card_index  (GvcMixerStream *stream);
+void                gvc_mixer_stream_create_monitor  (GvcMixerStream *stream);
+void                gvc_mixer_stream_remove_monitor  (GvcMixerStream *stream);
 
 /* private */
 gboolean            gvc_mixer_stream_set_volume      (GvcMixerStream *stream,

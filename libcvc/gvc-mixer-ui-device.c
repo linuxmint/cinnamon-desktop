@@ -400,7 +400,7 @@ add_canonical_names_of_profiles (GvcMixerUIDevice *device,
 
 /**
  * gvc_mixer_ui_device_set_profiles:
- * @in_profiles: (element-type Gvc.MixerCardProfile): a list of GvcMixerCardProfile
+ * @in_profiles: (element-type GvcMixerCardProfile): a list of GvcMixerCardProfile
  *
  * Assigns value to
  *  - device->priv->profiles (profiles to be added to combobox)
@@ -579,9 +579,8 @@ gvc_mixer_ui_device_get_profiles (GvcMixerUIDevice *device)
 
 /**
  * gvc_mixer_ui_device_get_supported_profiles:
- * @device:
  *
- * Returns: (transfer none) (element-type Gvc.MixerCardProfile):
+ * Returns: (transfer none) (element-type GvcMixerCardProfile):
  */
 GList*
 gvc_mixer_ui_device_get_supported_profiles (GvcMixerUIDevice *device)
@@ -625,8 +624,7 @@ gvc_mixer_ui_device_get_description (GvcMixerUIDevice *device)
 
 /**
  * gvc_mixer_ui_device_get_card:
- *
- * @control:
+ * @device:
  *
  * Returns: (transfer none):
  */
