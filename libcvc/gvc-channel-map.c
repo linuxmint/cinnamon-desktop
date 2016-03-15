@@ -27,8 +27,6 @@
 #include <glib.h>
 #include <glib/gi18n-lib.h>
 
-#include <pulse/pulseaudio.h>
-
 #include "gvc-channel-map.h"
 #include "gvc-channel-map-private.h"
 
