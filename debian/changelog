@@ -1,3 +1,30 @@
+cinnamon-desktop (3.0.0) sarah; urgency=medium
+
+  [ Michael Webster ]
+  * a11y schema: limit desktop zoom max magnification to 15x
+  * Add installer functions to check and install packages via PackageKit.
+  * control: add gnome-packagekit-session install dep.
+  * enums: Add zoom lens shape enum and magnifier key
+  * gnome-installer: use a GTask for the IsInstalled loop, so the main thread isn't blocked.  Add some feedback to the test script to check this.
+  * Schemas: add a few keys for a11y stuff
+  * Add libcvc source and packages to build.
+  * libcvc: header file fixes for including in C
+  * gvc-channel-map.h: add missing include
+  * gvc-channel-map.c: Remove redundant include
+
+  [ monsta ]
+  * thumbnail: Fix a code path where the mutex is never unlocked
+
+  [ Stephen Collins ]
+  * Some fixes for introspection
+  * Cvc: some fixes for introspection
+  * Cvc: add introspection functions for balance, fade and lfe
+  * libcvc: Add stream montor functionality
+  * gvc_mixer_ui_device.c: fix comment block causing a build warning
+  * libcvc: fix some more build warnings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 23 Apr 2016 15:57:45 +0100
+
 cinnamon-desktop (2.8.0) rosa; urgency=medium
 
   [ Dexter Chua ]
