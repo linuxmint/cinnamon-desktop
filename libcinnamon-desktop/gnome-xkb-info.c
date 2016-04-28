@@ -591,9 +591,8 @@ parse_rules (GnomeXkbInfo *self)
   return;
 
  cleanup:
-  g_warning ("Failed to load XKB rules file %s: %s", file_path, error->message);
-
   if (error != NULL) {
+    g_warning ("Failed to load XKB rules file %s: %s", file_path, error->message);
     g_error_free (error);
     error = NULL;
   }
