@@ -2,7 +2,7 @@
 <schemalist>
   <schema id="org.cinnamon.desktop.sound" path="/org/cinnamon/desktop/sound/">
     <key name="event-sounds" type="b">
-      <default>true</default>
+      <default>false</default>
       <_summary>Sounds for events</_summary>
       <_description>Whether to play sounds on user events.</_description>
     </key>
