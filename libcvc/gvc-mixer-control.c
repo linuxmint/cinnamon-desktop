@@ -2107,11 +2107,11 @@ sink_info_cb (pa_context         *c,
         if (i->card != data->headset_card)
                 return;
 
+        s = data->port_name_to_set;
+
         if (i->active_port &&
             strcmp (i->active_port->name, s) == 0)
                 return;
-
-        s = data->port_name_to_set;
 
         for (j = 0; j < i->n_ports; j++)
                 if (strcmp (i->ports[j]->name, s) == 0)
@@ -2144,10 +2144,10 @@ source_info_cb (pa_context           *c,
         if (i->card != data->headset_card)
                 return;
 
+        s = data->port_name_to_set;
+
         if (i->active_port && strcmp (i->active_port->name, s) == 0)
                 return;
-
-        s = data->port_name_to_set;
 
         for (j = 0; j < i->n_ports; j++)
                 if (strcmp (i->ports[j]->name, s) == 0)
