@@ -1,3 +1,18 @@
+cinnamon-desktop (3.0.1) sarah; urgency=medium
+
+  [ Igor ]
+  * Fix possible NULL pointer dereference
+  * Fix usage of uninitialized values
+
+  [ Clement Lefebvre ]
+  * Disable event-sounds by default
+  * Disable audible-bell by default
+
+  [ Michael Webster ]
+  * debian/control: remove dependency on gnome-packagekit-session.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 10 May 2016 16:34:06 +0100
+
 cinnamon-desktop (3.0.0) sarah; urgency=medium
 
   [ Michael Webster ]
