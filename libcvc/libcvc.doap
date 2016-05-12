@@ -5,9 +5,14 @@
          xmlns="http://usefulinc.com/ns/doap#">
 
   <name xml:lang="en">libcvc</name>
-  <shortdesc xml:lang="en">Introspectable GObject layer for PulseAudio intended for use with Cinnamon desktop</shortdesc>
+  <shortdesc xml:lang="en">Cinnamon's Introspectable GObject layer for PulseAudio</shortdesc>
   <description>
-    This library contains code to access PulseAudio using a GObject based library.  It is essentially a fork of of the libgnome-volume-control (https://git.gnome.org/browse/libgnome-volume-control) submodule, with some introspection magic and extra packaging to make it fully introspectable as a standalone library (enabling use with PyGObject).  It is currently used in Cinnamon for its python sound settings module and in the javascript loop for its ui.  It is also a build dependency in cinnamon-settings-daemon.
+    This library contains code to access PulseAudio using a GObject based library.  It is essentially
+    a fork of of the libgnome-volume-control (https://git.gnome.org/browse/libgnome-volume-control) submodule,
+    with some introspection magic and extra packaging to make it fully introspectable as a standalone
+    library (enabling use with PyGObject).  It is currently used in Cinnamon for its python sound
+    settings module and in the javascript loop for its ui.  It is also a build dependency in
+    cinnamon-settings-daemon.
   </description>
 
   <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
