@@ -962,7 +962,7 @@ draw_image_area (GnomeBG         *bg,
 	int dest_height = area->height;
 	int x, y, w, h;
 	GdkPixbuf *scaled;
-	
+
 	if (!pixbuf)
 		return;
 
@@ -1941,6 +1941,7 @@ get_as_pixbuf_for_size (GnomeBG    *bg,
 	else {
 		GdkPixbufFormat *format;
 		GdkPixbuf *pixbuf;
+		GdkPixbuf *tmp_pixbuf;
                 gchar *tmp;
 		pixbuf = NULL;
 
@@ -1970,8 +1971,12 @@ get_as_pixbuf_for_size (GnomeBG    *bg,
 			g_free (tmp);
 		}
 
-		if (pixbuf)
+		if (pixbuf) {
+			tmp_pixbuf = gdk_pixbuf_apply_embedded_orientation (pixbuf);
+			g_object_unref (pixbuf);
+			pixbuf = tmp_pixbuf;
 			file_cache_add_pixbuf (bg, filename, pixbuf);
+		}
 
 		return pixbuf;
 	}
