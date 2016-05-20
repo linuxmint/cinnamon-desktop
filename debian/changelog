@@ -1,3 +1,15 @@
+cinnamon-desktop (3.0.2) sarah; urgency=medium
+
+  [ Michael Webster ]
+  * libcvc: update doap file
+  * Fix formatting of doap file.
+  * org.cinnamon.desktop.interface schema: Add setting for gtk overlay scrollbars.
+
+  [ Clement Lefebvre ]
+  * Backgrounds: Take EXIF rotation tags into consideration
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 May 2016 11:59:50 +0100
+
 cinnamon-desktop (3.0.1) sarah; urgency=medium
 
   [ Igor ]
