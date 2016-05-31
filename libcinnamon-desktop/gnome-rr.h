@@ -83,7 +83,7 @@ typedef enum {
     GNOME_RR_ERROR_BOUNDS_ERROR,	/* requested bounds of a CRTC are outside the maximum size */
     GNOME_RR_ERROR_CRTC_ASSIGNMENT,	/* could not assign CRTCs to outputs */
     GNOME_RR_ERROR_NO_MATCHING_CONFIG,	/* none of the saved configurations matched the current configuration */
-    GNOME_RR_ERROR_NO_DPMS_EXTENSION,	/* DPMS extension is not present */
+    GNOME_RR_ERROR_NO_DPMS_EXTENSION	/* DPMS extension is not present */
 } GnomeRRError;
 
 #define GNOME_RR_CONNECTOR_TYPE_PANEL "Panel"  /* This is a laptop's built-in LCD */
