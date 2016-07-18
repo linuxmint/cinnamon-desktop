@@ -30,6 +30,7 @@
 #endif
 
 #include <gdk/gdk.h>
+#include <gtk/gtk.h>
 #include <gio/gio.h>
 #include "cdesktop-enums.h"
 #include <libcinnamon-desktop/gnome-desktop-thumbnail.h>
@@ -107,6 +108,8 @@ GdkPixbuf *      gnome_bg_create_frame_thumbnail (GnomeBG              *bg,
 void             gnome_bg_create_and_set_surface_as_root (GnomeBG            *bg,
                                                           GdkWindow          *root_window,
                                                           GdkScreen          *screen);
+
+void             gnome_bg_create_and_set_gtk_image (GnomeBG *bg, GtkImage *image, gint width, gint height);
 
 /* Set a surface as root - not a GnomeBG method. At some point
  * if we decide to stabilize the API then we may want to make

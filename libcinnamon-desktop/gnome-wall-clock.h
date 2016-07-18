@@ -60,6 +60,7 @@ struct _GnomeWallClockClass
 GType             gnome_wall_clock_get_type      (void);
 
 const char *      gnome_wall_clock_get_clock     (GnomeWallClock *clock);
+GnomeWallClock *  gnome_wall_clock_new           (void);
 
 G_END_DECLS
 

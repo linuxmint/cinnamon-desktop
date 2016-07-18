@@ -1176,9 +1176,9 @@ gnome_bg_create_surface (GnomeBG	    *bg,
 					   pm_width, pm_height);
 	}
 	else {
-		surface = gdk_window_create_similar_surface (window,
-                                                             CAIRO_CONTENT_COLOR,
-                                                             pm_width, pm_height);
+		surface = gdk_window_create_similar_image_surface (window,
+                                                           CAIRO_FORMAT_ARGB32,
+                                                           pm_width, pm_height, 0);
 	}
 
 	if (surface == NULL)
@@ -1708,7 +1708,35 @@ gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, Gd
     cairo_surface_destroy (surface);
 }
 
-/* Implementation of the pixbuf cache */
+/**
+ * gnome_bg_create_and_set_gtk_image:
+ **/
+void
+gnome_bg_create_and_set_gtk_image (GnomeBG *bg, GtkImage *image, gint width, gint height)
+{
+    cairo_surface_t *surface;
+    GdkRectangle     monitor_geometry;
+
+    g_return_if_fail (image != NULL);
+
+    g_object_ref (image);
+
+    GdkWindow *win = gtk_widget_get_window (GTK_WIDGET (image));
+
+    if (!win) {
+        g_object_unref (image);
+        g_printerr ("GtkImage must be realized before setting its surface\n");
+        return;
+    }
+
+    surface = gnome_bg_create_surface (bg, win, width, height, FALSE);
+
+    gtk_image_set_from_surface (image, surface);
+    cairo_surface_destroy (surface);
+    g_object_unref (image);
+}
+
+ // Implementation of the pixbuf cache 
 struct _SlideShow
 {
 	gint ref_count;

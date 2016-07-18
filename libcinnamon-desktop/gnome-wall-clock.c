@@ -292,3 +292,9 @@ gnome_wall_clock_get_clock (GnomeWallClock *clock)
 {
 	return clock->priv->clock_string;
 }
+
+GnomeWallClock *
+gnome_wall_clock_new (void)
+{
+    return g_object_new (GNOME_TYPE_WALL_CLOCK, NULL);
+}
