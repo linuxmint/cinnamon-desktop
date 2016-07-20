@@ -1,13 +1,15 @@
 
 AC_INIT(cinnamon-desktop, 3.0.2)
+AX_IS_RELEASE([git-directory])
 AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
-AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar])
+AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar subdir-objects])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_CONFIG_HEADERS([config.h])
 
 AC_CONFIG_MACRO_DIR([m4])
+AC_SUBST([ACLOCAL_AMFLAGS], ["-I $ac_macro_dir \${ACLOCAL_FLAGS}"])
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C:R:A.
@@ -28,8 +30,7 @@ IT_PROG_INTLTOOL([0.40.6])
 AC_PROG_CC
 PKG_PROG_PKG_CONFIG
 
-GNOME_COMPILE_WARNINGS([maximum])
-GNOME_MAINTAINER_MODE_DEFINES
+AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
 
 AC_ARG_ENABLE(deprecation_flags,
               [AC_HELP_STRING([--enable-deprecation-flags],
@@ -84,6 +85,7 @@ PKG_CHECK_MODULES(XLIB, x11,
      AC_PATH_XTRA
      if test "x$no_x" = xyes; then
        AC_MSG_ERROR("no (requires X development libraries)")
+dnl "
      else
        XLIB_LIBS="$X_PRE_LIBS $X_LIBS -lX11 $X_EXTRA_LIBS"
        XLIB_CFLAGS=$X_CFLAGS

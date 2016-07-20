@@ -58,9 +58,9 @@ INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir)
 
 Cvc-1.0.gir: libcvc.la
 Cvc_1_0_gir_INCLUDES = GObject-2.0 Gio-2.0
-Cvc_1_0_gir_CFLAGS = $(INCLUDES) -I$(top_srcdir)/libcvc -DWITH_INTROSPECTION
+Cvc_1_0_gir_CFLAGS = $(WARN_CFLAGS) $(INCLUDES) -I$(top_srcdir)/libcvc -DWITH_INTROSPECTION
 Cvc_1_0_gir_LIBS = libcvc.la
-Cvc_1_0_gir_SCANNERFLAGS = --identifier-prefix=Gvc --symbol-prefix=gvc_
+Cvc_1_0_gir_SCANNERFLAGS = $(WARN_SCANNERFLAGS) --identifier-prefix=Gvc --symbol-prefix=gvc_
 Cvc_1_0_gir_FILES = $(libcvc_la_gir_sources) $(libcvc_HEADERS)
 INTROSPECTION_GIRS = Cvc-1.0.gir
 
