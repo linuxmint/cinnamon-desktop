@@ -1170,7 +1170,7 @@ gnome_bg_create_surface (GnomeBG	    *bg,
 
 	/* has the side effect of loading and caching pixbuf only when in tile mode */
 	gnome_bg_get_pixmap_size (bg, width, height, &pm_width, &pm_height);
-	
+
 	if (root) {
 		surface = make_root_pixmap (gdk_window_get_screen (window),
 					   pm_width, pm_height);
@@ -1715,23 +1715,68 @@ void
 gnome_bg_create_and_set_gtk_image (GnomeBG *bg, GtkImage *image, gint width, gint height)
 {
     cairo_surface_t *surface;
-    GdkRectangle     monitor_geometry;
 
+    int pm_width, pm_height;
+    GdkRGBA average;
+    GdkPixbuf *pixbuf;
+
+    g_return_if_fail (bg != NULL);
     g_return_if_fail (image != NULL);
 
     g_object_ref (image);
 
-    GdkWindow *win = gtk_widget_get_window (GTK_WIDGET (image));
-
-    if (!win) {
-        g_object_unref (image);
-        g_printerr ("GtkImage must be realized before setting its surface\n");
-        return;
+    if (bg->pixbuf_cache &&
+        gdk_pixbuf_get_width (bg->pixbuf_cache) != width &&
+        gdk_pixbuf_get_height (bg->pixbuf_cache) != height) {
+            g_object_unref (bg->pixbuf_cache);
+            bg->pixbuf_cache = NULL;
     }
 
-    surface = gnome_bg_create_surface (bg, win, width, height, FALSE);
+    GdkWindow *window = gtk_widget_get_window (GTK_WIDGET (image));
+
+    /* has the side effect of loading and caching pixbuf only when in tile mode */
+    gnome_bg_get_pixmap_size (bg, width, height, &pm_width, &pm_height);
+
+    if (!bg->filename && bg->color_type == C_DESKTOP_BACKGROUND_SHADING_SOLID) {
+        cairo_t *cr;
+
+        surface = gdk_window_create_similar_image_surface (window,
+                                                           CAIRO_FORMAT_ARGB32,
+                                                           pm_width, pm_height, 0);
+
+        if (surface == NULL)
+            return;
+
+        cr = cairo_create (surface);
+
+        gdk_cairo_set_source_color (cr, &(bg->primary));
+        average.red = bg->primary.red / 65535.0;
+        average.green = bg->primary.green / 65535.0;
+        average.blue = bg->primary.blue / 65535.0;
+        average.alpha = 1.0;
+
+        cairo_paint (cr);
+        cairo_destroy (cr);
+    } else {
+        gint scale = gtk_widget_get_scale_factor (GTK_WIDGET (image));
+
+        pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, FALSE, 8,
+                                 width * scale, height * scale);
+        gnome_bg_draw (bg, pixbuf, window ? gdk_window_get_screen (window) : gdk_screen_get_default (), FALSE);
+        surface = gdk_cairo_surface_create_from_pixbuf (pixbuf,
+                                                        scale,
+                                                        window);
+        pixbuf_average_value (pixbuf, &average);
+
+        g_object_unref (pixbuf);
+    }
+
+    cairo_surface_set_user_data (surface, &average_color_key,
+                                 gdk_rgba_copy (&average),
+                                 (cairo_destroy_func_t) gdk_rgba_free);
 
     gtk_image_set_from_surface (image, surface);
+
     cairo_surface_destroy (surface);
     g_object_unref (image);
 }
