@@ -50,6 +50,7 @@ libcinnamon_desktop_la_LIBADD =	\
 	$(XLIB_LIBS)		\
 	$(LIBM)			\
 	$(CINNAMON_DESKTOP_LIBS)	\
+    $(AUTH_LIBS) \
 	libgsystem.la           \
 	-lrt
 
@@ -125,8 +126,8 @@ EXTRA_DIST = \
 MAINTAINERCLEANFILES = \
 	pnp.ids
 
-libexec_PROGRAMS =		\
-	cinnamon-rr-debug
+#libexec_PROGRAMS =		\
+#	cinnamon-rr-debug
 
 cinnamon_rr_debug_SOURCES =	\
 	cinnamon-rr-debug.c
