@@ -161,6 +161,7 @@ libcvc/cvc-uninstalled.pc
 schemas/Makefile
 po/Makefile.in
 files/Makefile
+data/Makefile
 ])
 
 AC_OUTPUT

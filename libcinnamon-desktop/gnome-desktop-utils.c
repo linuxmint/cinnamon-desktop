@@ -380,7 +380,7 @@ check_password_thread (GTask        *task,
     conv.conv = &yet_another_pam_conv;
     conv.appdata_ptr = (void *) &c;
 
-    retval = pam_start ("cinnamon-desktop-auth-user", strings->username, &conv, &pamh);
+    retval = pam_start ("cinnamon-desktop", strings->username, &conv, &pamh);
 
     if (retval == PAM_SUCCESS)
         retval = pam_authenticate (pamh, 0);
@@ -392,7 +392,7 @@ check_password_thread (GTask        *task,
 
     if (pam_end (pamh,retval) != PAM_SUCCESS) {
         pamh = NULL;
-        g_printerr ("cinnamon-desktop-auth-user: failed to release authenticator\n");
+        g_printerr ("cinnamon-desktop: failed to release authenticator\n");
     }
 
     g_task_return_boolean (task, ret);
