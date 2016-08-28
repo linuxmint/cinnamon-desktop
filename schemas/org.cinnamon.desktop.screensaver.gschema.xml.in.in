@@ -30,21 +30,6 @@
       <_summary>Embedded keyboard command</_summary>
       <_description>The command that will be run, if the "embedded_keyboard_enabled" key is set to TRUE, to embed a keyboard widget into the window. This command should implement an XEMBED plug interface and output a window XID on the standard output.</_description>
     </key>
-    <key name="logout-enabled" type="b">
-      <default>false</default>
-      <_summary>Allow logout</_summary>
-      <_description>Set this to TRUE to offer an option in the unlock dialog to allow logging out after a delay.  The delay is specified in the "logout_delay" key.</_description>
-    </key>
-    <key name="logout-delay" type="u">
-      <default>7200</default>
-      <_summary>Time before logout option</_summary>
-      <_description>The number of seconds after the screensaver activation before a logout option will appear in the unlock dialog. This key has effect only if the "logout_enable" key is set to TRUE.</_description>
-    </key>
-    <key name="logout-command" type="s">
-      <default>''</default>
-      <_summary>Logout command</_summary>
-      <_description>The command to invoke when the logout button is clicked.  This command should simply log the user out without any interaction. This key has effect only if the "logout_enable" key is set to TRUE.</_description>
-    </key>
     <key name="user-switch-enabled" type="b">
       <default>true</default>
       <_summary>Allow user switching</_summary>
@@ -122,6 +107,21 @@
     <key name="screensaver-webkit-theme" type="s">
       <default>"webkit-stars@cinnamon.org"</default>
       <_summary>Name of the theme used in the webkit screensaver engine</_summary>
+    </key>
+    <key name="show-flags" type="b">
+      <default>true</default>
+      <_summary>Show flag to depict current keyboard layout</_summary>
+      <_description>Set this to true to show flags for the keyboard layout, false shows a two-letter abbreviation.</_description>
+    </key>
+    <key name="show-clock" type="b">
+      <default>true</default>
+      <_summary>Show the clock when the normal wallpaper screensaver is active</_summary>
+      <_description>This controls whether the clock is shown while the wallpaper is active.  Note, the clock will always show when unlocking, and it will never show if a screensaver plugin is active, regardless of this setting</_description>
+    </key>
+    <key name="layout-group" type="i">
+      <default>-1</default>
+      <_summary>Keyboard layout group to use when entering your password</_summary>
+      <_description>This stores the last active keyboard layout group for entering your password.</_description>
     </key>
   </schema>
 </schemalist>
