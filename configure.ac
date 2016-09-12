@@ -59,6 +59,12 @@ else
         EXTERNAL_PNP_IDS="$with_pnp_ids_path"
 fi
 
+#gtkdocize greps for '^GTK_DOC_CHECK'
+m4_ifdef([GTK_DOC_CHECK], [
+GTK_DOC_CHECK([1.18],[--flavour no-tmpl])],
+          [AM_CONDITIONAL([ENABLE_GTK_DOC], [false])
+           enable_gtk_doc=no])
+
 dnl If you add a version number here, you *must* add an AC_SUBST line for
 dnl it too, or it will never make it into the spec file!
 
