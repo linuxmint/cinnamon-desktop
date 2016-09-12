@@ -1,6 +1,6 @@
 
 AC_INIT(cinnamon-desktop, 3.0.2)
-AX_IS_RELEASE([git-directory])
+AX_IS_RELEASE([always])
 AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
 AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar subdir-objects])
