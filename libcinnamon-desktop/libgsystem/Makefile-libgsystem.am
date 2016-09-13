@@ -18,11 +18,11 @@
 noinst_LTLIBRARIES += libgsystem.la
 
 libgsystem_la_SOURCES = \
-	$(libgsystem_srcpath)/gsystem-local-alloc.h \
-	$(libgsystem_srcpath)/gsystem-local-alloc.c \
-	$(libgsystem_srcpath)/gsystem-file-utils.h \
-	$(libgsystem_srcpath)/gsystem-file-utils.c \
-	$(libgsystem_srcpath)/libgsystem.h \
+	libgsystem/gsystem-local-alloc.h \
+	libgsystem/gsystem-local-alloc.c \
+	libgsystem/gsystem-file-utils.h \
+	libgsystem/gsystem-file-utils.c \
+	libgsystem/libgsystem.h \
 	$(NULL)
 
 libgsystem_la_CFLAGS = $(AM_CFLAGS) $(libgsystem_cflags)
