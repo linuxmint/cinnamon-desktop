@@ -1,6 +1,8 @@
 
 AC_INIT(cinnamon-desktop, 3.0.2)
-AX_IS_RELEASE([always])
+
+m4_ifdef([AX_IS_RELEASE], [AX_IS_RELEASE([always])])
+
 AC_CONFIG_SRCDIR(libcinnamon-desktop)
 
 AM_INIT_AUTOMAKE([1.11 foreign no-dist-gzip dist-xz tar-ustar subdir-objects])
@@ -30,7 +32,8 @@ IT_PROG_INTLTOOL([0.40.6])
 AC_PROG_CC
 PKG_PROG_PKG_CONFIG
 
-AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])
+m4_ifdef([AX_COMPILER_FLAGS],
+         [AX_COMPILER_FLAGS([WARN_CFLAGS],[WARN_LDFLAGS])])
 
 AC_ARG_ENABLE(deprecation_flags,
               [AC_HELP_STRING([--enable-deprecation-flags],
