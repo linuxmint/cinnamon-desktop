@@ -109,9 +109,14 @@
       <_summary>Name of the theme used in the webkit screensaver engine</_summary>
     </key>
     <key name="show-flags" type="b">
-      <default>true</default>
+      <default>false</default>
       <_summary>Show flag to depict current keyboard layout</_summary>
       <_description>Set this to true to show flags for the keyboard layout, false shows a two-letter abbreviation.</_description>
+    </key>
+    <key name="upper-case-kbd-layout" type="b">
+      <default>true</default>
+      <_summary>Show upper case letters to represent the current keyboard layout</_summary>
+      <_description>Set this to true to show upper case letters for the keyboard layout.</_description>
     </key>
     <key name="show-clock" type="b">
       <default>true</default>
