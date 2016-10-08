@@ -118,6 +118,11 @@
       <_summary>Show upper case letters to represent the current keyboard layout</_summary>
       <_description>Set this to true to show upper case letters for the keyboard layout.</_description>
     </key>
+    <key name="show-album-art" type="b">
+      <default>true</default>
+      <_summary>Display album art on the lock screen</_summary>
+      <_description>Set this to true to show album art on the lock screen, if available.</_description>
+    </key>
     <key name="show-clock" type="b">
       <default>true</default>
       <_summary>Show the clock when the normal wallpaper screensaver is active</_summary>
