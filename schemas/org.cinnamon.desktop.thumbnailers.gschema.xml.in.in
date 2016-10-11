@@ -11,7 +11,7 @@
     </key>
 
     <key name="disable" type="as">
-      <default>[]</default>
+      <default>["image/jp2"]</default>
       <_summary>
         List of mime-types for which external thumbnailer
         programs will be disabled

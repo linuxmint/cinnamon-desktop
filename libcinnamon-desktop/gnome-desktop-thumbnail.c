@@ -495,17 +495,8 @@ gnome_desktop_thumbnail_factory_finalize (GObject *object)
 
   priv = factory->priv;
 
-  if (priv->thumbnailers)
-    {
-      g_list_free_full (priv->thumbnailers, (GDestroyNotify)thumbnailer_unref);
-      priv->thumbnailers = NULL;
-    }
-
-  if (priv->mime_types_map)
-    {
-      g_hash_table_destroy (priv->mime_types_map);
-      priv->mime_types_map = NULL;
-    }
+  g_clear_pointer (&priv->thumbnailers, thumbnailer_unref);
+  g_clear_pointer (&priv->mime_types_map, g_hash_table_destroy);
 
   if (priv->monitors)
     {
@@ -515,17 +506,8 @@ gnome_desktop_thumbnail_factory_finalize (GObject *object)
 
   g_mutex_clear (&priv->lock);
 
-  if (priv->disabled_types)
-    {
-      g_strfreev (priv->disabled_types);
-      priv->disabled_types = NULL;
-    }
-
-  if (priv->settings)
-    {
-      g_object_unref (priv->settings);
-      priv->settings = NULL;
-    }
+  g_clear_pointer (&priv->disabled_types, g_strfreev);
+  g_clear_object (&priv->settings);
 
   if (G_OBJECT_CLASS (parent_class)->finalize)
     (* G_OBJECT_CLASS (parent_class)->finalize) (object);
@@ -1028,21 +1010,6 @@ gnome_desktop_thumbnail_factory_has_valid_failed_thumbnail (GnomeDesktopThumbnai
   return res;
 }
 
-/* forbidden/buggy GdkPixbufFormat names */
-const char *forbidden[] = { "tga", "icns", "jpeg2000" };
-
-static gboolean
-type_is_forbidden (const gchar *name)
-{
-    gint i = 0;
-    for (i = 0; i < G_N_ELEMENTS (forbidden); i++) {
-        if (g_strcmp0 (forbidden[i], name) == 0) {
-            return TRUE;
-        }
-    }
-    return FALSE;
-}
-
 static gboolean
 mimetype_supported_by_gdk_pixbuf (const char *mime_type)
 {
@@ -1066,18 +1033,14 @@ mimetype_supported_by_gdk_pixbuf (const char *mime_type)
             GdkPixbufFormat *format = list->data;
             gchar **mime_types;
 
-            if (type_is_forbidden (format->name)) {
-                gdk_pixbuf_format_set_disabled (format, TRUE);
-                list = list->next;
-                continue;
-            }
-
             mime_types = gdk_pixbuf_format_get_mime_types (format);
 
             for (i = 0; mime_types[i] != NULL; i++)
-                g_hash_table_insert (hash,
-                                     (gpointer) g_content_type_from_mime_type (mime_types[i]),
-                                     GUINT_TO_POINTER (1));
+              {
+                    g_hash_table_insert (hash,
+                                         (gpointer) g_content_type_from_mime_type (mime_types[i]),
+                                         GUINT_TO_POINTER (1));
+              }
 
             g_strfreev (mime_types);
             list = list->next;
@@ -1122,6 +1085,7 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
 {
   gboolean have_script = FALSE;
 
+
   if (factory->priv->permissions_problem)
     return FALSE;
 
@@ -1134,14 +1098,17 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
   if (!mime_type)
     return FALSE;
 
-  g_mutex_lock (&factory->priv->lock);
-  if (!gnome_desktop_thumbnail_factory_is_disabled (factory, mime_type))
+  if (gnome_desktop_thumbnail_factory_is_disabled (factory, mime_type))
     {
-      Thumbnailer *thumb;
-
-      thumb = g_hash_table_lookup (factory->priv->mime_types_map, mime_type);
-      have_script = thumbnailer_try_exec (thumb);
+      return FALSE;
     }
+
+  g_mutex_lock (&factory->priv->lock);
+
+  Thumbnailer *thumb;
+  thumb = g_hash_table_lookup (factory->priv->mime_types_map, mime_type);
+  have_script = thumbnailer_try_exec (thumb);
+
   g_mutex_unlock (&factory->priv->lock);
 
   if (have_script || mimetype_supported_by_gdk_pixbuf (mime_type))
@@ -1252,6 +1219,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
   double scale;
   int exit_status;
   char *tmpname;
+  gboolean disabled = FALSE;
 
   g_return_val_if_fail (uri != NULL, NULL);
   g_return_val_if_fail (mime_type != NULL, NULL);
@@ -1266,7 +1234,10 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
 
   script = NULL;
   g_mutex_lock (&factory->priv->lock);
-  if (!gnome_desktop_thumbnail_factory_is_disabled (factory, mime_type))
+
+  disabled = gnome_desktop_thumbnail_factory_is_disabled (factory, mime_type);
+
+  if (!disabled)
     {
       Thumbnailer *thumb;
 
@@ -1304,7 +1275,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
     }
 
   /* Fall back to gdk-pixbuf */
-  if (pixbuf == NULL)
+  if (pixbuf == NULL && !disabled)
     {
       pixbuf = _gdk_pixbuf_new_from_uri_at_scale (uri, size, size, TRUE);
 
