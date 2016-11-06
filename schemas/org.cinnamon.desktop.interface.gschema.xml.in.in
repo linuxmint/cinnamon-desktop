@@ -260,5 +260,17 @@
       <default>true</default>
       <_summary>Enable or disable gtk overlay scrollbars</_summary>
     </key>
+    <key name="keyboard-layout-show-flags" type="b">
+      <default>true</default>
+      <_summary>Prefer country flags to group names when showing keyboard layouts.</_summary>
+    </key>
+    <key name="keyboard-layout-use-upper" type="b">
+      <default>false</default>
+      <_summary>Prefer upper-case group names showing keyboard layouts.  False for lowercase.</_summary>
+    </key>
+    <key name="keyboard-layout-prefer-variant-names" type="b">
+      <default>false</default>
+      <_summary>Prefer variant names instead of country codes when showing keyboard layouts.</_summary>
+    </key>
   </schema>
 </schemalist>
