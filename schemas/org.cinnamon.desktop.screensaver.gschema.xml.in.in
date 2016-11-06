@@ -113,6 +113,18 @@
       <_summary>Display album art on the lock screen</_summary>
       <_description>Set this to true to show album art on the lock screen, if available.</_description>
     </key>
+    <key name="allow-keyboard-shortcuts" type="b">
+      <default>true</default>
+      <_summary>Control whether keyboard shortcuts are allowed on the lock screen</_summary>
+    </key>
+    <key name="allow-media-control" type="b">
+      <default>true</default>
+      <_summary>Control whether volume and media player controls are allowed on the lock screen</_summary>
+    </key>
+    <key name="show-info-panel" type="b">
+      <default>true</default>
+      <_summary>Control whether the notification and power widgets are shown on the lock screen</_summary>
+    </key>
     <key name="show-clock" type="b">
       <default>true</default>
       <_summary>Show the clock when the normal wallpaper screensaver is active</_summary>
