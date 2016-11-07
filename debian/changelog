@@ -1,3 +1,46 @@
+cinnamon-desktop (3.2.0) serena; urgency=medium
+
+  [ brownsr ]
+  * avoid some warning messages
+  * avoid some compiler warnings
+
+  [ Maximiliano Curia ]
+  * Migrate away from gnome-common deprecated vars and macros
+
+  [ Michael Webster ]
+  * gnome-bg: Add an introspectable method to GnomeBG to allow setting a GtkImage with a background surface.
+  * gnome-bg.c: use gdk_cairo_surface_create_from_pixbuf() for creating GtkImage surfaces - this handles widget scale factors for us, and gives back the correct size/scale image surface.
+  * gnome-desktop-utils: Add a pam password check function
+  * Add /etc/pam.d/cinnamon-desktop to build and packaging to allow authentication to work (debian-based uses debian/cinnamon-desktop.pam rather than the one in /data.
+  * Add flag image files to be shared with cinnamon, cinnamon-screensaver.
+  * screensaver schema: Add flag, keyboard layout, and clock visiblity keys.
+
+  [ Clement Lefebvre ]
+  * Fixed build
+
+  [ leigh123linux ]
+  * Delete COPYING-DOCS
+  * There is no need for this as there are no docs
+  * hack the path as the macro doesn't work
+
+  [ Maximiliano Curia ]
+  * Make AX_ macros optional
+
+  [ Michael Webster ]
+  * Remove flag files (provided by xapps now)
+  * screensaver schema: Add caps keyboard layout option.
+  * screensaver schema: add albumart preference
+  * gnome-desktop-thumbnail.c: remove hardcoded GdkPixbuf blacklist, and make mimetypes in the "disable" gsettings key apply to the entire thumbnail factory, not just pluggable thumbnailers.
+
+  [ leigh123linux ]
+  * fix fsf address
+
+  [ Michael Webster ]
+  * Move flag, uppercase prefs from screensaver to interface schema, and add a preference for layout name.
+  * Add screensaver lockdown preferences
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 Nov 2016 10:32:05 +0000
+
 cinnamon-desktop (3.0.2) sarah; urgency=medium
 
   [ Michael Webster ]
