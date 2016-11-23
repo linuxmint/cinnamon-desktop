@@ -385,8 +385,30 @@ check_password_thread (GTask        *task,
     if (retval == PAM_SUCCESS)
         retval = pam_authenticate (pamh, 0);
 
-    if (retval == PAM_SUCCESS)
-        retval = pam_acct_mgmt (pamh, 0);
+    if (retval == PAM_SUCCESS) {
+        /**
+         * On most systems, it doesn't matter whether the account modules
+         * are run, or whether they fail or succeed.
+
+         * On some systems, the account modules fail, because they were
+         * never configured properly, but it's necessary to run them anyway
+         * because certain PAM modules depend on side effects of the account
+         * modules having been run.
+         **/
+        pam_acct_mgmt (pamh, 0);
+
+        /**
+         * Each time we successfully authenticate, refresh credentials,
+         * for Kerberos/AFS/DCE/etc.  If this fails, just ignore that
+         * failure and blunder along; it shouldn't matter.
+
+         * Note: this used to be PAM_REFRESH_CRED instead of
+         * PAM_REINITIALIZE_CRED, but Jason Heiss <jheiss@ee.washington.edu>
+         * says that the Linux PAM library ignores that one, and only refreshes
+         * credentials when using PAM_REINITIALIZE_CRED.
+         **/
+        pam_setcred (pamh, PAM_REINITIALIZE_CRED);
+    }
 
     ret = (retval == PAM_SUCCESS);
 
