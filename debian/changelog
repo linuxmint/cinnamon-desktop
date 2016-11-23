@@ -1,3 +1,14 @@
+cinnamon-desktop (3.2.1) serena; urgency=medium
+
+  [ leigh123linux ]
+  * Update PAM for Fedora selinux
+  * Fix includes for libcvc
+
+  [ Didenko Vladimir ]
+  * Port some PAM code from cinnamon-screensaver 3.0: 1) Don't check return value of pam_acct_mgmt. On some systems it can fail because account modules are not configured properly or because this check requires additional privileges; 2) Call pam_setcred() to refresh credentials
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 23 Nov 2016 12:43:16 +0000
+
 cinnamon-desktop (3.2.0) serena; urgency=medium
 
   [ brownsr ]
