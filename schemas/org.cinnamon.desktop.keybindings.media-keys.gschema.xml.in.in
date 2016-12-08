@@ -226,6 +226,11 @@
       <_summary>Rotate display</_summary>
       <_description>Rotate display</_description>
     </key>
+    <key name="video-rotation-lock" type="as">
+      <default>['&lt;Super&gt;o']</default>
+      <_summary>Orientation Lock</_summary>
+      <_description>Orientation Lock</_description>
+    </key>
     <key name="suspend" type="as">
       <default>['XF86Sleep']</default>
       <_summary>Suspend the system</_summary>
