@@ -58,7 +58,6 @@ libcinnamon_desktop_la_LIBADD =	\
 	$(XLIB_LIBS)		\
 	$(LIBM)			\
 	$(CINNAMON_DESKTOP_LIBS)	\
-    $(AUTH_LIBS) \
 	libgsystem.la           \
 	-lrt
 
