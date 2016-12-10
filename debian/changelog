@@ -1,3 +1,17 @@
+cinnamon-desktop (3.2.2) serena; urgency=medium
+
+  [ Dustin Falgout ]
+  * Update pam config for multi-distro compatibility
+
+  [ leigh123linux ]
+  * media-keys: Add Rotation lock support
+
+  [ Michael Webster ]
+  * Remove PAM authentication - this is moved back to cinnamon-screensaver, the only current user - the way we need to use the system is too tightly tied to the UI, so it's better off that it all be together - sorry, maintainers :(
+  * screensaver schema: Add floating widget preference.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 10 Dec 2016 11:52:44 +0000
+
 cinnamon-desktop (3.2.1) serena; urgency=medium
 
   [ leigh123linux ]
