@@ -1,3 +1,5 @@
+#!/usr/bin/dh-exec
+
 usr/share/glib-2.0/schemas
 usr/share/locale
 usr/bin/cinnamon-desktop-migrate-mediakeys /usr/share/cinnamon/
