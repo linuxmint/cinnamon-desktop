@@ -1,3 +1,9 @@
+cinnamon-desktop (3.2.4) serena; urgency=medium
+
+  * Fix dpkg build
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Dec 2016 23:00:05 +0000
+
 cinnamon-desktop (3.2.3) serena; urgency=medium
 
   [ leigh123linux ]
