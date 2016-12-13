@@ -1,4 +1,4 @@
-SUBDIRS = data libcinnamon-desktop libcvc po schemas files
+SUBDIRS = libcinnamon-desktop libcvc po schemas files
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
