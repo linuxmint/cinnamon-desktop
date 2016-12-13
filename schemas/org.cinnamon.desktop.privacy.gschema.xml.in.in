@@ -17,7 +17,7 @@
       <_description>Consider trash and temporary files old after this many days.</_description>
     </key>
     <key name="remember-recent-files" type="b">
-      <default>true</default>
+      <default>false</default>
       <_summary>Whether to remember recently used files</_summary>
       <_description>If FALSE, applications will not remember recently used files.</_description>
     </key>
