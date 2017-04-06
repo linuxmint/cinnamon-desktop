@@ -103,11 +103,25 @@
         Icon theme to use for the panel, nautilus etc.
       </_description>
     </key>
+    <key name="icon-theme-backup" type="s">
+      <default>'gnome'</default>
+      <_summary>Icon Theme Backup</_summary>
+      <_description>
+        This is used to store the current icon theme when high contrast is enabled.
+      </_description>
+    </key>
     <key name="gtk-theme" type="s">
       <default>'Adwaita'</default>
       <_summary>Gtk+ Theme</_summary>
       <_description>
         Basename of the default theme used by gtk+.
+      </_description>
+    </key>
+    <key name="gtk-theme-backup" type="s">
+      <default>'Adwaita'</default>
+      <_summary>Gtk+ Theme Backup</_summary>
+      <_description>
+        This is used to store the current theme when enabling high contrast.
       </_description>
     </key>
     <key name="gtk-key-theme" type="s">

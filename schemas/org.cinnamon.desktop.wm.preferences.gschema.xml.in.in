@@ -222,6 +222,13 @@
         and so forth.
       </_description>
     </key>
+    <key name="theme-backup" type="s">
+      <default>'Adwaita'</default>
+      <_summary>Current theme backup</_summary>
+      <_description>
+        This is used to store the current theme when enabling high contrast.
+      </_description>
+    </key>
     <key name="titlebar-uses-system-font" type="b">
       <default>false</default>
       <_summary>Use standard system font in window titles</_summary>
