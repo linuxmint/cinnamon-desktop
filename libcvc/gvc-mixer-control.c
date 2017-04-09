@@ -1955,7 +1955,7 @@ create_ui_device_from_port (GvcMixerControl* control,
 
         g_hash_table_insert (is_card_port_an_output (port) ? control->priv->ui_outputs : control->priv->ui_inputs,
                              GUINT_TO_POINTER (gvc_mixer_ui_device_get_id (uidevice)),
-                             g_object_ref (uidevice));
+                             uidevice);
 
 
         if (available) {
@@ -2480,7 +2480,7 @@ update_card (GvcMixerControl      *control,
         if (is_new) {
                 g_hash_table_insert (control->priv->cards,
                                      GUINT_TO_POINTER (info->index),
-                                     g_object_ref (card));
+                                     card);
         }
 
         card_ports = gvc_mixer_card_get_ports (card);
