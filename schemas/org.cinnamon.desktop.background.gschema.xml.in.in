@@ -26,14 +26,14 @@
       </_description>
     </key>
     <key name="primary-color" type="s">
-      <default>'#000000'</default>
+      <default>'rgb(0,0,0)'</default>
       <_summary>Primary Color</_summary>
       <_description>
         Left or Top color when drawing gradients, or the solid color.
       </_description>
     </key>
     <key name="secondary-color" type="s">
-      <default>'#000000'</default>
+      <default>'rgb(0,0,0)'</default>
       <_summary>Secondary Color</_summary>
       <_description>
         Right or Bottom color when drawing gradients, not used for solid color.
