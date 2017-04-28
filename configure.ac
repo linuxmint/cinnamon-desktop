@@ -106,6 +106,7 @@ PKG_CHECK_MODULES(CINNAMON_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
                                     xrandr >= $XRANDR_REQUIRED
                                     xext >= $XEXT_REQUIRED
                                     xkeyboard-config
+                                    accountsservice
                                     xkbfile)
 
 PKG_CHECK_MODULES(CVC, gio-2.0 libpulse libpulse-mainloop-glib gobject-2.0)
@@ -128,6 +129,8 @@ main (void)
 if test x"$gnome_cv_timerfd" = x"yes"; then
   AC_DEFINE(HAVE_TIMERFD, 1, [we have the timerfd_create(2) system call])
 fi
+
+AC_SEARCH_LIBS(accounts_user_set_background_file, accountsservice, AC_DEFINE([ACCOUNTSERVICE_BG],1, [accountservice bg support]))
 
 dnl Language Support
 
