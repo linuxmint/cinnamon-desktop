@@ -45,6 +45,15 @@ if test "x$enable_deprecation_flags" = "xyes"; then
    AC_SUBST(DISABLE_DEPRECATED_CFLAGS)
 fi
 
+# Disable accountsservice background support
+
+AC_ARG_ENABLE(accountservice_bg,
+  AS_HELP_STRING([--enable-accountservice_bg],[accountservice bg support]),,enable_accountservice_bg=no)
+  
+if test "x$enable_accountservice_bg" = "xyes"; then
+    AC_DEFINE_UNQUOTED(ACCOUNTSERVICE_BG,1,[accountservice bg support])
+fi
+
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
 

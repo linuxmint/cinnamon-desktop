@@ -13,7 +13,8 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 	    --with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
 	    --with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
-	    --enable-introspection
+	    --enable-introspection \
+	    --enable-accountservice_bg
 
 override_dh_strip:
 	dh_strip -Xdesktop -Xcinnamon --dbg-package=libcvc-dbg
