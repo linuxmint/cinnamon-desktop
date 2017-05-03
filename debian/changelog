@@ -1,3 +1,18 @@
+cinnamon-desktop (3.4.0) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * schemas: Add some new keys for High Contrast
+
+  [ brownsr ]
+  * gvc-mixer-control: fix double-free when setting headset https://git.gnome.org/browse/libgnome-volume-control/commit/?id=a28e23d9006a32c8982ad8bda11fec131c6b36e8 https://git.gnome.org/browse/libgnome-volume-control/commit/?id=25bf3ed75fa604fa73e8b25241119a993fc659d6
+  * gvc-mixer-control: fix reference being leaked https://git.gnome.org/browse/libgnome-volume-control/commit/?id=d52194fce13f4b477afc997ff752233aa6886cbf
+
+  [ leigh123linux ]
+  * remove aclocal from autogen
+  * Add detection for accountsservice background as it's ubuntu only
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 03 May 2017 12:11:53 +0100
+
 cinnamon-desktop (3.2.4) serena; urgency=medium
 
   * Fix dpkg build
