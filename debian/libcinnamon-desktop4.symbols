@@ -23,7 +23,6 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_bg_load_from_preferences@Base 2.0.4
  gnome_bg_new@Base 2.0.4
  gnome_bg_save_to_preferences@Base 2.0.4
- gnome_bg_set_accountsservice_background@Base 2.2.0
  gnome_bg_set_color@Base 2.0.4
  gnome_bg_set_filename@Base 2.0.4
  gnome_bg_set_placement@Base 2.0.4
