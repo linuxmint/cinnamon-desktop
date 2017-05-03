@@ -27,6 +27,8 @@ Author: Soren Sandmann <sandmann@redhat.com>
 
 */
 
+#include "config.h"
+
 #include <string.h>
 #include <math.h>
 #include <stdarg.h>
@@ -324,6 +326,7 @@ bg_gsettings_mapping (GVariant *value,
 	return FALSE;
 }
 
+#if ACCOUNTSERVICE_BG
 void
 gnome_bg_set_accountsservice_background (const gchar *background)
 {
@@ -404,6 +407,7 @@ bail:
   if (variant != NULL)
     g_variant_unref (variant);
 }
+#endif
 
 void
 gnome_bg_load_from_preferences (GnomeBG   *bg,
