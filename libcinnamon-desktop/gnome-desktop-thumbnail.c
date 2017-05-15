@@ -1758,7 +1758,7 @@ access_ok (const gchar *path, uid_t uid, gid_t gid)
 {
     /* user mode will always trip on this */
     if (g_access (path, R_OK|W_OK) != 0) {
-        if (errno != ENOENT)
+        if (errno != ENOENT && errno != EFAULT)
             return FALSE;
         else
             return TRUE;
