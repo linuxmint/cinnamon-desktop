@@ -1,3 +1,13 @@
+cinnamon-desktop (3.4.1) sonya; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Packaging: Don't expect gnome_bg_set_accountsservice_background() in symbols as it might not be there.
+
+  [ Michael Webster ]
+  * gnome-desktop-thumbnail: add EFAULT as an exception to the permission check.  See https://github.com/linuxmint/nemo/commit/b58bea5384436fda9cb6b31f7010f72d3c74e76a.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 23 May 2017 15:31:13 +0100
+
 cinnamon-desktop (3.4.0) sonya; urgency=medium
 
   [ JosephMcc ]
