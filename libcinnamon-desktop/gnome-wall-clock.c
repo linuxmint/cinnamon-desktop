@@ -28,7 +28,6 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-wall-clock.h"
-#include "cdesktop-enums.h"
 #include "gnome-datetime-source.h"
 
 struct _GnomeWallClockPrivate {
@@ -40,6 +39,8 @@ struct _GnomeWallClockPrivate {
 	GSettings    *desktop_settings;
 
 	gboolean time_only;
+
+    CDesktopClockInterval update_interval;
 };
 
 enum {
@@ -78,6 +79,8 @@ gnome_wall_clock_init (GnomeWallClock *self)
 	
 	self->priv->desktop_settings = g_settings_new ("org.cinnamon.desktop.interface");
 	g_signal_connect (self->priv->desktop_settings, "changed", G_CALLBACK (on_schema_change), self);
+
+    gnome_wall_clock_set_update_interval (self, C_DESKTOP_CLOCK_INTERVAL_SETTING);
 
 	update_clock (self);
 }
@@ -215,16 +218,18 @@ update_clock (gpointer data)
 	show_seconds = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-seconds");
 
 	now = g_date_time_new_now_local ();
-	if (show_seconds)
-		expiry = g_date_time_add_seconds (now, 1);
-	else
-		expiry = g_date_time_add_seconds (now, 60 - g_date_time_get_second (now));
-  
+
+    if (self->priv->update_interval == C_DESKTOP_CLOCK_INTERVAL_SECOND) {
+        expiry = g_date_time_add_seconds (now, 1);
+    } else {
+        expiry = g_date_time_add_seconds (now, 60 - g_date_time_get_second (now));
+    }
+
 	if (self->priv->clock_update_id) {
 		g_source_remove (self->priv->clock_update_id);
 		self->priv->clock_update_id = 0;
 	}
-  
+
 	source = _gnome_datetime_source_new (now, expiry, TRUE);
 	g_source_set_priority (source, G_PRIORITY_HIGH);
 	g_source_set_callback (source, update_clock, self, NULL);
@@ -297,4 +302,34 @@ GnomeWallClock *
 gnome_wall_clock_new (void)
 {
     return g_object_new (GNOME_TYPE_WALL_CLOCK, NULL);
+}
+
+/**
+ * gnome_wall_clock_set_update_interval:
+ * @clock: a #GnomeWallClock
+ * @interval: the #CDesktopClockInterval
+ *
+ * Sets the wallclock timer to either seconds, minutes, or by the 'use-seconds' setting
+ *
+ */
+
+void
+gnome_wall_clock_set_update_interval(GnomeWallClock        *clock,
+                                     CDesktopClockInterval  interval)
+{
+    CDesktopClockInterval new_interval;
+
+    if (interval == C_DESKTOP_CLOCK_INTERVAL_SETTING) {
+        gboolean seconds;
+
+        seconds = g_settings_get_boolean (clock->priv->desktop_settings, "clock-show-seconds");
+        new_interval = seconds ? C_DESKTOP_CLOCK_INTERVAL_SECOND :
+                                 C_DESKTOP_CLOCK_INTERVAL_MINUTE;
+    } else {
+        new_interval = interval;
+    }
+
+    clock->priv->update_interval = new_interval;
+
+    update_clock (clock);
 }

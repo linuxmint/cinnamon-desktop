@@ -31,6 +31,7 @@
 #endif
 
 #include <gio/gio.h>
+#include "cdesktop-enums.h"
 
 G_BEGIN_DECLS
 
@@ -61,7 +62,8 @@ GType             gnome_wall_clock_get_type      (void);
 
 const char *      gnome_wall_clock_get_clock     (GnomeWallClock *clock);
 GnomeWallClock *  gnome_wall_clock_new           (void);
-
+void              gnome_wall_clock_set_update_interval (GnomeWallClock        *clock,
+                                                        CDesktopClockInterval  interval);
 G_END_DECLS
 
 #endif

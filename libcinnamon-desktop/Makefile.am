@@ -106,7 +106,7 @@ CDesktopEnums_3_0_gir_FILES = cdesktop-enums.h
 CDesktopEnums_3_0_gir_SCANNERFLAGS = $(WARN_SCANNERFLAGS) --header-only --identifier-prefix=CDesktop
 INTROSPECTION_GIRS += CDesktopEnums-3.0.gir
 CinnamonDesktop-3.0.gir: libcinnamon-desktop.la
-CinnamonDesktop_3_0_gir_INCLUDES = GObject-2.0 Gtk-3.0
+CinnamonDesktop_3_0_gir_INCLUDES = GObject-2.0 Gtk-3.0 CDesktopEnums-3.0
 CinnamonDesktop_3_0_gir_PACKAGES = gdk-pixbuf-2.0 glib-2.0 gobject-2.0 gio-2.0 gtk+-3.0
 CinnamonDesktop_3_0_gir_EXPORT_PACKAGES = cinnamon-desktop
 CinnamonDesktop_3_0_gir_CFLAGS = $(WARN_CFLAGS) -DGNOME_DESKTOP_USE_UNSTABLE_API -I$(top_srcdir)
