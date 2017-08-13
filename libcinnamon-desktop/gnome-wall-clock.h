@@ -61,9 +61,13 @@ struct _GnomeWallClockClass
 GType             gnome_wall_clock_get_type      (void);
 
 const char *      gnome_wall_clock_get_clock     (GnomeWallClock *clock);
+const gchar *     gnome_wall_clock_get_default_time_format (GnomeWallClock *clock);
+const gchar *     gnome_wall_clock_get_default_date_format (GnomeWallClock *clock);
+gchar *           gnome_wall_clock_get_clock_for_format (GnomeWallClock *clock,
+                                                         const gchar    *format_string);
 GnomeWallClock *  gnome_wall_clock_new           (void);
-void              gnome_wall_clock_set_update_interval (GnomeWallClock        *clock,
-                                                        CDesktopClockInterval  interval);
+gboolean          gnome_wall_clock_set_format_string (GnomeWallClock *clock,
+                                                      const gchar    *format_string);
 G_END_DECLS
 
 #endif
