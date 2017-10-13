@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 from gi.repository import Gio
 import os
@@ -45,7 +45,7 @@ def migrate(old, new, array):
                         if ov != "":
                             new_settings.set_strv(k, (ov,))
         except:
-            print "Problem migrating key %s from %s to %s, skipping it" % (k, old, new)
+            print("Problem migrating key %s from %s to %s, skipping it" % (k, old, new))
     Gio.Settings.sync()
 
 def migrate_custom_keys():
@@ -75,33 +75,33 @@ def migrate_custom_keys():
         Gio.Settings.sync()
 
 if os.path.exists(os.path.expanduser("~/.cinnamon/.keybindings-migration-2.4-complete-do-not-erase")):
-    print "Migration has been performed already for this user."
+    print("Migration has been performed already for this user.")
     exit(0)
 
-print "Migrating keybindings from previous release..."
+print("Migrating keybindings from previous release...")
 
 try:
     source = Gio.SettingsSchemaSource.get_default()
 
     if source.lookup(OLD_MEDIA_KEYS_SCHEMA, True) != None:
         migrate(OLD_MEDIA_KEYS_SCHEMA, NEW_MEDIA_KEYS_SCHEMA, False)
-        print "  ... media keybindings: done."
+        print("  ... media keybindings: done.")
 
     if source.lookup(OLD_WM_KEYBINDINGS_SCHEMA, True) != None:
         migrate(OLD_WM_KEYBINDINGS_SCHEMA, NEW_WM_KEYBINDINGS_SCHEMA, True)
-        print "  ... wm keybindings: done."
+        print("  ... wm keybindings: done.")
 
     if source.lookup(OLD_CUSTOM_KEYS_PARENT_SCHEMA, True) != None:
         migrate_custom_keys()
-        print "  ... custom keybindings: done."
+        print("  ... custom keybindings: done.")
 
     Gio.Settings.sync()
 
     open(os.path.expanduser("~/.cinnamon/.keybindings-migration-2.4-complete-do-not-erase"), "w").close()
 
-except Exception, detail:
-    print "  !! %s" % detail
+except Exception as detail:
+    print("  !! %s" % detail)
 
-print "  Done."
+print("  Done.")
 
 exit(0)
