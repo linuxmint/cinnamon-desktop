@@ -1,0 +1,2 @@
+option('deprecation_flags', type: 'boolean', value: true)
+option('pnp-ids-path',      type: 'string',  value: '')
