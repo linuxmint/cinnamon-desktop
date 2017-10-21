@@ -1,9 +1,15 @@
-cinnamon-desktop (3.5.0) UNRELEASED; urgency=medium
+cinnamon-desktop (3.6.0) sylvia; urgency=medium
 
-  [ Michael Webster]
+  [ Michael Webster ]
   * gnome-wall-clock: Improve api, handle seconds timing based on format string
 
- -- Michael Webster <miketwebster@gmail.com>  Sun, 13 Aug 2017 15:02:01 -0400
+  [ leigh123linux ]
+  * Use logind for default
+
+  [ Troy Curtis ]
+  * Trivial syntax fixes to support python3. (#97)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 13 Aug 2017 15:02:01 -0400
 
 cinnamon-desktop (3.4.2) sonya; urgency=medium
 
