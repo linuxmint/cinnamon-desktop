@@ -11,11 +11,6 @@
       <description>The name of the session to use.  Known values are
       "gnome" and "gnome-fallback".</description>
     </key>
-    <key name="screensaver-uses-logind" type="b">
-      <default>true</default>
-      <_summary>Whether or not cinnamon-screensaver listens to logind to lock/unlock itself</_summary>
-      <_description>If true, it listens to logind. Otherwise it listens to consolekit.</_description>
-    </key>
     <key name="session-manager-uses-logind" type="b">
       <default>true</default>
       <_summary>Whether or not cinnamon-session uses logind to suspend/hibernate/shutdown/restart (usually from the shutdown dialog)</_summary>
