@@ -1,7 +1,7 @@
 <schemalist>
   <schema id="org.cinnamon.desktop.session" path="/org/cinnamon/desktop/session/">
     <key name="idle-delay" type="u">
-      <default>600</default>
+      <default>900</default>
       <_summary>Time before session is considered idle</_summary>
       <_description>The number of seconds of inactivity before the session is considered idle.</_description>
     </key>
