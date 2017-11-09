@@ -1,3 +1,10 @@
+cinnamon-desktop (3.6.1) sylvia; urgency=medium
+
+  * Default: Change idle-delay default to 15 min.
+  * Remove obsolete gsettings key
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 09 Nov 2017 12:38:36 +0000
+
 cinnamon-desktop (3.6.0) sylvia; urgency=medium
 
   [ Michael Webster ]
