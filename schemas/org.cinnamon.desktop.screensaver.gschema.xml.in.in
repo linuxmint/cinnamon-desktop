@@ -48,7 +48,7 @@
       </description>
     </key>
     <key name="ask-for-away-message" type="b">
-      <default>true</default>
+      <default>false</default>
       <summary>Whether to ask for an away message when locking the screen</summary>
       <description>
         Whether to ask for an away message when locking the screen.
