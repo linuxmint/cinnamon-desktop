@@ -1,3 +1,9 @@
+cinnamon-desktop (3.6.2) sylvia; urgency=medium
+
+  * Set org.cinnamon.desktop.screensaver ask-for-away-message to False
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 11 Nov 2017 17:16:29 +0000
+
 cinnamon-desktop (3.6.1) sylvia; urgency=medium
 
   * Default: Change idle-delay default to 15 min.
