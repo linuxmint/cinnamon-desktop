@@ -1,5 +1,5 @@
 
-AC_INIT(cinnamon-desktop, 3.6.0)
+AC_INIT(cinnamon-desktop, 3.6.2)
 
 m4_ifdef([AX_IS_RELEASE], [AX_IS_RELEASE([always])])
 

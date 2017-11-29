@@ -1,7 +1,7 @@
 <schemalist>
   <schema id="org.cinnamon.desktop.session" path="/org/cinnamon/desktop/session/">
     <key name="idle-delay" type="u">
-      <default>600</default>
+      <default>900</default>
       <_summary>Time before session is considered idle</_summary>
       <_description>The number of seconds of inactivity before the session is considered idle.</_description>
     </key>
@@ -10,11 +10,6 @@
       <summary>Session type</summary>
       <description>The name of the session to use.  Known values are
       "gnome" and "gnome-fallback".</description>
-    </key>
-    <key name="screensaver-uses-logind" type="b">
-      <default>true</default>
-      <_summary>Whether or not cinnamon-screensaver listens to logind to lock/unlock itself</_summary>
-      <_description>If true, it listens to logind. Otherwise it listens to consolekit.</_description>
     </key>
     <key name="session-manager-uses-logind" type="b">
       <default>true</default>
