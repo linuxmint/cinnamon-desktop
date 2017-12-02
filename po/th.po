@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-07 15:21+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
-"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -38,7 +38,8 @@ msgstr "ไม่สามารถอ่านค่าทรัพยากร
 #: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
-msgstr "เกิดข้อผิดพลาดของ X ที่ไม่ได้เตรียมรับมือไว้ขณะอ่านค่าช่วงของขนาดหน้าจอ"
+msgstr ""
+"เกิดข้อผิดพลาดของ X ที่ไม่ได้เตรียมรับมือไว้ขณะอ่านค่าช่วงของขนาดหน้าจอ"
 
 #: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
@@ -64,8 +65,8 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ตำแหน่ง/ขนาดสำหรับ CRTC %d ที่ร้องขอ มีค่าอยู่นอกขีดจำกัดที่กำหนด: ตำแหน่ง=(%d, %d), "
-"ขนาด=(%d, %d), ค่าสูงสุด=(%d, %d)"
+"ตำแหน่ง/ขนาดสำหรับ CRTC %d ที่ร้องขอ มีค่าอยู่นอกขีดจำกัดที่กำหนด: "
+"ตำแหน่ง=(%d, %d), ขนาด=(%d, %d), ค่าสูงสุด=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -128,7 +129,8 @@ msgstr "กำลังลองโหมดต่างๆ สำหรับ C
 #: ../libcinnamon-desktop/gnome-rr-config.c:1709
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr "CRTC %d: กำลังลองใช้โหมด %dx%d@%dHz โดยแสดงผลที่ %dx%d@%dHz (รอบที่ %d)\n"
+msgstr ""
+"CRTC %d: กำลังลองใช้โหมด %dx%d@%dHz โดยแสดงผลที่ %dx%d@%dHz (รอบที่ %d)\n"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1756
 #, c-format
@@ -157,15 +159,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ขนาดเสมือนที่ต้องการไม่เข้ากับขนาดที่มี: ที่ร้องขอ=(%d, %d), ค่าต่ำสุด=(%d, %d), ค่าสูงสุด=(%d, "
-"%d)"
+"ขนาดเสมือนที่ต้องการไม่เข้ากับขนาดที่มี: ที่ร้องขอ=(%d, %d), ค่าต่ำสุด=(%d, "
+"%d), ค่าสูงสุด=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "จอแสดงผลแสดงเหมือนกัน"
@@ -209,6 +211,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A %e %B"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -280,15 +285,15 @@ msgstr "%l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "นอกจากนี้ GNOME ยังมีระบบรองรับ ที่ช่วยให้นักเขียนโปรแกรม สามารถสร้างโปรแกรมที่ทรงพลัง "
-#~ "และมีความสามารถ"
+#~ "นอกจากนี้ GNOME ยังมีระบบรองรับ ที่ช่วยให้นักเขียนโปรแกรม "
+#~ "สามารถสร้างโปรแกรมที่ทรงพลัง และมีความสามารถ"
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME ประกอบไปด้วย สิ่งที่คุณเห็นอยู่บนจอเกือบทั้งหมด เช่น ตัวจัดการแฟ้ม เว็บเบราว์เซอร์ เมนู "
-#~ "และ โปรแกรมอื่น ๆ อีกมากมาย"
+#~ "GNOME ประกอบไปด้วย สิ่งที่คุณเห็นอยู่บนจอเกือบทั้งหมด เช่น ตัวจัดการแฟ้ม "
+#~ "เว็บเบราว์เซอร์ เมนู และ โปรแกรมอื่น ๆ อีกมากมาย"
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -306,19 +311,21 @@ msgstr "%l:%M %p"
 #~ "เป็นระบบเดสก์ท็อปที่ไม่เหมือนใครในหมู่เดสก์ท็อปที่เป็นซอฟต์แวร์เสรี"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "จุดที่แข็งแกร่งที่สุดของ GNOME ก็คือชุมชนที่เข้มแข็ง ทุก ๆ คน ไม่ว่าจะเป็นใคร "
-#~ "ถนัดเขียนโปรแกรมหรือไม่ ก็สามารถร่วมกันพัฒนา GNOME ให้ดีขึ้นได้"
+#~ "จุดที่แข็งแกร่งที่สุดของ GNOME ก็คือชุมชนที่เข้มแข็ง ทุก ๆ คน "
+#~ "ไม่ว่าจะเป็นใคร ถนัดเขียนโปรแกรมหรือไม่ ก็สามารถร่วมกันพัฒนา GNOME "
+#~ "ให้ดีขึ้นได้"
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "ผู้คนหลายร้อยได้ร่วมกันพัฒนาโปรแกรมสำหรับ GNOME นับแต่เริ่มโครงการเมื่อปี 2540 "
-#~ "และยังมีอีกมาก ที่ช่วยส่งเสริมในทางอื่น ๆ เช่น การแปล เขียนเอกสารคู่มือ และ ตรวจสอบคุณภาพ"
+#~ "ผู้คนหลายร้อยได้ร่วมกันพัฒนาโปรแกรมสำหรับ GNOME นับแต่เริ่มโครงการเมื่อปี "
+#~ "2540 และยังมีอีกมาก ที่ช่วยส่งเสริมในทางอื่น ๆ เช่น การแปล เขียนเอกสารคู่มือ"
+#~ " และ ตรวจสอบคุณภาพ"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "หน้าจอแสดงเหมือนกัน"

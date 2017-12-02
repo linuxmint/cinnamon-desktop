@@ -10,13 +10,13 @@ msgstr ""
 "PO-Revision-Date: 2008-09-10 09:50+0530\n"
 "Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
 "Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2;plural=(n!=1);\n"
-"X-Poedit-Language: Dzongkha\n"
 "X-Poedit-Country: BHUTAN\n"
+"X-Poedit-Language: Dzongkha\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -150,12 +150,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
+msgstr ""
+
+msgid "%A, %B %e"
 msgstr ""
 
 #~ msgid "About GNOME"
@@ -264,45 +267,50 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "ཇི་ནོམ་ནང་ལུ་ གློག་རིམ་ལས་རིམ་པ་ཚུ་གིས་ ནུས་ཤུགས་ཅན་དང་ རྒྱས་སྤྲོས་ལྡན་པའི་ གློག་རིམ་ཚུ་ གསར་"
-#~ "བསྐྲུན་འབད་བཅུག་ནིའི་ གོང་འཕེལ་གོ་སྐབས་ཆ་ཚང་ཅིག་ཡང་ཡོདཔ་ཨིན།"
+#~ "ཇི་ནོམ་ནང་ལུ་ གློག་རིམ་ལས་རིམ་པ་ཚུ་གིས་ ནུས་ཤུགས་ཅན་དང་ རྒྱས་སྤྲོས་ལྡན་པའི་ "
+#~ "གློག་རིམ་ཚུ་ གསར་བསྐྲུན་འབད་བཅུག་ནིའི་ "
+#~ "གོང་འཕེལ་གོ་སྐབས་ཆ་ཚང་ཅིག་ཡང་ཡོདཔ་ཨིན།"
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "ཇི་ནོམ་ནང་ལུ་ ཡིག་སྣོད་འཛིན་སྐྱོང་པ་དང་ ཝེབ་བའརུ་ཟར དཀར་ཆག་ དེ་ལས་ གློག་རིམ་ལེ་ཤ་བརྩིས་ཏེ་ ང་"
-#~ "བཅས་རའི་གློག་རིག་ནང་ མཐོང་མི་མང་ཤོས་རང་ཚུད་དེ་ཡོད།"
+#~ "ཇི་ནོམ་ནང་ལུ་ ཡིག་སྣོད་འཛིན་སྐྱོང་པ་དང་ ཝེབ་བའརུ་ཟར དཀར་ཆག་ དེ་ལས་ "
+#~ "གློག་རིམ་ལེ་ཤ་བརྩིས་ཏེ་ ང་བཅས་རའི་གློག་རིག་ནང་ མཐོང་མི་མང་ཤོས་རང་ཚུད་དེ་ཡོད།"
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "ཇི་ནོམ་འདི་ ཡུ་ནིགསི་བཟུམ་མའི་ རིགས་ཚན་གྱི་ གློག་རིག་བཀོལ་སྤྱོད་རིམ་ལུགས་ཚུ་གི་དོན་ལུ་ སྟོང་པར་དང་ "
-#~ "ལག་ལེན་འཐབ་བཏུབ་ གཏན་ཏོག་ཏོ་ འཛུལ་སྤྱོད་འབད་བཏུབ་པའི་ ཌེཀསི་ཊོཔ་མཐའ་འཁོར་ཅིག་ཨིན།"
+#~ "ཇི་ནོམ་འདི་ ཡུ་ནིགསི་བཟུམ་མའི་ རིགས་ཚན་གྱི་ "
+#~ "གློག་རིག་བཀོལ་སྤྱོད་རིམ་ལུགས་ཚུ་གི་དོན་ལུ་ སྟོང་པར་དང་ ལག་ལེན་འཐབ་བཏུབ་ "
+#~ "གཏན་ཏོག་ཏོ་ འཛུལ་སྤྱོད་འབད་བཏུབ་པའི་ ཌེཀསི་ཊོཔ་མཐའ་འཁོར་ཅིག་ཨིན།"
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "ཇི་ནོམ་གྱིས་ ལག་ལེན་འཐབ་ནི་དང་ འཛུལ་སྤྱོད་ དུས་རྒྱུན་གསར་བཏོན་འབད་ནི་དང་ ལས་ཁང་ལས་རྒྱབ་སྐྱོར་"
-#~ "སྒྲིང་སྒྲིང་འབད་ནི་ལུ་ གཙོ་བོར་བཏོན་མི་ལུ་བརྟེན་ཏེ་ སྟོང་མར་འཐོབ་པའི་ ཌེཀསི་ཊོཔ་མཉེན་ཆས་ཚུ་གི་གྲས་"
-#~ "ལས་ མཐུན་མོང་མ་ཡིན་པ་ཅིག་ལུ་གྱུར་ཏེ་ཡོད།"
+#~ "ཇི་ནོམ་གྱིས་ ལག་ལེན་འཐབ་ནི་དང་ འཛུལ་སྤྱོད་ དུས་རྒྱུན་གསར་བཏོན་འབད་ནི་དང་ "
+#~ "ལས་ཁང་ལས་རྒྱབ་སྐྱོར་སྒྲིང་སྒྲིང་འབད་ནི་ལུ་ གཙོ་བོར་བཏོན་མི་ལུ་བརྟེན་ཏེ་ "
+#~ "སྟོང་མར་འཐོབ་པའི་ ཌེཀསི་ཊོཔ་མཉེན་ཆས་ཚུ་གི་གྲས་ལས་ "
+#~ "མཐུན་མོང་མ་ཡིན་པ་ཅིག་ལུ་གྱུར་ཏེ་ཡོད།"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "ཇི་ནོམ་གྱི་སྟོབས་ཤུགས་སྦོམ་ཤོས་དེ་རང་ མི་སྡེ་སྒྲིང་སྒྲིང་ཡོད་མི་འདི་ཨིན། དེ་ཡང་ ངོ་བོ་ལུ་ ཀོ་ཌིང་གི་རིག་"
-#~ "རྩལ་ཡོད་རུང་མེད་རུང་ མི་ག་གིས་ཡང་ ཇི་ནོམ་ལེགས་བཅོས་གཏང་ནི་ལུ་ ཕན་ཐབས་འབད་ཚུགས།"
+#~ "ཇི་ནོམ་གྱི་སྟོབས་ཤུགས་སྦོམ་ཤོས་དེ་རང་ མི་སྡེ་སྒྲིང་སྒྲིང་ཡོད་མི་འདི་ཨིན། "
+#~ "དེ་ཡང་ ངོ་བོ་ལུ་ ཀོ་ཌིང་གི་རིག་རྩལ་ཡོད་རུང་མེད་རུང་ མི་ག་གིས་ཡང་ "
+#~ "ཇི་ནོམ་ལེགས་བཅོས་གཏང་ནི་ལུ་ ཕན་ཐབས་འབད་ཚུགས།"
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "ཇི་ནོམ་འདི་ སྤྱི་ལོ་༡༩༩༧ ལུ་ འགོ་བཙུགས་ཞིནམ་ལས་ཚུར་ མི་བརྒྱ་ཕྲག་ལེ་ཤ་ཅིག་གིས་ ཇི་ནོམ་གྱི་ཀོཌི་ལུ་ "
-#~ "ཕན་ཐབས་འབད་ཡོདཔ་མ་ཚད་ ལེ་ཤ་ཅིག་གིས་ སྐད་བསྒྱུར་དང་ ཡིག་བཀོད་ སྤུས་ཚད་ལེགས་བཅོས་ཚུ་བརྩིས་ཏེ་ "
+#~ "ཇི་ནོམ་འདི་ སྤྱི་ལོ་༡༩༩༧ ལུ་ འགོ་བཙུགས་ཞིནམ་ལས་ཚུར་ "
+#~ "མི་བརྒྱ་ཕྲག་ལེ་ཤ་ཅིག་གིས་ ཇི་ནོམ་གྱི་ཀོཌི་ལུ་ ཕན་ཐབས་འབད་ཡོདཔ་མ་ཚད་ "
+#~ "ལེ་ཤ་ཅིག་གིས་ སྐད་བསྒྱུར་དང་ ཡིག་བཀོད་ སྤུས་ཚད་ལེགས་བཅོས་ཚུ་བརྩིས་ཏེ་ "
 #~ "གལ་ཆེའི་ཐབས་ལམ་ གཞན་གྱི་ཐོག་ལས་ ཕན་ཐབས་འབད་ཡི།"
 
 #~ msgid "Error reading file '%s': %s"

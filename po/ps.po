@@ -11,12 +11,12 @@ msgstr ""
 "PO-Revision-Date: 2008-07-05 16:39-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
-"Language: ps\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Pashto, Pushto\n"
+"Language: ps\n"
 "X-Poedit-Country: AFGHANISTAN\n"
+"X-Poedit-Language: Pashto, Pushto\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -149,12 +149,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -197,6 +197,9 @@ msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
+msgstr ""
+
+msgid "%A, %B %e"
 msgstr ""
 
 #~ msgid "About GNOME"

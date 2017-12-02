@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2008-09-20 18:51+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
-"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -150,12 +150,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -199,6 +199,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "Informacione mbi GNOME"
@@ -273,15 +276,14 @@ msgstr ""
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
 #~ "GNOME përfshin pjesën më të madhe të çfarë shikoni në kompjuterin tuaj, "
-#~ "përfshirë organizuesin e file, shfletuesin web, menutë, dhe shumë "
-#~ "programe."
+#~ "përfshirë organizuesin e file, shfletuesin web, menutë, dhe shumë programe."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME është një ambient pune për familjen e sistemeve operativë Unix-"
-#~ "like, i përdorueshëm me lehtësi, i qëndrueshëm, i fuqishëm dhe i Lirë."
+#~ "GNOME është një ambient pune për familjen e sistemeve operativë Unix-like, i"
+#~ " përdorueshëm me lehtësi, i qëndrueshëm, i fuqishëm dhe i Lirë."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
@@ -292,11 +294,11 @@ msgstr ""
 #~ "veçanti midis desktop-ëve të lirë."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Fuqia e GNOME është komuniteti që na përkrah. Virtualisht kushdo, me apo "
-#~ "pa aftësi kodimi, mund të kontribojë në përmirësimin e GNOME."
+#~ "Fuqia e GNOME është komuniteti që na përkrah. Virtualisht kushdo, me apo pa "
+#~ "aftësi kodimi, mund të kontribojë në përmirësimin e GNOME."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-08-26 06:22+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <kde-isl@molar.is>\n"
-"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: is\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -29,8 +29,8 @@ msgstr "Óþekkt"
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
-"Ekki tókst að finna útstöð, nota xterm, jafnvel þó svo það muni jafnvel ekki "
-"virka"
+"Ekki tókst að finna útstöð, nota xterm, jafnvel þó svo það muni jafnvel ekki"
+" virka"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -151,12 +151,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -200,6 +200,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %e. %B"
 
 #~ msgid "About GNOME"
 #~ msgstr "Um GNOME"
@@ -287,24 +290,24 @@ msgstr ""
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "Skerpa GNOME á auðvelda notkun og aðgengi, stöðugt útgáfuferli og sterkur "
-#~ "stuðningur frá stórfyrirtækjum gerir GNOME einstakt meðal ókeypis "
-#~ "skjáborðs hugbúnaðar."
+#~ "stuðningur frá stórfyrirtækjum gerir GNOME einstakt meðal ókeypis skjáborðs "
+#~ "hugbúnaðar."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Styrkleiki GNOME samanstendur meðal annars af sterku samfélagi. Persónur "
-#~ "með lágmarks tölvu og forritunarkunnáttu hafa möguleika á að bæta og "
-#~ "aðstoða við þróun GNOME skjáborðsins."
+#~ "Styrkleiki GNOME samanstendur meðal annars af sterku samfélagi. Persónur með"
+#~ " lágmarks tölvu og forritunarkunnáttu hafa möguleika á að bæta og aðstoða "
+#~ "við þróun GNOME skjáborðsins."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Hundruð manna hafa lagt kóða af mörkum síðan GNOME var stofnað 1997. "
-#~ "Margir hafa lagt af mörkum á annan hátt þar á meðal með þýðingum, ritun "
+#~ "Hundruð manna hafa lagt kóða af mörkum síðan GNOME var stofnað 1997. Margir "
+#~ "hafa lagt af mörkum á annan hátt þar á meðal með þýðingum, ritun "
 #~ "hjálpargagna og gæðastjórnun."
 
 #~ msgid "Error reading file '%s': %s"

@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2010-04-21 23:17+0200\n"
 "Last-Translator: Marcel Telka <marcel@telka.sk>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -32,8 +32,8 @@ msgstr ""
 "Nepodarilo sa nájsť terminál. Použije sa xterm, aj napriek tomu, že nemusí "
 "fungovať"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=610571
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
+# * https://bugzilla.gnome.org/show_bug.cgi?id=610571
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
@@ -163,15 +163,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d, "
-"%d), minimum=(%d, %d), maximum=(%d, %d)"
+"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d,"
+" %d), minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -218,6 +218,9 @@ msgstr "%A, %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A, %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "O GNOME"
@@ -283,46 +286,46 @@ msgstr "%A, %l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME obsahuje aj kompletnú vývojovú platformu pre programátorov "
-#~ "aplikácií, ktorá umožňuje vytváranie výkonných a zložitých aplikácií."
+#~ "GNOME obsahuje aj kompletnú vývojovú platformu pre programátorov aplikácií, "
+#~ "ktorá umožňuje vytváranie výkonných a zložitých aplikácií."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME obsahuje väčšinu toho, čo vidíte na svojom počítači, vrátane "
-#~ "správcu súborov, internetového prehliadača, ponúk a veľa aplikácií."
+#~ "GNOME obsahuje väčšinu toho, čo vidíte na svojom počítači, vrátane správcu "
+#~ "súborov, internetového prehliadača, ponúk a veľa aplikácií."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME je slobodné, použiteľné, stabilné a dostupné pracovné prostredie "
-#~ "pre rodinu operačných systémov podobných Unix-u."
+#~ "GNOME je slobodné, použiteľné, stabilné a dostupné pracovné prostredie pre "
+#~ "rodinu operačných systémov podobných Unix-u."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "Zameranie GNOME na použiteľnosť a prístupnosť, pravidelné uvoľňovanie "
-#~ "nových verzií a silné firemné zázemie ho robí jedinečným medzi ostatnými "
+#~ "Zameranie GNOME na použiteľnosť a prístupnosť, pravidelné uvoľňovanie nových"
+#~ " verzií a silné firemné zázemie ho robí jedinečným medzi ostatnými "
 #~ "slobodnými prostrediami."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Najväčšia sila GNOME je silná komunita. Prakticky každý, programátor "
-#~ "alebo neprogramátor, sa môže zapojiť do vylepšovania GNOME."
+#~ "Najväčšia sila GNOME je silná komunita. Prakticky každý, programátor alebo "
+#~ "neprogramátor, sa môže zapojiť do vylepšovania GNOME."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Stovky ľudí prispeli kódom do GNOME od doby, ako vzniklo v roku 1997. "
-#~ "Veľa ďalších prispelo iným významným spôsobom, napríklad prekladmi, "
-#~ "dokumentáciou a kontrolou kvality."
+#~ "Stovky ľudí prispeli kódom do GNOME od doby, ako vzniklo v roku 1997. Veľa "
+#~ "ďalších prispelo iným významným spôsobom, napríklad prekladmi, dokumentáciou"
+#~ " a kontrolou kvality."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Chyba pri čítaní súboru '%s': %s"

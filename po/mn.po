@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2010-03-22 01:21+0200\n"
 "Last-Translator: Badral <badral@openmn.org>\n"
 "Language-Team: Mongolian <openmn-core@lists.sf.net>\n"
-"Language: mn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.3\n"
 
@@ -30,7 +30,8 @@ msgstr "Тодорхойгүй"
 
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "Терминал олдсонгүй. Ажиллах боломжтой байсан ч xterm хэрэглэгдэх болно"
+msgstr ""
+"Терминал олдсонгүй. Ажиллах боломжтой байсан ч xterm хэрэглэгдэх болно"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -152,15 +153,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"Сонгосон виртуал хэмжээ боломжит хэмжээтэй таарахгүй байна. Хүссэн=(%d, %d), "
-"Минимум=(%d, %d), Максимум=(%d, %d)"
+"Сонгосон виртуал хэмжээ боломжит хэмжээтэй таарахгүй байна. Хүссэн=(%d, %d),"
+" Минимум=(%d, %d), Максимум=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -205,6 +206,9 @@ msgstr ""
 msgid "%l:%M %p"
 msgstr ""
 
+msgid "%A, %B %e"
+msgstr ""
+
 #~ msgid "About GNOME"
 #~ msgstr "Гномын тухай"
 
@@ -214,7 +218,6 @@ msgstr ""
 #~ msgid "News"
 #~ msgstr "Мэдээ"
 
-#~| msgid "GNOME Logo"
 #~ msgid "GNOME Library"
 #~ msgstr "GNOME сан"
 
@@ -227,7 +230,6 @@ msgstr ""
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Тайлбарлашгүй GEGL"
 
-#~| msgid "The Squeaky Rubber Gnome"
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "Чахраа Gnome"
 
@@ -271,15 +273,15 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "ГНОМЕ түүнчилэн бүрэн дүүрэн системийн болон хэрэглээний хүчирхэг хэцүү "
-#~ "янз бүрийн програмууд хөгжүүлэх ба үүсгэх суурь агуулна."
+#~ "ГНОМЕ түүнчилэн бүрэн дүүрэн системийн болон хэрэглээний хүчирхэг хэцүү янз "
+#~ "бүрийн програмууд хөгжүүлэх ба үүсгэх суурь агуулна."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "ГНОМЕ таны компьютер харагдах ихэнх програмууд болох файл хянагч, вэб "
-#~ "хөтөч, цэснүүд болон өөр олон х.програмуудыг агуулна."
+#~ "ГНОМЕ таны компьютер харагдах ихэнх програмууд болох файл хянагч, вэб хөтөч,"
+#~ " цэснүүд болон өөр олон х.програмуудыг агуулна."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -296,12 +298,11 @@ msgstr ""
 #~ "програм хангамжуудын хүчирхэг нэгдэл юм."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "ГНОМЕ бол манай хүчирхэг нийгэмлэгийн хамгийн том бүтээл. Коде бичиж "
-#~ "чаддаг чаддаггүй хэн бүхэн ГНОМыг улам сайжруулахад хувь нэмрээ оруулж "
-#~ "чадна."
+#~ "ГНОМЕ бол манай хүчирхэг нийгэмлэгийн хамгийн том бүтээл. Коде бичиж чаддаг "
+#~ "чаддаггүй хэн бүхэн ГНОМыг улам сайжруулахад хувь нэмрээ оруулж чадна."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -324,7 +325,6 @@ msgstr ""
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "»%s« файл жирийн файл эсвэл лавлах биш."
 
-#~| msgid "Error rewinding file '%s': %s"
 #~ msgid "Cannot find file '%s'"
 #~ msgstr "»%s« файл олдсонгүй"
 
@@ -550,7 +550,6 @@ msgstr ""
 #~ msgid "System menu"
 #~ msgstr "Систем цэс"
 
-#, fuzzy
 #~ msgid "Foundation"
 #~ msgstr "Баримтжуулалт:"
 
@@ -644,12 +643,9 @@ msgstr ""
 #~ msgid "German Poo-Caamano"
 #~ msgstr "Герман Poo-Caamano"
 
-#  Name in Japanese is: U7b39 U5c71 U548c U5b8f
 #~ msgid "Kazuhiro Sasayama"
 #~ msgstr "Kazuhiro Sasayama"
 
-#  If your encodings allows it, use ntilde (U00F1) for the 'n'
-#  * of 'Inigo'
 #~ msgid "Inigo Serna"
 #~ msgstr "Inigo Serna"
 

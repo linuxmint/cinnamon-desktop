@@ -11,12 +11,11 @@ msgstr ""
 "POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2010-08-19 09:30+0600\n"
 "Last-Translator: Sahran <sahran@live.com>\n"
-"Language-Team: GNOME Uighur Translation Project <gnome-uighur@yahoogroups."
-"com>\n"
-"Language: \n"
+"Language-Team: GNOME Uighur Translation Project <gnome-uighur@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -163,12 +162,12 @@ msgstr ""
 "لازىملىق مەۋھۇم چوڭلۇق ئىشلەتكىلى بولىدىغان چوڭلۇقتىن چوڭ: ئېھتىياج=(%d، "
 "%d)، ئەڭ كىچىك=(%d، %d)، ئەڭ چوڭ=(%d، %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "نۇسخىلانغان كۆرسەتكۈچلەر"
@@ -212,6 +211,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A، %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -292,17 +294,17 @@ msgstr "%l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME تولۇق يۇمشاق دېتال ئىجادىيەت سۇپىنى ئۆز ئىچىگە ئالغان بولۇپ، "
-#~ "پروگرامما تۈزگۈچىلەرنىڭ تولۇق، مۇرەككەپ يۇمشاق دېتاللارنى تۈزۈشىگە "
-#~ "قۇلايلىق يارىتىپ بېرىدۇ."
+#~ "GNOME تولۇق يۇمشاق دېتال ئىجادىيەت سۇپىنى ئۆز ئىچىگە ئالغان بولۇپ، پروگرامما"
+#~ " تۈزگۈچىلەرنىڭ تولۇق، مۇرەككەپ يۇمشاق دېتاللارنى تۈزۈشىگە قۇلايلىق يارىتىپ "
+#~ "بېرىدۇ."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME كومپيۇتېرىڭىزدا دائىم ئىشلىتىدىغان كۆپ قىسىم يۇمشاق دېتاللار، "
-#~ "مەسىلەن، ھۆججەت باشقۇرغۇچ، توركۆرگۈ، تىزىملىك ۋە باشقا نۇرغۇن "
-#~ "پروگراممىلارنى ئۆز ئىچىگە ئالىدۇ."
+#~ "GNOME كومپيۇتېرىڭىزدا دائىم ئىشلىتىدىغان كۆپ قىسىم يۇمشاق دېتاللار، مەسىلەن،"
+#~ " ھۆججەت باشقۇرغۇچ، توركۆرگۈ، تىزىملىك ۋە باشقا نۇرغۇن پروگراممىلارنى ئۆز "
+#~ "ئىچىگە ئالىدۇ."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -315,28 +317,28 @@ msgstr "%l:%M %p"
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME ئىشلىتىشچانلىق، قوشۇمچە ئىقتىدارغا ئەھمىيەت بېرىدىغان،  نەشر "
-#~ "تارقىتىش قەرەلى قېلىپلاشقان بولۇپ،  كارخانىلارنىڭ ئومۇميۈزلۈك قوللىشىغا "
-#~ "ئېرىشكەن، يۇقىرىقىلار ئۇنى ھەقسىز يۇمشاق دېتاللار ئىچىدىكى ئۈستەلئۈستى "
-#~ "مۇھىتى جەھەتتە ئالاھىدە ئورۇنغا ئىگە قىلغان ."
+#~ "GNOME ئىشلىتىشچانلىق، قوشۇمچە ئىقتىدارغا ئەھمىيەت بېرىدىغان،  نەشر تارقىتىش "
+#~ "قەرەلى قېلىپلاشقان بولۇپ،  كارخانىلارنىڭ ئومۇميۈزلۈك قوللىشىغا ئېرىشكەن، "
+#~ "يۇقىرىقىلار ئۇنى ھەقسىز يۇمشاق دېتاللار ئىچىدىكى ئۈستەلئۈستى مۇھىتى جەھەتتە "
+#~ "ئالاھىدە ئورۇنغا ئىگە قىلغان ."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "GNOME نىڭ كۈچلۈكلۈكى بىزنىڭ كۈچلۈك كوللېكتىپىمىزنىڭ بولغانلىقىدا. "
-#~ "ھەرقانداق ئادەم، مەيلى ئۇنىڭ پروگرامما تۈزۈش ئىقتىدارى بولسۇن ياكى "
-#~ "بولمىسۇن، ئوخشاشلا تۆھپە قوشۇپ GNOME نى ياخشىلىيالايدۇ."
+#~ "GNOME نىڭ كۈچلۈكلۈكى بىزنىڭ كۈچلۈك كوللېكتىپىمىزنىڭ بولغانلىقىدا. ھەرقانداق "
+#~ "ئادەم، مەيلى ئۇنىڭ پروگرامما تۈزۈش ئىقتىدارى بولسۇن ياكى بولمىسۇن، ئوخشاشلا "
+#~ "تۆھپە قوشۇپ GNOME نى ياخشىلىيالايدۇ."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997-يىلى GNOME قۇرۇلۇشى باشلانغاندىن بۇيان، يۈزلىگەن تۆھپىكارلار "
-#~ "ئۈزلۈكسىز رەۋىشتە GNOME غا كود تەقدىم قىلدى.  ئۇنىڭدىن باشقا، تېخىمۇ كۆپ "
-#~ "كىشىلەر تەرجىمانلىق، پۈتۈكچىلىك ۋە سۈپەت كاپالىتى قاتارلىقلارنى ئۆز "
-#~ "ئىچىگە ئالغان مۇھىم تەرەپلەردە تۆھپە كۆرسەتتى."
+#~ "1997-يىلى GNOME قۇرۇلۇشى باشلانغاندىن بۇيان، يۈزلىگەن تۆھپىكارلار ئۈزلۈكسىز "
+#~ "رەۋىشتە GNOME غا كود تەقدىم قىلدى.  ئۇنىڭدىن باشقا، تېخىمۇ كۆپ كىشىلەر "
+#~ "تەرجىمانلىق، پۈتۈكچىلىك ۋە سۈپەت كاپالىتى قاتارلىقلارنى ئۆز ئىچىگە ئالغان "
+#~ "مۇھىم تەرەپلەردە تۆھپە كۆرسەتتى."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' ھۆججەت ئوقۇش خاتالىقى:  %s"

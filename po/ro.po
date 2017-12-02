@@ -14,12 +14,11 @@ msgstr ""
 "PO-Revision-Date: 2010-09-25 15:10+0300\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
-"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);;\n"
 "X-Generator: Virtaal 0.6.1\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -154,8 +153,7 @@ msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
 "%s"
 msgstr ""
-"niciunul dintre modurile selectate nu au fost compatibile cu modurile "
-"posibile:\n"
+"niciunul dintre modurile selectate nu au fost compatibile cu modurile posibile:\n"
 "%s"
 
 #. Translators: the "requested", "minimum", and
@@ -170,12 +168,12 @@ msgstr ""
 "dimensiunea virtuală cerută nu se potrivește dimensiunii disponibile: "
 "cerut=(%d, %d), minim=(%d, %d), maxim=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -222,6 +220,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "Despre GNOME"
@@ -301,21 +302,20 @@ msgstr "%A %l:%M %p"
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME este un desktop liber, accesibil și stabil pentru familia de "
-#~ "sisteme de operare Unix."
+#~ "GNOME este un desktop liber, accesibil și stabil pentru familia de sisteme "
+#~ "de operare Unix."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME pune un accent deosebit pe ușurința în utilizare și accesibilitate, "
-#~ "pe un ciclu scurt de lansare de noi versiuni și pe suportul din partea "
-#~ "marilor corporații, ceea ce îl face unic printre desktopurile Free "
-#~ "Software."
+#~ "GNOME pune un accent deosebit pe ușurința în utilizare și accesibilitate, pe"
+#~ " un ciclu scurt de lansare de noi versiuni și pe suportul din partea marilor"
+#~ " corporații, ceea ce îl face unic printre desktopurile Free Software."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Puterea desktopului GNOME se datoreaza eforturilor comunității proprii. "
 #~ "Practic oricine, cu sau fără abilități de programare, poate contribui la "

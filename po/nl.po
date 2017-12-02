@@ -18,10 +18,10 @@ msgstr ""
 "PO-Revision-Date: 2010-09-12 14:51+0200\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -47,7 +47,8 @@ msgstr "kon de schermhulpbronnen niet verkrijgen (CRTCs, outputs, modes)"
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr ""
-"onafgehandelde X-fout bij het opvragen van het bereik van de schermafmetingen"
+"onafgehandelde X-fout bij het opvragen van het bereik van de "
+"schermafmetingen"
 
 #: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
@@ -172,12 +173,12 @@ msgstr ""
 "vereiste virtuele afmeting past niet binnen de beschikbare afmeting: "
 "aangevraagd=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -225,6 +226,9 @@ msgstr "%A %l:%M:%S %p"
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
 
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
+
 #~ msgid "About GNOME"
 #~ msgstr "Info over Gnome"
 
@@ -246,7 +250,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Het Mysterieuze GEGL"
 
-# Onvertaald gelaten (Reinout en Wouter)
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "The Squeaky Rubber GNOME"
 
@@ -277,7 +280,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "Version"
 #~ msgstr "Versie"
 
-# leverancier
 #~ msgid "Distributor"
 #~ msgstr "Distributeur"
 
@@ -291,41 +293,39 @@ msgstr "%A %l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "Gnome bevat tevens een compleet platform voor softwareontwikkelaars "
-#~ "waarmee krachtige en complexe toepassingen kunnen worden gebouwd."
+#~ "Gnome bevat tevens een compleet platform voor softwareontwikkelaars waarmee "
+#~ "krachtige en complexe toepassingen kunnen worden gebouwd."
 
-# vrij vertaald
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
 #~ "Gnome is hetgeen waarmee u werkt en wat op uw computer zichtbaar is, "
-#~ "waaronder het bestandsbeheer, de menu's, en diverse toepassingen zoals "
-#~ "een web-browser."
+#~ "waaronder het bestandsbeheer, de menu's, en diverse toepassingen zoals een "
+#~ "web-browser."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "Gnome is een vrije (Libre), gebruiksvriendelijke, krachtige en "
-#~ "toegankelijke werkomgeving voor de besturingssystemen die tot de Unix-"
-#~ "familie behoren."
+#~ "Gnome is een vrije (Libre), gebruiksvriendelijke, krachtige en toegankelijke"
+#~ " werkomgeving voor de besturingssystemen die tot de Unix-familie behoren."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "Gnome richt zich op gebruiksvriendelijkheid en toegankelijkheid, het "
-#~ "regelmatig uitbrengen van verbeterde versies, en een krachtige "
-#~ "ondersteuning vanuit het bedrijfsleven. Dit alles zorgt dat Gnome uniek "
-#~ "is binnen de werkomgevingen van de vrije software."
+#~ "regelmatig uitbrengen van verbeterde versies, en een krachtige ondersteuning"
+#~ " vanuit het bedrijfsleven. Dit alles zorgt dat Gnome uniek is binnen de "
+#~ "werkomgevingen van de vrije software."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "De grootste kracht van Gnome is onze hechte gemeenschap. Bijna iedereen "
-#~ "kan bijdragen aan het verbeteren van Gnome, ook degenen die niet kunnen "
+#~ "De grootste kracht van Gnome is onze hechte gemeenschap. Bijna iedereen kan "
+#~ "bijdragen aan het verbeteren van Gnome, ook degenen die niet kunnen "
 #~ "programmeren."
 
 #~ msgid ""
@@ -419,7 +419,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "Co_mment:"
 #~ msgstr "Op_merking:"
 
-# verkennen/bladeren
 #~ msgid "Browse"
 #~ msgstr "Bladeren"
 
@@ -489,7 +488,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "Unable to load header image: %s"
 #~ msgstr "Kon header-image niet laden: %s"
 
-# het logo van Gnome/het Gnome-logo
 #~ msgid "Could not locate the GNOME logo."
 #~ msgstr "Kon het Gnome-logo niet vinden."
 
@@ -511,6 +509,5 @@ msgstr "%A %l:%M %p"
 #~ msgid "Developers"
 #~ msgstr "Ontwikkelaars"
 
-# zou ook onvertaald kunnen blijven
 #~ msgid "The End!"
 #~ msgstr "Dit is het einde!"

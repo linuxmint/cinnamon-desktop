@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2012-03-17 19:15-0500\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: QIRIMTATARCA <tilde-birlik-meydan@lists.sourceforge.net>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -28,8 +28,8 @@ msgstr "Namalüm"
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr "Bir terminal tapılalmay, xterm qullanıla, belki çalışmasa da"
 
-# tüklü
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
+# tüklü
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
@@ -152,10 +152,10 @@ msgstr ""
 "saylanğan tarzlarnıñ hiç biri mümkün tarzlar ile qabili telif degil edi:\n"
 "%s"
 
-# tüklü
 #. Translators: the "requested", "minimum", and
 #. * "maximum" words here are not keywords; please
 #. * translate them as usual.
+# tüklü
 #: ../libcinnamon-desktop/gnome-rr-config.c:1838
 #, c-format
 msgid ""
@@ -165,12 +165,12 @@ msgstr ""
 "talap etilgen sanal ölçü faydalanılışlı ölçüge sığmay: istengen=(%d, %d), "
 "asğariy=(%d, %d), azamiy=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -217,6 +217,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Küzgü Ekranları"
@@ -288,8 +291,8 @@ msgstr "%A %l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME bir de uyğulama programcıları içün qudretli ve pıtraqlı "
-#~ "uyğulamalarnı icat etebilecekleri tam bir inkişaf platformasını dahil ete."
+#~ "GNOME bir de uyğulama programcıları içün qudretli ve pıtraqlı uyğulamalarnı "
+#~ "icat etebilecekleri tam bir inkişaf platformasını dahil ete."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -305,7 +308,6 @@ msgstr "%A %l:%M %p"
 #~ "GNOME, Unix-vari işletim sistemleri ailesi içün Serbest, qullanışlı, "
 #~ "istiqrarlı, irişilebilir bir masaüstü çevresidir."
 
-# tüklü
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
@@ -314,14 +316,13 @@ msgstr "%A %l:%M %p"
 #~ "döngüsi ve küçlü korporativ destegi, onı Serbest Yazılım masaüstüleri "
 #~ "arasında emsalsiz yapar."
 
-# tüklü
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOME'nıñ eñ büyük küçü bizim küçlü toplulığımızdır. Herkes deyerlik, "
-#~ "kodlama melekeleri olsa da olmasa da, GNOME'nı daa yahşı yapmaq içün "
-#~ "hisse qoşabilir."
+#~ "kodlama melekeleri olsa da olmasa da, GNOME'nı daa yahşı yapmaq içün hisse "
+#~ "qoşabilir."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -329,20 +330,18 @@ msgstr "%A %l:%M %p"
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "1997'de başlatılğanından berli yüzlerce insan GNOME'ğa kod hissesi qoştı; "
-#~ "çoq daası, tercimeler, vesiqalandırma ve keyfiyet kontroli dahil olmaq "
-#~ "üzre, başqa mühim yollar ile hisse qoştılar."
+#~ "çoq daası, tercimeler, vesiqalandırma ve keyfiyet kontroli dahil olmaq üzre,"
+#~ " başqa mühim yollar ile hisse qoştılar."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' dosyesini oquğanda hata: %s"
 
-# tüklü
 #~ msgid "Error rewinding file '%s': %s"
 #~ msgstr "'%s' dosyesi keri çırmalğanda hata: %s"
 
 #~ msgid "No name"
 #~ msgstr "İsimsiz"
 
-# tüklü
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "'%s' muntazam bir dosye ya da cilbent degildir."
 
@@ -358,7 +357,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "No URL to launch"
 #~ msgstr "Fırlatılacaq URL yoq"
 
-# tüklü
 #~ msgid "Not a launchable item"
 #~ msgstr "Fırlatılabilir bir unsur degil"
 
@@ -377,10 +375,8 @@ msgstr "%A %l:%M %p"
 #~ msgid "RANDR extension version 1.2 or later is not present"
 #~ msgstr "Sürüm 1.2 yaki daa soñraki RANDR uzantısı bulunmay"
 
-#, fuzzy
 #~ msgid "Unknown"
 #~ msgstr "Namalüm"
 
-#, fuzzy
 #~ msgid "Error cannot find file id '%s'"
 #~ msgstr "'%s' dosyesi tapılalmay"

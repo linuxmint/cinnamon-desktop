@@ -61,7 +61,7 @@ enum {
 G_DEFINE_TYPE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
 
 /* Defaults */
-#define DATE_ONLY             (_("%A %B %e"))
+#define DATE_ONLY             (_("%A, %B %e"))
 #define NO_DATE               ("")
 #define WITH_DATE_24H_SECONDS (_("%A %B %e, %R:%S"))
 #define WITH_DATE_12H_SECONDS (_("%A %B %e, %l:%M:%S %p"))

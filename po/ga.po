@@ -13,12 +13,11 @@ msgstr ""
 "PO-Revision-Date: 2009-08-21 03:00-0600\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
-"Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n"
-"%10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
+"Language: ga\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n%10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -39,7 +38,8 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "níorbh fhéidir acmhainní an scáileáin a fháil (CRTCanna, aschur, móid)"
+msgstr ""
+"níorbh fhéidir acmhainní an scáileáin a fháil (CRTCanna, aschur, móid)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
@@ -160,12 +160,12 @@ msgstr ""
 "ní oiriúnaíonn an mhéid fhíorúil riachtanach an mhéid atá le fáil: "
 "iarrtha=(%d, %d), íosta=(%d, %d), uasta=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -212,6 +212,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "About GNOME"
 #~ msgstr "Maidir le GNOME"
@@ -300,17 +303,17 @@ msgstr "%A %l:%M %p"
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "Tá GNOME leithleach i measc na deasc Bogearraí Saor mar gheall ar a "
-#~ "fhócas ar inúsáidteacht agus ar inrochtaineacht, a thimthriall eisiúna "
-#~ "rialta, agus a thacaíocht chorporáide láidir."
+#~ "Tá GNOME leithleach i measc na deasc Bogearraí Saor mar gheall ar a fhócas "
+#~ "ar inúsáidteacht agus ar inrochtaineacht, a thimthriall eisiúna rialta, agus"
+#~ " a thacaíocht chorporáide láidir."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Is é an neart GNOME is mó ná ár gcomhphobal láidir. Is féidir le hionann "
-#~ "is duine ar bith, le scileanna códaithe nó gan, páirt a ghlacadh chun "
-#~ "GNOME a fheabhsú."
+#~ "Is é an neart GNOME is mó ná ár gcomhphobal láidir. Is féidir le hionann is "
+#~ "duine ar bith, le scileanna códaithe nó gan, páirt a ghlacadh chun GNOME a "
+#~ "fheabhsú."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

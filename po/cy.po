@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2006-03-28 13:36+0100\n"
 "Last-Translator: Gareth Bowker <tgb@tgb.org.uk>\n"
 "Language-Team: Cymraeg <gnome-cy@pengwyn.linux.org.uk>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Language: \n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -149,12 +149,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Y GEGL Rhyfeddol"
@@ -272,8 +275,8 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "Mae GNOME hefyd yn cynnwys llwyfan datblygaeth cyflawn ar gyfer "
-#~ "rhaglennwyr rhaglennu, sy'n caniatau creu rhaglenni pwerus a chymleth."
+#~ "Mae GNOME hefyd yn cynnwys llwyfan datblygaeth cyflawn ar gyfer rhaglennwyr "
+#~ "rhaglennu, sy'n caniatau creu rhaglenni pwerus a chymleth."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -295,12 +298,12 @@ msgstr ""
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "Mae canolbwyntiad GNOME ar ddefnyddioldeb a hygyrchedd, cylchdro rhyddhau "
-#~ "rheolaidd, a chefnogaeth corffforaethol gref yn ei wneud e'n unigryw "
-#~ "ymysg penbyrddau Meddalwedd Rhydd."
+#~ "rheolaidd, a chefnogaeth corffforaethol gref yn ei wneud e'n unigryw ymysg "
+#~ "penbyrddau Meddalwedd Rhydd."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Cryfder mwyaf GNOME yw ein cymuned gref. Gall bron unrhywun, gyda neu heb "
 #~ "sgiliau rhaglennu, gyfrannu at wella GNOME."
@@ -310,8 +313,8 @@ msgstr ""
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Mae cannoedd o bobl wedi cyfrannu côd i GNOME ers iddo gychwyn yn 1997; "
-#~ "mae llawer eraill wedi cyfrannu mewn ffyrdd pwysig eraill, yn cynnwys "
+#~ "Mae cannoedd o bobl wedi cyfrannu côd i GNOME ers iddo gychwyn yn 1997; mae "
+#~ "llawer eraill wedi cyfrannu mewn ffyrdd pwysig eraill, yn cynnwys "
 #~ "cyfieithiadau, dogfenniaeth, a sicrhau ansawdd."
 
 #~ msgid "Error reading file '%s': %s"
@@ -519,16 +522,15 @@ msgstr ""
 #~ msgstr "Dewislen system"
 
 #~ msgid ""
-#~ "GNOME is developed by an active community of volunteers who want to "
-#~ "provide a desktop and a suite of user friendly applications. Because "
-#~ "GNOME needs documentors, translators, and many other types of people, "
-#~ "virtually anyone, with or without coding skills, can contribute to GNOME."
+#~ "GNOME is developed by an active community of volunteers who want to provide "
+#~ "a desktop and a suite of user friendly applications. Because GNOME needs "
+#~ "documentors, translators, and many other types of people, virtually anyone, "
+#~ "with or without coding skills, can contribute to GNOME."
 #~ msgstr ""
 #~ "Mae GNOME yn cael ei ddatblygu gan gymuned gweithgar o wirfoddolwyr sydd "
-#~ "eisiau darparu penbwrdd a nifer o rhaglenni sy'n gyfeillgar i "
-#~ "ddefnyddwyr. Gan fod angen dogfennwyr, cyfieithwyr a sawl math arall o "
-#~ "bobl, gall bron unrhywun, gyda neu heb sgiliau rhaglennu, gyfrannu at "
-#~ "GNOME."
+#~ "eisiau darparu penbwrdd a nifer o rhaglenni sy'n gyfeillgar i ddefnyddwyr. "
+#~ "Gan fod angen dogfennwyr, cyfieithwyr a sawl math arall o bobl, gall bron "
+#~ "unrhywun, gyda neu heb sgiliau rhaglennu, gyfrannu at GNOME."
 
 #~ msgid "Download"
 #~ msgstr "Lawrlwytho"

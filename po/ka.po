@@ -12,12 +12,11 @@ msgstr ""
 "POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2008-03-28 04:16+0100\n"
 "Last-Translator: Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@gnome.org>\n"
-"Language-Team: Georgian <http://mail.gnome.org/mailman/listinfo/gnome-ge-"
-"list>\n"
-"Language: ka\n"
+"Language-Team: Georgian <http://mail.gnome.org/mailman/listinfo/gnome-ge-list>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -152,12 +151,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -200,6 +199,9 @@ msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
+msgstr ""
+
+msgid "%A, %B %e"
 msgstr ""
 
 #~ msgid "About GNOME"
@@ -274,8 +276,8 @@ msgstr ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "გნომი შეიცავს თქვენი კომპიუტერისთვის საჭირო ძირითად გადაწყვეტებს, მათ "
-#~ "შორის ფაილ მენეჯერს, ვებ-ბრაუზერს, მენიუებს და მრავალ პროგრამას."
+#~ "გნომი შეიცავს თქვენი კომპიუტერისთვის საჭირო ძირითად გადაწყვეტებს, მათ შორის "
+#~ "ფაილ მენეჯერს, ვებ-ბრაუზერს, მენიუებს და მრავალ პროგრამას."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -288,13 +290,13 @@ msgstr ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "გნომის მთავარი მიზანია სიმარტივე და მისაწვდომობა, რეგულარული განახლებები "
-#~ "და მძლავრი კორპორატიული მხარდაჭერა. სწორედ ამიტომ ის უნიკალურია "
-#~ "თავისუფალი დესკტოპ სისტემებს შორის."
+#~ "გნომის მთავარი მიზანია სიმარტივე და მისაწვდომობა, რეგულარული განახლებები და "
+#~ "მძლავრი კორპორატიული მხარდაჭერა. სწორედ ამიტომ ის უნიკალურია თავისუფალი "
+#~ "დესკტოპ სისტემებს შორის."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "გნომის მთავარი ძალა თვით მომხმარებლებშია, ყველას შეუძლია პროგრამირების "
 #~ "ცოდნის გარეშე გააუმჯობესოს გნომი."
@@ -304,9 +306,9 @@ msgstr ""
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997 წლიდან ასობით ადამიანმა ინტერნეტის მეშვეობით მიიღო მონაწილეობა "
-#~ "გნომის პროექტში, არა მარტო პროგრამირებით, არამედ თარგმნით, მისი "
-#~ "ტესტირებით და შეცდომათა გასწორებით."
+#~ "1997 წლიდან ასობით ადამიანმა ინტერნეტის მეშვეობით მიიღო მონაწილეობა გნომის "
+#~ "პროექტში, არა მარტო პროგრამირებით, არამედ თარგმნით, მისი ტესტირებით და "
+#~ "შეცდომათა გასწორებით."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "შეცდომა '%s' ფაილის წაკითხვისას: %s"
@@ -317,7 +319,6 @@ msgstr ""
 #~ msgid "No name"
 #~ msgstr "სახელის გარეშე"
 
-#  ”რეგულარული ფაილი” არაა მართებული, ”ჩვეულებრივი ფაილი” სჯობს. ”რეგულარული” ქართულში გერმანული მნიშვნელობითაა დამკვიდრებული, ანუ ნიშნავს რაღაც განმეორებად პროცესს. ტექსტში კი ის ინგლისური მნიშვნელობითაა, რა თქმა უნდა, ნახმარი, სადაც ნიშნავს ჩვეულებრივს, მართებულს, რიგითს და ა.შ.
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "ფაილი '%s' არ არის ჩვეულებრივი ფაილი ან დასტა"
 

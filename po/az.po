@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2003-08-11 17:38+0200\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
 "Language-Team: Azerbaijani <gnome@azitt.com>\n"
-"Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: az\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -146,12 +146,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -195,6 +195,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Mistik GEGL"
@@ -265,7 +268,6 @@ msgstr ""
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "GNOME Masa Üstü Haqqında"
 
-#, fuzzy
 #~ msgid "Know more about GNOME"
 #~ msgstr "GNOME Haqqında"
 
@@ -273,38 +275,38 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME eyni zamanda inkişafçılara qarışıq və güclü tə'minatlar yaratma "
-#~ "imkanı verən inkişaf platformunu da daxil edir."
+#~ "GNOME eyni zamanda inkişafçılara qarışıq və güclü tə'minatlar yaratma imkanı"
+#~ " verən inkişaf platformunu da daxil edir."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "Kompüterinizdə ehtiyacınız olan hər şeyi GNOME daxil edir. Bunun içində "
-#~ "fayl idarəçisi, menyular və veb səyyahı kimi bir çox proqram daxildir."
+#~ "Kompüterinizdə ehtiyacınız olan hər şeyi GNOME daxil edir. Bunun içində fayl"
+#~ " idarəçisi, menyular və veb səyyahı kimi bir çox proqram daxildir."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME, Unix-bənzəri əməliyyat sistemləri ailələri üçün sərbəst, "
-#~ "işlədilməsi asand, güclü, yetişmə qabiliyyətli masa üstü mühitidir."
+#~ "GNOME, Unix-bənzəri əməliyyat sistemləri ailələri üçün sərbəst, işlədilməsi "
+#~ "asand, güclü, yetişmə qabiliyyətli masa üstü mühitidir."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "GNOME'un istifadə asandlığı və yetişmə qabiliyyəti, müntəzəm buraxılış "
-#~ "dövrəsi və güclü korporativ arxa ona diqər Sərbəst Tə'minatlı masa "
-#~ "üstüləri arasında xüsusi yer verir."
+#~ "dövrəsi və güclü korporativ arxa ona diqər Sərbəst Tə'minatlı masa üstüləri "
+#~ "arasında xüsusi yer verir."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "GNOME'un ən böyük gücü onun güclü cəmiyyətidir. Proqramlaşdırma "
-#~ "qabiliyyəti olan və olmayan hamı GNOME layihəsini daha da gözəlləşdirmək "
-#~ "üçün ona dəstək verə bilər."
+#~ "GNOME'un ən böyük gücü onun güclü cəmiyyətidir. Proqramlaşdırma qabiliyyəti "
+#~ "olan və olmayan hamı GNOME layihəsini daha da gözəlləşdirmək üçün ona dəstək"
+#~ " verə bilər."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

@@ -13,13 +13,13 @@ msgstr ""
 "PO-Revision-Date: 2007-12-21 15:05+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
-"Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ne\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "First-Translator: Suman Raj Tiwari <tiwarisuman@hotmail.com>\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -152,12 +152,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -201,6 +201,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "रहस्यमय GEGL"
@@ -281,46 +284,46 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "अनुप्रयोग कार्यक्रमहरूको लागि जिनोमले पनि शक्तिशाली र जटिल अनुप्रयोगहरूको सिर्जनालाई "
-#~ "अनुमति दिँदै एउटा पुर्ण विकास मञ्च समावेश गर्दछ ।"
+#~ "अनुप्रयोग कार्यक्रमहरूको लागि जिनोमले पनि शक्तिशाली र जटिल अनुप्रयोगहरूको "
+#~ "सिर्जनालाई अनुमति दिँदै एउटा पुर्ण विकास मञ्च समावेश गर्दछ ।"
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "जिनोमले तपाईँले आफ्नो कम्प्युरटरमा देखेको फाइल प्रबन्धक, वेब ब्राउजर, मेनुहरू र धेरै "
-#~ "अनुप्रयोगहरू समेत धेरै जसो समावेश गर्दछ ।"
+#~ "जिनोमले तपाईँले आफ्नो कम्प्युरटरमा देखेको फाइल प्रबन्धक, वेब ब्राउजर, "
+#~ "मेनुहरू र धेरै अनुप्रयोगहरू समेत धेरै जसो समावेश गर्दछ ।"
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "सञ्चालन प्रणालीको युनिक्स-जस्तै परिवारका लागि जीनोम स्वतन्त्र, उपयोगी, स्थायी, "
-#~ "पहुँचयोग्य डेस्कटप परिवेश हो ।"
+#~ "सञ्चालन प्रणालीको युनिक्स-जस्तै परिवारका लागि जीनोम स्वतन्त्र, उपयोगी, "
+#~ "स्थायी, पहुँचयोग्य डेस्कटप परिवेश हो ।"
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "प्रयोगात्मकता र पहुँचतामा जीनोमको फोकस, नियमित निष्कासन चक्र, र वलियो संगठित "
-#~ "समर्थनले यसलाई स्वतन्त्र सफ्टवेयर डेस्कटपहरू मध्ये अद्वितीय बनाउँदछ ।"
+#~ "प्रयोगात्मकता र पहुँचतामा जीनोमको फोकस, नियमित निष्कासन चक्र, र वलियो संगठित"
+#~ " समर्थनले यसलाई स्वतन्त्र सफ्टवेयर डेस्कटपहरू मध्ये अद्वितीय बनाउँदछ ।"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "जीनोमको सबै भन्दा ठूलो आधार भनेको हाम्रो बलियो समुदाय नै हो । वास्तविक रूपमा जो "
-#~ "कोहीले, सङ्केतन दक्षता वा दक्षता बिना नै, जीनोमलाई राम्रो बनाउन योगदान गर्न सक्दछ "
-#~ "। "
+#~ "जीनोमको सबै भन्दा ठूलो आधार भनेको हाम्रो बलियो समुदाय नै हो । वास्तविक रूपमा"
+#~ " जो कोहीले, सङ्केतन दक्षता वा दक्षता बिना नै, जीनोमलाई राम्रो बनाउन योगदान "
+#~ "गर्न सक्दछ । "
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "१९९७ मा जीनोम सुरआत भए देखि नै सयौं मानिसहरूले जीनोममा कोड योगदान गर्नुभएको छ; धेरै "
-#~ "धेरैले अनुवाद, मिसिलिकरण, र गुणात्मक आश्वासन समेत गरेर अन्य महत्वपूर्ण तरिकाले योगदान "
-#~ "गर्नुभएको छ,"
+#~ "१९९७ मा जीनोम सुरआत भए देखि नै सयौं मानिसहरूले जीनोममा कोड योगदान गर्नुभएको "
+#~ "छ; धेरै धेरैले अनुवाद, मिसिलिकरण, र गुणात्मक आश्वासन समेत गरेर अन्य "
+#~ "महत्वपूर्ण तरिकाले योगदान गर्नुभएको छ,"
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' फाइल पढ्दा त्रुटि: %s"

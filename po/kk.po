@@ -12,13 +12,13 @@ msgstr ""
 "PO-Revision-Date: 2010-09-15 12:34+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
-"Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: kk\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Poedit-Language: Kazakh\n"
 "X-Poedit-Country: KAZAKHSTAN\n"
+"X-Poedit-Language: Kazakh\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -165,12 +165,12 @@ msgstr ""
 "сұралған виртуалды өлшемі қолжетерлік өлшемге сыймайды: сұралған=(%d, %d), "
 "минимум=(%d, %d), максимум=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -214,6 +214,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %e %b"
 
 #~ msgid "About GNOME"
 #~ msgstr "GNOME туралы"
@@ -304,8 +307,8 @@ msgstr ""
 #~ "тұрақты шығару мерзіміне аса үлкен көңіл бөледі."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOME күші - оның қоғамдастықта. GNOME жобасы ерекшеліктерінен бірі - "
 #~ "бағдарлама құра алмайтын адам да оны көркейтуде өз үлесін қоса алады."
@@ -316,8 +319,8 @@ msgstr ""
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "GNOME жобасы 1997 жылда басталғаннан бері бастапқы кодты жазуға жүздеген "
-#~ "адам өз үлестерін қосқан, бірақ оны аудару мен көркейтуде одан да көп "
-#~ "адам атсалысты."
+#~ "адам өз үлестерін қосқан, бірақ оны аудару мен көркейтуде одан да көп адам "
+#~ "атсалысты."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' файлын оқу қатесі: %s"
@@ -331,7 +334,6 @@ msgstr ""
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "'%s' файлы қалыпты файл не бума емес"
 
-#~| msgid "Error cannot find file id '%s'"
 #~ msgid "Cannot find file '%s'"
 #~ msgstr "'%s' файлы табылмады"
 

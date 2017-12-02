@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2010-04-03 22:10+0800\n"
 "Last-Translator: Ahmed Noor Kader Mustajir Md Eusoff <sir.ade@gmail.com>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sf.net>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -157,12 +157,12 @@ msgstr ""
 "saiz maya yang diperlukan tidak muat saiz sedia ada: diminta=(%d, %d), "
 "minimum=(%d, %d), maksimum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -209,6 +209,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "Perihal GNOME"
@@ -288,20 +291,20 @@ msgstr "%A %l:%M %p"
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME adalah persekitaran desktop yang Bebas, bolehguna, stabil, "
-#~ "bolehcapai bagi sistem pengoperasian keluarga seperti-Unix."
+#~ "GNOME adalah persekitaran desktop yang Bebas, bolehguna, stabil, bolehcapai "
+#~ "bagi sistem pengoperasian keluarga seperti-Unix."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "Tumpuan GNOME pada kebolehgunaan dan kebolehcapaian, kitaran keluaran "
-#~ "biasa, dan sokongan korporat yang kuat membuatkan ia unik di antara "
-#~ "desktop Perisian Bebas."
+#~ "Tumpuan GNOME pada kebolehgunaan dan kebolehcapaian, kitaran keluaran biasa,"
+#~ " dan sokongan korporat yang kuat membuatkan ia unik di antara desktop "
+#~ "Perisian Bebas."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Kekuatan GNOME terkuat adalah komuniti yang kuat. Secara virtual semua "
 #~ "orang, dengan atau tanpa kemahiran mengkod, boleh menyumbang untuk "

@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2004-09-10 10:21+0200\n"
 "Last-Translator: Amila Akagić <bono@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@lugbih.org>\n"
-"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bs\n"
 "X-Generator: KBabel 1.3\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -150,12 +150,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -199,6 +199,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Misteriozni GEGL"
@@ -269,7 +272,6 @@ msgstr ""
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "O GNOME desktopu"
 
-#, fuzzy
 #~ msgid "Know more about GNOME"
 #~ msgstr "O GNOME-u"
 
@@ -277,8 +279,8 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME sadrži i razvojnu platformu koja omogućava programerima da prave "
-#~ "nove složene i moćne programe."
+#~ "GNOME sadrži i razvojnu platformu koja omogućava programerima da prave nove "
+#~ "složene i moćne programe."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -299,12 +301,12 @@ msgstr ""
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "Težnje GNOME-a ka upotrebljivosti i pristupačnosti, redovnom postupku "
-#~ "izdavanja i snažna podrška preduzeća ga izdvajaju među desktop-ima "
-#~ "slobodnog softvera."
+#~ "izdavanja i snažna podrška preduzeća ga izdvajaju među desktop-ima slobodnog"
+#~ " softvera."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Najveća snaga GNOME-a je naša čvrsta zajednica. Gotovo svako, sa ili bez "
 #~ "programerskih sposobnosti, može doprinijeti da GNOME bude još bolji."

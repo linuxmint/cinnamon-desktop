@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2010-09-27 22:48+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
-"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -117,8 +117,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"la sortida %s no permet utilitzar els mateixos paràmetres que l'altra "
-"sortida clonada:\n"
+"la sortida %s no permet utilitzar els mateixos paràmetres que l'altra sortida clonada:\n"
 "el mode existent = %d, el mode nou = %d\n"
 "les coordenades existents = (%d, %d), les coordenades noves (%d, %d)\n"
 "la rotació existent = %s, la rotació nova = %s"
@@ -137,8 +136,8 @@ msgstr "S'estan provant els modes per la pantalla CRTC %d\n"
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
 msgstr ""
-"Pantalla CRTC %d: s'està provant el mode %dx%d@%dHz amb la sortida a %dx%d@"
-"%dHz (intent %d)\n"
+"Pantalla CRTC %d: s'està provant el mode %dx%d@%dHz amb la sortida a "
+"%dx%d@%dHz (intent %d)\n"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1756
 #, c-format
@@ -170,12 +169,12 @@ msgstr ""
 "la mida virtual sol·licitada no s'ajusta a la mida disponible: "
 "sol·licitada=(%d, %d), mínima=(%d, %d), màxima=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Pantalles duplicades"
@@ -219,6 +218,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %e %B"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -303,27 +305,27 @@ msgstr "%l:%M %p"
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "El GNOME inclou gairebé tot el que veieu al vostre ordinador: el gestor "
-#~ "de fitxers, el navegador web, els menús i moltes altres aplicacions."
+#~ "El GNOME inclou gairebé tot el que veieu al vostre ordinador: el gestor de "
+#~ "fitxers, el navegador web, els menús i moltes altres aplicacions."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "El GNOME és un entorn d'escriptori lliure, usable, estable i accessible "
-#~ "per a la família de sistemes operatius tipus Unix."
+#~ "El GNOME és un entorn d'escriptori lliure, usable, estable i accessible per "
+#~ "a la família de sistemes operatius tipus Unix."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "El focus del GNOME en la usabilitat i accessibilitat, el seu cicle "
-#~ "regular de llançaments, i un fort suport per part de corporacions el fan "
-#~ "únic dins dels escriptoris del programari lliure."
+#~ "El focus del GNOME en la usabilitat i accessibilitat, el seu cicle regular "
+#~ "de llançaments, i un fort suport per part de corporacions el fan únic dins "
+#~ "dels escriptoris del programari lliure."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "El punt més fort del GNOME és la seva gran comunitat. Gairebé tothom, amb "
 #~ "coneixements o sense de programació, pot contribuir a millorar el GNOME."
@@ -333,9 +335,9 @@ msgstr "%l:%M %p"
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Centenars de persones han contribuït codi al GNOME des que es va començar "
-#~ "al 1997; molts més hi han contribuït d'altres maneres importants, que "
-#~ "inclouen traduccions, documentació i control de qualitat."
+#~ "Centenars de persones han contribuït codi al GNOME des que es va començar al"
+#~ " 1997; molts més hi han contribuït d'altres maneres importants, que inclouen"
+#~ " traduccions, documentació i control de qualitat."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "S'ha produït un error en llegir el fitxer «%s»: %s"
@@ -394,7 +396,6 @@ msgstr "%l:%M %p"
 #~ msgid "MIME Type"
 #~ msgstr "Tipus MIME"
 
-# No, res de "servici", Saplana. jm
 #~ msgid "Service"
 #~ msgstr "Servei"
 
@@ -477,8 +478,7 @@ msgstr "%l:%M %p"
 #~ msgstr "No s'ha trobat el directori amb les imatges de la capçalera."
 
 #~ msgid "Failed to open directory with header images: %s"
-#~ msgstr ""
-#~ "No s'ha pogut obrir el directori amb les imatges de la capçalera: %s"
+#~ msgstr "No s'ha pogut obrir el directori amb les imatges de la capçalera: %s"
 
 #~ msgid "Unable to load header image: %s"
 #~ msgstr "No s'ha pogut carregar la imatge de capçalera: %s"
@@ -580,16 +580,16 @@ msgstr "%l:%M %p"
 #~ msgstr "Menú de sistema"
 
 #~ msgid ""
-#~ "GNOME is developed by an active community of volunteers who want to "
-#~ "provide a desktop and a suite of user friendly applications. Because "
-#~ "GNOME needs documentors, translators, and many other types of people, "
-#~ "virtually anyone, with or without coding skills, can contribute to GNOME."
+#~ "GNOME is developed by an active community of volunteers who want to provide "
+#~ "a desktop and a suite of user friendly applications. Because GNOME needs "
+#~ "documentors, translators, and many other types of people, virtually anyone, "
+#~ "with or without coding skills, can contribute to GNOME."
 #~ msgstr ""
 #~ "GNOME és desenvolupat per una comunitat activa de voluntaris que volen "
-#~ "proveir un escriptori i una col·lecció d'aplicacions amigables. Perquè "
-#~ "GNOME necessita documentadors, traductors i molts altres tipus de gent, "
-#~ "virtualment tothom, amb i sense coneiximents de programació, pot "
-#~ "contribuir al GNOME."
+#~ "proveir un escriptori i una col·lecció d'aplicacions amigables. Perquè GNOME"
+#~ " necessita documentadors, traductors i molts altres tipus de gent, "
+#~ "virtualment tothom, amb i sense coneiximents de programació, pot contribuir "
+#~ "al GNOME."
 
 #~ msgid "Download"
 #~ msgstr "Descarrega"

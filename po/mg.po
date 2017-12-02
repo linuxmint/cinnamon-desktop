@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2008-08-19 22:25+0300\n"
 "Last-Translator: Thierry Randrianiriana <randrianiriana@gmail.com>\n"
 "Language-Team: Malagasy <i18n-malagasy-gnome@gna.org>\n"
-"Language: mg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mg\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -148,12 +148,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 msgid "%l:%M %p"
 msgstr ""
 
+msgid "%A, %B %e"
+msgstr "%A %B %e"
+
 #~ msgid "About GNOME"
 #~ msgstr "Momba ny Gnome"
 
@@ -219,7 +222,6 @@ msgstr ""
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Ilay GEGL mahagaga"
 
-#, fuzzy
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "Ilay Gnome fingotra mikiakiaka"
 
@@ -270,32 +272,32 @@ msgstr ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "Misy ao amin'ny GNOME ny ankabiazan'ireo zavatra hitanao amin'ny "
-#~ "solosainao, toy ny mpandrindra rakitra, ny mpizaha tranonkala, ny karazan-"
-#~ "tsafidy, ary rindran'asa maro samihafa."
+#~ "Misy ao amin'ny GNOME ny ankabiazan'ireo zavatra hitanao amin'ny solosainao,"
+#~ " toy ny mpandrindra rakitra, ny mpizaha tranonkala, ny karazan-tsafidy, ary "
+#~ "rindran'asa maro samihafa."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME dia sehatr'asa maimaimpoana, azo ampiasaina tsara, marim-pototra "
-#~ "ary mora ampiasaina amin'ny karazan-drafitra mitovy amin'ny Unix."
+#~ "GNOME dia sehatr'asa maimaimpoana, azo ampiasaina tsara, marim-pototra ary "
+#~ "mora ampiasaina amin'ny karazan-drafitra mitovy amin'ny Unix."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "Ny fimasoan'ny GNOME amin'ny fahafahana mampiasa tsara sy ny fanamorana "
-#~ "ny fampiasana ny rindran'asa, ny fisesen'ny famoahana kinova, ary ny "
-#~ "fanohanana mafonja avy amin'ny orinasa vaventy no tena mampiavaka azy "
-#~ "amin'ireo rindran'asa desktop maimaimpoana misy."
+#~ "Ny fimasoan'ny GNOME amin'ny fahafahana mampiasa tsara sy ny fanamorana ny "
+#~ "fampiasana ny rindran'asa, ny fisesen'ny famoahana kinova, ary ny fanohanana"
+#~ " mafonja avy amin'ny orinasa vaventy no tena mampiavaka azy amin'ireo "
+#~ "rindran'asa desktop maimaimpoana misy."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Ny tena herin'ny GNOME dia ny tanjaky ny fivondronan'ireo mpankafy azy. "
-#~ "Azo lazaina hoe ny rehetrarehetra mihitsy no afaka mandray anjara amin'ny "
+#~ "Ny tena herin'ny GNOME dia ny tanjaky ny fivondronan'ireo mpankafy azy. Azo "
+#~ "lazaina hoe ny rehetrarehetra mihitsy no afaka mandray anjara amin'ny "
 #~ "fanatsarana ny GNOME, na mahafehy ny fanafangoana izy na tsia."
 
 #~ msgid ""
@@ -305,8 +307,8 @@ msgstr ""
 #~ msgstr ""
 #~ " Olona aman-jatony no efa nanome fango an'ny GNOME hatramin'ny namoronana "
 #~ "azy tamin'ny 1997. Maro toraka izany koa ireo olona nitondra fanampiana "
-#~ "isan-karazany, toy ny fandikan-teny, ny loharanon-kevitra, ary ny "
-#~ "fiantohana kalitao."
+#~ "isan-karazany, toy ny fandikan-teny, ny loharanon-kevitra, ary ny fiantohana"
+#~ " kalitao."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Nisy olana teo am-pamakiana ny rakitra  '%s': %s"
@@ -444,8 +446,7 @@ msgstr ""
 #~ msgstr "Tsy hita ny laha-tahiry misy ireo sary lohasoratra."
 
 #~ msgid "Failed to open directory with header images: %s"
-#~ msgstr ""
-#~ "Tsy nety ny fanokafana ny laha-tahiry misy ireo sary lohasoratra: %s"
+#~ msgstr "Tsy nety ny fanokafana ny laha-tahiry misy ireo sary lohasoratra: %s"
 
 #~ msgid "Unable to load header image: %s"
 #~ msgstr "Tsy mety azo ny sary lohasoratra: %s"

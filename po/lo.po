@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2010-11-17 15:59+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -160,14 +160,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ຂະໜາດທີ້ຈໍາເປັນບໍ່ສາມາດເຂົ້າກັບຂະໜາດທີ່ມີ: ຖຶກຮ້ອງຂໍ=(%d, %d), ຕໍາສຸດ=(%d, %d), ສູງສຸດ=(%d, %d)"
+"ຂະໜາດທີ້ຈໍາເປັນບໍ່ສາມາດເຂົ້າກັບຂະໜາດທີ່ມີ: ຖຶກຮ້ອງຂໍ=(%d, %d), ຕໍາສຸດ=(%d, "
+"%d), ສູງສຸດ=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -211,6 +212,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "ກ່ຽວກັບ ກາໂນມ"
@@ -276,15 +280,15 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "ນອກຈາກນີ້ ກາໂນມ ຍັງມີລະບົບຮອງຮັບ ທີ່ຊ່ວຍໃຫ້ຂຽນໂປຣເເກຣມ ສາມາດພັດທະນາໂປຣເເກຣມທີມີພະລັງສູງ "
-#~ "ເເລະ ມີຄວາມອາດສາມາດ."
+#~ "ນອກຈາກນີ້ ກາໂນມ ຍັງມີລະບົບຮອງຮັບ ທີ່ຊ່ວຍໃຫ້ຂຽນໂປຣເເກຣມ "
+#~ "ສາມາດພັດທະນາໂປຣເເກຣມທີມີພະລັງສູງ ເເລະ ມີຄວາມອາດສາມາດ."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "ກາໂນມ ປະກອບໄປດ້ວຍສີ່ງທີ່ທ່ານເຫັນຢູ່ຫນ້າຈໍເກີອບທັງຫມົດ ເປັນຕົ້ນ ຕົວຈັດການເເຟ້ມ ເເວບບາວເຊີ້ "
-#~ "ຫລາຍການ ເມນູ ເເລະ ໂປຣເເກຣມ ອື່ນ ຯ ອີກຫລາຍ ຯ "
+#~ "ກາໂນມ ປະກອບໄປດ້ວຍສີ່ງທີ່ທ່ານເຫັນຢູ່ຫນ້າຈໍເກີອບທັງຫມົດ ເປັນຕົ້ນ "
+#~ "ຕົວຈັດການເເຟ້ມ ເເວບບາວເຊີ້ ຫລາຍການ ເມນູ ເເລະ ໂປຣເເກຣມ ອື່ນ ຯ ອີກຫລາຍ ຯ "
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -302,20 +306,20 @@ msgstr ""
 #~ "ເປັນລະບົບເເດດຊ໌ທອບ໌ທີ່ບໍ່ຄືໃຜໃນກຸ່ມເເດດຊ໌ທອບ໌ທີ່ເປັນສອບເເວຣ໌ເເຟຣ໌"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "ຈຸດທີ່ດີເດັນທີ່ສູດຂອງ ກາໂນມ ກໍ່ຄືຊູມຊົນທີ່ເຂົ້ມເເຂງ ທຸກ ຯ ຄົນ ບໍ່ວ່າຈະເປັນໃຜ ຫນັກຂຽນໂປຣເເກຣມຫລືບໍ່ "
-#~ "ກໍ່ສານາດຮວມກັນພັດທະນາ ກາໂນມ ໃຫ້ດີຂື້ນໃດ້"
+#~ "ຈຸດທີ່ດີເດັນທີ່ສູດຂອງ ກາໂນມ ກໍ່ຄືຊູມຊົນທີ່ເຂົ້ມເເຂງ ທຸກ ຯ ຄົນ ບໍ່ວ່າຈະເປັນໃຜ"
+#~ " ຫນັກຂຽນໂປຣເເກຣມຫລືບໍ່ ກໍ່ສານາດຮວມກັນພັດທະນາ ກາໂນມ ໃຫ້ດີຂື້ນໃດ້"
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "ຜູ່ຄົນຫລາຍຮ້ອຍໄດ້ຮ່ວມກັນພັດທະນາ ໂປຣເເກຣມ ສໍາລັບ ກາໂນມ ຕັ້ງເເຕ່ເລີ້ມໂຄງການຕອນປີ 2540 ຫລື "
-#~ "1998 ເເລະຍັງມີອີດຫລາຍ ຯ ທີ່ຊ່ວຍສົ່ງເສີມໃນທາງອື່ນ ຯ ເປັນຕົ້ນ ການເເປ ຂຽນຄູ່ມື ເເລະ "
-#~ "ກວດສອບຄຸນນະພາບ"
+#~ "ຜູ່ຄົນຫລາຍຮ້ອຍໄດ້ຮ່ວມກັນພັດທະນາ ໂປຣເເກຣມ ສໍາລັບ ກາໂນມ "
+#~ "ຕັ້ງເເຕ່ເລີ້ມໂຄງການຕອນປີ 2540 ຫລື 1998 ເເລະຍັງມີອີດຫລາຍ ຯ "
+#~ "ທີ່ຊ່ວຍສົ່ງເສີມໃນທາງອື່ນ ຯ ເປັນຕົ້ນ ການເເປ ຂຽນຄູ່ມື ເເລະ ກວດສອບຄຸນນະພາບ"
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "ເກີດຜິດພາດເວລາອ່ານເເຟ້ມ '%s': %s"
@@ -329,8 +333,6 @@ msgstr ""
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "ເເຟ້ມ '%s' ບໍ່ເເມ່ນເເຟ້ມ ຫລື ໂຟລເດີຮ໌ ປົກກະຕິ"
 
-#, fuzzy
-#~| msgid "Error cannot find file id '%s'"
 #~ msgid "Cannot find file '%s'"
 #~ msgstr "ເກີດຜິດພາດເວລາຫາເເຟ້ມ '%s'"
 

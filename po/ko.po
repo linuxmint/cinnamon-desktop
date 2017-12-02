@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-09 05:47+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -67,8 +67,8 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"CRTC %d번의 요청한 위치/크기가 허용하는 크기 제한을 넘어갑니다. 위치=(%d, "
-"%d), 크기=(%d, %d), 최대=(%d, %d)"
+"CRTC %d번의 요청한 위치/크기가 허용하는 크기 제한을 넘어갑니다. 위치=(%d, %d), 크기=(%d, %d), 최대=(%d, "
+"%d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -159,16 +159,14 @@ msgstr ""
 msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"필요한 가상 화면 크기가 가능한 크기에 맞지 않습니다. 요청=(%d, %d), 최소"
-"=(%d, %d), 최대=(%d, %d)"
+msgstr "필요한 가상 화면 크기가 가능한 크기에 맞지 않습니다. 요청=(%d, %d), 최소=(%d, %d), 최대=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "동일한 화면"
@@ -212,6 +210,9 @@ msgstr "%p %l:%M:%S"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%p %l:%M"
+
+msgid "%A, %B %e"
+msgstr "%B %e일 %A"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "(%A) %R:%S"
@@ -289,46 +290,41 @@ msgstr "%p %l:%M"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "그놈에는 응용 프로그램 개발자가 이용할 수 있는 완전한 개발 플랫폼이 들어 "
-#~ "있습니다. 이 플랫폼으로 강력하고 방대한 응용 프로그램을 만들 수 있습니다."
+#~ "그놈에는 응용 프로그램 개발자가 이용할 수 있는 완전한 개발 플랫폼이 들어 있습니다. 이 플랫폼으로 강력하고 방대한 응용 프로그램을 만들"
+#~ " 수 있습니다."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "그놈에는 컴퓨터에서 할 수 있는 모든 것이 들어 있습니다. 파일 관리자, 웹 브"
-#~ "라우저, 메뉴, 그리고 많은 응용 프로그램들까지."
+#~ "그놈에는 컴퓨터에서 할 수 있는 모든 것이 들어 있습니다. 파일 관리자, 웹 브라우저, 메뉴, 그리고 많은 응용 프로그램들까지."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "그놈은 유닉스와 같은 운영체제를 위한 자유롭고, 사용 가능하고, 안정적이고, "
-#~ "누구나 접근할 수 있는 데스크톱 환경입니다."
+#~ msgstr "그놈은 유닉스와 같은 운영체제를 위한 자유롭고, 사용 가능하고, 안정적이고, 누구나 접근할 수 있는 데스크톱 환경입니다."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "그놈의 사용성과 접근성에 대한 관심, 정기적인 릴리즈 주기, 강력한 기업의 후"
-#~ "원 때문에 그놈은 자유 소프트웨어 데스크톱 중에서도 비할 바가 없는 데스크탑"
-#~ "입니다."
+#~ "그놈의 사용성과 접근성에 대한 관심, 정기적인 릴리즈 주기, 강력한 기업의 후원 때문에 그놈은 자유 소프트웨어 데스크톱 중에서도 비할 "
+#~ "바가 없는 데스크탑입니다."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "그놈의 최고의 힘은 우리의 강력한 커뮤니티입니다. 코딩 기술이 있던, 없던, "
-#~ "그 누구든 간에 그놈을 더 낫게 만드는 데 공헌할 수 있습니다."
+#~ "그놈의 최고의 힘은 우리의 강력한 커뮤니티입니다. 코딩 기술이 있던, 없던, 그 누구든 간에 그놈을 더 낫게 만드는 데 공헌할 수 "
+#~ "있습니다."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997년에 시작된 이래로 수백명이 사람들이 그놈의 코드에 공헌했습니다; 그보"
-#~ "다 훨씬 많은 사람들이 번역, 문서화, 품질 보증 등의 다른 중요한 방식으로 그"
-#~ "놈에 공헌했습니다."
+#~ "1997년에 시작된 이래로 수백명이 사람들이 그놈의 코드에 공헌했습니다; 그보다 훨씬 많은 사람들이 번역, 문서화, 품질 보증 등의 다른"
+#~ " 중요한 방식으로 그놈에 공헌했습니다."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' 파일을 읽는 중 오류: %s"

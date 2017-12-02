@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2012-02-27 11:29+0700\n"
 "Last-Translator: Seng Sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <supprot@khmeros.info>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
@@ -66,8 +66,9 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ទំហំ​/​ទីតាំង ដែល​បាន​ស្នើ​សម្រាប់ CRTC %d គឺ​នៅ​ក្រៅ​​លីមីត​​ដែល​បាន​អនុញ្ញាត ៖ ទីតាំង=(%d, %d), "
-"ទំហំ=(%d, %d), អតិបរមា=(%d, %d)"
+"ទំហំ​/​ទីតាំង ដែល​បាន​ស្នើ​សម្រាប់ CRTC %d "
+"គឺ​នៅ​ក្រៅ​​លីមីត​​ដែល​បាន​អនុញ្ញាត ៖ ទីតាំង=(%d, %d), ទំហំ=(%d, %d), "
+"អតិបរមា=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -87,7 +88,8 @@ msgstr "កុំព្យូទ័រ​យួរ​ដៃ"
 #, c-format
 msgid ""
 "none of the saved display configurations matched the active configuration"
-msgstr "គ្មាន​ការ​កំណត់​​រចនាសម្ព័ន្ធ​ទិដ្ឋភាព​ដែល​បាន​រក្សាទុក​ដែល​ផ្គូផ្គង​ការ​កំណត់​រចនាសម្ព័ន្ធ​សកម្ម​ឡើយ"
+msgstr ""
+"គ្មាន​ការ​កំណត់​​រចនាសម្ព័ន្ធ​ទិដ្ឋភាព​ដែល​បាន​រក្សាទុក​ដែល​ផ្គូផ្គង​ការ​កំណត់​រចនាសម្ព័ន្ធ​សកម្ម​ឡើយ"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1469
 #, c-format
@@ -159,15 +161,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ទំហំ​និម្មិត​ដែល​បាន​ស្នើ​មិន​សម​នឹង​ទំហំ​ដែល​មាន​ឡើយ ៖ បាន​ស្នើ=(%d, %d), អប្បបរមា=(%d, %d), "
-"អតិបរមា=(%d, %d)"
+"ទំហំ​និម្មិត​ដែល​បាន​ស្នើ​មិន​សម​នឹង​ទំហំ​ដែល​មាន​ឡើយ ៖ បាន​ស្នើ=(%d, %d), "
+"អប្បបរមា=(%d, %d), អតិបរមា=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -214,6 +216,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "កញ្ចក់​អេក្រង់"

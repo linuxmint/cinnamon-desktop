@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2008-03-06 11:02+0500\n"
 "Last-Translator: Nurali Abdurahmonov <mavnur@gmail.com>\n"
 "Language-Team: uzbek\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -149,12 +149,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Sirli GEGL"
@@ -278,8 +281,8 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "Bundan tashqari GNOME'da dasturchilar uchun yetarlicha dasturlash "
-#~ "vositalari mavjud."
+#~ "Bundan tashqari GNOME'da dasturchilar uchun yetarlicha dasturlash vositalari"
+#~ " mavjud."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -292,20 +295,20 @@ msgstr ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME UNIX oilasidagi operatsion tizimlar uchun erkin, moʻʼtadil, qulay "
-#~ "ish stoli muhitidir."
+#~ "GNOME UNIX oilasidagi operatsion tizimlar uchun erkin, moʻʼtadil, qulay ish "
+#~ "stoli muhitidir."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME asosiy eʼtiborni qulayliklarga (shu bilan birga imkoniyati "
-#~ "cheklangan insonlar uchun) qaratgani va kuchli korporativ koʻmak tizimiga "
-#~ "egaligi bilan boshqa ish stollaridan ajralib turadi."
+#~ "GNOME asosiy eʼtiborni qulayliklarga (shu bilan birga imkoniyati cheklangan "
+#~ "insonlar uchun) qaratgani va kuchli korporativ koʻmak tizimiga egaligi bilan"
+#~ " boshqa ish stollaridan ajralib turadi."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOME'ning eng kuchi bizning mustahkam jamoamizdadir. Har kim, xoh "
 #~ "dasturlashni bilsin, xoh bilmasin, GNOME muhitini rivojlantirish oʻz "
@@ -316,10 +319,9 @@ msgstr ""
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997 yil GNOME loyihasi boshlangandan beri, yuzlab insonlar uning asl "
-#~ "kodiga oʻz hissalarini qoʻshdilar, ammo bundan ham koʻp insonlar "
-#~ "tarjimalar, qoʻllanmalar va sifatni oshirish boʻyicha oʻz hissalarini "
-#~ "qoʻshdilar."
+#~ "1997 yil GNOME loyihasi boshlangandan beri, yuzlab insonlar uning asl kodiga"
+#~ " oʻz hissalarini qoʻshdilar, ammo bundan ham koʻp insonlar tarjimalar, "
+#~ "qoʻllanmalar va sifatni oshirish boʻyicha oʻz hissalarini qoʻshdilar."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "\"%s\" faylini oʻqish xatosi: %s"

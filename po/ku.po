@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2010-01-16 00:26+0100\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
-"Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ku\n"
 "X-Rosetta-Export-Date: 2007-03-14 13:48+0000\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -150,12 +150,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
+msgstr ""
+
+msgid "%A, %B %e"
 msgstr ""
 
 #~ msgid "About GNOME"
@@ -276,8 +279,8 @@ msgstr ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME, ji bo malbatên pergalên xebitandinê yên wekî Unix'ê derdoreke "
-#~ "sermasê ya azad, bikêrhatî û bibiryar e."
+#~ "GNOME, ji bo malbatên pergalên xebitandinê yên wekî Unix'ê derdoreke sermasê"
+#~ " ya azad, bikêrhatî û bibiryar e."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
@@ -287,8 +290,8 @@ msgstr ""
 #~ "desteka bihêz a komî, di nava sermaseyên Nivîsbariya Azad de tekane ye."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Hêza herî mezin a GNOME'yê, koma me ya zexm e. Hemû kesên ku xwedî hunera "
 #~ "kodkirinê ya nîgaşî ne an jî ne xwediyê vê hunerê ne, dikarin piştgiriyê "
@@ -299,9 +302,9 @@ msgstr ""
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Ji sala 1997an ku GNOME dest pê kir, bi sedan kes piştgiriyê dan "
-#~ "kodkirina GNOME'yê; wekî din gelek kesên din bi wergerandin, belgekirin, "
-#~ "kontrolkirina kalîteyê û bi gelek riyên din piştgiriyê dan GNOME'yê."
+#~ "Ji sala 1997an ku GNOME dest pê kir, bi sedan kes piştgiriyê dan kodkirina "
+#~ "GNOME'yê; wekî din gelek kesên din bi wergerandin, belgekirin, kontrolkirina"
+#~ " kalîteyê û bi gelek riyên din piştgiriyê dan GNOME'yê."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Di xwendina pelê '%s' de çewtî: %s"

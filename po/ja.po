@@ -21,10 +21,10 @@ msgstr ""
 "PO-Revision-Date: 2012-10-27 00:08+0900\n"
 "Last-Translator: Yoji TOYODA <bsyamato@sea.plala.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -37,16 +37,13 @@ msgstr "不明"
 
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr ""
-"端末が見つからなかったので強制的に xterm を使用します (正しく動作しないかもし"
-"れません)"
+msgstr "端末が見つからなかったので強制的に xterm を使用します (正しく動作しないかもしれません)"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr ""
-"画面のリソース (いろいろな CRTC、出力、モード等) を取得できませんでした"
+msgstr "画面のリソース (いろいろな CRTC、出力、モード等) を取得できませんでした"
 
 # 'X' という1文字は固有名詞なので大文字にすること
 #: ../libcinnamon-desktop/gnome-rr.c:472
@@ -78,8 +75,7 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"要求した CRTC %d の位置やサイズが許容範囲を超えました: 位置 (%d, %d)、サイズ "
-"(%d, %d) / 許容範囲 (%d, %d)"
+"要求した CRTC %d の位置やサイズが許容範囲を超えました: 位置 (%d, %d)、サイズ (%d, %d) / 許容範囲 (%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -171,15 +167,14 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"要求した仮想サイズと実際のサイズがマッチしません: 要求したサイズ (%d, %d) / "
-"最小サイズ (%d, %d)、最大サイズ (%d, %d)"
+"要求した仮想サイズと実際のサイズがマッチしません: 要求したサイズ (%d, %d) / 最小サイズ (%d, %d)、最大サイズ (%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "ミラーされたディスプレイ"
@@ -223,6 +218,9 @@ msgstr "%p %l:%M:%S"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%p %l:%M"
+
+msgid "%A, %B %e"
+msgstr "%B%e日 %A"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -303,48 +301,40 @@ msgstr "%p %l:%M"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "さらに GNOME はアプリケーション開発者のために完成した開発用プラットフォー"
-#~ "ムを提供し、強力で複雑なアプリケーションを開発することができます。"
+#~ "さらに GNOME はアプリケーション開発者のために完成した開発用プラットフォームを提供し、強力で複雑なアプリケーションを開発することができます。"
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME ではお使いのコンピューターで目に見えるもののほとんどを提供し、ファイ"
-#~ "ルマネージャー、ウェブブラウザー、メニュー、そしてたくさんのアプリケーショ"
-#~ "ンがあります。"
+#~ "GNOME "
+#~ "ではお使いのコンピューターで目に見えるもののほとんどを提供し、ファイルマネージャー、ウェブブラウザー、メニュー、そしてたくさんのアプリケーションがあります。"
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "GNOME は、UNIX ライクなオペレーティングシステム向けのフリーで使い勝手の良"
-#~ "い、安定した、分かりやすいデスクトップ環境です。"
+#~ msgstr "GNOME は、UNIX ライクなオペレーティングシステム向けのフリーで使い勝手の良い、安定した、分かりやすいデスクトップ環境です。"
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME の焦点は使い勝手の良さと分かりやすさ、定期的なリリースサイクルにあ"
-#~ "り、企業がフリーでユニークなデスクトップをいろいろ提供しています。"
+#~ "GNOME の焦点は使い勝手の良さと分かりやすさ、定期的なリリースサイクルにあり、企業がフリーでユニークなデスクトップをいろいろ提供しています。"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "GNOME の最も偉大な強みは力強いコミュニティにあります。実際のところ、プログ"
-#~ "ラムを作成する能力のありなしに関わらず、誰もが GNOME をより素晴らしいもの"
-#~ "にするよう貢献できるようになっています。"
+#~ "GNOME の最も偉大な強みは力強いコミュニティにあります。実際のところ、プログラムを作成する能力のありなしに関わらず、誰もが GNOME "
+#~ "をより素晴らしいものにするよう貢献できるようになっています。"
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "GNOME プロジェクトが立ち上がった 1997 年以来、プログラム開発に貢献してくれ"
-#~ "た人達は 数百人にものぼります。その多くの人達は、メッセージ翻訳、ドキュメ"
-#~ "ント作成、品質向上のためのバグ報告といったプログラム開発以外の重要な部分で"
-#~ "貢献してくれました。"
+#~ "GNOME プロジェクトが立ち上がった 1997 年以来、プログラム開発に貢献してくれた人達は "
+#~ "数百人にものぼります。その多くの人達は、メッセージ翻訳、ドキュメント作成、品質向上のためのバグ報告といったプログラム開発以外の重要な部分で貢献してくれました。"
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' を読み込む際にエラーが発生しました: %s"

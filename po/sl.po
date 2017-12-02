@@ -15,12 +15,11 @@ msgstr ""
 "PO-Revision-Date: 2012-09-06 19:36+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Language: \n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
 "X-Poedit-Country: SLOVENIA\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -173,12 +172,12 @@ msgstr ""
 "zahtevana navidezna velikost ne sovpada z razpoložljivo velikostjo: "
 "zahtevano=(%d, %d), najmanjša vrednost=(%d, %d), največja vrednost=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Zrcaljena zaslona"
@@ -222,6 +221,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %e. %B"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -328,11 +330,11 @@ msgstr "%l:%M %p"
 #~ "namizji."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Največja prednost namizja GNOME je povezana skupnost uporabnikov. Vsakdo "
-#~ "z ali brez programerskih izkušenj lahko pomaga pri izboljševanju namizja "
+#~ "Največja prednost namizja GNOME je povezana skupnost uporabnikov. Vsakdo z "
+#~ "ali brez programerskih izkušenj lahko pomaga pri izboljševanju namizja "
 #~ "GNOME."
 
 #~ msgid ""
