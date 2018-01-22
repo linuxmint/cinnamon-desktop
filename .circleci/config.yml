@@ -34,7 +34,7 @@ shared: &shared
                     wget https://github.com/tcnksm/ghr/releases/download/v0.5.4/ghr_v0.5.4_linux_amd64.zip
                     apt-get install --yes unzip
                     unzip ghr_v0.5.4_linux_amd64.zip
-                    TAG=`git rev-parse --abbrev-ref HEAD`.$CIRCLE_JOB
+                    TAG="master".$CIRCLE_JOB
                     RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
                     ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -replace $TAG /${RELEASE}.tar.gz
                     ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -recreate -b "Latest unstable packages" $TAG /${RELEASE}.tar.gz
