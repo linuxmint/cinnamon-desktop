@@ -21,7 +21,6 @@ shared: &shared
                     RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
                     mkdir /${RELEASE}
                     mv /root/*.deb /${RELEASE}/
-                    mv /dependencies/*/*.deb /${RELEASE}/
                     git log > /${RELEASE}/git.log
                     cd /
                     tar cvf ${RELEASE}.tar ${RELEASE}
