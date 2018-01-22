@@ -1,0 +1,76 @@
+version: 2.0
+
+aliases:
+
+    - &step_prepare
+        run:
+            name: Prepare environment
+            command: apt-get update
+
+    - &step_build
+        run:
+            name: Build project
+            command: mint-build -i
+
+    - &step_deploy
+        run:
+            name: Prepare packages
+            command: |
+                if [ -z $CI_PULL_REQUEST ]; then
+                    RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
+                    mkdir /${RELEASE}
+                    mv /root/*.deb /${RELEASE}/
+                    mv /dependencies/*/*.deb /${RELEASE}/
+                    git log > /${RELEASE}/git.log
+                    cd /
+                    tar cvf ${RELEASE}.tar ${RELEASE}
+                    gzip ${RELEASE}.tar
+                fi
+        run:
+            name: Deploy packages to Github
+            command: |
+                if [ -z $CI_PULL_REQUEST ]; then
+                    wget https://github.com/tcnksm/ghr/releases/download/v0.5.4/ghr_v0.5.4_linux_amd64.zip
+                    apt-get install --yes unzip
+                    unzip ghr_v0.5.4_linux_amd64.zip
+                    TAG=`git rev-parse --abbrev-ref HEAD`.$CIRCLE_JOB
+                    RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
+                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -replace $TAG /${RELEASE}.tar.gz
+                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -recreate -b "Latest unstable packages" $TAG /${RELEASE}.tar.gz
+                fi
+
+jobs:
+    "mint18":
+        docker:
+            - image: linuxmintd/mint18-amd64
+        steps:
+            - checkout
+            - *step_prepare
+            - *step_build
+            - *step_deploy
+
+    "mint19":
+        docker:
+            - image: linuxmintd/mint19-amd64
+        steps:
+            - checkout
+            - *step_prepare
+            - *step_build
+            - *step_deploy
+
+    "lmde3":
+        docker:
+            - image: linuxmintd/lmde3-amd64
+        steps:
+            - checkout
+            - *step_prepare
+            - *step_build
+            - *step_deploy
+
+workflows:
+    version: 2
+    build:
+        jobs:
+            - "mint18"
+            - "mint19"
+            - "lmde3"
