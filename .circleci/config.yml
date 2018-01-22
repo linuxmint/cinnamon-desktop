@@ -18,13 +18,11 @@ shared: &shared
             name: Prepare packages
             command: |
                 if [ -z $CI_PULL_REQUEST ]; then
-                    RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
-                    mkdir /${RELEASE}
-                    mv /root/*.deb /${RELEASE}/
-                    git log > /${RELEASE}/git.log
+                    mkdir /packages
+                    mv /root/*.deb /packages/
+                    git log > /packages/git.log
                     cd /
-                    tar cvf ${RELEASE}.tar ${RELEASE}
-                    gzip ${RELEASE}.tar
+                    tar zcvf packages.tar.gz packages
                 fi
 
         - run:
@@ -35,9 +33,8 @@ shared: &shared
                     apt-get install --yes unzip
                     unzip ghr_v0.5.4_linux_amd64.zip
                     TAG="master".$CIRCLE_JOB
-                    RELEASE="${CIRCLE_PROJECT_REPONAME}_${CIRCLE_JOB}_${CIRCLE_SHA1}"
-                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -replace $TAG /${RELEASE}.tar.gz
-                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -recreate -b "Latest unstable packages" $TAG /${RELEASE}.tar.gz
+                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -replace $TAG /packages.tar.gz
+                    ./ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME -recreate -b "Latest unstable packages" $TAG /packages.tar.gz
                 fi
 
 jobs:
