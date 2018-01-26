@@ -4,23 +4,27 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
-	dh $@ --parallel --with=autoreconf,gir,gnome,python2
+	dh $@ --parallel --with=gir,gnome,python2
 
 override_dh_gnome_clean:
-	dh_gnome_clean --no-control
+override_dh_auto_clean:
+	rm -rf debian/build
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
-	    --with-gnome-distributor=$(shell dpkg-vendor --query vendor) \
-	    --with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
-	    --enable-introspection
+	mkdir -p debian/build
+	meson debian/build \
+		--prefix=/usr \
+		--buildtype=plain \
+		--strip \
+		-Dpnp-ids-path=/usr/share/hwdata/pnp.ids \
+		-Ddeprecation_flags=true
 
-override_dh_strip:
-	dh_strip -Xdesktop -Xcinnamon --dbg-package=libcvc-dbg
-	dh_strip -Xcvc --dbg-package=libcinnamon-desktop-dbg
+override_dh_auto_build:
+	ninja -C debian/build
+
+override_dh_auto_test:
+	ninja -C debian/build test
 
 override_dh_auto_install:
-	dh_auto_install -- typelibdir="/usr/lib/girepository-1.0"
-
-override_dh_install:
-	dh_install --list-missing
+	DESTDIR=${CURDIR}/debian/tmp \
+	ninja -C debian/build install
