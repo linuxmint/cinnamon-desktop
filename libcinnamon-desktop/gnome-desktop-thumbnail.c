@@ -45,7 +45,6 @@
 #include "gnome-desktop-thumbnail.h"
 #include "gnome-desktop-utils.h"
 #include <glib/gstdio.h>
-#include <libgsystem.h>
 
 #define SECONDS_BETWEEN_STATS 10
 
@@ -386,7 +385,7 @@ _gdk_pixbuf_new_from_uri_at_scale (const char *uri,
     }
 
     if (input_stream == NULL) {
-        input_stream = gs_file_read_noatime (file, NULL, &error);
+        input_stream = G_INPUT_STREAM (g_file_read (file, NULL, &error));
         if (input_stream == NULL) {
             if (error != NULL) {
                 g_warning ("Unable to create an input stream for %s: %s", uri, error->message);

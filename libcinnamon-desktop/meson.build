@@ -1,6 +1,3 @@
-subdir('libgsystem')
-
-
 libcinnamon_desktop_gir_sources = [
   'display-name.c',
   'edid-parse.c',
@@ -43,14 +40,13 @@ libcinnamon_desktop_headers = [
 
 libcinnamon_desktop = shared_library('cinnamon-desktop',
   libcinnamon_desktop_sources,
-  include_directories: [ rootInclude, libgsystem_include, ],
+  include_directories: [ rootInclude ],
   c_args: [
     '-DG_LOG_DOMAIN="CinnamonDesktop"',
     '-DPNP_IDS="@0@"'.format(pnp_ids_path),
     '-DXKB_BASE="@0@"'.format(xkb_base),
   ],
   dependencies: cinnamon_deps,
-  link_whole: libgsystem,
   install: true,
   version: LT_VERSION,
 )
