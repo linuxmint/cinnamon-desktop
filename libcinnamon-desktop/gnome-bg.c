@@ -326,7 +326,7 @@ bg_gsettings_mapping (GVariant *value,
 	return FALSE;
 }
 
-#if ACCOUNTSERVICE_BG
+#ifdef ACCOUNTSERVICE_BG
 void
 gnome_bg_set_accountsservice_background (const gchar *background)
 {

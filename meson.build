@@ -111,6 +111,7 @@ conf.set('HAVE_ALSA',           alsa.found())
 conf.set('HAVE_GETTEXT',        true)
 conf.set('HAVE_INTROSPECTION',  true)
 conf.set('HAVE_TIMERFD',        timerfd_check)
+conf.set('ACCOUNTSERVICE_BG', cc.has_function('accounts_user_set_background_file', dependencies: accserv))
 
 ################################################################################
 
