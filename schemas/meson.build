@@ -42,7 +42,7 @@ foreach schema : desktop_gschemas
     command : ['intltool-merge', '--quiet', '--xml-style', '--utf8', po_subdir, '@INPUT@', '@OUTPUT@'],
     install : true,
     install_dir : join_paths(get_option('datadir'), 'glib-2.0', 'schemas'),
-    build_by_default : true,
+    build_always : true,
   )
 
 endforeach

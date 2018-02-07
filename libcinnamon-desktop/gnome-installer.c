@@ -316,8 +316,7 @@ out:
  * @callback: (scope async): the callback to run for the result
  * @user_data: (closure): extra data to be sent to the callback
  *
- * Description:  Uses packagekit to install the provided
- * list of packages.
+ * Uses packagekit to install the provided list of packages.
  **/
 void gnome_installer_install_packages (const gchar                 **packages, 
                                        GnomeInstallerClientCallback  callback,
@@ -337,7 +336,7 @@ void gnome_installer_install_packages (const gchar                 **packages,
  * @callback: (scope async): the callback to run for the result
  * @user_data: (closure): extra data to be sent to the callback
  *
- * Description:  Uses packagekit to check if provided package names are installed.
+ * Uses packagekit to check if provided package names are installed.
  **/
 void gnome_installer_check_for_packages (const gchar                **packages,
                                          GnomeInstallerClientCallback callback,

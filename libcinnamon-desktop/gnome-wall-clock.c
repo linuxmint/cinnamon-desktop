@@ -449,8 +449,8 @@ on_tz_changed (GFileMonitor      *monitor,
  * gnome_wall_clock_get_clock:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns a formatted date and time based on either
- * default format settings, or via a custom-set format string.
+ * Returns a formatted date and time based on either default format
+ * settings, or via a custom-set format string.
  *
  * The returned string should be ready to be set on a label.
  *
@@ -467,8 +467,8 @@ gnome_wall_clock_get_clock (GnomeWallClock *clock)
  * gnome_wall_clock_get_default_time_format:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns the current time-only format
- * based on current locale defaults and clock settings.
+ * Returns the current time-only format based on current locale
+ * defaults and clock settings.
  *
  * Returns: (transfer none): The default time format string.
  **/
@@ -482,8 +482,8 @@ gnome_wall_clock_get_default_time_format (GnomeWallClock *clock)
  * gnome_wall_clock_get_default_date_format:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns the current date-only format
- * based on current locale defaults and clock settings.
+ * Returns the current date-only format based on current locale
+ * defaults and clock settings.
  *
  * Returns: (transfer none): The default date format string.
  **/
@@ -498,9 +498,7 @@ gnome_wall_clock_get_default_date_format (GnomeWallClock *clock)
  * @clock: The GnomeWallClock
  * @format_string: (not nullable)
  *
- * Description:  Returns a formatted date and time based on the
- * provided format string.
- *
+ * Returns a formatted date and time based on the provided format string.
  * The returned string should be ready to be set on a label.
  *
  * Returns: (transfer full): The formatted date/time string, or NULL
@@ -526,7 +524,7 @@ gnome_wall_clock_get_clock_for_format (GnomeWallClock *clock,
 /**
  * gnome_wall_clock_new:
  *
- * Description:  Returns a new GnomeWallClock instance
+ * Returns a new GnomeWallClock instance
  *
  * Returns: A pointer to a new GnomeWallClock instance.
  **/
@@ -541,9 +539,9 @@ gnome_wall_clock_new (void)
  * @clock: The GnomeWallClock
  * @format_string: (nullable)
  *
- * Description:  Sets the wall clock to use the provided
- * format string for any subsequent updates.  Passing NULL will
- * un-set any custom format, and rely on a default locale format.
+ * Sets the wall clock to use the provided format string for any
+ * subsequent updates.  Passing NULL will un-set any custom format,
+ * and rely on a default locale format.
  *
  * Any invalid format string passed will cause it to be ignored,
  * and the default locale format used instead.

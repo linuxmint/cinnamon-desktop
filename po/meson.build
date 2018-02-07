@@ -4,5 +4,5 @@ po_subdir = meson.current_source_dir()
 # <project_id>-update-po: regenerates the .po files from current .pot file
 # <project_id>-gmo: builds the translations without installing
 i18n.gettext(gettext_package,
-  install: true,
+  # install: true,     # (> 0.43 only - default behavior is true without it)
 )

@@ -73,12 +73,6 @@ if pnp_ids_install_internal
   )
 endif
 
-
-gir_c_includes = []
-foreach hdr : libcinnamon_desktop_headers
-  gir_c_includes += '--c-include=libcinnamon-desktop/' + hdr
-endforeach
-
 cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
   sources: 'cdesktop-enums.h',
   namespace: 'CDesktopEnums',
@@ -87,9 +81,10 @@ cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
   symbol_prefix: 'c_desktop',
   extra_args: [
     '-DGNOME_DESKTOP_USE_UNSTABLE_API',
-  ] + gir_c_includes,
+  ],
   install: true,
 )
+
 gnome.generate_gir(libcinnamon_desktop,
   sources: libcinnamon_desktop_gir_sources + libcinnamon_desktop_headers,
   namespace: 'CinnamonDesktop',
@@ -100,12 +95,14 @@ gnome.generate_gir(libcinnamon_desktop,
   includes: ['GObject-2.0', 'Gtk-3.0', cdesktop_gir[0], ],
   extra_args: [
     '-DGNOME_DESKTOP_USE_UNSTABLE_API',
-  ] + gir_c_includes,
+  ],
   install: true,
 )
 
+# FIXME
+# https://github.com/mesonbuild/meson/issues/1687
 custom_target('gsettings-enums',
-  input : libcinnamon_desktop_headers,
+  input : libcinnamon_desktop_headers + cdesktop_headers,
   output: 'org.cinnamon.desktop.enums.xml',
   capture: true,
   command: ['glib-mkenums',

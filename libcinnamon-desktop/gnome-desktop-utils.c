@@ -39,7 +39,7 @@
  * @argc: a pointer to the vector size
  * @argv: a pointer to the vector
  *
- * Description:  Prepends a terminal (either the one configured as default in
+ * Prepends a terminal (either the one configured as default in
  * the user's GNOME setup, or one of the common xterm emulators) to the passed
  * in vector, modifying it in the process.  The vector should be allocated with
  * #g_malloc, as this will #g_free the original vector.  Also all elements must
@@ -182,7 +182,7 @@ _gnome_desktop_init_i18n (void) {
  * gnome_desktop_get_media_key_string:
  * @type: The CDesktopMediaKeyType
  *
- * Description:  Returns the GSettings key string of the
+ * Returns the GSettings key string of the
  * given media key type.
  *
  * Returns: (transfer none): the string corresponding to the
@@ -199,9 +199,9 @@ gnome_desktop_get_media_key_string (gint type)
 /**
  * gnome_desktop_get_session_user_pwent: (skip)
  *
- * Description: Makes a best effort to retrieve the currently
- * logged-in user's passwd struct (containing uid, gid, home, etc...)
- * based on the process uid and various environment variables.
+ * Makes a best effort to retrieve the currently logged-in user's passwd
+ * struct (containing uid, gid, home, etc...) based on the process uid
+ * and various environment variables.
  *
  * Returns: (transfer none): the passwd struct corresponding to the
  * session user (or, as a last resort, the user returned by getuid())
