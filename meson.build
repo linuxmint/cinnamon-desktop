@@ -23,7 +23,7 @@ gnome     = import('gnome')
 
 cc                = meson.get_compiler('c')
 
-if not get_option('deprecation_flags')
+if not get_option('deprecation-flags')
   add_global_arguments('-Wno-deprecated-declarations', language: 'c')
 endif
 
@@ -32,7 +32,6 @@ endif
 math    = cc.find_library('m')
 
 accserv = dependency('accountsservice')
-alsa    = dependency('alsa',            required: false)
 gdk_pixb= dependency('gdk-pixbuf-2.0',  version: '>=2.22.0')
 gio     = dependency('gio-2.0',         version: '>=2.37.3')
 glib    = dependency('glib-2.0',        version: '>=2.37.3')
@@ -66,12 +65,16 @@ pulsegl = dependency('libpulse-mainloop-glib')
 cvc_deps = cinnamon_deps + [
   pulse,
   pulsegl,
-  gobject,
-  alsa,
+  gobject
 ]
 
-xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
+use_alsa = get_option('use-alsa')
 
+if use_alsa
+  cvc_deps += dependency('alsa')
+endif
+
+xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
 
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
@@ -107,7 +110,7 @@ conf.set_quoted('PACKAGE_VERSION', meson.project_version())
 conf.set('HAVE_BIND_TEXTDOMAIN_CODESET', cc.has_function('bind_textdomain_codeset'))
 conf.set('datadir',             get_option('datadir'))
 conf.set('ENABLE_NLS',          cc.has_header('libintl.h'))
-conf.set('HAVE_ALSA',           alsa.found())
+conf.set('HAVE_ALSA',           use_alsa)
 conf.set('HAVE_GETTEXT',        true)
 conf.set('HAVE_INTROSPECTION',  true)
 conf.set('HAVE_TIMERFD',        timerfd_check)
@@ -148,7 +151,8 @@ message('\n'.join([
   '        source code location:         ' + meson.source_root(),
   '        compiler:                     ' + cc.get_id(),
   '        debugging support:            ' + get_option('buildtype'),
-  '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_flags')),
+  '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation-flags')),
   '        Use PNP files:                ' + pnp_message,
+  '        Use Alsa:                     ' + '@0@'.format(use_alsa),
   '',
 ]))

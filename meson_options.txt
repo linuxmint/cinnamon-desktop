@@ -1,2 +1,3 @@
-option('deprecation_flags', type: 'boolean', value: true)
+option('deprecation-flags', type: 'boolean', value: true)
 option('pnp-ids-path',      type: 'string',  value: '')
+option('use-alsa',          type: 'boolean', value: false)
