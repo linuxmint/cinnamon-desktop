@@ -16,9 +16,17 @@ libcinnamon_desktop_gir_sources = [
   'gnome-xkb-info.c',
 ]
 
+libcinnamon_desktop_misc_headers = [
+  'gnome-datetime-source.h',
+  'gnome-rr-private.h',
+  'edid.h',
+  'private.h'
+]
+
 libcinnamon_desktop_sources = [
-  'gnome-datetime-source.c',
   libcinnamon_desktop_gir_sources,
+  libcinnamon_desktop_misc_headers,
+  'gnome-datetime-source.c',
 ]
 
 cdesktop_headers = [
@@ -102,7 +110,7 @@ gnome.generate_gir(libcinnamon_desktop,
 # FIXME
 # https://github.com/mesonbuild/meson/issues/1687
 custom_target('gsettings-enums',
-  input : libcinnamon_desktop_headers + cdesktop_headers,
+  input : libcinnamon_desktop_headers + libcinnamon_desktop_misc_headers + cdesktop_headers,
   output: 'org.cinnamon.desktop.enums.xml',
   capture: true,
   command: ['glib-mkenums',

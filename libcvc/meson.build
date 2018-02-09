@@ -66,7 +66,7 @@ install_headers(
 pkgconfig.generate(
   name: 'cvc',
   description: 'Utility library for volume control (based on gvc)',
-  version: '0.0',
+  version: meson.project_version(),
   requires: [
     'gio-2.0',
     'libpulse',
