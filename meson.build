@@ -31,7 +31,6 @@ endif
 
 math    = cc.find_library('m')
 
-accserv = dependency('accountsservice')
 gdk_pixb= dependency('gdk-pixbuf-2.0',  version: '>=2.22.0')
 gio     = dependency('gio-2.0',         version: '>=2.37.3')
 glib    = dependency('glib-2.0',        version: '>=2.37.3')
@@ -44,7 +43,6 @@ xkbfile = dependency('xkbfile')
 xrandr  = dependency('xrandr',          version: '>=1.3')
 
 cinnamon_deps = [
-  accserv,
   gdk_pixb,
   gio,
   glib,
@@ -114,7 +112,6 @@ conf.set('HAVE_ALSA',           use_alsa)
 conf.set('HAVE_GETTEXT',        true)
 conf.set('HAVE_INTROSPECTION',  true)
 conf.set('HAVE_TIMERFD',        timerfd_check)
-conf.set('ACCOUNTSERVICE_BG', cc.has_function('accounts_user_set_background_file', dependencies: accserv))
 
 ################################################################################
 

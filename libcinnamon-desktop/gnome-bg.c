@@ -326,15 +326,128 @@ bg_gsettings_mapping (GVariant *value,
 	return FALSE;
 }
 
-#ifdef ACCOUNTSERVICE_BG
+static gboolean
+set_user_bg_with_display_manager (const gchar *obj_path,
+                                  GVariant    *bg_var)
+{
+  GDBusProxy *props;
+  GVariant *ret;
+  GError *error;
+
+  error = NULL;
+
+  props = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
+                                         G_DBUS_PROXY_FLAGS_NONE,
+                                         NULL,
+                                         "org.freedesktop.Accounts",
+                                         obj_path,
+                                         "org.freedesktop.DBus.Properties",
+                                         NULL,
+                                         &error);
+
+  if (error != NULL) {
+    g_debug ("Could not create proxy for Accounts properties: '%s': %s\n",
+             obj_path,
+             error->message);
+
+    g_clear_error (&error);
+
+    return FALSE;
+  }
+
+  ret = g_dbus_proxy_call_sync (props,
+                                "Set",
+                                g_variant_new ("(ssv)",
+                                               "org.freedesktop.DisplayManager.AccountsService",
+                                               "BackgroundFile",
+                                               bg_var),
+                                G_DBUS_CALL_FLAGS_NONE,
+                                -1,
+                                NULL,
+                                &error);
+
+  g_clear_object (&props);
+
+  if (error != NULL) {
+    g_debug ("Failed to set the background for '%s' -> %s: %s",
+             obj_path,
+             g_variant_get_string (bg_var, NULL),
+             error->message);
+
+    g_clear_error (&error);
+
+    return FALSE;
+  }
+
+  g_variant_unref (ret);
+
+  g_debug ("Background set via org.freedesktop.DisplayManager.AccountsService BackgroundFile");
+
+  return TRUE;
+}
+
+static void
+set_user_bg_with_accounts_service (const gchar *obj_path,
+                                   GVariant    *bg_var)
+{
+  GDBusProxy *user;
+  GError *error;
+  GVariant *ret;
+
+  error = NULL;
+
+  user = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
+                                        G_DBUS_PROXY_FLAGS_NONE,
+                                        NULL,
+                                        "org.freedesktop.Accounts",
+                                        obj_path,
+                                        "org.freedesktop.Accounts.User",
+                                        NULL,
+                                        &error);
+
+  if (user == NULL) {
+    g_debug ("Could not create User proxy for user '%s': %s",
+             g_get_user_name (),
+             error->message);
+
+    g_clear_error (&error);
+    return;
+  }
+
+  ret = g_dbus_proxy_call_sync (user,
+                                "SetBackgroundFile",
+                                bg_var,
+                                G_DBUS_CALL_FLAGS_NONE,
+                                -1,
+                                NULL,
+                                &error);
+
+  g_variant_unref (ret);
+  g_clear_object (&user);
+
+  if (error != NULL) {
+    g_debug ("Failed to set the background for '%s' -> %s': %s",
+             obj_path,
+             g_variant_get_string (bg_var, NULL),
+             error->message);
+
+    g_clear_error (&error);
+  }
+
+  g_debug ("Background set via org.freedesktop.AccountsService.User SetBackgroundFile");
+}
+
 void
 gnome_bg_set_accountsservice_background (const gchar *background)
 {
-  GDBusProxy *proxy = NULL;
-  GDBusProxy *user = NULL;
-  GVariant *variant = NULL;
-  GError *error = NULL;
-  gchar *object_path = NULL;
+  GDBusProxy *proxy;
+  GVariant *user_var, *bg_path_var;
+  GError *error;
+  gchar *object_path;
+
+  g_debug ("Setting user AccountsService background: %s", background);
+
+  error = NULL;
 
   proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
                                          G_DBUS_PROXY_FLAGS_NONE,
@@ -345,69 +458,51 @@ gnome_bg_set_accountsservice_background (const gchar *background)
                                          NULL,
                                          &error);
 
-  if (proxy == NULL) {
-    g_warning ("Failed to contact accounts service: %s", error->message);
-    g_error_free (error);
+  if (error != NULL) {
+    g_debug ("Failed to contact accounts service: %s",
+             error->message);
+
+    g_clear_error (&error);
     return;
   }
 
-  variant = g_dbus_proxy_call_sync (proxy,
-                                    "FindUserByName",
-                                    g_variant_new ("(s)", g_get_user_name ()),
-                                    G_DBUS_CALL_FLAGS_NONE,
-                                    -1,
-                                    NULL,
-                                    &error);
+  user_var = g_dbus_proxy_call_sync (proxy,
+                                     "FindUserByName",
+                                     g_variant_new ("(s)", g_get_user_name ()),
+                                     G_DBUS_CALL_FLAGS_NONE,
+                                     -1,
+                                     NULL,
+                                     &error);
 
-  if (variant == NULL) {
-    g_warning ("Could not contact accounts service to look up '%s': %s",
-               g_get_user_name (), error->message);
-    g_error_free (error);
-    goto bail;
+  g_clear_object (&proxy);
+
+  if (error != NULL) {
+    g_debug ("Could not contact org.freedesktop.Accounts service to look up '%s': %s",
+             g_get_user_name (),
+             error->message);
+
+    g_clear_error (&error);
+    return;
   }
 
-  g_variant_get (variant, "(o)", &object_path);
-  user = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
-                                        G_DBUS_PROXY_FLAGS_NONE,
-                                        NULL,
-                                        "org.freedesktop.Accounts",
-                                        object_path,
-                                        "org.freedesktop.Accounts.User",
-                                        NULL,
-                                        &error);
+  object_path = NULL;
+  g_variant_get (user_var, "(o)", &object_path);
+  g_variant_unref (user_var);
+
+  bg_path_var = g_variant_new_string (background ? background : "");
+
+  g_variant_ref_sink (bg_path_var);
+
+  if (!set_user_bg_with_display_manager (object_path, bg_path_var)) {
+    g_debug ("Could not set background via org.freedesktop.DisplayManager.AccountsService, "
+             "trying org.freedesktop.Accounts.User");
+
+    set_user_bg_with_accounts_service (object_path, bg_path_var);
+  }
+
   g_free (object_path);
-
-  if (user == NULL) {
-    g_warning ("Could not create proxy for user '%s': %s",
-               g_variant_get_string (variant, NULL), error->message);
-    g_error_free (error);
-    goto bail;
-  }
-  g_variant_unref (variant);
-
-  variant = g_dbus_proxy_call_sync (user,
-                                    "SetBackgroundFile",
-                                    g_variant_new ("(s)", background ? background : ""),
-                                    G_DBUS_CALL_FLAGS_NONE,
-                                    -1,
-                                    NULL,
-                                    &error);
-
-  if (variant == NULL) {
-    g_warning ("Failed to set the background '%s': %s", background, error->message);
-    g_error_free (error);
-    goto bail;
-  }
-
-bail:
-  if (proxy != NULL)
-    g_object_unref (proxy);
-  if (user != NULL)
-    g_object_unref (user);
-  if (variant != NULL)
-    g_variant_unref (variant);
+  g_variant_unref (bg_path_var);
 }
-#endif
 
 void
 gnome_bg_load_from_preferences (GnomeBG   *bg,
