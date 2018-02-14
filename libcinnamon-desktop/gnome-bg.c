@@ -328,7 +328,7 @@ bg_gsettings_mapping (GVariant *value,
 
 static gboolean
 set_user_bg_with_display_manager (const gchar *obj_path,
-                                  GVariant    *bg_var)
+                                  const gchar *bg_path)
 {
   GDBusProxy *props;
   GVariant *ret;
@@ -360,7 +360,7 @@ set_user_bg_with_display_manager (const gchar *obj_path,
                                 g_variant_new ("(ssv)",
                                                "org.freedesktop.DisplayManager.AccountsService",
                                                "BackgroundFile",
-                                               bg_var),
+                                               g_variant_new_string (bg_path ? bg_path : "")),
                                 G_DBUS_CALL_FLAGS_NONE,
                                 -1,
                                 NULL,
@@ -371,7 +371,7 @@ set_user_bg_with_display_manager (const gchar *obj_path,
   if (error != NULL) {
     g_debug ("Failed to set the background for '%s' -> %s: %s",
              obj_path,
-             g_variant_get_string (bg_var, NULL),
+             bg_path,
              error->message);
 
     g_clear_error (&error);
@@ -388,7 +388,7 @@ set_user_bg_with_display_manager (const gchar *obj_path,
 
 static void
 set_user_bg_with_accounts_service (const gchar *obj_path,
-                                   GVariant    *bg_var)
+                                   const gchar *bg_path)
 {
   GDBusProxy *user;
   GError *error;
@@ -416,7 +416,7 @@ set_user_bg_with_accounts_service (const gchar *obj_path,
 
   ret = g_dbus_proxy_call_sync (user,
                                 "SetBackgroundFile",
-                                bg_var,
+                                g_variant_new ("(s)", bg_path ? bg_path : ""),
                                 G_DBUS_CALL_FLAGS_NONE,
                                 -1,
                                 NULL,
@@ -428,7 +428,7 @@ set_user_bg_with_accounts_service (const gchar *obj_path,
   if (error != NULL) {
     g_debug ("Failed to set the background for '%s' -> %s': %s",
              obj_path,
-             g_variant_get_string (bg_var, NULL),
+             bg_path,
              error->message);
 
     g_clear_error (&error);
@@ -441,7 +441,7 @@ void
 gnome_bg_set_accountsservice_background (const gchar *background)
 {
   GDBusProxy *proxy;
-  GVariant *user_var, *bg_path_var;
+  GVariant *user_var;
   GError *error;
   gchar *object_path;
 
@@ -489,19 +489,14 @@ gnome_bg_set_accountsservice_background (const gchar *background)
   g_variant_get (user_var, "(o)", &object_path);
   g_variant_unref (user_var);
 
-  bg_path_var = g_variant_new_string (background ? background : "");
-
-  g_variant_ref_sink (bg_path_var);
-
-  if (!set_user_bg_with_display_manager (object_path, bg_path_var)) {
+  if (!set_user_bg_with_display_manager (object_path, background)) {
     g_debug ("Could not set background via org.freedesktop.DisplayManager.AccountsService, "
              "trying org.freedesktop.Accounts.User");
 
-    set_user_bg_with_accounts_service (object_path, bg_path_var);
+    set_user_bg_with_accounts_service (object_path, background);
   }
 
   g_free (object_path);
-  g_variant_unref (bg_path_var);
 }
 
 void
