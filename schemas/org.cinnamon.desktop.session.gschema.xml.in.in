@@ -21,5 +21,10 @@
       <_summary>Whether or not cinnamon-settings-daemon uses logind to suspend/hibernate/shutdown (either from media-keys or power-manager)</_summary>
       <_description>If true, it uses logind for all three actions. Otherwise it uses consolekit for shutdown and upower for suspend/hibernate.</_description>
     </key>
+    <key name="inhibit-lid-switch-enabled" type="b">
+      <default>true</default>
+      <_summary>Whether or not cinnamon-settings-daemon inhibits logind's handling of lid switch</_summary>
+      <_description>If set to false, you should not rely on Cinnamon's lid actions and use the logind ones instead</_description>
+    </key>
   </schema>
 </schemalist>
