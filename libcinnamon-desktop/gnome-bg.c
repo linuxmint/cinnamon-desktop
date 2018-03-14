@@ -377,9 +377,9 @@ set_user_bg_with_display_manager (const gchar *obj_path,
     g_clear_error (&error);
 
     return FALSE;
+  } else {
+    g_variant_unref (ret);
   }
-
-  g_variant_unref (ret);
 
   g_debug ("Background set via org.freedesktop.DisplayManager.AccountsService BackgroundFile");
 
@@ -422,7 +422,6 @@ set_user_bg_with_accounts_service (const gchar *obj_path,
                                 NULL,
                                 &error);
 
-  g_variant_unref (ret);
   g_clear_object (&user);
 
   if (error != NULL) {
@@ -432,6 +431,8 @@ set_user_bg_with_accounts_service (const gchar *obj_path,
              error->message);
 
     g_clear_error (&error);
+  } else {
+    g_variant_unref (ret);
   }
 
   g_debug ("Background set via org.freedesktop.AccountsService.User SetBackgroundFile");
