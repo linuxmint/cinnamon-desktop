@@ -87,7 +87,6 @@ Files: COPYING
        libcvc/gvc-mixer-ui-device.c
        libcvc/gvc-mixer-ui-device.h
        libcvc/gvc-pulseaudio-fake.h
-       m4/intltool.m4
 Copyright: 2012, Bastien Nocera <hadess@hadess.net>
            2011, Conor Curran <conor.curran@canonical.com>
            2012, David Henningsson, Canonical Ltd <david.henningsson@canonical.com>
