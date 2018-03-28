@@ -27,7 +27,6 @@ Build-Depends:
  xkb-data,
  yelp-tools,
 Standards-Version: 3.9.6
-XS-Testsuite: autopkgtest
 
 Package: cinnamon-desktop-data
 Architecture: all
