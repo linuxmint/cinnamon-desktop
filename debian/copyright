@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: cinnamon-desktop
 Source: https://github.com/linuxmint/cinnamon-desktop
 
@@ -62,25 +62,42 @@ Files: COPYING
        libcinnamon-desktop/gnome-xkb-info.c
        libcinnamon-desktop/gnome-xkb-info.h
        libcinnamon-desktop/test-pnp-ids.c
+       libcvc/gvc-channel-map-private.h
+       libcvc/gvc-channel-map.c
+       libcvc/gvc-channel-map.h
+       libcvc/gvc-mixer-card-private.h
+       libcvc/gvc-mixer-card.c
+       libcvc/gvc-mixer-card.h
+       libcvc/gvc-mixer-control-private.h
+       libcvc/gvc-mixer-control.c
+       libcvc/gvc-mixer-control.h
+       libcvc/gvc-mixer-event-role.c
+       libcvc/gvc-mixer-event-role.h
+       libcvc/gvc-mixer-sink-input.c
+       libcvc/gvc-mixer-sink-input.h
+       libcvc/gvc-mixer-sink.c
+       libcvc/gvc-mixer-sink.h
+       libcvc/gvc-mixer-source-output.c
+       libcvc/gvc-mixer-source-output.h
+       libcvc/gvc-mixer-source.c
+       libcvc/gvc-mixer-source.h
+       libcvc/gvc-mixer-stream-private.h
+       libcvc/gvc-mixer-stream.c
+       libcvc/gvc-mixer-stream.h
+       libcvc/gvc-mixer-ui-device.c
+       libcvc/gvc-mixer-ui-device.h
+       libcvc/gvc-pulseaudio-fake.h
        m4/intltool.m4
 Copyright: 2012, Bastien Nocera <hadess@hadess.net>
+           2011, Conor Curran <conor.curran@canonical.com>
+           2012, David Henningsson, Canonical Ltd <david.henningsson@canonical.com>
            2001, Eazel, Inc
            1989-1991, Free Software Foundation, Inc
            2012, Red Hat, Inc
            2009-2012, Richard Hughes <richard@hughsie.com>
+           2008, Sjoerd Simons <sjoerd@luon.net>
+           2008, William Jon McCann
 License: GPL-2+
-
-Files: m4/ltoptions.m4
-       m4/ltsugar.m4
-       m4/ltversion.m4
-       m4/lt~obsolete.m4
-       m4/libtool.m4
-Copyright: 2004-2009, Free Software Foundation
-           2004, Free Software Foundation, Inc
-License: Permissive
- This file is free software; the Free Software Foundation gives
- unlimited permission to copy and/or distribute it, with or without
- modifications, as long as this notice is preserved.
 
 Files: libcinnamon-desktop/display-name.c
        libcinnamon-desktop/edid-parse.c
