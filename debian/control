@@ -47,8 +47,9 @@ Package: gir1.2-cvc-1.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
-Description: Utility library for volume control of pulseaudio from gobject-based
- Cinnamon modules/applications.  This package contains the introspection data for Cvc.
+Description: Introspection data for Cinnamon pulseaudio abstraction
+ This package contains the introspection data for Cinnamon pulseaudio
+ abstraction.
 
 Package: libcinnamon-desktop-dbg
 Section: debug
@@ -94,8 +95,8 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: libcvc0 (= ${binary:Version}), ${misc:Depends}
-Description: Utility library for volume control of pulseaudio from gobject-based
- Cinnamon modules/applications.  This package contains the symbols files needed to
+Description: Cinnamon pulseaudio abstraction library - debug symbols
+ This package contains the symbols files needed to
  debug the Cvc library.
 
 Package: libcvc-dev
@@ -105,9 +106,10 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends:
  gir1.2-cvc-1.0 (= ${binary:Version}),
  libcvc0 (= ${binary:Version}),
+ libpulse-dev,
  ${misc:Depends},
-Description: Utility library for volume control of pulseaudio from gobject-based
- Cinnamon modules/applications.  This package provides the include files and static
+Description: Cinnamon pulseaudio abstraction library - development files
+ This package provides the include files and static
  library for cvc.
 
 Package: libcvc0
@@ -116,5 +118,8 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Utility library for volume control of pulseaudio from gobject-based
- Cinnamon modules/applications.
+Description: Cinnamon pulseaudio abstraction library
+ This library contains code to access PulseAudio using a GObject
+ based library, shared between cinnamon-control-center, cinnamon-settings-daemon
+ and cinnamon. It is not API stable, and it is meant to be used
+ as a submodule.
