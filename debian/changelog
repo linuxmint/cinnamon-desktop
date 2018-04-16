@@ -1,3 +1,59 @@
+cinnamon-desktop (3.8.0) tara; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-wall-clock.c: adjust DATE_ONLY msgid to match the one originally in cinnamon-screensaver, and graft in existing translations from cinnamon-screensaver 3.2.2.
+  * gnome-wall-clock.c: Add some comments for translators for our date formats.
+
+  [ Clement Lefebvre ]
+  * Add CI configuration
+  * Fix CI
+  * Fix CI
+  * CI: Rename GHR tags
+  * CI: Simplify GH release archive name
+  * Remove gsettings key org.cinnamon.desktop.interface gtk-decoration-layout
+  * Add a setting for maximum sound volume.
+  * Don't use -x with gnome-terminal
+  * Revert "Don't use -x with gnome-terminal"
+
+  [ Félix Piédallu ]
+  * Add Meson Build support.
+  * Use Meson for Debian packaging
+  * Removed Autotools build system
+
+  [ Michael Webster ]
+  * Remove libgsystem
+  * Add schema compile post-install; debian: package debug symbols; add debian/clean, remove override; Fix gschema enum generation; Couple of build fixes, warnings
+  * Fix AccountsService set_background check
+  * Make alsa support opt-in (We've never built with it, I don't want to accidentally start at this time)
+  * libcvc: fix pc version, libcinnamon-desktop: fix enum generation
+  * gnome-bg.c: Add support for setting the user background via org.freedesktop.DisplayManager.AccountsService, while retaining support for the old method (for mint 18/xenial.)
+  * gnome-bg.c: Fix SetBackgroundFile call - parameters must be a GVariant tuple.
+
+  [ Jason Hicks ]
+  * Notifications: Add bottom position option (#100)
+
+  [ itzexor ]
+  * gnome-bg: don't unref NULL gvariant (#106)
+
+  [ James Ross ]
+  * gnome-bg: proper fix for NULL gvariant unref (#109)
+
+  [ Fabio Fantoni ]
+  * Add debian/not-installed
+  * Add maint script to remove old config file
+  * debian: migration to python3
+  * debian: wrap-and-sort -bst
+  * debian/control: drop not needed XS-Testsuite field
+  * update debian/copyright
+  * remove a lintian override no longer needed
+  * small improve to debian/control
+  * debian/copyright: missed one removed file
+  * Bump debhelper build-dep and compat to 10
+  * Drop disabled debian/tests
+  * Drop dh's parallel arg (no longer needed with dh >= 10)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 Apr 2018 15:18:42 +0100
+
 cinnamon-desktop (3.6.2) sylvia; urgency=medium
 
   * Set org.cinnamon.desktop.screensaver ask-for-away-message to False
