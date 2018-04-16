@@ -1,3 +1,9 @@
+cinnamon-desktop (3.7.0) UNRELEASED; urgency=medium
+
+  * Bump version for testing
+
+ -- Fabio Fantoni <fantonifabio@tiscali.it>  Wed, 28 Mar 2018 13:21:10 +0200
+
 cinnamon-desktop (3.6.2) sylvia; urgency=medium
 
   * Set org.cinnamon.desktop.screensaver ask-for-away-message to False
