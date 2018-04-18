@@ -1,5 +1,3 @@
-# Installed in /usr/share
-usr/bin/cinnamon-desktop-migrate-mediakeys
 # not needed
 usr/lib/*/cinnamon-rr-debug
 usr/lib/*/libcinnamon-desktop.la

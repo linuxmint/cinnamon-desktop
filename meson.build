@@ -124,7 +124,6 @@ configure_file(
 
 subdir('install-scripts')
 subdir('po')
-subdir('files')
 subdir('libcinnamon-desktop')
 subdir('libcvc')
 subdir('schemas')
