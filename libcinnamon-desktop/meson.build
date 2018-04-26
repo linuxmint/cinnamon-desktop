@@ -66,8 +66,8 @@ install_headers(
 
 pkgconfig.generate(
   name: 'cinnamon-desktop',
-  description: 'Utility library for loading.desktop files',
-  version: LT_VERSION,
+  description: 'Utility library for loading .desktop files',
+  version: meson.project_version(),
   requires: [ 'gtk+-3.0', ],
   requires_private: [ 'xkbfile', ],
   libraries: libcinnamon_desktop,
