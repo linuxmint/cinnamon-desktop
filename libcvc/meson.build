@@ -44,19 +44,22 @@ libcvc = shared_library('cvc',
   version: '0.0.0',
 )
 
-gnome.generate_gir(libcvc,
-  sources: libcvc_gir_sources + libcvc_headers,
-  namespace: 'Cvc',
-  nsversion: '1.0',
-  identifier_prefix: 'Gvc',
-  symbol_prefix: 'gvc_',
-  includes: [
-    'GObject-2.0',
-    'Gio-2.0',
-  ],
-  install: true,
-)
+introspection = get_option('introspection')
 
+if introspection
+  gnome.generate_gir(libcvc,
+    sources: libcvc_gir_sources + libcvc_headers,
+    namespace: 'Cvc',
+    nsversion: '1.0',
+    identifier_prefix: 'Gvc',
+    symbol_prefix: 'gvc_',
+    includes: [
+      'GObject-2.0',
+      'Gio-2.0',
+    ],
+    install: true,
+  )
+endif
 
 install_headers(
   libcvc_headers,

@@ -81,31 +81,35 @@ if pnp_ids_install_internal
   )
 endif
 
-cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
-  sources: 'cdesktop-enums.h',
-  namespace: 'CDesktopEnums',
-  nsversion: '3.0',
-  identifier_prefix: 'CDesktop',
-  symbol_prefix: 'c_desktop',
-  extra_args: [
-    '-DGNOME_DESKTOP_USE_UNSTABLE_API',
-  ],
-  install: true,
-)
+introspection = get_option('introspection')
 
-gnome.generate_gir(libcinnamon_desktop,
-  sources: libcinnamon_desktop_gir_sources + libcinnamon_desktop_headers,
-  namespace: 'CinnamonDesktop',
-  nsversion: '3.0',
-  export_packages: 'cinnamon-desktop',
-  identifier_prefix: 'Gnome',
-  symbol_prefix: 'gnome_',
-  includes: ['GObject-2.0', 'Gtk-3.0', cdesktop_gir[0], ],
-  extra_args: [
-    '-DGNOME_DESKTOP_USE_UNSTABLE_API',
-  ],
-  install: true,
-)
+if introspection
+  cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
+    sources: 'cdesktop-enums.h',
+    namespace: 'CDesktopEnums',
+    nsversion: '3.0',
+    identifier_prefix: 'CDesktop',
+    symbol_prefix: 'c_desktop',
+    extra_args: [
+      '-DGNOME_DESKTOP_USE_UNSTABLE_API',
+    ],
+    install: true,
+  )
+  
+  gnome.generate_gir(libcinnamon_desktop,
+    sources: libcinnamon_desktop_gir_sources + libcinnamon_desktop_headers,
+    namespace: 'CinnamonDesktop',
+    nsversion: '3.0',
+    export_packages: 'cinnamon-desktop',
+    identifier_prefix: 'Gnome',
+    symbol_prefix: 'gnome_',
+    includes: ['GObject-2.0', 'Gtk-3.0', cdesktop_gir[0], ],
+    extra_args: [
+      '-DGNOME_DESKTOP_USE_UNSTABLE_API',
+    ],
+    install: true,
+  )
+endif
 
 # FIXME
 # https://github.com/mesonbuild/meson/issues/1687
