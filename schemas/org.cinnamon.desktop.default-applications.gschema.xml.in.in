@@ -2,6 +2,7 @@
   <schema id="org.cinnamon.desktop.default-applications" path="/org/cinnamon/desktop/applications/">
     <child name="office" schema="org.cinnamon.desktop.default-applications.office"/>
     <child name="terminal" schema="org.cinnamon.desktop.default-applications.terminal"/>
+    <child name="calculator" schema="org.cinnamon.desktop.default-applications.calculator"/>
   </schema>
   <schema id="org.cinnamon.desktop.default-applications.office" path="/org/cinnamon/desktop/applications/office/">
     <child name="calendar" schema="org.cinnamon.desktop.default-applications.office.calendar"/>
@@ -53,6 +54,22 @@
       <_description>
         Argument used to execute programs in the terminal defined by the 
         'exec' key.
+      </_description>
+    </key>
+  </schema>
+  <schema id="org.cinnamon.desktop.default-applications.calculator" path="/org/cinnamon/desktop/applications/calculator/">
+    <key name="exec" type="s">
+      <default>'gnome-calculator'</default>
+      <_summary>Default calculator</_summary>
+      <_description>
+        Default calculator application.
+      </_description>
+    </key>
+    <key name="needs-term" type="b">
+      <default>false</default>
+      <_summary>Calculator needs terminal</_summary>
+      <_description>
+        Whether the default calculator application needs a terminal to run.
       </_description>
     </key>
   </schema>
