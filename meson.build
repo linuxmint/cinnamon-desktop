@@ -23,7 +23,7 @@ gnome     = import('gnome')
 
 cc                = meson.get_compiler('c')
 
-if not get_option('deprecation-flags')
+if not get_option('deprecation_warnings')
   add_global_arguments('-Wno-deprecated-declarations', language: 'c')
 endif
 
@@ -66,7 +66,7 @@ cvc_deps = cinnamon_deps + [
   gobject
 ]
 
-use_alsa = get_option('use-alsa')
+use_alsa = get_option('alsa')
 
 if use_alsa
   cvc_deps += dependency('alsa')
@@ -77,7 +77,7 @@ xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
 
-pnp_ids_path = get_option('pnp-ids-path')
+pnp_ids_path = get_option('pnp_ids')
 pnp_ids_install_internal = (pnp_ids_path == '')
 
 if pnp_ids_install_internal
@@ -148,8 +148,8 @@ message('\n'.join([
   '        source code location:         ' + meson.source_root(),
   '        compiler:                     ' + cc.get_id(),
   '        debugging support:            ' + get_option('buildtype'),
-  '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation-flags')),
+  '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
   '        Use PNP files:                ' + pnp_message,
-  '        Use Alsa:                     ' + '@0@'.format(use_alsa),
+  '        Use ALSA:                     ' + '@0@'.format(use_alsa),
   '',
 ]))

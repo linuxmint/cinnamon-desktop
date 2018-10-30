@@ -8,8 +8,8 @@ override_dh_auto_configure:
 	meson debian/build \
 		--prefix=/usr \
 		--buildtype=plain \
-		-Dpnp-ids-path=/usr/share/hwdata/pnp.ids \
-		-Ddeprecation-flags=false
+		-Dpnp_ids=/usr/share/hwdata/pnp.ids \
+		-Ddeprecation_warnings=false
 
 override_dh_auto_build:
 	ninja -C debian/build
