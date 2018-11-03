@@ -98,15 +98,15 @@
     </key>
     <key name="screensaver-name" type="s">
       <default>""</default>
-      <_summary>The name of the screensaver. Empty string to disable</_summary>
+      <_summary>deprecated - does nothing</_summary>
     </key>
     <key name="xscreensaver-hack" type="s">
-      <default>"fiberlamp"</default>
-      <_summary>The screensaver hack to use when xscreensaver is used as screensaver</_summary>
+      <default>""</default>
+      <_summary>deprecated - does nothing</_summary>
     </key>
     <key name="screensaver-webkit-theme" type="s">
-      <default>"webkit-stars@cinnamon.org"</default>
-      <_summary>Name of the theme used in the webkit screensaver engine</_summary>
+      <default>""</default>
+      <_summary>deprecated - does nothing</_summary>
     </key>
     <key name="show-album-art" type="b">
       <default>true</default>
