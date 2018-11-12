@@ -1,3 +1,13 @@
+cinnamon-desktop (4.0.1) tessa; urgency=medium
+
+  [ Clement Lefebvre ]
+  * CI: Remove Mint 18
+
+  [ Michael Webster ]
+  * screensaver schema: deprecate screensaver plugin keys.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Nov 2018 15:05:18 +0000
+
 cinnamon-desktop (4.0.0) tessa; urgency=medium
 
   [ Soapux ]
