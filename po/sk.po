@@ -4,19 +4,21 @@
 # Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2002, 2003.
 # Stanislav Višňovský <visnov@suse.cz>, 2003.
 # Marcel Telka <marcel@telka.sk>, 2005, 2006, 2008, 2010.
+# Dušan Kazik <prescott66@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-26 15:14+0200\n"
-"PO-Revision-Date: 2010-04-21 23:17+0200\n"
-"Last-Translator: Marcel Telka <marcel@telka.sk>\n"
+"PO-Revision-Date: 2018-12-15 21:56+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sk\n"
+"X-Generator: Poedit 2.2\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -32,8 +34,8 @@ msgstr ""
 "Nepodarilo sa nájsť terminál. Použije sa xterm, aj napriek tomu, že nemusí "
 "fungovať"
 
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
 # * https://bugzilla.gnome.org/show_bug.cgi?id=610571
+#. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
@@ -87,8 +89,7 @@ msgstr "Prenosný počítač"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:713
 #, c-format
-msgid ""
-"none of the saved display configurations matched the active configuration"
+msgid "none of the saved display configurations matched the active configuration"
 msgstr ""
 "žiadna z uložených konfigurácií displeja nezodpovedá aktívnej konfigurácii"
 
@@ -133,8 +134,7 @@ msgstr "Skúšanie režimov pre CRTC %d\n"
 #: ../libcinnamon-desktop/gnome-rr-config.c:1709
 #, c-format
 msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr ""
-"CRTC %d: skúšanie režimu %dx%d@%dHz s výstupom %dx%d@%dHz (prechod %d)\n"
+msgstr "CRTC %d: skúšanie režimu %dx%d@%dHz s výstupom %dx%d@%dHz (prechod %d)\n"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1756
 #, c-format
@@ -163,8 +163,8 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d,"
-" %d), minimum=(%d, %d), maximum=(%d, %d)"
+"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d, "
+"%d), minimum=(%d, %d), maximum=(%d, %d)"
 
 #. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
 #. capplet.c:get_display_name()
@@ -174,28 +174,27 @@ msgstr ""
 #. * the Spanish translation could be "Pantallas en Espejo".
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
-msgstr ""
+msgstr "Zrkadlené displeje"
 
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
-msgstr "%A %e. %B, %R:%S"
+msgstr "%A, %e. %B, %R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
 msgid "%A %B %e, %R"
-msgstr "%A %e. %B, %R"
+msgstr "%A, %e. %B, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:243
-#, fuzzy
 msgid "%R:%S"
-msgstr "%A, %R:%S"
+msgstr "%R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:243
 msgid "%R"
-msgstr ""
+msgstr "%R"
 
 #. Translators: This is a time format with full date used
 #. for AM/PM.
@@ -210,164 +209,12 @@ msgstr "%A, %e. %B, %l:%M %p"
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-#, fuzzy
 msgid "%l:%M:%S %p"
-msgstr "%A, %l:%M:%S %p"
+msgstr "%l:%M:%S %p"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-#, fuzzy
 msgid "%l:%M %p"
-msgstr "%A, %l:%M %p"
+msgstr "%l:%M %p"
 
 msgid "%A, %B %e"
-msgstr "%A, %B %e"
-
-#~ msgid "About GNOME"
-#~ msgstr "O GNOME"
-
-#~ msgid "Learn more about GNOME"
-#~ msgstr "Naučiť sa viac o GNOME"
-
-#~ msgid "News"
-#~ msgstr "Novinky"
-
-#~ msgid "GNOME Library"
-#~ msgstr "Knižnica GNOME"
-
-#~ msgid "Friends of GNOME"
-#~ msgstr "Priatelia GNOME"
-
-#~ msgid "Contact"
-#~ msgstr "Kontakt"
-
-#~ msgid "The Mysterious GEGL"
-#~ msgstr "Tajomný GEGL"
-
-#~ msgid "The Squeaky Rubber GNOME"
-#~ msgstr "GNOME vŕzgavá guma"
-
-#~ msgid "Wanda The GNOME Fish"
-#~ msgstr "GNOME ryba menom Wanda"
-
-#~ msgid "_Open URL"
-#~ msgstr "_Otvoriť URL"
-
-#~ msgid "_Copy URL"
-#~ msgstr "_Kopírovať URL"
-
-#~ msgid "About the GNOME Desktop"
-#~ msgstr "O prostredí GNOME"
-
-#~ msgid "%(name)s: %(value)s"
-#~ msgstr "%(name)s: %(value)s"
-
-#~ msgid "Welcome to the GNOME Desktop"
-#~ msgstr "Víta vás prostredie GNOME"
-
-#~ msgid "Brought to you by:"
-#~ msgstr "Vám priniesli:"
-
-#~ msgid "<b>%(name)s:</b> %(value)s"
-#~ msgstr "<b>%(name)s:</b> %(value)s"
-
-#~ msgid "Version"
-#~ msgstr "Verzia"
-
-#~ msgid "Distributor"
-#~ msgstr "Distribútor"
-
-#~ msgid "Build Date"
-#~ msgstr "Dátum zostavenia"
-
-#~ msgid "Display information on this GNOME version"
-#~ msgstr "Zobraziť informácie o tejto verzii GNOME"
-
-#~ msgid ""
-#~ "GNOME also includes a complete development platform for applications "
-#~ "programmers, allowing the creation of powerful and complex applications."
-#~ msgstr ""
-#~ "GNOME obsahuje aj kompletnú vývojovú platformu pre programátorov aplikácií, "
-#~ "ktorá umožňuje vytváranie výkonných a zložitých aplikácií."
-
-#~ msgid ""
-#~ "GNOME includes most of what you see on your computer, including the file "
-#~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "GNOME obsahuje väčšinu toho, čo vidíte na svojom počítači, vrátane správcu "
-#~ "súborov, internetového prehliadača, ponúk a veľa aplikácií."
-
-#~ msgid ""
-#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
-#~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "GNOME je slobodné, použiteľné, stabilné a dostupné pracovné prostredie pre "
-#~ "rodinu operačných systémov podobných Unix-u."
-
-#~ msgid ""
-#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
-#~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "Zameranie GNOME na použiteľnosť a prístupnosť, pravidelné uvoľňovanie nových"
-#~ " verzií a silné firemné zázemie ho robí jedinečným medzi ostatnými "
-#~ "slobodnými prostrediami."
-
-#~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
-#~ " without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "Najväčšia sila GNOME je silná komunita. Prakticky každý, programátor alebo "
-#~ "neprogramátor, sa môže zapojiť do vylepšovania GNOME."
-
-#~ msgid ""
-#~ "Hundreds of people have contributed code to GNOME since it was started in "
-#~ "1997; many more have contributed in other important ways, including "
-#~ "translations, documentation, and quality assurance."
-#~ msgstr ""
-#~ "Stovky ľudí prispeli kódom do GNOME od doby, ako vzniklo v roku 1997. Veľa "
-#~ "ďalších prispelo iným významným spôsobom, napríklad prekladmi, dokumentáciou"
-#~ " a kontrolou kvality."
-
-#~ msgid "Error reading file '%s': %s"
-#~ msgstr "Chyba pri čítaní súboru '%s': %s"
-
-#~ msgid "Error rewinding file '%s': %s"
-#~ msgstr "Chyba pri presune v súbore '%s': %s"
-
-#~ msgid "No name"
-#~ msgstr "Bez názvu"
-
-#~ msgid "File '%s' is not a regular file or directory."
-#~ msgstr "Súbor '%s' nie je normálny súbor alebo adresár."
-
-#~ msgid "Cannot find file '%s'"
-#~ msgstr "Nepodarilo sa nájsť súbor '%s'"
-
-#~ msgid "No filename to save to"
-#~ msgstr "Nezadaný názov súboru pre uloženie"
-
-#~ msgid "Starting %s"
-#~ msgstr "Spúšťa sa %s"
-
-#~ msgid "No URL to launch"
-#~ msgstr "Nezadané URL, ktoré sa má spustiť"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Položka nie je spustiteľná"
-
-#~ msgid "No command (Exec) to launch"
-#~ msgstr "Nezadaný príkaz (Exec), ktorý sa má spustiť"
-
-#~ msgid "Bad command (Exec) to launch"
-#~ msgstr "Neplatný príkaz (Exec), ktorý sa má spustiť"
-
-#~ msgid "Unknown encoding of: %s"
-#~ msgstr "Neznáme kódovanie pre: %s"
-
-#~ msgid "Mirror Screens"
-#~ msgstr "Zrkadliť obrazovky"
-
-#~ msgid "%A %R"
-#~ msgstr "%A, %R"
-
-#~ msgid "could not find a suitable configuration of screens"
-#~ msgstr "nepodarilo sa nájsť použiteľnú konfiguráciu obrazoviek"
+msgstr "%A, %e. %B"
