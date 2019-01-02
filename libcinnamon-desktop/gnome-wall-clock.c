@@ -343,6 +343,7 @@ update_format_string (GnomeWallClock *self, const gchar *format_string)
             new_format = g_strdup (format_string);
         }
 
+        g_date_time_unref (test_now);
         g_clear_pointer (&str, g_free);
     }
 
