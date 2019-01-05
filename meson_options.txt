@@ -1,0 +1,6 @@
+option('deprecation_warnings', type: 'boolean', value: false,
+       description: 'Show compiler warnings about deprecated features')
+option('pnp_ids', type: 'string',  value: '',
+       description: 'Specify the path to pnp.ids (default is an internal copy)')
+option('alsa', type: 'boolean', value: false,
+       description: 'ALSA support')

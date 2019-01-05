@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2010-11-29 18:06+0200\n"
 "Last-Translator: Torstein Adolf Winterseth <kvikende@fsfe.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
-"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.6.1\n"
 
@@ -93,7 +93,8 @@ msgstr "Bærbar"
 msgid ""
 "none of the saved display configurations matched the active configuration"
 msgstr ""
-"ingen av dei lagra skjerminnstillingane samsvarar med den aktive innstillinga"
+"ingen av dei lagra skjerminnstillingane samsvarar med den aktive "
+"innstillinga"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1469
 #, c-format
@@ -168,12 +169,12 @@ msgstr ""
 "nødvendig virtuell storleik passar ikkje med dei tilgjengelege storleikane: "
 "førespurd=(%d, %d), minimum=(%d, %d), maksimum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -225,18 +226,18 @@ msgstr "%A %l.%M.%S %p"
 msgid "%l:%M %p"
 msgstr "%A %l.%M %p"
 
+msgid "%A, %B %e"
+msgstr ""
+
 #~ msgid "Mirror Screens"
 #~ msgstr "Spegelskjermar"
 
-#, fuzzy
 #~ msgid "%A %R"
 #~ msgstr "%A %R"
 
-# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
 #~ msgid "About GNOME"
 #~ msgstr "Om GNOME"
 
-# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
 #~ msgid "Learn more about GNOME"
 #~ msgstr "Lær meir om GNOME"
 
@@ -252,15 +253,12 @@ msgstr "%A %l.%M %p"
 #~ msgid "Contact"
 #~ msgstr "Kontakt"
 
-# gnome-about/contributors.h:95
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Den mystiske GEGL"
 
-# gnome-about/contributors.h:254
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "Den knirkande gummiGNOMEn"
 
-# gnome-about/contributors.h:279
 #~ msgid "Wanda The GNOME Fish"
 #~ msgstr "GNOME-fisken Wanda"
 
@@ -270,7 +268,6 @@ msgstr "%A %l.%M %p"
 #~ msgid "_Copy URL"
 #~ msgstr "_Kopier URL"
 
-# gnome-about/gnome-about.c:465 panel/foobar-widget.c:242
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "Om GNOME-skrivebordet"
 
@@ -289,7 +286,6 @@ msgstr "%A %l.%M %p"
 #~ msgid "Version"
 #~ msgstr "Versjon"
 
-# help-browser/window.c:250
 #~ msgid "Distributor"
 #~ msgstr "Distributør"
 
@@ -303,8 +299,8 @@ msgstr "%A %l.%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME har også ein komplett utviklingsplattform for programutviklarar. "
-#~ "Denne plattformen gjer det mogleg å laga kraftige og innfløkte program."
+#~ "GNOME har også ein komplett utviklingsplattform for programutviklarar. Denne"
+#~ " plattformen gjer det mogleg å laga kraftige og innfløkte program."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -317,20 +313,20 @@ msgstr "%A %l.%M %p"
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME er eit fritt, lettbrukt, stabilt og tilgjengeleg skrivebordsmiljø "
-#~ "for UNIX-liknande operativsystem."
+#~ "GNOME er eit fritt, lettbrukt, stabilt og tilgjengeleg skrivebordsmiljø for "
+#~ "UNIX-liknande operativsystem."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "GNOME fokuserer på å vera brukarvennleg og tilgjengeleg, å koma i nye "
-#~ "utgåver med jamne mellomrom, og å bruka støtte frå sterke verksemder til "
-#~ "å verta unik blant skrivebordsmiljøa i fri programvare-miljøet."
+#~ "utgåver med jamne mellomrom, og å bruka støtte frå sterke verksemder til å "
+#~ "verta unik blant skrivebordsmiljøa i fri programvare-miljøet."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Den største styrka med GNOME er det sterke miljøet rundt. Så å seia alle, "
 #~ "med eller utan programmeringskunnskap, kan bidra til å gjera GNOME betre."
@@ -350,14 +346,12 @@ msgstr "%A %l.%M %p"
 #~ msgid "Error rewinding file '%s': %s"
 #~ msgstr "Feil ved tilbakespoling av fil «%s»: %s"
 
-# gnome-terminal/gnome-terminal.glade.h:23 panel/menu.c:4729
 #~ msgid "No name"
 #~ msgstr "Inkje namn"
 
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "Fila «%s» er ikkje ei vanleg fil eller mappe."
 
-#~| msgid "Error cannot find file id '%s'"
 #~ msgid "Cannot find file '%s'"
 #~ msgstr "Klarte ikkje finna fila «%s»"
 
@@ -385,15 +379,12 @@ msgstr "%A %l.%M %p"
 #~ msgid "could not find a suitable configuration of screens"
 #~ msgstr "klarte ikkje finna ei passande innstilling av skjermar"
 
-# help-browser/window.c:250
 #~ msgid "Directory"
 #~ msgstr "Katalog"
 
-# panel/launcher.c:499 panel/launcher.c:693 panel/menu.c:1715
 #~ msgid "Application"
 #~ msgstr "Applikasjon"
 
-# gsm/gnome-login-check.c:246
 #~ msgid "Link"
 #~ msgstr "Lenkje"
 
@@ -409,68 +400,51 @@ msgstr "%A %l.%M %p"
 #~ msgid "ServiceType"
 #~ msgstr "Teneste-type"
 
-# help-browser/history.c:260
 #~ msgid "_URL:"
 #~ msgstr "_URL:"
 
-# gsm/session-properties-capplet.c:292
 #~ msgid "Comm_and:"
 #~ msgstr "Komm_ando:"
 
-# panel/foobar-widget.c:322
 #~ msgid "_Name:"
 #~ msgstr "_Namn:"
 
-# applets/gen_util/printer.c:317
 #~ msgid "_Generic name:"
 #~ msgstr "_Vanleg namn:"
 
-# gsm/session-properties-capplet.c:292
 #~ msgid "Co_mment:"
 #~ msgstr "_Merknad:"
 
-# applets/fish/fish.c:535 applets/gen_util/mailcheck.c:1020
-# gnome-hint/gnome-hint-properties.c:146 panel/menu-properties.c:596
-# panel/menu-properties.c:634 panel/panel-util.c:193
-# panel/panel_config.c:1631 panel/swallow.c:261
 #~ msgid "Browse"
 #~ msgstr "Bla gjennom"
 
-# panel/menu.c:4771
 #~ msgid "_Type:"
 #~ msgstr "_Type:"
 
-# panel/drawer.c:142 panel/menu-properties.c:617 panel/menu-properties.c:653
 #~ msgid "_Icon:"
 #~ msgstr "_Ikon:"
 
-# panel/gnome-panel-properties.c:499
 #~ msgid "Browse icons"
 #~ msgstr "Sjå på ikon"
 
-# panel/gnome-run.c:606
 #~ msgid "Run in t_erminal"
 #~ msgstr "Køyr i t_erminal"
 
 #~ msgid "Language"
 #~ msgstr "Språk"
 
-# panel/foobar-widget.c:322
 #~ msgid "Name"
 #~ msgstr "Namn"
 
-# applets/gen_util/printer.c:317
 #~ msgid "Generic name"
 #~ msgstr "Generisk namn"
 
-# gsm/session-properties-capplet.c:292
 #~ msgid "Comment"
 #~ msgstr "Merknad"
 
 #~ msgid "_Try this before using:"
 #~ msgstr "_Prøv dette før bruk:"
 
-# help-browser/window.c:247
 #~ msgid "_Documentation:"
 #~ msgstr "_Dokumentasjon"
 
@@ -483,18 +457,15 @@ msgstr "%A %l.%M %p"
 #~ msgid "Add or Set Name/Comment Translations"
 #~ msgstr "Legg eller sett namn/merknadar på omsetjingar"
 
-# help-browser/bookmarks.c:242
 #~ msgid "Re_move"
 #~ msgstr "Fje_rn"
 
 #~ msgid "Remove Name/Comment Translation"
 #~ msgstr "Fjern namn/merknad på omsetjingar"
 
-# help-browser/window.c:237
 #~ msgid "Basic"
 #~ msgstr "Enkel"
 
-# applets/desk-guide/deskguide_applet.c:137
 #~ msgid "Advanced"
 #~ msgstr "Avansert"
 
@@ -525,7 +496,6 @@ msgstr "%A %l.%M %p"
 #~ msgid "Software"
 #~ msgstr "Programvare"
 
-# gnome-about/gnome-about.c:576
 #~ msgid "Developers"
 #~ msgstr "Utviklarar"
 

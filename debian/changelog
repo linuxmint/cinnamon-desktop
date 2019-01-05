@@ -1,3 +1,89 @@
+cinnamon-desktop (4.0.1) tessa; urgency=medium
+
+  [ Clement Lefebvre ]
+  * CI: Remove Mint 18
+
+  [ Michael Webster ]
+  * screensaver schema: deprecate screensaver plugin keys.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Nov 2018 15:05:18 +0000
+
+cinnamon-desktop (4.0.0) tessa; urgency=medium
+
+  [ Soapux ]
+  * Update style of meson build options (#116)
+
+  [ Jackson Dearnley ]
+  * org.cinnamon.default-applications.gschema.xml.in.in: Define schema for a default calculator application (#120)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 30 Oct 2018 14:03:01 +0000
+
+cinnamon-desktop (3.8.1) tara; urgency=medium
+
+  [ Jason Hicks ]
+  * Add key binding setting for showing desklets (#115)
+
+  [ Soapux ]
+  * Fix pkgconfig version and fix spacing (#113)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 06 May 2018 15:37:14 +0100
+
+cinnamon-desktop (3.8.0) tara; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-wall-clock.c: adjust DATE_ONLY msgid to match the one originally in cinnamon-screensaver, and graft in existing translations from cinnamon-screensaver 3.2.2.
+  * gnome-wall-clock.c: Add some comments for translators for our date formats.
+
+  [ Clement Lefebvre ]
+  * Add CI configuration
+  * Fix CI
+  * Fix CI
+  * CI: Rename GHR tags
+  * CI: Simplify GH release archive name
+  * Remove gsettings key org.cinnamon.desktop.interface gtk-decoration-layout
+  * Add a setting for maximum sound volume.
+  * Don't use -x with gnome-terminal
+  * Revert "Don't use -x with gnome-terminal"
+
+  [ Félix Piédallu ]
+  * Add Meson Build support.
+  * Use Meson for Debian packaging
+  * Removed Autotools build system
+
+  [ Michael Webster ]
+  * Remove libgsystem
+  * Add schema compile post-install; debian: package debug symbols; add debian/clean, remove override; Fix gschema enum generation; Couple of build fixes, warnings
+  * Fix AccountsService set_background check
+  * Make alsa support opt-in (We've never built with it, I don't want to accidentally start at this time)
+  * libcvc: fix pc version, libcinnamon-desktop: fix enum generation
+  * gnome-bg.c: Add support for setting the user background via org.freedesktop.DisplayManager.AccountsService, while retaining support for the old method (for mint 18/xenial.)
+  * gnome-bg.c: Fix SetBackgroundFile call - parameters must be a GVariant tuple.
+
+  [ Jason Hicks ]
+  * Notifications: Add bottom position option (#100)
+
+  [ itzexor ]
+  * gnome-bg: don't unref NULL gvariant (#106)
+
+  [ James Ross ]
+  * gnome-bg: proper fix for NULL gvariant unref (#109)
+
+  [ Fabio Fantoni ]
+  * Add debian/not-installed
+  * Add maint script to remove old config file
+  * debian: migration to python3
+  * debian: wrap-and-sort -bst
+  * debian/control: drop not needed XS-Testsuite field
+  * update debian/copyright
+  * remove a lintian override no longer needed
+  * small improve to debian/control
+  * debian/copyright: missed one removed file
+  * Bump debhelper build-dep and compat to 10
+  * Drop disabled debian/tests
+  * Drop dh's parallel arg (no longer needed with dh >= 10)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 Apr 2018 15:18:42 +0100
+
 cinnamon-desktop (3.6.2) sylvia; urgency=medium
 
   * Set org.cinnamon.desktop.screensaver ask-for-away-message to False

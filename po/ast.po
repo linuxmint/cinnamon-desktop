@@ -13,12 +13,12 @@ msgstr ""
 "PO-Revision-Date: 2011-02-14 19:32+0100\n"
 "Last-Translator: ivarela <ivarela@softastur.org>\n"
 "Language-Team: Asturian <gnome@softastur.org>\n"
-"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2009-02-09 14:44+0000\n"
+"Language: ast\n"
 "X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2009-02-09 14:44+0000\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -169,12 +169,12 @@ msgstr ""
 "el tamañu virtual pidíu nun concasa col tamañu disponible: pidíu=(%d, %d), "
 "mínimu=(%d, %d), másimu=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -218,6 +218,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B de %e"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Espeyar pantalles"
@@ -301,32 +304,32 @@ msgstr ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME ye un entornu d'escritoriu Llibre, afayadizu, estable y accesible "
-#~ "pa los sistemes operativos de la familia UNIX y asemeyaos."
+#~ "GNOME ye un entornu d'escritoriu Llibre, afayadizu, estable y accesible pa "
+#~ "los sistemes operativos de la familia UNIX y asemeyaos."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "L'enfotu de GNOME na usabilidá y l'accesibilidá, con actualizaciones "
-#~ "regulares y un fuerte sofitu corporativu, faenlu único pente los "
-#~ "escritorios de Software Llibre."
+#~ "regulares y un fuerte sofitu corporativu, faenlu único pente los escritorios"
+#~ " de Software Llibre."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "La mayor fuercia de GNOME ye la fuerte comunidá de nueso. Dafechu tol "
-#~ "mundu, con o sin conocimientos de programación, podría echar un gabitu pa "
-#~ "facer un GNOME meyor."
+#~ "La mayor fuercia de GNOME ye la fuerte comunidá de nueso. Dafechu tol mundu,"
+#~ " con o sin conocimientos de programación, podría echar un gabitu pa facer un"
+#~ " GNOME meyor."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Cientos de persones contribuyeron al códigu de GNOME dende que s'entamara "
-#~ "en 1997; munchos más sofitaronlu d'una bayura maneres, incluyendo tornes, "
+#~ "Cientos de persones contribuyeron al códigu de GNOME dende que s'entamara en"
+#~ " 1997; munchos más sofitaronlu d'una bayura maneres, incluyendo tornes, "
 #~ "documentación y afitando la so seguridá."
 
 #~ msgid "Error reading file '%s': %s"

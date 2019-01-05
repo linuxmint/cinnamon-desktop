@@ -22,10 +22,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-23 04:17+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 2.91.5\n"
 
@@ -75,9 +75,7 @@ msgstr "无法得到输出 %d 的有关信息"
 msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"CRTC %d 需要的位置/大小在限制允许之外：位置=(%d, %d)，大小=(%d, %d)，最大"
-"=(%d, %d)"
+msgstr "CRTC %d 需要的位置/大小在限制允许之外：位置=(%d, %d)，大小=(%d, %d)，最大=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -168,15 +166,14 @@ msgstr ""
 msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"需要的虚拟大小大于可用大小：需求=(%d, %d)，最小=(%d, %d)，最大=(%d, %d)"
+msgstr "需要的虚拟大小大于可用大小：需求=(%d, %d)，最小=(%d, %d)，最大=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "镜像显示"
@@ -221,6 +218,9 @@ msgstr "%A %I:%M:%S %p"
 msgid "%l:%M %p"
 msgstr "%I:%M %p"
 
+msgid "%A, %B %e"
+msgstr "%-m月%-d日%A"
+
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
 
@@ -233,11 +233,9 @@ msgstr "%I:%M %p"
 #~ msgid "%A %l:%M %p"
 #~ msgstr "%I:%M %p"
 
-# panel/menu.c:2614
 #~ msgid "About GNOME"
 #~ msgstr "关于 GNOME"
 
-# panel/menu.c:2614
 #~ msgid "Learn more about GNOME"
 #~ msgstr "关于 GNOME 的更多内容"
 
@@ -259,7 +257,6 @@ msgstr "%I:%M %p"
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "吱吱响的橡皮 GNOME"
 
-# applets/fish/fish.c:137
 #~ msgid "Wanda The GNOME Fish"
 #~ msgstr "GNOME 小鱼 Wanda"
 
@@ -269,7 +266,6 @@ msgstr "%I:%M %p"
 #~ msgid "_Copy URL"
 #~ msgstr "复制网页地址(_C)"
 
-# panel/menu.c:2614
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "关于 GNOME 桌面"
 
@@ -305,38 +301,29 @@ msgstr "%I:%M %p"
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "GNOME 包含了计算机上最常用的应用程序，诸如文件管理器、网页浏览器、管理菜单"
-#~ "等。"
+#~ msgstr "GNOME 包含了计算机上最常用的应用程序，诸如文件管理器、网页浏览器、管理菜单等。"
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "对于类 Unix 家族操作系统来说，GNOME 桌面环境自由、稳定、功能强大，且易于使"
-#~ "用。"
+#~ msgstr "对于类 Unix 家族操作系统来说，GNOME 桌面环境自由、稳定、功能强大，且易于使用。"
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "GNOME 专注于可用性和辅助功能，规范的版本发布周期，以及强劲的合作机制，使之"
-#~ "在自由软件桌面领域独树一帜。"
+#~ msgstr "GNOME 专注于可用性和辅助功能，规范的版本发布周期，以及强劲的合作机制，使之在自由软件桌面领域独树一帜。"
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "强大的社区是 GNOME 最引以为豪的。任何人，无论是否懂得编程，都能够为其贡献"
-#~ "力量。"
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
+#~ msgstr "强大的社区是 GNOME 最引以为豪的。任何人，无论是否懂得编程，都能够为其贡献力量。"
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "自 GNOME 项目 1997 年启动以来，数以百计的人不断地贡献他们编写的代码。此"
-#~ "外，还有更多人在其它方面做出了重要努力，包括翻译、文档和质量控制。"
+#~ "自 GNOME 项目 1997 年启动以来，数以百计的人不断地贡献他们编写的代码。此外，还有更多人在其它方面做出了重要努力，包括翻译、文档和质量控制。"
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "读取文件 “%s” 时发生错误：%s"
@@ -344,7 +331,6 @@ msgstr "%I:%M %p"
 #~ msgid "Error rewinding file '%s': %s"
 #~ msgstr "重绕文件“%1$s”时发生错误：%2$s"
 
-# gnome-terminal/gnome-terminal.c:1203
 #~ msgid "No name"
 #~ msgstr "无名称"
 

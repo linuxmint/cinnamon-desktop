@@ -11,12 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2012-09-07 18:54+0300\n"
 "Last-Translator: Yuri Matsuk <yuri@matsuk.net>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
-"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: be\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -117,8 +116,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"параметры выхаду %s адрозніваюцца ад параметраў іншага кланіраванага "
-"выхаду:\n"
+"параметры выхаду %s адрозніваюцца ад параметраў іншага кланіраванага выхаду:\n"
 "наяўны рэжым = %d, новы рэжым = %d\n"
 "наяўныя каардынаты = (%d, %d), новыя каардынаты = (%d, %d)\n"
 "наяўны паварот = %s, новы паварот = %s"
@@ -170,12 +168,12 @@ msgstr ""
 "запатрабаваны віртуальны памер не пасуе да даступнага памеру: "
 "запатрабавана=(%d, %d), мінімум=(%d, %d), максімум=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Люстраваныя маніторы"
@@ -219,6 +217,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"

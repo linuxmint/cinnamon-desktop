@@ -1,5 +1,5 @@
 usr/include/cinnamon-desktop/libcinnamon-desktop
 usr/lib/*/libcinnamon-desktop.so
 usr/lib/*/pkgconfig/cinnamon-desktop.pc
-usr/share/gir-1.0/CinnamonDesktop-3.0.gir
 usr/share/gir-1.0/CDesktopEnums-3.0.gir
+usr/share/gir-1.0/CinnamonDesktop-3.0.gir

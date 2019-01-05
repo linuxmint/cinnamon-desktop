@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2011-06-25 18:18+0300\n"
 "Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -114,8 +114,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"%s çıktısı, birebir kopyalanmış başka bir çıktıyla aynı parametrelere sahip "
-"değil:\n"
+"%s çıktısı, birebir kopyalanmış başka bir çıktıyla aynı parametrelere sahip değil:\n"
 "geçerli kip = %d, yeni kip = %d\n"
 "geçerli koordinatlar = (%d, %d), yeni koordinatlar = (%d, %d)\n"
 "geçerli rotasyon = %s, yeni rotasyon = %s"
@@ -165,12 +164,12 @@ msgstr ""
 "Gerekli sanal boyut mevcut boyuta uymuyor: istenilen=(%d, %d), en az=(%d, "
 "%d), en fazla=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -217,6 +216,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Yansı Ekranlar"
@@ -310,12 +312,12 @@ msgstr "%A %l:%M %p"
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "GNOME'un kullanılabilirliğe ve erişilebilirliğe odaklanması, düzenli ürün "
-#~ "sürecine ve güçlü takım desteğine sahip olması onu Özgür Yazılım "
-#~ "masaüstleri arasında tek yapar."
+#~ "sürecine ve güçlü takım desteğine sahip olması onu Özgür Yazılım masaüstleri"
+#~ " arasında tek yapar."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOME'un en büyük gücü bizim sağlam topluluğumuzdur. Sanal olarak kodlama "
 #~ "yeteneğine sahip ya da sahip olmayan herkes GNOME'u daha iyi yapmak için "

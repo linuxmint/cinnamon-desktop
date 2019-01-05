@@ -16,12 +16,12 @@ msgstr ""
 "PO-Revision-Date: 2012-09-04 15:48+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -72,8 +72,8 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"A kért pozíció/méret a(z) %d. CRTC-hez kívül esik az engedélyezett korláton: "
-"pozíció=(%d, %d), méret=(%d, %d), maximum=(%d, %d)"
+"A kért pozíció/méret a(z) %d. CRTC-hez kívül esik az engedélyezett korláton:"
+" pozíció=(%d, %d), méret=(%d, %d), maximum=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -119,8 +119,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"%s kimenet nem rendelkezik egy másik klónozott kimenetével egyező "
-"paraméterekkel:\n"
+"%s kimenet nem rendelkezik egy másik klónozott kimenetével egyező paraméterekkel:\n"
 "létező mód = %d, új mód = %d\n"
 "létező koordináták = (%d, %d), új koordináták = (%d, %d)\n"
 "létező forgatás = %s, új forgatás = %s"
@@ -172,12 +171,12 @@ msgstr ""
 "A kért virtuális méret nem illeszkedik az elérhető méretre: kért=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Tükrözött kijelzők"
@@ -221,6 +220,9 @@ msgstr "%l.%M.%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l.%M %p"
+
+msgid "%A, %B %e"
+msgstr "%B %e., %A"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %k.%M.%S"

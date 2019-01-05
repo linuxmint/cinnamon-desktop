@@ -11,12 +11,12 @@ msgstr ""
 "PO-Revision-Date: 2012-11-20 11:55+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
-"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: kn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -28,7 +28,8 @@ msgstr "ಗೊತ್ತಿರದ"
 
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "ಟರ್ಮಿನಲ್ ಕಂಡುಬಂದಿಲ್ಲ, xterm ಅನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ, ಅದೂ ಸಹ ಕೆಲಸ ಮಾಡದೆ ಇರಬಹುದು"
+msgstr ""
+"ಟರ್ಮಿನಲ್ ಕಂಡುಬಂದಿಲ್ಲ, xterm ಅನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ, ಅದೂ ಸಹ ಕೆಲಸ ಮಾಡದೆ ಇರಬಹುದು"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -160,15 +161,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ಅಗತ್ಯವಿರುವ ವರ್ಚುವಲ್ ಗಾತ್ರವು ಲಭ್ಯವಿರುವ ಗಾತ್ರಕ್ಕೆ ಸರಿಹೊಂದುವುದಿಲ್ಲ: ಮನವಿ ಮಾಡಿದ್ದು=(%d, "
-"%d), ಕನಿಷ್ಟ=(%d, %d), ಗರಿಷ್ಟ=(%d, %d)"
+"ಅಗತ್ಯವಿರುವ ವರ್ಚುವಲ್ ಗಾತ್ರವು ಲಭ್ಯವಿರುವ ಗಾತ್ರಕ್ಕೆ ಸರಿಹೊಂದುವುದಿಲ್ಲ: ಮನವಿ "
+"ಮಾಡಿದ್ದು=(%d, %d), ಕನಿಷ್ಟ=(%d, %d), ಗರಿಷ್ಟ=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "ಪ್ರತಿಬಿಂಬಿತ ಪ್ರದರ್ಶಕಗಳು"
@@ -212,6 +213,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -289,22 +293,23 @@ msgstr "%l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME ನಲ್ಲಿ ಅನ್ವಯಗಳ ಪ್ರೊಗ್ರಾಮರುಗಳಿಗಾಗು ಒಂದು ಸಂಪೂರ್ಣ ವಿಕಸನಾ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಇದ್ದು, ಅದು "
-#~ "ಶಕ್ತಿಯುತವಾದ ಹಾಗು ಸಂಕೀರ್ಣವಾದ ಅನ್ವಯಗಳನ್ನು ನಿರ್ಮಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ."
+#~ "GNOME ನಲ್ಲಿ ಅನ್ವಯಗಳ ಪ್ರೊಗ್ರಾಮರುಗಳಿಗಾಗು ಒಂದು ಸಂಪೂರ್ಣ ವಿಕಸನಾ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ "
+#~ "ಇದ್ದು, ಅದು ಶಕ್ತಿಯುತವಾದ ಹಾಗು ಸಂಕೀರ್ಣವಾದ ಅನ್ವಯಗಳನ್ನು ನಿರ್ಮಿಸಲು ಅನುವು "
+#~ "ಮಾಡಿಕೊಡುತ್ತದೆ."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME ನಲ್ಲಿ ಗಣಕದಲ್ಲಿ ಕಾಣಸಿಗುವ ಕಡತವ್ಯವಸ್ಥಾಪಕ, ಜಾಲ ವೀಕ್ಷಕ, ಮೆನುಗಳು, ಹಾಗು ಇನ್ನಿತರೆ "
-#~ "ಎಲ್ಲಾ ಅನ್ವಯಗಳನ್ನು ಒಳಗೊಂಡಿದೆ."
+#~ "GNOME ನಲ್ಲಿ ಗಣಕದಲ್ಲಿ ಕಾಣಸಿಗುವ ಕಡತವ್ಯವಸ್ಥಾಪಕ, ಜಾಲ ವೀಕ್ಷಕ, ಮೆನುಗಳು, ಹಾಗು "
+#~ "ಇನ್ನಿತರೆ ಎಲ್ಲಾ ಅನ್ವಯಗಳನ್ನು ಒಳಗೊಂಡಿದೆ."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME ಯುನಿಕ್ಸ್‌ ಪಂಗಡದ ಕಾರ್ಯವ್ಯವಸ್ಥೆಗಳಲ್ಲಿನ ಉಚಿತವಾದ, ಬಳಸಬಹುದಾದ, ಸ್ಥಿರವಾದ, ನಿಲುಕಬಲ್ಲ "
-#~ "ಒಂದು ಗಣಕತೆರೆ ಪರಿಸರವಾಗಿದೆ."
+#~ "GNOME ಯುನಿಕ್ಸ್‌ ಪಂಗಡದ ಕಾರ್ಯವ್ಯವಸ್ಥೆಗಳಲ್ಲಿನ ಉಚಿತವಾದ, ಬಳಸಬಹುದಾದ, ಸ್ಥಿರವಾದ, "
+#~ "ನಿಲುಕಬಲ್ಲ ಒಂದು ಗಣಕತೆರೆ ಪರಿಸರವಾಗಿದೆ."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
@@ -315,8 +320,8 @@ msgstr "%l:%M %p"
 #~ "desktops ನಲ್ಲೆ ವಿಶಿಷ್ಟವಾದುದು ಎಂದು ಹೆಸರು ಮಾಡಿದೆ."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOME ನ ಅತ್ಯಂತ ಹೆಚ್ಚಿನ ಬಲವೆಂದರೆ ನಮ್ಮ ಶಕ್ತಿಯುತ ಸಮುದಾಯ. ಕೋಡಿಂಗ್‌ನ ಕುಶಲತೆ ಇರಲಿ "
 #~ "ಇಲ್ಲದೆ ಇರಲಿ, ವಾಸ್ತವವಾಗಿ ಯಾರು ಬೇಕಿದ್ದರೂ GNOME ಅನ್ನು ಉತ್ತಮಗೊಳಿಸಲು ನೆರವಾಗಬಹುದು."

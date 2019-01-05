@@ -26,10 +26,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-07 13:41-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -179,19 +179,19 @@ msgstr ""
 "o tamanho virtual requisitado não se encaixa no tamanho disponível: "
 "requisitado=(%d, %d), mínimo=(%d, %d), máximo=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Telas espelhadas"
 
-# Vide página man date(1).
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
+# Vide página man date(1).
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
 msgstr "%A, %e de %B, %R:%S"
@@ -210,9 +210,10 @@ msgstr "%R:%S"
 msgid "%R"
 msgstr "%R"
 
-# Vide página man date(1). A flag %l serve para 12h, mas nós queremos somente formato 24h, certo?
 #. Translators: This is a time format with full date used
 #. for AM/PM.
+# Vide página man date(1). A flag %l serve para 12h, mas nós queremos somente
+# formato 24h, certo?
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
 msgid "%A %B %e, %l:%M:%S %p"
 msgstr "%A, %e de %B, %R:%S"
@@ -230,6 +231,9 @@ msgstr "%R:%S"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%R"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A, %R:%S"
@@ -329,12 +333,12 @@ msgstr "%R"
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "O foco do GNOME em usabilidade, acessibilidade, um ciclo regular de "
-#~ "lançamentos e um forte apoio corporativo o torna único entre os ambientes "
-#~ "de trabalho livres."
+#~ "lançamentos e um forte apoio corporativo o torna único entre os ambientes de"
+#~ " trabalho livres."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "A maior vantagem do GNOME é a nossa comunidade. Praticamente qualquer um, "
 #~ "sendo ou não um programador, pode contribuir para fazer o GNOME melhor."
@@ -344,8 +348,8 @@ msgstr "%R"
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Centenas de pessoas contribuíram código para o GNOME desde o seu início "
-#~ "em 1997; muitos outros contribuíram de outras formas importantes, como "
+#~ "Centenas de pessoas contribuíram código para o GNOME desde o seu início em "
+#~ "1997; muitos outros contribuíram de outras formas importantes, como "
 #~ "incluindo traduções, documentação e garantia de qualidade."
 
 #~ msgid "Error reading file '%s': %s"

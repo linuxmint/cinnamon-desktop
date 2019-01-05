@@ -11,16 +11,16 @@ msgstr ""
 "PO-Revision-Date: 2009-09-20 12:26+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
-"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
 "\n"
 "\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -34,8 +34,8 @@ msgstr "अज्ञात"
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
-"कोनो टर्मिनल नहि ढूँढ़ि सकैत अछि, xterm कए प्रयोग कए रहल अछि, बावजूद जे यह काज नहि "
-"करैत अछि"
+"कोनो टर्मिनल नहि ढूँढ़ि सकैत अछि, xterm कए प्रयोग कए रहल अछि, बावजूद जे यह "
+"काज नहि करैत अछि"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -160,12 +160,12 @@ msgstr ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -208,6 +208,9 @@ msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
+msgstr ""
+
+msgid "%A, %B %e"
 msgstr ""
 
 #~ msgid "About GNOME"
@@ -274,45 +277,46 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "अनुप्रयोग प्रोग्रामरसभक लेल एकटा संपूर्ण विकास मंच (डेवलपमेंट प्लेटफार्म) गनोममे "
-#~ "सम्मिलितअछि, जे क्षमतायुक्त जटिल अनुप्रयोगक सृष्टिमे सक्षम अछि."
+#~ "अनुप्रयोग प्रोग्रामरसभक लेल एकटा संपूर्ण विकास मंच (डेवलपमेंट प्लेटफार्म) "
+#~ "गनोममे सम्मिलितअछि, जे क्षमतायुक्त जटिल अनुप्रयोगक सृष्टिमे सक्षम अछि."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "जेहो अहाँ अपन कम्प्यूटरमे देखैत छी, ओकरासँ बेसी गनोममे सम्मिलित अछि, जकरामे सामिल अछि "
-#~ "- फाइल मैनेजर, वेब ब्राउज़र, मेनूसभ आ आओर ढ़ेरी अनुप्रयोगसभ."
+#~ "जेहो अहाँ अपन कम्प्यूटरमे देखैत छी, ओकरासँ बेसी गनोममे सम्मिलित अछि, जकरामे "
+#~ "सामिल अछि - फाइल मैनेजर, वेब ब्राउज़र, मेनूसभ आ आओर ढ़ेरी अनुप्रयोगसभ."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "यूनिक्स जहिना आपरेटिंग सिस्टम घराना क' लेल गनोम एकटा मुफ्त, उपयोगी, स्थिर, पहुँच "
-#~ "योग्य डेस्कटाप वातावरण अछि."
+#~ "यूनिक्स जहिना आपरेटिंग सिस्टम घराना क' लेल गनोम एकटा मुफ्त, उपयोगी, स्थिर, "
+#~ "पहुँच योग्य डेस्कटाप वातावरण अछि."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "मुफ्त सोफ्टवेयर डेस्कटाप क' बीच गनोमक ई विशेषतासभ एकरा बेजोड़ बनबैत अछि - उपयोगिता "
-#~ "आओर पहुँच पर संकेंद्रीकरण, नियमित रिलीज चक्र आओर सशक्त निगम क' समर्थन."
+#~ "मुफ्त सोफ्टवेयर डेस्कटाप क' बीच गनोमक ई विशेषतासभ एकरा बेजोड़ बनबैत अछि - "
+#~ "उपयोगिता आओर पहुँच पर संकेंद्रीकरण, नियमित रिलीज चक्र आओर सशक्त निगम क' "
+#~ "समर्थन."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "गनोमक विशाल शक्ति अछि हमर मजगूत समुदाय. बास्तवमे कोनो, कोडिंग कौशल हुए अथवा नहि "
-#~ "हुए, गनोमकेँ बेहतर बनाबैमे अहाँ अपन जोगदान दए सकैत अछि."
+#~ "गनोमक विशाल शक्ति अछि हमर मजगूत समुदाय. बास्तवमे कोनो, कोडिंग कौशल हुए अथवा "
+#~ "नहि हुए, गनोमकेँ बेहतर बनाबैमे अहाँ अपन जोगदान दए सकैत अछि."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "सन् 1997 सँ, जखन सँ ई शुरू भेल अछि सैकड़ासभ लोकनिसभ कोड क' योगदान गनोमकेँ केने अछि "
-#~ "बहुते लोकनिसभ आन महत्वपूर्ण रूपेँ योगदान देने अछि जकरामे भाषानुवाद, दस्ताबेजीकरण "
-#~ "आओरगुणवत्ता भरोसा सामिल अछि."
+#~ "सन् 1997 सँ, जखन सँ ई शुरू भेल अछि सैकड़ासभ लोकनिसभ कोड क' योगदान गनोमकेँ "
+#~ "केने अछि बहुते लोकनिसभ आन महत्वपूर्ण रूपेँ योगदान देने अछि जकरामे भाषानुवाद,"
+#~ " दस्ताबेजीकरण आओरगुणवत्ता भरोसा सामिल अछि."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "'%s' फाइल केँ पढ़बामे त्रुटि: %s"

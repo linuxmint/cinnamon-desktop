@@ -14,12 +14,12 @@ msgstr ""
 "PO-Revision-Date: 2012-09-04 17:58+0700\n"
 "Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
-"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.2\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -118,8 +118,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"keluaran %s tidak memiliki parameter yang sama seperti keluaran hasil "
-"duplikasi:\n"
+"keluaran %s tidak memiliki parameter yang sama seperti keluaran hasil duplikasi:\n"
 "modus yang ada = %d, modus yang baru = %d\n"
 "koordinat yang ada = (%d, %d), koordinat yang baru = (%d, %d)\n"
 "rotasi yang ada = %s, rotasi yang baru = %s"
@@ -171,12 +170,12 @@ msgstr ""
 "ukuran virtual yang diperlukan tidak sesuai dengan ukuran yang tersedia: "
 "dipinta=(%d, %d), minimal=(%d, %d), maksimal=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Tampilan Kembar"
@@ -220,6 +219,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"

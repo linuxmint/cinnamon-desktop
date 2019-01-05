@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-02 11:36+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -169,12 +169,12 @@ msgstr ""
 "nödvändig virtuell storlek passar inte tillgänglig storlek: nödvändig=(%d, "
 "%d), minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -218,6 +218,9 @@ msgstr "%l.%M.%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l.%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Spegla skärmar"
@@ -319,16 +322,16 @@ msgstr "%l.%M %p"
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME:s fokus på användbarhet och åtkomlighet, regelbundna utgåvecykel "
-#~ "och starka stöd från företag gör den unik bland skrivbordsmiljöer inom "
-#~ "fri programvara."
+#~ "GNOME:s fokus på användbarhet och åtkomlighet, regelbundna utgåvecykel och "
+#~ "starka stöd från företag gör den unik bland skrivbordsmiljöer inom fri "
+#~ "programvara."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "GNOME:s största styrka är vår starka gemenskap. Nästan alla, med eller "
-#~ "utan programmeringskunskaper, kan bidra till att förbättra GNOME."
+#~ "GNOME:s största styrka är vår starka gemenskap. Nästan alla, med eller utan "
+#~ "programmeringskunskaper, kan bidra till att förbättra GNOME."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

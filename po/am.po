@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2003-01-14 11:02+EDT\n"
 "Last-Translator: Ge'ez Frontier Foundation <locales@geez.org>\n"
 "Language-Team: Amharic <locales@geez.org>\n"
-"Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: am\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -148,12 +148,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,33 +198,30 @@ msgstr ""
 msgid "%l:%M %p"
 msgstr ""
 
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
+
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "The Mysterious GEGL"
 
 #~ msgid "The Squeaky Rubber Gnome"
 #~ msgstr "The Squeaky Rubber Gnome"
 
-#, fuzzy
 #~ msgid "Wanda The GNOME Fish"
 #~ msgstr "ዋንዳ የኖም አሳ"
 
-#, fuzzy
 #~ msgid "Distributor"
 #~ msgstr "ዶሴ"
 
-#, fuzzy
 #~ msgid "About GNOME"
 #~ msgstr "ስለ ኖም%s%s%s"
 
-#, fuzzy
 #~ msgid "Developers"
 #~ msgstr "የኖም አደራጆች ቦታ"
 
-#, fuzzy
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "ስለ ኖም%s%s%s"
 
-#, fuzzy
 #~ msgid "Know more about GNOME"
 #~ msgstr "ስለ ኖም%s%s%s"
 
@@ -285,41 +282,33 @@ msgstr ""
 #~ msgid "ServiceType"
 #~ msgstr "የአገልግሎቱ ዓይነት"
 
-#, fuzzy
 #~ msgid "_URL:"
 #~ msgstr "URL፦"
 
-#, fuzzy
 #~ msgid "Comm_and:"
 #~ msgstr "ትእዛዝ፦"
 
-#, fuzzy
 #~ msgid "_Name:"
 #~ msgstr "ስም፦"
 
-#, fuzzy
 #~ msgid "_Generic name:"
 #~ msgstr "አጠቃላይ ስም፦"
 
-#, fuzzy
 #~ msgid "Co_mment:"
 #~ msgstr "አስተያየት፦"
 
 #~ msgid "Browse"
 #~ msgstr "ቃኝ"
 
-#, fuzzy
 #~ msgid "_Type:"
 #~ msgstr "ዓይነት፦"
 
-#, fuzzy
 #~ msgid "_Icon:"
 #~ msgstr "ምልክት"
 
 #~ msgid "Browse icons"
 #~ msgstr "ምልክቶችን ቃኝ"
 
-#, fuzzy
 #~ msgid "Run in t_erminal"
 #~ msgstr "በተርሚናሉ ውስጥ አስኪድ"
 
@@ -335,26 +324,21 @@ msgstr ""
 #~ msgid "Comment"
 #~ msgstr "አስተያየት"
 
-#, fuzzy
 #~ msgid "_Try this before using:"
 #~ msgstr "ከመጠቀምዎ በፊት ይህንን ሞክሩ፦"
 
-#, fuzzy
 #~ msgid "_Documentation:"
 #~ msgstr "ማስረጃ፦"
 
-#, fuzzy
 #~ msgid "_Name/Comment translations:"
 #~ msgstr "ስም/አስተያየት ትርጉሞች፦"
 
-#, fuzzy
 #~ msgid "_Add/Set"
 #~ msgstr "ጨምር/አስቀምጥ"
 
 #~ msgid "Add or Set Name/Comment Translations"
 #~ msgstr "የስም/አስተያየት ትርጉሞችን ጨምር ወይም አስቀምጥ"
 
-#, fuzzy
 #~ msgid "Re_move"
 #~ msgstr "አስወግድ"
 
@@ -376,7 +360,6 @@ msgstr ""
 #~ msgid "Accessories menu"
 #~ msgstr "የአጋዥ ፕሮግራሞች ሜኑ"
 
-#, fuzzy
 #~ msgid "Applications"
 #~ msgstr "መጠቀሚያ ፕሮግራም"
 
@@ -404,7 +387,6 @@ msgstr ""
 #~ msgid "Programs for Internet and networks"
 #~ msgstr "ፕሮግራሞች ለኢንተርኔት እና ለአውታሮች"
 
-#, fuzzy
 #~ msgid "Multimedia"
 #~ msgstr "የመገናኛ ብዙኃን ዝርዝ"
 
@@ -441,7 +423,6 @@ msgstr ""
 #~ msgid "System menu"
 #~ msgstr "የሲስተሙ ዝርዝር"
 
-#, fuzzy
 #~ msgid "Foundation"
 #~ msgstr "ማስረጃ፦"
 

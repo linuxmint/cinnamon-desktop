@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-06 22:11+0200\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -45,8 +45,8 @@ msgstr ""
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr ""
-"errore X non gestito durante il recupero dell'intervallo delle dimensioni di "
-"schermo"
+"errore X non gestito durante il recupero dell'intervallo delle dimensioni di"
+" schermo"
 
 #: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
@@ -158,8 +158,7 @@ msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
 "%s"
 msgstr ""
-"nessuna delle modalità selezionate era compatibile con le modalità "
-"possibili:\n"
+"nessuna delle modalità selezionate era compatibile con le modalità possibili:\n"
 "%s"
 
 #. Translators: the "requested", "minimum", and
@@ -171,15 +170,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"la dimensione virtuale richiesta non è adatta per la dimensione disponibile: "
-"richiesta=(%d, %d), minima=(%d, %d), massima=(%d, %d)"
+"la dimensione virtuale richiesta non è adatta per la dimensione disponibile:"
+" richiesta=(%d, %d), minima=(%d, %d), massima=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Monitor duplicati"
@@ -224,6 +223,9 @@ msgstr "%l.%M.%S %P"
 msgid "%l:%M %p"
 msgstr "%l.%M %P"
 
+msgid "%A, %B %e"
+msgstr "%A %e %B"
+
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %k.%M.%S"
 
@@ -254,19 +256,15 @@ msgstr "%l.%M %P"
 #~ msgid "Friends of GNOME"
 #~ msgstr "Amici di GNOME"
 
-# collegamento a sito http://www.gnome.org/contact/
 #~ msgid "Contact"
 #~ msgstr "Contatti"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Il Misterioso GEGL"
 
-# Pisolo, Mammolo, Squartolo... non fa ridere?
-# Ah, non proponete alternative che tanto non lo cambio
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "Lo GNOMO Gommolo"
 
-# il famosissimo pesce-GNOMO, in coppia con il pesce pagliaccio...
 #~ msgid "Wanda The GNOME Fish"
 #~ msgstr "Il pesce GNOMO di nome Wanda"
 
@@ -285,7 +283,6 @@ msgstr "%l.%M %P"
 #~ msgid "Welcome to the GNOME Desktop"
 #~ msgstr "Benvenuti in GNOME Desktop"
 
-# Hey, è open source, anzi free software!!
 #~ msgid "Brought to you by:"
 #~ msgstr "Sviluppato per tutti da:"
 
@@ -295,11 +292,9 @@ msgstr "%l.%M %P"
 #~ msgid "Version"
 #~ msgstr "Versione"
 
-# riferito a versione
 #~ msgid "Distributor"
 #~ msgstr "Distribuita da"
 
-# riferito a versione
 #~ msgid "Build Date"
 #~ msgstr "Compilata il"
 
@@ -337,12 +332,11 @@ msgstr "%l.%M %P"
 #~ "ambienti desktop liberi."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Il punto di forza di GNOME è la sua solida comunità. Chiunque, dotato o "
-#~ "meno di capacità di programmazione, può contribuire a rendere GNOME "
-#~ "migliore."
+#~ "Il punto di forza di GNOME è la sua solida comunità. Chiunque, dotato o meno"
+#~ " di capacità di programmazione, può contribuire a rendere GNOME migliore."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -353,13 +347,9 @@ msgstr "%l.%M %P"
 #~ "progetto è partito nel 1997; molti di più hanno contribuito in altri modi "
 #~ "importanti, come traduzioni, documentazione e controllo della qualità."
 
-# sarebbe da controllare cosa c'è
-# dopo i : di solito
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Errore nel leggere il file «%s»: %s"
 
-# sarebbe da controllare cosa c'è
-# dopo i : di solito
 #~ msgid "Error rewinding file '%s': %s"
 #~ msgstr "Errore nel riavvolgere il file «%s»: %s"
 

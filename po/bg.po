@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-20 06:32+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
-"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -72,8 +72,8 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"заявената позиция/размер към %d-ата видео карта е извън позволения диапазон: "
-"позиция=(%d, %d), размер=(%d, %d), максимум=(%d, %d)"
+"заявената позиция/размер към %d-ата видео карта е извън позволения диапазон:"
+" позиция=(%d, %d), размер=(%d, %d), максимум=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -118,8 +118,7 @@ msgid ""
 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
 "existing rotation = %s, new rotation = %s"
 msgstr ""
-"изходът %s е с различни параметри от този, чието изображение трябва да "
-"повтори:\n"
+"изходът %s е с различни параметри от този, чието изображение трябва да повтори:\n"
 "текущ режим = %d, нов режим = %d\n"
 "текущи координати = (%d, %d), нови координати = (%d, %d)\n"
 "текущо завъртане = %s, ново завъртане = %s"
@@ -169,12 +168,12 @@ msgstr ""
 "изисканият виртуален размер не пасва на действащия: изискан=(%d, %d), "
 "минимален=(%d, %d), максимален=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Еднакво изображение"
@@ -218,6 +217,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A, %R:%S"

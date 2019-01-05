@@ -60,17 +60,40 @@ enum {
 
 G_DEFINE_TYPE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
 
-/* Defaults */
-#define DATE_ONLY             (_("%A %B %e"))
-#define NO_DATE               ("")
+/* Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+ * The wall clock is used variously in Cinnamon applets and desklets, as well as
+ * cinnamon-screensaver's default lock screen. */
+
+/* Default date format (typically matching date portion of WITH_DATE_* defaults.)
+ * Currently used by cinnamon-screensaver default clock */
+#define DATE_ONLY             (_("%A, %B %e"))
+
+/* Defaut date/time format when show-date, show-seconds, use-24h are set */
 #define WITH_DATE_24H_SECONDS (_("%A %B %e, %R:%S"))
+
+/* Default date/time format when show-date, show-seconds are set */
 #define WITH_DATE_12H_SECONDS (_("%A %B %e, %l:%M:%S %p"))
+
+/* Default date/time format when show-date, use-24h are set */
 #define WITH_DATE_24H         (_("%A %B %e, %R"))
+
+/* Default date/time format when just show-date is set */
 #define WITH_DATE_12H         (_("%A %B %e, %l:%M %p"))
+
+/* Default date/time format when show-seconds, use-24h are set */
 #define NO_DATE_24H_SECONDS   (_("%R:%S"))
+
+/* Default date/time format when just show-seconds is set */
 #define NO_DATE_12H_SECONDS   (_("%l:%M:%S %p"))
+
+/* Default date/time format when just use-24h is set */
 #define NO_DATE_24H           (_("%R"))
+
+/* Default date/time format with no options are set */
 #define NO_DATE_12H           (_("%l:%M %p"))
+
+#define NO_DATE               ("")
+
 /************/
 
 static void update_format_string (GnomeWallClock *self, const gchar *format_string);
@@ -320,6 +343,7 @@ update_format_string (GnomeWallClock *self, const gchar *format_string)
             new_format = g_strdup (format_string);
         }
 
+        g_date_time_unref (test_now);
         g_clear_pointer (&str, g_free);
     }
 
@@ -426,8 +450,8 @@ on_tz_changed (GFileMonitor      *monitor,
  * gnome_wall_clock_get_clock:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns a formatted date and time based on either
- * default format settings, or via a custom-set format string.
+ * Returns a formatted date and time based on either default format
+ * settings, or via a custom-set format string.
  *
  * The returned string should be ready to be set on a label.
  *
@@ -444,8 +468,8 @@ gnome_wall_clock_get_clock (GnomeWallClock *clock)
  * gnome_wall_clock_get_default_time_format:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns the current time-only format
- * based on current locale defaults and clock settings.
+ * Returns the current time-only format based on current locale
+ * defaults and clock settings.
  *
  * Returns: (transfer none): The default time format string.
  **/
@@ -459,8 +483,8 @@ gnome_wall_clock_get_default_time_format (GnomeWallClock *clock)
  * gnome_wall_clock_get_default_date_format:
  * @clock: The GnomeWallClock
  *
- * Description:  Returns the current date-only format
- * based on current locale defaults and clock settings.
+ * Returns the current date-only format based on current locale
+ * defaults and clock settings.
  *
  * Returns: (transfer none): The default date format string.
  **/
@@ -475,9 +499,7 @@ gnome_wall_clock_get_default_date_format (GnomeWallClock *clock)
  * @clock: The GnomeWallClock
  * @format_string: (not nullable)
  *
- * Description:  Returns a formatted date and time based on the
- * provided format string.
- *
+ * Returns a formatted date and time based on the provided format string.
  * The returned string should be ready to be set on a label.
  *
  * Returns: (transfer full): The formatted date/time string, or NULL
@@ -503,7 +525,7 @@ gnome_wall_clock_get_clock_for_format (GnomeWallClock *clock,
 /**
  * gnome_wall_clock_new:
  *
- * Description:  Returns a new GnomeWallClock instance
+ * Returns a new GnomeWallClock instance
  *
  * Returns: A pointer to a new GnomeWallClock instance.
  **/
@@ -518,9 +540,9 @@ gnome_wall_clock_new (void)
  * @clock: The GnomeWallClock
  * @format_string: (nullable)
  *
- * Description:  Sets the wall clock to use the provided
- * format string for any subsequent updates.  Passing NULL will
- * un-set any custom format, and rely on a default locale format.
+ * Sets the wall clock to use the provided format string for any
+ * subsequent updates.  Passing NULL will un-set any custom format,
+ * and rely on a default locale format.
  *
  * Any invalid format string passed will cause it to be ignored,
  * and the default locale format used instead.

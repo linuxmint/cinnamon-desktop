@@ -18,10 +18,10 @@ msgstr ""
 "PO-Revision-Date: 2012-01-08 15:01+0100\n"
 "Last-Translator: Jovan N\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
-"Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mk\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -173,12 +173,12 @@ msgstr ""
 "потребната виртуелна големина не одговара со достапната големина: "
 "побарано=(%d, %d), минимум=(%d, %d), максимум=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -225,6 +225,9 @@ msgstr "%A %l:%M:%S %p"
 #, fuzzy
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Огледални прикази"
@@ -303,9 +306,8 @@ msgstr "%A %l:%M %p"
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME ги вклучува повеќето работи што ги гледате на Вашиот компјутер, "
-#~ "заедно со менаџерите за датотеки, веб прелистувачите, менијата и многу "
-#~ "апликации."
+#~ "GNOME ги вклучува повеќето работи што ги гледате на Вашиот компјутер, заедно"
+#~ " со менаџерите за датотеки, веб прелистувачите, менијата и многу апликации."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -319,12 +321,12 @@ msgstr "%A %l:%M %p"
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
 #~ "GNOME се фокусира на користност и пристапност. Регуларниот циклус на "
-#~ "објавување на нови верзии го прави GNOME уникатен помеѓу слободните "
-#~ "работни околини."
+#~ "објавување на нови верзии го прави GNOME уникатен помеѓу слободните работни "
+#~ "околини."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Најголемата сила на GNOME е во јаката заедница. Скоро секој со или без "
 #~ "програмерски способности може да придонесе во подобрувањето на GNOME."
@@ -335,8 +337,8 @@ msgstr "%A %l:%M %p"
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "Во создавањето на GNOME имаат удел стотици луѓе. Уште од кога е започнат "
-#~ "проектот во 1997, многу луѓе имаат помогнато на разни начини вклучувајќи "
-#~ "и преведување, изработување на документација и проверка на квалитетот."
+#~ "проектот во 1997, многу луѓе имаат помогнато на разни начини вклучувајќи и "
+#~ "преведување, изработување на документација и проверка на квалитетот."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Грешка при читањето на датотеката '%s': %s"

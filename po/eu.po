@@ -14,12 +14,12 @@ msgstr ""
 "PO-Revision-Date: 2011-01-27 22:13+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
-"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -169,12 +169,12 @@ msgstr ""
 "eskatutako tamaina birtuala ez zaio tamaina erabilgarriari doitzen: "
 "eskatutakoa=(%d, %d), gutxienekoa=(%d, %d), gehienezkoa=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -222,17 +222,18 @@ msgstr "%A %l:%M:%S %p"
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
 
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
+
 #~ msgid "Mirror Screens"
 #~ msgstr "Ispilu-pantailak"
 
 #~ msgid "%A %R"
 #~ msgstr "%A %R"
 
-#
 #~ msgid "About GNOME"
 #~ msgstr "GNOMEri buruz"
 
-#
 #~ msgid "Learn more about GNOME"
 #~ msgstr "Ikasi gehiago GNOMEri buruz"
 
@@ -242,11 +243,9 @@ msgstr "%A %l:%M %p"
 #~ msgid "GNOME Library"
 #~ msgstr "GNOMEren liburutegia"
 
-#
 #~ msgid "Friends of GNOME"
 #~ msgstr "GNOMEren lagunak"
 
-#
 #~ msgid "Contact"
 #~ msgstr "Kontaktua"
 
@@ -256,7 +255,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "GNOME gomazko kirrinkaria"
 
-#
 #~ msgid "Wanda The GNOME Fish"
 #~ msgstr "Wanda, GNOMEko arraina"
 
@@ -266,7 +264,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "_Copy URL"
 #~ msgstr "_Kopiatu URLa"
 
-#
 #~ msgid "About the GNOME Desktop"
 #~ msgstr "GNOMEren mahaigainari buruz"
 
@@ -282,11 +279,9 @@ msgstr "%A %l:%M %p"
 #~ msgid "<b>%(name)s:</b> %(value)s"
 #~ msgstr "<b>%(name)s:</b> %(value)s"
 
-#
 #~ msgid "Version"
 #~ msgstr "Bertsioa"
 
-#
 #~ msgid "Distributor"
 #~ msgstr "Banatzailea"
 
@@ -314,20 +309,20 @@ msgstr "%A %l:%M %p"
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME mahaigaineko ingurune librea, erabilgarria eta egonkorra da, eta "
-#~ "Unix-en antzeko sistema eragileen familiek erabil dezakete."
+#~ "GNOME mahaigaineko ingurune librea, erabilgarria eta egonkorra da, eta Unix-"
+#~ "en antzeko sistema eragileen familiek erabil dezakete."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOMEren erabilgarritasun eta eskuragarritasunak, askatze-ziklo "
-#~ "erregularrak eta laguntza korporatibo sendoari ematen dion garrantziak, "
-#~ "software libreko mahaigainen artean apartekoa izatea eragiten dute."
+#~ "GNOMEren erabilgarritasun eta eskuragarritasunak, askatze-ziklo erregularrak"
+#~ " eta laguntza korporatibo sendoari ematen dion garrantziak, software libreko"
+#~ " mahaigainen artean apartekoa izatea eragiten dute."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "GNOMEren indar handiena gure komunitate indartsua da. Ia edonork, "
 #~ "programazioan trebetasunak eduki ala ez, parte har dezake GNOME hobetzen."
@@ -337,8 +332,8 @@ msgstr "%A %l:%M %p"
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Ehunka lagunek parte hartu dute GNOME kodetzen, 1997an hasi zenetik; "
-#~ "beste askok beste modu garrantzitsu batean hartu dute parte, adibidez, "
+#~ "Ehunka lagunek parte hartu dute GNOME kodetzen, 1997an hasi zenetik; beste "
+#~ "askok beste modu garrantzitsu batean hartu dute parte, adibidez, "
 #~ "itzulpenekin, dokumentazioarekin edo kalitatea bermatuz."
 
 #~ msgid "Error reading file '%s': %s"
@@ -353,7 +348,6 @@ msgstr "%A %l:%M %p"
 #~ msgid "File '%s' is not a regular file or directory."
 #~ msgstr "'%s' fitxategia ez da fitxategi arrunta edo direktorioa."
 
-#~| msgid "Error cannot find file id '%s'"
 #~ msgid "Cannot find file '%s'"
 #~ msgstr "Ezin da '%s' fitxategia aurkitu"
 

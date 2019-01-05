@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-14 19:17+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
-"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
@@ -154,8 +154,7 @@ msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
 "%s"
 msgstr ""
-"mikään valituista tiloista ei ollut yhteensopiva mahdollisten tilojen "
-"kanssa:\n"
+"mikään valituista tiloista ei ollut yhteensopiva mahdollisten tilojen kanssa:\n"
 "%s"
 
 #. Translators: the "requested", "minimum", and
@@ -167,22 +166,22 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"vaadittu virtuaalinen koko ei mahdu saatavilla olevaan kokoon: pyydetty=(%d,"
-"%d), minimi=(%d,%d), maksimi=(%d,%d)"
+"vaadittu virtuaalinen koko ei mahdu saatavilla olevaan kokoon: "
+"pyydetty=(%d,%d), minimi=(%d,%d), maksimi=(%d,%d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Peilatut näytöt"
 
-# msgstr "%A %-d.%-m., %-H.%M.%S"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
+# msgstr "%A %-d.%-m., %-H.%M.%S"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
 msgstr "%A %d.%m., %H.%M.%S"
@@ -192,9 +191,9 @@ msgstr "%A %d.%m., %H.%M.%S"
 msgid "%A %B %e, %R"
 msgstr "%A %d.%m., %H.%M"
 
-# msgstr "%A %-H.%M.%S"
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
+# msgstr "%A %-H.%M.%S"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:243
 msgid "%R:%S"
 msgstr "%H.%M.%S"
@@ -203,9 +202,9 @@ msgstr "%H.%M.%S"
 msgid "%R"
 msgstr "%H.%M"
 
-# msgstr "%A %-d.%-m., %-I.%M.%S %p"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
+# msgstr "%A %-d.%-m., %-I.%M.%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
 msgid "%A %B %e, %l:%M:%S %p"
 msgstr "%A %d.%m., %I.%M.%S %p"
@@ -215,9 +214,9 @@ msgstr "%A %d.%m., %I.%M.%S %p"
 msgid "%A %B %e, %l:%M %p"
 msgstr "%A %d.%m., %I.%M %p"
 
-# msgstr "%A %-I.%M.%S %p"
 #. Translators: This is a time format without date used
 #. for AM/PM.
+# msgstr "%A %-I.%M.%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
 msgid "%l:%M:%S %p"
 msgstr "%l:%M:%S %p"
@@ -227,19 +226,18 @@ msgstr "%l:%M:%S %p"
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
 
-# msgstr "%A %-H.%M.%S"
+msgid "%A, %B %e"
+msgstr "%A, %e. %Bta"
+
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %H.%M.%S"
 
-# msgstr "%A %-H.%M"
 #~ msgid "%A %R"
 #~ msgstr "%A %H.%M"
 
-# msgstr "%A %-I.%M.%S %p"
 #~ msgid "%A %l:%M:%S %p"
 #~ msgstr "%A %I.%M.%S %p"
 
-# msgstr "%A %-I.%M %p"
 #~ msgid "%A %l:%M %p"
 #~ msgstr "%A %I.%M %p"
 
@@ -330,8 +328,8 @@ msgstr "%l:%M %p"
 #~ "vapaaohjelmistoihin perustuvien työpöytien joukossa."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "Gnomen suurin vahvuus on vahva yhteisö. Käytännössä kuka tahansa, "
 #~ "ohjelmointitaitoinen tai ei, voi osallistua Gnomen kehittämiseen."
@@ -342,8 +340,8 @@ msgstr "%l:%M %p"
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "Sadat ihmiset ovat ohjelmoineet Gnomen hyväksi projektin käynnistyttyä "
-#~ "vuonna 1997, ja monet muut ovat osallistuneet muilla tärkeillä tavoin, "
-#~ "kuten kääntämällä sitä toisille kielille, kirjoittamalla ohjeita ja "
+#~ "vuonna 1997, ja monet muut ovat osallistuneet muilla tärkeillä tavoin, kuten"
+#~ " kääntämällä sitä toisille kielille, kirjoittamalla ohjeita ja "
 #~ "tarkkailemalla laatua."
 
 #~ msgid "Error reading file '%s': %s"

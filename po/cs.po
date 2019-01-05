@@ -22,10 +22,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-16 20:13+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.0\n"
 
@@ -39,7 +39,8 @@ msgstr "Neznámý"
 
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "Nelze nalézt terminál, používá se xterm, přestože možná nebude funkční"
+msgstr ""
+"Nelze nalézt terminál, používá se xterm, přestože možná nebude funkční"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -173,31 +174,34 @@ msgstr ""
 "požadovaná virtuální velikost přesahuje dostupnou velikost: požadováno=(%d, "
 "%d), minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Zrcadlené displeje"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
 msgid "%A %B %e, %R:%S"
 msgstr "%A, %e. %B, %k:%M:%S"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
 msgid "%A %B %e, %R"
 msgstr "%A, %e. %B, %k:%M"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:243
 msgid "%R:%S"
 msgstr "%k:%M:%S"
@@ -206,42 +210,45 @@ msgstr "%k:%M:%S"
 msgid "%R"
 msgstr "%k:%M"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #. Translators: This is a time format with full date used
 #. for AM/PM.
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
 msgid "%A %B %e, %l:%M:%S %p"
 msgstr "%A, %e. %B, %l:%M:%S %p"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
 msgid "%A %B %e, %l:%M %p"
 msgstr "%A, %e. %B, %l:%M %p"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #. Translators: This is a time format without date used
 #. for AM/PM.
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
 msgid "%l:%M:%S %p"
 msgstr "%l:%M:%S %p"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
+# Not sure whether we've enough space for it, but anyway, looks more
+# aesthetically with "%A".
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%A, %l:%M %p"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
+
 #~ msgid "%A %R:%S"
 #~ msgstr "%A, %k:%M:%S"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #~ msgid "%A %R"
 #~ msgstr "%A, %k:%M"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #~ msgid "%A %l:%M:%S %p"
 #~ msgstr "%A, %l:%M:%S %p"
 
-# Not sure whether we've enough space for it, but anyway, looks more aesthetically with "%A".
 #~ msgid "%A %l:%M %p"
 #~ msgstr "%A, %l:%M %p"

@@ -14,6 +14,11 @@
        Stores the keybinding for toggling the looking glass window
       </_description>
     </key>
+    <key name="show-desklets" type="as">
+      <default>['&lt;Super&gt;s']</default>
+      <_summary>Show desklets</_summary>
+      <_description>Raises desklets above windows</_description>
+    </key>
     <key name="magnifier-zoom-in" type="as">
       <default>['&lt;Alt&gt;&lt;Super&gt;equal']</default>
       <_summary>Magnifier zoom in</_summary>

@@ -20,11 +20,16 @@
       <default>false</default>
       <_summary>Whether to play a sound when the volume is changed</_summary>
       <_description>Whether to play a sound when the volume is changed.</_description>
-    </key>    
+    </key>
     <key name="volume-sound-file" type="s">
       <default>""</default>
       <_summary>Which sound to play when the volume is changed</_summary>
       <_description>Which sound to play when the volume is changed.</_description>
-    </key>     
+    </key>
+    <key name="maximum-volume" type="i">
+      <default>100</default>
+      <_summary>The maximum sound volume</_summary>
+      <_description>The maximum sound volume the user can set via the sound applet, settings and volume keys.</_description>
+    </key>
   </schema>
 </schemalist>

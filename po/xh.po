@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2012-01-06 20:25+0200\n"
 "Last-Translator: Andiswa Mvanyashe <andiswamva@webmail.co.za>\n"
 "Language-Team: translate-discuss-xh@lists.sourceforge.net\n"
-"Language: xh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: xh\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Virtaal 0.7.0\n"
 "X-Project-Style: gnome\n"
@@ -36,7 +36,8 @@ msgstr "Ayifumani theminali, xa kusebenza i-xterm, nokuba ingangasebenzi"
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, fuzzy, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "ayikwazanga ukufumana umnikezi wesikrini (CRTCs, okuphumayo, iintlobo)"
+msgstr ""
+"ayikwazanga ukufumana umnikezi wesikrini (CRTCs, okuphumayo, iintlobo)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
@@ -166,15 +167,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"ubungakanani obulindelekileyo akungeni kubungakanani obukhona : iceliwe=(%d, "
-"%d), encinanana=(%d, %d), eyona enkulu=(%d, %d)"
+"ubungakanani obulindelekileyo akungeni kubungakanani obukhona : iceliwe=(%d,"
+" %d), encinanana=(%d, %d), eyona enkulu=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -222,6 +223,9 @@ msgstr "%A %l:%M:%S %p"
 msgid "%l:%M %p"
 msgstr "%A %l:%M %p"
 
+msgid "%A, %B %e"
+msgstr ""
+
 #~ msgid "Mirror Screens"
 #~ msgstr "Isikrini sefestile"
 
@@ -242,8 +246,8 @@ msgstr "%A %l:%M %p"
 
 #~ msgid "Could not locate the directory with header images."
 #~ msgstr ""
-#~ "Ayikwazanga kufumana uvimba weefayili ezinemifanekiso yemibhalo "
-#~ "engasentla ephepheni."
+#~ "Ayikwazanga kufumana uvimba weefayili ezinemifanekiso yemibhalo engasentla "
+#~ "ephepheni."
 
 #~ msgid "Failed to open directory with header images: %s"
 #~ msgstr ""
@@ -309,41 +313,40 @@ msgstr "%A %l:%M %p"
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
 #~ "I-GNOME kananjalo ibandakanya iqonga elipheleleyo lophuhliso ukwenzela "
-#~ "abahlohli bobucukubhede bekhompyutha, ukuze kuvunyelwe ukuyilwa "
-#~ "kweenkqubo zekhompyutha ezinesakhono nezimbaxa."
+#~ "abahlohli bobucukubhede bekhompyutha, ukuze kuvunyelwe ukuyilwa kweenkqubo "
+#~ "zekhompyutha ezinesakhono nezimbaxa."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "I-GNOME ibandakanya okona kuninzi okubona ekhompyutheni yakho, "
-#~ "kubandakanywa umlawuli wefayili, isikhangeli se-web, iimenyu, neenkqubo "
-#~ "eziliqela zekhompyutha."
+#~ "I-GNOME ibandakanya okona kuninzi okubona ekhompyutheni yakho, kubandakanywa"
+#~ " umlawuli wefayili, isikhangeli se-web, iimenyu, neenkqubo eziliqela "
+#~ "zekhompyutha."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "I-GNOME Yimeko eguqukayo elungeleneyo yolwazi olukwiskrini "
-#~ "ekhululekileyo, esebenzisekayo, engagungqiyo, nefikelelekayo ukwenzela "
-#~ "usapho olufana nolwe-Unix lweenkqubo zokusebenza."
+#~ "I-GNOME Yimeko eguqukayo elungeleneyo yolwazi olukwiskrini ekhululekileyo, "
+#~ "esebenzisekayo, engagungqiyo, nefikelelekayo ukwenzela usapho olufana nolwe-"
+#~ "Unix lweenkqubo zokusebenza."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "Ukujolisa kwe-GNOME ekusebenzisekeni nasekufikeleleni, kumjikelo "
-#~ "wobonelelo osoloko ukho, nenkxaso esemva eyomeleleyo eyenza ukuba ifane "
-#~ "yodwa phakathi kolwazi lwezikrini Zobucukubhede Bekhompyutha "
-#~ "Obukhululekileyo."
+#~ "Ukujolisa kwe-GNOME ekusebenzisekeni nasekufikeleleni, kumjikelo wobonelelo "
+#~ "osoloko ukho, nenkxaso esemva eyomeleleyo eyenza ukuba ifane yodwa phakathi "
+#~ "kolwazi lwezikrini Zobucukubhede Bekhompyutha Obukhululekileyo."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "Isakhono esisona sikhulu se-GNOME kukomelela kwabahlali bethu. "
-#~ "Enyanisweni nabani, onobuchule bokufaka iikhowudi okanye ongenabo, unakho "
-#~ "ukwenza igalelo lokuyiphucula i-GNOME."
+#~ "Isakhono esisona sikhulu se-GNOME kukomelela kwabahlali bethu. Enyanisweni "
+#~ "nabani, onobuchule bokufaka iikhowudi okanye ongenabo, unakho ukwenza "
+#~ "igalelo lokuyiphucula i-GNOME."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -352,8 +355,8 @@ msgstr "%A %l:%M %p"
 #~ msgstr ""
 #~ "Amakhulu abantu abe negalelo kwikhowudi ye-GNOME ukususela ekuqalisweni "
 #~ "kwayo ngowe-1997; baninzi ababe negalelo ngeendlela ezizezinye "
-#~ "ezibalulekileyo, kubandakanywa uguqulelo, ugcino kumaxwebhu, "
-#~ "nokuqinisekiswa kodidi."
+#~ "ezibalulekileyo, kubandakanywa uguqulelo, ugcino kumaxwebhu, nokuqinisekiswa"
+#~ " kodidi."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Ifayili efunda impazamo '%s': %s"

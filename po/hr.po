@@ -7,17 +7,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-26 15:14+0200\n"
 "PO-Revision-Date: 2014-09-25 15:31+0100\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad.net>\n"
 "Language-Team: Croatian <trebelnik2@gmail.com>\n"
-"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2008-05-28 06:03+0000\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.5.4\n"
+"X-Launchpad-Export-Date: 2008-05-28 06:03+0000\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -153,8 +151,7 @@ msgid ""
 "none of the selected modes were compatible with the possible modes:\n"
 "%s"
 msgstr ""
-"nijedan od odabranih načina prikaza nije kompatibilan s mogućim načinima "
-"prikaza:\n"
+"nijedan od odabranih načina prikaza nije kompatibilan s mogućim načinima prikaza:\n"
 "%s"
 
 #. Translators: the "requested", "minimum", and
@@ -169,12 +166,12 @@ msgstr ""
 "potrebna virtualna veličina ne odgovara dostupnoj veličini: potrebno=(%d, "
 "%d), minimalno=(%d, %d), maksimalno=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Zrcalni zasloni"
@@ -218,6 +215,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %e %B"
 
 #~ msgid "About GNOME"
 #~ msgstr "O GNOME-u"
@@ -290,8 +290,8 @@ msgstr "%l:%M %p"
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME uključuje većinu onoga što vidite na računalu, uključujući "
-#~ "upravitelja datotekama, web preglednik, izbornike i mnoge aplikacije."
+#~ "GNOME uključuje većinu onoga što vidite na računalu, uključujući upravitelja"
+#~ " datotekama, web preglednik, izbornike i mnoge aplikacije."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
@@ -309,11 +309,11 @@ msgstr "%l:%M %p"
 #~ "slobodnim radnim okruženjima."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "GNOME-ova najveća snaga je zajednica okupljena oko njega. Gotovo svatko, "
-#~ "s ili bez vještina programiranja, može doprinijeti poboljšnju GNOME-a."
+#~ "GNOME-ova najveća snaga je zajednica okupljena oko njega. Gotovo svatko, s "
+#~ "ili bez vještina programiranja, može doprinijeti poboljšnju GNOME-a."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -321,8 +321,8 @@ msgstr "%l:%M %p"
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "Stotine ljudi dale su doprinos GNOME kôdu od početka 1997; mnogi drugi "
-#~ "doprinijeli su na druge važne načine, uključujući prijevode, "
-#~ "dokumentaciju i osiguranje kvalitete."
+#~ "doprinijeli su na druge važne načine, uključujući prijevode, dokumentaciju i"
+#~ " osiguranje kvalitete."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Greška pri čitanju datoteke '%s': %s"

@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2012-09-29 00:58+0200\n"
 "Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
 "Language-Team: Aragonés <softaragones@googlegroups.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -28,8 +28,8 @@ msgstr "Desconoxiu"
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
-"No s'ha puesto trobar una terminal, fendo servir xterm, incluso si puede que "
-"no funcione"
+"No s'ha puesto trobar una terminal, fendo servir xterm, incluso si puede que"
+" no funcione"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
@@ -163,15 +163,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"o tamanyo virtual que cal no s'achusta a lo tamanyo disponible: requeriu:"
-"(%d, %d), menimo=(%d, %d), maximo=(%d, %d)"
+"o tamanyo virtual que cal no s'achusta a lo tamanyo disponible: "
+"requeriu:(%d, %d), menimo=(%d, %d), maximo=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "Pantallas en mirallo"
@@ -215,6 +215,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -321,12 +324,12 @@ msgstr "%l:%M %p"
 #~ "escritorios de Software Libre."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
 #~ "O mayor fuerte de GNOME ye a suya fuerte comunidad. Virtualment "
-#~ "cualsiquiera, con u sin habilidatz de programacion, puede contribuyir a "
-#~ "fer un GNOME millor."
+#~ "cualsiquiera, con u sin habilidatz de programacion, puede contribuyir a fer "
+#~ "un GNOME millor."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

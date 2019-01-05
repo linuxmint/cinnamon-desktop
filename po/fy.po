@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2010-07-19 14:20+0200\n"
 "Last-Translator: Sense Hofstede <sense@ubuntu.com>\n"
 "Language-Team: Frisian <gnome-fy-list@gnome.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -148,12 +148,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -197,6 +197,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B, %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "Oer GNOME"
@@ -269,8 +272,8 @@ msgstr ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME is itjinge wêrmei jo wurkje en wat op jo computer sichtber, "
-#~ "wêrûnder de triembehearder, webblêder, menu's en in soad applikaajes."
+#~ "GNOME is itjinge wêrmei jo wurkje en wat op jo computer sichtber, wêrûnder "
+#~ "de triembehearder, webblêder, menu's en in soad applikaajes."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
@@ -285,8 +288,8 @@ msgstr ""
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "Hûnderten minsken hawwe koade bydrage oan GNOME sûnt it wie starte yn "
-#~ "1997; in soad mear hawwe bydrage op oare wichtiche manieren, dêrûnder "
+#~ "Hûnderten minsken hawwe koade bydrage oan GNOME sûnt it wie starte yn 1997; "
+#~ "in soad mear hawwe bydrage op oare wichtiche manieren, dêrûnder "
 #~ "oersettingen, dokumintaasje, en kwaliteitsbehear."
 
 #~ msgid "Error reading file '%s': %s"

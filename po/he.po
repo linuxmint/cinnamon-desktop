@@ -13,12 +13,12 @@ msgstr ""
 "PO-Revision-Date: 2012-09-07 16:20+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -164,12 +164,12 @@ msgstr ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "שכפול צגים"
@@ -213,6 +213,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -293,8 +296,8 @@ msgstr "%l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "‏GNOME כולל גם פלטפורמת פיתוח שלמה למפתחי יישומים, המאפשרת יצירה של "
-#~ "יישומים חזקים ומורכבים."
+#~ "‏GNOME כולל גם פלטפורמת פיתוח שלמה למפתחי יישומים, המאפשרת יצירה של יישומים "
+#~ "חזקים ומורכבים."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -318,11 +321,11 @@ msgstr "%l:%M %p"
 #~ "אותו ייחודי בין שולחנות העבודה של התוכנה החופשית."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "העוצמה הגדולה ביותר של GNOME היא הקהילה החזקה שלו. למעשה כל אחד, עם או "
-#~ "בלי כישורי כתיבת קוד, יכול לתרום כדי לעשות את GNOME טוב יותר."
+#~ "העוצמה הגדולה ביותר של GNOME היא הקהילה החזקה שלו. למעשה כל אחד, עם או בלי "
+#~ "כישורי כתיבת קוד, יכול לתרום כדי לעשות את GNOME טוב יותר."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "

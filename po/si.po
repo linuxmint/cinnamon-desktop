@@ -11,12 +11,12 @@ msgstr ""
 "PO-Revision-Date: 2007-05-27 20:21+0530\n"
 "Last-Translator: Danishka Navin <snavin@redhat.com>\n"
 "Language-Team: Sinhala <en@li.org>\n"
-"Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: si\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -149,12 +149,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -198,6 +198,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "පුදුමාකාර GEGL"
@@ -278,44 +281,46 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "තවද, යෙදුම් සහ කේත රචකයන් සඳහා පූර්ණ සංවර්ධන වෙදිකාවක් GNOME සතු අතර, මෙය ප්‍රබල සහ "
-#~ "ශක්තිමත් යෙදුම් නිර්මාණයට අවකාශ ලබාදෙයි."
+#~ "තවද, යෙදුම් සහ කේත රචකයන් සඳහා පූර්ණ සංවර්ධන වෙදිකාවක් GNOME සතු අතර, මෙය "
+#~ "ප්‍රබල සහ ශක්තිමත් යෙදුම් නිර්මාණයට අවකාශ ලබාදෙයි."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "ඔබ පරිගණකයේ දකින, බොහෝ ගොනු කළමණාකරු, වියණු ජාලනය, මෙනු සහ බොහෝ යෙදුම් GNOME හි "
-#~ "අඩංගුව ඇත."
+#~ "ඔබ පරිගණකයේ දකින, බොහෝ ගොනු කළමණාකරු, වියණු ජාලනය, මෙනු සහ බොහෝ යෙදුම් GNOME"
+#~ " හි අඩංගුව ඇත."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME යනු Unix හා සමාන මෙහෙයුම් පද්ධති සඳහා ස්වාධීන, ස්ථායි, වන භාවිතා කළහැකි, ලඟාවිය "
-#~ "හැකි තිරමුහුණත් පරිසරයකි."
+#~ "GNOME යනු Unix හා සමාන මෙහෙයුම් පද්ධති සඳහා ස්වාධීන, ස්ථායි, වන භාවිතා "
+#~ "කළහැකි, ලඟාවිය හැකි තිරමුහුණත් පරිසරයකි."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "GNOME භාවිතා කිරිමේ හැකියාව සහ ලඟාවීමේ හැකියාව, ඒකාකාරී මුදාහැරීමේ චක්‍රය, සහ ශක්තිමත් "
-#~ "ඒකාබද්ධතාව පිළිබඳව නාභිගතවේ, එහෙයින් එය ස්වාදීන මෘදුකාංග තිරමුහුණත් අතර අද්විතීය වේ."
+#~ "GNOME භාවිතා කිරිමේ හැකියාව සහ ලඟාවීමේ හැකියාව, ඒකාකාරී මුදාහැරීමේ චක්‍රය, "
+#~ "සහ ශක්තිමත් ඒකාබද්ධතාව පිළිබඳව නාභිගතවේ, එහෙයින් එය ස්වාදීන මෘදුකාංග "
+#~ "තිරමුහුණත් අතර අද්විතීය වේ."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "අපගේ ප්‍රජාව GNOME's අනගිභවනීය ශක්තිය වෙයි. සැබවින්ම කේත රචන කුසලතාවය ඇති හෝ නැති "
-#~ "ඕනැම කෙනෙකුට GNOME හි සාර්ථකත්වය සඳහා උරදිය හැකිය."
+#~ "අපගේ ප්‍රජාව GNOME's අනගිභවනීය ශක්තිය වෙයි. සැබවින්ම කේත රචන කුසලතාවය ඇති හෝ"
+#~ " නැති ඕනැම කෙනෙකුට GNOME හි සාර්ථකත්වය සඳහා උරදිය හැකිය."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997 දි GNOME ආරම්භ කළ දිනසිට සිය ගණනක් පිරිස් කේත රචනය සඳහා දායකත්වය සැපයූහ; තවත් "
-#~ "බොහෝ දෙනා පරිවර්තනය, ලේඛණාරූඩ කිරීම සහ තත්ව පාලනය ඇතුලු වැදගත් අයුරින් දායක විය."
+#~ "1997 දි GNOME ආරම්භ කළ දිනසිට සිය ගණනක් පිරිස් කේත රචනය සඳහා දායකත්වය "
+#~ "සැපයූහ; තවත් බොහෝ දෙනා පරිවර්තනය, ලේඛණාරූඩ කිරීම සහ තත්ව පාලනය ඇතුලු වැදගත් "
+#~ "අයුරින් දායක විය."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "ගොනුව කියවීම දෝෂ සහිතයි '%s': %s"

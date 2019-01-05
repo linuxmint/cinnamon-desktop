@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2008-02-26 22:13+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
-"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: oc\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
@@ -150,12 +150,12 @@ msgid ""
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -200,6 +200,9 @@ msgstr ""
 msgid "%l:%M %p"
 msgstr ""
 
+msgid "%A, %B %e"
+msgstr "%A %e %B"
+
 #~ msgid "About GNOME"
 #~ msgstr "A prepaus de GNOME"
 
@@ -221,7 +224,6 @@ msgstr ""
 #~ msgid "The Mysterious GEGL"
 #~ msgstr "Lo misteriós GEGL"
 
-# Voir bug #402587
 #~ msgid "The Squeaky Rubber GNOME"
 #~ msgstr "Lo cruissiment d'elastic GNOME"
 
@@ -267,16 +269,16 @@ msgstr ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "GNOME conten la màger part de çò que vesètz sus vòstre ordenador, enclaus "
-#~ "lo gestionari de fichièrs, lo navigador internet, los menuts e fòrça "
+#~ "GNOME conten la màger part de çò que vesètz sus vòstre ordenador, enclaus lo"
+#~ " gestionari de fichièrs, lo navigador internet, los menuts e fòrça "
 #~ "logicials."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "GNOME es un entorn de burèu liure, utilisable, estable e accessible per "
-#~ "la familha dels sistèmas d'esplech del tipe Unix."
+#~ "GNOME es un entorn de burèu liure, utilisable, estable e accessible per la "
+#~ "familha dels sistèmas d'esplech del tipe Unix."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
@@ -287,11 +289,11 @@ msgstr ""
 #~ "environament de burèu liure unenc."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "La fòrça màger de GNOME es nòstra comunitat potenta. Gaireben totes, amb "
-#~ "o sens competéncias de programacion, pòdon ajudar a melhorar GNOME."
+#~ "La fòrça màger de GNOME es nòstra comunitat potenta. Gaireben totes, amb o "
+#~ "sens competéncias de programacion, pòdon ajudar a melhorar GNOME."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
@@ -435,8 +437,7 @@ msgstr ""
 #~ msgstr "Error al moment d'escriure lo fichièr '%s' : %s"
 
 #~ msgid "Could not locate the directory with header images."
-#~ msgstr ""
-#~ "Impossible de localizar lo repertòri que conten los imatges d'encap."
+#~ msgstr "Impossible de localizar lo repertòri que conten los imatges d'encap."
 
 #~ msgid "Failed to open directory with header images: %s"
 #~ msgstr "Impossible de dobrir lo repertòri que cap los imatges d'encap : %s"

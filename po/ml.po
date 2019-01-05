@@ -13,12 +13,12 @@ msgstr ""
 "PO-Revision-Date: 2012-09-18 10:54+0000\n"
 "Last-Translator: Ani Peter <apeter@redhat.com>\n"
 "Language-Team: Malayalam <discuss@lists.smc.org.in>\n"
-"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: ml\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -31,20 +31,22 @@ msgstr "അപരിചിതം"
 #: ../libcinnamon-desktop/gnome-desktop-utils.c:134
 msgid "Cannot find a terminal, using xterm, even if it may not work"
 msgstr ""
-"ഒരു ടെര്‍മിനല്‍ കണ്ടുപിടിയ്ക്കാന്‍ സാധിച്ചില്ല, പ്രവര്‍ത്തിയ്ക്കാതിരിയ്ക്കാന്‍ സാധ്യതയുണ്ടെങ്കിലും, "
-"xterm ഉപയോഗിയ്ക്കുന്നു"
+"ഒരു ടെര്‍മിനല്‍ കണ്ടുപിടിയ്ക്കാന്‍ സാധിച്ചില്ല, "
+"പ്രവര്‍ത്തിയ്ക്കാതിരിയ്ക്കാന്‍ സാധ്യതയുണ്ടെങ്കിലും, xterm ഉപയോഗിയ്ക്കുന്നു"
 
 #. Translators: a CRTC is a CRT Controller (this is X terminology).
 #: ../libcinnamon-desktop/gnome-rr.c:452
 #, c-format
 msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "സ്ക്രീനിലെ വിഭവങ്ങള്‍ (സിആര്‍ടികള്‍, ഔട്ട്പുട്ടുകള്‍, ദശകള്‍) കിട്ടിയില്ല"
+msgstr ""
+"സ്ക്രീനിലെ വിഭവങ്ങള്‍ (സിആര്‍ടികള്‍, ഔട്ട്പുട്ടുകള്‍, ദശകള്‍) കിട്ടിയില്ല"
 
 #: ../libcinnamon-desktop/gnome-rr.c:472
 #, c-format
 msgid "unhandled X error while getting the range of screen sizes"
 msgstr ""
-"സ്ക്രീനിന്റെ വലിപ്പത്തിന്റെ പരിധി കിട്ടിക്കൊണ്ടിരിയ്ക്കുമ്പോള്‍ കൈകാര്യം ചെയ്യാത്ത എക്സിലെ പിശകു്"
+"സ്ക്രീനിന്റെ വലിപ്പത്തിന്റെ പരിധി കിട്ടിക്കൊണ്ടിരിയ്ക്കുമ്പോള്‍ കൈകാര്യം "
+"ചെയ്യാത്ത എക്സിലെ പിശകു്"
 
 #: ../libcinnamon-desktop/gnome-rr.c:478
 #, c-format
@@ -70,8 +72,8 @@ msgid ""
 "requested position/size for CRTC %d is outside the allowed limit: "
 "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"സിആര്‍ടിസി %d നു് അപേക്ഷിച്ച സ്ഥാനം/വലിപ്പം പരധിയ്ക്കു് പുറത്താണു്: സ്ഥാനം=(%d, %d), "
-"വലിപ്പം=(%d, %d), കൂടിയതു്=(%d, %d)"
+"സിആര്‍ടിസി %d നു് അപേക്ഷിച്ച സ്ഥാനം/വലിപ്പം പരധിയ്ക്കു് പുറത്താണു്: "
+"സ്ഥാനം=(%d, %d), വലിപ്പം=(%d, %d), കൂടിയതു്=(%d, %d)"
 
 #: ../libcinnamon-desktop/gnome-rr.c:2204
 #, c-format
@@ -91,7 +93,8 @@ msgstr "ലാപ്‌ടോപ്"
 #, c-format
 msgid ""
 "none of the saved display configurations matched the active configuration"
-msgstr "സൂക്ഷിച്ച ഡിസ്പ്ലേ ക്രമീകരണങ്ങളിലൊന്നും സജീവ ക്രമീകരണവുമായി പൊരുത്തമില്ല"
+msgstr ""
+"സൂക്ഷിച്ച ഡിസ്പ്ലേ ക്രമീകരണങ്ങളിലൊന്നും സജീവ ക്രമീകരണവുമായി പൊരുത്തമില്ല"
 
 #: ../libcinnamon-desktop/gnome-rr-config.c:1469
 #, c-format
@@ -163,15 +166,15 @@ msgid ""
 "required virtual size does not fit available size: requested=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 msgstr ""
-"അപേക്ഷിച്ച മായാ വലിപ്പം ലഭ്യമായ വലിപ്പത്തിലൊതുങ്ങുന്നില്ല: അപേക്ഷിച്ചതു്=(%d, %d), "
-"ചുരുങ്ങിയതു്=(%d, %d), കൂടിയതു്=(%d, %d)"
+"അപേക്ഷിച്ച മായാ വലിപ്പം ലഭ്യമായ വലിപ്പത്തിലൊതുങ്ങുന്നില്ല: "
+"അപേക്ഷിച്ചതു്=(%d, %d), ചുരുങ്ങിയതു്=(%d, %d), കൂടിയതു്=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr "മിറര്‍ ചെയ്ത പ്രദര്‍ശനങ്ങള്‍"
@@ -215,6 +218,9 @@ msgstr "%l:%M:%S %p"
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
+
+msgid "%A, %B %e"
+msgstr ""
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -295,46 +301,49 @@ msgstr "%l:%M %p"
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "ശക്തവും സങ്കീര്‍ണവുമായ പ്രയോഗങ്ങളുടെ സൃഷ്ടി അനുവദിച്ചു് കൊണ്ടു് പ്രയോഗരചയിതാക്കള്‍ക്കായി ഒരു "
-#~ "സമ്പൂര്‍ണ്ണ വികസനവേദി ഗ്നോം ഉള്‍‌ക്കൊള്ളുന്നു."
+#~ "ശക്തവും സങ്കീര്‍ണവുമായ പ്രയോഗങ്ങളുടെ സൃഷ്ടി അനുവദിച്ചു് കൊണ്ടു് "
+#~ "പ്രയോഗരചയിതാക്കള്‍ക്കായി ഒരു സമ്പൂര്‍ണ്ണ വികസനവേദി ഗ്നോം ഉള്‍‌ക്കൊള്ളുന്നു."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
 #~ "manager, web browser, menus, and many applications."
 #~ msgstr ""
-#~ "ഫയല്‍ മാനേജ്മെന്റ്, വെബ് ബ്രൌസര്‍, മെനുകള്‍ കൂടാതെ പല പ്രയോഗങ്ങളും ഉള്‍‌പ്പെ‌ടെ നിങ്ങളുടെ "
-#~ "കമ്പ്യൂട്ടറില്‍ കാണുന്നതിലധികവും ഉള്‍‌ക്കൊള്ളുന്നതാണു് ഗ്നോം."
+#~ "ഫയല്‍ മാനേജ്മെന്റ്, വെബ് ബ്രൌസര്‍, മെനുകള്‍ കൂടാതെ പല പ്രയോഗങ്ങളും "
+#~ "ഉള്‍‌പ്പെ‌ടെ നിങ്ങളുടെ കമ്പ്യൂട്ടറില്‍ കാണുന്നതിലധികവും "
+#~ "ഉള്‍‌ക്കൊള്ളുന്നതാണു് ഗ്നോം."
 
 #~ msgid ""
 #~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
 #~ "Unix-like family of operating systems."
 #~ msgstr ""
-#~ "യുണിക്സ് കുടുംബത്തിലെ പ്രവര്‍ത്തകസംവിധാനങ്ങള്‍ക്കായുള്ള ഒരു സ്വതന്ത്രവും ഉപയോഗയോഗ്യവും ഈടുറ്റതും "
-#~ "സാമീപ്യവുമായ പണിയിട പരിസ്ഥിതിയാണു് ഗ്നോം."
+#~ "യുണിക്സ് കുടുംബത്തിലെ പ്രവര്‍ത്തകസംവിധാനങ്ങള്‍ക്കായുള്ള ഒരു സ്വതന്ത്രവും "
+#~ "ഉപയോഗയോഗ്യവും ഈടുറ്റതും സാമീപ്യവുമായ പണിയിട പരിസ്ഥിതിയാണു് ഗ്നോം."
 
 #~ msgid ""
 #~ "GNOME's focus on usability and accessibility, regular release cycle, and "
 #~ "strong corporate backing make it unique among Free Software desktops."
 #~ msgstr ""
-#~ "ഉപയോഗയോഗ്യത , സാമീപ്യത , കൃത്യതയാര്‍ന്ന പ്രസാധനക്രമം എന്നിവയിലുള്ള ഗ്നോമിന്റെ നിഷ്ഠയും "
-#~ "ശക്തമായ കോര്‍പറേറ്റ് പിന്തുണയും ഇതിനെ സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ പണിയിടങ്ങളില്‍ തനിമയോടെ "
-#~ "നിര്‍ത്തുന്നു."
+#~ "ഉപയോഗയോഗ്യത , സാമീപ്യത , കൃത്യതയാര്‍ന്ന പ്രസാധനക്രമം എന്നിവയിലുള്ള "
+#~ "ഗ്നോമിന്റെ നിഷ്ഠയും ശക്തമായ കോര്‍പറേറ്റ് പിന്തുണയും ഇതിനെ സ്വതന്ത്ര "
+#~ "സോഫ്റ്റ്‌വെയര്‍ പണിയിടങ്ങളില്‍ തനിമയോടെ നിര്‍ത്തുന്നു."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "ഗ്നോമിന്റെ എറ്റവും വലിയ ശക്തി ഞങ്ങളുടെ കരുത്തുറ്റ കൂട്ടായ്മയാണു്. കോഡെഴുത്ത് കഴിവുകളുള്ളവരോ "
-#~ "ഇല്ലാത്തവരോ എന്ന ഭേദമില്ലാതെ ആര്‍ക്കും ഗ്നോം മെച്ചപ്പെടുത്താന്‍ സംഭാവന ചെയ്യാവുന്നതാണു്."
+#~ "ഗ്നോമിന്റെ എറ്റവും വലിയ ശക്തി ഞങ്ങളുടെ കരുത്തുറ്റ കൂട്ടായ്മയാണു്. കോഡെഴുത്ത്"
+#~ " കഴിവുകളുള്ളവരോ ഇല്ലാത്തവരോ എന്ന ഭേദമില്ലാതെ ആര്‍ക്കും ഗ്നോം "
+#~ "മെച്ചപ്പെടുത്താന്‍ സംഭാവന ചെയ്യാവുന്നതാണു്."
 
 #~ msgid ""
 #~ "Hundreds of people have contributed code to GNOME since it was started in "
 #~ "1997; many more have contributed in other important ways, including "
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
-#~ "1997 ല്‍ ഗ്നോം തുടങ്ങിയതു് മുതല്‍ നൂറുകണക്കിനു് ആളുകള്‍ ഗ്നോമിലേയ്ക്കു് കോഡ് സംഭാവന ചെയ്തിട്ടുണ്ടു്; "
-#~ "ഇതിലും എത്രയോ അധികം ആളുകള്‍ പരിഭാഷ, വിവരണം, ഗുണനിലവാരം ഉറപ്പുവരുത്തല്‍ "
-#~ "എന്നിവയുള്‍‌പ്പെടെയുള്ള മറ്റു് പ്രധാന വഴികളിലൂടെ സംഭാവന ചെയ്തിട്ടുണ്ടു്."
+#~ "1997 ല്‍ ഗ്നോം തുടങ്ങിയതു് മുതല്‍ നൂറുകണക്കിനു് ആളുകള്‍ ഗ്നോമിലേയ്ക്കു് കോഡ്"
+#~ " സംഭാവന ചെയ്തിട്ടുണ്ടു്; ഇതിലും എത്രയോ അധികം ആളുകള്‍ പരിഭാഷ, വിവരണം, "
+#~ "ഗുണനിലവാരം ഉറപ്പുവരുത്തല്‍ എന്നിവയുള്‍‌പ്പെടെയുള്ള മറ്റു് പ്രധാന വഴികളിലൂടെ "
+#~ "സംഭാവന ചെയ്തിട്ടുണ്ടു്."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "%2$s :%1$s എന്ന ഫയല്‍ വായിക്കുന്നതില്‍ തെറ്റു് സംഭവിച്ചു"

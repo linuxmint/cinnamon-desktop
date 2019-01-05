@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-10-22 19:01+0100\n"
 "Last-Translator: Nils-Christoph Fiedler <linux@medienkompanie.de>\n"
 "Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Translators: "Unknown" here is used to identify a monitor for which
 #. * we don't know the vendor. When a vendor is known, the name of the
@@ -157,12 +157,12 @@ msgstr ""
 "nödige virtuelle Gröte passt nich in verfögbare Gröte: nödig=(%d, %d), "
 "minimum=(%d, %d), maximum=(%d, %d)"
 
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
+#. capplet.c:get_display_name()
 #. Translators:  this is the feature where what you see on your
 #. * laptop's screen is the same as your external projector.
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
-#.
 #: ../libcinnamon-desktop/gnome-rr-labeler.c:451
 msgid "Mirrored Displays"
 msgstr ""
@@ -206,6 +206,9 @@ msgstr ""
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
 msgid "%l:%M %p"
 msgstr ""
+
+msgid "%A, %B %e"
+msgstr "%A, %B %e"
 
 #~ msgid "About GNOME"
 #~ msgstr "Över GNOME"
@@ -271,9 +274,8 @@ msgstr ""
 #~ "GNOME also includes a complete development platform for applications "
 #~ "programmers, allowing the creation of powerful and complex applications."
 #~ msgstr ""
-#~ "GNOME hett een kumplette Konstruktschoonsgrundlaag för "
-#~ "Anwennenprogrammeerer to de Konstruktschoon vun mächdigen un "
-#~ "veelschichtigen Programmen."
+#~ "GNOME hett een kumplette Konstruktschoonsgrundlaag för Anwennenprogrammeerer"
+#~ " to de Konstruktschoon vun mächdigen un veelschichtigen Programmen."
 
 #~ msgid ""
 #~ "GNOME includes most of what you see on your computer, including the file "
@@ -298,11 +300,11 @@ msgstr ""
 #~ "Schrievdisken."
 
 #~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with "
-#~ "or without coding skills, can contribute to making GNOME better."
+#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
+#~ " without coding skills, can contribute to making GNOME better."
 #~ msgstr ""
-#~ "De grodste Starke vun GNOME liggt in de starke Gemeinschapt. In'n Groten "
-#~ "un Ganzen künn all, ob sei sik nu mit Programmeern utkennen or nich, bi'm "
+#~ "De grodste Starke vun GNOME liggt in de starke Gemeinschapt. In'n Groten un "
+#~ "Ganzen künn all, ob sei sik nu mit Programmeern utkennen or nich, bi'm "
 #~ "Verbettern vun GNOME mithölpen."
 
 #~ msgid ""
@@ -311,9 +313,9 @@ msgstr ""
 #~ "translations, documentation, and quality assurance."
 #~ msgstr ""
 #~ "Siet 'em Start vu'm GNOME-Projekt 1997 hebben hunnerte vun Minschen "
-#~ "mithölpt, GNOME to programmeeren. Veele hunnert mehr hebben eehren Bidrag "
-#~ "to GNOME in annern wichdigen Rebeeten as in de Översetten, "
-#~ "Dokumentatschoon un Qualitätssekern leest."
+#~ "mithölpt, GNOME to programmeeren. Veele hunnert mehr hebben eehren Bidrag to"
+#~ " GNOME in annern wichdigen Rebeeten as in de Översetten, Dokumentatschoon un"
+#~ " Qualitätssekern leest."
 
 #~ msgid "Error reading file '%s': %s"
 #~ msgstr "Problem bi'm Lesen vun de Datei '%s': %s"
