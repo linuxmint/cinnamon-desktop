@@ -14,8 +14,21 @@ gtk-doc.
 Installation
 ============
 
-See the file 'INSTALL'. If you are not using a released version of
-cinnamon-desktop (for example, if you checked out the code from git), you
-first need to run './autogen.sh'.
+1) Run meson with options you like. The following configuration installs
+   all binaries, libs, and shared files into /usr/local, and enables all
+   available options:
 
+    meson debian/build \
+        --prefix=/usr/local \
+        --buildtype=plain \
+        -D deprecated_warnings=false
+
+2) Compile and install (sudo is needed for install)
+
+    ninja -C debian/build
+    ninja -C debian/build install
+
+3) You can uninstall the installed files with
+
+    ninja -C debian/build uninstall
 
