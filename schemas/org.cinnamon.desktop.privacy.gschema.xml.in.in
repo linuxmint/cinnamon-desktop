@@ -17,12 +17,12 @@
       <_description>Consider trash and temporary files old after this many days.</_description>
     </key>
     <key name="remember-recent-files" type="b">
-      <default>false</default>
+      <default>true</default>
       <_summary>Whether to remember recently used files</_summary>
       <_description>If FALSE, applications will not remember recently used files.</_description>
     </key>
     <key name="recent-files-max-age" type="i">
-      <default>-1</default>
+      <default>7</default>
       <_summary>Number of days to remember recently used files for</_summary>
       <_description>Recently used files will be remembered for this many days. If set to 0, recent files will not be remembered; if set to -1, they will be retained indefinitively.</_description>
     </key>
