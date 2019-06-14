@@ -1,3 +1,23 @@
+cinnamon-desktop (4.2.0) tina; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-wall-clock.c: Fix memory leak when a custom format string is in use.
+
+  [ Dušan Kazik ]
+  * Update slovak translation (#123)
+
+  [ Leigh Scott ]
+  * Update for meson changes (#126)
+
+  [ Clement Lefebvre ]
+  * Privacy: Enable recents by default
+
+  [ Eli Schwartz ]
+  * Remove legacy migration script from cinnamon 2.4 (#127)
+  * Meson deprecations (#128)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 14 Jun 2019 12:45:15 +0100
+
 cinnamon-desktop (4.0.1) tessa; urgency=medium
 
   [ Clement Lefebvre ]
