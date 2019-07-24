@@ -271,5 +271,10 @@
       <_summary>Display battery status</_summary>
       <_description>Display battery status</_description>
     </key>
+    <key type="i" name="volume-step">
+      <default>5</default>
+      <summary>Keyboard Media Keys Step size</summary>
+      <description>Sets the step size for the keyboard's media keys volume controls.</description>
+    </key>
   </schema>
 </schemalist>
