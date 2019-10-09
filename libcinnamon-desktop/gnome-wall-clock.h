@@ -68,6 +68,9 @@ gchar *           gnome_wall_clock_get_clock_for_format (GnomeWallClock *clock,
 GnomeWallClock *  gnome_wall_clock_new           (void);
 gboolean          gnome_wall_clock_set_format_string (GnomeWallClock *clock,
                                                       const gchar    *format_string);
+gchar *           gnome_wall_clock_lctime_format (const gchar * gettext_domain,
+                                                  const gchar * format_string);
+
 G_END_DECLS
 
 #endif

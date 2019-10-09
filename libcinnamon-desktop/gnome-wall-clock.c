@@ -254,7 +254,7 @@ update_format_string (GnomeWallClock *self, const gchar *format_string)
     guint i;
     gchar *old_format;
     gboolean use_24h, show_date, show_seconds;
-    const gchar *default_format;
+    const gchar *default_format, *env_language, *env_lc_time;
 
     static const gchar* seconds_tokens[] = {
         "\%s",
@@ -274,6 +274,16 @@ update_format_string (GnomeWallClock *self, const gchar *format_string)
     use_24h = g_settings_get_boolean (self->priv->desktop_settings, "clock-use-24h");
     show_date = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-date");
     show_seconds = g_settings_get_boolean (self->priv->desktop_settings, "clock-show-seconds");
+
+    /* Override LANGUAGE with the LC_TIME environment variable
+     * This is needed for gettext to fetch our clock format
+     * according to LC_TIME, and not according to the DE LANGUAGE.
+     */
+    env_language = g_getenv("LANGUAGE");
+    env_lc_time = g_getenv("LC_TIME");
+    if (env_language != NULL && env_lc_time != NULL && env_language != env_lc_time) {
+        g_setenv("LANGUAGE", env_lc_time, TRUE);
+    }
 
     if (use_24h) {
         if (show_date) {
@@ -327,6 +337,11 @@ update_format_string (GnomeWallClock *self, const gchar *format_string)
 
             self->priv->default_date_format = NO_DATE;
         }
+    }
+
+    /* Set back LANGUAGE the way it was before */
+    if (env_language != NULL && env_lc_time != NULL && env_language != env_lc_time) {
+        g_setenv("LANGUAGE", env_language, TRUE);
     }
 
     /* Then look at our custom format if we received one, and test it out.
@@ -567,4 +582,38 @@ gnome_wall_clock_set_format_string (GnomeWallClock *clock,
     update_clock (clock);
 
     return ret;
+}
+
+/**
+ * gnome_wall_clock_lctime_format:
+ * @clock: The GnomeWallClock
+ * @gettext_domain: (nullable)
+ * @format_string: (nullable)
+ *
+ * Returns the translation of the format string according to
+ * the LC_TIME locale.
+ *
+ * Returns: (transfer none): The translated format string.
+ **/
+gchar *
+gnome_wall_clock_lctime_format (const gchar * gettext_domain, const gchar * format_string)
+{
+  const gchar *env_language, *env_lc_time;
+  gchar *string;
+
+  env_language = g_getenv("LANGUAGE");
+  env_lc_time = g_getenv("LC_TIME");
+
+  if (env_language == NULL || env_lc_time == NULL || env_language == env_lc_time) {
+    return g_strdup (format_string);
+  }
+
+  g_setenv("LANGUAGE", env_lc_time, TRUE);
+
+  string = dgettext(gettext_domain, format_string);
+
+  /* Set back LANGUAGE the way it was before */
+  g_setenv("LANGUAGE", env_language, TRUE);
+
+  return string;
 }
