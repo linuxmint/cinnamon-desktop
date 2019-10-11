@@ -139,5 +139,10 @@
       <_summary>Keyboard layout group to use when entering your password</_summary>
       <_description>This stores the last active keyboard layout group for entering your password.</_description>
     </key>
+    <key name="custom-screensaver-command" type="s">
+      <default>""</default>
+      <summary>Specify custom screen locker command</summary>
+      <description>If empty, cinnamon-screensaver will be used</description>
+    </key>
   </schema>
 </schemalist>
