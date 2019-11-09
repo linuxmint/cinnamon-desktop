@@ -31,5 +31,10 @@
       <_summary>The maximum sound volume</_summary>
       <_description>The maximum sound volume the user can set via the sound applet, settings and volume keys.</_description>
     </key>
+    <key name="volume-step" type="i">
+      <default>5</default>
+      <_summary>The volume controls' step size</_summary>
+      <_description>Sets the step size (in percent) for the volume controls.</_description>
+    </key>
   </schema>
 </schemalist>
