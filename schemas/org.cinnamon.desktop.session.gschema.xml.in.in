@@ -13,13 +13,11 @@
     </key>
     <key name="session-manager-uses-logind" type="b">
       <default>true</default>
-      <_summary>Whether or not cinnamon-session uses logind to suspend/hibernate/shutdown/restart (usually from the shutdown dialog)</_summary>
-      <_description>If true, it uses logind. Otherwise it uses consolekit to shutdown/restart and upower to suspend/hibernate. It is only compatible with upower 0.9 and lower versions (not 0.99 or later).</_description>
+      <_summary>*no longer used*</_summary>
     </key>
     <key name="settings-daemon-uses-logind" type="b">
       <default>true</default>
-      <_summary>Whether or not cinnamon-settings-daemon uses logind to suspend/hibernate/shutdown (either from media-keys or power-manager)</_summary>
-      <_description>If true, it uses logind for all three actions. Otherwise it uses consolekit for shutdown and upower for suspend/hibernate.</_description>
+      <_summary>*no longer used*</_summary>
     </key>
   </schema>
 </schemalist>
