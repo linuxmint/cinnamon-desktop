@@ -1,3 +1,16 @@
+cinnamon-desktop (4.4.0) tricia; urgency=medium
+
+  [ Leigh Scott ]
+  * Fix unused GIR transfer notation on integer values (#130)
+
+  [ Clement Lefebvre ]
+  * Fetch clock formats using LC_TIME (as opposed to LANGUAGE) (#132)
+
+  [ Michael Webster ]
+  * org.cinnamon.desktop.session schema: Remove logind/consolekit settings for cinnamon-session and cinnamon-settings-daemon.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 16 Nov 2019 11:50:26 +0100
+
 cinnamon-desktop (4.2.0) tina; urgency=medium
 
   [ Michael Webster ]
