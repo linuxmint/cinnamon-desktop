@@ -25,6 +25,7 @@
 #include "config.h"
 
 #include <glib/gi18n-lib.h>
+#include <locale.h>
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-wall-clock.h"
@@ -591,7 +592,9 @@ gnome_wall_clock_set_format_string (GnomeWallClock *clock,
  * @format_string: (nullable)
  *
  * Returns the translation of the format string according to
- * the LC_TIME locale.
+ * the LC_TIME locale. If LC_TIME is not set, it uses the
+ * LANGUAGE locale, if available.
+ * If neither is set, it returns the untranslated @format_string.
  *
  * Returns: (transfer none): The translated format string.
  **/
@@ -599,21 +602,14 @@ gchar *
 gnome_wall_clock_lctime_format (const gchar * gettext_domain, const gchar * format_string)
 {
   const gchar *env_language, *env_lc_time;
-  gchar *string;
 
   env_language = g_getenv("LANGUAGE");
   env_lc_time = g_getenv("LC_TIME");
 
-  if (env_language == NULL || env_lc_time == NULL || env_language == env_lc_time) {
-    return g_strdup (format_string);
-  }
+  if (env_lc_time != NULL)
+    return dcgettext(gettext_domain, format_string, LC_TIME);
+  if (env_language != NULL)
+    return dgettext(gettext_domain, format_string);
 
-  g_setenv("LANGUAGE", env_lc_time, TRUE);
-
-  string = dgettext(gettext_domain, format_string);
-
-  /* Set back LANGUAGE the way it was before */
-  g_setenv("LANGUAGE", env_language, TRUE);
-
-  return string;
+  return g_strdup (format_string);
 }
