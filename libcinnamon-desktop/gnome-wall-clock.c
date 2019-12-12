@@ -600,20 +600,25 @@ gnome_wall_clock_lctime_format (const gchar * gettext_domain, const gchar * form
 {
   const gchar *env_language, *env_lc_time;
   gchar *string;
+  gboolean   use_lctime;
 
+  /* Use LC_TIME if it's set and different than LANGUAGE */
   env_language = g_getenv("LANGUAGE");
   env_lc_time = g_getenv("LC_TIME");
 
-  if (env_language == NULL || env_lc_time == NULL || env_language == env_lc_time) {
-    return g_strdup (format_string);
-  }
+  use_lctime = (env_language != NULL) && (env_lc_time != NULL) && (g_strcmp0 (env_language, env_lc_time) != 0);
 
-  g_setenv("LANGUAGE", env_lc_time, TRUE);
+  if (use_lctime) {
+    /* Set LANGUAGE to the LC_TIME value, so we can get the right date format via gettext */
+    g_setenv("LANGUAGE", env_lc_time, TRUE);
+  }
 
   string = dgettext(gettext_domain, format_string);
 
-  /* Set back LANGUAGE the way it was before */
-  g_setenv("LANGUAGE", env_language, TRUE);
+  if (use_lctime) {
+    /* Set back LANGUAGE the way it was before */
+    g_setenv("LANGUAGE", env_language, TRUE);
+  }
 
   return string;
 }
