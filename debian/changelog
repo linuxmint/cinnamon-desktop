@@ -1,3 +1,9 @@
+cinnamon-desktop (4.4.1) tricia; urgency=medium
+
+  * Clock: Fix date format when LC_TIME and LANGUAGE are the same, or LC_TIME is NULL (#142)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Dec 2019 11:01:34 +0000
+
 cinnamon-desktop (4.4.0) tricia; urgency=medium
 
   [ Leigh Scott ]
