@@ -2437,6 +2437,13 @@ gnome_rr_mode_get_freq (GnomeRRMode *mode)
     return (mode->freq) / 1000;
 }
 
+double
+gnome_rr_mode_get_freq_f (GnomeRRMode *mode)
+{
+    g_return_val_if_fail (mode != NULL, 0.0);
+    return (mode->freq) / 1000.0;
+}
+
 guint
 gnome_rr_mode_get_height (GnomeRRMode *mode)
 {
@@ -2453,7 +2460,7 @@ mode_initialize (GnomeRRMode *mode, XRRModeInfo *info)
     mode->name = g_strdup (info->name);
     mode->width = info->width;
     mode->height = info->height;
-    mode->freq = ((info->dotClock / (double)info->hTotal) / info->vTotal + 0.5) * 1000;
+    mode->freq = info->dotClock / ((float)info->hTotal * info->vTotal) * 1000;
 }
 
 static GnomeRRMode *

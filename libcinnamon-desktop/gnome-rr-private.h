@@ -51,7 +51,7 @@ struct GnomeRROutputInfoPrivate
     gboolean		on;
     int			width;
     int			height;
-    int			rate;
+    double		rate;
     int			x;
     int			y;
     GnomeRRRotation	rotation;

@@ -130,10 +130,24 @@ int gnome_rr_output_info_get_refresh_rate (GnomeRROutputInfo *self)
 {
     g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), 0);
 
-    return self->priv->rate;
+    return (int) self->priv->rate;
 }
 
 void gnome_rr_output_info_set_refresh_rate (GnomeRROutputInfo *self, int rate)
+{
+    g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
+
+    self->priv->rate = rate * 1.0;
+}
+
+double gnome_rr_output_info_get_refresh_rate_f (GnomeRROutputInfo *self)
+{
+    g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), 0);
+
+    return self->priv->rate;
+}
+
+void gnome_rr_output_info_set_refresh_rate_f (GnomeRROutputInfo *self, double rate)
 {
     g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
 

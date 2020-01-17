@@ -67,8 +67,11 @@ void     gnome_rr_output_info_set_active (GnomeRROutputInfo *self, gboolean acti
 void gnome_rr_output_info_get_geometry (GnomeRROutputInfo *self, int *x, int *y, int *width, int *height);
 void gnome_rr_output_info_set_geometry (GnomeRROutputInfo *self, int  x, int  y, int  width, int  height);
 
-int  gnome_rr_output_info_get_refresh_rate (GnomeRROutputInfo *self);
+int gnome_rr_output_info_get_refresh_rate (GnomeRROutputInfo *self);
 void gnome_rr_output_info_set_refresh_rate (GnomeRROutputInfo *self, int rate);
+
+double gnome_rr_output_info_get_refresh_rate_f (GnomeRROutputInfo *self);
+void gnome_rr_output_info_set_refresh_rate_f (GnomeRROutputInfo *self, double rate);
 
 GnomeRRRotation gnome_rr_output_info_get_rotation (GnomeRROutputInfo *self);
 void            gnome_rr_output_info_set_rotation (GnomeRROutputInfo *self, GnomeRRRotation rotation);

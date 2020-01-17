@@ -123,6 +123,12 @@ parse_uint (const char *text)
     return strtoul (text, NULL, 0);
 }
 
+static double
+parse_double (const char *text)
+{
+    return strtod (text, NULL);
+}
+
 static gboolean
 stack_is (Parser *parser,
 	  const char *s1,
@@ -325,7 +331,7 @@ handle_text (GMarkupParseContext *context,
     {
 	parser->output->priv->on = TRUE;
 
-	parser->output->priv->rate = parse_int (text);
+	parser->output->priv->rate = parse_double (text);
     }
     else if (stack_is (parser, "rotation", "output", "configuration", TOPLEVEL_ELEMENT, NULL))
     {
@@ -573,7 +579,7 @@ gnome_rr_config_load_current (GnomeRRConfig *config, GError **error)
 		gnome_rr_crtc_get_position (crtc, &output->priv->x, &output->priv->y);
 		output->priv->width = gnome_rr_mode_get_width (mode);
 		output->priv->height = gnome_rr_mode_get_height (mode);
-		output->priv->rate = gnome_rr_mode_get_freq (mode);
+		output->priv->rate = gnome_rr_mode_get_freq_f (mode);
 		output->priv->rotation = gnome_rr_crtc_get_current_rotation (crtc);
 
 		if (output->priv->x == 0 && output->priv->y == 0) {
@@ -1101,7 +1107,7 @@ emit_configuration (GnomeRRConfig *config,
 	    g_string_append_printf (
 		string, "          <height>%d</height>\n", output->priv->height);
 	    g_string_append_printf (
-		string, "          <rate>%d</rate>\n", output->priv->rate);
+		string, "          <rate>%f</rate>\n", output->priv->rate);
 	    g_string_append_printf (
 		string, "          <x>%d</x>\n", output->priv->x);
 	    g_string_append_printf (
@@ -1713,7 +1719,7 @@ real_assign_crtcs (GnomeRRScreen *screen,
 		mode_freq = gnome_rr_mode_get_freq (mode);
 
 		g_string_append_printf (accumulated_error,
-					_("CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"),
+					_("CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%.2fHz (pass %d)\n"),
 					crtc_id,
 					mode_width, mode_height, mode_freq,
 					output->priv->width, output->priv->height, output->priv->rate,
