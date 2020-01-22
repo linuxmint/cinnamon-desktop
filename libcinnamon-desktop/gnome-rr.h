@@ -144,7 +144,14 @@ gboolean        gnome_rr_screen_get_dpms_mode      (GnomeRRScreen        *screen
 gboolean        gnome_rr_screen_set_dpms_mode      (GnomeRRScreen         *screen,
                                                     GnomeRRDpmsMode        mode,
                                                     GError              **error);
-
+guint             gnome_rr_screen_get_global_scale (GnomeRRScreen   *screen);
+void            gnome_rr_screen_set_global_scale   (GnomeRRScreen   *screen,
+                                                    guint            scale_factor);
+gboolean        gnome_rr_screen_get_use_upscaling  (GnomeRRScreen        *screen);
+float *         gnome_rr_screen_calculate_supported_scales (GnomeRRScreen     *screen,
+                                                            int                width,
+                                                            int                height,
+                                                            int               *n_supported_scales);
 /* GnomeRROutput */
 guint32         gnome_rr_output_get_id             (GnomeRROutput         *output);
 const char *    gnome_rr_output_get_name           (GnomeRROutput         *output);
@@ -189,7 +196,10 @@ guint           gnome_rr_mode_get_width            (GnomeRRMode           *mode)
 guint           gnome_rr_mode_get_height           (GnomeRRMode           *mode);
 int             gnome_rr_mode_get_freq             (GnomeRRMode           *mode);
 double          gnome_rr_mode_get_freq_f           (GnomeRRMode           *mode);
-
+void            gnome_rr_mode_get_flags            (GnomeRRMode           *mode,
+                                                    gboolean              *doublescan,
+                                                    gboolean              *interlaced,
+                                                    gboolean              *vsync);
 /* GnomeRRCrtc */
 guint32         gnome_rr_crtc_get_id               (GnomeRRCrtc           *crtc);
 
@@ -201,6 +211,8 @@ gboolean        gnome_rr_crtc_set_config_with_time (GnomeRRCrtc           *crtc,
 						    GnomeRRRotation        rotation,
 						    GnomeRROutput        **outputs,
 						    int                    n_outputs,
+                            float                  scale,
+                            guint                  global_scale,
 						    GError               **error);
 gboolean        gnome_rr_crtc_can_drive_output     (GnomeRRCrtc           *crtc,
 						    GnomeRROutput         *output);
@@ -208,6 +220,7 @@ GnomeRRMode *   gnome_rr_crtc_get_current_mode     (GnomeRRCrtc           *crtc)
 void            gnome_rr_crtc_get_position         (GnomeRRCrtc           *crtc,
 						    int                   *x,
 						    int                   *y);
+float           gnome_rr_crtc_get_scale            (GnomeRRCrtc           *crtc);
 GnomeRRRotation gnome_rr_crtc_get_current_rotation (GnomeRRCrtc           *crtc);
 GnomeRRRotation gnome_rr_crtc_get_rotations        (GnomeRRCrtc           *crtc);
 gboolean        gnome_rr_crtc_supports_rotation    (GnomeRRCrtc           *crtc,

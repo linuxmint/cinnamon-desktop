@@ -5,6 +5,11 @@
 
 #include <X11/extensions/Xrandr.h>
 
+#define MINIMUM_LOGICAL_SCALE_FACTOR 1.0f
+#define MAXIMUM_LOGICAL_SCALE_FACTOR 4.0f
+#define MINIMUM_GLOBAL_SCALE_FACTOR 1
+#define MAXIMUM_GLOBAL_SCALE_FACTOR 4
+
 typedef struct ScreenInfo ScreenInfo;
 
 struct ScreenInfo
@@ -35,6 +40,7 @@ struct GnomeRRScreenPrivate
     Screen *			xscreen;
     Window			xroot;
     ScreenInfo *		info;
+    GSettings *         interface_settings;
     
     int				randr_event_base;
     int				rr_major_version;
@@ -65,6 +71,10 @@ struct GnomeRROutputInfoPrivate
     int			pref_height;
     char *		display_name;
     gboolean            primary;
+    float       scale;
+    gboolean    doublescan;
+    gboolean    interlaced;
+    gboolean    vsync;
 };
 
 struct GnomeRRConfigPrivate

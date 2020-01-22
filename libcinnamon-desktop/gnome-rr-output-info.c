@@ -40,6 +40,7 @@ gnome_rr_output_info_init (GnomeRROutputInfo *self)
     self->priv->name = NULL;
     self->priv->on = FALSE;
     self->priv->display_name = NULL;
+    self->priv->scale = 0;
 }
 
 static void
@@ -68,7 +69,7 @@ gnome_rr_output_info_class_init (GnomeRROutputInfoClass *klass)
  *
  * Returns: (transfer none): the output name
  */
-char *gnome_rr_output_info_get_name (GnomeRROutputInfo *self)
+const char *gnome_rr_output_info_get_name (GnomeRROutputInfo *self)
 {
     g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), NULL);
 
@@ -126,6 +127,20 @@ void gnome_rr_output_info_set_geometry (GnomeRROutputInfo *self, int  x, int  y,
     self->priv->height = height;
 }
 
+float gnome_rr_output_info_get_scale (GnomeRROutputInfo *self)
+{
+    g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), MINIMUM_LOGICAL_SCALE_FACTOR);
+
+    return self->priv->scale;
+}
+
+void gnome_rr_output_info_set_scale (GnomeRROutputInfo *self, float scale)
+{
+    g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
+
+    self->priv->scale = scale;
+}
+
 int gnome_rr_output_info_get_refresh_rate (GnomeRROutputInfo *self)
 {
     g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), 0);
@@ -166,6 +181,33 @@ void gnome_rr_output_info_set_rotation (GnomeRROutputInfo *self, GnomeRRRotation
     g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
 
     self->priv->rotation = rotation;
+}
+
+void gnome_rr_output_info_get_flags (GnomeRROutputInfo *self,
+                                     gboolean          *doublescan,
+                                     gboolean          *interlaced,
+                                     gboolean          *vsync)
+{
+    g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
+
+    if (doublescan)
+        *doublescan = self->priv->doublescan;
+    if (interlaced)
+        *interlaced = self->priv->interlaced;
+    if (vsync)
+        *vsync = self->priv->vsync;
+}
+
+void gnome_rr_output_info_set_flags (GnomeRROutputInfo *self,
+                                     gboolean           doublescan,
+                                     gboolean           interlaced,
+                                     gboolean           vsync)
+{
+    g_return_if_fail (GNOME_IS_RR_OUTPUT_INFO (self));
+
+    self->priv->doublescan = doublescan;
+    self->priv->interlaced = interlaced;
+    self->priv->vsync = vsync;
 }
 
 /**

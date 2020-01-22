@@ -161,6 +161,13 @@
    0 means pick automatically based on monitor.
       </_description>
     </key>
+    <key name="upscale-fractional-scaling" type="b">
+      <default>false</default>
+      <_summary>Achieve fractional scaling by scaling up.</_summary>
+      <_description>
+        Fractional scaling is usually achieved by setting the global scale factor to a higher value and then scaling down.  Scaling up instead yields better performance but poorer quality - in certain configurations and hardware, this may be acceptable.
+      </_description>
+    </key>
     <key name="gtk-im-status-style" type="s">
       <default>'callback'</default>
       <_summary>GTK IM Status Style</_summary>
