@@ -46,6 +46,7 @@
 #define CONFIG_BACKUP_BASENAME "cinnamon-monitors.xml.backup"
 #define CONFIG_LEGACY_BASENAME "monitors.xml"
 
+#define BASE_SCALE_NOT_CONFIGURED -1
 /* Look for DPI_FALLBACK in:
  * http://git.gnome.org/browse/gnome-settings-daemon/tree/plugins/xsettings/gsd-xsettings-manager.c
  * for the reasoning */
@@ -88,9 +89,10 @@ static gboolean         crtc_assignment_apply (CrtcAssignment   *assign,
 					       guint32           timestamp,
 					       GError          **error,
                            guint            *global_scale);
-static CrtcAssignment  *crtc_assignment_new   (GnomeRRScreen      *screen,
-					       GnomeRROutputInfo **outputs,
-					       GError            **error);
+static CrtcAssignment  *crtc_assignment_new   (GnomeRRConfig *config,
+                                               GnomeRRScreen      *screen,
+                                               GnomeRROutputInfo **outputs,
+                                               GError            **error);
 static void             crtc_assignment_free  (CrtcAssignment   *assign);
 
 enum {
@@ -294,6 +296,10 @@ handle_text (GMarkupParseContext *context,
 	if (strcmp (text, "yes") == 0)
 	    parser->configuration->priv->clone = TRUE;
     }
+    else if (stack_is (parser, "base_scale", "configuration", TOPLEVEL_ELEMENT, NULL))
+    {
+        parser->configuration->priv->base_scale = (guint) parse_uint64 (text);
+    }
     else if (stack_is (parser, "product", "output", "configuration", TOPLEVEL_ELEMENT, NULL))
     {
 	parser->output->priv->connected = TRUE;
@@ -381,13 +387,6 @@ handle_text (GMarkupParseContext *context,
 	{
 	    parser->output->priv->primary = TRUE;
 	}
-    }
-    else if (stack_is (parser, "modeflags", "output", "configuration", TOPLEVEL_ELEMENT, NULL))
-    {
-        guint64 mode_flags = parse_uint64 (text);
-        parser->output->priv->doublescan = (mode_flags & RR_DoubleScan);
-        parser->output->priv->interlaced = (mode_flags & RR_Interlace);
-        parser->output->priv->vsync = (mode_flags & RR_VSyncPositive);
     }
     else
     {
@@ -479,6 +478,7 @@ gnome_rr_config_init (GnomeRRConfig *self)
     self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GNOME_TYPE_RR_CONFIG, GnomeRRConfigPrivate);
 
     self->priv->clone = FALSE;
+    self->priv->base_scale = BASE_SCALE_NOT_CONFIGURED;
     self->priv->screen = NULL;
     self->priv->outputs = NULL;
 }
@@ -534,6 +534,7 @@ gnome_rr_config_load_current (GnomeRRConfig *config, GError **error)
     rr_outputs = gnome_rr_screen_list_outputs (config->priv->screen);
 
     config->priv->clone = FALSE;
+    config->priv->base_scale = gnome_rr_screen_get_global_scale (config->priv->screen);
     
     for (i = 0; rr_outputs[i] != NULL; ++i)
     {
@@ -692,7 +693,7 @@ gnome_rr_config_load_current (GnomeRRConfig *config, GError **error)
 	if (output->priv->connected && !output->priv->on)
 	{
 	    output->priv->x = last_x;
-	    last_x = output->priv->x + output->priv->width;
+	    last_x = output->priv->x + (output->priv->width * config->priv->base_scale);
 	}
     }
     
@@ -734,6 +735,24 @@ ensure_scale_factor (GnomeRRConfig     *current,
     }
 }
 
+static void
+ensure_base_scale_factor (GnomeRRConfig     *matching,
+                          GnomeRRConfig     *new)
+{
+    /* Loading an old config for the first time, there probably won't be a
+     * base scale factor. If this happens, give it the current system global
+     * scale - to maintain their existing configuration. */
+
+    if (matching->priv->base_scale == BASE_SCALE_NOT_CONFIGURED)
+    {
+        new->priv->base_scale = gnome_rr_screen_get_global_scale (NULL);
+    }
+    else
+    {
+        new->priv->base_scale = matching->priv->base_scale;
+    }
+}
+
 gboolean
 gnome_rr_config_load_filename (GnomeRRConfig *result, const char *filename, GError **error)
 {
@@ -771,6 +790,8 @@ gnome_rr_config_load_filename (GnomeRRConfig *result, const char *filename, GErr
             }
             g_ptr_array_add (array, NULL);
             result->priv->outputs = (GnomeRROutputInfo **) g_ptr_array_free (array, FALSE);
+
+            ensure_base_scale_factor (configs[i], result);
 
             found = TRUE;
             break;
@@ -1078,7 +1099,7 @@ gnome_rr_config_applicable (GnomeRRConfig  *configuration,
     g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
 
     outputs = make_outputs (configuration);
-    assign = crtc_assignment_new (screen, outputs, error);
+    assign = crtc_assignment_new (configuration, screen, outputs, error);
 
     if (assign)
     {
@@ -1159,21 +1180,6 @@ get_reflect_y (GnomeRRRotation r)
     return yes_no (r & GNOME_RR_REFLECT_Y);
 }
 
-static guint64
-construct_flags (GnomeRROutputInfo *output)
-{
-    guint out = 0;
-
-    if (output->priv->doublescan)
-        out |= RR_DoubleScan;
-    if (output->priv->interlaced)
-        out |= RR_Interlace;
-    if (output->priv->vsync)
-        out |= RR_VSyncPositive;
-
-    return out;
-}
-
 static void
 emit_configuration (GnomeRRConfig *config,
 		    GString *string)
@@ -1183,6 +1189,7 @@ emit_configuration (GnomeRRConfig *config,
     g_string_append_printf (string, "  <configuration>\n");
 
     g_string_append_printf (string, "      <clone>%s</clone>\n", yes_no (config->priv->clone));
+    g_string_append_printf (string, "      <base_scale>%d</base_scale>\n", config->priv->base_scale);
     
     for (j = 0; config->priv->outputs[j] != NULL; ++j)
     {
@@ -1216,9 +1223,6 @@ emit_configuration (GnomeRRConfig *config,
 		string, "          <y>%d</y>\n", output->priv->y);
 	    g_string_append_printf (
         string, "          <scale>%f</scale>\n", output->priv->scale);
-        guint64 flags = construct_flags (output);
-        g_string_append_printf (
-        string, "          <modeflags>%lu</modeflags>\n", flags);
         g_string_append_printf (
 		string, "          <rotation>%s</rotation>\n", get_rotation_name (output->priv->rotation));
 	    g_string_append_printf (
@@ -1416,12 +1420,14 @@ gnome_rr_config_apply_with_time (GnomeRRConfig *config,
 
     outputs = make_outputs (config);
 
-    assignment = crtc_assignment_new (screen, outputs, error);
+    assignment = crtc_assignment_new (config, screen, outputs, error);
 
     for (i = 0; outputs[i] != NULL; i++)
 	g_object_unref (outputs[i]);
     g_free (outputs);
-    
+
+    global_scale = config->priv->base_scale;
+
     if (assignment)
     {
 	if (crtc_assignment_apply (assignment, timestamp, error, &global_scale))
@@ -1533,6 +1539,22 @@ gnome_rr_config_set_clone (GnomeRRConfig *self, gboolean clone)
     self->priv->clone = clone;
 }
 
+guint
+gnome_rr_config_get_base_scale (GnomeRRConfig *self)
+{
+    g_return_val_if_fail (GNOME_IS_RR_CONFIG (self), MINIMUM_GLOBAL_SCALE_FACTOR);
+
+    return self->priv->base_scale;
+}
+
+void
+gnome_rr_config_set_base_scale (GnomeRRConfig *self,
+                                guint base_scale)
+{
+    g_return_if_fail (GNOME_IS_RR_CONFIG (self) || base_scale < MINIMUM_GLOBAL_SCALE_FACTOR);
+
+    self->priv->base_scale = base_scale;
+}
 /*
  * CRTC assignment
  */
@@ -1979,6 +2001,7 @@ get_required_virtual_size (CrtcAssignment *assign,
     float df;
     float avg_screen_scale;
 
+/*
     if (gnome_rr_screen_get_use_upscaling (screen))
     {
         *global_scale = get_min_info_scale (assign);
@@ -1987,6 +2010,7 @@ get_required_virtual_size (CrtcAssignment *assign,
     {
         *global_scale = get_max_info_scale (assign);
     }
+*/
 
     /* Compute size of the screen */
     *width = *height = 1;
@@ -2027,7 +2051,10 @@ get_required_virtual_size (CrtcAssignment *assign,
 }
 
 static CrtcAssignment *
-crtc_assignment_new (GnomeRRScreen *screen, GnomeRROutputInfo **outputs, GError **error)
+crtc_assignment_new (GnomeRRConfig      *config,
+                     GnomeRRScreen      *screen,
+                     GnomeRROutputInfo **outputs,
+                     GError            **error)
 {
     CrtcAssignment *assignment = g_new0 (CrtcAssignment, 1);
 
@@ -2039,7 +2066,7 @@ crtc_assignment_new (GnomeRRScreen *screen, GnomeRROutputInfo **outputs, GError 
 	int width, height;
 	int min_width, max_width, min_height, max_height;
     float scale;
-    guint global_scale; // unused
+    guint global_scale = config->priv->base_scale;
 
 	get_required_virtual_size (assignment,
                                screen,
@@ -2129,8 +2156,8 @@ crtc_assignment_apply (CrtcAssignment *assign,
 	    int w, h;
 	    gnome_rr_crtc_get_position (crtc, &x, &y);
 
-	    w = gnome_rr_mode_get_width (mode);
-	    h = gnome_rr_mode_get_height (mode);
+	    w = gnome_rr_mode_get_width (mode) * (*global_scale);
+	    h = gnome_rr_mode_get_height (mode) * (*global_scale);
 
 	    if (crtc_is_rotated (crtc))
 	    {

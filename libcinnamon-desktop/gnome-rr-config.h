@@ -156,6 +156,9 @@ gboolean            gnome_rr_config_applicable   (GnomeRRConfig  *configuration,
 
 gboolean            gnome_rr_config_get_clone    (GnomeRRConfig  *configuration);
 void                gnome_rr_config_set_clone    (GnomeRRConfig  *configuration, gboolean clone);
+guint               gnome_rr_config_get_base_scale (GnomeRRConfig *self);
+void                gnome_rr_config_set_base_scale (GnomeRRConfig *self,
+                                                    guint base_scale);
 GnomeRROutputInfo **gnome_rr_config_get_outputs  (GnomeRRConfig  *configuration);
 
 char *gnome_rr_config_get_backup_filename (void);

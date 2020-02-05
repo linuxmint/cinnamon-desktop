@@ -2552,6 +2552,9 @@ crtc_initialize (GnomeRRCrtc        *crtc,
     /* get an store gamma size */
     crtc->gamma_size = XRRGetCrtcGammaSize (DISPLAY (crtc), crtc->id);
 
+    g_debug ("Initialized GnomeCrtc: %d, at %d, %d, with a scale factor of %.2f (%u global scale)",
+             (int) crtc->id, crtc->x, crtc->y, crtc->scale, gnome_rr_screen_get_global_scale (NULL));
+
     return TRUE;
 }
 
@@ -2737,22 +2740,14 @@ gnome_rr_crtc_get_gamma (GnomeRRCrtc *crtc, int *size,
 #define SCALE_FACTORS_PER_INTEGER 4
 #define SCALE_FACTORS_STEPS (1.0 / (float) SCALE_FACTORS_PER_INTEGER)
 
-#define MINIMUM_LOGICAL_AREA (800 * 600)
-#define MAXIMUM_REFRESH_RATE_DIFF 0.001
-
 /* The minimum resolution at which we turn on a window-scale of 2 */
 #define HIDPI_LIMIT 192
-
-/*
- * The minimum screen height at which we turn on a window-scale of 2;
- * below this there just isn't enough vertical real estate for GNOME
- * apps to work, and it's better to just be tiny
- */
-#define HIDPI_MIN_HEIGHT 1500
 #define HIDPI_MIN_SCALED_HEIGHT 720
 
-/* From http://en.wikipedia.org/wiki/4K_resolution#Resolutions_of_common_formats */
-#define SMALLEST_4K_WIDTH 3656
+/* The minimum screen height at which we turn on a window-scale of 2;
+ * below this there just isn't enough vertical real estate for GNOME
+ * apps to work, and it's better to just be tiny */
+#define HIDPI_MIN_HEIGHT 1500
 
 static gboolean
 is_logical_size_large_enough (int width,
@@ -2868,4 +2863,146 @@ gnome_rr_screen_calculate_supported_scales (GnomeRRScreen     *screen,
 
   *n_supported_scales = supported_scales->len;
   return (float *) g_array_free (supported_scales, FALSE);
+}
+
+static void
+get_real_monitor_size (GnomeRRScreen *screen,
+                       GdkMonitor    *monitor,
+                       gint           monitor_index,
+                       gint          *width,
+                       gint          *height)
+{
+    GnomeRROutput **outputs;
+    XID output_id;
+    gint i;
+
+    *width = 0;
+    *height = 0;
+
+    output_id = gdk_x11_screen_get_monitor_output (gdk_screen_get_default (), monitor_index);
+    outputs = gnome_rr_screen_list_outputs (screen);
+
+    for (i = 0; outputs[i] != NULL; i++)
+    {
+        GnomeRROutput *output = outputs[i];
+
+        if (gnome_rr_output_get_id (output) == output_id)
+        {
+            GnomeRRMode *mode = gnome_rr_output_get_current_mode (output);
+
+            if (mode == NULL)
+            {
+                mode = gnome_rr_output_get_preferred_mode (output);
+            }
+
+            if (mode != NULL)
+            {
+                *width = gnome_rr_mode_get_width (mode);
+                *height = gnome_rr_mode_get_height (mode);
+            }
+
+            break;
+        }
+    }
+
+    if (*width == 0 || *height == 0)
+    {
+        GdkRectangle rect;
+        gdk_monitor_get_geometry (monitor, &rect);
+
+        *width = rect.width;
+        *height = rect.height;
+    }
+}
+
+guint
+gnome_rr_screen_calculate_best_global_scale (GnomeRRScreen *screen,
+                                             gint           index)
+{
+    guint window_scale;
+    GdkDisplay *display;
+    GdkMonitor *monitor;
+    int width_mm, height_mm;
+    int monitor_scale;
+    double dpi_x, dpi_y;
+    int real_width, real_height;
+
+    display = gdk_display_get_default ();
+    
+    if (index == -1)
+    {
+        monitor = gdk_display_get_primary_monitor (display);
+
+        index = 0;
+    }
+    else
+    {
+        if ((index >= 0) && (index < gdk_display_get_n_monitors (display)))
+        {
+            monitor = gdk_display_get_monitor (display, index);
+        }
+        else
+        {
+            g_warning ("Invalid monitor index provided (%d)", index);
+            return 1;
+        }
+    }
+
+    /* GdkMonitor geometry is affected by any active current transformation/scaling!!!!
+     * So if I have 2x global scale, and a transform on a 1080 monitor down to 540, that's
+     * what gdk_monitor_get_geometry() returns.  We actually have to get the dimensions from
+     * the current RRMode for the given monitor.
+     */
+    get_real_monitor_size (screen, monitor, index, &real_width, &real_height);
+
+
+    width_mm = gdk_monitor_get_width_mm (monitor);
+    height_mm = gdk_monitor_get_height_mm (monitor);
+    monitor_scale = gdk_monitor_get_scale_factor (monitor);
+
+    window_scale = 1;
+
+    g_debug ("Calculating best global scale for monitor %d. Physical size: %dmm x %dmm,"
+             " REAL pixel size: %d x %d.  Current global scale: %d, reported monitor scale: %d",
+             index, width_mm, height_mm, real_width, real_height, gnome_rr_screen_get_global_scale (NULL), monitor_scale);
+
+    if (real_height < HIDPI_MIN_HEIGHT)
+    {
+        g_debug ("REAL height of %d for monitor %d is less than %d, so the recommended scale will be 1", real_height, index, HIDPI_MIN_HEIGHT);
+        goto out;
+    }
+
+    /* Some monitors/TV encode the aspect ratio (16/9 or 16/10) instead of the physical size */
+    if ((width_mm == 160 && height_mm == 90) ||
+        (width_mm == 160 && height_mm == 100) ||
+        (width_mm == 16 && height_mm == 9) ||
+        (width_mm == 16 && height_mm == 10) ||
+        (width_mm == 0 || height_mm == 0))
+    {
+        g_debug ("Aspect ratio instead of physical dimensions were encoded as the physical size, or the physical"
+                 " size was not set. Unable to reliably calculate the recommended scale, returning 1");
+        goto out;
+    }
+
+    if (width_mm > 0 && height_mm > 0) {
+            dpi_x = (double) real_width * monitor_scale / (width_mm / 25.4);
+            dpi_y = (double) real_height * monitor_scale / (height_mm / 25.4);
+            /* We don't completely trust these values so both must be high, and never pick higher ratio than
+              2 automatically */
+            if (dpi_x > HIDPI_LIMIT && dpi_y > HIDPI_LIMIT)
+            {
+                g_debug ("The REAL monitor DPI of %.1f x %.1f exceeds the cutoff of %d x %d, recommended scale will be 2",
+                         dpi_x, dpi_y, HIDPI_LIMIT, HIDPI_LIMIT);
+
+                window_scale = 2;
+            }
+            else
+            {
+                g_debug ("The REAL monitor DPI of %.1f x %.1f does not meet the cutoff of %d x %d, recommended scale will be 1",
+                         dpi_x, dpi_y, HIDPI_LIMIT, HIDPI_LIMIT);
+            }
+    }
+
+out:
+    return window_scale;
 }

@@ -152,6 +152,9 @@ float *         gnome_rr_screen_calculate_supported_scales (GnomeRRScreen     *s
                                                             int                width,
                                                             int                height,
                                                             int               *n_supported_scales);
+/* screen class method, used in csd-xsettings and here */
+guint             gnome_rr_screen_calculate_best_global_scale (GnomeRRScreen *screen, gint index);
+
 /* GnomeRROutput */
 guint32         gnome_rr_output_get_id             (GnomeRROutput         *output);
 const char *    gnome_rr_output_get_name           (GnomeRROutput         *output);
