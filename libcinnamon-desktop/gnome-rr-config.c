@@ -1741,56 +1741,56 @@ typedef struct {
     guint global_scale;
 } ConfigureCrtcState;
 
-static guint
-get_max_info_scale (CrtcAssignment *assignment)
-{
-    GList *infos, *iter;
-    float max_scale = 0;
+// static guint
+// get_max_info_scale (CrtcAssignment *assignment)
+// {
+//     GList *infos, *iter;
+//     float max_scale = 0;
 
-    infos = g_hash_table_get_values (assignment->info);
+//     infos = g_hash_table_get_values (assignment->info);
 
-    for (iter = infos; iter != NULL; iter = iter->next)
-    {
-        CrtcInfo *info = iter->data;
+//     for (iter = infos; iter != NULL; iter = iter->next)
+//     {
+//         CrtcInfo *info = iter->data;
 
-        if (info->scale > max_scale)
-        {
-            max_scale = info->scale;
-        }
-    }
+//         if (info->scale > max_scale)
+//         {
+//             max_scale = info->scale;
+//         }
+//     }
 
-    g_list_free (infos);
+//     g_list_free (infos);
 
 
-    return CLAMP ((guint) ceilf (max_scale),
-                  MINIMUM_GLOBAL_SCALE_FACTOR,
-                  MAXIMUM_GLOBAL_SCALE_FACTOR);
-}
+//     return CLAMP ((guint) ceilf (max_scale),
+//                   MINIMUM_GLOBAL_SCALE_FACTOR,
+//                   MAXIMUM_GLOBAL_SCALE_FACTOR);
+// }
 
-static guint
-get_min_info_scale (CrtcAssignment *assignment)
-{
-    GList *infos, *iter;
-    float min_scale = 4.0f;
+// static guint
+// get_min_info_scale (CrtcAssignment *assignment)
+// {
+//     GList *infos, *iter;
+//     float min_scale = 4.0f;
 
-    infos = g_hash_table_get_values (assignment->info);
+//     infos = g_hash_table_get_values (assignment->info);
 
-    for (iter = infos; iter != NULL; iter = iter->next)
-    {
-        CrtcInfo *info = iter->data;
+//     for (iter = infos; iter != NULL; iter = iter->next)
+//     {
+//         CrtcInfo *info = iter->data;
 
-        if (info->scale < min_scale)
-        {
-            min_scale = info->scale;
-        }
-    }
+//         if (info->scale < min_scale)
+//         {
+//             min_scale = info->scale;
+//         }
+//     }
 
-    g_list_free (infos);
+//     g_list_free (infos);
 
-    return CLAMP ((guint) floorf (min_scale),
-                  MINIMUM_GLOBAL_SCALE_FACTOR,
-                  MAXIMUM_GLOBAL_SCALE_FACTOR);
-}
+//     return CLAMP ((guint) floorf (min_scale),
+//                   MINIMUM_GLOBAL_SCALE_FACTOR,
+//                   MAXIMUM_GLOBAL_SCALE_FACTOR);
+// }
 
 static void
 configure_crtc (gpointer key,
