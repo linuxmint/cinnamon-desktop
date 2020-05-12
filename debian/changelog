@@ -1,3 +1,22 @@
+cinnamon-desktop (4.6.0) ulyana; urgency=medium
+
+  [ Markus Teich ]
+  * Add custom-screensaver-command to gsettings schema
+
+  [ Michael Webster ]
+  * gnome-rr-*: Allow setting non-integer refresh rates.
+  * Allow per-monitor fractional scaling using xrandr.
+  * Make global scale a configuration-specific value.
+  * gnome-rr-config.c: Comment out some unused code.
+
+  [ Lars Mueller ]
+  * Fix scale calculation for cinnamon-control-center's display panel
+
+  [ Michael Webster ]
+  * debian/control: Remove gnome-doc-utils build dep.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2020 13:49:08 +0100
+
 cinnamon-desktop (4.4.1) tricia; urgency=medium
 
   * Clock: Fix date format when LC_TIME and LANGUAGE are the same, or LC_TIME is NULL (#142)
