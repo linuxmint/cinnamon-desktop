@@ -357,7 +357,6 @@ fill_screen_info_from_resources (ScreenInfo *info,
     GPtrArray *a;
     GnomeRRCrtc **crtc;
     GnomeRROutput **output;
-
     info->resources = resources;
 
     /* We create all the structures before initializing them, so
@@ -2168,25 +2167,17 @@ set_crtc_scale (GnomeRRCrtc *crtc,
 
     real_scale = global_scale / scale;
 
-    looks_like_w = gnome_rr_mode_get_width (mode) * real_scale / global_scale;
-    looks_like_h = gnome_rr_mode_get_height (mode) * real_scale / global_scale;
+    looks_like_w = 0;
+    looks_like_h = 0;
 
-    g_debug ("\n\nTransforming based on:\n"
-             "global ui scale: %d\n"
-             "requested logical scale: %.2f\n"
-             "requested logical size: %dx%d\n"
-             "xrandr transform value: %.2f (%d)\n",
-             global_scale, scale,
-             looks_like_w, looks_like_h,
-             real_scale, XDoubleToFixed (real_scale));
+    if (mode != NULL)
+    {
+        looks_like_w = gnome_rr_mode_get_width (mode) * real_scale / global_scale;
+        looks_like_h = gnome_rr_mode_get_height (mode) * real_scale / global_scale;
+    }
 
-    XTransform transform =  {{
-                    { XDoubleToFixed (real_scale), 0                          , 0                    },
-                    { 0                          , XDoubleToFixed (real_scale), 0                    },
-                    { 0                          , 0                          , XDoubleToFixed (1.0) },
-    }};
-
-    if ((real_scale) != 1.0)
+    // Fractional scales use bilinear, doubling/halving can use nearest for better quality.
+    if ((XDoubleToFixed (real_scale) % 32768) > 0)
     {
         filter = g_strdup ("bilinear");
     }
@@ -2194,6 +2185,24 @@ set_crtc_scale (GnomeRRCrtc *crtc,
     {
         filter = g_strdup ("nearest");
     }
+
+    g_debug ("\n\n(xid: %lu) Transforming based on:\n"
+             "global ui scale: %d\n"
+             "requested logical scale: %.2f\n"
+             "requested logical size: %dx%d\n"
+             "xrandr transform value: %.2f (%d)\n"
+             "scaling method: %s",
+             crtc->id,
+             global_scale, scale,
+             looks_like_w, looks_like_h,
+             real_scale, XDoubleToFixed (real_scale),
+             filter);
+
+    XTransform transform =  {{
+                    { XDoubleToFixed (real_scale), 0                          , 0                    },
+                    { 0                          , XDoubleToFixed (real_scale), 0                    },
+                    { 0                          , 0                          , XDoubleToFixed (1.0) },
+    }};
 
     XRRSetCrtcTransform (DISPLAY (crtc), crtc->id,
                          &transform,
@@ -2228,21 +2237,20 @@ gnome_rr_crtc_set_config_with_time (GnomeRRCrtc      *crtc,
     
     if (mode)
     {
-	if (x + mode->width > info->max_width
-	    || y + mode->height > info->max_height)
-	{
-	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_BOUNDS_ERROR,
-			 /* Translators: the "position", "size", and "maximum"
-			  * words here are not keywords; please translate them
-			  * as usual.  A CRTC is a CRT Controller (this is X terminology) */
-			 _("requested position/size for CRTC %d is outside the allowed limit: "
-			   "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"),
-			 (int) crtc->id,
-			 x, y,
-			 mode->width, mode->height,
-			 info->max_width, info->max_height);
-	    return FALSE;
-	}
+        if (x + mode->width > info->max_width || y + mode->height > info->max_height)
+        {
+            g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_BOUNDS_ERROR,
+                         /* Translators: the "position", "size", and "maximum"
+                          * words here are not keywords; please translate them
+                          * as usual.  A CRTC is a CRT Controller (this is X terminology) */
+                         _("requested position/size for CRTC %d is outside the allowed limit: "
+                         "position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"),
+                         (int) crtc->id,
+                         x, y,
+                         mode->width, mode->height,
+                         info->max_width, info->max_height);
+            return FALSE;
+        }
     }
     
     output_ids = g_array_new (FALSE, FALSE, sizeof (RROutput));
@@ -2461,20 +2469,24 @@ gnome_rr_screen_get_global_scale (GnomeRRScreen *screen)
     return (guint) CLAMP (window_scale, MINIMUM_GLOBAL_SCALE_FACTOR, MAXIMUM_GLOBAL_SCALE_FACTOR);
 }
 
+guint
+gnome_rr_screen_get_global_scale_setting (GnomeRRScreen *screen)
+{
+    guint scale_factor;
+
+    scale_factor = g_settings_get_uint (screen->priv->interface_settings,
+                                        GLOBAL_SCALE_FACTOR_KEY);
+
+    return scale_factor;
+}
+
 void
-gnome_rr_screen_set_global_scale (GnomeRRScreen *screen,
-                                  guint           scale_factor)
+gnome_rr_screen_set_global_scale_setting (GnomeRRScreen *screen,
+                                          guint          scale_factor)
 {
     g_settings_set_uint (screen->priv->interface_settings,
                          GLOBAL_SCALE_FACTOR_KEY,
                          scale_factor);
-}
-
-gboolean
-gnome_rr_screen_get_use_upscaling (GnomeRRScreen *screen)
-{
-    return g_settings_get_boolean (screen->priv->interface_settings,
-                                   USE_UPSCALING_KEY);
 }
 
 static float
@@ -2762,8 +2774,7 @@ is_scale_valid_for_size (float width,
                          float scale)
 {
   return scale >= MINIMUM_LOGICAL_SCALE_FACTOR &&
-         scale <= MAXIMUM_LOGICAL_SCALE_FACTOR &&
-         is_logical_size_large_enough (floorf (width/scale), floorf (height/scale));
+         scale <= MAXIMUM_LOGICAL_SCALE_FACTOR;
 }
 
 static float
