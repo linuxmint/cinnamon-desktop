@@ -1,3 +1,14 @@
+cinnamon-desktop (4.6.1) ulyana; urgency=medium
+
+  [ Fabio Fantoni ]
+  * CI: Target Mint 20 and LMDE 4 (#147)
+  * use debhelper 11 for integrated meson support
+
+  [ Clement Lefebvre ]
+  * CI: Use specific job tags
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 06 Jun 2020 14:44:16 +0100
+
 cinnamon-desktop (4.6.0) ulyana; urgency=medium
 
   [ Markus Teich ]
