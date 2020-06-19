@@ -2996,8 +2996,8 @@ gnome_rr_screen_calculate_best_global_scale (GnomeRRScreen *screen,
     }
 
     if (width_mm > 0 && height_mm > 0) {
-            dpi_x = (double) real_width * monitor_scale / (width_mm / 25.4);
-            dpi_y = (double) real_height * monitor_scale / (height_mm / 25.4);
+            dpi_x = (double) real_width / (width_mm / 25.4);
+            dpi_y = (double) real_height / (height_mm / 25.4);
             /* We don't completely trust these values so both must be high, and never pick higher ratio than
               2 automatically */
             if (dpi_x > HIDPI_LIMIT && dpi_y > HIDPI_LIMIT)
