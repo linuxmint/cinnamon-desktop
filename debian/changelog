@@ -1,3 +1,10 @@
+cinnamon-desktop (4.6.2) ulyana; urgency=medium
+
+  [ Michael Webster ]
+  * Fixes for gnome-rr scaling (#150)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Jun 2020 13:34:38 +0100
+
 cinnamon-desktop (4.6.1) ulyana; urgency=medium
 
   [ Fabio Fantoni ]
