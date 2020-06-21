@@ -6,9 +6,9 @@
 #include <X11/extensions/Xrandr.h>
 
 #define MINIMUM_LOGICAL_SCALE_FACTOR 0.74f
-#define MAXIMUM_LOGICAL_SCALE_FACTOR 4.0f
+#define MAXIMUM_LOGICAL_SCALE_FACTOR 2.0f
 #define MINIMUM_GLOBAL_SCALE_FACTOR 1
-#define MAXIMUM_GLOBAL_SCALE_FACTOR 4
+#define MAXIMUM_GLOBAL_SCALE_FACTOR 2
 
 typedef struct ScreenInfo ScreenInfo;
 
@@ -83,6 +83,7 @@ struct GnomeRRConfigPrivate
   GnomeRRScreen *screen;
   GnomeRROutputInfo **outputs;
   guint base_scale;
+  gboolean auto_scale;
 };
 
 gboolean _gnome_rr_output_name_is_laptop (const char *name);

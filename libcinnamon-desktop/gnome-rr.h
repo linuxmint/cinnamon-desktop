@@ -145,7 +145,8 @@ gboolean        gnome_rr_screen_set_dpms_mode      (GnomeRRScreen         *scree
                                                     GnomeRRDpmsMode        mode,
                                                     GError              **error);
 guint             gnome_rr_screen_get_global_scale (GnomeRRScreen   *screen);
-void            gnome_rr_screen_set_global_scale   (GnomeRRScreen   *screen,
+guint             gnome_rr_screen_get_global_scale_setting (GnomeRRScreen   *screen);
+void            gnome_rr_screen_set_global_scale_setting (GnomeRRScreen   *screen,
                                                     guint            scale_factor);
 gboolean        gnome_rr_screen_get_use_upscaling  (GnomeRRScreen        *screen);
 float *         gnome_rr_screen_calculate_supported_scales (GnomeRRScreen     *screen,
