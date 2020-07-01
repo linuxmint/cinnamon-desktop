@@ -2224,7 +2224,7 @@ crtc_assignment_apply (CrtcAssignment *assign,
 		w = tmp;
 	    }
 	    
-	    if (!x + w > width || y + h > height || g_hash_table_lookup (assign->info, crtc))
+	    if (x + w > width || y + h > height || !g_hash_table_lookup (assign->info, crtc))
 	    {
 		if (!gnome_rr_crtc_set_config_with_time (crtc,
                                                  timestamp,
