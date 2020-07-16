@@ -2177,13 +2177,13 @@ set_crtc_scale (GnomeRRCrtc *crtc,
     }
 
     // Fractional scales use bilinear, doubling/halving can use nearest for better quality.
-    if ((XDoubleToFixed (real_scale) % 32768) > 0)
+    if (real_scale == 0.5 || real_scale == 1.0)
     {
-        filter = g_strdup ("bilinear");
+        filter = g_strdup ("nearest");
     }
     else
     {
-        filter = g_strdup ("nearest");
+        filter = g_strdup ("bilinear");
     }
 
     g_debug ("\n\n(xid: %lu) Transforming based on:\n"
