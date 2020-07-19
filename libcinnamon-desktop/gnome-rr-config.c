@@ -1287,26 +1287,23 @@ gnome_rr_config_sanitize (GnomeRRConfig *config)
      */
     x_offset = y_offset = G_MAXINT;
     for (i = 0; config->priv->outputs[i]; ++i)
-    {
-	GnomeRROutputInfo *output = config->priv->outputs[i];
+      {
+        GnomeRROutputInfo *output = config->priv->outputs[i];
 
-	if (output->priv->on)
-	{
-	    x_offset = MIN (x_offset, output->priv->x);
-	    y_offset = MIN (y_offset, output->priv->y);
-	}
-    }
+        if (output->priv->on)
+          {
+            x_offset = MIN (x_offset, output->priv->x);
+            y_offset = MIN (y_offset, output->priv->y);
+          }
+      }
 
     for (i = 0; config->priv->outputs[i]; ++i)
-    {
-	GnomeRROutputInfo *output = config->priv->outputs[i];
-	
-	if (output->priv->on)
-	{
-	    output->priv->x -= x_offset;
-	    output->priv->y -= y_offset;
-	}
-    }
+      {
+        GnomeRROutputInfo *output = config->priv->outputs[i];
+
+        output->priv->x -= x_offset;
+        output->priv->y -= y_offset;
+      }
 
     /* Only one primary, please */
     found = FALSE;
