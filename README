@@ -20,7 +20,7 @@ Installation
 
     meson debian/build \
         --prefix=/usr/local \
-        --buildtype=plain \
+        --buildtype=debug \
         -D deprecated_warnings=false
 
 2) Compile and install (sudo is needed for install)
