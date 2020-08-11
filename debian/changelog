@@ -1,3 +1,12 @@
+cinnamon-desktop (4.6.4) ulyana; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-rr.c: Only use nearest filtering for "pixel-exact" scaling, not any whole integer scale.
+  * gnome-rr-config.c: Don't ignore disabled monitors when shifting the layout towards 0,0.
+  * rules: use buildtype=debug.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 11 Aug 2020 15:31:58 +0100
+
 cinnamon-desktop (4.6.3) ulyana; urgency=medium
 
   [ Michael Webster ]
