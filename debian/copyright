@@ -55,8 +55,7 @@ License: LGPL-2+
  On Debian systems, the complete text of the GNU Library General
  Public License can be found in "/usr/share/common-licenses/LGPL-2".
 
-Files: COPYING
-       libcinnamon-desktop/cinnamon-rr-debug.c
+Files: libcinnamon-desktop/cinnamon-rr-debug.c
        libcinnamon-desktop/gnome-pnp-ids.c
        libcinnamon-desktop/gnome-pnp-ids.h
        libcinnamon-desktop/gnome-xkb-info.c
@@ -127,7 +126,7 @@ License: GPL
  This file is distributed under the terms of GNU General Public License (GPL)
  .
  On Debian systems, the complete text of the GNU General Public License can be
- found in "/usr/share/common-licenses/GPL".
+ found in "/usr/share/common-licenses/GPL-1".
 
 Files: libcinnamon-desktop/cdesktop-enums.h
 Copyright: 2010, Codethink Limited
