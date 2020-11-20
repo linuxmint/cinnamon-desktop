@@ -49,7 +49,7 @@
       </_description>
     </key>
     <key name="exec-arg" type="s">
-      <default>'-x'</default>
+      <default>'--'</default>
       <_summary>Exec Arguments</_summary>
       <_description>
         Argument used to execute programs in the terminal defined by the 
