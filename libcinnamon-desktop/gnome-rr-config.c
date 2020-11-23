@@ -801,7 +801,6 @@ gnome_rr_config_load_filename (GnomeRRConfig *result, const char *filename, GErr
 
             array = g_ptr_array_new ();
             for (j = 0; configs[i]->priv->outputs[j] != NULL; j++) {
-                int k;
                 g_object_ref (configs[i]->priv->outputs[j]);
                 g_ptr_array_add (array, configs[i]->priv->outputs[j]);
 
@@ -2054,8 +2053,7 @@ get_required_virtual_size (CrtcAssignment *assign,
 {
     GList *active_crtcs = g_hash_table_get_keys (assign->info);
     GList *list;
-    int d, crtc_count;
-    float df;
+    int crtc_count;
     float avg_screen_scale;
 
 /*
