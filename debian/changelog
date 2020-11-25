@@ -1,3 +1,23 @@
+cinnamon-desktop (4.8.0) ulyssa; urgency=medium
+
+  [ Michael Webster ]
+  * cdesktop-enums.h: Don't allow area or window screenshots while cinnamon is in a grab state
+
+  [ Fabio Fantoni ]
+  * debian: Bump debhelper compat level to 12
+  * small improves to debian/copyright
+
+  [ Michael Webster ]
+  * debian/control: Fix descriptions for libcinnamon-desktop packages.
+
+  [ ItzSwirlz ]
+  * gnome-rr-config.c: Remove some unused variables
+
+  [ Isaac Carter ]
+  * Default terminal: Change exec-arg from '-x' to '--' (#172)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 25 Nov 2020 12:41:33 +0000
+
 cinnamon-desktop (4.6.4) ulyana; urgency=medium
 
   [ Michael Webster ]
