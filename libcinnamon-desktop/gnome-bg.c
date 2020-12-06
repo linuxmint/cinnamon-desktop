@@ -3028,7 +3028,7 @@ handle_text (GMarkupParseContext *context,
 		parser->start_tm.tm_mday = parse_int (text);
 	}
 	else if (stack_is (parser, "hour", "starttime", "background", NULL)) {
-		parser->start_tm.tm_hour = parse_int (text) - 1;
+		parser->start_tm.tm_hour = parse_int (text);
 	}
 	else if (stack_is (parser, "minute", "starttime", "background", NULL)) {
 		parser->start_tm.tm_min = parse_int (text);
