@@ -1,9 +1,9 @@
 /* gnome-rr.c
  *
  * Copyright 2007, 2008, Red Hat, Inc.
- * 
+ *
  * This file is part of the Gnome Library.
- * 
+ *
  * The Gnome Library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License as
  * published by the Free Software Foundation; either version 2 of the
@@ -13,12 +13,12 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Library General Public
  * License along with the Gnome Library; see the file COPYING.LIB.  If not,
  * write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA 02110-1301, USA.
- * 
+ *
  * Author: Soren Sandmann <sandmann@redhat.com>
  */
 
@@ -72,7 +72,7 @@ struct GnomeRROutput
 {
     ScreenInfo *	info;
     RROutput		id;
-    
+
     char *		name;
     GnomeRRCrtc *	current_crtc;
     gboolean		connected;
@@ -98,14 +98,14 @@ struct GnomeRRCrtc
 {
     ScreenInfo *	info;
     RRCrtc		id;
-    
+
     GnomeRRMode *	current_mode;
     GnomeRROutput **	current_outputs;
     GnomeRROutput **	possible_outputs;
     int			x;
     int			y;
     float       scale;
-    
+
     GnomeRRRotation	current_rotation;
     GnomeRRRotation	rotations;
     int			gamma_size;
@@ -188,15 +188,15 @@ static GnomeRROutput *
 gnome_rr_output_by_id (ScreenInfo *info, RROutput id)
 {
     GnomeRROutput **output;
-    
+
     g_assert (info != NULL);
-    
+
     for (output = info->outputs; *output; ++output)
     {
 	if ((*output)->id == id)
 	    return *output;
     }
-    
+
     return NULL;
 }
 
@@ -204,16 +204,16 @@ static GnomeRRCrtc *
 crtc_by_id (ScreenInfo *info, RRCrtc id)
 {
     GnomeRRCrtc **crtc;
-    
+
     if (!info)
         return NULL;
-    
+
     for (crtc = info->crtcs; *crtc; ++crtc)
     {
 	if ((*crtc)->id == id)
 	    return *crtc;
     }
-    
+
     return NULL;
 }
 
@@ -221,15 +221,15 @@ static GnomeRRMode *
 mode_by_id (ScreenInfo *info, RRMode id)
 {
     GnomeRRMode **mode;
-    
+
     g_assert (info != NULL);
-    
+
     for (mode = info->modes; *mode; ++mode)
     {
 	if ((*mode)->id == id)
 	    return *mode;
     }
-    
+
     return NULL;
 }
 
@@ -239,30 +239,30 @@ screen_info_free (ScreenInfo *info)
     GnomeRROutput **output;
     GnomeRRCrtc **crtc;
     GnomeRRMode **mode;
-    
+
     g_assert (info != NULL);
 
     if (info->resources)
     {
 	XRRFreeScreenResources (info->resources);
-	
+
 	info->resources = NULL;
     }
-    
+
     if (info->outputs)
     {
 	for (output = info->outputs; *output; ++output)
 	    output_free (*output);
 	g_free (info->outputs);
     }
-    
+
     if (info->crtcs)
     {
 	for (crtc = info->crtcs; *crtc; ++crtc)
 	    crtc_free (*crtc);
 	g_free (info->crtcs);
     }
-    
+
     if (info->modes)
     {
 	for (mode = info->modes; *mode; ++mode)
@@ -275,7 +275,7 @@ screen_info_free (ScreenInfo *info)
 	/* The modes themselves were freed above */
 	g_free (info->clone_modes);
     }
-    
+
     g_free (info);
 }
 
@@ -430,7 +430,7 @@ fill_out_screen_info (Display *xdisplay,
 {
     XRRScreenResources *resources;
     GnomeRRScreenPrivate *priv;
-    
+
     g_assert (xdisplay != NULL);
     g_assert (info != NULL);
 
@@ -493,7 +493,7 @@ fill_out_screen_info (Display *xdisplay,
     }
     else
     {
-        gnome_rr_screen_get_ranges (info->screen, 
+        gnome_rr_screen_get_ranges (info->screen,
 					 &(info->min_width),
 					 &(info->max_width),
 					 &(info->min_height),
@@ -529,7 +529,7 @@ screen_info_new (GnomeRRScreen *screen, gboolean needs_reprobe, GError **error)
     info->crtcs = NULL;
     info->modes = NULL;
     info->screen = screen;
-    
+
     if (fill_out_screen_info (priv->xdisplay, priv->xroot, info, needs_reprobe, error))
     {
 	return info;
@@ -620,7 +620,7 @@ screen_update (GnomeRRScreen *screen, gboolean force_callback, gboolean needs_re
 {
     ScreenInfo *info;
     gboolean changed = FALSE;
-    
+
     g_assert (screen != NULL);
 
     info = screen_info_new (screen, needs_reprobe, error);
@@ -634,12 +634,12 @@ screen_update (GnomeRRScreen *screen, gboolean force_callback, gboolean needs_re
     diff_outputs_and_emit_signals (screen->priv->info, info);
 
     screen_info_free (screen->priv->info);
-	
+
     screen->priv->info = info;
 
     if (changed || force_callback)
         g_signal_emit (G_OBJECT (screen), screen_signals[SCREEN_CHANGED], 0);
-    
+
     return changed;
 }
 
@@ -1036,16 +1036,16 @@ gnome_rr_screen_get_ranges (GnomeRRScreen *screen,
     g_return_if_fail (GNOME_IS_RR_SCREEN (screen));
 
     priv = screen->priv;
-    
+
     if (min_width)
 	*min_width = priv->info->min_width;
-    
+
     if (max_width)
 	*max_width = priv->info->max_width;
-    
+
     if (min_height)
 	*min_height = priv->info->min_height;
-    
+
     if (max_height)
 	*max_height = priv->info->max_height;
 }
@@ -1314,7 +1314,7 @@ gnome_rr_screen_list_modes (GnomeRRScreen *screen)
 {
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
-    
+
     return screen->priv->info->modes;
 }
 
@@ -1346,7 +1346,7 @@ gnome_rr_screen_list_crtcs (GnomeRRScreen *screen)
 {
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
-    
+
     return screen->priv->info->crtcs;
 }
 
@@ -1362,7 +1362,7 @@ gnome_rr_screen_list_outputs (GnomeRRScreen *screen)
 {
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
-    
+
     return screen->priv->info->outputs;
 }
 
@@ -1377,18 +1377,18 @@ gnome_rr_screen_get_crtc_by_id (GnomeRRScreen *screen,
 {
     GnomeRRCrtc **crtcs;
     int i;
-    
+
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
 
     crtcs = screen->priv->info->crtcs;
-    
+
     for (i = 0; crtcs[i] != NULL; ++i)
     {
 	if (crtcs[i]->id == id)
 	    return crtcs[i];
     }
-    
+
     return NULL;
 }
 
@@ -1403,7 +1403,7 @@ gnome_rr_screen_get_output_by_id (GnomeRRScreen *screen,
 {
     GnomeRROutput **outputs;
     int i;
-    
+
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
 
@@ -1414,7 +1414,7 @@ gnome_rr_screen_get_output_by_id (GnomeRRScreen *screen,
 	if (outputs[i]->id == id)
 	    return outputs[i];
     }
-    
+
     return NULL;
 }
 
@@ -1423,10 +1423,10 @@ static GnomeRROutput *
 output_new (ScreenInfo *info, RROutput id)
 {
     GnomeRROutput *output = g_slice_new0 (GnomeRROutput);
-    
+
     output->id = id;
     output->info = info;
-    
+
     return output;
 }
 
@@ -1441,13 +1441,13 @@ get_property (Display *dpy,
     unsigned long nitems, bytes_after;
     Atom actual_type;
     guint8 *result;
-    
+
     XRRGetOutputProperty (dpy, output, atom,
 			  0, 100, False, False,
 			  AnyPropertyType,
 			  &actual_type, &actual_format,
 			  &nitems, &bytes_after, &prop);
-    
+
     if (actual_type == XA_INTEGER && actual_format == 8)
     {
 	result = g_memdup (prop, nitems);
@@ -1458,9 +1458,9 @@ get_property (Display *dpy,
     {
 	result = NULL;
     }
-    
+
     XFree (prop);
-    
+
     return result;
 }
 
@@ -1495,7 +1495,7 @@ read_edid_data (GnomeRROutput *output, gsize *len)
 	else
 	    g_free (result);
     }
-    
+
     return NULL;
 }
 
@@ -1583,11 +1583,11 @@ output_initialize (GnomeRROutput *output, XRRScreenResources *res, GError **erro
                                             output->id);
     GPtrArray *a;
     int i;
-    
+
 #if 0
     g_print ("Output %lx Timestamp: %u\n", output->id, (guint32)info->timestamp);
 #endif
-    
+
     if (!info || !output->info)
     {
         /* FIXME: see the comment in crtc_initialize() */
@@ -1607,7 +1607,7 @@ output_initialize (GnomeRROutput *output, XRRScreenResources *res, GError **erro
 
     /* Possible crtcs */
     a = g_ptr_array_new ();
-    
+
     for (i = 0; i < info->ncrtc; ++i)
     {
         GnomeRRCrtc *crtc = crtc_by_id (output->info, info->crtcs[i]);
@@ -1643,7 +1643,7 @@ output_initialize (GnomeRROutput *output, XRRScreenResources *res, GError **erro
     output->modes = (GnomeRRMode **)g_ptr_array_free (a, FALSE);
 
     output->n_preferred = info->npreferred;
-    
+
     /* Edid data */
     output->edid_data = read_edid_data (output, &output->edid_size);
 
@@ -1720,7 +1720,7 @@ guint32
 gnome_rr_output_get_id (GnomeRROutput *output)
 {
     g_assert(output != NULL);
-    
+
     return output->id;
 }
 
@@ -1904,18 +1904,18 @@ gnome_rr_screen_get_output_by_name (GnomeRRScreen *screen,
 				    const char    *name)
 {
     int i;
-    
+
     g_return_val_if_fail (GNOME_IS_RR_SCREEN (screen), NULL);
     g_return_val_if_fail (screen->priv->info != NULL, NULL);
-    
+
     for (i = 0; screen->priv->info->outputs[i] != NULL; ++i)
     {
 	GnomeRROutput *output = screen->priv->info->outputs[i];
-	
+
 	if (strcmp (output->name, name) == 0)
 	    return output;
     }
-    
+
     return NULL;
 }
 
@@ -1923,7 +1923,7 @@ GnomeRRCrtc *
 gnome_rr_output_get_crtc (GnomeRROutput *output)
 {
     g_return_val_if_fail (output != NULL, NULL);
-    
+
     return output->current_crtc;
 }
 
@@ -1978,12 +1978,12 @@ GnomeRRMode *
 gnome_rr_output_get_current_mode (GnomeRROutput *output)
 {
     GnomeRRCrtc *crtc;
-    
+
     g_return_val_if_fail (output != NULL, NULL);
-    
+
     if ((crtc = gnome_rr_output_get_crtc (output)))
 	return gnome_rr_crtc_get_current_mode (crtc);
-    
+
     return NULL;
 }
 
@@ -1993,9 +1993,9 @@ gnome_rr_output_get_position (GnomeRROutput   *output,
 			      int             *y)
 {
     GnomeRRCrtc *crtc;
-    
+
     g_return_if_fail (output != NULL);
-    
+
     if ((crtc = gnome_rr_output_get_crtc (output)))
 	gnome_rr_crtc_get_position (crtc, x, y);
 }
@@ -2027,7 +2027,7 @@ gnome_rr_output_get_preferred_mode (GnomeRROutput *output)
     g_return_val_if_fail (output != NULL, NULL);
     if (output->n_preferred)
 	return output->modes[0];
-    
+
     return NULL;
 }
 
@@ -2050,16 +2050,16 @@ gnome_rr_output_supports_mode (GnomeRROutput *output,
 			       GnomeRRMode   *mode)
 {
     int i;
-    
+
     g_return_val_if_fail (output != NULL, FALSE);
     g_return_val_if_fail (mode != NULL, FALSE);
-    
+
     for (i = 0; output->modes[i] != NULL; ++i)
     {
 	if (output->modes[i] == mode)
 	    return TRUE;
     }
-    
+
     return FALSE;
 }
 
@@ -2068,16 +2068,16 @@ gnome_rr_output_can_clone (GnomeRROutput *output,
 			   GnomeRROutput *clone)
 {
     int i;
-    
+
     g_return_val_if_fail (output != NULL, FALSE);
     g_return_val_if_fail (clone != NULL, FALSE);
-    
+
     for (i = 0; output->clones[i] != NULL; ++i)
     {
 	if (output->clones[i] == clone)
 	    return TRUE;
     }
-    
+
     return FALSE;
 }
 
@@ -2129,13 +2129,13 @@ gnome_rr_rotation_from_xrotation (Rotation r)
 {
     int i;
     GnomeRRRotation result = 0;
-    
+
     for (i = 0; i < G_N_ELEMENTS (rotation_map); ++i)
     {
 	if (r & rotation_map[i].xrot)
 	    result |= rotation_map[i].rot;
     }
-    
+
     return result;
 }
 
@@ -2144,13 +2144,13 @@ xrotation_from_rotation (GnomeRRRotation r)
 {
     int i;
     Rotation result = 0;
-    
+
     for (i = 0; i < G_N_ELEMENTS (rotation_map); ++i)
     {
 	if (r & rotation_map[i].rot)
 	    result |= rotation_map[i].xrot;
     }
-    
+
     return result;
 }
 
@@ -2162,7 +2162,6 @@ set_crtc_scale (GnomeRRCrtc *crtc,
 {
     gchar *filter;
     float real_scale;
-    int i;
     int looks_like_w, looks_like_h;
 
     real_scale = global_scale / scale;
@@ -2228,13 +2227,13 @@ gnome_rr_crtc_set_config_with_time (GnomeRRCrtc      *crtc,
     Status status;
     gboolean result;
     int i;
-    
+
     g_return_val_if_fail (crtc != NULL, FALSE);
     g_return_val_if_fail (mode != NULL || outputs == NULL || n_outputs == 0, FALSE);
     g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
-    
+
     info = crtc->info;
-    
+
     if (mode)
     {
         if (x + mode->width > info->max_width || y + mode->height > info->max_height)
@@ -2252,9 +2251,9 @@ gnome_rr_crtc_set_config_with_time (GnomeRRCrtc      *crtc,
             return FALSE;
         }
     }
-    
+
     output_ids = g_array_new (FALSE, FALSE, sizeof (RROutput));
-    
+
     if (outputs)
     {
 	for (i = 0; i < n_outputs; ++i)
@@ -2265,13 +2264,13 @@ gnome_rr_crtc_set_config_with_time (GnomeRRCrtc      *crtc,
 
     set_crtc_scale (crtc, mode, scale, global_scale);
     status = XRRSetCrtcConfig (DISPLAY (crtc), info->resources, crtc->id,
-			       timestamp, 
+			       timestamp,
 			       x, y,
 			       mode ? mode->id : None,
 			       xrotation_from_rotation (rotation),
 			       (RROutput *)output_ids->data,
 			       output_ids->len);
-    
+
     g_array_free (output_ids, TRUE);
 
     if (gdk_error_trap_pop () || status != RRSetConfigSuccess) {
@@ -2285,7 +2284,7 @@ gnome_rr_crtc_set_config_with_time (GnomeRRCrtc      *crtc,
     } else {
         result = TRUE;
     }
-    
+
     return result;
 }
 
@@ -2293,7 +2292,7 @@ GnomeRRMode *
 gnome_rr_crtc_get_current_mode (GnomeRRCrtc *crtc)
 {
     g_return_val_if_fail (crtc != NULL, NULL);
-    
+
     return crtc->current_mode;
 }
 
@@ -2301,7 +2300,7 @@ guint32
 gnome_rr_crtc_get_id (GnomeRRCrtc *crtc)
 {
     g_return_val_if_fail (crtc != NULL, 0);
-    
+
     return crtc->id;
 }
 
@@ -2310,16 +2309,16 @@ gnome_rr_crtc_can_drive_output (GnomeRRCrtc   *crtc,
 				GnomeRROutput *output)
 {
     int i;
-    
+
     g_return_val_if_fail (crtc != NULL, FALSE);
     g_return_val_if_fail (output != NULL, FALSE);
-    
+
     for (i = 0; crtc->possible_outputs[i] != NULL; ++i)
     {
 	if (crtc->possible_outputs[i] == output)
 	    return TRUE;
     }
-    
+
     return FALSE;
 }
 
@@ -2330,10 +2329,10 @@ gnome_rr_crtc_get_position (GnomeRRCrtc *crtc,
 			    int         *y)
 {
     g_return_if_fail (crtc != NULL);
-    
+
     if (x)
 	*x = crtc->x;
-    
+
     if (y)
 	*y = crtc->y;
 }
@@ -2373,10 +2372,10 @@ static GnomeRRCrtc *
 crtc_new (ScreenInfo *info, RROutput id)
 {
     GnomeRRCrtc *crtc = g_slice_new0 (GnomeRRCrtc);
-    
+
     crtc->id = id;
     crtc->info = info;
-    
+
     return crtc;
 }
 
@@ -2503,11 +2502,11 @@ crtc_initialize (GnomeRRCrtc        *crtc,
     XRRCrtcInfo *info = XRRGetCrtcInfo (DISPLAY (crtc), res, crtc->id);
     GPtrArray *a;
     int i;
-    
+
 #if 0
     g_print ("CRTC %lx Timestamp: %u\n", crtc->id, (guint32)info->timestamp);
 #endif
-    
+
     if (!info)
     {
         /* FIXME: We need to reaquire the screen resources */
@@ -2521,13 +2520,13 @@ crtc_initialize (GnomeRRCrtc        *crtc,
                     (int) crtc->id);
         return FALSE;
     }
-    
+
     /* GnomeRRMode */
     crtc->current_mode = mode_by_id (crtc->info, info->mode);
-    
+
     crtc->x = info->x;
     crtc->y = info->y;
-    
+
     /* Current outputs */
     a = g_ptr_array_new ();
     for (i = 0; i < info->noutput; ++i)
@@ -2553,7 +2552,7 @@ crtc_initialize (GnomeRRCrtc        *crtc,
 
     g_ptr_array_add (a, NULL);
     crtc->possible_outputs = (GnomeRROutput **)g_ptr_array_free (a, FALSE);
-    
+
     /* Rotations */
     crtc->current_rotation = gnome_rr_rotation_from_xrotation (info->rotation);
     crtc->rotations = gnome_rr_rotation_from_xrotation (info->rotations);
@@ -2583,10 +2582,10 @@ static GnomeRRMode *
 mode_new (ScreenInfo *info, RRMode id)
 {
     GnomeRRMode *mode = g_slice_new0 (GnomeRRMode);
-    
+
     mode->id = id;
     mode->info = info;
-    
+
     return mode;
 }
 
@@ -2646,7 +2645,7 @@ mode_initialize (GnomeRRMode *mode, XRRModeInfo *info)
 {
     g_assert (mode != NULL);
     g_assert (info != NULL);
-    
+
     mode->name = g_strdup (info->name);
     mode->width = info->width;
     mode->height = info->height;
@@ -2939,7 +2938,7 @@ gnome_rr_screen_calculate_best_global_scale (GnomeRRScreen *screen,
     int real_width, real_height;
 
     display = gdk_display_get_default ();
-    
+
     if (index == -1)
     {
         monitor = gdk_display_get_primary_monitor (display);
