@@ -50,8 +50,6 @@
 #include "gvc-mixer-control-private.h"
 #include "gvc-mixer-ui-device.h"
 
-#define GVC_MIXER_CONTROL_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_MIXER_CONTROL, GvcMixerControlPrivate))
-
 #define RECONNECT_DELAY 5
 
 enum {
@@ -134,7 +132,7 @@ static guint signals [LAST_SIGNAL] = { 0, };
 
 static void     gvc_mixer_control_finalize   (GObject              *object);
 
-G_DEFINE_TYPE (GvcMixerControl, gvc_mixer_control, G_TYPE_OBJECT)
+G_DEFINE_TYPE_WITH_PRIVATE (GvcMixerControl, gvc_mixer_control, G_TYPE_OBJECT)
 
 pa_context *
 gvc_mixer_control_get_pa_context (GvcMixerControl *control)
@@ -3671,14 +3669,13 @@ gvc_mixer_control_class_init (GvcMixerControlClass *klass)
                               NULL, NULL,
                               g_cclosure_marshal_VOID__UINT,
                               G_TYPE_NONE, 1, G_TYPE_UINT);
-        g_type_class_add_private (klass, sizeof (GvcMixerControlPrivate));
 }
 
 
 static void
 gvc_mixer_control_init (GvcMixerControl *control)
 {
-        control->priv = GVC_MIXER_CONTROL_GET_PRIVATE (control);
+        control->priv = gvc_mixer_control_get_instance_private (control);
 
         control->priv->pa_mainloop = pa_glib_mainloop_new (g_main_context_default ());
         g_assert (control->priv->pa_mainloop);

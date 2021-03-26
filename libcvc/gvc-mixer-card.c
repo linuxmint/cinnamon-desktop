@@ -34,8 +34,6 @@
 #include "gvc-mixer-card.h"
 #include "gvc-mixer-card-private.h"
 
-#define GVC_MIXER_CARD_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_MIXER_CARD, GvcMixerCardPrivate))
-
 static guint32 card_serial = 1;
 
 struct GvcMixerCardPrivate
@@ -67,7 +65,7 @@ enum
 
 static void     gvc_mixer_card_finalize   (GObject            *object);
 
-G_DEFINE_TYPE (GvcMixerCard, gvc_mixer_card, G_TYPE_OBJECT)
+G_DEFINE_TYPE_WITH_PRIVATE (GvcMixerCard, gvc_mixer_card, G_TYPE_OBJECT)
 
 static guint32
 get_next_card_serial (void)
@@ -509,14 +507,12 @@ gvc_mixer_card_class_init (GvcMixerCardClass *klass)
                                                               "Name of current profile for this card in human readable form",
                                                               NULL,
                                                               G_PARAM_READABLE));
-
-        g_type_class_add_private (klass, sizeof (GvcMixerCardPrivate));
 }
 
 static void
 gvc_mixer_card_init (GvcMixerCard *card)
 {
-        card->priv = GVC_MIXER_CARD_GET_PRIVATE (card);
+        card->priv = gvc_mixer_card_get_instance_private (card);
 }
 
 GvcMixerCard *

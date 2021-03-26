@@ -33,8 +33,6 @@
 #include "gvc-mixer-stream-private.h"
 #include "gvc-channel-map-private.h"
 
-#define GVC_MIXER_STREAM_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_MIXER_STREAM, GvcMixerStreamPrivate))
-
 static guint32 stream_serial = 1;
 
 struct GvcMixerStreamPrivate
@@ -94,7 +92,7 @@ static guint signals [LAST_SIGNAL] = { 0, };
 
 static void     gvc_mixer_stream_finalize   (GObject            *object);
 
-G_DEFINE_ABSTRACT_TYPE (GvcMixerStream, gvc_mixer_stream, G_TYPE_OBJECT)
+G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE (GvcMixerStream, gvc_mixer_stream, G_TYPE_OBJECT)
 
 static void
 free_port (GvcMixerStreamPort *p)
@@ -1165,13 +1163,12 @@ gvc_mixer_stream_class_init (GvcMixerStreamClass *klass)
                               g_cclosure_marshal_VOID__VOID,
                               G_TYPE_NONE, 0, G_TYPE_NONE);
 
-       g_type_class_add_private (klass, sizeof (GvcMixerStreamPrivate));
 }
 
 static void
 gvc_mixer_stream_init (GvcMixerStream *stream)
 {
-        stream->priv = GVC_MIXER_STREAM_GET_PRIVATE (stream);
+        stream->priv = gvc_mixer_stream_get_instance_private (stream);
 }
 
 static void

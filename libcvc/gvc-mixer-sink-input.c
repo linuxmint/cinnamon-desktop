@@ -33,8 +33,6 @@
 #include "gvc-mixer-stream-private.h"
 #include "gvc-channel-map-private.h"
 
-#define GVC_MIXER_SINK_INPUT_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_MIXER_SINK_INPUT, GvcMixerSinkInputPrivate))
-
 struct GvcMixerSinkInputPrivate
 {
         gpointer dummy;
@@ -42,7 +40,7 @@ struct GvcMixerSinkInputPrivate
 
 static void     gvc_mixer_sink_input_finalize   (GObject                *object);
 
-G_DEFINE_TYPE (GvcMixerSinkInput, gvc_mixer_sink_input, GVC_TYPE_MIXER_STREAM)
+G_DEFINE_TYPE_WITH_PRIVATE (GvcMixerSinkInput, gvc_mixer_sink_input, GVC_TYPE_MIXER_STREAM)
 
 static gboolean
 gvc_mixer_sink_input_push_volume (GvcMixerStream *stream, gpointer *op)
@@ -114,14 +112,12 @@ gvc_mixer_sink_input_class_init (GvcMixerSinkInputClass *klass)
 
         stream_class->push_volume = gvc_mixer_sink_input_push_volume;
         stream_class->change_is_muted = gvc_mixer_sink_input_change_is_muted;
-
-        g_type_class_add_private (klass, sizeof (GvcMixerSinkInputPrivate));
 }
 
 static void
 gvc_mixer_sink_input_init (GvcMixerSinkInput *sink_input)
 {
-        sink_input->priv = GVC_MIXER_SINK_INPUT_GET_PRIVATE (sink_input);
+        sink_input->priv = gvc_mixer_sink_input_get_instance_private (sink_input);
 }
 
 static void
