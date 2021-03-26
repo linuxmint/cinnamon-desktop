@@ -23,8 +23,6 @@
 #include "gvc-mixer-ui-device.h"
 #include "gvc-mixer-card.h"
 
-#define GVC_MIXER_UI_DEVICE_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GVC_TYPE_MIXER_UI_DEVICE, GvcMixerUIDevicePrivate))
-
 struct GvcMixerUIDevicePrivate
 {
         gchar                      *first_line_desc;
@@ -64,7 +62,7 @@ static void     gvc_mixer_ui_device_finalize   (GObject               *object);
 static void     gvc_mixer_ui_device_set_icon_name (GvcMixerUIDevice *device,
                                                    const char       *icon_name);
 
-G_DEFINE_TYPE (GvcMixerUIDevice, gvc_mixer_ui_device, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GvcMixerUIDevice, gvc_mixer_ui_device, G_TYPE_OBJECT)
 
 static guint32
 get_next_output_serial (void)
@@ -192,7 +190,7 @@ gvc_mixer_ui_device_constructor (GType                  type,
 static void
 gvc_mixer_ui_device_init (GvcMixerUIDevice *device)
 {
-        device->priv = GVC_MIXER_UI_DEVICE_GET_PRIVATE (device);
+        device->priv = gvc_mixer_ui_device_get_instance_private (device);
 }
 
 static void
@@ -290,8 +288,6 @@ gvc_mixer_ui_device_class_init (GvcMixerUIDeviceClass *klass)
                                      NULL,
                                      G_PARAM_READWRITE|G_PARAM_CONSTRUCT);
         g_object_class_install_property (object_class, PROP_ICON_NAME, pspec);
-
-        g_type_class_add_private (klass, sizeof (GvcMixerUIDevicePrivate));
 }
 
 /* Removes the part of the string that starts with skip_prefix

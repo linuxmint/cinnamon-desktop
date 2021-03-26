@@ -34,8 +34,6 @@
 #include "gvc-mixer-stream-private.h"
 #include "gvc-channel-map-private.h"
 
-#define GVC_MIXER_EVENT_ROLE_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_MIXER_EVENT_ROLE, GvcMixerEventRolePrivate))
-
 struct GvcMixerEventRolePrivate
 {
         char          *device;
@@ -49,7 +47,7 @@ enum
 
 static void     gvc_mixer_event_role_finalize   (GObject            *object);
 
-G_DEFINE_TYPE (GvcMixerEventRole, gvc_mixer_event_role, GVC_TYPE_MIXER_STREAM)
+G_DEFINE_TYPE_WITH_PRIVATE (GvcMixerEventRole, gvc_mixer_event_role, GVC_TYPE_MIXER_STREAM)
 
 static gboolean
 update_settings (GvcMixerEventRole *role,
@@ -178,14 +176,12 @@ gvc_mixer_event_role_class_init (GvcMixerEventRoleClass *klass)
                                                               "Device",
                                                               NULL,
                                                               G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
-
-        g_type_class_add_private (klass, sizeof (GvcMixerEventRolePrivate));
 }
 
 static void
 gvc_mixer_event_role_init (GvcMixerEventRole *event_role)
 {
-        event_role->priv = GVC_MIXER_EVENT_ROLE_GET_PRIVATE (event_role);
+        event_role->priv = gvc_mixer_event_role_get_instance_private (event_role);
 
 }
 

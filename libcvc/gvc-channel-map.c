@@ -30,8 +30,6 @@
 #include "gvc-channel-map.h"
 #include "gvc-channel-map-private.h"
 
-#define GVC_CHANNEL_MAP_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GVC_TYPE_CHANNEL_MAP, GvcChannelMapPrivate))
-
 struct GvcChannelMapPrivate
 {
         pa_channel_map        pa_map;
@@ -51,7 +49,7 @@ static guint signals [LAST_SIGNAL] = { 0, };
 
 static void     gvc_channel_map_finalize   (GObject            *object);
 
-G_DEFINE_TYPE (GvcChannelMap, gvc_channel_map, G_TYPE_OBJECT)
+G_DEFINE_TYPE_WITH_PRIVATE (GvcChannelMap, gvc_channel_map, G_TYPE_OBJECT)
 
 guint
 gvc_channel_map_get_num_channels (const GvcChannelMap *map)
@@ -277,8 +275,6 @@ gvc_channel_map_class_init (GvcChannelMapClass *klass)
                               NULL, NULL,
                               g_cclosure_marshal_VOID__BOOLEAN,
                               G_TYPE_NONE, 1, G_TYPE_BOOLEAN);
-
-        g_type_class_add_private (klass, sizeof (GvcChannelMapPrivate));
 }
 
 void
@@ -305,7 +301,7 @@ gvc_channel_map_volume_changed (GvcChannelMap     *map,
 static void
 gvc_channel_map_init (GvcChannelMap *map)
 {
-        map->priv = GVC_CHANNEL_MAP_GET_PRIVATE (map);
+        map->priv = gvc_channel_map_get_instance_private (map);
         map->priv->pa_volume_is_set = FALSE;
 }
 
