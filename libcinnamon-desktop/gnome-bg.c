@@ -2999,7 +2999,7 @@ stack_is (SlideShow *parser,
 static int
 parse_int (const char *text)
 {
-	return strtol (text, NULL, 0);
+	return strtol (text, NULL, 10);
 }
 
 static void
