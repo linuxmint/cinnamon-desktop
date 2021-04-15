@@ -1897,11 +1897,13 @@ struct _SlideShow
 static double
 now (void)
 {
-	GTimeVal tv;
+	GDateTime *time;
 
-	g_get_current_time (&tv);
+	time = (GDateTime *) g_get_real_time ();
 
-	return (double)tv.tv_sec + (tv.tv_usec / 1000000.0);
+	return (double) g_date_time_get_second (time) +
+                       (g_date_time_get_microsecond (time) /
+		        1000000.0);
 }
 
 static Slide *

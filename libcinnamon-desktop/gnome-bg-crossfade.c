@@ -309,11 +309,13 @@ get_current_time (void)
 {
 	const double microseconds_per_second = (double) G_USEC_PER_SEC;
 	double timestamp;
-	GTimeVal now;
+	GDateTime *now;
 
-	g_get_current_time (&now);
+	now = (GDateTime *) g_get_real_time ();
 
-	timestamp = ((microseconds_per_second * now.tv_sec) + now.tv_usec) /
+	timestamp = ((microseconds_per_second *
+                    g_date_time_get_second (now)) +
+                    g_date_time_get_microsecond (now)) /
 	            microseconds_per_second;
 
 	return timestamp;
