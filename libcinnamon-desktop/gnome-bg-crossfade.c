@@ -399,7 +399,7 @@ draw_background (GnomeBGCrossfade *fade)
                 send_root_property_change_notification (fade);
 
 		gdk_flush ();
-		gdk_error_trap_pop (); // ignore errors
+		gdk_error_trap_pop_ignored (); // ignore errors
 	} else {
 		gdk_window_invalidate_rect (fade->priv->window, NULL, FALSE);
 		gdk_window_process_updates (fade->priv->window, FALSE);

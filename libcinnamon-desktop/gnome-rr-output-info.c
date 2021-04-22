@@ -264,7 +264,7 @@ double gnome_rr_output_info_get_aspect_ratio (GnomeRROutputInfo *self)
  *
  * Returns: (transfer none): the display name of this output
  */
-char *gnome_rr_output_info_get_display_name (GnomeRROutputInfo *self)
+const char *gnome_rr_output_info_get_display_name (GnomeRROutputInfo *self)
 {
     g_return_val_if_fail (GNOME_IS_RR_OUTPUT_INFO (self), NULL);
 

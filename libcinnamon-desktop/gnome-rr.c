@@ -2162,7 +2162,6 @@ set_crtc_scale (GnomeRRCrtc *crtc,
 {
     gchar *filter;
     float real_scale;
-    int i;
     int looks_like_w, looks_like_h;
 
     real_scale = global_scale / scale;
@@ -2760,13 +2759,6 @@ gnome_rr_crtc_get_gamma (GnomeRRCrtc *crtc, int *size,
  * below this there just isn't enough vertical real estate for GNOME
  * apps to work, and it's better to just be tiny */
 #define HIDPI_MIN_HEIGHT 1500
-
-static gboolean
-is_logical_size_large_enough (int width,
-                              int height)
-{
-  return height > HIDPI_MIN_SCALED_HEIGHT;
-}
 
 static gboolean
 is_scale_valid_for_size (float width,

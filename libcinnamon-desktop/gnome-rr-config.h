@@ -84,7 +84,7 @@ void     gnome_rr_output_info_get_vendor       (GnomeRROutputInfo *self, gchar* 
 guint    gnome_rr_output_info_get_product      (GnomeRROutputInfo *self);
 guint    gnome_rr_output_info_get_serial       (GnomeRROutputInfo *self);
 double   gnome_rr_output_info_get_aspect_ratio (GnomeRROutputInfo *self);
-char    *gnome_rr_output_info_get_display_name (GnomeRROutputInfo *self);
+const char    *gnome_rr_output_info_get_display_name (GnomeRROutputInfo *self);
 
 gboolean gnome_rr_output_info_get_primary (GnomeRROutputInfo *self);
 void     gnome_rr_output_info_set_primary (GnomeRROutputInfo *self, gboolean primary);
