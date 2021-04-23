@@ -3360,6 +3360,7 @@ gboolean
 gnome_bg_changes_with_time (GnomeBG *bg)
 {
 	SlideShow *show;
+	gboolean ret = FALSE;
 
 	g_return_val_if_fail (bg != NULL, FALSE);
 
@@ -3367,10 +3368,12 @@ gnome_bg_changes_with_time (GnomeBG *bg)
 		return FALSE;
 
 	show = get_as_slideshow (bg, bg->filename);
-	if (show)
-		return g_queue_get_length (show->slides) > 1;
+	if (show) {
+                ret = g_queue_get_length (show->slides) > 1;
+                g_object_unref (show);
+        }
 
-	return FALSE;
+	return ret;
 }
 
 /**
@@ -3406,8 +3409,10 @@ gnome_bg_create_frame_thumbnail (GnomeBG			*bg,
 		return NULL;
 
 
-	if (frame_num < 0 || frame_num >= g_queue_get_length (show->slides))
+        if (frame_num < 0 || frame_num >= g_queue_get_length (show->slides)) {
+                g_object_unref (show);
 		return NULL;
+        }
 
 	i = 0;
 	skipped = 0;
@@ -3424,6 +3429,7 @@ gnome_bg_create_frame_thumbnail (GnomeBG			*bg,
 		}
 		i++;
 	}
+        g_object_unref (show);
 	if (!found)
 		return NULL;
 
