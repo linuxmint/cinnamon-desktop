@@ -1,3 +1,19 @@
+cinnamon-desktop (5.0.0) uma; urgency=medium
+
+  [ Leigh Scott ]
+  * avoid deprecated g_type_class_add_private
+
+  [ Michael Webster ]
+  * libcinnamon-desktop: Fix some various build warnings, and an incorrect free.
+
+  [ simon ]
+  * gnome-bg.c: fix a leak https://gitlab.gnome.org/GNOME/gnome-desktop/-/commit/af0f0fbb835e5bb22b7bce4581d3f081462b5f5b and another similar instance
+
+  [ Joshua Peisach ]
+  * Always parse date/time integers in base-10
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 27 May 2021 14:59:26 +0100
+
 cinnamon-desktop (4.8.1) ulyssa; urgency=medium
 
   [ sudorook ]
