@@ -32,6 +32,10 @@
       <default>false</default>
       <_summary>Whether notifications are displayed on the bottom side of the screen</_summary>
     </key>
+    <key type="b" name="display-noncritical-in-fullscreen">
+      <default>false</default>
+      <_summary>Whether non-critical notifications are to be displayed in fullscreen</_summary>
+    </key>
   </schema>
 </schemalist>
 
