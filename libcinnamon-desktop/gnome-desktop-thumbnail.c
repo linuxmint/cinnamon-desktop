@@ -259,6 +259,44 @@ get_thumbnailers_dirs (void)
   return g_once (&once_init, init_thumbnailers_dirs, NULL);
 }
 
+static const char *
+gnome_desktop_thumbnail_size_to_dirname (GnomeDesktopThumbnailSize size)
+{
+  switch (size) {
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_SMALL:
+    return "small";
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL:
+    return "normal";
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE:
+    return "large";
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_XLARGE:
+    return "x-large";
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_XXLARGE:
+    return "xx-large";
+  default:
+    g_assert_not_reached ();
+  }
+}
+
+static guint
+gnome_desktop_thumbnail_size_to_size (GnomeDesktopThumbnailSize size)
+{
+  switch (size) {
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_SMALL:
+    return 64;
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL:
+    return 128;
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE:
+    return 256;
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_XLARGE:
+    return 512;
+  case GNOME_DESKTOP_THUMBNAIL_SIZE_XXLARGE:
+    return 1024;
+  default:
+    g_assert_not_reached ();
+  }
+}
+
 static void
 size_prepared_cb (GdkPixbufLoader *loader, 
 		  int              width,
@@ -1230,10 +1268,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
 
   /* Doesn't access any volatile fields in factory, so it's threadsafe */
   
-  size = 128;
-  if (factory->priv->size == GNOME_DESKTOP_THUMBNAIL_SIZE_LARGE)
-    size = 256;
-
+  size = gnome_desktop_thumbnail_size_to_size (factory->priv->size);
   pixbuf = NULL;
 
   script = NULL;
@@ -1678,7 +1713,7 @@ gnome_desktop_thumbnail_path_for_uri (const char         *uri,
   
   path = g_build_filename (g_get_user_cache_dir (),
 			   "thumbnails",
-			   (size == GNOME_DESKTOP_THUMBNAIL_SIZE_NORMAL)?"normal":"large",
+			   gnome_desktop_thumbnail_size_to_dirname (size),
 			   file,
 			   NULL);
     
