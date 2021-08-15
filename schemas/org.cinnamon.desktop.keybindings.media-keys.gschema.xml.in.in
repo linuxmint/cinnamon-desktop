@@ -142,7 +142,7 @@
       <_description>Binding to launch the web browser.</_description>
     </key>
     <key name="screenreader" type="as">
-      <default>['']</default>
+      <default>['&lt;Alt&gt;&lt;Super&gt;s']</default>
       <_summary>Toggle screen reader</_summary>
       <_description>Binding to start the screen reader</_description>
     </key>
