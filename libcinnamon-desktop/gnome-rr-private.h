@@ -6,9 +6,9 @@
 #include <X11/extensions/Xrandr.h>
 
 #define MINIMUM_LOGICAL_SCALE_FACTOR 0.74f
-#define MAXIMUM_LOGICAL_SCALE_FACTOR 2.0f
+#define MAXIMUM_LOGICAL_SCALE_FACTOR 3.0f
 #define MINIMUM_GLOBAL_SCALE_FACTOR 1
-#define MAXIMUM_GLOBAL_SCALE_FACTOR 2
+#define MAXIMUM_GLOBAL_SCALE_FACTOR 3
 
 typedef struct ScreenInfo ScreenInfo;
 
