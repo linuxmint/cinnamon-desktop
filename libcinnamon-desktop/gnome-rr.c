@@ -2753,12 +2753,22 @@ gnome_rr_crtc_get_gamma (GnomeRRCrtc *crtc, int *size,
 
 /* The minimum resolution at which we turn on a window-scale of 2 */
 #define HIDPI_LIMIT 192
-#define HIDPI_MIN_SCALED_HEIGHT 720
 
-/* The minimum screen height at which we turn on a window-scale of 2;
- * below this there just isn't enough vertical real estate for GNOME
+/* The minimum screen height at which we automatically turn on a window
+ *-scale of 2; below this there just isn't enough vertical real estate for GNOME
  * apps to work, and it's better to just be tiny */
-#define HIDPI_MIN_HEIGHT 1500
+#define MINIMUM_REAL_VERTICAL_PIXELS 1400
+
+/* The minimum logical height we'll allow - any smaller than this is
+ * not very usable and can make Cinnamon behave unpredictably. */
+#define MINIMUM_LOGICAL_VERTICAL_PIXELS 700
+
+static gboolean
+is_logical_size_large_enough (int width,
+                              int height)
+{
+  return height >= MINIMUM_LOGICAL_VERTICAL_PIXELS;
+}
 
 static gboolean
 is_scale_valid_for_size (float width,
@@ -2766,7 +2776,8 @@ is_scale_valid_for_size (float width,
                          float scale)
 {
   return scale >= MINIMUM_LOGICAL_SCALE_FACTOR &&
-         scale <= MAXIMUM_LOGICAL_SCALE_FACTOR;
+         scale <= MAXIMUM_LOGICAL_SCALE_FACTOR &&
+         is_logical_size_large_enough (floorf (width/scale), floorf (height/scale));
 }
 
 static float
@@ -2969,9 +2980,9 @@ gnome_rr_screen_calculate_best_global_scale (GnomeRRScreen *screen,
              " REAL pixel size: %d x %d.  Current global scale: %d, reported monitor scale: %d",
              index, width_mm, height_mm, real_width, real_height, gnome_rr_screen_get_global_scale (NULL), monitor_scale);
 
-    if (real_height < HIDPI_MIN_HEIGHT)
+    if (real_height < MINIMUM_REAL_VERTICAL_PIXELS)
     {
-        g_debug ("REAL height of %d for monitor %d is less than %d, so the recommended scale will be 1", real_height, index, HIDPI_MIN_HEIGHT);
+        g_debug ("REAL height of %d for monitor %d is less than %d, so the recommended scale will be 1", real_height, index, MINIMUM_REAL_VERTICAL_PIXELS);
         goto out;
     }
 
