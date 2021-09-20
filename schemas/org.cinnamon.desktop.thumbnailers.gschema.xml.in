@@ -1,25 +1,25 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="org.cinnamon.desktop.thumbnailers" path="/org/cinnamon/desktop/thumbnailers/">
     <key name="disable-all" type="b">
       <default>false</default>
-      <_summary>Disable all external thumbnailers</_summary>
-      <_description>
+      <summary>Disable all external thumbnailers</summary>
+      <description>
         Set to true to disable all external thumbnailer programs,
         independent on whether they are independently disabled/enabled.
-      </_description>
+      </description>
     </key>
 
     <key name="disable" type="as">
       <default>["image/jp2"]</default>
-      <_summary>
+      <summary>
         List of mime-types for which external thumbnailer
         programs will be disabled
-      </_summary>
-      <_description>
+      </summary>
+      <description>
         Thumbnails will not be created for files whose mime-type is
         contained in the list.
-      </_description>
+      </description>
     </key>
   </schema>
 </schemalist>

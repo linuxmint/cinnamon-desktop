@@ -26,11 +26,11 @@
     </key>
     <key type="b" name="display-notifications">
       <default>true</default>
-      <_summary>Whether notifications are to be displayed</_summary>
+      <summary>Whether notifications are to be displayed</summary>
     </key>
     <key type="b" name="bottom-notifications">
       <default>false</default>
-      <_summary>Whether notifications are displayed on the bottom side of the screen</_summary>
+      <summary>Whether notifications are displayed on the bottom side of the screen</summary>
     </key>
   </schema>
 </schemalist>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.cinnamon.desktop.privacy" path="/org/cinnamon/desktop/privacy/">
+    <key name="remove-old-trash-files" type="b">
+      <default>false</default>
+      <summary>Whether to remove old files from the trash automatically</summary>
+      <description>If TRUE, automatically remove files from the trash when they are older than 'old-files-age' days.</description>
+    </key>
+    <key name="remove-old-temp-files" type="b">
+      <default>false</default>
+      <summary>Whether to remove old temporary files automatically</summary>
+      <description>If TRUE, automatically remove temporary files when they are older than 'old-files-age' days.</description>
+    </key>
+    <key name="old-files-age" type="u">
+      <default>30</default>
+      <summary>Number of days to keep trash and temporary files</summary>
+      <description>Consider trash and temporary files old after this many days.</description>
+    </key>
+    <key name="remember-recent-files" type="b">
+      <default>true</default>
+      <summary>Whether to remember recently used files</summary>
+      <description>If FALSE, applications will not remember recently used files.</description>
+    </key>
+    <key name="recent-files-max-age" type="i">
+      <default>7</default>
+      <summary>Number of days to remember recently used files for</summary>
+      <description>Recently used files will be remembered for this many days. If set to 0, recent files will not be remembered; if set to -1, they will be retained indefinitively.</description>
+    </key>
+  </schema>
+</schemalist>

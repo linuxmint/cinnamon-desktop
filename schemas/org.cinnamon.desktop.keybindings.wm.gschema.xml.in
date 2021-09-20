@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/org/cinnamon/desktop/keybindings/wm/" id="org.cinnamon.desktop.keybindings.wm" gettext-domain="@GETTEXT_DOMAIN">
+  <schema path="/org/cinnamon/desktop/keybindings/wm/" id="org.cinnamon.desktop.keybindings.wm">
     <key type="as" name="toggle-recording">
       <default><![CDATA[['<Control><Shift><Alt>r']]]></default>
     </key>

@@ -1,51 +1,52 @@
-<schemalist gettext-domain="gsettings-desktop-schemas">
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
   <schema id="org.cinnamon.desktop.background" path="/org/cinnamon/desktop/background/">
     <key name="picture-options" enum="org.cinnamon.desktop.CDesktopBackgroundStyle">
       <default>'zoom'</default>
-      <_summary>Picture Options</_summary>
-      <_description>
+      <summary>Picture Options</summary>
+      <description>
         Determines how the image set by wallpaper_filename is rendered.
         Possible values are "none", "wallpaper", "centered", "scaled",
         "stretched", "zoom", "spanned".
-      </_description>
+      </description>
     </key>
     <key name="picture-uri" type="s">
       <default>'file://@datadir@/themes/Adwaita/backgrounds/adwaita-timed.xml'</default>
-      <_summary>Picture URI</_summary>
-      <_description>
+      <summary>Picture URI</summary>
+      <description>
         URI to use for the background image. Not that the backend only supports
         local (file://) URIs.
-      </_description>
+      </description>
     </key>
     <key name="picture-opacity" type="i">
       <range min="0" max="100"/>
       <default>100</default>
-      <_summary>Picture Opacity</_summary>
-      <_description>
+      <summary>Picture Opacity</summary>
+      <description>
         Opacity with which to draw the background picture.
-      </_description>
+      </description>
     </key>
     <key name="primary-color" type="s">
       <default>'#000000'</default>
-      <_summary>Primary Color</_summary>
-      <_description>
+      <summary>Primary Color</summary>
+      <description>
         Left or Top color when drawing gradients, or the solid color.
-      </_description>
+      </description>
     </key>
     <key name="secondary-color" type="s">
       <default>'#000000'</default>
-      <_summary>Secondary Color</_summary>
-      <_description>
+      <summary>Secondary Color</summary>
+      <description>
         Right or Bottom color when drawing gradients, not used for solid color.
-      </_description>
+      </description>
     </key>
     <key name="color-shading-type" enum="org.cinnamon.desktop.CDesktopBackgroundShading">
       <default>'solid'</default>
-      <_summary>Color Shading Type</_summary>
-      <_description>
+      <summary>Color Shading Type</summary>
+      <description>
         How to shade the background color. Possible values are "horizontal",
         "vertical", and "solid".
-      </_description>
+      </description>
     </key>
   </schema>
 

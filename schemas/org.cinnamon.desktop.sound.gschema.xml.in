@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.cinnamon.desktop.sound" path="/org/cinnamon/desktop/sound/">
+    <key name="event-sounds" type="b">
+      <default>false</default>
+      <summary>Sounds for events</summary>
+      <description>Whether to play sounds on user events.</description>
+    </key>
+    <key name="theme-name" type="s">
+      <default>'freedesktop'</default>
+      <summary>Sound theme name</summary>
+      <description>The XDG sound theme to use for event sounds.</description>
+    </key>
+    <key name="input-feedback-sounds" type="b">
+      <default>false</default>
+      <summary>Input feedback sounds</summary>
+      <description>Whether to play sounds on input events.</description>
+    </key>
+    <key name="volume-sound-enabled" type="b">
+      <default>false</default>
+      <summary>Whether to play a sound when the volume is changed</summary>
+      <description>Whether to play a sound when the volume is changed.</description>
+    </key>
+    <key name="volume-sound-file" type="s">
+      <default>""</default>
+      <summary>Which sound to play when the volume is changed</summary>
+      <description>Which sound to play when the volume is changed.</description>
+    </key>
+    <key name="maximum-volume" type="i">
+      <default>100</default>
+      <summary>The maximum sound volume</summary>
+      <description>The maximum sound volume the user can set via the sound applet, settings and volume keys.</description>
+    </key>
+  </schema>
+</schemalist>
