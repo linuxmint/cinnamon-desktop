@@ -1,44 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.cinnamon.desktop.screensaver" path="/org/cinnamon/desktop/screensaver/">
+  <schema id="org.cinnamon.desktop.screensaver" path="/org/cinnamon/desktop/screensaver/">
     <key name="idle-activation-enabled" type="b">
       <default>true</default>
-      <_summary>Activate when idle</_summary>
-      <_description>Set this to TRUE to activate the screensaver when the session is idle.</_description>
+      <summary>Activate when idle</summary>
+      <description>Set this to TRUE to activate the screensaver when the session is idle.</description>
     </key>
     <key name="lock-enabled" type="b">
       <default>true</default>
-      <_summary>Lock on activation</_summary>
-      <_description>Set this to TRUE to lock the screen when the screensaver goes active.</_description>
+      <summary>Lock on activation</summary>
+      <description>Set this to TRUE to lock the screen when the screensaver goes active.</description>
     </key>
     <key name="lock-delay" type="u">
       <default>0</default>
-      <_summary>Time before locking</_summary>
-      <_description>The number of seconds after screensaver activation before locking the screen.</_description>
+      <summary>Time before locking</summary>
+      <description>The number of seconds after screensaver activation before locking the screen.</description>
     </key>
     <key name="show-notifications" type="b">
       <default>false</default>
-      <_summary>Show notifications in the lock screen</_summary>
-      <_description>Whether notifications are shown in the lock screen or not. This only affects the standard experience.</_description>
+      <summary>Show notifications in the lock screen</summary>
+      <description>Whether notifications are shown in the lock screen or not. This only affects the standard experience.</description>
     </key>
     <key name="embedded-keyboard-enabled" type="b">
       <default>false</default>
-      <_summary>Allow embedding a keyboard into the window</_summary>
-      <_description>Set this to TRUE to allow embedding a keyboard into the window when trying to unlock.  The "keyboard_command" key must be set with the appropriate command.</_description>
+      <summary>Allow embedding a keyboard into the window</summary>
+      <description>Set this to TRUE to allow embedding a keyboard into the window when trying to unlock.  The "keyboard_command" key must be set with the appropriate command.</description>
     </key>
     <key name="embedded-keyboard-command" type="s">
       <default>''</default>
-      <_summary>Embedded keyboard command</_summary>
-      <_description>The command that will be run, if the "embedded_keyboard_enabled" key is set to TRUE, to embed a keyboard widget into the window. This command should implement an XEMBED plug interface and output a window XID on the standard output.</_description>
+      <summary>Embedded keyboard command</summary>
+      <description>The command that will be run, if the "embedded_keyboard_enabled" key is set to TRUE, to embed a keyboard widget into the window. This command should implement an XEMBED plug interface and output a window XID on the standard output.</description>
     </key>
     <key name="user-switch-enabled" type="b">
       <default>true</default>
-      <_summary>Allow user switching</_summary>
-      <_description>Set this to TRUE to offer an option in the unlock dialog to switch to a different user account.</_description>
+      <summary>Allow user switching</summary>
+      <description>Set this to TRUE to offer an option in the unlock dialog to switch to a different user account.</description>
     </key>
     <key name="status-message-enabled" type="b">
       <default>true</default>
-      <_summary>Allow the session status message to be displayed</_summary>
-      <_description>Allow the session status message to be displayed when the screen is locked.</_description>
+      <summary>Allow the session status message to be displayed</summary>
+      <description>Allow the session status message to be displayed when the screen is locked.</description>
     </key>
     <key name="default-message" type="s">
       <default>""</default>
@@ -98,46 +99,46 @@
     </key>
     <key name="screensaver-name" type="s">
       <default>""</default>
-      <_summary>deprecated - does nothing</_summary>
+      <summary>deprecated - does nothing</summary>
     </key>
     <key name="xscreensaver-hack" type="s">
       <default>""</default>
-      <_summary>deprecated - does nothing</_summary>
+      <summary>deprecated - does nothing</summary>
     </key>
     <key name="screensaver-webkit-theme" type="s">
       <default>""</default>
-      <_summary>deprecated - does nothing</_summary>
+      <summary>deprecated - does nothing</summary>
     </key>
     <key name="show-album-art" type="b">
       <default>true</default>
-      <_summary>Display album art on the lock screen</_summary>
-      <_description>Set this to true to show album art on the lock screen, if available.</_description>
+      <summary>Display album art on the lock screen</summary>
+      <description>Set this to true to show album art on the lock screen, if available.</description>
     </key>
     <key name="allow-keyboard-shortcuts" type="b">
       <default>true</default>
-      <_summary>Control whether keyboard shortcuts are allowed on the lock screen</_summary>
+      <summary>Control whether keyboard shortcuts are allowed on the lock screen</summary>
     </key>
     <key name="allow-media-control" type="b">
       <default>true</default>
-      <_summary>Control whether volume and media player controls are allowed on the lock screen</_summary>
+      <summary>Control whether volume and media player controls are allowed on the lock screen</summary>
     </key>
     <key name="show-info-panel" type="b">
       <default>true</default>
-      <_summary>Control whether the notification and power widgets are shown on the lock screen</_summary>
+      <summary>Control whether the notification and power widgets are shown on the lock screen</summary>
     </key>
     <key name="show-clock" type="b">
       <default>true</default>
-      <_summary>Show the clock when the normal wallpaper screensaver is active</_summary>
-      <_description>This controls whether the clock is shown while the wallpaper is active.  Note, the clock will always show when unlocking, and it will never show if a screensaver plugin is active, regardless of this setting</_description>
+      <summary>Show the clock when the normal wallpaper screensaver is active</summary>
+      <description>This controls whether the clock is shown while the wallpaper is active.  Note, the clock will always show when unlocking, and it will never show if a screensaver plugin is active, regardless of this setting</description>
     </key>
     <key name="floating-widgets" type="b">
       <default>true</default>
-      <_summary>Control whether the clock and albumart widgets will randomly change position over time.</_summary>
+      <summary>Control whether the clock and albumart widgets will randomly change position over time.</summary>
     </key>
     <key name="layout-group" type="i">
       <default>-1</default>
-      <_summary>Keyboard layout group to use when entering your password</_summary>
-      <_description>This stores the last active keyboard layout group for entering your password.</_description>
+      <summary>Keyboard layout group to use when entering your password</summary>
+      <description>This stores the last active keyboard layout group for entering your password.</description>
     </key>
     <key name="custom-screensaver-command" type="s">
       <default>""</default>

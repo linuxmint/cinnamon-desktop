@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.cinnamon.desktop.keybindings.media-keys" path="/org/cinnamon/desktop/keybindings/media-keys/">
+    <key name="calculator" type="as">
+      <default>['XF86Calculator']</default>
+      <summary>Launch calculator</summary>
+      <description>Binding to launch the calculator.</description>
+    </key>
+    <key name="email" type="as">
+      <default>['XF86Mail']</default>
+      <summary>Launch email client</summary>
+      <description>Binding to launch the email client.</description>
+    </key>
+    <key name="eject" type="as">
+      <default>['XF86Eject']</default>
+      <summary>Eject</summary>
+      <description>Binding to eject an optical disc.</description>
+    </key>
+    <key name="help" type="as">
+      <default>['']</default>
+      <summary>Launch help browser</summary>
+      <description>Binding to launch the help browser.</description>
+    </key>
+    <key name="home" type="as">
+      <default>['&lt;Super&gt;e', 'XF86Explorer']</default>
+      <summary>Home folder</summary>
+      <description>Binding to open the Home folder.</description>
+    </key>
+    <key name="media" type="as">
+      <default>['XF86AudioMedia']</default>
+      <summary>Launch media player</summary>
+      <description>Binding to launch the media player.</description>
+    </key>
+    <key name="next" type="as">
+      <default>['XF86AudioNext']</default>
+      <summary>Next track</summary>
+      <description>Binding to skip to next track.</description>
+    </key>
+    <key name="pause" type="as">
+      <default>['XF86AudioPause']</default>
+      <summary>Pause playback</summary>
+      <description>Binding to pause playback.</description>
+    </key>
+    <key name="play" type="as">
+      <default>['XF86AudioPlay']</default>
+      <summary>Play (or play/pause)</summary>
+      <description>Binding to start playback (or toggle play/pause).</description>
+    </key>
+    <key name="logout" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;Delete']</default>
+      <summary>Log out</summary>
+      <description>Binding to log out.</description>
+    </key>
+    <key name="shutdown" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;End', 'XF86PowerOff']</default>
+      <summary>Shut down the computer</summary>
+      <description>Binding to shut down.</description>
+    </key>
+    <key name="restart-cinnamon" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;Escape']</default>
+      <summary>Restart Cinnamon</summary>
+      <description>Binding to restart Cinnamon.</description>
+    </key>
+    <key name="previous" type="as">
+      <default>['XF86AudioPrev']</default>
+      <summary>Previous track</summary>
+      <description>Binding to skip to previous track.</description>
+    </key>
+    <key name="screensaver" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;l','XF86ScreenSaver']</default>
+      <summary>Lock screen</summary>
+      <description>Binding to lock the screen.</description>
+    </key>
+    <key name="search" type="as">
+      <default>['XF86Search']</default>
+      <summary>Search</summary>
+      <description>Binding to launch the search tool.</description>
+    </key>
+    <key name="stop" type="as">
+      <default>['XF86AudioStop']</default>
+      <summary>Stop playback</summary>
+      <description>Binding to stop playback.</description>
+    </key>
+    <key name="volume-down" type="as">
+      <default>['XF86AudioLowerVolume']</default>
+      <summary>Volume down</summary>
+      <description>Binding to lower the system volume.</description>
+    </key>
+    <key name="volume-mute" type="as">
+      <default>['XF86AudioMute']</default>
+      <summary>Volume mute</summary>
+      <description>Binding to mute the system volume.</description>
+    </key>
+    <key name="volume-up" type="as">
+      <default>['XF86AudioRaiseVolume']</default>
+      <summary>Volume up</summary>
+      <description>Binding to raise the system volume.</description>
+    </key>
+    <key name="mic-mute" type="as">
+      <default>['XF86AudioMicMute']</default>
+      <summary>Mic mute</summary>
+      <description>Binding to mute the system microphone.</description>
+    </key>
+    <key name="screenshot" type="as">
+      <default>['Print']</default>
+      <summary>Take a screenshot</summary>
+      <description>Binding to take a screenshot.</description>
+    </key>
+    <key name="window-screenshot" type="as">
+      <default>['&lt;Alt&gt;Print']</default>
+      <summary>Take a screenshot of a window</summary>
+      <description>Binding to take a screenshot of a window.</description>
+    </key>
+    <key name="area-screenshot" type="as">
+      <default>['&lt;Shift&gt;Print']</default>
+      <summary>Take a screenshot of an area</summary>
+      <description>Binding to take a screenshot of an area.</description>
+    </key>
+    <key name="screenshot-clip" type="as">
+      <default>['&lt;Control&gt;Print']</default>
+      <summary>Copy a screenshot to clipboard</summary>
+      <description>Binding to copy a screenshot to clipboard.</description>
+    </key>
+    <key name="window-screenshot-clip" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;Print']</default>
+      <summary>Copy a screenshot of a window to clipboard</summary>
+      <description>Binding to copy a screenshot of a window to clipboard.</description>
+    </key>
+    <key name="area-screenshot-clip" type="as">
+      <default>['&lt;Control&gt;&lt;Shift&gt;Print']</default>
+      <summary>Copy a screenshot of an area to clipboard</summary>
+      <description>Binding to copy a screenshot of an area to clipboard.</description>
+    </key>
+    <key name="terminal" type="as">
+      <default>['&lt;Primary&gt;&lt;Alt&gt;t']</default>
+      <summary>Launch terminal</summary>
+      <description>Binding to launch the terminal.</description>
+    </key>
+    <key name="www" type="as">
+      <default>['XF86WWW']</default>
+      <summary>Launch web browser</summary>
+      <description>Binding to launch the web browser.</description>
+    </key>
+    <key name="screenreader" type="as">
+      <default>['&lt;Alt&gt;&lt;Super&gt;s']</default>
+      <summary>Toggle screen reader</summary>
+      <description>Binding to start the screen reader</description>
+    </key>
+    <key name="on-screen-keyboard" type="as">
+      <default>['']</default>
+      <summary>Toggle on-screen keyboard</summary>
+      <description>Binding to show the on-screen keyboard</description>
+    </key>
+    <key name="increase-text-size" type="as">
+      <default>['']</default>
+      <summary>Increase text size</summary>
+      <description>Binding to increase the text size</description>
+    </key>
+    <key name="decrease-text-size" type="as">
+      <default>['']</default>
+      <summary>Decrease text size</summary>
+      <description>Binding to decrease the text size</description>
+    </key>
+    <key name="toggle-contrast" type="as">
+      <default>['']</default>
+      <summary>Toggle contrast</summary>
+      <description>Binding to toggle the interface contrast</description>
+    </key>
+    <key name="touchpad-toggle" type="as">
+      <default>['XF86TouchpadToggle']</default>
+      <summary>Toggle the touchpad on and off</summary>
+      <description>Toggle the touchpad on and off</description>
+    </key>
+    <key name="touchpad-on" type="as">
+      <default>['XF86TouchpadOn']</default>
+      <summary>Turn the touchpad on</summary>
+      <description>Turn the touchpad on</description>
+    </key>
+    <key name="touchpad-off" type="as">
+      <default>['XF86TouchpadOff']</default>
+      <summary>Turn the touchpad off</summary>
+      <description>Turn the touchpad off</description>
+    </key>
+    <key name="mute-quiet" type="as">
+      <default>['XF86AudioMute']</default>
+      <summary>Mute the audio quietly</summary>
+      <description>Mute the audio quietly</description>
+    </key>
+    <key name="volume-up-quiet" type="as">
+      <default>['&lt;Alt&gt;XF86AudioRaiseVolume']</default>
+      <summary>Turn the volume up quietly</summary>
+      <description>Turn the volume up quietly</description>
+    </key>
+    <key name="volume-down-quiet" type="as">
+      <default>['&lt;Alt&gt;XF86AudioLowerVolume']</default>
+      <summary>Turn the volume down quietly</summary>
+      <description>Turn the volume down quietly</description>
+    </key>
+    <key name="audio-rewind" type="as">
+      <default>['XF86AudioRewind']</default>
+      <summary>Rewind the currently playing stream</summary>
+      <description>Rewind the currently playing stream</description>
+    </key>
+    <key name="audio-forward" type="as">
+      <default>['XF86AudioForward']</default>
+      <summary>Fast-forward the currently playing stream</summary>
+      <description>Fast-forward the currently playing stream</description>
+    </key>
+    <key name="audio-repeat" type="as">
+      <default>['XF86AudioRepeat']</default>
+      <summary>Toggle audio repeat modes</summary>
+      <description>Toggle audio repeat modes</description>
+    </key>
+    <key name="audio-random" type="as">
+      <default>['XF86AudioRandomPlay']</default>
+      <summary>Choose an audio track at random</summary>
+      <description>Choose an audio track at random</description>
+    </key>
+    <key name="video-outputs" type="as">
+      <default>['&lt;Super&gt;p', 'XF86Display']</default>
+      <summary>Re-detect display devices</summary>
+      <description>Re-detect display devices</description>
+    </key>
+    <key name="video-rotation" type="as">
+      <default>['XF86RotateWindows']</default>
+      <summary>Rotate display</summary>
+      <description>Rotate display</description>
+    </key>
+    <key name="video-rotation-lock" type="as">
+      <default>['&lt;Super&gt;o']</default>
+      <summary>Orientation Lock</summary>
+      <description>Orientation Lock</description>
+    </key>
+    <key name="suspend" type="as">
+      <default>['XF86Sleep']</default>
+      <summary>Suspend the system</summary>
+      <description>Suspend the system</description>
+    </key>
+    <key name="hibernate" type="as">
+      <default>['XF86Suspend', 'XF86Hibernate']</default>
+      <summary>Hibernate the system</summary>
+      <description>Hibernate the system</description>
+    </key>
+    <key name="screen-brightness-up" type="as">
+      <default>['XF86MonBrightnessUp']</default>
+      <summary>Increase display brightness</summary>
+      <description>Increase display brightness</description>
+    </key>
+    <key name="screen-brightness-down" type="as">
+      <default>['XF86MonBrightnessDown']</default>
+      <summary>Decrease display brightness</summary>
+      <description>Decrease display brightness</description>
+    </key>
+    <key name="kbd-brightness-up" type="as">
+      <default>['XF86KbdBrightnessUp']</default>
+      <summary>Increase keyboard backlight brightness</summary>
+      <description>Increase keyboard backlight brightness</description>
+    </key>
+    <key name="kbd-brightness-down" type="as">
+      <default>['XF86KbdBrightnessDown']</default>
+      <summary>Decrease keyboard backlight brightness</summary>
+      <description>Decrease keyboard backlight brightness</description>
+    </key>
+    <key name="kbd-brightness-toggle" type="as">
+      <default>['XF86KbdLightOnOff']</default>
+      <summary>Toggle keyboard backlight</summary>
+      <description>Toggle keyboard backlight</description>
+    </key>
+    <key name="battery" type="as">
+      <default>['XF86Battery']</default>
+      <summary>Display battery status</summary>
+      <description>Display battery status</description>
+    </key>
+  </schema>
+</schemalist>

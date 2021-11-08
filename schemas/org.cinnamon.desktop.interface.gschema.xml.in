@@ -1,292 +1,293 @@
-<schemalist gettext-domain="gsettings-desktop-schemas">
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
   <schema id="org.cinnamon.desktop.interface" path="/org/cinnamon/desktop/interface/">
     <key name="toolkit-accessibility" type="b">
       <default>false</default>
-      <_summary>Enable Toolkit Accessibility</_summary>
-      <_description>
+      <summary>Enable Toolkit Accessibility</summary>
+      <description>
         Whether toolkits should load accessibility related modules.
-      </_description>
+      </description>
     </key>
     <key name="enable-animations" type="b">
       <default>true</default>
-      <_summary>Enable Animations</_summary>
-      <_description>
+      <summary>Enable Animations</summary>
+      <description>
         Whether animations should be displayed. Note: This is a global key,
         it changes the behaviour of the window manager, the panel etc.
-      </_description>
+      </description>
     </key>
     <key name="menus-have-tearoff" type="b">
       <default>false</default>
-      <_summary>Menus Have Tearoff</_summary>
-      <_description>
+      <summary>Menus Have Tearoff</summary>
+      <description>
         Whether menus should have a tearoff.
-      </_description>
+      </description>
     </key>
     <key name="can-change-accels" type="b">
       <default>false</default>
-      <_summary>Can Change Accels</_summary>
-      <_description>
+      <summary>Can Change Accels</summary>
+      <description>
         Whether the user can dynamically type a new accelerator when
         positioned over an active menuitem.
-      </_description>
+      </description>
     </key>
     <key name="toolbar-style" enum="org.cinnamon.desktop.CDesktopToolbarStyle">
       <default>'both-horiz'</default>
-      <_summary>Toolbar Style</_summary>
-      <_description>
+      <summary>Toolbar Style</summary>
+      <description>
         Toolbar Style. Valid values are "both", "both-horiz", "icons",
         and "text".
-      </_description>
+      </description>
     </key>
     <key name="menus-have-icons" type="b">
       <default>true</default>
-      <_summary>Menus Have Icons</_summary>
-      <_description>
+      <summary>Menus Have Icons</summary>
+      <description>
         Whether menus may display an icon next to a menu entry.
-      </_description>
+      </description>
     </key>
     <key name="buttons-have-icons" type="b">
       <default>false</default>
-      <_summary>Buttons Have Icons</_summary>
-      <_description>
+      <summary>Buttons Have Icons</summary>
+      <description>
         Whether buttons may display an icon in addition to the button text.
-      </_description>
+      </description>
     </key>
     <key name="menubar-detachable" type="b">
       <default>false</default>
-      <_summary>Menubar Detachable</_summary>
-      <_description>
+      <summary>Menubar Detachable</summary>
+      <description>
         Whether the user can detach menubars and move them around.
-      </_description>
+      </description>
     </key>
     <key name="toolbar-detachable" type="b">
       <default>false</default>
-      <_summary>Toolbar Detachable</_summary>
-      <_description>
+      <summary>Toolbar Detachable</summary>
+      <description>
         Whether the user can detach toolbars and move them around.
-      </_description>
+      </description>
     </key>
     <key name="toolbar-icons-size" enum="org.cinnamon.desktop.CDesktopToolbarIconSize">
       <default>'large'</default>
-      <_summary>Toolbar Icon Size</_summary>
-      <_description>
+      <summary>Toolbar Icon Size</summary>
+      <description>
         Size of icons in toolbars, either "small" or "large".
-      </_description>
+      </description>
     </key>
     <key name="cursor-blink" type="b">
       <default>true</default>
-      <_summary>Cursor Blink</_summary>
-      <_description>
+      <summary>Cursor Blink</summary>
+      <description>
         Whether the cursor should blink.
-      </_description>
+      </description>
     </key>
     <key name="cursor-blink-time" type="i">
       <range min="100" max="2500"/>
       <default>1200</default>
-      <_summary>Cursor Blink Time</_summary>
-      <_description>
+      <summary>Cursor Blink Time</summary>
+      <description>
         Length of the cursor blink cycle, in milliseconds.
-      </_description>
+      </description>
     </key>
     <key name="cursor-blink-timeout" type="i">
       <range min="1" max="2147483647"/>
       <default>10</default>
-      <_summary>Cursor Blink Timeout</_summary>
-      <_description>
+      <summary>Cursor Blink Timeout</summary>
+      <description>
         Time after which the cursor stops blinking, in seconds.
-      </_description>
+      </description>
     </key>
     <key name="icon-theme" type="s">
       <default>'gnome'</default>
-      <_summary>Icon Theme</_summary>
-      <_description>
+      <summary>Icon Theme</summary>
+      <description>
         Icon theme to use for the panel, nautilus etc.
-      </_description>
+      </description>
     </key>
     <key name="icon-theme-backup" type="s">
       <default>'gnome'</default>
-      <_summary>Icon Theme Backup</_summary>
-      <_description>
+      <summary>Icon Theme Backup</summary>
+      <description>
         This is used to store the current icon theme when high contrast is enabled.
-      </_description>
+      </description>
     </key>
     <key name="gtk-theme" type="s">
       <default>'Adwaita'</default>
-      <_summary>Gtk+ Theme</_summary>
-      <_description>
+      <summary>Gtk+ Theme</summary>
+      <description>
         Basename of the default theme used by gtk+.
-      </_description>
+      </description>
     </key>
     <key name="gtk-theme-backup" type="s">
       <default>'Adwaita'</default>
-      <_summary>Gtk+ Theme Backup</_summary>
-      <_description>
+      <summary>Gtk+ Theme Backup</summary>
+      <description>
         This is used to store the current theme when enabling high contrast.
-      </_description>
+      </description>
     </key>
     <key name="gtk-key-theme" type="s">
       <default>'Default'</default>
-      <_summary>Gtk+ Keybinding Theme</_summary>
-      <_description>
+      <summary>Gtk+ Keybinding Theme</summary>
+      <description>
         Basename of the default keybinding theme used by gtk+.
-      </_description>
+      </description>
     </key>
     <key name="font-name" type="s">
       <default>'Sans 9'</default>
-      <_summary>Default font</_summary>
-      <_description>
+      <summary>Default font</summary>
+      <description>
         Name of the default font used by gtk+.
-      </_description>
+      </description>
     </key>
     <key name="text-scaling-factor" type="d">
       <range min="0.5" max="3.0"/>
       <default>1.0</default>
-      <_summary>Text scaling factor</_summary>
-      <_description>
+      <summary>Text scaling factor</summary>
+      <description>
         Factor used to enlarge or reduce text display, without changing font size.
-      </_description>
+      </description>
     </key>
     <key name="gtk-im-preedit-style" type="s">
       <default>'callback'</default>
-      <_summary>GTK IM Preedit Style</_summary>
-      <_description>
+      <summary>GTK IM Preedit Style</summary>
+      <description>
         Name of the GTK+ input method Preedit Style used by gtk+.
-      </_description>
+      </description>
     </key>
     <key name="scaling-factor" type="u">
       <default>0</default>
-      <_summary>Window scaling factor</_summary>
-      <_description>
+      <summary>Window scaling factor</summary>
+      <description>
         Integer factor used to scale windows by. For use on high-dpi screens.
    0 means pick automatically based on monitor.
-      </_description>
+      </description>
     </key>
     <key name="upscale-fractional-scaling" type="b">
       <default>false</default>
-      <_summary>Achieve fractional scaling by scaling up.</_summary>
-      <_description>
+      <summary>Achieve fractional scaling by scaling up.</summary>
+      <description>
         Fractional scaling is usually achieved by setting the global scale factor to a higher value and then scaling down.  Scaling up instead yields better performance but poorer quality - in certain configurations and hardware, this may be acceptable.
-      </_description>
+      </description>
     </key>
     <key name="gtk-im-status-style" type="s">
       <default>'callback'</default>
-      <_summary>GTK IM Status Style</_summary>
-      <_description>
+      <summary>GTK IM Status Style</summary>
+      <description>
         Name of the GTK+ input method Status Style used by gtk+.
-      </_description>
+      </description>
     </key>
     <key name="gtk-im-module" type="s">
       <default>''</default>
-      <_summary>GTK IM Module</_summary>
-      <_description>
+      <summary>GTK IM Module</summary>
+      <description>
         Name of the input method module used by GTK+.
-      </_description>
-    </key>   
+      </description>
+    </key>
     <key name="menubar-accel" type="s">
       <default>'F10'</default>
-      <_summary>Menubar accelerator</_summary>
-      <_description>
+      <summary>Menubar accelerator</summary>
+      <description>
         Keyboard shortcut to open the menu bars.
-      </_description>
+      </description>
     </key>
     <key name="show-input-method-menu" type="b">
       <default>true</default>
-      <_summary>Show the 'Input Methods' menu</_summary>
-      <_description>
+      <summary>Show the 'Input Methods' menu</summary>
+      <description>
         Whether the context menus of entries and text views should offer to
         change the input method.
-      </_description>
+      </description>
     </key>
     <key name="show-unicode-menu" type="b">
       <default>true</default>
-      <_summary>Show the 'Unicode Control Character' menu</_summary>
-      <_description>
+      <summary>Show the 'Unicode Control Character' menu</summary>
+      <description>
         Whether the context menus of entries and text views should offer to
         insert control characters.
-      </_description>
+      </description>
     </key>
     <key name="cursor-theme" type="s">
       <default>'Adwaita'</default>
-      <_summary>Cursor theme</_summary>
-      <_description>Cursor theme name. Used only by Xservers that support the Xcursor extension.</_description>
+      <summary>Cursor theme</summary>
+      <description>Cursor theme name. Used only by Xservers that support the Xcursor extension.</description>
     </key>
     <key name="cursor-size" type="i">
       <default>24</default>
-      <_summary>Cursor size</_summary>
-      <_description>Size of the cursor used as cursor theme.  Note, depending on the ui scale (hidpi), this number
-      may not represent the actual cursor size</_description>
+      <summary>Cursor size</summary>
+      <description>Size of the cursor used as cursor theme.  Note, depending on the ui scale (hidpi), this number
+      may not represent the actual cursor size</description>
     </key>
     <key name="gtk-timeout-initial" type="i">
       <default>200</default>
-      <_summary>Timeout before click repeat</_summary>
-      <_description>Timeout in milliseconds before a click starts repeating (on spinner buttons for example).</_description>
+      <summary>Timeout before click repeat</summary>
+      <description>Timeout in milliseconds before a click starts repeating (on spinner buttons for example).</description>
     </key>
     <key name="gtk-timeout-repeat" type="i">
       <default>20</default>
-      <_summary>Timeout between click repeats</_summary>
-      <_description>Timeout in milliseconds between repeated clicks when a button is left pressed.</_description>
+      <summary>Timeout between click repeats</summary>
+      <description>Timeout in milliseconds between repeated clicks when a button is left pressed.</description>
     </key>
     <key name="gtk-color-palette" type="s">
       <default>'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'</default>
-      <_summary>Palette used in the color selector</_summary>
-      <_description>Palette used in the color selector as defined by the 'gtk-color-palette' setting</_description>
+      <summary>Palette used in the color selector</summary>
+      <description>Palette used in the color selector as defined by the 'gtk-color-palette' setting</description>
     </key>
     <key name="gtk-color-scheme" type="s">
       <default>''</default>
-      <_summary>List of symbolic names and color equivalents</_summary>
-      <_description>A '\n' separated list of "name:color" as defined by the 'gtk-color-scheme' setting</_description>
+      <summary>List of symbolic names and color equivalents</summary>
+      <description>A '\n' separated list of "name:color" as defined by the 'gtk-color-scheme' setting</description>
     </key>
     <key name="clock-use-24h" type="b">
       <default>true</default>
-      <_summary>Whether the clock displays in 24h format</_summary>
-      <_description>
+      <summary>Whether the clock displays in 24h format</summary>
+      <description>
         Whether the clock displays in 24h format
-      </_description>
+      </description>
     </key>
     <key name="clock-show-seconds" type="b">
       <default>false</default>
-      <_summary>Whether the clock shows seconds</_summary>
-      <_description>
+      <summary>Whether the clock shows seconds</summary>
+      <description>
 	If true, display seconds in the clock.
-      </_description>
+      </description>
     </key>
     <key name="clock-show-date" type="b">
       <default>false</default>
-      <_summary>Show date in clock</_summary>
-      <_description>
+      <summary>Show date in clock</summary>
+      <description>
         If true, display date in the clock, in addition to time.
-      </_description>
+      </description>
     </key>
     <key name="first-day-of-week" type="i">
       <default>7</default>
-      <_summary>First day of week in the calendar</_summary>
-      <_description>
+      <summary>First day of week in the calendar</summary>
+      <description>
         Sets the first day of week, with 7 the locale default.
-      </_description>
+      </description>
     </key>
     <key name="automatic-mnemonics" type="b">
       <default>true</default>
-      <_summary>Only show mnemonics on when the Alt key is pressed</_summary>
-      <_description>
+      <summary>Only show mnemonics on when the Alt key is pressed</summary>
+      <description>
         Whether mnemonics should be automatically shown and hidden when the user
         presses the Alt key.
-      </_description>
+      </description>
     </key>
     <key name="gtk-overlay-scrollbars" type="b">
       <default>true</default>
-      <_summary>Enable or disable gtk overlay scrollbars</_summary>
+      <summary>Enable or disable gtk overlay scrollbars</summary>
     </key>
     <key name="keyboard-layout-show-flags" type="b">
       <default>true</default>
-      <_summary>Prefer country flags to group names when showing keyboard layouts.</_summary>
+      <summary>Prefer country flags to group names when showing keyboard layouts.</summary>
     </key>
     <key name="keyboard-layout-use-upper" type="b">
       <default>false</default>
-      <_summary>Prefer upper-case group names showing keyboard layouts.  False for lowercase.</_summary>
+      <summary>Prefer upper-case group names showing keyboard layouts.  False for lowercase.</summary>
     </key>
     <key name="keyboard-layout-prefer-variant-names" type="b">
       <default>false</default>
-      <_summary>Prefer variant names instead of country codes when showing keyboard layouts.</_summary>
+      <summary>Prefer variant names instead of country codes when showing keyboard layouts.</summary>
     </key>
   </schema>
 </schemalist>

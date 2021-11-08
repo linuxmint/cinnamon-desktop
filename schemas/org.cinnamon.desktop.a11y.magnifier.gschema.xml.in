@@ -1,12 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-
-  <schema id="org.cinnamon.desktop.a11y.magnifier"
-	  path="/org/cinnamon/desktop/a11y/magnifier/"
-          gettext-domain="@GETTEXT_PACKAGE@">
+  <schema id="org.cinnamon.desktop.a11y.magnifier" path="/org/cinnamon/desktop/a11y/magnifier/">
     <key name="mouse-tracking" enum="org.cinnamon.desktop.CDesktopMagnifierMouseTrackingMode">
       <default>'proportional'</default>
-      <_summary>Mouse Tracking Mode</_summary>
-      <_description>
+      <summary>Mouse Tracking Mode</summary>
+      <description>
         Determines the position of the magnified mouse image within the
         magnified view and how it reacts to system mouse movement. The values
         are
@@ -19,179 +17,179 @@
         is proportionally the same as the position of the system mouse on screen;
         - push: when the magnified mouse intersects a boundary of the zoom
         region, the contents are scrolled into view.
-      </_description>
+      </description>
     </key>
     <key name="lens-shape" enum="org.cinnamon.desktop.CDesktopMagnifierLensShape">
       <default>'square'</default>
-      <_summary></_summary>
-      <_description>
+      <summary></summary>
+      <description>
         The shape of lens to use in lens mode - a square, or a vertical or horizontal band.
-      </_description>
+      </description>
     </key>
     <key name="screen-position" enum="org.cinnamon.desktop.CDesktopMagnifierScreenPosition">
       <default>'full-screen'</default>
-      <_summary>Screen position</_summary>
-      <_description>
+      <summary>Screen position</summary>
+      <description>
         The magnified view either fills the entire screen, or occupies the
         top-half, bottom-half, left-half, or right-half of the screen.
-      </_description>
+      </description>
     </key>
     <key name="mag-factor" type="d">
       <default>1.0</default>
       <range min="1.0" max="15.0"/>
-      <_summary>Magnification factor</_summary>
-      <_description>
+      <summary>Magnification factor</summary>
+      <description>
         The power of the magnification. A value of 1.0 means no magnification.
         A value of 2.0 doubles the size.
-      </_description>
+      </description>
     </key>
     <key name="lens-mode" type="b">
       <default>false</default>
-      <_summary>Enable lens mode</_summary>
-      <_description>
+      <summary>Enable lens mode</summary>
+      <description>
         Whether the magnified view should be centered over the location of
         the system mouse and move with it.
-      </_description>
+      </description>
     </key>
     <key name="scroll-at-edges" type="b">
       <default>false</default>
-      <_summary>
+      <summary>
         Scroll magnified contents beyond the edges of the desktop
-      </_summary>
-      <_description>
+      </summary>
+      <description>
         For centered mouse tracking, when the system pointer is at or near the
         edge of the screen, the magnified contents continue to scroll such that
         the screen edge moves into the magnified view.
-      </_description>
+      </description>
     </key>
 
     <!-- Cross-hairs -->
     <key name="show-cross-hairs" type="b">
       <default>false</default>
-      <_summary>Show or hide crosshairs</_summary>
-      <_description>
+      <summary>Show or hide crosshairs</summary>
+      <description>
         Enables/disables display of crosshairs centered on the magnified
         mouse sprite.
-      </_description>
+      </description>
     </key>
     <key name="cross-hairs-thickness" type="i">
       <default>8</default>
-      <_summary>Thickness of the crosshairs in pixels</_summary>
-      <_description>
+      <summary>Thickness of the crosshairs in pixels</summary>
+      <description>
         Width in pixels of the vertical and horizontal lines that make up the crosshairs.
-      </_description>
+      </description>
     </key>
     <key name="cross-hairs-color" type="s">
       <default>'#ff0000'</default>
-      <_summary>Color of the crosshairs</_summary>
-      <_description>
+      <summary>Color of the crosshairs</summary>
+      <description>
         The color of the the vertical and horizontal lines that make up
         the crosshairs.
-      </_description>
+      </description>
     </key>
     <key name="cross-hairs-opacity" type="d">
       <default>0.66</default>
       <range min="0.0" max="1.0"/>
-      <_summary>Opacity of the crosshairs</_summary>
-      <_description>
+      <summary>Opacity of the crosshairs</summary>
+      <description>
         Determines the transparency of the crosshairs, from fully opaque
         to fully transparent.
-      </_description>
+      </description>
     </key>
     <key name="cross-hairs-length" type="i">
       <default>4096</default>
       <range min="20" max="4096"/>
-      <_summary>Length of the crosshairs in pixels</_summary>
-      <_description>
+      <summary>Length of the crosshairs in pixels</summary>
+      <description>
         Determines the length in pixels of the vertical and horizontal
         lines that make up the crosshairs.
-      </_description>
+      </description>
     </key>
     <key name="cross-hairs-clip" type="b">
       <default>false</default>
-      <_summary>Clip the crosshairs at the center</_summary>
-      <_description>
+      <summary>Clip the crosshairs at the center</summary>
+      <description>
         Determines whether the crosshairs intersect the magnified mouse sprite,
         or are clipped such that the ends of the horizontal and vertical lines
         surround the mouse image.
-      </_description>
+      </description>
     </key>
     <key name="invert-lightness" type="b">
       <default>false</default>
-      <_summary>Inverse lightness</_summary>
-      <_description>
+      <summary>Inverse lightness</summary>
+      <description>
         Determines whether the lightness values are inverted:  darker colors
         become lighter and vice versa, and white and black are interchanged.
-      </_description>
+      </description>
     </key>
     <key name="color-saturation" type="d">
       <default>1.0</default>
       <range min="0.0" max="1.0"/>
-      <_summary>Color Saturation</_summary>
-      <_description>
+      <summary>Color Saturation</summary>
+      <description>
         Represents a change to the color saturation, from 0.0 (grayscale)
         to 1.0 (full color).
-      </_description>
+      </description>
     </key>
     <key name="brightness-red" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change brightness of red</_summary>
-      <_description>
+      <summary>Change brightness of red</summary>
+      <description>
         Represents a change to the default brightness of the red component. Zero
         indicates no change, values less than zero indicate a decrease, and
         values greater than zero indicate an increase.
-      </_description>
+      </description>
     </key>
     <key name="brightness-green" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change brightness of green</_summary>
-      <_description>
+      <summary>Change brightness of green</summary>
+      <description>
         Represents a change to the default brightness for the green component.
         Zero indicates no change, values less than zero indicate a decrease, and
         values greater than zero indicate an increase.
-      </_description>
+      </description>
     </key>
     <key name="brightness-blue" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change brightness of blue</_summary>
-      <_description>
+      <summary>Change brightness of blue</summary>
+      <description>
         Represents a change to the default brightness for the blue component.
         Zero indicates no change, values less than zero indicate a decrease, and
         values greater than zero indicate an increase.
-      </_description>
+      </description>
     </key>
     <key name="contrast-red" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change contrast of red</_summary>
-      <_description>
+      <summary>Change contrast of red</summary>
+      <description>
         Represents a change to the default contrast of the red component.  Zero
         indicates no change in contrast, values less than zero indicate a
         decrease, and values greater than zero indicate an increase.
-      </_description>
+      </description>
     </key>
     <key name="contrast-green" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change contrast of green</_summary>
-      <_description>
+      <summary>Change contrast of green</summary>
+      <description>
         Represents a change to the default contrast of the green component.
         Zero indicates no change in contrast, values less than zero indicate a
         decrease, and values greater than zero indicate an increase.
-      </_description>
+      </description>
     </key>
     <key name="contrast-blue" type="d">
       <default>0.0</default>
       <range min="-1.0" max="1.0"/>
-      <_summary>Change contrast of blue</_summary>
-      <_description>
+      <summary>Change contrast of blue</summary>
+      <description>
         Represents a change to the default contrast of the blue component.  Zero
         indicates no change in contrast, values less than zero indicate a
         decrease, and values greater than zero indicate an increase.
-     </_description>
+     </description>
     </key>
   </schema>
 </schemalist>
