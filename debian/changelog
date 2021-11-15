@@ -1,3 +1,17 @@
+cinnamon-desktop (5.2.0) una; urgency=medium
+
+  [ Fabio Fantoni ]
+  * Add screen reader keybinding for improve accessibility
+
+  [ Michael Webster ]
+  * gnome-rr.c: Restore fractional scale limiting, mistakenly removed in 23b8dcf6bb14fc625d.
+  * Allow 3x scaling if the monitor resolution safely permits it.
+
+  [ Oliver Kästner ]
+  * build: don't translate gschemas (#200)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Nov 2021 11:19:47 +0000
+
 cinnamon-desktop (5.0.0) uma; urgency=medium
 
   [ Leigh Scott ]
