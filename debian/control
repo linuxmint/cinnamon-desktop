@@ -20,7 +20,7 @@ Build-Depends:
  libxkbfile-dev,
  libxml2-dev (>= 2.4.20),
  libxrandr-dev (>= 2:1.3),
- meson,
+ meson (>= 0.50.0),
  python3:any,
  xkb-data,
  yelp-tools,
