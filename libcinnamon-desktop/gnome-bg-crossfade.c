@@ -65,10 +65,7 @@ enum {
 
 static guint signals[NUMBER_OF_SIGNALS] = { 0 };
 
-G_DEFINE_TYPE (GnomeBGCrossfade, gnome_bg_crossfade, G_TYPE_OBJECT)
-#define GNOME_BG_CROSSFADE_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o),\
-			                   GNOME_TYPE_BG_CROSSFADE,\
-			                   GnomeBGCrossfadePrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (GnomeBGCrossfade, gnome_bg_crossfade, G_TYPE_OBJECT)
 
 static void
 gnome_bg_crossfade_set_property (GObject      *object,
@@ -195,14 +192,12 @@ gnome_bg_crossfade_class_init (GnomeBGCrossfadeClass *fade_class)
 					  G_SIGNAL_RUN_LAST, 0, NULL, NULL,
 					  g_cclosure_marshal_VOID__OBJECT,
 					  G_TYPE_NONE, 1, G_TYPE_OBJECT);
-
-	g_type_class_add_private (gobject_class, sizeof (GnomeBGCrossfadePrivate));
 }
 
 static void
 gnome_bg_crossfade_init (GnomeBGCrossfade *fade)
 {
-	fade->priv = GNOME_BG_CROSSFADE_GET_PRIVATE (fade);
+	fade->priv = gnome_bg_crossfade_get_instance_private (fade);
 
 	fade->priv->fading_surface = NULL;
 	fade->priv->end_surface = NULL;
