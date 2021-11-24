@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
 Build-Depends:
  debhelper-compat (= 12),
- dh-python,
  dpkg-dev (>= 1.15.1),
  gobject-introspection (>= 0.10.2-1~),
  gtk-doc-tools (>= 1.4),
@@ -29,7 +28,7 @@ Standards-Version: 3.9.6
 Package: cinnamon-desktop-data
 Architecture: all
 Multi-Arch: foreign
-Depends: python3, python3-gi, ${misc:Depends}, ${python3:Depends}
+Depends: ${misc:Depends}
 Description: Common files for Cinnamon desktop apps
  This package includes files that are shared between several Cinnamon
  apps (i18n files and configuration schemas).
@@ -37,21 +36,21 @@ Description: Common files for Cinnamon desktop apps
 Package: gir1.2-cinnamondesktop-3.0
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${gir:Depends}, ${misc:Depends}
 Description: Introspection data for CinnamonDesktop
  This package contains the introspection data for libcinnamon-desktop.
 
 Package: gir1.2-cvc-1.0
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${gir:Depends}, ${misc:Depends}
 Description: Introspection data for Cinnamon pulseaudio abstraction
  This package contains the introspection data for Cinnamon pulseaudio
  abstraction.
 
 Package: libcinnamon-desktop-dbg
 Section: debug
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -88,7 +87,7 @@ Description: Cinnamon shared utility library.
 
 Package: libcvc-dbg
 Section: debug
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
