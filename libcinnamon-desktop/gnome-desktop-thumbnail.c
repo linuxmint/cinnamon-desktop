@@ -178,6 +178,20 @@ thumbnailer_load (Thumbnailer *thumb)
     }
 
   thumb->try_exec = g_key_file_get_string (key_file, THUMBNAILER_ENTRY_GROUP, "TryExec", NULL);
+  if (thumb->try_exec != NULL)
+    {
+      gchar *path_to_exec = g_find_program_in_path (thumb->try_exec);
+
+      if (path_to_exec == NULL)
+        {
+          g_message ("Ignoring thumbnailer with missing binary: '%s'", thumb->try_exec);
+          thumbnailer_unref (thumb);
+          g_key_file_free (key_file);
+          return NULL;
+        }
+
+      g_free (path_to_exec);
+    }
 
   g_key_file_free (key_file);
 
@@ -209,28 +223,6 @@ thumbnailer_new (const gchar *path)
   thumb->path = g_strdup (path);
 
   return thumbnailer_load (thumb);
-}
-
-static gboolean
-thumbnailer_try_exec (Thumbnailer *thumb)
-{
-  gchar *path;
-  gboolean retval;
-
-  if (G_UNLIKELY (!thumb))
-    return FALSE;
-
-  /* TryExec is optinal, but Exec isn't, so we assume
-   * the thumbnailer can be run when TryExec is not present
-   */
-  if (!thumb->try_exec)
-    return TRUE;
-
-  path = g_find_program_in_path (thumb->try_exec);
-  retval = path != NULL;
-  g_free (path);
-
-  return retval;
 }
 
 static gpointer
@@ -1087,9 +1079,6 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
 					       const char            *mime_type,
 					       time_t                 mtime)
 {
-  gboolean have_script = FALSE;
-
-
   if (factory->priv->permissions_problem)
     return FALSE;
 
@@ -1111,11 +1100,10 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
 
   Thumbnailer *thumb;
   thumb = g_hash_table_lookup (factory->priv->mime_types_map, mime_type);
-  have_script = thumbnailer_try_exec (thumb);
 
   g_mutex_unlock (&factory->priv->lock);
 
-  if (have_script || mimetype_supported_by_gdk_pixbuf (mime_type))
+  if (thumb || mimetype_supported_by_gdk_pixbuf (mime_type))
     {
       return !gnome_desktop_thumbnail_factory_has_valid_failed_thumbnail (factory,
                                                                           uri,
