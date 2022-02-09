@@ -78,6 +78,35 @@ typedef enum
 
 typedef enum
 {
+  C_DESKTOP_TOUCHPAD_HANDEDNESS_RIGHT,
+  C_DESKTOP_TOUCHPAD_HANDEDNESS_LEFT,
+  C_DESKTOP_TOUCHPAD_HANDEDNESS_MOUSE
+} CDesktopTouchpadHandedness;
+
+typedef enum
+{
+  C_DESKTOP_TOUCHPAD_CLICK_METHOD_DEFAULT,
+  C_DESKTOP_TOUCHPAD_CLICK_METHOD_NONE,
+  C_DESKTOP_TOUCHPAD_CLICK_METHOD_AREAS,
+  C_DESKTOP_TOUCHPAD_CLICK_METHOD_FINGERS
+} CDesktopTouchpadClickMethod;
+
+typedef enum
+{
+  C_DESKTOP_DEVICE_SEND_EVENTS_ENABLED,
+  C_DESKTOP_DEVICE_SEND_EVENTS_DISABLED,
+  C_DESKTOP_DEVICE_SEND_EVENTS_DISABLED_ON_EXTERNAL_MOUSE
+} CDesktopDeviceSendEvents;
+
+typedef enum
+{
+  C_DESKTOP_POINTER_ACCEL_PROFILE_DEFAULT,
+  C_DESKTOP_POINTER_ACCEL_PROFILE_FLAT,
+  C_DESKTOP_POINTER_ACCEL_PROFILE_ADAPTIVE
+} CDesktopPointerAccelProfile;
+
+typedef enum
+{
   C_DESKTOP_SCREENSAVER_MODE_BLANK_ONLY,
   C_DESKTOP_SCREENSAVER_MODE_RANDOM,
   C_DESKTOP_SCREENSAVER_MODE_SINGLE
@@ -152,6 +181,29 @@ typedef enum
 
 typedef enum
 {
+  C_DESKTOP_TABLET_MAPPING_ABSOLUTE,
+  C_DESKTOP_TABLET_MAPPING_RELATIVE
+} CDesktopTabletMapping;
+
+typedef enum
+{
+  C_DESKTOP_PAD_BUTTON_ACTION_NONE,
+  C_DESKTOP_PAD_BUTTON_ACTION_HELP,
+  C_DESKTOP_PAD_BUTTON_ACTION_SWITCH_MONITOR,
+  C_DESKTOP_PAD_BUTTON_ACTION_KEYBINDING
+} CDesktopPadButtonAction;
+
+typedef enum
+{
+  C_DESKTOP_STYLUS_BUTTON_ACTION_DEFAULT,
+  C_DESKTOP_STYLUS_BUTTON_ACTION_MIDDLE,
+  C_DESKTOP_STYLUS_BUTTON_ACTION_RIGHT,
+  C_DESKTOP_STYLUS_BUTTON_ACTION_BACK,
+  C_DESKTOP_STYLUS_BUTTON_ACTION_FORWARD
+} CDesktopStylusButtonAction;
+
+typedef enum
+{
 /* All bindings before _SEPARATOR are treated as
  * "global" bindings, i.e. they work regardless of
  * Cinnamon's global state (open menus, etc...)
@@ -198,8 +250,8 @@ typedef enum
         C_DESKTOP_MEDIA_KEY_HELP,
         C_DESKTOP_MEDIA_KEY_TERMINAL,
         C_DESKTOP_MEDIA_KEY_WWW,
-        C_DESKTOP_MEDIA_KEY_VIDEO_OUT,
-        C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO,
+        C_DESKTOP_MEDIA_KEY_VIDEO_OUT, // obsolete - handled in muffin now. Skipped in keybindings.js
+        C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO, // obsolete ^^
         C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO_LOCK,
         C_DESKTOP_MEDIA_KEY_SCREENREADER,
         C_DESKTOP_MEDIA_KEY_ON_SCREEN_KEYBOARD,
@@ -259,8 +311,8 @@ __attribute__((unused)) static const char *media_keys[] = {
         [C_DESKTOP_MEDIA_KEY_HELP] = "help",
         [C_DESKTOP_MEDIA_KEY_TERMINAL] = "terminal",
         [C_DESKTOP_MEDIA_KEY_WWW] = "www",
-        [C_DESKTOP_MEDIA_KEY_VIDEO_OUT] = "video-outputs",
-        [C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO] = "video-rotation",
+        [C_DESKTOP_MEDIA_KEY_VIDEO_OUT] = "video-outputs", // obsolete
+        [C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO] = "video-rotation", // obsolete
         [C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO_LOCK] = "video-rotation-lock",
         [C_DESKTOP_MEDIA_KEY_SCREENREADER] = "screenreader",
         [C_DESKTOP_MEDIA_KEY_ON_SCREEN_KEYBOARD] = "on-screen-keyboard",
