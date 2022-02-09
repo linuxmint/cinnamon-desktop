@@ -22,19 +22,23 @@
     </key>
 
     <key type="as" name="push-snap-left">
-      <default><![CDATA[['<Control><Super>Left']]]></default>
+      <default>[]</default>
+      <summary>obsolete</summary>
     </key>
 
     <key type="as" name="push-snap-right">
-      <default><![CDATA[['<Control><Super>Right']]]></default>
+      <default>[]</default>
+      <summary>obsolete</summary>
     </key>
 
     <key type="as" name="push-snap-up">
-      <default><![CDATA[['<Control><Super>Up']]]></default>
+      <default>[]</default>
+      <summary>obsolete</summary>
     </key>
 
     <key type="as" name="push-snap-down">
-      <default><![CDATA[['<Control><Super>Down']]]></default>
+      <default>[]</default>
+      <summary>obsolete</summary>
     </key>
 
     <key type="as" name="tab-popup-select">
@@ -116,7 +120,7 @@
       <summary>Switch windows of an application</summary>
     </key>
     <key type="as" name="switch-group-backward">
-      <default>[]</default>
+      <default><![CDATA[['<Shift><Alt>Above_Tab']]]></default>
       <summary>Reverse switch windows of an application</summary>
     </key>
     <key type="as" name="switch-windows">
@@ -124,7 +128,7 @@
       <summary>Switch applications</summary>
     </key>
     <key type="as" name="switch-windows-backward">
-      <default>[]</default>
+      <default><![CDATA[['<Shift><Alt>Tab']]]></default>
       <summary>Reverse switch applications</summary>
     </key>
     <key type="as" name="switch-panels">
@@ -343,5 +347,14 @@
       <default>[]</default>
       <summary>Decrease the opacity of the current window</summary>
     </key>
+    <key name="switch-monitor" type="as">
+      <default><![CDATA[['<Super>p','XF86Display']]]></default>
+      <summary>Switch monitor configurations</summary>
+    </key>
+    <key name="rotate-monitor" type="as">
+      <default><![CDATA[['XF86RotateWindows']]]></default>
+      <summary>Rotates the built-in monitor configuration</summary>
+    </key>
+
   </schema>
 </schemalist>

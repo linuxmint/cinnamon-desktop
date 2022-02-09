@@ -182,7 +182,7 @@
       <description>Turn the touchpad off</description>
     </key>
     <key name="mute-quiet" type="as">
-      <default>['XF86AudioMute']</default>
+      <default>['&lt;Alt&gt;XF86AudioMute']</default>
       <summary>Mute the audio quietly</summary>
       <description>Mute the audio quietly</description>
     </key>
@@ -217,13 +217,12 @@
       <description>Choose an audio track at random</description>
     </key>
     <key name="video-outputs" type="as">
-      <default>['&lt;Super&gt;p', 'XF86Display']</default>
-      <summary>Re-detect display devices</summary>
-      <description>Re-detect display devices</description>
+      <default>[]</default>
+      <summary>obsolete - see switch-monitor in org.cinnamon.desktop.keybindings.wm</summary>
     </key>
     <key name="video-rotation" type="as">
-      <default>['XF86RotateWindows']</default>
-      <summary>Rotate display</summary>
+      <default>[]</default>
+      <summary>obsolete - see rotate-monitor in org.cinnamon.desktop.keybindings.wm</summary>
       <description>Rotate display</description>
     </key>
     <key name="video-rotation-lock" type="as">
