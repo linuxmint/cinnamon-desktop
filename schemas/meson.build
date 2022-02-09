@@ -13,6 +13,7 @@ desktop_gschemas = [
   'lockdown',
   'media-handling',
   'notifications',
+  'peripherals',
   'privacy',
   'screensaver',
   'session',

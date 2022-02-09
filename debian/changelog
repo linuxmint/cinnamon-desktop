@@ -1,3 +1,9 @@
+cinnamon-desktop (5.3.0) UNRELEASED; urgency=medium
+
+  * Muffin rebase
+
+ -- Michael Webster <miketwebster@gmail.com>  Tue, 08 Feb 2022 23:11:55 -0500
+
 cinnamon-desktop (5.2.1) una; urgency=medium
 
   [ Michael Webster ]
