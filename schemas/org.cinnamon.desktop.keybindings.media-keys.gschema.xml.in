@@ -182,7 +182,7 @@
       <description>Turn the touchpad off</description>
     </key>
     <key name="mute-quiet" type="as">
-      <default>['XF86AudioMute']</default>
+      <default>['&lt;Alt&gt;XF86AudioMute']</default>
       <summary>Mute the audio quietly</summary>
       <description>Mute the audio quietly</description>
     </key>
