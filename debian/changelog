@@ -1,3 +1,10 @@
+cinnamon-desktop (5.2.1) una; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-desktop-thumbnailer.c: Make sure a thumbnailer's binary is found in the path before deciding to use it.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 11 Jan 2022 16:04:32 +0000
+
 cinnamon-desktop (5.2.0) una; urgency=medium
 
   [ Fabio Fantoni ]
