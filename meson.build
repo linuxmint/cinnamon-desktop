@@ -2,7 +2,7 @@
 
 # https://github.com/linuxmint/cinnamon-desktop
 project('cinnamon-desktop', 'c', version: '5.2.1',
-  meson_version: '>=0.41.0'
+  meson_version: '>=0.50.0'
 )
 
 # Before making a release, the LT_VERSION string should be modified.

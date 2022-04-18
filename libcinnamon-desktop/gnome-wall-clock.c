@@ -58,7 +58,7 @@ enum {
 	PROP_FORMAT_STRING,
 };
 
-G_DEFINE_TYPE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
 
 /* Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
  * The wall clock is used variously in Cinnamon applets and desklets, as well as
@@ -112,7 +112,7 @@ gnome_wall_clock_init (GnomeWallClock *self)
 {
 	GFile *tz;
 
-	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GNOME_TYPE_WALL_CLOCK, GnomeWallClockPrivate);
+	self->priv = gnome_wall_clock_get_instance_private (self);
 	
 	self->priv->clock_string = NULL;
 	
@@ -244,8 +244,6 @@ gnome_wall_clock_class_init (GnomeWallClockClass *klass)
                                      "The string to format the clock to",
                                      NULL,
                                      G_PARAM_READABLE | G_PARAM_WRITABLE));
-
-	g_type_class_add_private (gobject_class, sizeof (GnomeWallClockPrivate));
 }
 
 static void

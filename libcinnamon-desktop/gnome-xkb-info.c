@@ -89,7 +89,7 @@ struct _GnomeXkbInfoPrivate
   gchar **current_parser_text;
 };
 
-G_DEFINE_TYPE (GnomeXkbInfo, gnome_xkb_info, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GnomeXkbInfo, gnome_xkb_info, G_TYPE_OBJECT);
 
 static void
 free_layout (gpointer data)
@@ -637,7 +637,7 @@ ensure_rules_are_parsed (GnomeXkbInfo *self)
 static void
 gnome_xkb_info_init (GnomeXkbInfo *self)
 {
-  self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GNOME_TYPE_XKB_INFO, GnomeXkbInfoPrivate);
+  self->priv = gnome_xkb_info_get_instance_private (self);
 }
 
 static void
@@ -663,8 +663,6 @@ gnome_xkb_info_class_init (GnomeXkbInfoClass *klass)
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
   gobject_class->finalize = gnome_xkb_info_finalize;
-
-  g_type_class_add_private (gobject_class, sizeof (GnomeXkbInfoPrivate));
 }
 
 /**

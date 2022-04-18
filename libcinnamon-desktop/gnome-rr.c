@@ -161,6 +161,7 @@ static void gnome_rr_screen_get_property (GObject*, guint, GValue*, GParamSpec*)
 static gboolean gnome_rr_screen_initable_init (GInitable*, GCancellable*, GError**);
 static void gnome_rr_screen_initable_iface_init (GInitableIface *iface);
 G_DEFINE_TYPE_WITH_CODE (GnomeRRScreen, gnome_rr_screen, G_TYPE_OBJECT,
+        G_ADD_PRIVATE (GnomeRRScreen)
         G_IMPLEMENT_INTERFACE (G_TYPE_INITABLE, gnome_rr_screen_initable_iface_init))
 
 G_DEFINE_BOXED_TYPE (GnomeRRCrtc, gnome_rr_crtc, crtc_copy, crtc_free)
@@ -849,7 +850,6 @@ void
 gnome_rr_screen_class_init (GnomeRRScreenClass *klass)
 {
     GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-    g_type_class_add_private (klass, sizeof (GnomeRRScreenPrivate));
 
     gobject_class->set_property = gnome_rr_screen_set_property;
     gobject_class->get_property = gnome_rr_screen_get_property;
@@ -939,7 +939,7 @@ gnome_rr_screen_class_init (GnomeRRScreenClass *klass)
 void
 gnome_rr_screen_init (GnomeRRScreen *self)
 {
-    GnomeRRScreenPrivate *priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GNOME_TYPE_RR_SCREEN, GnomeRRScreenPrivate);
+    GnomeRRScreenPrivate *priv = gnome_rr_screen_get_instance_private (self);
     self->priv = priv;
 
     priv->gdk_screen = NULL;

@@ -101,7 +101,7 @@ enum {
   PROP_LAST
 };
 
-G_DEFINE_TYPE (GnomeRRConfig, gnome_rr_config, G_TYPE_OBJECT)
+G_DEFINE_TYPE_WITH_PRIVATE (GnomeRRConfig, gnome_rr_config, G_TYPE_OBJECT)
 
 typedef struct Parser Parser;
 
@@ -503,7 +503,7 @@ out:
 static void
 gnome_rr_config_init (GnomeRRConfig *self)
 {
-    self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, GNOME_TYPE_RR_CONFIG, GnomeRRConfigPrivate);
+    self->priv = gnome_rr_config_get_instance_private (self);
 
     self->priv->clone = FALSE;
     self->priv->base_scale = BASE_SCALE_NOT_CONFIGURED;
@@ -831,8 +831,6 @@ static void
 gnome_rr_config_class_init (GnomeRRConfigClass *klass)
 {
     GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-
-    g_type_class_add_private (klass, sizeof (GnomeRROutputInfoPrivate));
 
     gobject_class->set_property = gnome_rr_config_set_property;
     gobject_class->finalize = gnome_rr_config_finalize;

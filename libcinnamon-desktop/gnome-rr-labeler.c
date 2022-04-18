@@ -57,7 +57,7 @@ enum {
 	PROP_LAST
 };
 
-G_DEFINE_TYPE (GnomeRRLabeler, gnome_rr_labeler, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GnomeRRLabeler, gnome_rr_labeler, G_TYPE_OBJECT);
 
 static void gnome_rr_labeler_finalize (GObject *object);
 static void setup_from_config (GnomeRRLabeler *labeler);
@@ -88,7 +88,7 @@ gnome_rr_labeler_init (GnomeRRLabeler *labeler)
 {
 	GdkWindow *gdkwindow;
 
-	labeler->priv = G_TYPE_INSTANCE_GET_PRIVATE (labeler, GNOME_TYPE_RR_LABELER, GnomeRRLabelerPrivate);
+	labeler->priv = gnome_rr_labeler_get_instance_private (labeler);
 
 	labeler->priv->workarea_atom = XInternAtom (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
 						    "_NET_WORKAREA",
@@ -129,8 +129,6 @@ static void
 gnome_rr_labeler_class_init (GnomeRRLabelerClass *klass)
 {
 	GObjectClass *object_class;
-
-	g_type_class_add_private (klass, sizeof (GnomeRRLabelerPrivate));
 
 	object_class = (GObjectClass *) klass;
 
