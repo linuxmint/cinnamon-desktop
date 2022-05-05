@@ -116,7 +116,7 @@
       <summary>Switch windows of an application</summary>
     </key>
     <key type="as" name="switch-group-backward">
-      <default>[]</default>
+      <default><![CDATA[['<Shift><Alt>Above_Tab']]]></default>
       <summary>Reverse switch windows of an application</summary>
     </key>
     <key type="as" name="switch-windows">
@@ -124,7 +124,7 @@
       <summary>Switch applications</summary>
     </key>
     <key type="as" name="switch-windows-backward">
-      <default>[]</default>
+      <default><![CDATA[['<Shift><Alt>Tab']]]></default>
       <summary>Reverse switch applications</summary>
     </key>
     <key type="as" name="switch-panels">
