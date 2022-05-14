@@ -16,7 +16,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  */
 
@@ -220,6 +220,15 @@ _pa_context_set_card_profile_by_index_cb (pa_context                       *cont
         card->priv->profile_op = NULL;
 }
 
+/**
+ * gvc_mixer_card_change_profile:
+ * @card: a #GvcMixerCard
+ * @profile: (allow-none): the profile to change to or %NULL.
+ *
+ * Change the profile in use on this card.
+ *
+ * Returns: %TRUE if profile successfully changed or already using this profile.
+ */
 gboolean
 gvc_mixer_card_change_profile (GvcMixerCard *card,
                                const char *profile)
@@ -564,8 +573,7 @@ gvc_mixer_card_finalize (GObject *object)
         g_free (mixer_card->priv->human_profile);
         mixer_card->priv->human_profile = NULL;
 
-        g_list_foreach (mixer_card->priv->profiles, (GFunc) free_profile, NULL);
-        g_list_free (mixer_card->priv->profiles);
+        g_list_free_full (mixer_card->priv->profiles, (GDestroyNotify) free_profile);
         mixer_card->priv->profiles = NULL;
 
         g_list_free_full (mixer_card->priv->ports, (GDestroyNotify) free_port);

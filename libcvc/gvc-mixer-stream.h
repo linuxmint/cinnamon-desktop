@@ -14,7 +14,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  */
 
@@ -24,6 +24,7 @@
 #include <glib-object.h>
 #include "gvc-channel-map.h"
 #include <gio/gio.h>
+#include <pulse/pulseaudio.h>
 
 G_BEGIN_DECLS
 
@@ -53,9 +54,6 @@ typedef struct
                                      gboolean        is_muted);
         gboolean (*change_port)     (GvcMixerStream *stream,
                                      const char     *port);
-        void (*monitor_update)      (GvcMixerStream *stream,
-                                     gdouble        v);
-        void (*monitor_suspend)     (GvcMixerStream *stream);
 } GvcMixerStreamClass;
 
 typedef struct
@@ -65,6 +63,14 @@ typedef struct
         guint priority;
         gboolean available;
 } GvcMixerStreamPort;
+
+typedef enum
+{
+        GVC_STREAM_STATE_INVALID,
+        GVC_STREAM_STATE_RUNNING,
+        GVC_STREAM_STATE_IDLE,
+        GVC_STREAM_STATE_SUSPENDED
+} GvcMixerStreamState;
 
 GType               gvc_mixer_stream_port_get_type   (void) G_GNUC_CONST;
 GType               gvc_mixer_stream_get_type        (void) G_GNUC_CONST;
@@ -97,8 +103,7 @@ const char *        gvc_mixer_stream_get_application_id (GvcMixerStream *stream)
 gboolean            gvc_mixer_stream_is_event_stream (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_is_virtual      (GvcMixerStream *stream);
 guint               gvc_mixer_stream_get_card_index  (GvcMixerStream *stream);
-void                gvc_mixer_stream_create_monitor  (GvcMixerStream *stream);
-void                gvc_mixer_stream_remove_monitor  (GvcMixerStream *stream);
+GvcMixerStreamState gvc_mixer_stream_get_state       (GvcMixerStream *stream);
 
 /* private */
 gboolean            gvc_mixer_stream_set_volume      (GvcMixerStream *stream,
@@ -133,6 +138,8 @@ gboolean            gvc_mixer_stream_set_ports       (GvcMixerStream *stream,
                                                       GList          *ports);
 gboolean            gvc_mixer_stream_set_card_index  (GvcMixerStream *stream,
                                                       guint           card_index);
+gboolean            gvc_mixer_stream_set_state       (GvcMixerStream      *stream,
+                                                      GvcMixerStreamState  state);
 
 G_END_DECLS
 

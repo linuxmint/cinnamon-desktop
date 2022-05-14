@@ -14,7 +14,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  */
 
@@ -32,6 +32,7 @@
 #include "gvc-mixer-stream.h"
 #include "gvc-mixer-stream-private.h"
 #include "gvc-channel-map-private.h"
+#include "gvc-enum-types.h"
 
 static guint32 stream_serial = 1;
 
@@ -57,6 +58,7 @@ struct GvcMixerStreamPrivate
         char          *port;
         char          *human_port;
         GList         *ports;
+        GvcMixerStreamState state;
 };
 
 enum
@@ -80,15 +82,8 @@ enum
         PROP_IS_VIRTUAL,
         PROP_CARD_INDEX,
         PROP_PORT,
+        PROP_STATE,
 };
-
-enum {
-        MONITOR_UPDATE,
-        MONITOR_SUSPEND,
-        LAST_SIGNAL
-};
-
-static guint signals [LAST_SIGNAL] = { 0, };
 
 static void     gvc_mixer_stream_finalize   (GObject            *object);
 
@@ -588,6 +583,27 @@ gvc_mixer_stream_get_ports (GvcMixerStream *stream)
         return stream->priv->ports;
 }
 
+gboolean
+gvc_mixer_stream_set_state (GvcMixerStream      *stream,
+                            GvcMixerStreamState  state)
+{
+        g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), FALSE);
+
+        if (stream->priv->state != state) {
+                stream->priv->state = state;
+                g_object_notify (G_OBJECT (stream), "state");
+        }
+
+        return TRUE;
+}
+
+GvcMixerStreamState
+gvc_mixer_stream_get_state (GvcMixerStream      *stream)
+{
+        g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), GVC_STREAM_STATE_INVALID);
+        return stream->priv->state;
+}
+
 static int
 sort_ports (GvcMixerStreamPort *a,
             GvcMixerStreamPort *b)
@@ -694,6 +710,9 @@ gvc_mixer_stream_set_property (GObject       *object,
         case PROP_PORT:
                 gvc_mixer_stream_set_port (self, g_value_get_string (value));
                 break;
+        case PROP_STATE:
+                gvc_mixer_stream_set_state (self, g_value_get_enum (value));
+                break;
         case PROP_CARD_INDEX:
                 self->priv->card_index = g_value_get_long (value);
                 break;
@@ -764,6 +783,9 @@ gvc_mixer_stream_get_property (GObject     *object,
                 break;
         case PROP_PORT:
                 g_value_set_string (value, self->priv->port);
+                break;
+        case PROP_STATE:
+                g_value_set_enum (value, self->priv->state);
                 break;
         case PROP_CARD_INDEX:
                 g_value_set_long (value, self->priv->card_index);
@@ -847,6 +869,8 @@ gvc_mixer_stream_change_is_muted (GvcMixerStream *stream,
 gboolean
 gvc_mixer_stream_is_running (GvcMixerStream *stream)
 {
+        g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), FALSE);
+
         if (stream->priv->change_volume_op == NULL)
                 return FALSE;
 
@@ -857,152 +881,6 @@ gvc_mixer_stream_is_running (GvcMixerStream *stream)
         stream->priv->change_volume_op = NULL;
 
         return FALSE;
-}
-
-static void
-on_monitor_suspended_callback (pa_stream *s,
-                               void      *userdata)
-{
-        GvcMixerStream *stream;
-
-        stream = userdata;
-
-        if (pa_stream_is_suspended (s)) {
-                g_debug ("Stream suspended");
-                g_signal_emit (stream, signals[MONITOR_SUSPEND], 0);
-        }
-}
-
-static void
-on_monitor_read_callback (pa_stream *s,
-                          size_t     length,
-                          void      *userdata)
-{
-        GvcMixerStream *stream;
-        const void     *data;
-        double          v;
-
-        stream = userdata;
-
-        if (pa_stream_peek (s, &data, &length) < 0) {
-                g_warning ("Failed to read data from stream");
-                return;
-        }
-
-        assert (length > 0);
-        assert (length % sizeof (float) == 0);
-
-        v = ((const float *) data)[length / sizeof (float) -1];
-
-        pa_stream_drop (s);
-
-        if (v < 0) {
-                v = 0;
-        }
-        if (v > 1) {
-                v = 1;
-        }
-        g_signal_emit (stream, signals[MONITOR_UPDATE], 0, v);
-}
-
-/**
- * gvc_mixer_stream_create_monitor:
- * @stream:
- */
-void
-gvc_mixer_stream_create_monitor (GvcMixerStream *stream)
-{
-        pa_stream     *s;
-        char           t[16];
-        pa_buffer_attr attr;
-        pa_sample_spec ss;
-        pa_context    *context;
-        int            res;
-        pa_proplist   *proplist;
-        gboolean       has_monitor;
-
-        if (stream == NULL) {
-                return;
-        }
-        has_monitor = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (stream), "has-monitor"));
-        if (has_monitor != FALSE) {
-                return;
-        }
-
-        g_debug ("Create monitor for %u",
-                 gvc_mixer_stream_get_index (stream));
-
-        context = gvc_mixer_stream_get_pa_context (stream);
-
-        if (pa_context_get_server_protocol_version (context) < 13) {
-                return;
-        }
-
-        ss.channels = 1;
-        ss.format = PA_SAMPLE_FLOAT32;
-        ss.rate = 25;
-
-        memset (&attr, 0, sizeof (attr));
-        attr.fragsize = sizeof (float);
-        attr.maxlength = (uint32_t) -1;
-
-        snprintf (t, sizeof (t), "%u", gvc_mixer_stream_get_index (stream));
-
-        proplist = pa_proplist_new ();
-        pa_proplist_sets (proplist, PA_PROP_APPLICATION_ID, "org.gnome.VolumeControl");
-        s = pa_stream_new_with_proplist (context, "Peak detect", &ss, NULL, proplist);
-        pa_proplist_free (proplist);
-        if (s == NULL) {
-                g_warning ("Failed to create monitoring stream");
-                return;
-        }
-
-        pa_stream_set_read_callback (s, on_monitor_read_callback, stream);
-        pa_stream_set_suspended_callback (s, on_monitor_suspended_callback, stream);
-
-        res = pa_stream_connect_record (s,
-                                        t,
-                                        &attr,
-                                        (pa_stream_flags_t) (PA_STREAM_DONT_MOVE
-                                                             |PA_STREAM_PEAK_DETECT
-                                                             |PA_STREAM_ADJUST_LATENCY));
-        if (res < 0) {
-                g_warning ("Failed to connect monitoring stream");
-                pa_stream_unref (s);
-        } else {
-                g_object_set_data (G_OBJECT (stream), "has-monitor", GINT_TO_POINTER (TRUE));
-                g_object_set_data (G_OBJECT (stream), "pa_stream", s);
-        }
-}
-
-/**
- * gvc_mixer_stream_remove_monitor:
- * @stream:
- */
-void
-gvc_mixer_stream_remove_monitor (GvcMixerStream *stream)
-{
-        pa_stream      *s;
-        pa_context     *context;
-        int             res;
-
-        s = g_object_get_data (G_OBJECT (stream), "pa_stream");
-        if (s == NULL)
-                return;
-        g_assert (stream != NULL);
-
-        g_debug ("Stopping monitor for %u", pa_stream_get_index (s));
-
-        context = gvc_mixer_stream_get_pa_context (stream);
-
-        if (pa_context_get_server_protocol_version (context) < 13) {
-                return;
-        }
-
-        res = pa_stream_disconnect (s);
-        if (res == 0)
-                g_object_set_data (G_OBJECT (stream), "has-monitor", GINT_TO_POINTER (FALSE));
-        g_object_set_data (G_OBJECT (stream), "pa_stream", NULL);
 }
 
 static void
@@ -1139,30 +1017,20 @@ gvc_mixer_stream_class_init (GvcMixerStreamClass *klass)
                                                               NULL,
                                                               G_PARAM_READWRITE));
         g_object_class_install_property (gobject_class,
+                                         PROP_STATE,
+                                         g_param_spec_enum ("state",
+                                                            "State",
+                                                            "The current state of this stream",
+                                                            GVC_TYPE_MIXER_STREAM_STATE,
+                                                            GVC_STREAM_STATE_INVALID,
+                                                            G_PARAM_READWRITE));
+        g_object_class_install_property (gobject_class,
                                          PROP_CARD_INDEX,
                                          g_param_spec_long ("card-index",
                                                              "Card index",
                                                              "The index of the card for this stream",
                                                              PA_INVALID_INDEX, G_MAXLONG, PA_INVALID_INDEX,
                                                              G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
-
-        signals [MONITOR_UPDATE] =
-                g_signal_new ("monitor-update",
-                              G_TYPE_FROM_CLASS (klass),
-                              G_SIGNAL_RUN_LAST,
-                              G_STRUCT_OFFSET (GvcMixerStreamClass, monitor_update),
-                              NULL, NULL,
-                              g_cclosure_marshal_VOID__DOUBLE,
-                              G_TYPE_NONE, 1, G_TYPE_DOUBLE);
-        signals [MONITOR_SUSPEND] =
-                g_signal_new ("monitor-suspend",
-                              G_TYPE_FROM_CLASS (klass),
-                              G_SIGNAL_RUN_LAST,
-                              G_STRUCT_OFFSET (GvcMixerStreamClass, monitor_suspend),
-                              NULL, NULL,
-                              g_cclosure_marshal_VOID__VOID,
-                              G_TYPE_NONE, 0, G_TYPE_NONE);
-
 }
 
 static void
@@ -1210,8 +1078,7 @@ gvc_mixer_stream_finalize (GObject *object)
         g_free (mixer_stream->priv->human_port);
         mixer_stream->priv->human_port = NULL;
 
-        g_list_foreach (mixer_stream->priv->ports, (GFunc) free_port, NULL);
-        g_list_free (mixer_stream->priv->ports);
+        g_list_free_full (mixer_stream->priv->ports, (GDestroyNotify) free_port);
         mixer_stream->priv->ports = NULL;
 
        if (mixer_stream->priv->change_volume_op) {

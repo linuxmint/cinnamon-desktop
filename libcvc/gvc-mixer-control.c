@@ -17,7 +17,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  */
 
@@ -62,6 +62,7 @@ struct GvcMixerControlPrivate
         pa_glib_mainloop *pa_mainloop;
         pa_mainloop_api  *pa_api;
         pa_context       *pa_context;
+        guint             server_protocol_version;
         int               n_outstanding;
         guint             reconnect_id;
         char             *name;
@@ -104,6 +105,11 @@ struct GvcMixerControlPrivate
         gboolean has_headsetmic;
         gboolean has_headphonemic;
         gboolean headset_plugged_in;
+        char    *headphones_name;
+        char    *headsetmic_name;
+        char    *headphonemic_name;
+        char    *internalspk_name;
+        char    *internalmic_name;
 #endif /* HAVE_ALSA */
 
         GvcMixerControlState state;
@@ -234,6 +240,9 @@ gvc_mixer_control_lookup_device_from_stream (GvcMixerControl *control,
         gboolean                 is_network_stream;
         const GList             *ports;
         GvcMixerUIDevice        *ret;
+
+        g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), NULL);
+        g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), NULL);
 
         if (GVC_IS_MIXER_SOURCE (stream))
                devices = g_hash_table_get_values (control->priv->ui_inputs);
@@ -518,7 +527,7 @@ gvc_mixer_control_get_stream_from_device (GvcMixerControl *control,
  * gvc_mixer_control_change_profile_on_selected_device:
  * @control:
  * @device:
- * @profile: Can be null if any profile present on this port is okay
+ * @profile: (allow-none): Can be %NULL if any profile present on this port is okay
  *
  * Returns: This method will attempt to swap the profile on the card of
  * the device with given profile name.  If successfull it will set the
@@ -533,6 +542,9 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl  *control,
         const gchar         *best_profile;
         GvcMixerCardProfile *current_profile;
         GvcMixerCard        *card;
+
+        g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), FALSE);
+        g_return_val_if_fail (GVC_IS_MIXER_UI_DEVICE (device), FALSE);
 
         g_object_get (G_OBJECT (device), "card", &card, NULL);
         current_profile = gvc_mixer_card_get_profile (card);
@@ -587,6 +599,9 @@ gvc_mixer_control_change_output (GvcMixerControl *control,
         GvcMixerStream           *default_stream;
         const GvcMixerStreamPort *active_port;
         const gchar              *output_port;
+
+        g_return_if_fail (GVC_IS_MIXER_CONTROL (control));
+        g_return_if_fail (GVC_IS_MIXER_UI_DEVICE (output));
 
         g_debug ("control change output");
 
@@ -676,6 +691,9 @@ gvc_mixer_control_change_input (GvcMixerControl *control,
         GvcMixerStream           *default_stream;
         const GvcMixerStreamPort *active_port;
         const gchar              *input_port;
+
+        g_return_if_fail (GVC_IS_MIXER_CONTROL (control));
+        g_return_if_fail (GVC_IS_MIXER_UI_DEVICE (input));
 
         stream = gvc_mixer_control_get_stream_from_device (control, input);
         if (stream == NULL) {
@@ -908,7 +926,7 @@ dec_outstanding (GvcMixerControl *control)
 GvcMixerControlState
 gvc_mixer_control_get_state (GvcMixerControl *control)
 {
-        g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), FALSE);
+        g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), GVC_STATE_CLOSED);
 
         return control->priv->state;
 }
@@ -1232,28 +1250,36 @@ match_stream_with_devices (GvcMixerControl    *control,
                              "port-name", &device_port_name,
                               NULL);
 
-                card_id = gvc_mixer_card_get_index (card);
+                if (card == NULL) {
+                        if (device_stream_id == stream_id) {
+                                g_debug ("Matched stream %u with card-less device '%s', with stream already setup",
+                                         stream_id, description);
+                                in_possession = TRUE;
+                        }
+                } else {
+                        card_id = gvc_mixer_card_get_index (card);
 
-                g_debug ("Attempt to match_stream update_with_existing_outputs - Try description : '%s', origin : '%s', device port name : '%s', card : %p, AGAINST stream port: '%s', sink card id %i",
-                         description,
-                         origin,
-                         device_port_name,
-                         card,
-                         stream_port->port,
-                         stream_card_id);
-
-                if (stream_card_id == card_id &&
-                    g_strcmp0 (device_port_name, stream_port->port) == 0) {
-                        g_debug ("Match device with stream: We have a match with description: '%s', origin: '%s', cached already with device id %u, so set stream id to %i",
+                        g_debug ("Attempt to match_stream update_with_existing_outputs - Try description : '%s', origin : '%s', device port name : '%s', card : %p, AGAINST stream port: '%s', sink card id %i",
                                  description,
                                  origin,
-                                 gvc_mixer_ui_device_get_id (device),
-                                 stream_id);
+                                 device_port_name,
+                                 card,
+                                 stream_port->port,
+                                 stream_card_id);
 
-                        g_object_set (G_OBJECT (device),
-                                      "stream-id", (gint)stream_id,
-                                      NULL);
-                        in_possession = TRUE;
+                        if (stream_card_id == card_id &&
+                            g_strcmp0 (device_port_name, stream_port->port) == 0) {
+                                g_debug ("Match device with stream: We have a match with description: '%s', origin: '%s', cached already with device id %u, so set stream id to %i",
+                                         description,
+                                         origin,
+                                         gvc_mixer_ui_device_get_id (device),
+                                         stream_id);
+
+                                g_object_set (G_OBJECT (device),
+                                              "stream-id", (gint)stream_id,
+                                              NULL);
+                                in_possession = TRUE;
+                        }
                 }
 
                 g_free (device_port_name);
@@ -1440,6 +1466,23 @@ set_icon_name_from_proplist (GvcMixerStream *stream,
         gvc_mixer_stream_set_icon_name (stream, t);
 }
 
+static GvcMixerStreamState
+translate_pa_state (pa_sink_state_t state) {
+        switch (state) {
+        case PA_SINK_RUNNING:
+                return GVC_STREAM_STATE_RUNNING;
+        case PA_SINK_IDLE:
+                return GVC_STREAM_STATE_IDLE;
+        case PA_SINK_SUSPENDED:
+                return GVC_STREAM_STATE_SUSPENDED;
+        case PA_SINK_INIT:
+        case PA_SINK_INVALID_STATE:
+        case PA_SINK_UNLINKED:
+        default:
+                return GVC_STREAM_STATE_INVALID;
+        }
+}
+
 /*
  * Called when anything changes with a sink.
  */
@@ -1509,6 +1552,7 @@ update_sink (GvcMixerControl    *control,
         gvc_mixer_stream_set_is_muted (stream, info->mute);
         gvc_mixer_stream_set_can_decibel (stream, !!(info->flags & PA_SINK_DECIBEL_VOLUME));
         gvc_mixer_stream_set_base_volume (stream, (guint32) info->base_volume);
+        gvc_mixer_stream_set_state (stream, translate_pa_state (info->state));
 
         /* Messy I know but to set the port everytime regardless of whether it has changed will cost us a
          * port change notify signal which causes the frontend to resync.
@@ -1559,9 +1603,9 @@ update_sink (GvcMixerControl    *control,
                         if (gvc_mixer_ui_device_get_stream_id (dev) == gvc_mixer_stream_get_id (stream)) {
                                 g_debug ("Looks like we profile swapped on a non server default sink");
                                 gvc_mixer_control_set_default_sink (control, stream);
+                                control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;
                         }
                 }
-                control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;
         }
 
         if (control->priv->default_sink_name != NULL
@@ -1677,11 +1721,11 @@ update_source (GvcMixerControl      *control,
                 if (dev != NULL) {
                         /* now check to make sure this new stream is the same stream just matched and set on the device object */
                         if (gvc_mixer_ui_device_get_stream_id (dev) == gvc_mixer_stream_get_id (stream)) {
-                                g_debug ("Looks like we profile swapped on a non server default sink");
+                                g_debug ("Looks like we profile swapped on a non server default source");
                                 gvc_mixer_control_set_default_source (control, stream);
+                                control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;
                         }
                 }
-                control->priv->profile_swapping_device_id = GVC_MIXER_UI_DEVICE_INVALID;
         }
         if (control->priv->default_source_name != NULL
             && info->name != NULL
@@ -2066,7 +2110,7 @@ create_ui_device_from_card (GvcMixerControl *control,
 #ifdef HAVE_ALSA
 typedef struct {
         char *port_name_to_set;
-        int headset_card;
+        guint32 headset_card;
 } PortStatusData;
 
 static void
@@ -2094,7 +2138,7 @@ sink_info_cb (pa_context         *c,
 {
         PortStatusData *data = userdata;
         pa_operation *o;
-        int j;
+        guint j;
         const char *s;
 
         if (eol != 0) {
@@ -2130,7 +2174,7 @@ source_info_cb (pa_context           *c,
 {
         PortStatusData *data = userdata;
         pa_operation *o;
-        int j;
+        guint j;
         const char *s;
 
         if (eol != 0) {
@@ -2142,6 +2186,19 @@ source_info_cb (pa_context           *c,
                 return;
 
         s = data->port_name_to_set;
+
+        for (j = 0; j < i->n_ports; j++) {
+                if (g_str_equal (i->ports[j]->name, s)) {
+                        o = pa_context_set_default_source (c,
+                                                           i->name,
+                                                           NULL,
+                                                           NULL);
+                        if (o == NULL) {
+                                g_warning ("pa_context_set_default_source() failed");
+                                return;
+                        }
+                }
+	}
 
         if (i->active_port && strcmp (i->active_port->name, s) == 0)
                 return;
@@ -2166,6 +2223,9 @@ gvc_mixer_control_set_port_status_for_headset (GvcMixerControl *control,
         pa_operation *o;
         PortStatusData *data;
 
+        if (port_name == NULL)
+                return;
+
         data = g_new0 (PortStatusData, 1);
         data->port_name_to_set = g_strdup (port_name);
         data->headset_card = id;
@@ -2179,25 +2239,40 @@ gvc_mixer_control_set_port_status_for_headset (GvcMixerControl *control,
 }
 #endif /* HAVE_ALSA */
 
+static void
+free_priv_port_names (GvcMixerControl    *control)
+{
+#ifdef HAVE_ALSA
+        g_clear_pointer (&control->priv->headphones_name, g_free);
+        g_clear_pointer (&control->priv->headsetmic_name, g_free);
+        g_clear_pointer (&control->priv->headphonemic_name, g_free);
+        g_clear_pointer (&control->priv->internalspk_name, g_free);
+        g_clear_pointer (&control->priv->internalmic_name, g_free);
+#endif
+}
+
 void
 gvc_mixer_control_set_headset_port (GvcMixerControl      *control,
                                     guint                 id,
                                     GvcHeadsetPortChoice  choice)
 {
+        g_return_if_fail (GVC_IS_MIXER_CONTROL (control));
+
 #ifdef HAVE_ALSA
         switch (choice) {
         case GVC_HEADSET_PORT_CHOICE_HEADPHONES:
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-output-headphones", TRUE);
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-input-internal-mic", FALSE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->headphones_name, TRUE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->internalmic_name, FALSE);
                 break;
         case GVC_HEADSET_PORT_CHOICE_HEADSET:
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-output-headphones", TRUE);
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-input-headset-mic", FALSE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->headphones_name, TRUE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->headsetmic_name, FALSE);
                 break;
         case GVC_HEADSET_PORT_CHOICE_MIC:
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-output-speaker", TRUE);
-                gvc_mixer_control_set_port_status_for_headset (control, id, "analog-input-headphone-mic", FALSE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->internalspk_name, TRUE);
+                gvc_mixer_control_set_port_status_for_headset (control, id, control->priv->headphonemic_name, FALSE);
                 break;
+        case GVC_HEADSET_PORT_CHOICE_NONE:
         default:
                 g_assert_not_reached ();
         }
@@ -2211,12 +2286,12 @@ typedef struct {
         const pa_card_port_info *headphones;
         const pa_card_port_info *headsetmic;
         const pa_card_port_info *headphonemic;
+        const pa_card_port_info *internalmic;
+        const pa_card_port_info *internalspk;
 } headset_ports;
 
 /*
-   TODO: Check if we still need this with the changed PA port names
-
-   In PulseAudio ports will show up with the following names:
+   In PulseAudio without ucm, ports will show up with the following names:
    Headphones - analog-output-headphones
    Headset mic - analog-input-headset-mic (was: analog-input-microphone-headset)
    Jack in mic-in mode - analog-input-headphone-mic (was: analog-input-microphone)
@@ -2235,10 +2310,24 @@ typedef struct {
    Headset Mic Jack - indicates headset jack where hardware can distinguish
      between headphones and headsets. There is no use popping up a dialog in
      this case, unless we already need to do this for the mic-in mode.
+
+   From the PA_PROCOTOL_VERSION=34, The device_port structure adds 2 members
+   availability_group and type, with the help of these 2 members, we could
+   consolidate the port checking and port setting for non-ucm and with-ucm
+   cases.
 */
 
+#define HEADSET_PORT_SET(dst, src) \
+        do { \
+                if (!(dst) || (dst)->priority < (src)->priority) \
+                        dst = src; \
+        } while (0)
+
+#define GET_PORT_NAME(x) (x ? g_strdup (x->name) : NULL)
+
 static headset_ports *
-get_headset_ports (const pa_card_info *c)
+get_headset_ports (GvcMixerControl    *control,
+                   const pa_card_info *c)
 {
         headset_ports *h;
         guint i;
@@ -2247,14 +2336,55 @@ get_headset_ports (const pa_card_info *c)
 
         for (i = 0; i < c->n_ports; i++) {
                 pa_card_port_info *p = c->ports[i];
-
-                if (strcmp (p->name, "analog-output-headphones") == 0)
-                        h->headphones = p;
-                else if (strcmp (p->name, "analog-input-headset-mic") == 0)
-                        h->headsetmic = p;
-                else if (strcmp(p->name, "analog-input-headphone-mic") == 0)
-                        h->headphonemic = p;
+                if (control->priv->server_protocol_version < 34) {
+                        if (g_str_equal (p->name, "analog-output-headphones"))
+                                h->headphones = p;
+                        else if (g_str_equal (p->name, "analog-input-headset-mic"))
+                                h->headsetmic = p;
+                        else if (g_str_equal (p->name, "analog-input-headphone-mic"))
+                                h->headphonemic = p;
+                        else if (g_str_equal (p->name, "analog-input-internal-mic"))
+                                h->internalmic = p;
+                        else if (g_str_equal (p->name, "analog-output-speaker"))
+                                h->internalspk = p;
+                } else {
+#if (PA_PROTOCOL_VERSION >= 34)
+                        /* in the first loop, set only headphones */
+                        /* the microphone ports are assigned in the second loop */
+                        if (p->type == PA_DEVICE_PORT_TYPE_HEADPHONES) {
+                                if (p->availability_group)
+                                        HEADSET_PORT_SET (h->headphones, p);
+                        } else if (p->type == PA_DEVICE_PORT_TYPE_SPEAKER) {
+                                HEADSET_PORT_SET (h->internalspk, p);
+                        } else if (p->type == PA_DEVICE_PORT_TYPE_MIC) {
+                                if (!p->availability_group)
+                                        HEADSET_PORT_SET (h->internalmic, p);
+                        }
+#else
+                        g_warning_once ("libgnome-volume-control running against PulseAudio %u, "
+                                        "but compiled against older %d, report a bug to your distribution",
+                                        control->priv->server_protocol_version,
+                                        PA_PROTOCOL_VERSION);
+#endif
+                }
         }
+
+#if (PA_PROTOCOL_VERSION >= 34)
+        if (h->headphones && (control->priv->server_protocol_version >= 34)) {
+                for (i = 0; i < c->n_ports; i++) {
+                        pa_card_port_info *p = c->ports[i];
+                        if (g_strcmp0(h->headphones->availability_group, p->availability_group))
+                                continue;
+                        if (p->direction != PA_DIRECTION_INPUT)
+                                continue;
+                        if (p->type == PA_DEVICE_PORT_TYPE_HEADSET)
+                                HEADSET_PORT_SET (h->headsetmic, p);
+                        else if (p->type == PA_DEVICE_PORT_TYPE_MIC)
+                                HEADSET_PORT_SET (h->headphonemic, p);
+                }
+        }
+#endif
+
         return h;
 }
 
@@ -2320,7 +2450,7 @@ check_audio_device_selection_needed (GvcMixerControl    *control,
 
         start_dialog = FALSE;
         stop_dialog = FALSE;
-        h = get_headset_ports (info);
+        h = get_headset_ports (control, info);
 
         if (!h->headphones ||
             (!h->headsetmic && !h->headphonemic)) {
@@ -2330,7 +2460,8 @@ check_audio_device_selection_needed (GvcMixerControl    *control,
 
         if (control->priv->headset_card != (int) info->index) {
                 int cardindex;
-                gboolean hsmic, hpmic;
+                gboolean hsmic = TRUE;
+                gboolean hpmic = TRUE;
                 const char *s;
 
                 s = pa_proplist_gets (info->proplist, "alsa.card");
@@ -2341,8 +2472,10 @@ check_audio_device_selection_needed (GvcMixerControl    *control,
                 if (cardindex == 0 && strcmp(s, "0") != 0)
                         goto out;
 
-                if (!verify_alsa_card(cardindex, &hsmic, &hpmic))
-                        goto out;
+                if (control->priv->server_protocol_version < 34) {
+                        if (!verify_alsa_card(cardindex, &hsmic, &hpmic))
+                                goto out;
+                }
 
                 control->priv->headset_card = info->index;
                 control->priv->has_headsetmic = hsmic && h->headsetmic;
@@ -2353,6 +2486,12 @@ check_audio_device_selection_needed (GvcMixerControl    *control,
         }
 
         control->priv->headset_plugged_in = h->headphones->available != PA_PORT_AVAILABLE_NO;
+        free_priv_port_names (control);
+        control->priv->headphones_name = GET_PORT_NAME(h->headphones);
+        control->priv->headsetmic_name = GET_PORT_NAME(h->headsetmic);
+        control->priv->headphonemic_name = GET_PORT_NAME(h->headphonemic);
+        control->priv->internalspk_name = GET_PORT_NAME(h->internalspk);
+        control->priv->internalmic_name = GET_PORT_NAME(h->internalmic);
 
         if (!start_dialog &&
             !stop_dialog)
@@ -2410,7 +2549,7 @@ update_card (GvcMixerControl      *control,
         const char *key;
         void *state;
 
-        g_debug ("Udpating card %s (index: %u driver: %s):",
+        g_debug ("Updating card %s (index: %u driver: %s):",
                  info->name, info->index, info->driver);
 
         for (i = 0; i < info->n_profiles; i++) {
@@ -2451,7 +2590,6 @@ update_card (GvcMixerControl      *control,
                 }
                 card = gvc_mixer_card_new (control->priv->pa_context,
                                            info->index);
-                gvc_mixer_card_set_profiles (card, profile_list);
 
                 for (i = 0; i < info->n_ports; i++) {
                         GvcMixerCardPort *port;
@@ -2465,6 +2603,8 @@ update_card (GvcMixerControl      *control,
                         port->profiles = determine_profiles_for_port (info->ports[i], profile_list);
                         port_list = g_list_prepend (port_list, port);
                 }
+
+                gvc_mixer_card_set_profiles (card, profile_list);
                 gvc_mixer_card_set_ports (card, port_list);
                 is_new = TRUE;
         }
@@ -2734,7 +2874,7 @@ update_event_role_stream (GvcMixerControl                  *control,
         max_volume = pa_cvolume_max (&info->volume);
 
         gvc_mixer_stream_set_name (stream, _("System Sounds"));
-        gvc_mixer_stream_set_icon_name (stream, "multimedia-volume-control");
+        gvc_mixer_stream_set_icon_name (stream, "emblem-system-symbolic");
         gvc_mixer_stream_set_volume (stream, (guint)max_volume);
         gvc_mixer_stream_set_is_muted (stream, info->mute);
 
@@ -3235,6 +3375,7 @@ gvc_mixer_control_ready (GvcMixerControl *control)
         req_update_sink_input_info (control, -1);
         req_update_source_output_info (control, -1);
 
+        control->priv->server_protocol_version = pa_context_get_server_protocol_version (control->priv->pa_context);
 
         control->priv->n_outstanding = 6;
 
@@ -3317,6 +3458,7 @@ idle_reconnect (gpointer data)
         if (control->priv->pa_context) {
                 pa_context_unref (control->priv->pa_context);
                 control->priv->pa_context = NULL;
+                control->priv->server_protocol_version = 0;
                 gvc_mixer_new_pa_context (control);
         }
 
@@ -3470,6 +3612,7 @@ gvc_mixer_control_dispose (GObject *object)
                 control->priv->ui_inputs = NULL;
         }
 
+        free_priv_port_names (control);
         G_OBJECT_CLASS (gvc_mixer_control_parent_class)->dispose (object);
 }
 
@@ -3730,11 +3873,13 @@ gvc_mixer_control_new (const char *name)
 gdouble
 gvc_mixer_control_get_vol_max_norm (GvcMixerControl *control)
 {
+	g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), 0);
 	return (gdouble) PA_VOLUME_NORM;
 }
 
 gdouble
 gvc_mixer_control_get_vol_max_amplified (GvcMixerControl *control)
 {
+	g_return_val_if_fail (GVC_IS_MIXER_CONTROL (control), 0);
 	return (gdouble) PA_VOLUME_UI_MAX;
 }
