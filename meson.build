@@ -55,22 +55,7 @@ cinnamon_deps = [
   xrandr,
 ]
 
-# CVC dependencies
-gobject = dependency('gobject-2.0')
-pulse   = dependency('libpulse')
-pulsegl = dependency('libpulse-mainloop-glib')
-
-cvc_deps = cinnamon_deps + [
-  pulse,
-  pulsegl,
-  gobject
-]
-
 use_alsa = get_option('alsa')
-
-if use_alsa
-  cvc_deps += dependency('alsa')
-endif
 
 xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
 

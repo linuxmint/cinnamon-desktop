@@ -14,7 +14,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  */
 
@@ -26,6 +26,8 @@
 
 #include <glib.h>
 #include <glib/gi18n-lib.h>
+
+#include <pulse/pulseaudio.h>
 
 #include "gvc-channel-map.h"
 #include "gvc-channel-map-private.h"
@@ -107,7 +109,7 @@ gvc_channel_map_set_balance (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
 
         if (!gvc_channel_map_can_balance (map))
                 return;
@@ -147,7 +149,7 @@ gvc_channel_map_set_fade (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
 
         if (!gvc_channel_map_can_fade (map))
                 return;
@@ -189,7 +191,7 @@ gvc_channel_map_set_lfe (GvcChannelMap *map,
 {
         pa_cvolume cv;
 
-        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), NULL);
 
         if (!gvc_channel_map_has_lfe (map))
                 return;
@@ -225,7 +227,8 @@ gvc_channel_map_get_mapping (const GvcChannelMap  *map)
 
 /**
  * gvc_channel_map_has_position:
- * @position: (type int)
+ * @map:
+ * @position:
  *
  * Returns:
  */
