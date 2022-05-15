@@ -49,7 +49,6 @@ Description: Introspection data for Cinnamon pulseaudio abstraction
 
 Package: libcinnamon-desktop-dbg
 Section: debug
-Priority: optional
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -86,7 +85,6 @@ Description: Cinnamon shared utility library.
 
 Package: libcvc-dbg
 Section: debug
-Priority: optional
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}

@@ -275,7 +275,7 @@ cinnamon-desktop (3.6.0) sylvia; urgency=medium
 cinnamon-desktop (3.4.2) sonya; urgency=medium
 
   [ Michael Webster ]
-  * gnome-wall-clock: Add functionality to allow setting the update interval.  
+  * gnome-wall-clock: Add functionality to allow setting the update interval.
 
  -- Clement Lefebvre <root@linuxmint.com>  Tue, 20 Jun 2017 15:24:51 +0200
 
