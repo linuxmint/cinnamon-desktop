@@ -3,8 +3,7 @@ Upstream-Name: cinnamon-desktop
 Source: https://github.com/linuxmint/cinnamon-desktop
 
 Files: *
-Copyright: 2006, @ Free Software Foundation, Inc
-           2004, Adam Weinberger and the GNOME Foundation
+Copyright: 2004, Adam Weinberger and the GNOME Foundation
            2005, Canonical Ltd
            2010, Carlos Garcia Campos <carlosgc@gnome.org>
            2012, Colin Walters <walters@verbum.org>
@@ -12,7 +11,7 @@ Copyright: 2006, @ Free Software Foundation, Inc
            2000, Eazel, Inc.
            2004, Free Software Foundation
            2005-2011, Free Software Foundation, Andhra Pradesh
-           1991-2003, Free Software Foundation, Inc
+           1991-2012, Free Software Foundation, Inc
            2010, Giovanni Campagna
            2009, GNOME i18n Project for Vietnamese
            2006, Gnome i18n Project for Latvian
@@ -24,8 +23,7 @@ Copyright: 2006, @ Free Software Foundation, Inc
            2008-2009, Novell, Inc.
            2002-2011, Red Hat, Inc.
            2004-2008, Rodney Dawes <dobey.pwns@gmail.com>
-           2007, Rosetta Contributors and Canonical Ltd 2007
-           2011, Rosetta Contributors and Canonical Ltd 2011
+           2007-2011, Rosetta Contributors and Canonical Ltd
            2006, The GNOME Foundation
            2007-2010, The GNOME Project
            1998, Tom Tromey
@@ -85,13 +83,14 @@ Files: libcinnamon-desktop/cinnamon-rr-debug.c
        libcvc/gvc-mixer-stream.h
        libcvc/gvc-mixer-ui-device.c
        libcvc/gvc-mixer-ui-device.h
-       libcvc/gvc-pulseaudio-fake.h
-Copyright: 2012, Bastien Nocera <hadess@hadess.net>
-           2011, Conor Curran <conor.curran@canonical.com>
+       po/rw.po
+Copyright: 2009-2012, Bastien Nocera <hadess@hadess.net>
+           2011-2012, Conor Curran <conor.curran@canonical.com>
            2012, David Henningsson, Canonical Ltd <david.henningsson@canonical.com>
            2001, Eazel, Inc
            1989-1991, Free Software Foundation, Inc
-           2012, Red Hat, Inc
+           2006-2008, Lennart Poettering
+           2008-2012, Red Hat, Inc
            2009-2012, Richard Hughes <richard@hughsie.com>
            2008, Sjoerd Simons <sjoerd@luon.net>
            2008, William Jon McCann
@@ -129,6 +128,8 @@ License: GPL
  found in "/usr/share/common-licenses/GPL-1".
 
 Files: libcinnamon-desktop/cdesktop-enums.h
+       libcinnamon-desktop/gnome-installer.c
+       libcinnamon-desktop/gnome-installer.h
 Copyright: 2010, Codethink Limited
 License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
