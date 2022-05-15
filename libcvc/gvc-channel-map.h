@@ -60,8 +60,18 @@ GType                   gvc_channel_map_get_type                (void);
 GvcChannelMap *         gvc_channel_map_new                     (void);
 guint                   gvc_channel_map_get_num_channels        (const GvcChannelMap  *map);
 const gdouble *         gvc_channel_map_get_volume              (GvcChannelMap  *map);
+gfloat                  gvc_channel_map_get_balance             (GvcChannelMap *map);
 gboolean                gvc_channel_map_can_balance             (const GvcChannelMap  *map);
+void                    gvc_channel_map_set_balance             (GvcChannelMap *map,
+                                                                 gfloat value);
+gfloat                  gvc_channel_map_get_fade                (GvcChannelMap *map);
+void                    gvc_channel_map_set_fade                (GvcChannelMap *map,
+                                                                 gfloat value);
 gboolean                gvc_channel_map_can_fade                (const GvcChannelMap  *map);
+gfloat                  gvc_channel_map_get_lfe                 (GvcChannelMap *map);
+void                    gvc_channel_map_set_lfe                 (GvcChannelMap *map,
+                                                                 gfloat value);
+gboolean                gvc_channel_map_can_lfe                 (const GvcChannelMap  *map);
 gboolean                gvc_channel_map_has_position            (const GvcChannelMap  *map,
                                                                  pa_channel_position_t position);
 #define                 gvc_channel_map_has_lfe(x)              gvc_channel_map_has_position (x, PA_CHANNEL_POSITION_LFE)
