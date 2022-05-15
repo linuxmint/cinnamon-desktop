@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@ --with=gir
