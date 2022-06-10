@@ -1,8 +1,18 @@
-cinnamon-desktop (5.3.0) UNRELEASED; urgency=medium
+cinnamon-desktop (5.4.0) vanessa; urgency=medium
 
-  * Version bump for muffin rebase.
+  [ Michael Webster ]
+  * Add debian/ symbol files for libcvc and libcinnamon-desktop.
+  * d/control: update build-deps
+  * Refresh Cvc
+  * all: Changes for muffin rebase
 
- -- Michael Webster <miketwebster@gmail.com>  Wed, 08 Jun 2022 12:00:00 -0500
+  [ Oliver Kaestner ]
+  * Fix build warnings
+
+  [ Clement Lefebvre ]
+  * CI: Update targets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 10 Jun 2022 10:11:56 +0200
 
 cinnamon-desktop (5.2.1) una; urgency=medium
 
