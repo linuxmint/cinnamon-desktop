@@ -27,7 +27,7 @@ cvc_deps = [
 ]
 
 if use_alsa
-  libcvc_deps += dependency('alsa')
+  cvc_deps += dependency('alsa')
 endif
 
 libcvc_headers = [
@@ -82,8 +82,7 @@ if use_alsa
   executable('test-audio-device-selection',
     sources: 'test-audio-device-selection.c',
     link_with: libcvc,
-    dependencies: libcvc_deps,
-    c_args: c_args
+    dependencies: cvc_deps
   )
 endif
 
