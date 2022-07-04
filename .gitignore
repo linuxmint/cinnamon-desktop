@@ -1,7 +1,8 @@
 build
-
-debian/tmp
-debian/*/
+debian/*.debhelper
 debian/*.log
 debian/*.substvars
+debian/*/
+debian/debhelper-build-stamp
 debian/files
+debian/tmp
