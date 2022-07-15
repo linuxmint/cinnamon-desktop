@@ -1,3 +1,13 @@
+cinnamon-desktop (5.4.1) vanessa; urgency=medium
+
+  [ mobinmob ]
+  * libcvc/meson.build: fix building with alsa. (#207)
+
+  [ Cobinja ]
+  * Fix testsound positions in cinnamon-settings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 15 Jul 2022 15:15:41 +0200
+
 cinnamon-desktop (5.4.0) vanessa; urgency=medium
 
   [ Michael Webster ]
