@@ -86,10 +86,10 @@ const GList *       gvc_mixer_stream_get_ports       (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_change_port     (GvcMixerStream *stream,
                                                       const char     *port);
 
-pa_volume_t         gvc_mixer_stream_get_volume      (GvcMixerStream *stream);
+guint32             gvc_mixer_stream_get_volume      (GvcMixerStream *stream);
 gdouble             gvc_mixer_stream_get_decibel     (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_push_volume     (GvcMixerStream *stream);
-pa_volume_t         gvc_mixer_stream_get_base_volume (GvcMixerStream *stream);
+guint32             gvc_mixer_stream_get_base_volume (GvcMixerStream *stream);
 
 gboolean            gvc_mixer_stream_get_is_muted    (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_get_can_decibel (GvcMixerStream *stream);
@@ -111,7 +111,7 @@ void                gvc_mixer_stream_create_monitor  (GvcMixerStream *stream);
 void                gvc_mixer_stream_remove_monitor  (GvcMixerStream *stream);
 /* private */
 gboolean            gvc_mixer_stream_set_volume      (GvcMixerStream *stream,
-                                                      pa_volume_t     volume);
+                                                      guint32     volume);
 gboolean            gvc_mixer_stream_set_decibel     (GvcMixerStream *stream,
                                                       gdouble         db);
 gboolean            gvc_mixer_stream_set_is_muted    (GvcMixerStream *stream,
@@ -135,7 +135,7 @@ gboolean            gvc_mixer_stream_set_is_virtual  (GvcMixerStream *stream,
 gboolean            gvc_mixer_stream_set_application_id (GvcMixerStream *stream,
                                                          const char *application_id);
 gboolean            gvc_mixer_stream_set_base_volume (GvcMixerStream *stream,
-                                                      pa_volume_t     base_volume);
+                                                      guint32     base_volume);
 gboolean            gvc_mixer_stream_set_port        (GvcMixerStream *stream,
                                                       const char     *port);
 gboolean            gvc_mixer_stream_set_ports       (GvcMixerStream *stream,

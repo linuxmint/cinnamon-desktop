@@ -167,9 +167,9 @@ gvc_mixer_stream_get_channel_map (GvcMixerStream *stream)
  * gvc_mixer_stream_get_volume:
  * @stream:
  *
- * Returns: (type guint32):
+ * Returns:
  */
-pa_volume_t
+guint32
 gvc_mixer_stream_get_volume (GvcMixerStream *stream)
 {
         g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), 0);
@@ -189,13 +189,13 @@ gvc_mixer_stream_get_decibel (GvcMixerStream *stream)
 /**
  * gvc_mixer_stream_set_volume:
  * @stream:
- * @volume: (type guint32):
+ * @volume:
  *
  * Returns:
  */
 gboolean
 gvc_mixer_stream_set_volume (GvcMixerStream *stream,
-                              pa_volume_t     volume)
+                             guint32         volume)
 {
         pa_cvolume cv;
 
@@ -495,9 +495,9 @@ gvc_mixer_stream_set_sysfs_path (GvcMixerStream *stream,
  * gvc_mixer_stream_get_base_volume:
  * @stream:
  *
- * Returns: (type guint32):
+ * Return value:
  */
-pa_volume_t
+guint32
 gvc_mixer_stream_get_base_volume (GvcMixerStream *stream)
 {
         g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), 0);
@@ -508,13 +508,13 @@ gvc_mixer_stream_get_base_volume (GvcMixerStream *stream)
 /**
  * gvc_mixer_stream_set_base_volume:
  * @stream:
- * @base_volume: (type guint32):
+ * @base_volume: (type guint32)
  *
  * Returns:
  */
 gboolean
 gvc_mixer_stream_set_base_volume (GvcMixerStream *stream,
-                                  pa_volume_t base_volume)
+                                  guint32         base_volume)
 {
         g_return_val_if_fail (GVC_IS_MIXER_STREAM (stream), FALSE);
 
