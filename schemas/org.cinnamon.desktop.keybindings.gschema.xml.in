@@ -29,6 +29,11 @@
       <summary>Magnifier zoom out</summary>
       <description>Binding for the magnifier to zoom out</description>
     </key>
+    <key name="locate-pointer" type="s">
+      <default>'Control_L'</default>
+      <summary>Locate pointer</summary>
+      <description>Binding for the locate pointer</description>
+    </key>
   </schema>
 
   <schema id="org.cinnamon.desktop.keybindings.custom-keybinding">
