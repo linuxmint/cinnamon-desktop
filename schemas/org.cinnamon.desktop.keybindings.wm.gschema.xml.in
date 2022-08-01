@@ -51,6 +51,14 @@
       <summary>Cancel tab popup</summary>
     </key>
 
+    <key type="as" name="toggle-workspace-selection">
+      <default><![CDATA[['<Control><Alt>Up','<Alt>F1']]]></default>
+      <summary>Show the workspace selection screen</summary>
+    </key>
+    <key type="as" name="toggle-window-selection">
+      <default><![CDATA[['<Control><Alt>Down']]]></default>
+      <summary>Show the window selection screen</summary>
+    </key>
     <key type="as" name="switch-to-workspace-1">
       <default>[]</default>
       <summary>Switch to workspace 1</summary>
@@ -108,11 +116,11 @@
       <summary>Switch to workspace right</summary>
     </key>
     <key type="as" name="switch-to-workspace-up">
-      <default><![CDATA[['<Control><Alt>Up','<Alt>F1']]]></default>
+      <default>[]</default>
       <summary>Switch to workspace above</summary>
     </key>
     <key type="as" name="switch-to-workspace-down">
-      <default><![CDATA[['<Control><Alt>Down']]]></default>
+      <default>[]</default>
       <summary>Switch to workspace below</summary>
     </key>
     <key type="as" name="switch-group">
