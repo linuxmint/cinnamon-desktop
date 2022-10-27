@@ -136,7 +136,7 @@
       <summary>Switch system controls</summary>
     </key>
     <key type="as" name="switch-panels-backward">
-      <default>[]</default>
+      <default><![CDATA[['<Shift><Control><Alt>Tab']]]></default>
       <summary>Reverse switch system controls</summary>
     </key>
     <key type="as" name="show-desktop">
