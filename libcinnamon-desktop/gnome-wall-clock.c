@@ -584,7 +584,6 @@ gnome_wall_clock_set_format_string (GnomeWallClock *clock,
 
 /**
  * gnome_wall_clock_lctime_format:
- * @clock: The GnomeWallClock
  * @gettext_domain: (nullable)
  * @format_string: (nullable)
  *
