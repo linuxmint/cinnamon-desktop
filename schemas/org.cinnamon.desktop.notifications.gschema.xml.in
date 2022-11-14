@@ -16,7 +16,7 @@
     <key type="i" name="timeout">
       <default>1800</default>
       <summary>Notification timeout</summary>
-      <description>Duration to keep store a notification in persitence.</description>
+      <description>Duration to keep a notification stored in persistence.</description>
     </key>
     <key type="i" name="fade-opacity">
       <default>40</default>
@@ -31,6 +31,10 @@
     <key type="b" name="bottom-notifications">
       <default>false</default>
       <summary>Whether notifications are displayed on the bottom side of the screen</summary>
+    </key>
+    <key type="i" name="notification-duration">
+      <default>4</default>
+      <summary>How long notifications are displayed before disappearing</summary>
     </key>
   </schema>
 </schemalist>
