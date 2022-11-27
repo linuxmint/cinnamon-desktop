@@ -205,6 +205,13 @@ typedef enum
 
 typedef enum
 {
+  C_DESKTOP_NOTIFICATION_SCREEN_DISPLAY_PRIMARY_SCREEN,
+  C_DESKTOP_NOTIFICATION_SCREEN_DISPLAY_ACTIVE_SCREEN,
+  C_DESKTOP_NOTIFICATION_SCREEN_DISPLAY_FIXED_SCREEN
+} CDesktopNotificationScreenDisplay;
+
+typedef enum
+{
 /* All bindings before _SEPARATOR are treated as
  * "global" bindings, i.e. they work regardless of
  * Cinnamon's global state (open menus, etc...)
