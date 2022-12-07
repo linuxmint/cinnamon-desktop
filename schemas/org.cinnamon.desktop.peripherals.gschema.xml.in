@@ -25,7 +25,7 @@
       <description>When enabled, touchpads will be disabled while typing on the keyboard.</description>
     </key>
     <key name="tap-to-click" type="b">
-      <default>false</default>
+      <default>true</default>
       <summary>Enable mouse clicks with touchpad</summary>
       <description>Set this to TRUE to be able to send mouse clicks by tapping on the touchpad.</description>
     </key>
