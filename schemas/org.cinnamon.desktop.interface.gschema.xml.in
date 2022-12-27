@@ -16,6 +16,10 @@
         it changes the behaviour of the window manager, the panel etc.
       </description>
     </key>
+    <key name="gtk-enable-primary-paste" type="b">
+      <default>true</default>
+      <summary>Enable primary paste via middle-click</summary>
+    </key>
     <key name="menus-have-tearoff" type="b">
       <default>false</default>
       <summary>Menus Have Tearoff</summary>
