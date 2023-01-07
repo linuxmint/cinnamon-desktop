@@ -1,3 +1,11 @@
+cinnamon-desktop (5.6.1) vera; urgency=medium
+
+  [ Michael Webster ]
+  * Add a settings key for the gtk-enable-primary-paste GtkSetting.
+  * touchpad: Enable tap-to-click by default.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 07 Jan 2023 16:00:14 +0000
+
 cinnamon-desktop (5.6.0) vera; urgency=medium
 
   [ Michael Webster ]
