@@ -1,3 +1,9 @@
+cinnamon-desktop (5.7.0) UNRELEASED; urgency=medium
+
+  * 5.7.0 - bump for xdg-desktop-portal-cinnamon
+
+ -- Michael Webster <miketwebster@gmail.com>  Thu, 26 Jan 2023 20:18:19 -0500
+
 cinnamon-desktop (5.6.1) vera; urgency=medium
 
   [ Michael Webster ]
