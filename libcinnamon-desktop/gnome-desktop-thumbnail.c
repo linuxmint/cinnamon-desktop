@@ -1869,7 +1869,7 @@ gnome_desktop_thumbnail_cache_fix_permissions (void)
 
     pwent = gnome_desktop_get_session_user_pwent ();
 
-    gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
+    gchar *cache_dir = g_build_filename (g_get_user_cache_dir (), "thumbnails", NULL);
 
     if (!access_ok (cache_dir, pwent->pw_uid, pwent->pw_gid))
         fix_owner (cache_dir, pwent->pw_uid, pwent->pw_gid);
@@ -1905,8 +1905,7 @@ gnome_desktop_thumbnail_cache_check_permissions (GnomeDesktopThumbnailFactory *f
 
     struct passwd *pwent;
     pwent = gnome_desktop_get_session_user_pwent ();
-
-    gchar *cache_dir = g_build_filename (pwent->pw_dir, ".cache", "thumbnails", NULL);
+    gchar *cache_dir = g_build_filename (g_get_user_cache_dir(), "thumbnails", NULL);
 
     if (!access_ok (cache_dir, pwent->pw_uid, pwent->pw_gid)) {
         checks_out = FALSE;
