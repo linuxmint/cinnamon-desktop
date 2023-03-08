@@ -300,5 +300,9 @@
         The preferred color scheme for the user interface. Valid values are “default”, “prefer-dark”, “prefer-light”.
       </description>
     </key>
+    <key name="high-contrast" type="b">
+      <default>false</default>
+      <summary>Use a high contrast icon and application theme.</summary>
+    </key>
   </schema>
 </schemalist>
