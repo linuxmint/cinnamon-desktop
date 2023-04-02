@@ -1260,7 +1260,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
     }
 
   /* Fall back to gdk-pixbuf */
-  if (pixbuf == NULL && !disabled)
+  if (!disabled && pixbuf == NULL && mimetype_supported_by_gdk_pixbuf (mime_type))
     {
       pixbuf = _gdk_pixbuf_new_from_uri_at_scale (uri, size, size, TRUE);
 
