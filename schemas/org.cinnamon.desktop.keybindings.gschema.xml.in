@@ -29,6 +29,14 @@
       <summary>Magnifier zoom out</summary>
       <description>Binding for the magnifier to zoom out</description>
     </key>
+    <key name="pointer-next-monitor" type="as">
+      <default>[]</default>
+      <summary>Warp the pointer to the next monitor</summary>
+    </key>
+    <key name="pointer-previous-monitor" type="as">
+      <default>[]</default>
+      <summary>Warp the pointer to the previous monitor</summary>
+    </key>
   </schema>
 
   <schema id="org.cinnamon.desktop.keybindings.custom-keybinding">
