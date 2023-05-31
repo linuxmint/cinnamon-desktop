@@ -79,6 +79,7 @@ libcvc.so.0 libcvc0 #MINVER#
  gvc_mixer_source_output_new@Base 4.2.0
  gvc_mixer_stream_change_is_muted@Base 4.2.0
  gvc_mixer_stream_change_port@Base 4.2.0
+ gvc_mixer_stream_create_monitor@Base 5.4.2
  gvc_mixer_stream_get_application_id@Base 4.2.0
  gvc_mixer_stream_get_base_volume@Base 4.2.0
  gvc_mixer_stream_get_can_decibel@Base 4.2.0
@@ -105,6 +106,7 @@ libcvc.so.0 libcvc0 #MINVER#
  gvc_mixer_stream_is_virtual@Base 4.2.0
  gvc_mixer_stream_port_get_type@Base 4.2.0
  gvc_mixer_stream_push_volume@Base 4.2.0
+ gvc_mixer_stream_remove_monitor@Base 5.4.2
  gvc_mixer_stream_set_application_id@Base 4.2.0
  gvc_mixer_stream_set_base_volume@Base 4.2.0
  gvc_mixer_stream_set_can_decibel@Base 4.2.0
