@@ -204,13 +204,6 @@ typedef enum
 
 typedef enum
 {
-  C_DESKTOP_COLOR_SCHEME_DEFAULT,
-  C_DESKTOP_COLOR_SCHEME_PREFER_DARK,
-  C_DESKTOP_COLOR_SCHEME_PREFER_LIGHT,
-} CDesktopColorScheme;
-
-typedef enum
-{
 /* All bindings before _SEPARATOR are treated as
  * "global" bindings, i.e. they work regardless of
  * Cinnamon's global state (open menus, etc...)
