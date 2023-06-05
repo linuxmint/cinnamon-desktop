@@ -36,6 +36,10 @@
       <default>4</default>
       <summary>How long notifications are displayed before disappearing</summary>
     </key>
+    <key type="i" name="notification-monitor">
+      <default>0</default>
+      <summary>Monitor to show notifications</summary>
+    </key>
   </schema>
 </schemalist>
 
