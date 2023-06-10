@@ -295,7 +295,7 @@
     </key>
     <key name="high-contrast" type="b">
       <default>false</default>
-      <summary>Use a high contrast icon and application theme.</summary>
+      <summary>not currently used</summary>
     </key>
   </schema>
 </schemalist>
