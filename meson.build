@@ -35,6 +35,7 @@ gdk_pixb= dependency('gdk-pixbuf-2.0',  version: '>=2.22.0')
 gio     = dependency('gio-2.0',         version: '>=2.37.3')
 glib    = dependency('glib-2.0',        version: '>=2.37.3')
 gtk     = dependency('gtk+-3.0',        version: '>=3.3.16')
+systemd = dependency('libsystemd',      required: get_option('systemd'))
 
 x11     = dependency('x11')
 xext    = dependency('xext',            version: '>=1.1')
@@ -48,6 +49,7 @@ cinnamon_deps = [
   glib,
   gtk,
   math,
+  systemd,
   x11,
   xext,
   xkbconf,
@@ -96,6 +98,7 @@ conf.set('ENABLE_NLS',          cc.has_header('libintl.h'))
 conf.set('HAVE_ALSA',           use_alsa)
 conf.set('HAVE_GETTEXT',        true)
 conf.set('HAVE_INTROSPECTION',  true)
+conf.set('HAVE_SYSTEMD',        systemd.found())
 conf.set('HAVE_TIMERFD',        timerfd_check)
 
 ################################################################################
@@ -135,5 +138,6 @@ message('\n'.join([
   '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
   '        Use PNP files:                ' + pnp_message,
   '        Use ALSA:                     ' + '@0@'.format(use_alsa),
+  '        systemd:                      @0@'.format(systemd.found()),
   '',
 ]))

@@ -4,3 +4,6 @@ option('pnp_ids', type: 'string',  value: '',
        description: 'Specify the path to pnp.ids (default is an internal copy)')
 option('alsa', type: 'boolean', value: false,
        description: 'ALSA support')
+option('systemd',
+  type: 'feature', description: 'Systemd integration support'
+)

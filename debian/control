@@ -13,6 +13,7 @@ Build-Depends:
  libglib2.0-dev (>= 2.37.3),
  libgtk-3-dev (>= 3.3.16),
  libpulse-dev (>= 12.99.3),
+ libsystemd-dev,
  libx11-dev,
  libxext-dev,
  libxkbfile-dev,

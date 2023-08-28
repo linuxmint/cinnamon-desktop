@@ -11,6 +11,7 @@ libcinnamon_desktop_gir_sources = [
   'gnome-rr-labeler.c',
   'gnome-rr-output-info.c',
   'gnome-rr.c',
+  'gnome-systemd.c',
   'gnome-thumbnail-pixbuf-utils.c',
   'gnome-wall-clock.c',
   'gnome-xkb-info.c',
@@ -42,6 +43,7 @@ libcinnamon_desktop_headers = [
   'gnome-rr-config.h',
   'gnome-rr-labeler.h',
   'gnome-rr.h',
+  'gnome-systemd.h',
   'gnome-wall-clock.h',
   'gnome-xkb-info.h',
 ]
