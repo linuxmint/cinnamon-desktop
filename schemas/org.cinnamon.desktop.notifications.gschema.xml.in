@@ -6,13 +6,11 @@
       <summary>Notifications fade out</summary>
       <description>Set this to TRUE to allow notifications to fade under the mouse.</description>
     </key>
-
     <key type="b" name="remove-old">
       <default>false</default>
       <summary>Remove old notifications</summary>
       <description>Check this to automatically remove old notifications.</description>
     </key>
-
     <key type="i" name="timeout">
       <default>1800</default>
       <summary>Notification timeout</summary>
@@ -36,6 +34,9 @@
       <default>4</default>
       <summary>How long notifications are displayed before disappearing</summary>
     </key>
+    <key type="b" name="fullscreen-notifications">
+      <default>false</default>
+      <summary>Whether notifications are displayed over fullscreen windows</summary>
+    </key>
   </schema>
 </schemalist>
-
