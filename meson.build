@@ -2,7 +2,7 @@
 
 # https://github.com/linuxmint/cinnamon-desktop
 project('cinnamon-desktop', 'c', version: '5.8.0',
-  meson_version: '>=0.50.0'
+  meson_version: '>=0.56.0'
 )
 
 # Before making a release, the LT_VERSION string should be modified.
@@ -57,7 +57,7 @@ cinnamon_deps = [
 
 use_alsa = get_option('alsa')
 
-xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
+xkb_base = xkbconf.get_variable(pkgconfig: 'xkb_base')
 
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
@@ -129,7 +129,7 @@ message('\n'.join([
   '        sysconfdir:                   ' + get_option('sysconfdir'),
   '        localstatedir:                ' + get_option('localstatedir'),
   '        datadir:                      ' + get_option('datadir'),
-  '        source code location:         ' + meson.source_root(),
+  '        source code location:         ' + meson.project_source_root(),
   '        compiler:                     ' + cc.get_id(),
   '        debugging support:            ' + get_option('buildtype'),
   '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
