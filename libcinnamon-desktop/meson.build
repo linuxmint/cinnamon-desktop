@@ -1,3 +1,10 @@
+dbus_idle_built_sources = gnome.gdbus_codegen('meta-dbus-idle-monitor',
+  'idle-monitor.xml',
+  namespace: 'MetaDBus',
+  interface_prefix: 'org.gnome.Muffin',
+  object_manager: true
+)
+
 libcinnamon_desktop_gir_sources = [
   'display-name.c',
   'edid-parse.c',
@@ -5,6 +12,7 @@ libcinnamon_desktop_gir_sources = [
   'gnome-bg.c',
   'gnome-desktop-thumbnail.c',
   'gnome-desktop-utils.c',
+  'gnome-idle-monitor.c',
   'gnome-installer.c',
   'gnome-pnp-ids.c',
   'gnome-rr-config.c',
@@ -38,6 +46,7 @@ libcinnamon_desktop_headers = [
   'gnome-bg.h',
   'gnome-desktop-thumbnail.h',
   'gnome-desktop-utils.h',
+  'gnome-idle-monitor.h',
   'gnome-installer.h',
   'gnome-pnp-ids.h',
   'gnome-rr-config.h',
@@ -49,7 +58,7 @@ libcinnamon_desktop_headers = [
 ]
 
 libcinnamon_desktop = shared_library('cinnamon-desktop',
-  libcinnamon_desktop_sources,
+  [libcinnamon_desktop_sources, dbus_idle_built_sources],
   include_directories: [ rootInclude ],
   c_args: [
     '-DG_LOG_DOMAIN="CinnamonDesktop"',
