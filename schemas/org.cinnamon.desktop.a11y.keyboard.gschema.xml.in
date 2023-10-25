@@ -118,5 +118,13 @@
       <default>'/usr/share/cinnamon/sounds/togglekeys-sound-off.ogg'</default>
       <summary>Sound to use when turning caps/num lock off</summary>
     </key>
+    <key name="always-show-text-caret" type="b">
+      <default>false</default>
+      <summary>Always show the text caret</summary>
+      <description>
+        This key overrides the hiding of the text caret in noneditable
+        text in applications.
+      </description>
+    </key>
   </schema>
 </schemalist>
