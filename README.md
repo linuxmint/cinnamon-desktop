@@ -5,11 +5,11 @@ cinnamon-desktop contains the libcinnamon-desktop library, the cinnamon-about
 program as well as some desktop-wide documents.
 
 The libcinnamon-desktop library provides API shared by several applications
-on the desktop, but that cannot live in the platform for various
-reasons. There is no API or ABI guarantee, although we are doing our
-best to provide stability. Documentation for the API is available with
-gtk-doc.
+on the desktop, but that cannot live in the platform for various reasons. 
 
+There is no API or ABI guarantee, although we are doing our best to provide stability. 
+
+Documentation for the API is available with gtk-doc.
 
 Installation
 ============
@@ -17,18 +17,23 @@ Installation
 1) Run meson with options you like. The following configuration installs
    all binaries, libs, and shared files into /usr/local, and enables all
    available options:
-
-    meson debian/build \
-        --prefix=/usr/local \
-        --buildtype=debug \
-        -D deprecated_warnings=false
+   
+   ```shell
+    meson debian/build --prefix=/usr/local --buildtype=debug -D deprecation_warnings=false
+   ```
 
 2) Compile and install (sudo is needed for install)
-
-    ninja -C debian/build
-    ninja -C debian/build install
+   
+   ```shell
+   meson build debian/build
+   meson compile -C debian/build
+   meson install -C debian/build
+   ```
 
 3) You can uninstall the installed files with
+   
+   ```shell
+   meson uninstall debian/build
+   ```
 
-    ninja -C debian/build uninstall
 
