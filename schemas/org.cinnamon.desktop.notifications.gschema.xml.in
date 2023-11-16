@@ -32,6 +32,28 @@
       <default>false</default>
       <summary>Whether notifications are displayed on the bottom side of the screen</summary>
     </key>
+    <key name="notification-screen-display"
+         enum="org.cinnamon.desktop.CDesktopNotificationScreenDisplay">
+      <default>'primary-screen'</default>
+      <summary>Define which screen(s) to use for displaying notifications</summary>
+      <description>
+        This option provides control over how newly created notifications are displayed.
+        It has three possible values: "primary-screen" which shows notifications only on
+        the primary display, "active-screen" which shows subsequent notifications only on
+        the display where the mouse is located, and "fixed-screen" which shows
+        notifications on a fixed display number if it exists and the primary display if
+        it does not exist.
+      </description>
+    </key>
+    <key type="i" name="notification-fixed-screen">
+      <default>1</default>
+      <summary>Fixed screen number for displaying notifications</summary>
+      <description>
+        The fixed display number to use for displaying notifications if it exists,
+        where the primary display is last. If the fixed screen number does
+        not exist, the primary display is used instead.
+      </description>
+    </key>
     <key type="i" name="notification-duration">
       <default>4</default>
       <summary>How long notifications are displayed before disappearing</summary>
