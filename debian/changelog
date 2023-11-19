@@ -1,3 +1,23 @@
+cinnamon-desktop (6.0.0) virginia; urgency=medium
+
+  [ Michael Webster ]
+  * gschemas: Change a comment
+
+  [ Rick Calixte ]
+  * Fix meson.build deprecations up to 0.56.0 (#234)
+
+  [ Michael Webster ]
+  * cdesktop-enums: Expand CDesktopStylusButtonAction to include 'disabled'.
+  * Add gnome-systemd
+  * Add gnome-idle-monitor
+  * a11y: Add 'always-show-text-caret' xsetting
+
+  [ Rick Calixte ]
+  * Adding an option for notification screen selection (#231)
+  * notifications schema: Add fullscreen-notifications boolean (#233)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 19 Nov 2023 13:37:20 +0000
+
 cinnamon-desktop (5.8.0) victoria; urgency=medium
 
   [ Michael Webster ]
