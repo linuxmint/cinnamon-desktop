@@ -706,7 +706,7 @@ screen_on_event (GdkXEvent *xevent,
      * events.  We only care about "the screens changed in some way or another"
      * for now.
      *
-     * If we ever run into a situtation that could benefit from processing more
+     * If we ever run into a situation that could benefit from processing more
      * detailed events, we can enable this code again.
      *
      * Note that the X server sends RRScreenChangeNotify in conjunction with the
@@ -1764,7 +1764,7 @@ gnome_rr_output_get_ids_from_edid (GnomeRROutput         *output,
 /**
  * gnome_rr_output_get_backlight_min:
  *
- * Returns: The mimimum backlight value, or -1 if not supported
+ * Returns: The minimum backlight value, or -1 if not supported
  */
 gint
 gnome_rr_output_get_backlight_min (GnomeRROutput *output)
@@ -2509,7 +2509,7 @@ crtc_initialize (GnomeRRCrtc        *crtc,
     
     if (!info)
     {
-        /* FIXME: We need to reaquire the screen resources */
+        /* FIXME: We need to reacquire the screen resources */
         /* FIXME: can we actually catch BadRRCrtc, and does it make sense to emit that? */
 
         /* Translators: CRTC is a CRT Controller (this is X terminology).

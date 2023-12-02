@@ -2246,13 +2246,13 @@ get_slide_timeout (Slide   *slide)
 		
 		/* In the worst case we will do a fade from 0 to 256, which mean
 		 * we will never use more than 255 steps, however in most cases
-		 * the first and last value are similar and users can't percieve
+		 * the first and last value are similar and users can't perceive
 		 * changes in pixel values as small as 1/255th. So, lets not waste
 		 * CPU cycles on transitioning to often.
 		 *
 		 * 64 steps is enough for each step to be just detectable in a 16bit
 		 * color mode in the worst case, so we'll use this as an approximation
-		 * of whats detectable.
+		 * of what's detectable.
 		 */
 		timeout = slide->duration / 64.0;
 	}

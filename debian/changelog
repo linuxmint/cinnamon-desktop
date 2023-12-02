@@ -167,7 +167,7 @@ cinnamon-desktop (4.6.4) ulyana; urgency=medium
 cinnamon-desktop (4.6.3) ulyana; urgency=medium
 
   [ Michael Webster ]
-  * gnome-rr-config.c: Fix inadvertant change.
+  * gnome-rr-config.c: Fix inadvertent change.
 
  -- Clement Lefebvre <root@linuxmint.com>  Fri, 10 Jul 2020 15:36:15 +0100
 
@@ -447,7 +447,7 @@ cinnamon-desktop (3.2.0) serena; urgency=medium
   * gnome-desktop-utils: Add a pam password check function
   * Add /etc/pam.d/cinnamon-desktop to build and packaging to allow authentication to work (debian-based uses debian/cinnamon-desktop.pam rather than the one in /data.
   * Add flag image files to be shared with cinnamon, cinnamon-screensaver.
-  * screensaver schema: Add flag, keyboard layout, and clock visiblity keys.
+  * screensaver schema: Add flag, keyboard layout, and clock visibility keys.
 
   [ Clement Lefebvre ]
   * Fixed build

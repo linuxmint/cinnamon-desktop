@@ -24,7 +24,7 @@
     <key name="recent-files-max-age" type="i">
       <default>7</default>
       <summary>Number of days to remember recently used files for</summary>
-      <description>Recently used files will be remembered for this many days. If set to 0, recent files will not be remembered; if set to -1, they will be retained indefinitively.</description>
+      <description>Recently used files will be remembered for this many days. If set to 0, recent files will not be remembered; if set to -1, they will be retained indefinitely.</description>
     </key>
     <key name="disable-microphone" type="b">
       <default>false</default>
