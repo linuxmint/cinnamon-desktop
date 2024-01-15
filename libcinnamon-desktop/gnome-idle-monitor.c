@@ -67,7 +67,7 @@ G_DEFINE_TYPE_WITH_CODE (GnomeIdleMonitor, gnome_idle_monitor, G_TYPE_OBJECT,
              G_IMPLEMENT_INTERFACE (G_TYPE_INITABLE,
                         gnome_idle_monitor_initable_iface_init))
 
-#define IDLE_MONITOR_PATH "/org/gnome/Mutter/IdleMonitor/Core"
+#define IDLE_MONITOR_PATH "/org/cinnamon/Muffin/IdleMonitor/Core"
 
 static void
 on_watch_fired (MetaDBusIdleMonitor *proxy,
@@ -256,7 +256,7 @@ on_name_appeared (GDBusConnection *connection,
     meta_dbus_object_manager_client_new (connection,
                          G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_NONE,
                          name_owner,
-                         "/org/gnome/Mutter/IdleMonitor",
+                         "/org/cinnamon/Muffin/IdleMonitor",
                          monitor->priv->cancellable,
                          on_object_manager_ready,
                          monitor);
@@ -296,7 +296,7 @@ gnome_idle_monitor_initable_init (GInitable     *initable,
     monitor = GNOME_IDLE_MONITOR (initable);
 
     monitor->priv->name_watch_id = g_bus_watch_name (G_BUS_TYPE_SESSION,
-                             "org.gnome.Mutter.IdleMonitor",
+                             "org.cinnamon.Muffin.IdleMonitor",
                              G_BUS_NAME_WATCHER_FLAGS_NONE,
                              on_name_appeared,
                              on_name_vanished,

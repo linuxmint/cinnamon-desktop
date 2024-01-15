@@ -1,7 +1,7 @@
 dbus_idle_built_sources = gnome.gdbus_codegen('meta-dbus-idle-monitor',
   'idle-monitor.xml',
   namespace: 'MetaDBus',
-  interface_prefix: 'org.gnome.Muffin',
+  interface_prefix: 'org.cinnamon.Muffin',
   object_manager: true
 )
 
