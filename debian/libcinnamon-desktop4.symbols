@@ -52,6 +52,12 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_desktop_thumbnail_md5@Base 2.0.4
  gnome_desktop_thumbnail_path_for_uri@Base 2.0.4
  gnome_desktop_thumbnail_scale_down_pixbuf@Base 2.0.4
+ gnome_idle_monitor_add_idle_watch@Base 6.0.0
+ gnome_idle_monitor_add_user_active_watch@Base 6.0.0
+ gnome_idle_monitor_get_idletime@Base 6.0.0
+ gnome_idle_monitor_get_type@Base 6.0.0
+ gnome_idle_monitor_new@Base 6.0.0
+ gnome_idle_monitor_remove_watch@Base 6.0.0
  gnome_installer_check_for_packages@Base 3.4.2
  gnome_installer_install_packages@Base 3.4.2
  gnome_pnp_ids_get_pnp_id@Base 2.0.4
@@ -174,6 +180,8 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_rr_screen_set_global_scale_setting@Base 4.6.4
  gnome_rr_screen_set_primary_output@Base 2.0.4
  gnome_rr_screen_set_size@Base 2.0.4
+ gnome_start_systemd_scope@Base 6.0.0
+ gnome_start_systemd_scope_finish@Base 6.0.0
  gnome_wall_clock_get_clock@Base 2.0.4
  gnome_wall_clock_get_clock_for_format@Base 3.8.1
  gnome_wall_clock_get_default_date_format@Base 3.8.1
@@ -193,3 +201,48 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_xkb_info_get_var_defs@Base 2.0.4
  gnome_xkb_info_new@Base 2.0.4
  make_display_name@Base 3.8.1
+ meta_dbus_idle_monitor_call_add_idle_watch@Base 6.0.0
+ meta_dbus_idle_monitor_call_add_idle_watch_finish@Base 6.0.0
+ meta_dbus_idle_monitor_call_add_idle_watch_sync@Base 6.0.0
+ meta_dbus_idle_monitor_call_add_user_active_watch@Base 6.0.0
+ meta_dbus_idle_monitor_call_add_user_active_watch_finish@Base 6.0.0
+ meta_dbus_idle_monitor_call_add_user_active_watch_sync@Base 6.0.0
+ meta_dbus_idle_monitor_call_get_idletime@Base 6.0.0
+ meta_dbus_idle_monitor_call_get_idletime_finish@Base 6.0.0
+ meta_dbus_idle_monitor_call_get_idletime_sync@Base 6.0.0
+ meta_dbus_idle_monitor_call_remove_watch@Base 6.0.0
+ meta_dbus_idle_monitor_call_remove_watch_finish@Base 6.0.0
+ meta_dbus_idle_monitor_call_remove_watch_sync@Base 6.0.0
+ meta_dbus_idle_monitor_complete_add_idle_watch@Base 6.0.0
+ meta_dbus_idle_monitor_complete_add_user_active_watch@Base 6.0.0
+ meta_dbus_idle_monitor_complete_get_idletime@Base 6.0.0
+ meta_dbus_idle_monitor_complete_remove_watch@Base 6.0.0
+ meta_dbus_idle_monitor_emit_watch_fired@Base 6.0.0
+ meta_dbus_idle_monitor_get_type@Base 6.0.0
+ meta_dbus_idle_monitor_interface_info@Base 6.0.0
+ meta_dbus_idle_monitor_override_properties@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_get_type@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new_finish@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new_for_bus@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new_for_bus_finish@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new_for_bus_sync@Base 6.0.0
+ meta_dbus_idle_monitor_proxy_new_sync@Base 6.0.0
+ meta_dbus_idle_monitor_skeleton_get_type@Base 6.0.0
+ meta_dbus_idle_monitor_skeleton_new@Base 6.0.0
+ meta_dbus_object_get_idle_monitor@Base 6.0.0
+ meta_dbus_object_get_type@Base 6.0.0
+ meta_dbus_object_manager_client_get_proxy_type@Base 6.0.0
+ meta_dbus_object_manager_client_get_type@Base 6.0.0
+ meta_dbus_object_manager_client_new@Base 6.0.0
+ meta_dbus_object_manager_client_new_finish@Base 6.0.0
+ meta_dbus_object_manager_client_new_for_bus@Base 6.0.0
+ meta_dbus_object_manager_client_new_for_bus_finish@Base 6.0.0
+ meta_dbus_object_manager_client_new_for_bus_sync@Base 6.0.0
+ meta_dbus_object_manager_client_new_sync@Base 6.0.0
+ meta_dbus_object_peek_idle_monitor@Base 6.0.0
+ meta_dbus_object_proxy_get_type@Base 6.0.0
+ meta_dbus_object_proxy_new@Base 6.0.0
+ meta_dbus_object_skeleton_get_type@Base 6.0.0
+ meta_dbus_object_skeleton_new@Base 6.0.0
+ meta_dbus_object_skeleton_set_idle_monitor@Base 6.0.0
