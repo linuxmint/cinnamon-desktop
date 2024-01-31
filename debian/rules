@@ -10,8 +10,7 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL = 2
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		--buildtype=debug \
-		-Dpnp_ids=/usr/share/hwdata/pnp.ids \
-		-Ddeprecation_warnings=false
+		-Dpnp_ids=/usr/share/hwdata/pnp.ids
 
 override_dh_strip:
 	dh_strip -Xdesktop -Xcinnamon --dbg-package=libcvc-dbg
