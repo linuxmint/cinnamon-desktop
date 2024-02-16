@@ -181,7 +181,7 @@ gnome_bg_crossfade_class_init (GnomeBGCrossfadeClass *fade_class)
 	/**
 	 * GnomeBGCrossfade::finished:
 	 * @fade: the #GnomeBGCrossfade that received the signal
-	 * @window: the #GdkWindow the crossfade happend on.
+	 * @window: the #GdkWindow the crossfade happened on.
 	 *
 	 * When a crossfade finishes, @window will have a copy
 	 * of the end surface as its background, and this signal will

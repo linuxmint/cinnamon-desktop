@@ -542,7 +542,7 @@ gnome_rr_labeler_show (GnomeRRLabeler *labeler)
  * gnome_rr_labeler_hide:
  * @labeler: A #GnomeRRLabeler
  *
- * Hide ouput labels.
+ * Hide output labels.
  */
 void
 gnome_rr_labeler_hide (GnomeRRLabeler *labeler)

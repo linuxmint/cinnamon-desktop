@@ -894,7 +894,7 @@ gnome_xkb_info_get_layout_info (GnomeXkbInfo *self,
  * @self: a #GnomeXkbInfo
  * @language: an ISO 639 code
  * @id: (out) (allow-none) (transfer none): location to store the
- * layout's indentifier, or %NULL
+ * layout's identifier, or %NULL
  * @display_name: (out) (allow-none) (transfer none): location to store
  * the layout's display name, or %NULL
  * @short_name: (out) (allow-none) (transfer none): location to store

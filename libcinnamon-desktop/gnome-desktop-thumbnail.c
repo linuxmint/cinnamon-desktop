@@ -1882,7 +1882,7 @@ gnome_desktop_thumbnail_cache_fix_permissions (void)
 /**
  * gnome_desktop_cache_check_permissions:
  * @factory: (allow-none): an optional GnomeDesktopThumbnailFactory
- * @quick: if TRUE, only do a quick check of directory ownersip
+ * @quick: if TRUE, only do a quick check of directory ownership
  * This is more serious than thumbnail ownership issues, and is faster.
  *
  * Returns whether there are any ownership issues with the thumbnail

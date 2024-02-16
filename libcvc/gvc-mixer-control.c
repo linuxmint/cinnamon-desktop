@@ -530,7 +530,7 @@ gvc_mixer_control_get_stream_from_device (GvcMixerControl *control,
  * @profile: (allow-none): Can be %NULL if any profile present on this port is okay
  *
  * Returns: This method will attempt to swap the profile on the card of
- * the device with given profile name.  If successfull it will set the
+ * the device with given profile name.  If successful it will set the
  * preferred profile on that device so as we know the next time the user
  * moves to that device it should have this profile active.
  */
@@ -1554,7 +1554,7 @@ update_sink (GvcMixerControl    *control,
         gvc_mixer_stream_set_base_volume (stream, (guint32) info->base_volume);
         gvc_mixer_stream_set_state (stream, translate_pa_state (info->state));
 
-        /* Messy I know but to set the port everytime regardless of whether it has changed will cost us a
+        /* Messy I know but to set the port every time regardless of whether it has changed will cost us a
          * port change notify signal which causes the frontend to resync.
          * Only update the UI when something has changed. */
         if (info->active_port != NULL) {

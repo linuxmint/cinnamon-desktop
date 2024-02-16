@@ -178,7 +178,7 @@ gvc_channel_map_get_lfe (GvcChannelMap *map)
                 return 0;
 
         if (gvc_channel_map_has_lfe (map))
-            // there is a funtion for this in pa 7.1, but it is not used here for backward
+            // there is a function for this in pa 7.1, but it is not used here for backward
             // compatibility
             return (gfloat) pa_cvolume_get_position (&map->priv->pa_volume, &map->priv->pa_map, PA_CHANNEL_POSITION_LFE);
         else
@@ -198,7 +198,7 @@ gvc_channel_map_set_lfe (GvcChannelMap *map,
 
         cv = *gvc_channel_map_get_cvolume (map);
 
-        // there is a funtion for this in pa 7.1, but it is not used here for backward
+        // there is a function for this in pa 7.1, but it is not used here for backward
         // compatibility
         pa_cvolume_set_position (&cv, &map->priv->pa_map, PA_CHANNEL_POSITION_LFE, value);
 

@@ -68,7 +68,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
  * Currently used by cinnamon-screensaver default clock */
 #define DATE_ONLY             (_("%A, %B %e"))
 
-/* Defaut date/time format when show-date, show-seconds, use-24h are set */
+/* Default date/time format when show-date, show-seconds, use-24h are set */
 #define WITH_DATE_24H_SECONDS (_("%A %B %e, %R:%S"))
 
 /* Default date/time format when show-date, show-seconds are set */
