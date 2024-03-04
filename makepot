@@ -1,0 +1,4 @@
+#!/bin/bash
+xgettext -c --from-code=UTF-8 --keyword=_ --keyword=N_ --output=cinnamon-desktop.pot \
+    libcinnamon-desktop/gnome-wall-clock.c libcvc/*.c
+
