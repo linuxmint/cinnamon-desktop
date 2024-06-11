@@ -184,11 +184,11 @@ msgstr "نمایشگرهای آینه‌ای"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %e, %R:%S"
+msgid "%A %B %-e, %R:%S"
 msgstr "%A %Od %B %OH:%OM:%OS"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %e, %R"
+msgid "%A %B %-e, %R"
 msgstr "%A %Od %B %OH:%OM"
 
 #. Translators: This is the time format without date used
@@ -204,24 +204,24 @@ msgstr "%OH:%OM"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %e, %l:%M:%S %p"
+msgid "%A %B %-e, %-l:%M:%S %p"
 msgstr "%A Od% %B %OH:%OM:%OS"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %e, %l:%M %p"
+msgid "%A %B %-e, %-l:%M %p"
 msgstr "%A %Od %B %OH:%OM"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%l:%M:%S %p"
+msgid "%-l:%M:%S %p"
 msgstr "%OI:%OM:%OS %p"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%l:%M %p"
+msgid "%-l:%M %p"
 msgstr "%OI:%OM %p"
 
-msgid "%A, %B %e"
+msgid "%A, %B %-e"
 msgstr ""
 
 #~ msgid "%A %R:%S"
@@ -230,10 +230,10 @@ msgstr ""
 #~ msgid "%A %R"
 #~ msgstr "%A %OH:%OM"
 
-#~ msgid "%A %l:%M:%S %p"
+#~ msgid "%A %-l:%M:%S %p"
 #~ msgstr "%A %OH:%OM:%OS"
 
-#~ msgid "%A %l:%M %p"
+#~ msgid "%A %-l:%M %p"
 #~ msgstr "%A %OH:%OM"
 
 #~ msgid "About GNOME"

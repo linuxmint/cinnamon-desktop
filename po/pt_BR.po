@@ -193,12 +193,12 @@ msgstr "Telas espelhadas"
 #. in 24-hour mode.
 # Vide página man date(1).
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %e, %R:%S"
-msgstr "%A, %e de %B, %R:%S"
+msgid "%A %B %-e, %R:%S"
+msgstr "%A, %-e de %B, %R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %e, %R"
-msgstr "%A, %e de %B, %R"
+msgid "%A %B %-e, %R"
+msgstr "%A, %-e de %B, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -212,28 +212,28 @@ msgstr "%R"
 
 #. Translators: This is a time format with full date used
 #. for AM/PM.
-# Vide página man date(1). A flag %l serve para 12h, mas nós queremos somente
+# Vide página man date(1). A flag %-l serve para 12h, mas nós queremos somente
 # formato 24h, certo?
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %e, %l:%M:%S %p"
-msgstr "%A, %e de %B, %R:%S"
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%A, %-e de %B, %R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %e, %l:%M %p"
-msgstr "%A, %e de %B, %R"
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%A, %-e de %B, %R"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%l:%M:%S %p"
+msgid "%-l:%M:%S %p"
 msgstr "%R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%l:%M %p"
+msgid "%-l:%M %p"
 msgstr "%R"
 
-msgid "%A, %B %e"
-msgstr "%A, %B %e"
+msgid "%A, %B %-e"
+msgstr "%A, %B %-e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A, %R:%S"
@@ -241,10 +241,10 @@ msgstr "%A, %B %e"
 #~ msgid "%A %R"
 #~ msgstr "%A, %R"
 
-#~ msgid "%A %l:%M:%S %p"
+#~ msgid "%A %-l:%M:%S %p"
 #~ msgstr "%A, %R:%S"
 
-#~ msgid "%A %l:%M %p"
+#~ msgid "%A %-l:%M %p"
 #~ msgstr "%A, %R"
 
 #~ msgid "About GNOME"

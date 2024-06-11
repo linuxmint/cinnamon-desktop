@@ -177,12 +177,12 @@ msgstr "鏡射顯示器"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %e, %R:%S"
-msgstr "%m月%e日(%A), %R:%S"
+msgid "%A %B %-e, %R:%S"
+msgstr "%m月%-e日(%A), %R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %e, %R"
-msgstr "%m月%e日(%A), %R"
+msgid "%A %B %-e, %R"
+msgstr "%m月%-e日(%A), %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -197,25 +197,25 @@ msgstr "%R"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %e, %l:%M:%S %p"
-msgstr "%m月%e日(%A), %p %l:%M:%S"
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%m月%-e日(%A), %p %-l:%M:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %e, %l:%M %p"
-msgstr "%m月%e日(%A), %p %l:%M"
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%m月%-e日(%A), %p %-l:%M"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%l:%M:%S %p"
-msgstr "%p %l:%M:%S"
+msgid "%-l:%M:%S %p"
+msgstr "%p %-l:%M:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%l:%M %p"
-msgstr "%p %l:%M"
+msgid "%-l:%M %p"
+msgstr "%p %-l:%M"
 
-msgid "%A, %B %e"
-msgstr "%A，%B %e"
+msgid "%A, %B %-e"
+msgstr "%A，%B %-e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "(%A)%R:%S"
@@ -223,11 +223,11 @@ msgstr "%A，%B %e"
 #~ msgid "%A %R"
 #~ msgstr "(%A)%R"
 
-#~ msgid "%A %l:%M:%S %p"
-#~ msgstr "(%A)%p %l:%M:%S"
+#~ msgid "%A %-l:%M:%S %p"
+#~ msgstr "(%A)%p %-l:%M:%S"
 
-#~ msgid "%A %l:%M %p"
-#~ msgstr "(%A)%p %l:%M"
+#~ msgid "%A %-l:%M %p"
+#~ msgstr "(%A)%p %-l:%M"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "鏡射螢幕"

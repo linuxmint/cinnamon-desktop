@@ -155,11 +155,11 @@ msgstr ""
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %e, %R:%S"
+msgid "%A %B %-e, %R:%S"
 msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %e, %R"
+msgid "%A %B %-e, %R"
 msgstr ""
 
 #. Translators: This is the time format without date used
@@ -175,21 +175,21 @@ msgstr ""
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %e, %l:%M:%S %p"
+msgid "%A %B %-e, %-l:%M:%S %p"
 msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %e, %l:%M %p"
+msgid "%A %B %-e, %-l:%M %p"
 msgstr ""
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%l:%M:%S %p"
+msgid "%-l:%M:%S %p"
 msgstr ""
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%l:%M %p"
+msgid "%-l:%M %p"
 msgstr ""
 
 #~ msgid "The Mysterious GEGL"

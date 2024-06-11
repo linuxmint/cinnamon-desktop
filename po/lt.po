@@ -178,12 +178,12 @@ msgstr "Dubliuoti ekranai"
 #. Translators: This is the time format with full date used
 #. in 24-hour mode.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %e, %R:%S"
-msgstr "%A %B %e, %R:%S"
+msgid "%A %B %-e, %R:%S"
+msgstr "%A %B %-e, %R:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %e, %R"
-msgstr "%A %B %e, %R"
+msgid "%A %B %-e, %R"
+msgstr "%A %B %-e, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
@@ -198,25 +198,25 @@ msgstr "%R"
 #. Translators: This is a time format with full date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %e, %l:%M:%S %p"
-msgstr "%A %B %e, %l:%M:%S %p"
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%A %B %-e, %-l:%M:%S %p"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %e, %l:%M %p"
-msgstr "%A %B %e, %l:%M %p"
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%A %B %-e, %-l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
 #: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%l:%M:%S %p"
+msgid "%-l:%M:%S %p"
 msgstr "%H:%M:%S"
 
 #: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%l:%M %p"
+msgid "%-l:%M %p"
 msgstr "%H:%M"
 
-msgid "%A, %B %e"
-msgstr "%A, %B %e"
+msgid "%A, %B %-e"
+msgstr "%A, %B %-e"
 
 #~ msgid "%A %R:%S"
 #~ msgstr "%A %R:%S"
@@ -224,11 +224,11 @@ msgstr "%A, %B %e"
 #~ msgid "%A %R"
 #~ msgstr "%A %R"
 
-#~ msgid "%A %l:%M:%S %p"
-#~ msgstr "%A %l:%M:%S %p"
+#~ msgid "%A %-l:%M:%S %p"
+#~ msgstr "%A %-l:%M:%S %p"
 
-#~ msgid "%A %l:%M %p"
-#~ msgstr "%A %l:%M %p"
+#~ msgid "%A %-l:%M %p"
+#~ msgstr "%A %-l:%M %p"
 
 #~ msgid "Mirror Screens"
 #~ msgstr "Dublikuoti ekranai"
