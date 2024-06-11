@@ -70,7 +70,7 @@
       </description>
     </key>
     <key name="date-format" type="s">
-      <default>"%A %B %e"</default>
+      <default>"%A %B %-e"</default>
       <summary>The custom date format</summary>
       <description>
         This is the date format that the lock screen will use if use-custom-format is enabled.
