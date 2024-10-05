@@ -11,7 +11,7 @@
       </description>
     </key>
     <key name="picture-uri" type="s">
-      <default>'file://@datadir@/themes/Adwaita/backgrounds/adwaita-timed.xml'</default>
+      <default>'file://@datadir@/backgrounds/gnome/adwaita-l.jxl'</default>
       <summary>Picture URI</summary>
       <description>
         URI to use for the background image. Not that the backend only supports
