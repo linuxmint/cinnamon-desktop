@@ -102,7 +102,7 @@
       </description>
     </key>
     <key name="icon-theme" type="s">
-      <default>'gnome'</default>
+      <default>'AdwaitaLegacy'</default>
       <summary>Icon Theme</summary>
       <description>
         Icon theme to use for the panel, nautilus etc.
