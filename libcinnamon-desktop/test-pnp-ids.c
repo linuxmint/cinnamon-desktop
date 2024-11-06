@@ -37,7 +37,7 @@ int
 main (int argc, char *argv[])
 {
 	GnomePnpIds *ids;
-	guint i;
+	int i;
 
 	ids = gnome_pnp_ids_new ();
 
@@ -69,6 +69,7 @@ main (int argc, char *argv[])
 	if (argc < 2) {
 		show_vendor (ids, "ELO");
 		show_vendor (ids, "IBM");
+		show_vendor (ids, "DEL4085");
 	}
 
 	g_object_unref (ids);
