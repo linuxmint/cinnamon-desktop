@@ -1,8 +1,15 @@
 libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  _gnome_datetime_source_new@Base 3.8.1
  _gnome_desktop_init_i18n@Base 3.8.1
- _gnome_rr_output_name_is_laptop@Base 3.8.1
+ _gnome_rr_output_connector_type_is_builtin_display@Base 6.2.0
+ _gnome_rr_output_get_connector_type@Base 6.2.0
+ _gnome_rr_output_get_tile_info@Base 6.2.0
+ _gnome_rr_output_get_tiled_display_size@Base 6.2.0
+ _gnome_rr_screen_apply_configuration@Base 6.2.0
  decode_edid@Base 3.8.1
+ dgettext_l@Base 6.2.0
+ g_dgettext_l@Base 6.2.0
+ g_dpgettext_l@Base 6.2.0
  gnome_bg_changes_with_time@Base 2.0.4
  gnome_bg_create_and_set_gtk_image@Base 3.4.2
  gnome_bg_create_and_set_surface_as_root@Base 2.0.4
@@ -52,39 +59,40 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_desktop_thumbnail_md5@Base 2.0.4
  gnome_desktop_thumbnail_path_for_uri@Base 2.0.4
  gnome_desktop_thumbnail_scale_down_pixbuf@Base 2.0.4
+ gnome_get_all_locales@Base 6.2.0
+ gnome_get_country_from_code@Base 6.2.0
+ gnome_get_country_from_locale@Base 6.2.0
+ gnome_get_input_source_from_locale@Base 6.2.0
+ gnome_get_language_from_code@Base 6.2.0
+ gnome_get_language_from_locale@Base 6.2.0
+ gnome_get_translated_modifier@Base 6.2.0
  gnome_idle_monitor_add_idle_watch@Base 6.0.0
  gnome_idle_monitor_add_user_active_watch@Base 6.0.0
  gnome_idle_monitor_get_idletime@Base 6.0.0
  gnome_idle_monitor_get_type@Base 6.0.0
  gnome_idle_monitor_new@Base 6.0.0
  gnome_idle_monitor_remove_watch@Base 6.0.0
- gnome_installer_check_for_packages@Base 3.4.2
- gnome_installer_install_packages@Base 3.4.2
+ gnome_language_has_translations@Base 6.2.0
+ gnome_normalize_locale@Base 6.2.0
+ gnome_parse_locale@Base 6.2.0
+ gnome_pnp_ids_get_pnp_id@Base 2.0.4
+ gnome_pnp_ids_get_type@Base 2.0.4
+ gnome_pnp_ids_new@Base 2.0.4
  gnome_pnp_ids_get_pnp_id@Base 2.0.4
  gnome_pnp_ids_get_type@Base 2.0.4
  gnome_pnp_ids_new@Base 2.0.4
  gnome_rr_config_applicable@Base 2.0.4
- gnome_rr_config_apply_from_filename_with_time@Base 2.0.4
- gnome_rr_config_apply_with_time@Base 2.0.4
+ gnome_rr_config_apply@Base 6.2.0
+ gnome_rr_config_apply_persistent@Base 6.2.0
  gnome_rr_config_ensure_primary@Base 2.0.4
  gnome_rr_config_equal@Base 2.0.4
- gnome_rr_config_get_auto_scale@Base 4.6.4
- gnome_rr_config_get_backup_filename@Base 2.0.4
- gnome_rr_config_get_base_scale@Base 4.6.4
  gnome_rr_config_get_clone@Base 2.0.4
- gnome_rr_config_get_intended_filename@Base 2.0.4
- gnome_rr_config_get_legacy_filename@Base 4.6.4
  gnome_rr_config_get_outputs@Base 2.0.4
  gnome_rr_config_get_type@Base 2.0.4
  gnome_rr_config_load_current@Base 2.0.4
- gnome_rr_config_load_filename@Base 2.0.4
  gnome_rr_config_match@Base 2.0.4
  gnome_rr_config_new_current@Base 2.0.4
- gnome_rr_config_new_stored@Base 2.0.4
  gnome_rr_config_sanitize@Base 2.0.4
- gnome_rr_config_save@Base 2.0.4
- gnome_rr_config_set_auto_scale@Base 4.6.4
- gnome_rr_config_set_base_scale@Base 4.6.4
  gnome_rr_config_set_clone@Base 2.0.4
  gnome_rr_crtc_can_drive_output@Base 2.0.4
  gnome_rr_crtc_get_current_mode@Base 2.0.4
@@ -93,44 +101,43 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_rr_crtc_get_id@Base 2.0.4
  gnome_rr_crtc_get_position@Base 2.0.4
  gnome_rr_crtc_get_rotations@Base 2.0.4
- gnome_rr_crtc_get_scale@Base 4.6.4
  gnome_rr_crtc_get_type@Base 2.0.4
- gnome_rr_crtc_set_config_with_time@Base 2.0.4
  gnome_rr_crtc_set_gamma@Base 2.0.4
  gnome_rr_crtc_supports_rotation@Base 2.0.4
+ gnome_rr_dpms_mode_get_type@Base 6.2.0
  gnome_rr_error_quark@Base 2.0.4
  gnome_rr_labeler_get_rgba_for_output@Base 2.0.4
  gnome_rr_labeler_get_type@Base 2.0.4
  gnome_rr_labeler_hide@Base 2.0.4
  gnome_rr_labeler_new@Base 2.0.4
  gnome_rr_labeler_show@Base 2.0.4
- gnome_rr_mode_get_flags@Base 4.6.4
  gnome_rr_mode_get_freq@Base 2.0.4
  gnome_rr_mode_get_freq_f@Base 4.6.4
  gnome_rr_mode_get_height@Base 2.0.4
  gnome_rr_mode_get_id@Base 2.0.4
+ gnome_rr_mode_get_is_interlaced@Base 6.2.0
+ gnome_rr_mode_get_is_tiled@Base 6.2.0
  gnome_rr_mode_get_type@Base 2.0.4
  gnome_rr_mode_get_width@Base 2.0.4
  gnome_rr_output_can_clone@Base 2.0.4
  gnome_rr_output_get_backlight@Base 2.0.4
- gnome_rr_output_get_backlight_max@Base 2.0.4
- gnome_rr_output_get_backlight_min@Base 2.0.4
- gnome_rr_output_get_connector_type@Base 2.0.4
  gnome_rr_output_get_crtc@Base 2.0.4
  gnome_rr_output_get_current_mode@Base 2.0.4
+ gnome_rr_output_get_display_name@Base 6.2.0
  gnome_rr_output_get_edid_data@Base 2.0.4
- gnome_rr_output_get_height_mm@Base 2.0.4
  gnome_rr_output_get_id@Base 2.0.4
  gnome_rr_output_get_ids_from_edid@Base 2.0.4
  gnome_rr_output_get_is_primary@Base 2.0.4
+ gnome_rr_output_get_is_underscanning@Base 6.2.0
+ gnome_rr_output_get_min_backlight_step@Base 6.2.0
  gnome_rr_output_get_name@Base 2.0.4
+ gnome_rr_output_get_physical_size@Base 6.2.0
  gnome_rr_output_get_position@Base 2.0.4
+ gnome_rr_output_get_possible_crtcs@Base 6.2.0
  gnome_rr_output_get_preferred_mode@Base 2.0.4
  gnome_rr_output_get_type@Base 2.0.4
- gnome_rr_output_get_width_mm@Base 2.0.4
  gnome_rr_output_info_get_aspect_ratio@Base 2.0.4
  gnome_rr_output_info_get_display_name@Base 2.0.4
- gnome_rr_output_info_get_flags@Base 4.6.4
  gnome_rr_output_info_get_geometry@Base 2.0.4
  gnome_rr_output_info_get_name@Base 2.0.4
  gnome_rr_output_info_get_preferred_height@Base 2.0.4
@@ -138,48 +145,42 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_rr_output_info_get_primary@Base 2.0.4
  gnome_rr_output_info_get_product@Base 2.0.4
  gnome_rr_output_info_get_refresh_rate@Base 2.0.4
- gnome_rr_output_info_get_refresh_rate_f@Base 4.6.4
  gnome_rr_output_info_get_rotation@Base 2.0.4
- gnome_rr_output_info_get_scale@Base 4.6.4
  gnome_rr_output_info_get_serial@Base 2.0.4
  gnome_rr_output_info_get_type@Base 2.0.4
+ gnome_rr_output_info_get_underscanning@Base 6.2.0
  gnome_rr_output_info_get_vendor@Base 2.0.4
  gnome_rr_output_info_is_active@Base 2.0.4
  gnome_rr_output_info_is_connected@Base 2.0.4
+ gnome_rr_output_info_is_primary_tile@Base 6.2.0
  gnome_rr_output_info_set_active@Base 2.0.4
- gnome_rr_output_info_set_flags@Base 4.6.4
  gnome_rr_output_info_set_geometry@Base 2.0.4
  gnome_rr_output_info_set_primary@Base 2.0.4
  gnome_rr_output_info_set_refresh_rate@Base 2.0.4
- gnome_rr_output_info_set_refresh_rate_f@Base 4.6.4
  gnome_rr_output_info_set_rotation@Base 2.0.4
- gnome_rr_output_info_set_scale@Base 4.6.4
+ gnome_rr_output_info_set_underscanning@Base 6.2.0
+ gnome_rr_output_info_supports_rotation@Base 6.2.0
+ gnome_rr_output_is_builtin_display@Base 6.2.0
  gnome_rr_output_is_connected@Base 2.0.4
- gnome_rr_output_is_laptop@Base 2.0.4
  gnome_rr_output_list_modes@Base 2.0.4
  gnome_rr_output_set_backlight@Base 2.0.4
  gnome_rr_output_supports_mode@Base 2.0.4
- gnome_rr_screen_calculate_best_global_scale@Base 4.6.4
- gnome_rr_screen_calculate_supported_scales@Base 4.6.4
+ gnome_rr_output_supports_underscanning@Base 6.2.0
  gnome_rr_screen_get_crtc_by_id@Base 2.0.4
  gnome_rr_screen_get_dpms_mode@Base 2.0.4
- gnome_rr_screen_get_global_scale@Base 4.6.4
- gnome_rr_screen_get_global_scale_setting@Base 4.6.4
  gnome_rr_screen_get_output_by_id@Base 2.0.4
  gnome_rr_screen_get_output_by_name@Base 2.0.4
  gnome_rr_screen_get_ranges@Base 2.0.4
- gnome_rr_screen_get_timestamps@Base 2.0.4
  gnome_rr_screen_get_type@Base 2.0.4
  gnome_rr_screen_list_clone_modes@Base 2.0.4
  gnome_rr_screen_list_crtcs@Base 2.0.4
  gnome_rr_screen_list_modes@Base 2.0.4
  gnome_rr_screen_list_outputs@Base 2.0.4
  gnome_rr_screen_new@Base 2.0.4
+ gnome_rr_screen_new_async@Base 6.2.0
+ gnome_rr_screen_new_finish@Base 6.2.0
  gnome_rr_screen_refresh@Base 2.0.4
  gnome_rr_screen_set_dpms_mode@Base 2.0.4
- gnome_rr_screen_set_global_scale_setting@Base 4.6.4
- gnome_rr_screen_set_primary_output@Base 2.0.4
- gnome_rr_screen_set_size@Base 2.0.4
  gnome_start_systemd_scope@Base 6.0.0
  gnome_start_systemd_scope_finish@Base 6.0.0
  gnome_wall_clock_get_clock@Base 2.0.4
@@ -190,17 +191,53 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_wall_clock_lctime_format@Base 4.6.4
  gnome_wall_clock_new@Base 3.4.2
  gnome_wall_clock_set_format_string@Base 3.8.1
+ gnome_xkb_info_description_for_group@Base 6.2.0
  gnome_xkb_info_description_for_option@Base 2.0.4
- gnome_xkb_info_free_var_defs@Base 2.0.4
  gnome_xkb_info_get_all_layouts@Base 2.0.4
  gnome_xkb_info_get_all_option_groups@Base 2.0.4
+ gnome_xkb_info_get_languages_for_layout@Base 6.2.0
  gnome_xkb_info_get_layout_info@Base 2.0.4
- gnome_xkb_info_get_layout_info_for_language@Base 2.0.4
+ gnome_xkb_info_get_layouts_for_country@Base 6.2.0
+ gnome_xkb_info_get_layouts_for_language@Base 6.2.0
  gnome_xkb_info_get_options_for_group@Base 2.0.4
  gnome_xkb_info_get_type@Base 2.0.4
- gnome_xkb_info_get_var_defs@Base 2.0.4
  gnome_xkb_info_new@Base 2.0.4
  make_display_name@Base 3.8.1
+ meta_dbus_display_config_call_apply_configuration@Base 6.2.0
+ meta_dbus_display_config_call_apply_configuration_finish@Base 6.2.0
+ meta_dbus_display_config_call_apply_configuration_sync@Base 6.2.0
+ meta_dbus_display_config_call_change_backlight@Base 6.2.0
+ meta_dbus_display_config_call_change_backlight_finish@Base 6.2.0
+ meta_dbus_display_config_call_change_backlight_sync@Base 6.2.0
+ meta_dbus_display_config_call_get_crtc_gamma@Base 6.2.0
+ meta_dbus_display_config_call_get_crtc_gamma_finish@Base 6.2.0
+ meta_dbus_display_config_call_get_crtc_gamma_sync@Base 6.2.0
+ meta_dbus_display_config_call_get_resources@Base 6.2.0
+ meta_dbus_display_config_call_get_resources_finish@Base 6.2.0
+ meta_dbus_display_config_call_get_resources_sync@Base 6.2.0
+ meta_dbus_display_config_call_set_crtc_gamma@Base 6.2.0
+ meta_dbus_display_config_call_set_crtc_gamma_finish@Base 6.2.0
+ meta_dbus_display_config_call_set_crtc_gamma_sync@Base 6.2.0
+ meta_dbus_display_config_complete_apply_configuration@Base 6.2.0
+ meta_dbus_display_config_complete_change_backlight@Base 6.2.0
+ meta_dbus_display_config_complete_get_crtc_gamma@Base 6.2.0
+ meta_dbus_display_config_complete_get_resources@Base 6.2.0
+ meta_dbus_display_config_complete_set_crtc_gamma@Base 6.2.0
+ meta_dbus_display_config_emit_monitors_changed@Base 6.2.0
+ meta_dbus_display_config_get_power_save_mode@Base 6.2.0
+ meta_dbus_display_config_get_type@Base 6.2.0
+ meta_dbus_display_config_interface_info@Base 6.2.0
+ meta_dbus_display_config_override_properties@Base 6.2.0
+ meta_dbus_display_config_proxy_get_type@Base 6.2.0
+ meta_dbus_display_config_proxy_new@Base 6.2.0
+ meta_dbus_display_config_proxy_new_finish@Base 6.2.0
+ meta_dbus_display_config_proxy_new_for_bus@Base 6.2.0
+ meta_dbus_display_config_proxy_new_for_bus_finish@Base 6.2.0
+ meta_dbus_display_config_proxy_new_for_bus_sync@Base 6.2.0
+ meta_dbus_display_config_proxy_new_sync@Base 6.2.0
+ meta_dbus_display_config_set_power_save_mode@Base 6.2.0
+ meta_dbus_display_config_skeleton_get_type@Base 6.2.0
+ meta_dbus_display_config_skeleton_new@Base 6.2.0
  meta_dbus_idle_monitor_call_add_idle_watch@Base 6.0.0
  meta_dbus_idle_monitor_call_add_idle_watch_finish@Base 6.0.0
  meta_dbus_idle_monitor_call_add_idle_watch_sync@Base 6.0.0
