@@ -40,6 +40,8 @@ xext    = dependency('xext',            version: '>=1.1')
 xkbconf = dependency('xkeyboard-config')
 xkbfile = dependency('xkbfile')
 xrandr  = dependency('xrandr',          version: '>=1.3')
+iso_codes = dependency('iso-codes')
+udev    = dependency('libudev')
 
 cinnamon_deps = [
   gdk_pixb,
@@ -48,6 +50,7 @@ cinnamon_deps = [
   gtk,
   math,
   systemd,
+  udev,
   x11,
   xext,
   xkbconf,
@@ -58,6 +61,7 @@ cinnamon_deps = [
 use_alsa = get_option('alsa')
 
 xkb_base = xkbconf.get_variable(pkgconfig: 'xkb_base')
+iso_codes_prefix = iso_codes.get_pkgconfig_variable('prefix')
 
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
@@ -76,18 +80,12 @@ endif
 ################################################################################
 # Config
 
-timerfd_check = cc.compiles('''
-#include <sys/timerfd.h>
-#include <unistd.h>
-int main () {
-  timerfd_create (CLOCK_MONOTONIC, TFD_CLOEXEC);
-  return 0;
-}
-''')
 
 gettext_package = meson.project_name()
 conf.set_quoted('GETTEXT_PACKAGE', gettext_package)
 conf.set_quoted('GNOMELOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+conf.set_quoted('LIBLOCALEDIR', join_paths(get_option('prefix'), 'lib', 'locale'))
+conf.set_quoted('ISO_CODES_PREFIX', iso_codes_prefix)
 conf.set_quoted('PACKAGE_VERSION', meson.project_version())
 
 conf.set('HAVE_BIND_TEXTDOMAIN_CODESET', cc.has_function('bind_textdomain_codeset'))
@@ -97,8 +95,9 @@ conf.set('HAVE_ALSA',           use_alsa)
 conf.set('HAVE_GETTEXT',        true)
 conf.set('HAVE_INTROSPECTION',  true)
 conf.set('HAVE_SYSTEMD',        systemd.found())
-conf.set('HAVE_TIMERFD',        timerfd_check)
-
+conf.set('HAVE_TIMERFD',        cc.has_function('timerfd_create'))
+conf.set('HAVE_XLOCALE',        cc.has_header('xlocale.h'))
+conf.set('HAVE_USELOCALE',      cc.has_function('uselocale'))
 ################################################################################
 
 rootInclude = include_directories('.')

@@ -1,14 +1,23 @@
 #ifndef GNOME_RR_PRIVATE_H
 #define GNOME_RR_PRIVATE_H
 
-#include <X11/Xlib.h>
+#ifdef GDK_WINDOWING_WAYLAND
+#include <gdk/gdkwayland.h>
+#else
+enum wl_output_transform {
+  WL_OUTPUT_TRANSFORM_NORMAL,
+  WL_OUTPUT_TRANSFORM_90,
+  WL_OUTPUT_TRANSFORM_180,
+  WL_OUTPUT_TRANSFORM_270,
+  WL_OUTPUT_TRANSFORM_FLIPPED,
+  WL_OUTPUT_TRANSFORM_FLIPPED_90,
+  WL_OUTPUT_TRANSFORM_FLIPPED_180,
+  WL_OUTPUT_TRANSFORM_FLIPPED_270
+};
+#endif
 
-#include <X11/extensions/Xrandr.h>
-
-#define MINIMUM_LOGICAL_SCALE_FACTOR 0.74f
-#define MAXIMUM_LOGICAL_SCALE_FACTOR 3.0f
-#define MINIMUM_GLOBAL_SCALE_FACTOR 1
-#define MAXIMUM_GLOBAL_SCALE_FACTOR 3
+#include "meta-xrandr-shared.h"
+#include "meta-dbus-xrandr.h"
 
 typedef struct ScreenInfo ScreenInfo;
 
@@ -19,7 +28,7 @@ struct ScreenInfo
     int			min_height;
     int			max_height;
 
-    XRRScreenResources *resources;
+    guint               serial;
     
     GnomeRROutput **	outputs;
     GnomeRRCrtc **	crtcs;
@@ -29,63 +38,87 @@ struct ScreenInfo
 
     GnomeRRMode **	clone_modes;
 
-    RROutput            primary;
+    GnomeRROutput *     primary;
 };
 
 struct GnomeRRScreenPrivate
 {
     GdkScreen *			gdk_screen;
     GdkWindow *			gdk_root;
-    Display *			xdisplay;
-    Screen *			xscreen;
-    Window			xroot;
     ScreenInfo *		info;
-    GSettings *         interface_settings;
-    
-    int				randr_event_base;
-    int				rr_major_version;
-    int				rr_minor_version;
-    
-    Atom                        connector_type_atom;
-    gboolean                    dpms_capable;
+
+    int                         init_name_watch_id;
+    MetaDBusDisplayConfig      *proxy;
 };
 
-struct GnomeRROutputInfoPrivate
+#define UNDEFINED_GROUP_ID 0
+struct GnomeRRTile {
+  guint group_id;
+  guint flags;
+  guint max_horiz_tiles;
+  guint max_vert_tiles;
+  guint loc_horiz;
+  guint loc_vert;
+  guint width;
+  guint height;
+};
+
+typedef struct GnomeRRTile GnomeRRTile;
+
+struct _GnomeRROutputInfoPrivate
 {
     char *		name;
 
     gboolean		on;
     int			width;
     int			height;
-    double		rate;
+    int			rate;
     int			x;
     int			y;
     GnomeRRRotation	rotation;
+    GnomeRRRotation	available_rotations;
 
     gboolean		connected;
-    gchar		vendor[4];
-    guint		product;
-    guint		serial;
+    char *		vendor;
+    char *		product;
+    char *		serial;
     double		aspect;
     int			pref_width;
     int			pref_height;
     char *		display_name;
+    char *		connector_type;
     gboolean            primary;
-    float       scale;
-    gboolean    doublescan;
-    gboolean    interlaced;
-    gboolean    vsync;
+    gboolean            underscanning;
+
+    gboolean            is_tiled;
+    GnomeRRTile         tile;
+
+    int                 total_tiled_width;
+    int                 total_tiled_height;
+    /* ptr back to info */
+    GnomeRRConfig       *config;
 };
 
-struct GnomeRRConfigPrivate
+struct _GnomeRRConfigPrivate
 {
   gboolean clone;
   GnomeRRScreen *screen;
   GnomeRROutputInfo **outputs;
-  guint base_scale;
-  gboolean auto_scale;
 };
 
-gboolean _gnome_rr_output_name_is_laptop (const char *name);
+gboolean _gnome_rr_output_connector_type_is_builtin_display (const char *connector_type);
+
+gboolean _gnome_rr_screen_apply_configuration (GnomeRRScreen  *screen,
+					       gboolean        persistent,
+					       GVariant       *crtcs,
+					       GVariant       *outputs,
+					       GError        **error);
+
+const char * _gnome_rr_output_get_connector_type  (GnomeRROutput         *output);
+gboolean    _gnome_rr_output_get_tile_info      (GnomeRROutput         *output,
+						GnomeRRTile *tile);
+gboolean    _gnome_rr_output_get_tiled_display_size (GnomeRROutput *output,
+						     int *tile_w, int *tile_h,
+						     int *width, int *height);
 
 #endif

@@ -1,3 +1,9 @@
+dbus_xrandr_built_sources = gnome.gdbus_codegen('meta-dbus-xrandr',
+  'xrandr.xml',
+  namespace: 'MetaDBus',
+  interface_prefix: 'org.cinnamon.Muffin'
+)
+
 dbus_idle_built_sources = gnome.gdbus_codegen('meta-dbus-idle-monitor',
   'idle-monitor.xml',
   namespace: 'MetaDBus',
@@ -58,7 +64,11 @@ libcinnamon_desktop_headers = [
 ]
 
 libcinnamon_desktop = shared_library('cinnamon-desktop',
-  [libcinnamon_desktop_sources, dbus_idle_built_sources],
+  [
+    libcinnamon_desktop_sources,
+    dbus_idle_built_sources,
+    dbus_xrandr_built_sources
+  ],
   include_directories: [ rootInclude ],
   c_args: [
     '-DG_LOG_DOMAIN="CinnamonDesktop"',
