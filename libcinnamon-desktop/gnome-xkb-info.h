@@ -30,9 +30,6 @@
 
 #include <glib-object.h>
 
-#include <X11/XKBlib.h>
-#include <X11/extensions/XKBrules.h>
-
 G_BEGIN_DECLS
 
 #define GNOME_TYPE_XKB_INFO            (gnome_xkb_info_get_type ())
@@ -58,6 +55,8 @@ struct _GnomeXkbInfoClass
   GObjectClass parent_class;
 };
 
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(GnomeXkbInfo, g_object_unref)
+
 GType           gnome_xkb_info_get_type                         (void);
 GnomeXkbInfo   *gnome_xkb_info_new                              (void);
 GList          *gnome_xkb_info_get_all_layouts                  (GnomeXkbInfo *self);
@@ -67,23 +66,20 @@ gboolean        gnome_xkb_info_get_layout_info                  (GnomeXkbInfo *s
                                                                  const gchar **short_name,
                                                                  const gchar **xkb_layout,
                                                                  const gchar **xkb_variant);
-gboolean        gnome_xkb_info_get_layout_info_for_language     (GnomeXkbInfo *self,
-                                                                 const gchar  *language,
-                                                                 const gchar **id,
-                                                                 const gchar **display_name,
-                                                                 const gchar **short_name,
-                                                                 const gchar **xkb_layout,
-                                                                 const gchar **xkb_variant);
 GList          *gnome_xkb_info_get_all_option_groups            (GnomeXkbInfo *self);
+const gchar    *gnome_xkb_info_description_for_group            (GnomeXkbInfo *self,
+                                                                 const gchar  *group_id);
 GList          *gnome_xkb_info_get_options_for_group            (GnomeXkbInfo *self,
                                                                  const gchar  *group_id);
 const gchar    *gnome_xkb_info_description_for_option           (GnomeXkbInfo *self,
                                                                  const gchar  *group_id,
                                                                  const gchar  *id);
-
-void            gnome_xkb_info_get_var_defs                     (gchar            **rules,
-                                                                 XkbRF_VarDefsRec **var_defs);
-void            gnome_xkb_info_free_var_defs                    (XkbRF_VarDefsRec  *var_defs);
+GList          *gnome_xkb_info_get_layouts_for_language         (GnomeXkbInfo *self,
+                                                                 const gchar  *language_code);
+GList          *gnome_xkb_info_get_layouts_for_country          (GnomeXkbInfo *self,
+                                                                 const gchar  *country_code);
+GList          *gnome_xkb_info_get_languages_for_layout         (GnomeXkbInfo *self,
+                                                                 const gchar  *layout_id);
 
 G_END_DECLS
 
