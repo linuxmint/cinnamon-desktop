@@ -1,3 +1,16 @@
+cinnamon-desktop (6.4.0) xia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Simplify overamplification setting
+
+  [ Michael Webster ]
+  * Adapt gnome-rr-* to work thru muffin, to support color profiles and nightlight in x11/wayland.
+  * Backport some language/locale-related changes for keyboard layout support.
+  * Remove gnome-installer.
+  * Update debian/symbols file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Nov 2024 13:16:51 +0000
+
 cinnamon-desktop (6.2.0) wilma; urgency=medium
 
   [ Michael Webster ]
