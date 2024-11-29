@@ -7,6 +7,7 @@ Build-Depends:
  gobject-introspection (>= 0.10.2-1~),
  gtk-doc-tools (>= 1.4),
  intltool (>= 0.40.6),
+ iso-codes,
  libaccountsservice-dev,
  libgdk-pixbuf2.0-dev (>= 2.22.0),
  libgirepository1.0-dev (>= 0.10.2-1~),
