@@ -63,20 +63,6 @@ use_alsa = get_option('alsa')
 xkb_base = xkbconf.get_variable(pkgconfig: 'xkb_base')
 iso_codes_prefix = iso_codes.get_variable(pkgconfig: 'prefix')
 
-# Path to the pnp.ids file -- to know if we use one shipped with another
-# package, or an internal file
-
-pnp_ids_path = get_option('pnp_ids')
-pnp_ids_install_internal = (pnp_ids_path == '')
-
-if pnp_ids_install_internal
-  # Default value
-  pnp_ids_path = join_paths(get_option('datadir'), 'libcinnamon-desktop')
-  pnp_ids_abspath = join_paths(get_option('prefix'), pnp_ids_path)
-else
-  pnp_ids_abspath = pnp_ids_path
-endif
-
 ################################################################################
 # Config
 
@@ -113,12 +99,6 @@ subdir('libcinnamon-desktop')
 subdir('libcvc')
 subdir('schemas')
 
-
-pnp_message = '@0@: @1@'.format(
-  ''+(pnp_ids_install_internal ? 'internal' : 'system'),
-  pnp_ids_abspath
-)
-
 message('\n'.join([
   '',
   '        prefix:                       ' + get_option('prefix'),
@@ -133,7 +113,6 @@ message('\n'.join([
   '        compiler:                     ' + cc.get_id(),
   '        debugging support:            ' + get_option('buildtype'),
   '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
-  '        Use PNP files:                ' + pnp_message,
   '        Use ALSA:                     ' + '@0@'.format(use_alsa),
   '        systemd:                      @0@'.format(systemd.found()),
   '',

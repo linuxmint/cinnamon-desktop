@@ -73,7 +73,6 @@ libcinnamon_desktop = shared_library('cinnamon-desktop',
   include_directories: [ rootInclude ],
   c_args: [
     '-DG_LOG_DOMAIN="CinnamonDesktop"',
-    '-DPNP_IDS="@0@"'.format(pnp_ids_path),
     '-DXKB_BASE="@0@"'.format(xkb_base),
   ],
   dependencies: cinnamon_deps,
@@ -96,12 +95,6 @@ pkgconfig.generate(
   subdirs: join_paths('cinnamon-desktop'),
   variables: [ 'exec_prefix=${prefix}'],
 )
-
-if pnp_ids_install_internal
-  install_data('pnp.ids',
-    install_dir: pnp_ids_path,
-  )
-endif
 
 cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
   sources: 'cdesktop-enums.h',
