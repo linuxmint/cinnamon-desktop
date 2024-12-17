@@ -114,6 +114,20 @@
       <summary>Display album art on the lock screen</summary>
       <description>Set this to true to show album art on the lock screen, if available.</description>
     </key>
+    <key name="show-weather" type="b">
+      <default>false</default>
+      <summary>Display local weather on the lock screen</summary>
+      <description>Set this to true to show local weather on the lock screen.</description>
+    </key>
+    <key name="weather-location" type="s">
+      <default>""</default>
+      <summary>Optional, override automatic location in the format LAT,LON</summary>
+      <description>If automatic location is incorrect, specify a precise location in the format LAT,LON where LAT and LON are decimal numbers, for example: 41.85,-87.65</description>
+    </key>
+    <key name="weather-units" type="s">
+      <default>""</default>
+      <summary>Must be either metric or imperial. Defaults to metric if left blank.</summary>
+    </key>
     <key name="allow-keyboard-shortcuts" type="b">
       <default>true</default>
       <summary>Control whether keyboard shortcuts are allowed on the lock screen</summary>
@@ -133,7 +147,7 @@
     </key>
     <key name="floating-widgets" type="b">
       <default>true</default>
-      <summary>Control whether the clock and albumart widgets will randomly change position over time.</summary>
+      <summary>Control whether the clock, albumart, and weather widgets will randomly change position over time.</summary>
     </key>
     <key name="layout-group" type="i">
       <default>-1</default>
