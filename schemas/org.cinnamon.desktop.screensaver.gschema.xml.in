@@ -145,5 +145,13 @@
       <summary>Specify custom screen locker command</summary>
       <description>If empty, cinnamon-screensaver will be used</description>
     </key>
+    <key name="hide-unlock-button" type="b">
+      <default>false</default>
+      <summary>Hide unlock button.</summary>
+    </key>
+    <key name="hide-on-screen-keyboard-button" type="b">
+      <default>false</default>
+      <summary>Hide on screen keyboard button</summary>
+    </key>
   </schema>
 </schemalist>
