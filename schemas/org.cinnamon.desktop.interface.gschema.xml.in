@@ -168,10 +168,7 @@
     </key>
     <key name="upscale-fractional-scaling" type="b">
       <default>false</default>
-      <summary>Achieve fractional scaling by scaling up.</summary>
-      <description>
-        Fractional scaling is usually achieved by setting the global scale factor to a higher value and then scaling down.  Scaling up instead yields better performance but poorer quality - in certain configurations and hardware, this may be acceptable.
-      </description>
+      <summary>unused - see org.cinnamon.muffin.x11 fractional-scale-mode</summary>
     </key>
     <key name="gtk-im-status-style" type="s">
       <default>'callback'</default>
