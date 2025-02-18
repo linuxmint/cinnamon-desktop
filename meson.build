@@ -61,7 +61,7 @@ cinnamon_deps = [
 use_alsa = get_option('alsa')
 
 xkb_base = xkbconf.get_variable(pkgconfig: 'xkb_base')
-iso_codes_prefix = iso_codes.get_pkgconfig_variable('prefix')
+iso_codes_prefix = iso_codes.get_variable(pkgconfig: 'prefix')
 
 # Path to the pnp.ids file -- to know if we use one shipped with another
 # package, or an internal file
