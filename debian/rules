@@ -9,7 +9,7 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL = 2
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--buildtype=debug \
+		--buildtype=debugoptimized \
 		-Dpnp_ids=/usr/share/hwdata/pnp.ids
 
 override_dh_strip:
