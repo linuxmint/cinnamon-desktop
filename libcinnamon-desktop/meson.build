@@ -54,6 +54,7 @@ libcinnamon_desktop_headers = [
   'gnome-desktop-thumbnail.h',
   'gnome-desktop-utils.h',
   'gnome-idle-monitor.h',
+  'gnome-languages.h',
   'gnome-pnp-ids.h',
   'gnome-rr-config.h',
   'gnome-rr-labeler.h',
