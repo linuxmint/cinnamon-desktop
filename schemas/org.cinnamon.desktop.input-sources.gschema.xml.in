@@ -10,6 +10,8 @@
         the current one in effect. The value is automatically capped
         to remain in the range [0, sources_length) as long as the
         sources list isn't empty.
+
+        DEPRECATED: This key is deprecated and ignored.
       </description>
     </key>
     <key name="sources" type="a(ss)">
@@ -40,6 +42,14 @@
       <description>
         Makes all installed input sources available for choosing in
         System Settings.
+      </description>
+    </key>
+    <key name="per-window" type="b">
+      <default>false</default>
+      <summary>Use different input sources for each window</summary>
+      <description>
+        When enabled, input sources get attached to the currently
+        focused window when activated.
       </description>
     </key>
   </schema>
