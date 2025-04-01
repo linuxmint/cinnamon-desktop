@@ -279,7 +279,7 @@
       <summary>Enable or disable gtk overlay scrollbars</summary>
     </key>
     <key name="keyboard-layout-show-flags" type="b">
-      <default>true</default>
+      <default>false</default>
       <summary>Prefer country flags to group names when showing keyboard layouts.</summary>
     </key>
     <key name="keyboard-layout-use-upper" type="b">
