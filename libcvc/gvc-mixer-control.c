@@ -547,8 +547,14 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl  *control,
         g_return_val_if_fail (GVC_IS_MIXER_UI_DEVICE (device), FALSE);
 
         g_object_get (G_OBJECT (device), "card", &card, NULL);
-        current_profile = gvc_mixer_card_get_profile (card);
+        current_profile = gvc_mixer_card_get_profile(card);
 
+        if (!current_profile) {
+          g_warning("gvc_mixer_card_get_profile() returned NULL for card %p",
+                    card);
+          return FALSE;
+        }
+        
         if (current_profile)
                 best_profile = gvc_mixer_ui_device_get_best_profile (device, profile, current_profile->profile);
         else
