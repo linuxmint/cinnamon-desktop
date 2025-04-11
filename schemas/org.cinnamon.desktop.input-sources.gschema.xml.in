@@ -28,14 +28,6 @@
         IBus won’t be used.
       </description>
     </key>
-    <key name="mru-sources" type="a(ss)">
-      <default>[]</default>
-      <summary>List of most recently used input sources</summary>
-      <description>
-        List of most recently used input sources. The value is in the
-        same format as the available sources list.
-      </description>
-    </key>
     <key name="xkb-options" type="as">
       <default>[]</default>
       <summary>List of XKB options</summary>
