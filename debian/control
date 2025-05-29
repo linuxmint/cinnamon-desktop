@@ -39,6 +39,7 @@ Package: gir1.2-cinnamondesktop-3.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends}, ${misc:Depends}
+Provides: gir1.2-cdesktopenums-3.0 (= ${binary:Version})
 Description: Introspection data for CinnamonDesktop
  This package contains the introspection data for libcinnamon-desktop.
 
