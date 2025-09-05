@@ -1,3 +1,13 @@
+cinnamon-desktop (6.4.2) gigi; urgency=medium
+
+  [ Michael Webster ]
+  * build: debian/control fix for alt package name, use debugoptimized build type, fix meson warning.
+  * debian/control: Remove old gdkpixbuf package.
+  * build: Fix gnome-languages introspection.
+  * debian/control: Add provides to gir1.2-cinnamondesktop-3.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 05 Sep 2025 16:40:59 +0100
+
 cinnamon-desktop (6.4.1) xia; urgency=medium
 
   [ Himadri Sekhar Basu ]
