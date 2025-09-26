@@ -340,47 +340,23 @@ _gdk_pixbuf_new_from_uri_at_scale (const char *uri,
     gboolean has_frame;
     SizePrepareContext info;
     GFile *file;
-    GFileInfo *file_info;
     GInputStream *input_stream;
     GError *error = NULL;
 
     g_return_val_if_fail (uri != NULL, NULL);
-
     input_stream = NULL;
 
     file = g_file_new_for_uri (uri);
 
-    /* First see if we can get an input stream via preview::icon  */
-    file_info = g_file_query_info (file,
-                                   G_FILE_ATTRIBUTE_PREVIEW_ICON,
-                                   G_FILE_QUERY_INFO_NONE,
-                                   NULL,  /* GCancellable */
-                                   NULL); /* return location for GError */
-    if (file_info != NULL) {
-        GObject *object;
-
-        object = g_file_info_get_attribute_object (file_info,
-                                                   G_FILE_ATTRIBUTE_PREVIEW_ICON);
-        if (object != NULL && G_IS_LOADABLE_ICON (object)) {
-            input_stream = g_loadable_icon_load (G_LOADABLE_ICON (object),
-                                                 0,     /* size */
-                                                 NULL,  /* return location for type */
-                                                 NULL,  /* GCancellable */
-                                                 NULL); /* return location for GError */
-        }
-        g_object_unref (file_info);
-    }
-
+    input_stream = G_INPUT_STREAM (g_file_read (file, NULL, &error));
     if (input_stream == NULL) {
-        input_stream = G_INPUT_STREAM (g_file_read (file, NULL, &error));
-        if (input_stream == NULL) {
-            if (error != NULL) {
-                g_warning ("Unable to create an input stream for %s: %s", uri, error->message);
-                g_clear_error (&error);
-            }
-	    g_object_unref (file);
-            return NULL;
+        if (error != NULL) {
+            g_warning ("Unable to create an input stream for %s: %s", uri, error->message);
+            g_clear_error (&error);
         }
+
+        g_object_unref (file);
+        return NULL;
     }
 
     has_frame = FALSE;
