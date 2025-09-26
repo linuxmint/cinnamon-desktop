@@ -1627,6 +1627,8 @@ gnome_desktop_thumbnail_factory_create_failed_thumbnail (GnomeDesktopThumbnailFa
   
   g_snprintf (mtime_str, 21, "%ld",  mtime);
   pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, 1, 1);
+  gdk_pixbuf_fill (pixbuf, 0x00000000);
+
   saved_ok  = gdk_pixbuf_save (pixbuf,
 			       tmp_path,
 			       "png", NULL, 
