@@ -2879,7 +2879,7 @@ update_event_role_stream (GvcMixerControl                  *control,
         max_volume = pa_cvolume_max (&info->volume);
 
         gvc_mixer_stream_set_name (stream, _("System Sounds"));
-        gvc_mixer_stream_set_icon_name (stream, "emblem-system-symbolic");
+        gvc_mixer_stream_set_icon_name (stream, "xapp-emblem-system-symbolic");
         gvc_mixer_stream_set_volume (stream, (guint)max_volume);
         gvc_mixer_stream_set_is_muted (stream, info->mute);
 
