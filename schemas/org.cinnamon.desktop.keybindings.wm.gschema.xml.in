@@ -365,5 +365,23 @@
       <summary>Switch input source backward</summary>
       <description>Binding to select the previous input source</description>
     </key>
+    <key name="switch-input-source-0" type="as">
+      <default>[]</default>
+      <summary>Switch to the first listed input source</summary>
+    </key>
+    <key name="switch-input-source-1" type="as">
+      <default>[]</default>
+      <summary>Switch to the second listed input source</summary>
+    </key>
+    <key name="switch-input-source-2" type="as">
+      <default>[]</default>
+      <summary>Switch to the third listed input source</summary>
+    </key>
+    <key name="switch-input-source-3" type="as">
+      <default>[]</default>
+      <summary>Switch to the fourth listed input source</summary>
+    </key>
+
+
   </schema>
 </schemalist>
