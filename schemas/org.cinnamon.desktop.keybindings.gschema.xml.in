@@ -29,6 +29,11 @@
       <summary>Magnifier zoom out</summary>
       <description>Binding for the magnifier to zoom out</description>
     </key>
+    <key name="magnifier-zoom-reset" type="as">
+      <default>['&lt;Alt&gt;&lt;Super&gt;0']</default>
+      <summary>Reset magnifier to 1x</summary>
+      <description>Binding to reset the magnifier</description>
+    </key>
     <key name="pointer-next-monitor" type="as">
       <default>[]</default>
       <summary>Warp the pointer to the next monitor</summary>
