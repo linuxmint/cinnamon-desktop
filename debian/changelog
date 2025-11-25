@@ -1,3 +1,34 @@
+cinnamon-desktop (6.6.0) zena; urgency=medium
+
+  [ Michael Webster ]
+  * org.cinnamon.desktop.interface.gschema: Mark the old scaling direction key as as unused.
+  * build: debian/control fix for alt package name, use debugoptimized build type, fix meson warning.
+  * debian/control: Remove old gdkpixbuf package.
+  * build: Fix gnome-languages introspection.
+
+  [ Spencer Lommel ]
+  * Cvc null check profile (#254)
+
+  [ Matt Turnbull ]
+  * Remove the pnp_ids configuration option (unused as of 913198430f27852544f9443a250421168d3d4466) (#249)
+
+  [ Michael Webster ]
+  * debian/control: Add provides to gir1.2-cinnamondesktop-3.0
+  * Update input-sources schema
+  * Don't show keyboard layout flags by default
+  * gnome-desktop-thumbnail.c: Check for a filesystem-supplied preview icon before running thumbnailers.
+  * gnome-desktop-thumbnail.c: Remove preview icon check in the fallback pixbuf loader code.
+  * gnome-desktop-thumbnail.c: Initialize empty pixbuf.
+
+  [ Clement Lefebvre ]
+  * Switch to xapp-symbolic-icons (XSI)
+
+  [ Michael Webster ]
+  * org.cinnamon.desktop.keybindings.wm.gschema: Add direct keyboard layout keybindings.
+  * Add magnifier reset keybinding.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 25 Nov 2025 14:15:05 +0000
+
 cinnamon-desktop (6.4.1) xia; urgency=medium
 
   [ Himadri Sekhar Basu ]
