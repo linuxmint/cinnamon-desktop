@@ -587,7 +587,7 @@ parse_rules (GnomeXkbInfo *self)
     goto cleanup;
   g_free (file_path);
 
-  settings = g_settings_new ("org.gnome.desktop.input-sources");
+  settings = g_settings_new ("org.cinnamon.desktop.input-sources");
   show_all_sources = g_settings_get_boolean (settings, "show-all-sources");
   g_object_unref (settings);
 
