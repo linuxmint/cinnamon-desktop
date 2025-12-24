@@ -74,6 +74,8 @@ struct _GnomeXkbInfoPrivate
   GHashTable *layouts_by_language;
   GHashTable *layouts_table;
 
+  gboolean include_extras;
+
   /* Only used while parsing */
   XkbOptionGroup *current_parser_group;
   XkbOption *current_parser_option;
@@ -578,8 +580,6 @@ static void
 parse_rules (GnomeXkbInfo *self)
 {
   GnomeXkbInfoPrivate *priv = self->priv;
-  GSettings *settings;
-  gboolean show_all_sources;
   gchar *file_path;
   GError *error = NULL;
 
@@ -610,11 +610,7 @@ parse_rules (GnomeXkbInfo *self)
     goto cleanup;
   g_free (file_path);
 
-  settings = g_settings_new ("org.cinnamon.desktop.input-sources");
-  show_all_sources = g_settings_get_boolean (settings, "show-all-sources");
-  g_object_unref (settings);
-
-  if (!show_all_sources)
+  if (!priv->include_extras)
     return;
 
   file_path = get_xml_rules_file_path (".extras.xml");
@@ -650,6 +646,7 @@ static void
 gnome_xkb_info_init (GnomeXkbInfo *self)
 {
   self->priv = gnome_xkb_info_get_instance_private (self);
+  self->priv->include_extras = FALSE;
 }
 
 static void
@@ -686,6 +683,22 @@ GnomeXkbInfo *
 gnome_xkb_info_new (void)
 {
   return g_object_new (GNOME_TYPE_XKB_INFO, NULL);
+}
+
+/**
+ * gnome_xkb_info_new_with_extras:
+ *
+ * Returns: (transfer full): a new #GnomeXkbInfo instance that includes extra layouts and options.
+ */
+GnomeXkbInfo *
+gnome_xkb_info_new_with_extras (void)
+{
+  GnomeXkbInfo *info;
+
+  info = g_object_new (GNOME_TYPE_XKB_INFO, NULL);
+  info->priv->include_extras = TRUE;
+
+  return info;
 }
 
 /**

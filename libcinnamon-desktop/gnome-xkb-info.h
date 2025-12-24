@@ -59,6 +59,7 @@ G_DEFINE_AUTOPTR_CLEANUP_FUNC(GnomeXkbInfo, g_object_unref)
 
 GType           gnome_xkb_info_get_type                         (void);
 GnomeXkbInfo   *gnome_xkb_info_new                              (void);
+GnomeXkbInfo   *gnome_xkb_info_new_with_extras                  (void);
 GList          *gnome_xkb_info_get_all_layouts                  (GnomeXkbInfo *self);
 gboolean        gnome_xkb_info_get_layout_info                  (GnomeXkbInfo *self,
                                                                  const gchar  *id,

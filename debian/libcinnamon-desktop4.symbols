@@ -202,6 +202,7 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_xkb_info_get_options_for_group@Base 2.0.4
  gnome_xkb_info_get_type@Base 2.0.4
  gnome_xkb_info_new@Base 2.0.4
+ gnome_xkb_info_new_with_extras@Base 6.6.0
  make_display_name@Base 3.8.1
  meta_dbus_display_config_call_apply_configuration@Base 6.2.0
  meta_dbus_display_config_call_apply_configuration_finish@Base 6.2.0
