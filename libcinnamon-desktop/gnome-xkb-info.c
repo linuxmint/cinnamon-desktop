@@ -459,6 +459,8 @@ parse_end_element (GMarkupParseContext  *context,
     }
   else if (strcmp (element_name, "group") == 0)
     {
+      XkbOptionGroup *existing_group;
+
       if (!priv->current_parser_group->description || !priv->current_parser_group->id)
         {
           g_set_error (error, G_MARKUP_ERROR, G_MARKUP_ERROR_INVALID_CONTENT,
@@ -466,9 +468,30 @@ parse_end_element (GMarkupParseContext  *context,
           return;
         }
 
-      g_hash_table_replace (priv->option_groups_table,
-                            priv->current_parser_group->id,
-                            priv->current_parser_group);
+      existing_group = g_hash_table_lookup (priv->option_groups_table,
+                                            priv->current_parser_group->id);
+
+      if (existing_group)
+        {
+          GHashTableIter iter;
+          gpointer key, value;
+
+          g_hash_table_iter_init (&iter, priv->current_parser_group->options_table);
+          while (g_hash_table_iter_next (&iter, &key, &value))
+            {
+              g_hash_table_iter_steal (&iter);
+              g_hash_table_replace (existing_group->options_table, key, value);
+            }
+
+          free_option_group (priv->current_parser_group);
+        }
+      else
+        {
+          g_hash_table_replace (priv->option_groups_table,
+                                priv->current_parser_group->id,
+                                priv->current_parser_group);
+        }
+
       priv->current_parser_group = NULL;
     }
   else if (strcmp (element_name, "option") == 0)
