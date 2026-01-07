@@ -200,6 +200,7 @@ libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  gnome_xkb_info_get_layouts_for_country@Base 6.2.0
  gnome_xkb_info_get_layouts_for_language@Base 6.2.0
  gnome_xkb_info_get_options_for_group@Base 2.0.4
+ gnome_xkb_info_get_option_group_allows_multiple_selection@Base 6.6.2
  gnome_xkb_info_get_type@Base 2.0.4
  gnome_xkb_info_new@Base 2.0.4
  gnome_xkb_info_new_with_extras@Base 6.6.0

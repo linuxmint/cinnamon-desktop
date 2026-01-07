@@ -788,6 +788,36 @@ gnome_xkb_info_description_for_group (GnomeXkbInfo *self,
 }
 
 /**
+ * gnome_xkb_info_get_option_group_allows_multiple_selection:
+ * @self: a #GnomeXkbInfo
+ * @group_id: identifier for group
+ *
+ * Gets whether multiple options can be selected for a given group.
+ *
+ * Return value: %TRUE if multiple selection is allowed, %FALSE otherwise.
+ */
+gboolean
+gnome_xkb_info_get_option_group_allows_multiple_selection (GnomeXkbInfo *self,
+                                                           const gchar  *group_id)
+{
+  GnomeXkbInfoPrivate *priv;
+  const XkbOptionGroup *group;
+
+  g_return_val_if_fail (GNOME_IS_XKB_INFO (self), FALSE);
+
+  priv = self->priv;
+
+  if (!ensure_rules_are_parsed (self))
+    return FALSE;
+
+  group = g_hash_table_lookup (priv->option_groups_table, group_id);
+  if (!group)
+    return FALSE;
+
+  return group->allow_multiple_selection;
+}
+
+/**
  * gnome_xkb_info_get_options_for_group:
  * @self: a #GnomeXkbInfo
  * @group_id: group's identifier about which to retrieve the options
@@ -800,7 +830,7 @@ gnome_xkb_info_description_for_group (GnomeXkbInfo *self,
  * the strings themselves, those are internally allocated and must not
  * be modified.
  *
- * Since: 3.6
+ * Since: 6.6
  */
 GList *
 gnome_xkb_info_get_options_for_group (GnomeXkbInfo *self,

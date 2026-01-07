@@ -70,6 +70,8 @@ gboolean        gnome_xkb_info_get_layout_info                  (GnomeXkbInfo *s
 GList          *gnome_xkb_info_get_all_option_groups            (GnomeXkbInfo *self);
 const gchar    *gnome_xkb_info_description_for_group            (GnomeXkbInfo *self,
                                                                  const gchar  *group_id);
+gboolean        gnome_xkb_info_get_option_group_allows_multiple_selection (GnomeXkbInfo *self,
+                                                                 const gchar  *group_id);
 GList          *gnome_xkb_info_get_options_for_group            (GnomeXkbInfo *self,
                                                                  const gchar  *group_id);
 const gchar    *gnome_xkb_info_description_for_option           (GnomeXkbInfo *self,
