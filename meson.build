@@ -1,7 +1,7 @@
 # Meson build file
 
 # https://github.com/linuxmint/cinnamon-desktop
-project('cinnamon-desktop', 'c', version : '6.6.1', meson_version : '>=0.56.0')
+project('cinnamon-desktop', 'c', version : '6.6.2', meson_version : '>=0.56.0')
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C.R.A.

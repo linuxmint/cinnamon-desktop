@@ -1,3 +1,12 @@
+cinnamon-desktop (6.6.2) zena; urgency=medium
+
+  [ Michael Webster ]
+  * gnome-xkb-info.c: Add to existing option group when scanning extras, instead of replacing the original group.
+  * gnome-xkb-info: Don't rely on gsettings to return the full set of xkb layouts and options.
+  * gnome-xkb-info: Expose 'allows_multiple_selection'.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Jan 2026 13:27:24 +0000
+
 cinnamon-desktop (6.6.1) zena; urgency=medium
 
   [ Michael Webster ]
