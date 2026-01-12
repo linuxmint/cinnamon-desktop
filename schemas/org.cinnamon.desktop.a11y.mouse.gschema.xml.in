@@ -46,6 +46,11 @@
       <summary>Enable dwell clicks</summary>
       <description>Enable dwell clicks.</description>
     </key>
+    <key name="dwell-click-mode-lock" type="b">
+      <default>false</default>
+      <summary>Lock click mode</summary>
+      <description>If true, the selected click mode persists after use. If false, non-primary click modes (double-click, secondary, drag) reset to single-click after use.</description>
+    </key>
     <key name="secondary-click-enabled" type="b">
       <default>false</default>
       <summary>Secondary click enabled</summary>
