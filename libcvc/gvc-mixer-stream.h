@@ -22,9 +22,9 @@
 #define __GVC_MIXER_STREAM_H
 
 #include <glib-object.h>
+#include <pulse/pulseaudio.h>
 #include "gvc-channel-map.h"
 #include <gio/gio.h>
-#include <pulse/pulseaudio.h>
 
 G_BEGIN_DECLS
 
@@ -54,9 +54,6 @@ typedef struct
                                      gboolean        is_muted);
         gboolean (*change_port)     (GvcMixerStream *stream,
                                      const char     *port);
-        void (*monitor_update)      (GvcMixerStream *stream,
-                                     gdouble        v);
-        void (*monitor_suspend)     (GvcMixerStream *stream);
 } GvcMixerStreamClass;
 
 typedef struct
@@ -86,10 +83,10 @@ const GList *       gvc_mixer_stream_get_ports       (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_change_port     (GvcMixerStream *stream,
                                                       const char     *port);
 
-guint32             gvc_mixer_stream_get_volume      (GvcMixerStream *stream);
+pa_volume_t         gvc_mixer_stream_get_volume      (GvcMixerStream *stream);
 gdouble             gvc_mixer_stream_get_decibel     (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_push_volume     (GvcMixerStream *stream);
-guint32             gvc_mixer_stream_get_base_volume (GvcMixerStream *stream);
+pa_volume_t         gvc_mixer_stream_get_base_volume (GvcMixerStream *stream);
 
 gboolean            gvc_mixer_stream_get_is_muted    (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_get_can_decibel (GvcMixerStream *stream);
@@ -107,11 +104,10 @@ gboolean            gvc_mixer_stream_is_event_stream (GvcMixerStream *stream);
 gboolean            gvc_mixer_stream_is_virtual      (GvcMixerStream *stream);
 guint               gvc_mixer_stream_get_card_index  (GvcMixerStream *stream);
 GvcMixerStreamState gvc_mixer_stream_get_state       (GvcMixerStream *stream);
-void                gvc_mixer_stream_create_monitor  (GvcMixerStream *stream);
-void                gvc_mixer_stream_remove_monitor  (GvcMixerStream *stream);
+
 /* private */
 gboolean            gvc_mixer_stream_set_volume      (GvcMixerStream *stream,
-                                                      guint32     volume);
+                                                      pa_volume_t     volume);
 gboolean            gvc_mixer_stream_set_decibel     (GvcMixerStream *stream,
                                                       gdouble         db);
 gboolean            gvc_mixer_stream_set_is_muted    (GvcMixerStream *stream,
@@ -135,7 +131,7 @@ gboolean            gvc_mixer_stream_set_is_virtual  (GvcMixerStream *stream,
 gboolean            gvc_mixer_stream_set_application_id (GvcMixerStream *stream,
                                                          const char *application_id);
 gboolean            gvc_mixer_stream_set_base_volume (GvcMixerStream *stream,
-                                                      guint32     base_volume);
+                                                      pa_volume_t     base_volume);
 gboolean            gvc_mixer_stream_set_port        (GvcMixerStream *stream,
                                                       const char     *port);
 gboolean            gvc_mixer_stream_set_ports       (GvcMixerStream *stream,
