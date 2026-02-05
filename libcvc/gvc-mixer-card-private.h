@@ -30,6 +30,12 @@ GvcMixerCard *        gvc_mixer_card_new               (pa_context   *context,
                                                         guint         index);
 pa_context *          gvc_mixer_card_get_pa_context    (GvcMixerCard *card);
 
+void gvc_mixer_card_add_port (GvcMixerCard     *card,
+                              GvcMixerCardPort *port);
+
+void gvc_mixer_card_remove_port (GvcMixerCard     *card,
+                                 GvcMixerCardPort *port);
+
 G_END_DECLS
 
 #endif /* __GVC_MIXER_CARD_PRIVATE_H */

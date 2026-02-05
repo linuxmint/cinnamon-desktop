@@ -42,8 +42,10 @@ struct GvcMixerEventRolePrivate
 enum
 {
         PROP_0,
-        PROP_DEVICE
+        PROP_DEVICE,
+        N_PROPS
 };
+static GParamSpec *obj_props[N_PROPS] = { NULL, };
 
 static void     gvc_mixer_event_role_finalize   (GObject            *object);
 
@@ -115,7 +117,7 @@ gvc_mixer_event_role_set_device (GvcMixerEventRole *role,
 
         g_free (role->priv->device);
         role->priv->device = g_strdup (device);
-        g_object_notify (G_OBJECT (role), "device");
+        g_object_notify_by_pspec (G_OBJECT (role), obj_props[PROP_DEVICE]);
 
         return TRUE;
 }
@@ -169,13 +171,12 @@ gvc_mixer_event_role_class_init (GvcMixerEventRoleClass *klass)
         stream_class->push_volume = gvc_mixer_event_role_push_volume;
         stream_class->change_is_muted = gvc_mixer_event_role_change_is_muted;
 
-        g_object_class_install_property (object_class,
-                                         PROP_DEVICE,
-                                         g_param_spec_string ("device",
-                                                              "Device",
-                                                              "Device",
-                                                              NULL,
-                                                              G_PARAM_READWRITE|G_PARAM_CONSTRUCT));
+        obj_props[PROP_DEVICE] = g_param_spec_string ("device",
+                                                      "Device",
+                                                      "Device",
+                                                      NULL,
+                                                      G_PARAM_READWRITE|G_PARAM_CONSTRUCT|G_PARAM_STATIC_STRINGS);
+        g_object_class_install_properties (object_class, N_PROPS, obj_props);
 }
 
 static void
