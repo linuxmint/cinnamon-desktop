@@ -19,6 +19,7 @@ libcvc.so.0 libcvc0 #MINVER#
  gvc_channel_map_set_lfe@Base 4.2.0
  gvc_channel_map_volume_changed@Base 4.2.0
  gvc_headset_port_choice_get_type@Base 5.3.0
+ gvc_mixer_card_add_port@Base 6.6.2
  gvc_mixer_card_change_profile@Base 4.2.0
  gvc_mixer_card_get_gicon@Base 4.2.0
  gvc_mixer_card_get_icon_name@Base 4.2.0
@@ -32,6 +33,7 @@ libcvc.so.0 libcvc0 #MINVER#
  gvc_mixer_card_get_type@Base 4.2.0
  gvc_mixer_card_new@Base 4.2.0
  gvc_mixer_card_profile_compare@Base 4.2.0
+ gvc_mixer_card_remove_port@Base 6.6.2
  gvc_mixer_card_set_icon_name@Base 4.2.0
  gvc_mixer_card_set_name@Base 4.2.0
  gvc_mixer_card_set_ports@Base 4.2.0

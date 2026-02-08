@@ -567,6 +567,11 @@ gvc_mixer_ui_device_get_active_profile (GvcMixerUIDevice* device)
         }
 
         profile = gvc_mixer_card_get_profile (device->priv->card);
+        if (!profile) {
+                g_warning ("gvc_mixer_card_get_profile() returned NULL for card %p", device->priv->card);
+                return NULL;
+        }
+
         return gvc_mixer_ui_device_get_matching_profile (device, profile->profile);
 }
 

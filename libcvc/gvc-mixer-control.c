@@ -542,6 +542,11 @@ gvc_mixer_control_change_profile_on_selected_device (GvcMixerControl  *control,
         g_object_get (G_OBJECT (device), "card", &card, NULL);
         current_profile = gvc_mixer_card_get_profile (card);
 
+        if (!current_profile) {
+                g_warning ("gvc_mixer_card_get_profile() returned NULL for card %p", card);
+                return FALSE;
+        }
+
         if (current_profile)
                 best_profile = gvc_mixer_ui_device_get_best_profile (device, profile, current_profile->profile);
         else
@@ -1816,7 +1821,7 @@ update_sink_input (GvcMixerControl          *control,
 
         set_application_id_from_proplist (stream, info->proplist);
         set_is_event_stream_from_proplist (stream, info->proplist);
-        set_icon_name_from_proplist (stream, info->proplist, "application-x-executable");
+        set_icon_name_from_proplist (stream, info->proplist, "applications-multimedia");
         gvc_mixer_stream_set_volume (stream, (guint)max_volume);
         gvc_mixer_stream_set_is_muted (stream, info->mute);
         gvc_mixer_stream_set_is_virtual (stream, info->client == PA_INVALID_INDEX);
@@ -2916,7 +2921,7 @@ update_event_role_stream (GvcMixerControl                  *control,
                 max_volume = pa_cvolume_max (&info->volume);
 
         gvc_mixer_stream_set_name (stream, _("System Sounds"));
-        gvc_mixer_stream_set_icon_name (stream, "audio-x-generic");
+        gvc_mixer_stream_set_icon_name (stream, "xsi-emblem-system-symbolic");
         gvc_mixer_stream_set_volume (stream, (guint)max_volume);
         gvc_mixer_stream_set_is_muted (stream, info->mute);
 
