@@ -89,6 +89,38 @@ gvc_channel_map_get_volume (GvcChannelMap *map)
         return map->priv->extern_volume;
 }
 
+gfloat
+gvc_channel_map_get_balance (GvcChannelMap *map)
+{
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), 0);
+
+        if (!pa_channel_map_valid (&map->priv->pa_map))
+                return 0;
+
+        if (gvc_channel_map_can_balance (map))
+            return (gfloat) pa_cvolume_get_balance (&map->priv->pa_volume, &map->priv->pa_map);
+        else
+            return 0;
+}
+
+void
+gvc_channel_map_set_balance (GvcChannelMap *map,
+                             gfloat        value)
+{
+        pa_cvolume cv;
+
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+
+        if (!gvc_channel_map_can_balance (map))
+                return;
+
+        cv = *gvc_channel_map_get_cvolume (map);
+        pa_cvolume_set_balance (&cv, &map->priv->pa_map, value);
+
+        if (!pa_cvolume_equal (&cv, &map->priv->pa_volume))
+                gvc_channel_map_volume_changed (map, &cv, TRUE);
+}
+
 gboolean
 gvc_channel_map_can_balance (const GvcChannelMap  *map)
 {
@@ -97,12 +129,85 @@ gvc_channel_map_can_balance (const GvcChannelMap  *map)
         return map->priv->can_balance;
 }
 
+gfloat
+gvc_channel_map_get_fade (GvcChannelMap *map)
+{
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), 0);
+
+        if (!pa_channel_map_valid (&map->priv->pa_map))
+                return 0;
+
+        if (gvc_channel_map_can_fade (map))
+            return (gfloat) pa_cvolume_get_fade (&map->priv->pa_volume, &map->priv->pa_map);
+        else
+            return 0;
+}
+
+void
+gvc_channel_map_set_fade (GvcChannelMap *map,
+                          gfloat        value)
+{
+        pa_cvolume cv;
+
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+
+        if (!gvc_channel_map_can_fade (map))
+                return;
+
+        cv = *gvc_channel_map_get_cvolume(map);
+        pa_cvolume_set_fade (&cv, &map->priv->pa_map, value);
+
+        if (!pa_cvolume_equal (&cv, &map->priv->pa_volume))
+                gvc_channel_map_volume_changed(map, &cv, TRUE);
+}
+
 gboolean
 gvc_channel_map_can_fade (const GvcChannelMap  *map)
 {
         g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), FALSE);
 
         return map->priv->can_fade;
+}
+
+gfloat
+gvc_channel_map_get_lfe (GvcChannelMap *map)
+{
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), 0);
+
+        if (!pa_channel_map_valid (&map->priv->pa_map))
+                return 0;
+
+        if (gvc_channel_map_has_lfe (map))
+            return (gfloat) pa_cvolume_get_position (&map->priv->pa_volume, &map->priv->pa_map, PA_CHANNEL_POSITION_LFE);
+        else
+            return 0;
+}
+
+void
+gvc_channel_map_set_lfe (GvcChannelMap *map,
+                         gfloat        value)
+{
+        pa_cvolume cv;
+
+        g_return_if_fail (GVC_IS_CHANNEL_MAP (map));
+
+        if (!gvc_channel_map_has_lfe (map))
+                return;
+
+        cv = *gvc_channel_map_get_cvolume (map);
+
+        pa_cvolume_set_position (&cv, &map->priv->pa_map, PA_CHANNEL_POSITION_LFE, value);
+
+        if (!pa_cvolume_equal (&cv, &map->priv->pa_volume))
+                gvc_channel_map_volume_changed (map, &cv, TRUE);
+}
+
+gboolean
+gvc_channel_map_can_lfe (const GvcChannelMap  *map)
+{
+        g_return_val_if_fail (GVC_IS_CHANNEL_MAP (map), FALSE);
+
+        return gvc_channel_map_has_lfe(map);
 }
 
 const char *
@@ -117,9 +222,9 @@ gvc_channel_map_get_mapping (const GvcChannelMap  *map)
 }
 
 /**
- * gvc_channel_map_has_position: (skip)
+ * gvc_channel_map_has_position:
  * @map:
- * @position:
+ * @position: (type int)
  *
  * Returns:
  */
