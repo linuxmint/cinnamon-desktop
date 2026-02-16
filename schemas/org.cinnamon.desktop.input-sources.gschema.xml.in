@@ -52,5 +52,15 @@
         focused window when activated.
       </description>
     </key>
+    <key name="source-layouts" type="a{ss}">
+      <default>{}</default>
+      <summary>Layout overrides for input sources</summary>
+      <description>
+        Maps IBus engine IDs to XKB layout IDs. When an IBus input method is
+        activated, if it has an entry here, this layout will be used instead
+        of the engine's default layout. For example, {'mozc-jp': 'jp'} would
+        use the Japanese layout when switching to the Mozc input method.
+      </description>
+    </key>
   </schema>
 </schemalist>
