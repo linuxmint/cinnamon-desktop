@@ -60,5 +60,17 @@
       <default>false</default>
       <summary>Whether notifications are displayed over fullscreen windows</summary>
     </key>
+    <key name="application-children" type="as">
+      <default>[]</default>
+      <summary>List of application subfolders</summary>
+    </key>
+  </schema>
+  
+  <schema id="org.cinnamon.desktop.notifications.application">
+    <key type="b" name="enabled">
+      <default>true</default>
+      <summary>Enable notifications</summary>
+      <description>Whether notifications are globally enabled for this application.</description>
+    </key>
   </schema>
 </schemalist>
