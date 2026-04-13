@@ -1,3 +1,22 @@
+cinnamon-desktop (6.7.0) unstable; urgency=medium
+
+  [ Michael Webster ]
+  * Add lock setting for hover-click a11y feature. (#261)
+  * Add stale issue workflow.
+  * Fix bad comment, workflow extension.
+  * .github/workflows: Add generate-test-packages trigger.
+  * input-sources settings: Add a new setting to store the default xkb (#263)
+  * libcvc: refresh from upstream libgnome-volume-control.
+  * libcvc: Re-add stream monitor, balance, fade, lfe to channel map, other small things.
+
+  [ Rick Calixte ]
+  * org.cinnamon.desktop.keybindings.wm schema: Separate key binding for switching workspace up/down from toggling window/workspace selection (#214)
+
+  [ fredcw ]
+  * Add per app notifications schemas... (#266)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 13 Apr 2026 08:28:47 +0100
+
 cinnamon-desktop (6.6.2) zena; urgency=medium
 
   [ Michael Webster ]
