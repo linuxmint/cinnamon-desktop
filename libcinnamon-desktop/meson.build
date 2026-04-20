@@ -122,6 +122,16 @@ gnome.generate_gir(libcinnamon_desktop,
   install: true,
 )
 
+executable('test-xkb-info',
+  'test-xkb-info.c',
+  include_directories: [ rootInclude ],
+  c_args: [
+    '-DGNOME_DESKTOP_USE_UNSTABLE_API',
+  ],
+  dependencies: [ glib, gtk ],
+  link_with: libcinnamon_desktop,
+)
+
 # FIXME
 # https://github.com/mesonbuild/meson/issues/1687
 custom_target('gsettings-enums',
