@@ -1233,7 +1233,7 @@ gnome_desktop_thumbnail_factory_generate_thumbnail (GnomeDesktopThumbnailFactory
       g_autoptr(GError) error = NULL;
       g_autoptr(GBytes) bytes = NULL;
 
-      bytes = _gnome_desktop_thumbnail_script_exec (script, size, uri, &error);
+      bytes = _gnome_desktop_thumbnail_script_exec (script, size, uri, mime_type, &error);
       if (bytes)
         pixbuf = pixbuf_new_from_bytes (bytes, &error);
 

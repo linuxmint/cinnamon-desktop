@@ -85,6 +85,7 @@ create_gst_cache_dir (void)
 static char *
 expand_thumbnailing_elem (const char *elem,
                           const int   size,
+                          const char *mime_type,
                           const char *infile,
                           const char *outfile,
                           gboolean   *got_input,
@@ -126,6 +127,10 @@ expand_thumbnailing_elem (const char *elem,
           break;
         case 's':
           g_string_append_printf (str, "%d", size);
+          p++;
+          break;
+        case 'm':
+          g_string_append (str, mime_type);
           p++;
           break;
         case '%':
@@ -540,6 +545,7 @@ static char **
 expand_thumbnailing_cmd (const char  *cmd,
                          ScriptExec  *script,
                          int          size,
+                         const char  *mime_type,
                          GError     **error)
 {
   GPtrArray *array;
@@ -581,6 +587,7 @@ expand_thumbnailing_cmd (const char  *cmd,
 
       expanded = expand_thumbnailing_elem (cmd_elems[i],
                                            size,
+                                           mime_type,
                                            script->s_infile ? script->s_infile : script->infile,
                                            script->s_outfile ? script->s_outfile : script->outfile,
                                            &got_in,
@@ -817,6 +824,7 @@ GBytes *
 _gnome_desktop_thumbnail_script_exec (const char  *cmd,
                                       int          size,
                                       const char  *uri,
+                                      const char  *mime_type,
                                       GError     **error)
 {
   g_autofree char *error_out = NULL;
@@ -830,7 +838,7 @@ _gnome_desktop_thumbnail_script_exec (const char  *cmd,
   if (!exec)
     return NULL;
 
-  expanded = expand_thumbnailing_cmd (cmd, exec, size, error);
+  expanded = expand_thumbnailing_cmd (cmd, exec, size, mime_type, error);
   if (expanded == NULL)
     goto out;
 

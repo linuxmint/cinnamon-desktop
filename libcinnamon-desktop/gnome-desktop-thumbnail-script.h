@@ -29,6 +29,7 @@ G_BEGIN_DECLS
 GBytes *_gnome_desktop_thumbnail_script_exec (const char  *cmd,
                                               int          size,
                                               const char  *uri,
+                                              const char  *mime_type,
                                               GError     **error);
 
 G_END_DECLS
