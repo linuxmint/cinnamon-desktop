@@ -30,8 +30,8 @@ endif
 math    = cc.find_library('m')
 
 gdk_pixb= dependency('gdk-pixbuf-2.0',  version: '>=2.22.0')
-gio     = dependency('gio-2.0',         version: '>=2.37.3')
-glib    = dependency('glib-2.0',        version: '>=2.37.3')
+gio     = dependency('gio-2.0',         version: '>=2.70')
+glib    = dependency('glib-2.0',        version: '>=2.70')
 gtk     = dependency('gtk+-3.0',        version: '>=3.3.16')
 systemd = dependency('libsystemd',      required: get_option('systemd'))
 
@@ -42,6 +42,22 @@ xkbfile = dependency('xkbfile')
 xrandr  = dependency('xrandr',          version: '>=1.3')
 iso_codes = dependency('iso-codes')
 udev    = dependency('libudev')
+
+# Bubblewrap + seccomp sandbox for external thumbnailers.
+# Coupled: bwrap-only (without seccomp) is not a configuration we ship.
+# fontconfig is only needed to bind the cache dir into the sandbox.
+# Only x86_64 and aarch64 have a seccomp_extra_arches table in
+# gnome-desktop-thumbnail-script.c, so refuse the option elsewhere.
+bwrap_opt = get_option('bubblewrap')
+if host_machine.cpu_family() not in ['x86_64', 'aarch64']
+  if bwrap_opt.enabled()
+    error('bubblewrap sandbox is not supported on @0@'.format(host_machine.cpu_family()))
+  endif
+  bwrap_opt = false
+endif
+seccomp = dependency('libseccomp', required: bwrap_opt)
+fontconfig = dependency('fontconfig', required: bwrap_opt)
+have_bwrap = seccomp.found() and fontconfig.found()
 
 cinnamon_deps = [
   gdk_pixb,
@@ -57,6 +73,10 @@ cinnamon_deps = [
   xkbfile,
   xrandr,
 ]
+
+if have_bwrap
+  cinnamon_deps += [seccomp, fontconfig]
+endif
 
 use_alsa = get_option('alsa')
 
@@ -84,6 +104,12 @@ conf.set('HAVE_SYSTEMD',        systemd.found())
 conf.set('HAVE_TIMERFD',        cc.has_function('timerfd_create'))
 conf.set('HAVE_XLOCALE',        cc.has_header('xlocale.h'))
 conf.set('HAVE_USELOCALE',      cc.has_function('uselocale'))
+conf.set('HAVE_BWRAP',          have_bwrap)
+conf.set('ENABLE_SECCOMP',      have_bwrap)
+conf.set('_GNU_SOURCE',         have_bwrap)
+if have_bwrap
+  conf.set_quoted('FONTCONFIG_CACHE_PATH', fontconfig.get_variable(pkgconfig: 'cachedir'))
+endif
 ################################################################################
 
 rootInclude = include_directories('.')
@@ -115,5 +141,6 @@ message('\n'.join([
   '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
   '        Use ALSA:                     ' + '@0@'.format(use_alsa),
   '        systemd:                      @0@'.format(systemd.found()),
+  '        bubblewrap + seccomp sandbox: @0@'.format(have_bwrap),
   '',
 ]))

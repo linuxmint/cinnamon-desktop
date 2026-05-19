@@ -5,3 +5,7 @@ option('alsa', type: 'boolean', value: false,
 option('systemd',
   type: 'feature', description: 'Systemd integration support'
 )
+option('bubblewrap',
+  type: 'feature', value: 'auto',
+  description: 'Run external thumbnailers inside a bubblewrap + seccomp sandbox'
+)

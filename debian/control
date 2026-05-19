@@ -11,9 +11,10 @@ Build-Depends:
  libaccountsservice-dev,
  libgdk-pixbuf-2.0-dev (>= 2.22.0),
  libgirepository1.0-dev (>= 0.10.2-1~),
- libglib2.0-dev (>= 2.37.3),
+ libglib2.0-dev (>= 2.70),
  libgtk-3-dev (>= 3.3.16),
  libpulse-dev (>= 12.99.3),
+ libseccomp-dev,
  libsystemd-dev,
  libudev-dev,
  libx11-dev,
@@ -80,6 +81,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends:
+ bubblewrap [amd64 arm64],
  cinnamon-desktop-data (>= ${source:Version}),
  ${misc:Depends},
  ${shlibs:Depends},

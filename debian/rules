@@ -1,15 +1,25 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/architecture.mk
+
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DPKG_GENSYMBOLS_CHECK_LEVEL = 2
+
+# Bubblewrap+seccomp sandbox is only implemented for amd64 and arm64.
+ifneq (,$(filter $(DEB_HOST_ARCH),amd64 arm64))
+BWRAP_OPT = -Dbubblewrap=enabled
+else
+BWRAP_OPT = -Dbubblewrap=disabled
+endif
 
 %:
 	dh $@ --with=gir
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--buildtype=debugoptimized
+		--buildtype=debugoptimized \
+		$(BWRAP_OPT)
 
 override_dh_strip:
 	dh_strip -Xdesktop -Xcinnamon --dbg-package=libcvc-dbg
