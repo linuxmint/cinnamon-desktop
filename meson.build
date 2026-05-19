@@ -43,6 +43,13 @@ xrandr  = dependency('xrandr',          version: '>=1.3')
 iso_codes = dependency('iso-codes')
 udev    = dependency('libudev')
 
+# Bubblewrap + seccomp sandbox for external thumbnailers.
+# Coupled: bwrap-only (without seccomp) is not a configuration we ship.
+# fontconfig is only needed to bind the cache dir into the sandbox.
+seccomp = dependency('libseccomp', required: get_option('bubblewrap'))
+fontconfig = dependency('fontconfig', required: get_option('bubblewrap'))
+have_bwrap = seccomp.found() and fontconfig.found()
+
 cinnamon_deps = [
   gdk_pixb,
   gio,
@@ -57,6 +64,10 @@ cinnamon_deps = [
   xkbfile,
   xrandr,
 ]
+
+if have_bwrap
+  cinnamon_deps += [seccomp, fontconfig]
+endif
 
 use_alsa = get_option('alsa')
 
@@ -84,6 +95,12 @@ conf.set('HAVE_SYSTEMD',        systemd.found())
 conf.set('HAVE_TIMERFD',        cc.has_function('timerfd_create'))
 conf.set('HAVE_XLOCALE',        cc.has_header('xlocale.h'))
 conf.set('HAVE_USELOCALE',      cc.has_function('uselocale'))
+conf.set('HAVE_BWRAP',          have_bwrap)
+conf.set('ENABLE_SECCOMP',      have_bwrap)
+conf.set('_GNU_SOURCE',         have_bwrap)
+if have_bwrap
+  conf.set_quoted('FONTCONFIG_CACHE_PATH', fontconfig.get_variable(pkgconfig: 'cachedir'))
+endif
 ################################################################################
 
 rootInclude = include_directories('.')
@@ -115,5 +132,6 @@ message('\n'.join([
   '        Use *_DISABLE_DEPRECATED:     @0@'.format(get_option('deprecation_warnings')),
   '        Use ALSA:                     ' + '@0@'.format(use_alsa),
   '        systemd:                      @0@'.format(systemd.found()),
+  '        bubblewrap + seccomp sandbox: @0@'.format(have_bwrap),
   '',
 ]))

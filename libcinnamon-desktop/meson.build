@@ -34,6 +34,7 @@ libcinnamon_desktop_gir_sources = [
 
 libcinnamon_desktop_misc_headers = [
   'gnome-datetime-source.h',
+  'gnome-desktop-thumbnail-script.h',
   'gnome-rr-private.h',
   'edid.h',
   'private.h'
@@ -43,6 +44,7 @@ libcinnamon_desktop_sources = [
   libcinnamon_desktop_gir_sources,
   libcinnamon_desktop_misc_headers,
   'gnome-datetime-source.c',
+  'gnome-desktop-thumbnail-script.c',
 ]
 
 cdesktop_headers = [

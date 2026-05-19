@@ -1,6 +1,7 @@
 libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
  _gnome_datetime_source_new@Base 3.8.1
  _gnome_desktop_init_i18n@Base 3.8.1
+ _gnome_desktop_thumbnail_script_exec@Base 6.7.0
  _gnome_rr_output_connector_type_is_builtin_display@Base 6.2.0
  _gnome_rr_output_get_connector_type@Base 6.2.0
  _gnome_rr_output_get_tile_info@Base 6.2.0
