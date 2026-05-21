@@ -1,3 +1,11 @@
+cinnamon-desktop (6.7.1) unstable; urgency=medium
+
+  [ Michael Webster ]
+  * thumbnailer: Use bubblewrap to appease glycin and work around glycin-thumbnailer disabling its built-in sandbox.
+  * gnome-desktop-thumbnail.c: Support a (mimetype argument to thumbnailers.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 May 2026 11:08:54 +0100
+
 cinnamon-desktop (6.7.0) unstable; urgency=medium
 
   [ Michael Webster ]
