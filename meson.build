@@ -49,6 +49,7 @@ udev    = dependency('libudev')
 # Only x86_64 and aarch64 have a seccomp_extra_arches table in
 # gnome-desktop-thumbnail-script.c, so refuse the option elsewhere.
 bwrap_opt = get_option('bubblewrap')
+bwrap_arch_ok = host_machine.cpu_family() in ['x86_64', 'aarch64']
 if host_machine.cpu_family() not in ['x86_64', 'aarch64']
   if bwrap_opt.enabled()
     error('bubblewrap sandbox is not supported on @0@'.format(host_machine.cpu_family()))
@@ -57,7 +58,7 @@ if host_machine.cpu_family() not in ['x86_64', 'aarch64']
 endif
 seccomp = dependency('libseccomp', required: bwrap_opt)
 fontconfig = dependency('fontconfig', required: bwrap_opt)
-have_bwrap = seccomp.found() and fontconfig.found()
+have_bwrap = bwrap_arch_ok and not bwrap_opt.disabled() and seccomp.found() and fontconfig.found()
 
 cinnamon_deps = [
   gdk_pixb,
