@@ -148,6 +148,60 @@ get_xml_rules_file_path (const gchar *suffix)
   return xml_rules_file;
 }
 
+static gchar *
+get_user_xml_rules_file_path (const gchar *suffix)
+{
+  const gchar *config_dir;
+  gchar *rules_file;
+  gchar *xml_rules_file;
+
+  config_dir = g_get_user_config_dir ();
+  if (!config_dir)
+    return NULL;
+
+  rules_file = g_build_filename (config_dir, "xkb", "rules", XKB_RULES_FILE, NULL);
+  xml_rules_file = g_strdup_printf ("%s%s", rules_file, suffix);
+  g_free (rules_file);
+
+  return xml_rules_file;
+}
+
+static gchar *
+get_user_legacy_xml_rules_file_path (const gchar *suffix)
+{
+  const gchar *home_dir;
+  gchar *rules_file;
+  gchar *xml_rules_file;
+
+  home_dir = g_get_home_dir ();
+  if (!home_dir)
+    return NULL;
+
+  rules_file = g_build_filename (home_dir, ".xkb", "rules", XKB_RULES_FILE, NULL);
+  xml_rules_file = g_strdup_printf ("%s%s", rules_file, suffix);
+  g_free (rules_file);
+
+  return xml_rules_file;
+}
+
+static gchar *
+get_extra_xml_rules_file_path (const gchar *suffix)
+{
+  const gchar *extra_path;
+  gchar *rules_file;
+  gchar *xml_rules_file;
+
+  extra_path = g_getenv ("XKB_CONFIG_EXTRA_PATH");
+  if (!extra_path)
+    extra_path = "/etc/xkb";
+
+  rules_file = g_build_filename (extra_path, "rules", XKB_RULES_FILE, NULL);
+  xml_rules_file = g_strdup_printf ("%s%s", rules_file, suffix);
+  g_free (rules_file);
+
+  return xml_rules_file;
+}
+
 static void
 parse_start_element (GMarkupParseContext  *context,
                      const gchar          *element_name,
@@ -576,12 +630,35 @@ parse_rules_file (GnomeXkbInfo  *self,
     g_propagate_error (error, sub_error);
 }
 
+static gboolean
+try_parse_rules_file (GnomeXkbInfo *self,
+                      const gchar  *path,
+                      gboolean      required)
+{
+  GError *error = NULL;
+
+  parse_rules_file (self, path, &error);
+  if (error)
+    {
+      if (g_error_matches (error, G_FILE_ERROR, G_FILE_ERROR_NOENT) && !required)
+        {
+          g_error_free (error);
+          return TRUE;
+        }
+
+      g_warning ("Failed to load XKB rules file %s: %s", path, error->message);
+      g_error_free (error);
+      return FALSE;
+    }
+
+  return TRUE;
+}
+
 static void
 parse_rules (GnomeXkbInfo *self)
 {
   GnomeXkbInfoPrivate *priv = self->priv;
   gchar *file_path;
-  GError *error = NULL;
 
   /* Make sure the translated strings we get from XKEYBOARD_CONFIG() are
    * in UTF-8 and not in the current locale */
@@ -604,26 +681,55 @@ parse_rules (GnomeXkbInfo *self)
   /* Maps layout ids to Layout structs. Owns the Layout structs. */
   priv->layouts_table = g_hash_table_new_full (g_str_hash, g_str_equal, NULL, free_layout);
 
+  /* Parse XKB rules following xkbcommon's search order:
+   * 1. $XDG_CONFIG_HOME/xkb/ (or ~/.config/xkb/)
+   * 2. ~/.xkb/
+   * 3. $XKB_CONFIG_EXTRA_PATH (or /etc/xkb/)
+   * 4. $XKB_CONFIG_ROOT (or /usr/share/X11/xkb/)
+   *
+   * User-defined layouts take precedence since they're parsed first
+   * and duplicates are skipped.
+   */
+
+  /* Parse user XKB rules from ~/.config/xkb (if they exist) */
+  file_path = get_user_xml_rules_file_path (".xml");
+  if (file_path)
+    {
+      try_parse_rules_file (self, file_path, FALSE);
+      g_free (file_path);
+    }
+
+  /* Parse user XKB rules from ~/.xkb (if they exist) */
+  file_path = get_user_legacy_xml_rules_file_path (".xml");
+  if (file_path)
+    {
+      try_parse_rules_file (self, file_path, FALSE);
+      g_free (file_path);
+    }
+
+  /* Parse extra XKB rules from /etc/xkb (if they exist) */
+  file_path = get_extra_xml_rules_file_path (".xml");
+  try_parse_rules_file (self, file_path, FALSE);
+  g_free (file_path);
+
+  /* Parse system XKB rules (required) */
   file_path = get_xml_rules_file_path (".xml");
-  parse_rules_file (self, file_path, &error);
-  if (error)
+  if (!try_parse_rules_file (self, file_path, TRUE))
     goto cleanup;
   g_free (file_path);
 
   if (!priv->include_extras)
     return;
 
+  /* Parse system XKB extras (required if include_extras is set) */
   file_path = get_xml_rules_file_path (".extras.xml");
-  parse_rules_file (self, file_path, &error);
-  if (error)
+  if (!try_parse_rules_file (self, file_path, TRUE))
     goto cleanup;
   g_free (file_path);
 
   return;
 
  cleanup:
-  g_warning ("Failed to load XKB rules file %s: %s", file_path, error->message);
-  g_clear_pointer (&error, g_error_free);
   g_clear_pointer (&file_path, g_free);
   g_clear_pointer (&priv->option_groups_table, g_hash_table_destroy);
   g_clear_pointer (&priv->layouts_by_country, g_hash_table_destroy);

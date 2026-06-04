@@ -1,4 +1,3 @@
-#define GNOME_DESKTOP_USE_UNSTABLE_API
 #include <libcinnamon-desktop/gnome-xkb-info.h>
 int
 main (int argc, char **argv)
