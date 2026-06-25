@@ -535,12 +535,13 @@ parse_error (GMarkupParseContext *context,
 {
   GnomeXkbInfoPrivate *priv = GNOME_XKB_INFO (data)->priv;
 
-  free_option_group (priv->current_parser_group);
-  free_option (priv->current_parser_option);
-  free_layout (priv->current_parser_layout);
-  free_layout (priv->current_parser_variant);
-  g_free (priv->current_parser_iso639Id);
-  g_free (priv->current_parser_iso3166Id);
+  g_clear_pointer (&priv->current_parser_group, free_option_group);
+  g_clear_pointer (&priv->current_parser_option, free_option);
+  g_clear_pointer (&priv->current_parser_layout, free_layout);
+  g_clear_pointer (&priv->current_parser_variant, free_layout);
+  g_clear_pointer (&priv->current_parser_iso639Id, g_free);
+  g_clear_pointer (&priv->current_parser_iso3166Id, g_free);
+  priv->current_parser_text = NULL;
 }
 
 static const GMarkupParser markup_parser = {
