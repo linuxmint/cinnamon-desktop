@@ -1,3 +1,13 @@
+cinnamon-desktop (6.7.2) alfa; urgency=medium
+
+  [ Leigh Scott ]
+  * Fix build for non seccomp arches (#272)
+
+  [ Michael Webster ]
+  * gnome-xkb-info.c: avoid double-free when encountering parser errors.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 02 Jul 2026 13:20:54 +0200
+
 cinnamon-desktop (6.7.1) unstable; urgency=medium
 
   [ Michael Webster ]
