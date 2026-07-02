@@ -67,6 +67,15 @@
         terminal not being given focus.
       </description>
     </key>
+    <key name="prevent-focus-stealing" type="b">
+      <default>false</default>
+      <summary>Prevent applications from stealing focus</summary>
+      <description>
+        When enabled, applications that request focus without proof of recent
+        user interaction are marked as demanding attention instead of being
+        focused.
+      </description>
+    </key>
     <key name="raise-on-click" type="b">
       <default>true</default>
       <summary>
