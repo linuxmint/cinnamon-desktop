@@ -19,6 +19,11 @@
       <summary>Show desklets</summary>
       <description>Raises desklets above windows</description>
     </key>
+    <key name="show-panels" type="as">
+      <default>@as []</default>
+      <summary>Show panels over a fullscreen window</summary>
+      <description>Temporarily reveals the panels over a focused fullscreen window so they can be used</description>
+    </key>
     <key name="magnifier-zoom-in" type="as">
       <default>['&lt;Alt&gt;&lt;Super&gt;equal']</default>
       <summary>Magnifier zoom in</summary>
