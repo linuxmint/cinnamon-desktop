@@ -13,6 +13,7 @@
       <default>'zoom'</default>
       <summary>Picture Options</summary>
       <description>
+        DEPRECATED, no longer used (superseded by picture-uri-list).
         Determines how the image set by wallpaper_filename is rendered.
         Possible values are "none", "wallpaper", "centered", "scaled",
         "stretched", "zoom", "spanned".
@@ -22,8 +23,11 @@
       <default>'file://@datadir@/themes/Adwaita/backgrounds/adwaita-timed.xml'</default>
       <summary>Picture URI</summary>
       <description>
-        URI to use for the background image. Not that the backend only supports
+        URI to use for the background image. Note that the backend only supports
         local (file://) URIs.
+        The classic single-background key: read as the fallback whenever
+        picture-uri-list is empty, and still honoured as the external "set as
+        wallpaper" entry point in any mode.
       </description>
     </key>
     <key name="background-mode" enum="org.cinnamon.desktop.BackgroundMode">
@@ -55,13 +59,14 @@
       <default>100</default>
       <summary>Picture Opacity</summary>
       <description>
-        Opacity with which to draw the background picture.
+        DEPRECATED, no longer used (the renderer does not apply opacity).
       </description>
     </key>
     <key name="primary-color" type="s">
       <default>'#000000'</default>
       <summary>Primary Color</summary>
       <description>
+        DEPRECATED, no longer used (superseded by picture-uri-list).
         Left or Top color when drawing gradients, or the solid color.
       </description>
     </key>
@@ -69,6 +74,7 @@
       <default>'#000000'</default>
       <summary>Secondary Color</summary>
       <description>
+        DEPRECATED, no longer used (superseded by picture-uri-list).
         Right or Bottom color when drawing gradients, not used for solid color.
       </description>
     </key>
@@ -76,6 +82,7 @@
       <default>'solid'</default>
       <summary>Color Shading Type</summary>
       <description>
+        DEPRECATED, no longer used (superseded by picture-uri-list).
         How to shade the background color. Possible values are "horizontal",
         "vertical", and "solid".
       </description>
@@ -87,15 +94,18 @@
       <default>false</default>
       <summary>Whether or not to use a slideshow for the desktop background</summary>
       <description>
-        This key defines the whether the desktop background shows one single wallpaper,
-        or a slideshow of images.
+        DEPRECATED, no longer used (folded into the picture-uri-list entry's
+        'slideshow' boolean). This key defines the whether the desktop background
+        shows one single wallpaper, or a slideshow of images.
       </description>
     </key>
     <key name="image-source" type="s">
       <default>""</default>
       <summary>Source to use for the background slideshow</summary>
       <description>
-        This key defines the source for the slideshow to get images from.
+        DEPRECATED, no longer used (folded into the picture-uri-list entry's
+        'slideshow-source'). This key defines the source for the slideshow to get
+        images from.
       </description>
     </key>
     <key name="delay" type="i">
@@ -103,6 +113,7 @@
       <summary>Delay for the slideshow</summary>
       <description>
         This key defines the delay for the slideshow.
+        In independent mode the change is staggered across monitors (delay/N apart).
       </description>
     </key>
     <key name="random-order" type="b">

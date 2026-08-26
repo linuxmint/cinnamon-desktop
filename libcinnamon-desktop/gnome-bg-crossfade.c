@@ -213,6 +213,8 @@ gnome_bg_crossfade_init (GnomeBGCrossfade *fade)
  * window background between two #cairo_surface_ts.
  *
  * Return value: the new #GnomeBGCrossfade
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 GnomeBGCrossfade *
 gnome_bg_crossfade_new (int width,
@@ -280,6 +282,8 @@ tile_surface (cairo_surface_t *surface,
  *
  * Return value: %TRUE if successful, or %FALSE if the surface
  * could not be copied.
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 gboolean
 gnome_bg_crossfade_set_start_surface (GnomeBGCrossfade *fade,
@@ -325,6 +329,8 @@ get_current_time (void)
  *
  * Return value: %TRUE if successful, or %FALSE if the surface
  * could not be copied.
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 gboolean
 gnome_bg_crossfade_set_end_surface (GnomeBGCrossfade *fade,
@@ -494,6 +500,8 @@ on_finished (GnomeBGCrossfade *fade)
  * gnome_bg_crossfade_start() and gnome_bg_crossfade_end() need to
  * be called. If animations are disabled, the crossfade is skipped,
  * and the window background is set immediately to the end surface.
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 void
 gnome_bg_crossfade_start (GnomeBGCrossfade *fade,
@@ -541,6 +549,8 @@ gnome_bg_crossfade_start (GnomeBGCrossfade *fade,
  * information on how to initiate a crossfade.
  *
  * Return value: %TRUE if fading, or %FALSE if not fading
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 gboolean
 gnome_bg_crossfade_is_started (GnomeBGCrossfade *fade)
@@ -557,6 +567,8 @@ gnome_bg_crossfade_is_started (GnomeBGCrossfade *fade)
  * This function stops any in progress crossfades that may be
  * happening.  It's harmless to call this function if @fade is
  * already stopped.
+ *
+ * Deprecated: 6.8: Cinnamon's background service draws and fades the background itself now.
  **/
 void
 gnome_bg_crossfade_stop (GnomeBGCrossfade *fade)

@@ -1241,6 +1241,8 @@ gnome_bg_get_pixmap_size (GnomeBG   *bg,
  * who created it.
  *
  * Returns: %NULL on error (e.g. out of X connections)
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 cairo_surface_t *
 gnome_bg_create_surface (GnomeBG	    *bg,
@@ -1489,6 +1491,8 @@ fit_factor (int from_width, int from_height,
  * gnome_bg_create_thumbnail:
  *
  * Returns: (transfer full): a #GdkPixbuf showing the background as a thumbnail
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  */
 GdkPixbuf *
 gnome_bg_create_thumbnail (GnomeBG               *bg,
@@ -1529,6 +1533,8 @@ gnome_bg_create_thumbnail (GnomeBG               *bg,
  * a black surface is returned.
  *
  * Return value: a #cairo_surface_t if successful or %NULL
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 cairo_surface_t *
 gnome_bg_get_surface_from_root (GdkScreen *screen)
@@ -1709,6 +1715,8 @@ gnome_bg_set_root_pixmap_id (GdkScreen       *screen,
  * it at the same time. (This assumes that they follow the
  * same conventions we do).  @surface should come from a call
  * to gnome_bg_create_surface().
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 void
 gnome_bg_set_surface_as_root (GdkScreen *screen, cairo_surface_t *surface)
@@ -1747,6 +1755,8 @@ gnome_bg_set_surface_as_root (GdkScreen *screen, cairo_surface_t *surface)
  * current root pixmap to the new one.
  *
  * Return value: (transfer full): a #GnomeBGCrossfade object
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 GnomeBGCrossfade *
 gnome_bg_set_surface_as_root_with_crossfade (GdkScreen       *screen,
@@ -1787,6 +1797,8 @@ gnome_bg_set_surface_as_root_with_crossfade (GdkScreen       *screen,
  * gnome_bg_create_and_set_surface_as_root:
  * @root_window: the #GdkWindow
  * @screen: the #GdkScreen
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 void
 gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, GdkScreen *screen)
@@ -1806,6 +1818,8 @@ gnome_bg_create_and_set_surface_as_root (GnomeBG *bg, GdkWindow *root_window, Gd
 
 /**
  * gnome_bg_create_and_set_gtk_image:
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  **/
 void
 gnome_bg_create_and_set_gtk_image (GnomeBG *bg, GtkImage *image, gint width, gint height)
@@ -3385,6 +3399,8 @@ gnome_bg_changes_with_time (GnomeBG *bg)
  *
  * Returns: (transfer full): the newly created thumbnail or
  * or NULL if frame_num is out of bounds.
+ *
+ * Deprecated: 6.8: Superseded by Cinnamon's background service.
  */
 GdkPixbuf *
 gnome_bg_create_frame_thumbnail (GnomeBG			*bg,
