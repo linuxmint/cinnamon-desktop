@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
+  <!-- The values mirror CinnamonBgMode in cinnamon's background library, which
+       reads this key with g_settings_get_enum(). Keep the numbering in step. -->
+  <enum id="org.cinnamon.desktop.BackgroundMode">
+    <value value="0" nick="independent"/>
+    <value value="1" nick="mirror"/>
+    <value value="2" nick="spanned"/>
+  </enum>
+
   <schema id="org.cinnamon.desktop.background" path="/org/cinnamon/desktop/background/">
     <key name="picture-options" enum="org.cinnamon.desktop.CDesktopBackgroundStyle">
       <default>'zoom'</default>
@@ -16,6 +24,30 @@
       <description>
         URI to use for the background image. Not that the backend only supports
         local (file://) URIs.
+      </description>
+    </key>
+    <key name="background-mode" enum="org.cinnamon.desktop.BackgroundMode">
+      <default>'mirror'</default>
+      <summary>Background mode</summary>
+      <description>
+        How the per-monitor entries in picture-uri-list are edited and rendered:
+        'independent' (each monitor its own background), 'mirror' (the same
+        background on every monitor) or 'spanned' (one image stretched across
+        the whole desktop).
+      </description>
+    </key>
+    <key name="picture-uri-list" type="aa{sv}">
+      <default>[]</default>
+      <summary>Per-monitor background configuration</summary>
+      <description>
+        The stored background configuration, used by CinnamonBg. In 'independent'
+        mode one entry per monitor, identified by connector its logical monitor
+        index as fallback; in 'mirror' and 'spanned' a single entry with no index
+        or connector.
+
+        Keys: connector, index; picture-uri, picture-options;
+        color-shading-type, primary-color, secondary-color; slideshow-source
+        ("type://path") and slideshow.
       </description>
     </key>
     <key name="picture-opacity" type="i">
@@ -78,6 +110,9 @@
       <summary>Whether or not to play the images in random order</summary>
       <description>
         This key defines whether images are shown in order or chosen randomly.
+
+        In independent mode, monitors sharing a folder avoid showing the same
+        image where the folder holds enough of them.
       </description>
     </key>
     <key name="slideshow-paused" type="b">
