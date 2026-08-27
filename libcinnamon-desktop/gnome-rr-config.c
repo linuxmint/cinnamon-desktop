@@ -27,7 +27,6 @@
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 
 #include <config.h>
-#include <glib/gi18n-lib.h>
 #include <stdlib.h>
 #include <string.h>
 #include <glib.h>
@@ -751,14 +750,14 @@ crtc_assignment_assign (CrtcAssignment   *assign,
     if (!gnome_rr_crtc_can_drive_output (crtc, output))
     {
 	g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-		     _("CRTC %d cannot drive output %s"), crtc_id, output_name);
+		     "CRTC %d cannot drive output %s", crtc_id, output_name);
 	return FALSE;
     }
 
     if (!gnome_rr_output_supports_mode (output, mode))
     {
 	g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-		     _("output %s does not support mode %dx%d@%dHz"),
+		     "output %s does not support mode %dx%d@%dHz",
 		     output_name,
 		     gnome_rr_mode_get_width (mode),
 		     gnome_rr_mode_get_height (mode),
@@ -769,7 +768,7 @@ crtc_assignment_assign (CrtcAssignment   *assign,
     if (!gnome_rr_crtc_supports_rotation (crtc, rotation))
     {
 	g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-		     _("CRTC %d does not support rotation=%d"),
+		     "CRTC %d does not support rotation=%d",
 		     crtc_id, rotation);
 	return FALSE;
     }
@@ -782,10 +781,10 @@ crtc_assignment_assign (CrtcAssignment   *assign,
 	      info->rotation == rotation))
 	{
 	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-			 _("output %s does not have the same parameters as another cloned output:\n"
-			   "existing mode = %d, new mode = %d\n"
-			   "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-			   "existing rotation = %d, new rotation = %d"),
+			 "output %s does not have the same parameters as another cloned output:\n"
+			 "existing mode = %d, new mode = %d\n"
+			 "existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
+			 "existing rotation = %d, new rotation = %d",
 			 output_name,
 			 gnome_rr_mode_get_id (info->mode), gnome_rr_mode_get_id (mode),
 			 info->x, info->y,
@@ -797,7 +796,7 @@ crtc_assignment_assign (CrtcAssignment   *assign,
 	if (!can_clone (info, output))
 	{
 	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-			 _("cannot clone to output %s"),
+			 "cannot clone to output %s",
 			 output_name);
 	    return FALSE;
 	}
@@ -923,7 +922,7 @@ real_assign_crtcs (GnomeRRScreen *screen,
 	int pass;
 
 	g_string_append_printf (accumulated_error,
-				_("Trying modes for CRTC %d\n"),
+				"Trying modes for CRTC %d\n",
 				crtc_id);
 
 	/* Make two passes, one where frequencies must match, then
@@ -947,7 +946,7 @@ real_assign_crtcs (GnomeRRScreen *screen,
 		mode_freq = gnome_rr_mode_get_freq (mode);
 
 		g_string_append_printf (accumulated_error,
-					_("CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"),
+					"CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n",
 					crtc_id,
 					mode_width, mode_height, mode_freq,
 					output->priv->width, output->priv->height, output->priv->rate,
@@ -994,11 +993,11 @@ out:
 
 	if (tried_mode)
 	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-			 _("could not assign CRTCs to outputs:\n%s"),
+			 "could not assign CRTCs to outputs:\n%s",
 			 str);
 	else
 	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_CRTC_ASSIGNMENT,
-			 _("none of the selected modes were compatible with the possible modes:\n%s"),
+			 "none of the selected modes were compatible with the possible modes:\n%s",
 			 str);
 
 	g_free (str);
@@ -1076,11 +1075,8 @@ crtc_assignment_new (GnomeRRScreen      *screen,
 	    height < min_height || height > max_height)
 	{
 	    g_set_error (error, GNOME_RR_ERROR, GNOME_RR_ERROR_BOUNDS_ERROR,
-			 /* Translators: the "requested", "minimum", and
-			  * "maximum" words here are not keywords; please
-			  * translate them as usual. */
-			 _("required virtual size does not fit available size: "
-			   "requested=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)"),
+			 "required virtual size does not fit available size: "
+			 "requested=(%d, %d), minimum=(%d, %d), maximum=(%d, %d)",
 			 width, height,
 			 min_width, min_height,
 			 max_width, max_height);

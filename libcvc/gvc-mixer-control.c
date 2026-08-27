@@ -28,7 +28,6 @@
 #include <unistd.h>
 
 #include <glib.h>
-#include <glib/gi18n-lib.h>
 
 #include <pulse/pulseaudio.h>
 #include <pulse/glib-mainloop.h>
@@ -1918,28 +1917,18 @@ card_num_streams_to_status (guint sinks,
         char *ret;
 
         if (sinks == 0 && sources == 0) {
-                /* translators:
-                 * The device has been disabled */
-                return g_strdup (_("Disabled"));
+                return g_strdup ("Disabled");
         }
         if (sinks == 0) {
                 sinks_str = NULL;
         } else {
-                /* translators:
-                 * The number of sound outputs on a particular device */
-                sinks_str = g_strdup_printf (ngettext ("%u Output",
-                                                       "%u Outputs",
-                                                       sinks),
+                sinks_str = g_strdup_printf (sinks == 1 ? "%u Output" : "%u Outputs",
                                              sinks);
         }
         if (sources == 0) {
                 sources_str = NULL;
         } else {
-                /* translators:
-                 * The number of sound inputs on a particular device */
-                sources_str = g_strdup_printf (ngettext ("%u Input",
-                                                         "%u Inputs",
-                                                         sources),
+                sources_str = g_strdup_printf (sources == 1 ? "%u Input" : "%u Inputs",
                                                sources);
         }
         if (sources_str == NULL)
@@ -2920,7 +2909,7 @@ update_event_role_stream (GvcMixerControl                  *control,
         else
                 max_volume = pa_cvolume_max (&info->volume);
 
-        gvc_mixer_stream_set_name (stream, _("System Sounds"));
+        gvc_mixer_stream_set_name (stream, "System Sounds");
         gvc_mixer_stream_set_icon_name (stream, "xsi-emblem-system-symbolic");
         gvc_mixer_stream_set_volume (stream, (guint)max_volume);
         gvc_mixer_stream_set_is_muted (stream, info->mute);

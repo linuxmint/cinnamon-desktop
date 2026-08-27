@@ -43,6 +43,7 @@
 
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include "gnome-languages.h"
+#include "private.h"
 
 #include <langinfo.h>
 #ifndef __LC_LAST
@@ -679,6 +680,8 @@ get_translated_language (const char *code,
 {
         const char *language;
         char *name;
+
+        _gnome_desktop_init_i18n ();
 
         language = get_language (code);
 

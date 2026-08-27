@@ -11,364 +11,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop 2.3.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 15:14+0200\n"
+"POT-Creation-Date: 2026-08-27 10:22-0400\n"
 "PO-Revision-Date: 2011-05-14 21:28+0200\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eo\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Launchpad (build 13037)\n"
 "X-Launchpad-Export-Date: 2011-05-14 18:48+0000\n"
 
-#. Translators: "Unknown" here is used to identify a monitor for which
-#. * we don't know the vendor. When a vendor is known, the name of the
-#. * vendor is used.
-#: ../libcinnamon-desktop/display-name.c:91
-msgctxt "Monitor vendor"
-msgid "Unknown"
-msgstr "Nekonate"
-
-#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
-msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "Ne eblis trovi terminalon uzante xterm-on,  eĉ se ĝi ne funkcius"
-
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libcinnamon-desktop/gnome-rr.c:452
-#, c-format
-msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "ne eblis trovi la ekranajn rimedojn (CRTC-oj, eligaĵoj, reĝimoj)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:472
-#, c-format
-msgid "unhandled X error while getting the range of screen sizes"
-msgstr "netraktata X-eraro okazis, serĉante la aron de ekranaj grandoj"
-
-#: ../libcinnamon-desktop/gnome-rr.c:478
-#, c-format
-msgid "could not get the range of screen sizes"
-msgstr "ne eblis trovi la aron de ekranaj grandoj"
-
-#: ../libcinnamon-desktop/gnome-rr.c:769
-#, c-format
-msgid "RANDR extension is not present"
-msgstr "RANDR-kromaĵo mankas"
-
-#: ../libcinnamon-desktop/gnome-rr.c:1577
-#, c-format
-msgid "could not get information about output %d"
-msgstr "ne eblis trovi informon pri la eligaĵo \"%d\""
-
-#. Translators: the "position", "size", and "maximum"
-#. * words here are not keywords; please translate them
-#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libcinnamon-desktop/gnome-rr.c:2170
-#, c-format
-msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"petita pozicio/grando por CRTC \"%d\" estas ekster la permesita limo: "
-"pozicio=(%d, %d), grando=(%d, %d), maksimumo=(%d, %d)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2204
-#, c-format
-msgid "could not set the configuration for CRTC %d"
-msgstr "ne eblis agordi la agordaron de la CRTC \"%d\""
-
-#: ../libcinnamon-desktop/gnome-rr.c:2352
-#, c-format
-msgid "could not get information about CRTC %d"
-msgstr "ne eblis trovi informon pri la CRTC \"%d\""
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:558
-msgid "Laptop"
-msgstr "Tekkomputilo"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:713
-#, c-format
-msgid ""
-"none of the saved display configurations matched the active configuration"
-msgstr ""
-"neniu el la konservitaj vidigaj agordaroj kongruas al la aktuala agordaro"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1469
-#, c-format
-msgid "CRTC %d cannot drive output %s"
-msgstr "CRTC \"%d\" ne subtenas la eligon \"%s\""
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1476
-#, c-format
-msgid "output %s does not support mode %dx%d@%dHz"
-msgstr "eligo %s ne subtenas la reĝimon %dx%d@%dHz"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1487
-#, c-format
-msgid "CRTC %d does not support rotation=%s"
-msgstr "CRTC \"%d\" ne subtenas rotacion=%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1501
-#, c-format
-msgid ""
-"output %s does not have the same parameters as another cloned output:\n"
-"existing mode = %d, new mode = %d\n"
-"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-"existing rotation = %s, new rotation = %s"
-msgstr ""
-"eligo %s ne havas la samajn parametrojn kiel alia klonita eligo:\n"
-"ekztistanta reĝimo = %d, nova reĝimo = %d\n"
-"ekztistantaj koordinatoj = (%d, %d), novaj koordinatoj = (%d, %d)\n"
-"ekztistanta rotacio = %s, nova rotacio = %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1516
-#, c-format
-msgid "cannot clone to output %s"
-msgstr "ne eblas kloni al eligo %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1685
-#, c-format
-msgid "Trying modes for CRTC %d\n"
-msgstr "Provreĝimo por CRTC \"%d\"\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1709
-#, c-format
-msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr "CRTC \"%d\": provreĝimo \"%dx%d@%dHz\" kun eligo ĉe \"%dx%d@%dHz\" (paso %d)\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1756
-#, c-format
-msgid ""
-"could not assign CRTCs to outputs:\n"
-"%s"
-msgstr ""
-"ne eblis atribui CRTC-ojn al eligoj:\n"
-"%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1760
-#, c-format
-msgid ""
-"none of the selected modes were compatible with the possible modes:\n"
-"%s"
-msgstr ""
-"neniu reĝimo de la elektitaj reĝimoj estas kongrua al la eblaj reĝimoj:\n"
-"%s"
-
-#. Translators: the "requested", "minimum", and
-#. * "maximum" words here are not keywords; please
-#. * translate them as usual.
-#: ../libcinnamon-desktop/gnome-rr-config.c:1838
-#, c-format
-msgid ""
-"required virtual size does not fit available size: requested=(%d, %d), "
-"minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"bezonata virtuala grando ne kongruas al havebla grando: petita=(%d, %d), "
-"minimumo=(%d, %d), maksimumo=(%d, %d)"
-
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
-#. capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your
-#. * laptop's screen is the same as your external projector.
-#. * Here, "Mirrored" is being used as an adjective.  For example,
-#. * the Spanish translation could be "Pantallas en Espejo".
-#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
-msgid "Mirrored Displays"
+#: libcinnamon-desktop/gnome-languages.c:701
+msgid "Unspecified"
 msgstr ""
 
-#. Translators: This is the time format with full date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+#. Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+#. * The wall clock is used variously in Cinnamon applets and desklets, as well as
+#. * cinnamon-screensaver's default lock screen.
+#. Default date format (typically matching date portion of WITH_DATE_* defaults.)
+#. * Currently used by cinnamon-screensaver default clock
+#: libcinnamon-desktop/gnome-wall-clock.c:69
+msgid "%A, %B %-e"
+msgstr "%A, %B %-e"
+
+#. Default date/time format when show-date, show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:72
 msgid "%A %B %-e, %R:%S"
 msgstr "%A, %-e. %B, %R:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+#. Default date/time format when show-date, show-seconds are set
+#: libcinnamon-desktop/gnome-wall-clock.c:75
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%A, %-e. %B, %-l:%M:%S"
+
+#. Default date/time format when show-date, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:78
 msgid "%A %B %-e, %R"
 msgstr "%A, %-e. %B, %R"
 
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+#. Default date/time format when just show-date is set
+#: libcinnamon-desktop/gnome-wall-clock.c:81
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%A, %-e. %B, %-l:%M"
+
+#. Default date/time format when show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:84
 #, fuzzy
 msgid "%R:%S"
 msgstr "%A %R:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R"
-msgstr ""
-
-#. Translators: This is a time format with full date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %-e, %-l:%M:%S %p"
-msgstr "%A, %-e. %B, %-l:%M:%S"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %-e, %-l:%M %p"
-msgstr "%A, %-e. %B, %-l:%M"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+#. Default date/time format when just show-seconds is set
+#: libcinnamon-desktop/gnome-wall-clock.c:87
 #, fuzzy
 msgid "%-l:%M:%S %p"
 msgstr "%A %-l:%M:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+#. Default date/time format when just use-24h is set
+#: libcinnamon-desktop/gnome-wall-clock.c:90
+msgid "%R"
+msgstr ""
+
+#. Default date/time format with no options are set
+#: libcinnamon-desktop/gnome-wall-clock.c:93
 #, fuzzy
 msgid "%-l:%M %p"
 msgstr "%A %-l:%M"
-
-msgid "%A, %B %-e"
-msgstr "%A, %B %-e"
-
-#~ msgid "Mirror Screens"
-#~ msgstr "Spegulaj ekranoj"
-
-#~ msgid "%A %R"
-#~ msgstr "%A %R"
-
-#~ msgid "About GNOME"
-#~ msgstr "Pri GNOME"
-
-#~ msgid "Learn more about GNOME"
-#~ msgstr "Eksciu pli pri GNOME"
-
-#~ msgid "News"
-#~ msgstr "Novaĵoj"
-
-#~ msgid "GNOME Library"
-#~ msgstr "Biblioteko de GNOME"
-
-#~ msgid "Friends of GNOME"
-#~ msgstr "Amikoj de GNOME"
-
-#~ msgid "Contact"
-#~ msgstr "Kontakto"
-
-#~ msgid "The Mysterious GEGL"
-#~ msgstr "La mistera GEGL"
-
-#~ msgid "The Squeaky Rubber GNOME"
-#~ msgstr "La knaranta kaŭĉuka GNOMO"
-
-#~ msgid "Wanda The GNOME Fish"
-#~ msgstr "Wanda la GNOME-fiŝo"
-
-#~ msgid "_Open URL"
-#~ msgstr "_Malfermi URL-on"
-
-#~ msgid "_Copy URL"
-#~ msgstr "_Kopii URL"
-
-#~ msgid "About the GNOME Desktop"
-#~ msgstr "Pri la GNOME Labortablo"
-
-#~ msgid "%(name)s: %(value)s"
-#~ msgstr "%(name)s: %(value)s"
-
-#~ msgid "Welcome to the GNOME Desktop"
-#~ msgstr "Bonvenon al la labortablo de GNOME"
-
-#~ msgid "Brought to you by:"
-#~ msgstr "Donite al vi de:"
-
-#~ msgid "<b>%(name)s:</b> %(value)s"
-#~ msgstr "<b>%(name)s:</b> %(value)s"
-
-#~ msgid "Version"
-#~ msgstr "Versio"
-
-#~ msgid "Distributor"
-#~ msgstr "Distribuanto"
-
-#~ msgid "Build Date"
-#~ msgstr "Dato de kompilado"
-
-#~ msgid "Display information on this GNOME version"
-#~ msgstr "Vidigi informojn pri ĉi tiu versio de GNOME"
-
-#~ msgid ""
-#~ "GNOME also includes a complete development platform for applications "
-#~ "programmers, allowing the creation of powerful and complex applications."
-#~ msgstr ""
-#~ "GNOME enhavas ankaŭ kompletan program-platformon por programistoj de "
-#~ "aplikaĵoj. Tiu platformo ebligas krei potencajn kaj kompleksajn aplikaĵojn."
-
-#~ msgid ""
-#~ "GNOME includes most of what you see on your computer, including the file "
-#~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "GNOME enhavas plejmulton de tio, kion vi vidas en via komputilo: la "
-#~ "dosieradministrilo, TTT-retumilo, menuoj, kaj multaj aplikaĵoj."
-
-#~ msgid ""
-#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
-#~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "GNOME estas libera, uzebla, stabila, alirebla labortabla medio por la Uniksa"
-#~ " familio de mastrumaj sistemoj."
-
-#~ msgid ""
-#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
-#~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "GNOME atentas pri uzebleco kaj alirebleco, regulaj novaj versioj, kaj forta "
-#~ "korporacia subteno. Tio faras ĝin unika en la liberaj komputilaj "
-#~ "labortabloj."
-
-#~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
-#~ " without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "La plej granda potenco de GNOME estas nia forta komunumo. Iu ajn, kun aŭ sen"
-#~ " kapablo programi, povas helpi por fari GNOME pli bona."
-
-#~ msgid ""
-#~ "Hundreds of people have contributed code to GNOME since it was started in "
-#~ "1997; many more have contributed in other important ways, including "
-#~ "translations, documentation, and quality assurance."
-#~ msgstr ""
-#~ "Centoj da homoj kontribuis per kodo al GNOME ekde ties komenco en 1997; "
-#~ "multaj aliaj kontribuis per aliaj gravaj manieroj kiel tradukoj, "
-#~ "dokumentaro, kaj kvalitkontrolo."
-
-#~ msgid "Error reading file '%s': %s"
-#~ msgstr "Eraro legante dosieron '%s': %s"
-
-#~ msgid "Error rewinding file '%s': %s"
-#~ msgstr "Eraro revolvante dosieron '%s': %s"
-
-#~ msgid "No name"
-#~ msgstr "Sen nomo"
-
-#~ msgid "File '%s' is not a regular file or directory."
-#~ msgstr "Dosiero '%s' ne estas normala dosiero aŭ dosierujo."
-
-#~ msgid "Cannot find file '%s'"
-#~ msgstr "Ne eblis trovi dosieron '%s'"
-
-#~ msgid "No filename to save to"
-#~ msgstr "Neniu dosiernomo por konservi"
-
-#~ msgid "Starting %s"
-#~ msgstr "Lanĉante je %s"
-
-#~ msgid "No URL to launch"
-#~ msgstr "Neniu URLo por lanĉi"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Ero ne lanĉebla"
-
-#~ msgid "No command (Exec) to launch"
-#~ msgstr "Neniu komando (Exec) por lanĉi"
-
-#~ msgid "Bad command (Exec) to launch"
-#~ msgstr "Malbona komando (Exec) por lanĉi"
-
-#~ msgid "Unknown encoding of: %s"
-#~ msgstr "Nekonata kodo de : %s"
-
-#~ msgid "could not find a suitable configuration of screens"
-#~ msgstr "ne povis trovi taŭgan agordaron de ekranoj"

@@ -10,211 +10,65 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 15:14+0200\n"
+"POT-Creation-Date: 2026-08-27 10:22-0400\n"
 "PO-Revision-Date: 2018-12-15 21:56+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sk\n"
 "X-Generator: Poedit 2.2\n"
 
-#. Translators: "Unknown" here is used to identify a monitor for which
-#. * we don't know the vendor. When a vendor is known, the name of the
-#. * vendor is used.
-#: ../libcinnamon-desktop/display-name.c:91
-msgctxt "Monitor vendor"
-msgid "Unknown"
-msgstr "Neznámy"
-
-#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
-msgid "Cannot find a terminal, using xterm, even if it may not work"
+#: libcinnamon-desktop/gnome-languages.c:701
+msgid "Unspecified"
 msgstr ""
-"Nepodarilo sa nájsť terminál. Použije sa xterm, aj napriek tomu, že nemusí "
-"fungovať"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=610571
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libcinnamon-desktop/gnome-rr.c:452
-#, c-format
-msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "nepodarilo sa získať zdroje obrazovky (CRTC, výstupy, režimy)"
+#. Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+#. * The wall clock is used variously in Cinnamon applets and desklets, as well as
+#. * cinnamon-screensaver's default lock screen.
+#. Default date format (typically matching date portion of WITH_DATE_* defaults.)
+#. * Currently used by cinnamon-screensaver default clock
+#: libcinnamon-desktop/gnome-wall-clock.c:69
+msgid "%A, %B %-e"
+msgstr "%A, %-e. %B"
 
-#: ../libcinnamon-desktop/gnome-rr.c:472
-#, c-format
-msgid "unhandled X error while getting the range of screen sizes"
-msgstr "neobslúžená chyba X pri získavaní rozsahu veľkostí obrazovky"
-
-#: ../libcinnamon-desktop/gnome-rr.c:478
-#, c-format
-msgid "could not get the range of screen sizes"
-msgstr "nepodarilo sa získať rozsah veľkostí obrazovky"
-
-#: ../libcinnamon-desktop/gnome-rr.c:769
-#, c-format
-msgid "RANDR extension is not present"
-msgstr "rozšírenie RANDR nie je prítomné"
-
-#: ../libcinnamon-desktop/gnome-rr.c:1577
-#, c-format
-msgid "could not get information about output %d"
-msgstr "nepodarilo sa získať informácie o výstupe %d"
-
-#. Translators: the "position", "size", and "maximum"
-#. * words here are not keywords; please translate them
-#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libcinnamon-desktop/gnome-rr.c:2170
-#, c-format
-msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"vyžiadaná poloha/veľkosť pre CRTC %d je mimo povolenú hranicu: poloha=(%d, "
-"%d), veľkosť=(%d, %d), maximum=(%d, %d)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2204
-#, c-format
-msgid "could not set the configuration for CRTC %d"
-msgstr "nepodarilo sa nastaviť konfiguráciu pre CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2352
-#, c-format
-msgid "could not get information about CRTC %d"
-msgstr "nepodarilo sa získať informáciu o CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:558
-msgid "Laptop"
-msgstr "Prenosný počítač"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:713
-#, c-format
-msgid "none of the saved display configurations matched the active configuration"
-msgstr ""
-"žiadna z uložených konfigurácií displeja nezodpovedá aktívnej konfigurácii"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1469
-#, c-format
-msgid "CRTC %d cannot drive output %s"
-msgstr "CRTC %d nemôže obsluhovať výstup %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1476
-#, c-format
-msgid "output %s does not support mode %dx%d@%dHz"
-msgstr "výstup %s nepodporuje režim %dx%d@%dHz"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1487
-#, c-format
-msgid "CRTC %d does not support rotation=%s"
-msgstr "CRTC %d nepodporuje otočenie=%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1501
-#, c-format
-msgid ""
-"output %s does not have the same parameters as another cloned output:\n"
-"existing mode = %d, new mode = %d\n"
-"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-"existing rotation = %s, new rotation = %s"
-msgstr ""
-"výstup %s nemá rovnaké parametre ako iný klonovaný výstup:\n"
-"existujúci režim = %d, nový režim = %d\n"
-"existujúce súradnice = (%d, %d), nové súradnice = (%d, %d)\n"
-"existujúca otočenie = %s, nové otočenie = %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1516
-#, c-format
-msgid "cannot clone to output %s"
-msgstr "nepodarilo sa klonovať na výstup %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1685
-#, c-format
-msgid "Trying modes for CRTC %d\n"
-msgstr "Skúšanie režimov pre CRTC %d\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1709
-#, c-format
-msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr "CRTC %d: skúšanie režimu %dx%d@%dHz s výstupom %dx%d@%dHz (prechod %d)\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1756
-#, c-format
-msgid ""
-"could not assign CRTCs to outputs:\n"
-"%s"
-msgstr ""
-"nepodarilo sa priradiť CRTC na výstupy:\n"
-"%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1760
-#, c-format
-msgid ""
-"none of the selected modes were compatible with the possible modes:\n"
-"%s"
-msgstr ""
-"žiaden z vybraných režimov nebol kompatibilný s možnými režimami:\n"
-"%s"
-
-#. Translators: the "requested", "minimum", and
-#. * "maximum" words here are not keywords; please
-#. * translate them as usual.
-#: ../libcinnamon-desktop/gnome-rr-config.c:1838
-#, c-format
-msgid ""
-"required virtual size does not fit available size: requested=(%d, %d), "
-"minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"vyžadovaná virtuálna veľkosť nezodpovedá dostupnej veľkosti: vyžadované=(%d, "
-"%d), minimum=(%d, %d), maximum=(%d, %d)"
-
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
-#. capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your
-#. * laptop's screen is the same as your external projector.
-#. * Here, "Mirrored" is being used as an adjective.  For example,
-#. * the Spanish translation could be "Pantallas en Espejo".
-#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
-msgid "Mirrored Displays"
-msgstr "Zrkadlené displeje"
-
-#. Translators: This is the time format with full date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+#. Default date/time format when show-date, show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:72
 msgid "%A %B %-e, %R:%S"
 msgstr "%A, %-e. %B, %R:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %-e, %R"
-msgstr "%A, %-e. %B, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R:%S"
-msgstr "%R:%S"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R"
-msgstr "%R"
-
-#. Translators: This is a time format with full date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:249
+#. Default date/time format when show-date, show-seconds are set
+#: libcinnamon-desktop/gnome-wall-clock.c:75
 msgid "%A %B %-e, %-l:%M:%S %p"
 msgstr "%A, %-e. %B, %-l:%M:%S %p"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:250
+#. Default date/time format when show-date, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:78
+msgid "%A %B %-e, %R"
+msgstr "%A, %-e. %B, %R"
+
+#. Default date/time format when just show-date is set
+#: libcinnamon-desktop/gnome-wall-clock.c:81
 msgid "%A %B %-e, %-l:%M %p"
 msgstr "%A, %-e. %B, %-l:%M %p"
 
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+#. Default date/time format when show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:84
+msgid "%R:%S"
+msgstr "%R:%S"
+
+#. Default date/time format when just show-seconds is set
+#: libcinnamon-desktop/gnome-wall-clock.c:87
 msgid "%-l:%M:%S %p"
 msgstr "%-l:%M:%S %p"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+#. Default date/time format when just use-24h is set
+#: libcinnamon-desktop/gnome-wall-clock.c:90
+msgid "%R"
+msgstr "%R"
+
+#. Default date/time format with no options are set
+#: libcinnamon-desktop/gnome-wall-clock.c:93
 msgid "%-l:%M %p"
 msgstr "%-l:%M %p"
-
-msgid "%A, %B %-e"
-msgstr "%A, %-e. %B"

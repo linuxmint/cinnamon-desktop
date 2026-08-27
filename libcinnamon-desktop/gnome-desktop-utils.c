@@ -132,8 +132,8 @@ gnome_desktop_prepend_terminal_to_vector (int *argc, char ***argv)
 			if (check == NULL)
 				check = g_find_program_in_path ("dtterm");
 			if (check == NULL) {
-				g_warning (_("Cannot find a terminal, using "
-					     "xterm, even if it may not work"));
+				g_warning ("Cannot find a terminal, using "
+					   "xterm, even if it may not work");
 				check = g_strdup ("xterm");
 			}
 			term_argv[0] = check;

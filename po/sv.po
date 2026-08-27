@@ -13,370 +13,64 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 15:14+0200\n"
+"POT-Creation-Date: 2026-08-27 10:22-0400\n"
 "PO-Revision-Date: 2012-09-02 11:36+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv\n"
 
-#. Translators: "Unknown" here is used to identify a monitor for which
-#. * we don't know the vendor. When a vendor is known, the name of the
-#. * vendor is used.
-#: ../libcinnamon-desktop/display-name.c:91
-msgctxt "Monitor vendor"
-msgid "Unknown"
-msgstr "Okänd"
-
-#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
-msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr ""
-"Kan inte hitta en terminal, använder xterm även om det kanske inte fungerar"
-
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libcinnamon-desktop/gnome-rr.c:452
-#, c-format
-msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "kunde inte få skärmresurserna (CRTC:er, utgångar, lägen)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:472
-#, c-format
-msgid "unhandled X error while getting the range of screen sizes"
-msgstr "ohanterat X-fel när information om skärmstorlekarna hämtades"
-
-#: ../libcinnamon-desktop/gnome-rr.c:478
-#, c-format
-msgid "could not get the range of screen sizes"
-msgstr "kunde inte få tag på information om skärmstorlekar"
-
-#: ../libcinnamon-desktop/gnome-rr.c:769
-#, c-format
-msgid "RANDR extension is not present"
-msgstr "RANDR-utökningen finns inte"
-
-#: ../libcinnamon-desktop/gnome-rr.c:1577
-#, c-format
-msgid "could not get information about output %d"
-msgstr "kunde inte få tag på information om utgång %d"
-
-#. Translators: the "position", "size", and "maximum"
-#. * words here are not keywords; please translate them
-#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libcinnamon-desktop/gnome-rr.c:2170
-#, c-format
-msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"begärd position/storlek för CRTC %d är utanför den tillåtna gränsen: "
-"position=(%d, %d), storlek=(%d, %d), maximum=(%d, %d)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2204
-#, c-format
-msgid "could not set the configuration for CRTC %d"
-msgstr "kunde inte ställa in konfigurationen för CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2352
-#, c-format
-msgid "could not get information about CRTC %d"
-msgstr "kunde inte få tag på information om CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:558
-msgid "Laptop"
-msgstr "Bärbar dator"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:713
-#, c-format
-msgid ""
-"none of the saved display configurations matched the active configuration"
-msgstr ""
-"ingen av de sparade skärmkonfigurationerna matchade den aktiva "
-"konfigurationen"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1469
-#, c-format
-msgid "CRTC %d cannot drive output %s"
-msgstr "CRTC %d kan inte driva utgången %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1476
-#, c-format
-msgid "output %s does not support mode %dx%d@%dHz"
-msgstr "utgången %s saknar stöd för läget %dx%d@%d Hz"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1487
-#, c-format
-msgid "CRTC %d does not support rotation=%s"
-msgstr "CRTC %d saknar stöd för rotation=%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1501
-#, c-format
-msgid ""
-"output %s does not have the same parameters as another cloned output:\n"
-"existing mode = %d, new mode = %d\n"
-"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-"existing rotation = %s, new rotation = %s"
-msgstr ""
-"utgången %s har inte samma parametrar som en annan klonad utgång:\n"
-"befintligt läge = %d, nytt läge = %d\n"
-"befintliga koordinater = (%d, %d), nya koordinater = (%d, %d)\n"
-"befintlig rotation = %s, ny rotation = %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1516
-#, c-format
-msgid "cannot clone to output %s"
-msgstr "kan inte klona till utgången %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1685
-#, c-format
-msgid "Trying modes for CRTC %d\n"
-msgstr "Provar lägen för CRTC %d\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1709
-#, c-format
-msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr ""
-"CRTC %d: provar läget %dx%d@%d Hz med utmatning i %dx%d@%d Hz (pass %d)\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1756
-#, c-format
-msgid ""
-"could not assign CRTCs to outputs:\n"
-"%s"
-msgstr ""
-"kunde inte tilldela CRTC:er till utgångar:\n"
-"%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1760
-#, c-format
-msgid ""
-"none of the selected modes were compatible with the possible modes:\n"
-"%s"
-msgstr ""
-"inga av de valda lägena var kompatibla med de möjliga lägena:\n"
-"%s"
-
-#. Translators: the "requested", "minimum", and
-#. * "maximum" words here are not keywords; please
-#. * translate them as usual.
-#: ../libcinnamon-desktop/gnome-rr-config.c:1838
-#, c-format
-msgid ""
-"required virtual size does not fit available size: requested=(%d, %d), "
-"minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"nödvändig virtuell storlek passar inte tillgänglig storlek: nödvändig=(%d, "
-"%d), minimum=(%d, %d), maximum=(%d, %d)"
-
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
-#. capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your
-#. * laptop's screen is the same as your external projector.
-#. * Here, "Mirrored" is being used as an adjective.  For example,
-#. * the Spanish translation could be "Pantallas en Espejo".
-#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
-msgid "Mirrored Displays"
+#: libcinnamon-desktop/gnome-languages.c:701
+msgid "Unspecified"
 msgstr ""
 
-#. Translators: This is the time format with full date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %-e, %R:%S"
-msgstr "%A %-e %B, %R.%S"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %-e, %R"
-msgstr "%A %-e %B, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R:%S"
-msgstr "%R.%S"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R"
-msgstr "%R"
-
-#. Translators: This is a time format with full date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %-e, %-l:%M:%S %p"
-msgstr "%A %-e %B, %I.%M.%S %p"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %-e, %-l:%M %p"
-msgstr "%A %-e %B, %I.%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%-l:%M:%S %p"
-msgstr "%-l.%M.%S %p"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%-l:%M %p"
-msgstr "%-l.%M %p"
-
+#. Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+#. * The wall clock is used variously in Cinnamon applets and desklets, as well as
+#. * cinnamon-screensaver's default lock screen.
+#. Default date format (typically matching date portion of WITH_DATE_* defaults.)
+#. * Currently used by cinnamon-screensaver default clock
+#: libcinnamon-desktop/gnome-wall-clock.c:69
 msgid "%A, %B %-e"
 msgstr "%A, %B %-e"
 
-#~ msgid "Mirror Screens"
-#~ msgstr "Spegla skärmar"
+#. Default date/time format when show-date, show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:72
+msgid "%A %B %-e, %R:%S"
+msgstr "%A %-e %B, %R.%S"
 
-#~ msgid "%A %R:%S"
-#~ msgstr "%A %R.%S"
+#. Default date/time format when show-date, show-seconds are set
+#: libcinnamon-desktop/gnome-wall-clock.c:75
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%A %-e %B, %I.%M.%S %p"
 
-#~ msgid "%A %R"
-#~ msgstr "%A %R"
+#. Default date/time format when show-date, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:78
+msgid "%A %B %-e, %R"
+msgstr "%A %-e %B, %R"
 
-#~ msgid "%A %-l:%M:%S %p"
-#~ msgstr "%A %I.%M.%S %p"
+#. Default date/time format when just show-date is set
+#: libcinnamon-desktop/gnome-wall-clock.c:81
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%A %-e %B, %I.%M %p"
 
-#~ msgid "%A %-l:%M %p"
-#~ msgstr "%A %I.%M %p"
+#. Default date/time format when show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:84
+msgid "%R:%S"
+msgstr "%R.%S"
 
-#~ msgid "About GNOME"
-#~ msgstr "Om GNOME"
+#. Default date/time format when just show-seconds is set
+#: libcinnamon-desktop/gnome-wall-clock.c:87
+msgid "%-l:%M:%S %p"
+msgstr "%-l.%M.%S %p"
 
-#~ msgid "Learn more about GNOME"
-#~ msgstr "Lär dig mer om GNOME"
+#. Default date/time format when just use-24h is set
+#: libcinnamon-desktop/gnome-wall-clock.c:90
+msgid "%R"
+msgstr "%R"
 
-#~ msgid "News"
-#~ msgstr "Nyheter"
-
-#~ msgid "GNOME Library"
-#~ msgstr "GNOME-biblioteket"
-
-#~ msgid "Friends of GNOME"
-#~ msgstr "Vänner till GNOME"
-
-#~ msgid "Contact"
-#~ msgstr "Kontakta"
-
-#~ msgid "The Mysterious GEGL"
-#~ msgstr "Den mystiske GEGL"
-
-#~ msgid "The Squeaky Rubber GNOME"
-#~ msgstr "Den pipande gummi-gnomen"
-
-#~ msgid "Wanda The GNOME Fish"
-#~ msgstr "GNOME-fisken Wanda"
-
-#~ msgid "_Open URL"
-#~ msgstr "_Öppna url"
-
-#~ msgid "_Copy URL"
-#~ msgstr "_Kopiera url"
-
-#~ msgid "About the GNOME Desktop"
-#~ msgstr "Om skrivbordsmiljön GNOME"
-
-#~ msgid "%(name)s: %(value)s"
-#~ msgstr "%(name)s: %(value)s"
-
-#~ msgid "Welcome to the GNOME Desktop"
-#~ msgstr "Välkommen till GNOME-skrivbordet"
-
-#~ msgid "Brought to you by:"
-#~ msgstr "Presenteras av:"
-
-#~ msgid "<b>%(name)s:</b> %(value)s"
-#~ msgstr "<b>%(name)s:</b> %(value)s"
-
-#~ msgid "Version"
-#~ msgstr "Version"
-
-#~ msgid "Distributor"
-#~ msgstr "Distributör"
-
-#~ msgid "Build Date"
-#~ msgstr "Byggdatum"
-
-#~ msgid "Display information on this GNOME version"
-#~ msgstr "Visa information om den här GNOME-versionen"
-
-#~ msgid ""
-#~ "GNOME also includes a complete development platform for applications "
-#~ "programmers, allowing the creation of powerful and complex applications."
-#~ msgstr ""
-#~ "GNOME innehåller också en utvecklingsplattform som för programmerare "
-#~ "möjliggör skapandet av kraftfulla och komplexa program."
-
-#~ msgid ""
-#~ "GNOME includes most of what you see on your computer, including the file "
-#~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "GNOME innehåller det mesta av vad du ser på din dator, inklusive "
-#~ "filhanteraren, webbläsaren, menyer och många program."
-
-#~ msgid ""
-#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
-#~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "GNOME är en fri, användbar, stabil och åtkomlig skrivbordsmiljö för den "
-#~ "Unix-liknande familjen av operativsystem."
-
-#~ msgid ""
-#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
-#~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "GNOME:s fokus på användbarhet och åtkomlighet, regelbundna utgåvecykel och "
-#~ "starka stöd från företag gör den unik bland skrivbordsmiljöer inom fri "
-#~ "programvara."
-
-#~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
-#~ " without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "GNOME:s största styrka är vår starka gemenskap. Nästan alla, med eller utan "
-#~ "programmeringskunskaper, kan bidra till att förbättra GNOME."
-
-#~ msgid ""
-#~ "Hundreds of people have contributed code to GNOME since it was started in "
-#~ "1997; many more have contributed in other important ways, including "
-#~ "translations, documentation, and quality assurance."
-#~ msgstr ""
-#~ "Hundratals personer har bidragit med kod till GNOME sedan projektet "
-#~ "startades 1997. Långt flera har bidragit på andra viktiga sätt, inklusive "
-#~ "översättningar, dokumentation, och kvalitetssäkring."
-
-#~ msgid "Error reading file '%s': %s"
-#~ msgstr "Fel vid läsning av filen \"%s\": %s"
-
-#~ msgid "Error rewinding file '%s': %s"
-#~ msgstr "Fel vid återspolning av filen \"%s\": %s"
-
-#~ msgid "No name"
-#~ msgstr "Inget namn"
-
-#~ msgid "File '%s' is not a regular file or directory."
-#~ msgstr "Filen \"%s\" är inte en vanlig fil eller katalog."
-
-#~ msgid "Cannot find file '%s'"
-#~ msgstr "Kan inte hitta filen \"%s\""
-
-#~ msgid "No filename to save to"
-#~ msgstr "Inget filnamn att spara till"
-
-#~ msgid "Starting %s"
-#~ msgstr "Startar %s"
-
-#~ msgid "No URL to launch"
-#~ msgstr "Ingen URL att starta"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Inget startbart objekt"
-
-#~ msgid "No command (Exec) to launch"
-#~ msgstr "Inget kommando (Exec) att starta"
-
-#~ msgid "Bad command (Exec) to launch"
-#~ msgstr "Felaktigt kommando (Exec) att starta"
-
-#~ msgid "Unknown encoding of: %s"
-#~ msgstr "Okänd kodning av: %s"
-
-#~ msgid "could not find a suitable configuration of screens"
-#~ msgstr "kunde inte hitta en lämplig konfiguration för skärmar"
+#. Default date/time format with no options are set
+#: libcinnamon-desktop/gnome-wall-clock.c:93
+msgid "%-l:%M %p"
+msgstr "%-l.%M %p"

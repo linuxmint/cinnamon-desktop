@@ -9,353 +9,65 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop.gnome-2-32.lo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 15:14+0200\n"
+"POT-Creation-Date: 2026-08-27 10:22-0400\n"
 "PO-Revision-Date: 2010-11-17 15:59+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
-#. Translators: "Unknown" here is used to identify a monitor for which
-#. * we don't know the vendor. When a vendor is known, the name of the
-#. * vendor is used.
-#: ../libcinnamon-desktop/display-name.c:91
-#, fuzzy
-msgctxt "Monitor vendor"
-msgid "Unknown"
-msgstr "ບໍ່ຮູ້"
-
-#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
-msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr "ບໍ່ສາມາດຫາຈໍ, ໄຊ້ Xterm ເເທນ, ເຖີງມັນຈະບໍ່ທໍາງານກໍ່ຕາມ"
-
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libcinnamon-desktop/gnome-rr.c:452
-#, c-format
-msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "ບໍ່ສາມາດເອົາອຸປະກອນຈໍ (CRTCs, outputs, modes)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:472
-#, c-format
-msgid "unhandled X error while getting the range of screen sizes"
-msgstr "ພິດພາດ ກັບ X ໃນເວລາປັບປູງຂະນານຈໍ "
-
-#: ../libcinnamon-desktop/gnome-rr.c:478
-#, c-format
-msgid "could not get the range of screen sizes"
-msgstr "ພິດພາດ ກັບ X ໃນເວລາປັບປູງຂະນານຈໍ "
-
-#: ../libcinnamon-desktop/gnome-rr.c:769
-#, c-format
-msgid "RANDR extension is not present"
-msgstr "ບໍ່ມີ RAND ໂປຣເເກຣມ"
-
-#: ../libcinnamon-desktop/gnome-rr.c:1577
-#, c-format
-msgid "could not get information about output %d"
-msgstr "ບໍ່ສາມາດ ເອົາຂໍ້ມູນກ່ຽວກັບ %d"
-
-#. Translators: the "position", "size", and "maximum"
-#. * words here are not keywords; please translate them
-#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libcinnamon-desktop/gnome-rr.c:2170
-#, c-format
-msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"ຮ້ອງຂໍ ທີ່/ຂະນານ ສະເພາະ CRTC %d ເເມ່ນ ທີ່ໃດ້is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2204
-#, c-format
-msgid "could not set the configuration for CRTC %d"
-msgstr "ບໍ່ສາມາດ ຕັ້ງຄ່າສະເພາະ CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2352
-#, c-format
-msgid "could not get information about CRTC %d"
-msgstr "ບໍ່ສາມາດ ເອົາຂໍ້ມູນກ່ຽວກັບ CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:558
-msgid "Laptop"
-msgstr "ເເລບທອບ"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:713
-#, c-format
-msgid ""
-"none of the saved display configurations matched the active configuration"
-msgstr "ບໍ່ມີຕັ້ງຄ່າທີ່ຖຶກບັນທຶກ ທີ່ກົງກັບ ຕັ້ງຄ່າທີ່ທໍາງານຢູ່"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1469
-#, c-format
-msgid "CRTC %d cannot drive output %s"
-msgstr "CRTC %d ບໍ່ສາມາດຜົນອອກສະເເດງອອກ %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1476
-#, c-format
-msgid "output %s does not support mode %dx%d@%dHz"
-msgstr "ຜົນສະເເດງອອກ %s ບໍ່ສາມາດສະນົບສະໜູນເເບບ %dx%d@%dHz"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1487
-#, c-format
-msgid "CRTC %d does not support rotation=%s"
-msgstr "CRTC %d ບໍ່ສາມາດສະນົບສະໜູນມຸນວຽນ=%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1501
-#, c-format
-msgid ""
-"output %s does not have the same parameters as another cloned output:\n"
-"existing mode = %d, new mode = %d\n"
-"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-"existing rotation = %s, new rotation = %s"
-msgstr ""
-"ຜົນອອກ %s ບໍ່ມີຕົວປ່ຽນເສີມທີ່ເທົ່າກັບຜົນອອກທີ່ທຶກລອອກເເບ:\n"
-"ເເບບມີເເລ້ວ = %d, ເເບບໄໝ່ = %d\n"
-"ຕົວປະສານມີເເລ້ວ= (%d, %d), ຕົວປະສາບໄໝ່ = (%d, %d)\n"
-"ການມຸນວຽນມີເເລ້ວ = %s, ການມຸນວຽນໄໝ່= %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1516
-#, c-format
-msgid "cannot clone to output %s"
-msgstr "ບໍ່ສາມາດລອອກເເບບໃສ່ ຜົນອອກ %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1685
-#, c-format
-msgid "Trying modes for CRTC %d\n"
-msgstr "ທົດລອງເເບບສະເພາະ CRTC %d\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1709
-#, c-format
-msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr "CRTC %d: ທົດລອງເເບບ %dx%d@%dHz ກັບຜົນອອກທີ່ %dx%d@%dHz (ພ່ານ %d)\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1756
-#, c-format
-msgid ""
-"could not assign CRTCs to outputs:\n"
-"%s"
-msgstr ""
-"ບໍ່ສາມາດເເຕ່ງຕັ້ງໃຫ້ CRTCs ຕໍ່ຜົນອອກ:\n"
-"%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1760
-#, c-format
-msgid ""
-"none of the selected modes were compatible with the possible modes:\n"
-"%s"
-msgstr ""
-"ບໍ່ມີເເບບໃດທີຖຶກເລືອຈະເຂົ້າກັບເເບບທີ່ເປັນໄປໃດ້:\n"
-"%s"
-
-#. Translators: the "requested", "minimum", and
-#. * "maximum" words here are not keywords; please
-#. * translate them as usual.
-#: ../libcinnamon-desktop/gnome-rr-config.c:1838
-#, c-format
-msgid ""
-"required virtual size does not fit available size: requested=(%d, %d), "
-"minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"ຂະໜາດທີ້ຈໍາເປັນບໍ່ສາມາດເຂົ້າກັບຂະໜາດທີ່ມີ: ຖຶກຮ້ອງຂໍ=(%d, %d), ຕໍາສຸດ=(%d, "
-"%d), ສູງສຸດ=(%d, %d)"
-
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
-#. capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your
-#. * laptop's screen is the same as your external projector.
-#. * Here, "Mirrored" is being used as an adjective.  For example,
-#. * the Spanish translation could be "Pantallas en Espejo".
-#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
-msgid "Mirrored Displays"
+#: libcinnamon-desktop/gnome-languages.c:701
+msgid "Unspecified"
 msgstr ""
 
-#. Translators: This is the time format with full date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:238
-msgid "%A %B %-e, %R:%S"
-msgstr ""
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:239
-msgid "%A %B %-e, %R"
-msgstr ""
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R:%S"
-msgstr ""
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R"
-msgstr ""
-
-#. Translators: This is a time format with full date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %-e, %-l:%M:%S %p"
-msgstr ""
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %-e, %-l:%M %p"
-msgstr ""
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:254
-msgid "%-l:%M:%S %p"
-msgstr ""
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:255
-msgid "%-l:%M %p"
-msgstr ""
-
+#. Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+#. * The wall clock is used variously in Cinnamon applets and desklets, as well as
+#. * cinnamon-screensaver's default lock screen.
+#. Default date format (typically matching date portion of WITH_DATE_* defaults.)
+#. * Currently used by cinnamon-screensaver default clock
+#: libcinnamon-desktop/gnome-wall-clock.c:69
 msgid "%A, %B %-e"
 msgstr "%A, %B %-e"
 
-#~ msgid "About GNOME"
-#~ msgstr "ກ່ຽວກັບ ກາໂນມ"
+#. Default date/time format when show-date, show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:72
+msgid "%A %B %-e, %R:%S"
+msgstr ""
 
-#~ msgid "Learn more about GNOME"
-#~ msgstr "ຮຽນຮູ້ເພີ້ມ ກ່ຽວກັບ GNOME"
+#. Default date/time format when show-date, show-seconds are set
+#: libcinnamon-desktop/gnome-wall-clock.c:75
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr ""
 
-#~ msgid "News"
-#~ msgstr "ຂ່າວ"
+#. Default date/time format when show-date, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:78
+msgid "%A %B %-e, %R"
+msgstr ""
 
-#~ msgid "GNOME Library"
-#~ msgstr "ຫໍສະຫມຸດ ກາໂນມ"
+#. Default date/time format when just show-date is set
+#: libcinnamon-desktop/gnome-wall-clock.c:81
+msgid "%A %B %-e, %-l:%M %p"
+msgstr ""
 
-#~ msgid "Friends of GNOME"
-#~ msgstr "ເພື່ອນຂອງ ກາໂນມ"
+#. Default date/time format when show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:84
+msgid "%R:%S"
+msgstr ""
 
-#~ msgid "Contact"
-#~ msgstr "ຕິດຕໍ່"
+#. Default date/time format when just show-seconds is set
+#: libcinnamon-desktop/gnome-wall-clock.c:87
+msgid "%-l:%M:%S %p"
+msgstr ""
 
-#~ msgid "The Mysterious GEGL"
-#~ msgstr "GEGL ອັນລຶບລັບ"
+#. Default date/time format when just use-24h is set
+#: libcinnamon-desktop/gnome-wall-clock.c:90
+msgid "%R"
+msgstr ""
 
-#~ msgid "The Squeaky Rubber GNOME"
-#~ msgstr "ກາໂນມ ຢ່າງອຽດອາດ"
-
-#~ msgid "Wanda The GNOME Fish"
-#~ msgstr "ວັນນາ ປາ ກາໂນມ"
-
-#~ msgid "_Open URL"
-#~ msgstr "ເ_ປີດ URL"
-
-#~ msgid "_Copy URL"
-#~ msgstr "_ສໍາເນົາ URL"
-
-#~ msgid "About the GNOME Desktop"
-#~ msgstr "ກ່ຽວກັບ ກາໂນມ"
-
-#~ msgid "%(name)s: %(value)s"
-#~ msgstr "%(name)s: %(value)s"
-
-#~ msgid "Welcome to the GNOME Desktop"
-#~ msgstr "ຍີນດີເຂັ້າຊູ່ເດດທ໋ອບ ກາໂນມ"
-
-#~ msgid "Brought to you by:"
-#~ msgstr "ນໍາສະເຫນີທ່ານໂດຍ:"
-
-#~ msgid "<b>%(name)s:</b> %(value)s"
-#~ msgstr "<b>%(name)s:</b> %(value)s"
-
-#~ msgid "Version"
-#~ msgstr "ລູ້ນ"
-
-#~ msgid "Distributor"
-#~ msgstr "ຜູ້ຈັດເເຈກ"
-
-#~ msgid "Build Date"
-#~ msgstr "ວັນສ້າງ"
-
-#~ msgid "Display information on this GNOME version"
-#~ msgstr "ສະເເດງຂໍ້ມູນລຸ້  ກາໂນມ ລຸ້ນນີ້"
-
-#~ msgid ""
-#~ "GNOME also includes a complete development platform for applications "
-#~ "programmers, allowing the creation of powerful and complex applications."
-#~ msgstr ""
-#~ "ນອກຈາກນີ້ ກາໂນມ ຍັງມີລະບົບຮອງຮັບ ທີ່ຊ່ວຍໃຫ້ຂຽນໂປຣເເກຣມ "
-#~ "ສາມາດພັດທະນາໂປຣເເກຣມທີມີພະລັງສູງ ເເລະ ມີຄວາມອາດສາມາດ."
-
-#~ msgid ""
-#~ "GNOME includes most of what you see on your computer, including the file "
-#~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "ກາໂນມ ປະກອບໄປດ້ວຍສີ່ງທີ່ທ່ານເຫັນຢູ່ຫນ້າຈໍເກີອບທັງຫມົດ ເປັນຕົ້ນ "
-#~ "ຕົວຈັດການເເຟ້ມ ເເວບບາວເຊີ້ ຫລາຍການ ເມນູ ເເລະ ໂປຣເເກຣມ ອື່ນ ຯ ອີກຫລາຍ ຯ "
-
-#~ msgid ""
-#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
-#~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "ກາໂນມ ເປັນລະບົບເເດສະທອບທ໌ ທີ່ໃຫ້ເສລິພາບ ສະດວກໃຊ້ ເເລະ "
-#~ "ມີໍີສີ່ງອໍານ່ວນຄວາມສະດວກຜູ້ໃຊ້ປະເພດຕ່າງ ຯ ສໍາລັບລະບົບປະທິບັດການຕະກູນຢູນິກຊ໌"
-
-#~ msgid ""
-#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
-#~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "ກາໂນມ ເນັ້ນຄວາມງ່າຍໃນການໃຊ້ ພັດທະນາລູ້ນໃຫ່ມສະມໍ່າສະເມີ ເເລະ "
-#~ "ໃດ້ຮັບການອຸບປະຖໍາຈາກກອງທຸລະກິດຢ່າງຕໍ່ເນື່ອງ ທັ້ງຫມົດທີ່ນໍາໃຫ້  ກາໂນມ "
-#~ "ເປັນລະບົບເເດດຊ໌ທອບ໌ທີ່ບໍ່ຄືໃຜໃນກຸ່ມເເດດຊ໌ທອບ໌ທີ່ເປັນສອບເເວຣ໌ເເຟຣ໌"
-
-#~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
-#~ " without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "ຈຸດທີ່ດີເດັນທີ່ສູດຂອງ ກາໂນມ ກໍ່ຄືຊູມຊົນທີ່ເຂົ້ມເເຂງ ທຸກ ຯ ຄົນ ບໍ່ວ່າຈະເປັນໃຜ"
-#~ " ຫນັກຂຽນໂປຣເເກຣມຫລືບໍ່ ກໍ່ສານາດຮວມກັນພັດທະນາ ກາໂນມ ໃຫ້ດີຂື້ນໃດ້"
-
-#~ msgid ""
-#~ "Hundreds of people have contributed code to GNOME since it was started in "
-#~ "1997; many more have contributed in other important ways, including "
-#~ "translations, documentation, and quality assurance."
-#~ msgstr ""
-#~ "ຜູ່ຄົນຫລາຍຮ້ອຍໄດ້ຮ່ວມກັນພັດທະນາ ໂປຣເເກຣມ ສໍາລັບ ກາໂນມ "
-#~ "ຕັ້ງເເຕ່ເລີ້ມໂຄງການຕອນປີ 2540 ຫລື 1998 ເເລະຍັງມີອີດຫລາຍ ຯ "
-#~ "ທີ່ຊ່ວຍສົ່ງເສີມໃນທາງອື່ນ ຯ ເປັນຕົ້ນ ການເເປ ຂຽນຄູ່ມື ເເລະ ກວດສອບຄຸນນະພາບ"
-
-#~ msgid "Error reading file '%s': %s"
-#~ msgstr "ເກີດຜິດພາດເວລາອ່ານເເຟ້ມ '%s': %s"
-
-#~ msgid "Error rewinding file '%s': %s"
-#~ msgstr "ເກີດຜິດພາດເວລາການກໍ້ເເຟ້ມກັບ '%s': %s"
-
-#~ msgid "No name"
-#~ msgstr "ບໍ່ມີຊື"
-
-#~ msgid "File '%s' is not a regular file or directory."
-#~ msgstr "ເເຟ້ມ '%s' ບໍ່ເເມ່ນເເຟ້ມ ຫລື ໂຟລເດີຮ໌ ປົກກະຕິ"
-
-#~ msgid "Cannot find file '%s'"
-#~ msgstr "ເກີດຜິດພາດເວລາຫາເເຟ້ມ '%s'"
-
-#~ msgid "No filename to save to"
-#~ msgstr "ບໍ່ມີຊື່ເເຟ້ມສໍາລັບໃຊ້ໃນການບັນທືກ"
-
-#~ msgid "Starting %s"
-#~ msgstr "ກໍາລັງເລີ້ມ %s"
-
-#~ msgid "No URL to launch"
-#~ msgstr "ບໍ່ມີ URL ຈະເປີດ"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "ຮ້ອງໃຊ້ບໍ່ໃດ້"
-
-#~ msgid "No command (Exec) to launch"
-#~ msgstr "ບໍ່ມີຄໍາສັ່ງ (Exec) ຈະຮ້ອງ"
-
-#~ msgid "Bad command (Exec) to launch"
-#~ msgstr "ຄໍາສັ່ງທີ່ຈະຮ້ອງ(Exec) ມັນໃຊ້ບໍ່ໃດ້"
-
-#~ msgid "Unknown encoding of: %s"
-#~ msgstr "ບໍ່ຮູ້ຈັກລະຫັດເເອນໂຄດຂອງ: %s"
-
-#~ msgid "Mirror Screens"
-#~ msgstr "ຈໍເເວ່ນ"
+#. Default date/time format with no options are set
+#: libcinnamon-desktop/gnome-wall-clock.c:93
+msgid "%-l:%M %p"
+msgstr ""

@@ -28,7 +28,6 @@
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 
 #include <config.h>
-#include <glib/gi18n-lib.h>
 #include <gtk/gtk.h>
 
 #include <X11/Xproto.h>
@@ -439,14 +438,7 @@ create_label_window (GnomeRRLabeler *labeler, GnomeRROutputInfo *output, GdkRGBA
 			  G_CALLBACK (label_window_composited_changed_cb), labeler);
 
 	if (gnome_rr_config_get_clone (labeler->priv->config)) {
-		/* Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name() */
-
-		/* Translators:  this is the feature where what you see on your
-		 * laptop's screen is the same as your external projector.
-		 * Here, "Mirrored" is being used as an adjective.  For example,
-		 * the Spanish translation could be "Pantallas en Espejo".
-		 */
-		display_name = _("Mirrored Displays");
+		display_name = "Mirrored Displays";
 	} else
 		display_name = gnome_rr_output_info_get_display_name (output);
 

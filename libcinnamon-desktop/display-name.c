@@ -23,7 +23,6 @@
 /* Author: Soren Sandmann <sandmann@redhat.com> */
 
 #include <config.h>
-#include <glib/gi18n-lib.h>
 #include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
@@ -85,10 +84,7 @@ make_display_name (const MonitorInfo *info)
     }
     else
     {
-        /* Translators: "Unknown" here is used to identify a monitor for which
-         * we don't know the vendor. When a vendor is known, the name of the
-         * vendor is used. */
-	vendor = C_("Monitor vendor", "Unknown");
+	vendor = "Unknown";
     }
 
     if (info && info->width_mm != -1 && info->height_mm)

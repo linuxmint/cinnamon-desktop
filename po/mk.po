@@ -14,457 +14,68 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-desktop.HEAD.mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 15:14+0200\n"
+"POT-Creation-Date: 2026-08-27 10:22-0400\n"
 "PO-Revision-Date: 2012-01-08 15:01+0100\n"
 "Last-Translator: Jovan N\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
+"Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mk\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#. Translators: "Unknown" here is used to identify a monitor for which
-#. * we don't know the vendor. When a vendor is known, the name of the
-#. * vendor is used.
-#: ../libcinnamon-desktop/display-name.c:91
-msgctxt "Monitor vendor"
-msgid "Unknown"
-msgstr "Непознат"
-
-#: ../libcinnamon-desktop/gnome-desktop-utils.c:134
-msgid "Cannot find a terminal, using xterm, even if it may not work"
-msgstr ""
-"Не можам да најдам терминал, па користам xterm, иако може нема да работи"
-
-#. Translators: a CRTC is a CRT Controller (this is X terminology).
-#: ../libcinnamon-desktop/gnome-rr.c:452
-#, c-format
-msgid "could not get the screen resources (CRTCs, outputs, modes)"
-msgstr "не можев да ги добијам ресурсите на екранот (CRTC-и, излези, режими)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:472
-#, c-format
-msgid "unhandled X error while getting the range of screen sizes"
-msgstr ""
-"се појави несправлива грешка во X при добивањето на опсегот на големини на "
-"екранот"
-
-#: ../libcinnamon-desktop/gnome-rr.c:478
-#, c-format
-msgid "could not get the range of screen sizes"
-msgstr "не можев да го добијам опсегот на големини на екранот"
-
-#: ../libcinnamon-desktop/gnome-rr.c:769
-#, c-format
-msgid "RANDR extension is not present"
-msgstr "не е постои проширувањето за RANDR"
-
-#: ../libcinnamon-desktop/gnome-rr.c:1577
-#, c-format
-msgid "could not get information about output %d"
-msgstr "не можев да добијам информации за излезот %d"
-
-#. Translators: the "position", "size", and "maximum"
-#. * words here are not keywords; please translate them
-#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
-#: ../libcinnamon-desktop/gnome-rr.c:2170
-#, c-format
-msgid ""
-"requested position/size for CRTC %d is outside the allowed limit: "
-"position=(%d, %d), size=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"побараната позиција/големина за CRTC %d е надвор од дозволената граница: "
-"позиција=(%d, %d), големина=(%d, %d), максимум=(%d, %d)"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2204
-#, c-format
-msgid "could not set the configuration for CRTC %d"
-msgstr "не можев да ја поставам конфигурацијата за CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr.c:2352
-#, c-format
-msgid "could not get information about CRTC %d"
-msgstr "не можев да добијам информации за CRTC %d"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:558
-msgid "Laptop"
-msgstr "Лаптоп"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:713
-#, c-format
-msgid ""
-"none of the saved display configurations matched the active configuration"
-msgstr ""
-"ниедна од зачуваните конфигурации за приказ не одговараше на активната "
-"конфигурација"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1469
-#, c-format
-msgid "CRTC %d cannot drive output %s"
-msgstr "CRTC %d не може да го најде излезот %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1476
-#, c-format
-msgid "output %s does not support mode %dx%d@%dHz"
-msgstr "излезот %s не го поддржува режимот %dx%d@%dHz"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1487
-#, c-format
-msgid "CRTC %d does not support rotation=%s"
-msgstr "CRTC %d не поддржува ротација=%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1501
-#, c-format
-msgid ""
-"output %s does not have the same parameters as another cloned output:\n"
-"existing mode = %d, new mode = %d\n"
-"existing coordinates = (%d, %d), new coordinates = (%d, %d)\n"
-"existing rotation = %s, new rotation = %s"
-msgstr ""
-"излезот %s ги нема истите параметри како другиот клониран излез:\n"
-"постоечки режим = %d, нов режим = %d\n"
-"постоечки координати = (%d, %d), нови координати = (%d, %d)\n"
-"постоечка ротација = %s, нова ротација = %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1516
-#, c-format
-msgid "cannot clone to output %s"
-msgstr "не можев да клонирам на излезот %s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1685
-#, c-format
-msgid "Trying modes for CRTC %d\n"
-msgstr "Ги пробувам режимите за CRTC %d\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1709
-#, c-format
-msgid "CRTC %d: trying mode %dx%d@%dHz with output at %dx%d@%dHz (pass %d)\n"
-msgstr ""
-"CRTC %d: го пробувам режимот %dx%d@%dHz со излез на %dx%d@%dHz (чекор %d)\n"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1756
-#, c-format
-msgid ""
-"could not assign CRTCs to outputs:\n"
-"%s"
-msgstr ""
-"не можев да доделам CRTC-и на излезите:\n"
-"%s"
-
-#: ../libcinnamon-desktop/gnome-rr-config.c:1760
-#, c-format
-msgid ""
-"none of the selected modes were compatible with the possible modes:\n"
-"%s"
-msgstr ""
-"ниеден од избраните режими не беше компатибилен со можните режими:\n"
-"%s"
-
-#. Translators: the "requested", "minimum", and
-#. * "maximum" words here are not keywords; please
-#. * translate them as usual.
-#: ../libcinnamon-desktop/gnome-rr-config.c:1838
-#, c-format
-msgid ""
-"required virtual size does not fit available size: requested=(%d, %d), "
-"minimum=(%d, %d), maximum=(%d, %d)"
-msgstr ""
-"потребната виртуелна големина не одговара со достапната големина: "
-"побарано=(%d, %d), минимум=(%d, %d), максимум=(%d, %d)"
-
-#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-
-#. capplet.c:get_display_name()
-#. Translators:  this is the feature where what you see on your
-#. * laptop's screen is the same as your external projector.
-#. * Here, "Mirrored" is being used as an adjective.  For example,
-#. * the Spanish translation could be "Pantallas en Espejo".
-#: ../libcinnamon-desktop/gnome-rr-labeler.c:451
-msgid "Mirrored Displays"
+#: libcinnamon-desktop/gnome-languages.c:701
+msgid "Unspecified"
 msgstr ""
 
-#. Translators: This is the time format with full date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:238
+#. Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
+#. * The wall clock is used variously in Cinnamon applets and desklets, as well as
+#. * cinnamon-screensaver's default lock screen.
+#. Default date format (typically matching date portion of WITH_DATE_* defaults.)
+#. * Currently used by cinnamon-screensaver default clock
+#: libcinnamon-desktop/gnome-wall-clock.c:69
+msgid "%A, %B %-e"
+msgstr ""
+
+#. Default date/time format when show-date, show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:72
 msgid "%A %B %-e, %R:%S"
 msgstr "%A %B %-e, %R:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:239
+#. Default date/time format when show-date, show-seconds are set
+#: libcinnamon-desktop/gnome-wall-clock.c:75
+msgid "%A %B %-e, %-l:%M:%S %p"
+msgstr "%A %B %-e, %-l:%M:%S %p"
+
+#. Default date/time format when show-date, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:78
 msgid "%A %B %-e, %R"
 msgstr "%A %B %-e, %R"
 
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
+#. Default date/time format when just show-date is set
+#: libcinnamon-desktop/gnome-wall-clock.c:81
+msgid "%A %B %-e, %-l:%M %p"
+msgstr "%A %B %-e, %-l:%M %p"
+
+#. Default date/time format when show-seconds, use-24h are set
+#: libcinnamon-desktop/gnome-wall-clock.c:84
 #, fuzzy
 msgid "%R:%S"
 msgstr "%A %R:%S"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:243
-msgid "%R"
-msgstr ""
-
-#. Translators: This is a time format with full date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:249
-msgid "%A %B %-e, %-l:%M:%S %p"
-msgstr "%A %B %-e, %-l:%M:%S %p"
-
-#: ../libcinnamon-desktop/gnome-wall-clock.c:250
-msgid "%A %B %-e, %-l:%M %p"
-msgstr "%A %B %-e, %-l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../libcinnamon-desktop/gnome-wall-clock.c:254
+#. Default date/time format when just show-seconds is set
+#: libcinnamon-desktop/gnome-wall-clock.c:87
 #, fuzzy
 msgid "%-l:%M:%S %p"
 msgstr "%A %-l:%M:%S %p"
 
-#: ../libcinnamon-desktop/gnome-wall-clock.c:255
+#. Default date/time format when just use-24h is set
+#: libcinnamon-desktop/gnome-wall-clock.c:90
+msgid "%R"
+msgstr ""
+
+#. Default date/time format with no options are set
+#: libcinnamon-desktop/gnome-wall-clock.c:93
 #, fuzzy
 msgid "%-l:%M %p"
 msgstr "%A %-l:%M %p"
-
-msgid "%A, %B %-e"
-msgstr ""
-
-#~ msgid "Mirror Screens"
-#~ msgstr "Огледални прикази"
-
-#~ msgid "%A %R"
-#~ msgstr "%A %R"
-
-#~ msgid "About GNOME"
-#~ msgstr "За GNOME"
-
-#~ msgid "Learn more about GNOME"
-#~ msgstr "Дознајте повеќе за GNOME"
-
-#~ msgid "News"
-#~ msgstr "Вести"
-
-#~ msgid "GNOME Library"
-#~ msgstr "GNOME библиотека"
-
-#~ msgid "Friends of GNOME"
-#~ msgstr "Пријатели на GNOME"
-
-#~ msgid "Contact"
-#~ msgstr "Контакт"
-
-#~ msgid "The Mysterious GEGL"
-#~ msgstr "Мистериозниот GEGL"
-
-#~ msgid "The Squeaky Rubber GNOME"
-#~ msgstr "The Squeaky Rubber GNOME"
-
-#~ msgid "Wanda The GNOME Fish"
-#~ msgstr "Ванда - GNOME рибата"
-
-#~ msgid "_Open URL"
-#~ msgstr "_Отвори URL"
-
-#~ msgid "_Copy URL"
-#~ msgstr "_Копирај URL"
-
-#~ msgid "About the GNOME Desktop"
-#~ msgstr "За работната околина GNOME"
-
-#~ msgid "%(name)s: %(value)s"
-#~ msgstr "%(name)s: %(value)s"
-
-#~ msgid "Welcome to the GNOME Desktop"
-#~ msgstr "Добредојдовте во работната околина GNOME"
-
-#~ msgid "Brought to you by:"
-#~ msgstr "Овозможено од:"
-
-#~ msgid "<b>%(name)s:</b> %(value)s"
-#~ msgstr "<b>%(name)s:</b> %(value)s"
-
-#~ msgid "Version"
-#~ msgstr "Верзија"
-
-#~ msgid "Distributor"
-#~ msgstr "Дистрибутер"
-
-#~ msgid "Build Date"
-#~ msgstr "Датум на компајлирање"
-
-#~ msgid "Display information on this GNOME version"
-#~ msgstr "Прикажи информации за оваа верзија на GNOME"
-
-#~ msgid ""
-#~ "GNOME also includes a complete development platform for applications "
-#~ "programmers, allowing the creation of powerful and complex applications."
-#~ msgstr ""
-#~ "GNOME вклучува комплетна платформа за развивање на апликации со што се "
-#~ "дозволува брзо создавање на моќни и комплексни апликации."
-
-#~ msgid ""
-#~ "GNOME includes most of what you see on your computer, including the file "
-#~ "manager, web browser, menus, and many applications."
-#~ msgstr ""
-#~ "GNOME ги вклучува повеќето работи што ги гледате на Вашиот компјутер, заедно"
-#~ " со менаџерите за датотеки, веб прелистувачите, менијата и многу апликации."
-
-#~ msgid ""
-#~ "GNOME is a Free, usable, stable, accessible desktop environment for the "
-#~ "Unix-like family of operating systems."
-#~ msgstr ""
-#~ "GNOME е слободна, корисна, стабилна, пристапна работна околина за „Unix-"
-#~ "like“ оперативните системи."
-
-#~ msgid ""
-#~ "GNOME's focus on usability and accessibility, regular release cycle, and "
-#~ "strong corporate backing make it unique among Free Software desktops."
-#~ msgstr ""
-#~ "GNOME се фокусира на користност и пристапност. Регуларниот циклус на "
-#~ "објавување на нови верзии го прави GNOME уникатен помеѓу слободните работни "
-#~ "околини."
-
-#~ msgid ""
-#~ "GNOME's greatest strength is our strong community. Virtually anyone, with or"
-#~ " without coding skills, can contribute to making GNOME better."
-#~ msgstr ""
-#~ "Најголемата сила на GNOME е во јаката заедница. Скоро секој со или без "
-#~ "програмерски способности може да придонесе во подобрувањето на GNOME."
-
-#~ msgid ""
-#~ "Hundreds of people have contributed code to GNOME since it was started in "
-#~ "1997; many more have contributed in other important ways, including "
-#~ "translations, documentation, and quality assurance."
-#~ msgstr ""
-#~ "Во создавањето на GNOME имаат удел стотици луѓе. Уште од кога е започнат "
-#~ "проектот во 1997, многу луѓе имаат помогнато на разни начини вклучувајќи и "
-#~ "преведување, изработување на документација и проверка на квалитетот."
-
-#~ msgid "Error reading file '%s': %s"
-#~ msgstr "Грешка при читањето на датотеката '%s': %s"
-
-#~ msgid "Error rewinding file '%s': %s"
-#~ msgstr "Грешка при премотувањето на датотеката '%s': %s"
-
-#~ msgid "No name"
-#~ msgstr "Без име"
-
-#~ msgid "File '%s' is not a regular file or directory."
-#~ msgstr "Датотеката '%s' не е регуларна датотека или директориум"
-
-#~ msgid "Error cannot find file id '%s'"
-#~ msgstr "Грешка, не можам да ја најдам датотеката '%s'"
-
-#~ msgid "No filename to save to"
-#~ msgstr "Нема име на датотеката за снимање"
-
-#~ msgid "Starting %s"
-#~ msgstr "Подигнувам %s"
-
-#~ msgid "No URL to launch"
-#~ msgstr "Нема URL за лансирање"
-
-#~ msgid "Not a launchable item"
-#~ msgstr "Предметот не е за лансирање"
-
-#~ msgid "No command (Exec) to launch"
-#~ msgstr "Нема команда (Exec) за лансирање"
-
-#~ msgid "Bad command (Exec) to launch"
-#~ msgstr "Лоша команда (Exec) за лансирање"
-
-#~ msgid "Unknown encoding of: %s"
-#~ msgstr "Непознат енкодинг на: %s"
-
-#~ msgid "Directory"
-#~ msgstr "Директориум"
-
-#~ msgid "Application"
-#~ msgstr "Апликација"
-
-#~ msgid "Link"
-#~ msgstr "Врска"
-
-#~ msgid "FSDevice"
-#~ msgstr "FS уред"
-
-#~ msgid "MIME Type"
-#~ msgstr "MIME тип"
-
-#~ msgid "Service"
-#~ msgstr "Сервис"
-
-#~ msgid "ServiceType"
-#~ msgstr "Тип на сервис"
-
-#~ msgid "_URL:"
-#~ msgstr "_URL:"
-
-#~ msgid "Comm_and:"
-#~ msgstr "Ком_анда:"
-
-#~ msgid "_Name:"
-#~ msgstr "_Име:"
-
-#~ msgid "_Generic name:"
-#~ msgstr "_Општо име:"
-
-#~ msgid "Co_mment:"
-#~ msgstr "Ко_ментар:"
-
-#~ msgid "Browse"
-#~ msgstr "Разгледај"
-
-#~ msgid "_Type:"
-#~ msgstr "_Тип:"
-
-#~ msgid "_Icon:"
-#~ msgstr "_Икона:"
-
-#~ msgid "Browse icons"
-#~ msgstr "Разгледај икони"
-
-#~ msgid "Run in t_erminal"
-#~ msgstr "Подигни во т_ерминал"
-
-#~ msgid "Language"
-#~ msgstr "Јазик"
-
-#~ msgid "Name"
-#~ msgstr "Име"
-
-#~ msgid "Generic name"
-#~ msgstr "Општо име"
-
-#~ msgid "Comment"
-#~ msgstr "Коментар"
-
-#~ msgid "_Try this before using:"
-#~ msgstr "_Обидете се со ова пред да пробате со:"
-
-#~ msgid "_Documentation:"
-#~ msgstr "_Документација:"
-
-#~ msgid "_Name/Comment translations:"
-#~ msgstr "_Именувај/коментирај преводи:"
-
-#~ msgid "_Add/Set"
-#~ msgstr "_Додај/постави"
-
-#~ msgid "Add or Set Name/Comment Translations"
-#~ msgstr "Додај или постави именување/коментирање на преводи"
-
-#~ msgid "Re_move"
-#~ msgstr "О_тстрани"
-
-#~ msgid "Remove Name/Comment Translation"
-#~ msgstr "Отстрани именување/коментирање на превод"
-
-#~ msgid "Basic"
-#~ msgstr "Основно"
-
-#~ msgid "Advanced"
-#~ msgstr "Напредно"
-
-#~ msgid "_Show Hints at Startup"
-#~ msgstr "_Покажувај совети по подигнувањето"
