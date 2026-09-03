@@ -120,10 +120,10 @@ gnome_wall_clock_init (GnomeWallClock *self)
 	self->priv->tz_monitor = g_file_monitor_file (tz, 0, NULL, NULL);
 	g_object_unref (tz);
 	
-	g_signal_connect (self->priv->tz_monitor, "changed", G_CALLBACK (on_tz_changed), self);
+	g_signal_connect_object (self->priv->tz_monitor, "changed", G_CALLBACK (on_tz_changed), self, 0);
 	
 	self->priv->desktop_settings = g_settings_new ("org.cinnamon.desktop.interface");
-	g_signal_connect (self->priv->desktop_settings, "changed", G_CALLBACK (on_schema_change), self);
+	g_signal_connect_object (self->priv->desktop_settings, "changed", G_CALLBACK (on_schema_change), self, 0);
 
      /* A format string provided for construction will be set after gnome_wall_clock_init()
       * finishes.  If not provided, our internal format and interval will still be set to
