@@ -2119,9 +2119,42 @@ get_as_pixbuf_for_size (GnomeBG    *bg,
 {
 	const FileCacheEntry *ent;
 	if ((ent = file_cache_lookup (bg, PIXBUF, filename))) {
-		return g_object_ref (ent->u.pixbuf);
+		gint cached_width = gdk_pixbuf_get_width (ent->u.pixbuf);
+		gint cached_height = gdk_pixbuf_get_height (ent->u.pixbuf);
+		gint wanted_width = best_width;
+		gint wanted_height = best_height;
+
+		/* A cached pixbuf smaller than what is being requested now is
+		 * only a problem if it was *downscaled* from a larger source
+		 * -- e.g. pre-scaled for a different, smaller monitor and
+		 * loaded from the on-disk per-monitor cache -- and would have
+		 * to be upscaled again to fill this request, producing a
+		 * blurry result even though the source file has plenty of
+		 * resolution. If the source image itself has no more
+		 * resolution than the cached pixbuf, clamp what we ask for to
+		 * its native size so we don't force a pointless re-decode
+		 * that would just return the same pixels. */
+		if (cached_width < wanted_width || cached_height < wanted_height) {
+			gint native_width = -1;
+			gint native_height = -1;
+
+			gdk_pixbuf_get_file_info (filename, &native_width, &native_height);
+
+			if (native_width > 0 && native_width < wanted_width)
+				wanted_width = native_width;
+			if (native_height > 0 && native_height < wanted_height)
+				wanted_height = native_height;
+		}
+
+		if (cached_width >= wanted_width && cached_height >= wanted_height) {
+			return g_object_ref (ent->u.pixbuf);
+		}
+
+		bg->file_cache = g_list_remove (bg->file_cache, ent);
+		file_cache_entry_delete ((FileCacheEntry *) ent);
 	}
-	else {
+
+	{
 		GdkPixbufFormat *format;
 		GdkPixbuf *pixbuf;
 		GdkPixbuf *tmp_pixbuf;
@@ -2541,12 +2574,35 @@ get_pixbuf_for_size (GnomeBG *bg,
 	guint time_until_next_change;
 	gboolean hit_cache = FALSE;
 
-	/* only hit the cache if the aspect ratio matches */
+	/* Only hit the cache if it is at least as big as what is being
+	 * requested (or as big as the source image gets) and the aspect
+	 * ratio matches. Matching on aspect ratio alone is not enough on
+	 * multi-monitor setups where two monitors share a similar aspect
+	 * ratio (e.g. two 16:9 displays of different resolutions): a pixbuf
+	 * cached for the smaller monitor would otherwise be reused and
+	 * upscaled for the larger one. */
 	if (bg->pixbuf_cache) {
 		int width, height;
+		int wanted_width = best_width;
+		int wanted_height = best_height;
+
 		width = gdk_pixbuf_get_width (bg->pixbuf_cache);
 		height = gdk_pixbuf_get_height (bg->pixbuf_cache);
-		hit_cache = 0.2 > fabs ((best_width / (double)best_height) - (width / (double)height));
+
+		if ((width < wanted_width || height < wanted_height) && bg->filename) {
+			int native_width = -1;
+			int native_height = -1;
+
+			gdk_pixbuf_get_file_info (bg->filename, &native_width, &native_height);
+
+			if (native_width > 0 && native_width < wanted_width)
+				wanted_width = native_width;
+			if (native_height > 0 && native_height < wanted_height)
+				wanted_height = native_height;
+		}
+
+		hit_cache = width >= wanted_width && height >= wanted_height &&
+			    0.2 > fabs ((best_width / (double)best_height) - (width / (double)height));
 		if (!hit_cache) {
 			g_object_unref (bg->pixbuf_cache);
 			bg->pixbuf_cache = NULL;
