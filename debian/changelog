@@ -1,3 +1,12 @@
+cinnamon-desktop (6.7.4) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * background gschema: Add picture-uri-list and background-mode keys.
+  * libcinnamon-desktop: Mark gnome-bg as deprecated.
+  * i18n: Strip all translations except gnome-wall-clock.c and gnome-languages.c.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 17 Sep 2026 09:52:28 +0100
+
 cinnamon-desktop (6.7.3) alfa; urgency=medium
 
   [ Clement Lefebvre ]
