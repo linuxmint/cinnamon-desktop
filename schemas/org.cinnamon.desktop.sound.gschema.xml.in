@@ -26,9 +26,14 @@
       <summary>Which sound to play when the volume is changed</summary>
       <description>Which sound to play when the volume is changed.</description>
     </key>
-    <key name="allow-amplified-volume" type="b">
+    <key name="allow-amplified-out-volume" type="b">
       <default>false</default>
-      <summary>Overamplification</summary>
+      <summary>Output Overamplification</summary>
+      <description>Allows the volume to exceed 100%, with reduced sound quality.</description>
+    </key>
+    <key name="allow-amplified-in-volume" type="b">
+      <default>false</default>
+      <summary>Input Overamplification</summary>
       <description>Allows the volume to exceed 100%, with reduced sound quality.</description>
     </key>
   </schema>
