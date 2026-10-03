@@ -114,8 +114,11 @@ gnome_desktop_prepend_terminal_to_vector (int *argc, char ***argv)
 		term_argc = 2;
 		term_argv = g_new0 (char *, 3);
 
-		check = g_find_program_in_path ("gnome-terminal");
+		check = g_find_program_in_path ("velocitty");
 		if (check != NULL) {
+			term_argv[0] = check;
+			term_argv[1] = g_strdup ("--");
+		} else if ((check = g_find_program_in_path ("gnome-terminal")) != NULL) {
 			term_argv[0] = check;
 			/* Note that gnome-terminal takes -x and
 			 * as -e in gnome-terminal is broken we use that. */

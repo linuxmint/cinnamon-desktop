@@ -43,7 +43,7 @@
   </schema>
   <schema id="org.cinnamon.desktop.default-applications.terminal" path="/org/cinnamon/desktop/applications/terminal/">
     <key name="exec" type="s">
-      <default>'gnome-terminal'</default>
+      <default>'velocitty'</default>
       <summary>Terminal application</summary>
       <description>
         Terminal program to use when starting applications that require one.
