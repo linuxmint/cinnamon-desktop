@@ -272,7 +272,8 @@ gvc_mixer_control_lookup_device_from_stream (GvcMixerControl *control,
                 }
 
                 port = gvc_mixer_stream_get_port (stream);
-                if (g_strcmp0 (gvc_mixer_ui_device_get_port (device), port->port) == 0) {
+                if (port != NULL &&
+                    g_strcmp0 (gvc_mixer_ui_device_get_port (device), port->port) == 0) {
                         g_debug ("lookup-device-from-stream found device: device description '%s', device port = '%s', device stream id %i AND stream port = '%s' stream id '%u' and stream description '%s'",
                                  gvc_mixer_ui_device_get_description (device),
                                  gvc_mixer_ui_device_get_port (device),
@@ -621,7 +622,7 @@ gvc_mixer_control_change_output (GvcMixerControl *control,
         active_port = gvc_mixer_stream_get_port (stream);
         output_port = gvc_mixer_ui_device_get_port (output);
         /* First ensure the correct port is active on the sink */
-        if (g_strcmp0 (active_port->port, output_port) != 0) {
+        if (active_port == NULL || g_strcmp0 (active_port->port, output_port) != 0) {
                 g_debug ("Port change, switch to = %s", output_port);
                 if (gvc_mixer_stream_change_port (stream, output_port) == FALSE) {
                         g_warning ("Could not change port !");
@@ -691,7 +692,7 @@ gvc_mixer_control_change_input (GvcMixerControl *control,
         active_port = gvc_mixer_stream_get_port (stream);
         input_port = gvc_mixer_ui_device_get_port (input);
         /* First ensure the correct port is active on the sink */
-        if (g_strcmp0 (active_port->port, input_port) != 0) {
+        if (active_port == NULL || g_strcmp0 (active_port->port, input_port) != 0) {
                 g_debug ("Port change, switch to = %s", input_port);
                 if (gvc_mixer_stream_change_port (stream, input_port) == FALSE) {
                         g_warning ("Could not change port!");
