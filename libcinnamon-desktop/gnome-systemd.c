@@ -25,6 +25,7 @@
 
 #ifdef HAVE_SYSTEMD
 #include <errno.h>
+#include <string.h>
 #include <systemd/sd-login.h>
 #endif
 
@@ -77,8 +78,10 @@ start_systemd_scope (GDBusConnection *connection, GTask *task)
 
   g_assert (task_data != NULL);
 
-  /* This needs to be unique, hopefully the pid will be enough. */
-  unit_name = g_strdup_printf ("gnome-launched-%s-%d.scope", task_data->name, task_data->pid);
+  /* Naming scheme from https://systemd.io/DESKTOP_ENVIRONMENTS/, which system
+   * monitors rely on to tell applications apart from other units.
+   * This needs to be unique, hopefully the pid will be enough. */
+  unit_name = g_strdup_printf ("app-cinnamon-%s-%d.scope", task_data->name, task_data->pid);
 
   g_variant_builder_init (&builder, G_VARIANT_TYPE ("(ssa(sv)a(sa(sv)))"));
   g_variant_builder_add (&builder, "s", unit_name);
@@ -95,6 +98,12 @@ start_systemd_scope (GDBusConnection *connection, GTask *task)
                          "(sv)",
                          "PIDs",
                           g_variant_new_fixed_array (G_VARIANT_TYPE_UINT32, &task_data->pid, 1, 4));
+
+  /* Default to let systemd garbage collect failed applications we launched. */
+  g_variant_builder_add (&builder,
+                         "(sv)",
+                         "CollectMode",
+                          g_variant_new_string ("inactive-or-failed"));
   g_variant_builder_close (&builder);
 
   g_variant_builder_open (&builder, G_VARIANT_TYPE ("a(sa(sv))"));
@@ -134,6 +143,22 @@ on_bus_gotten_cb (GObject      *source,
     }
 
   start_systemd_scope (connection, g_steal_pointer (&task));
+}
+
+/* Is there a systemd user instance we can ask to create the scope? Being in a
+ * logind session is not enough on its own, the user instance can be masked. */
+static gboolean
+user_instance_available (void)
+{
+  g_autofree char *private_socket = NULL;
+  uid_t uid;
+
+  if (sd_pid_get_owner_uid (getpid (), &uid) < 0)
+    return FALSE;
+
+  private_socket = g_build_filename (g_get_user_runtime_dir (), "systemd", "private", NULL);
+
+  return g_file_test (private_socket, G_FILE_TEST_EXISTS);
 }
 #endif
 
@@ -204,6 +229,10 @@ gnome_start_systemd_scope (const char           *name,
   g_strdelimit (task_data->name, "/", '-');
   g_strcanon (task_data->name, valid_chars, '_');
 
+  /* The unit name embeds the application ID, which carries no .desktop suffix */
+  if (g_str_has_suffix (task_data->name, ".desktop"))
+    task_data->name[strlen (task_data->name) - strlen (".desktop")] = '\0';
+
   task_data->description = g_strdup (description);
   if (task_data->description == NULL)
     {
@@ -216,9 +245,13 @@ gnome_start_systemd_scope (const char           *name,
 
   g_task_set_task_data (task, task_data, (GDestroyNotify) start_systemd_scope_data_free);
 
-  /* We cannot do anything if this process is not managed by the
-   * systemd user instance. */
+  /* Cinnamon is not started as a systemd user unit, it runs in the logind
+   * session scope, so sd_pid_get_user_unit() returns -ENODATA even where the
+   * user instance is perfectly usable. Only give up if there is none. */
   res = sd_pid_get_user_unit (getpid (), &own_unit);
+  if (res == -ENODATA && user_instance_available ())
+    res = 0;
+
   if (res == -ENODATA)
     {
       g_debug ("Not systemd managed, will not move PID %d into transient scope\n", pid);
