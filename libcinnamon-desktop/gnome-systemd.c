@@ -58,8 +58,12 @@ on_start_transient_unit_cb (GObject      *source,
                                          res, &error);
   if (error && !g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
     {
-      g_warning ("Could not create transient scope for PID %d: %s",
-                 task_data->pid, error->message);
+      /* Short-lived launches are often gone before the manager gets to them */
+      if (g_error_matches (error, G_DBUS_ERROR, G_DBUS_ERROR_UNIX_PROCESS_ID_UNKNOWN))
+        g_debug ("Process %d exited before a transient scope could be created", task_data->pid);
+      else
+        g_warning ("Could not create transient scope for PID %d: %s",
+                   task_data->pid, error->message);
       g_task_return_error (task, error);
       return;
     }
