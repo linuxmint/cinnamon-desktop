@@ -1,3 +1,17 @@
+cinnamon-desktop (6.7.6) adrien; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Switch terminal to velocitty
+
+  [ Michael Webster ]
+  * org.cinnamon.desktop.keybindings: Add hover-click shortcut.
+  * gnome-systemd.c: Don't warn if a process exited before its scope could be created.
+
+  [ Fabio Fantoni ]
+  * gnome-systemd: Actually create scopes for launched applications (#275)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Oct 2026 13:25:02 +0100
+
 cinnamon-desktop (6.7.5) adrien; urgency=medium
 
   [ Nicolás Capdet ]
