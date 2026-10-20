@@ -53,7 +53,7 @@
       </description>
     </key>
     <key name="show-source-switch-popup" type="b">
-      <default>true</default>
+      <default>false</default>
       <summary>Show the new input source when switching with a shortcut</summary>
       <description>
         When enabled, switching input sources with a keyboard shortcut
