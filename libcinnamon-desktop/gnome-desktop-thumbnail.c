@@ -1054,9 +1054,17 @@ gnome_desktop_thumbnail_factory_can_thumbnail (GnomeDesktopThumbnailFactory *fac
 
   /* Don't thumbnail thumbnails */
   if (uri &&
-      strncmp (uri, "file:/", 6) == 0 &&
-      strstr (uri, "/thumbnails/") != NULL)
-    return FALSE;
+      g_str_has_prefix (uri, "file:/"))
+    {
+      g_autoptr(GFile) thumbnail_location =
+        g_file_new_build_filename (g_get_user_cache_dir (),
+                                   "thumbnails",
+                                   NULL);
+      g_autoptr(GFile) file = g_file_new_for_uri (uri);
+
+      if (g_file_has_prefix (file, thumbnail_location))
+        return FALSE;
+    }
   
   if (!mime_type)
     return FALSE;
