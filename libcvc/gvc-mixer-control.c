@@ -2585,7 +2585,8 @@ update_card (GvcMixerControl      *control,
                 struct pa_card_profile_info pi = info->profiles[i];
                 gboolean is_default;
 
-                is_default = (g_strcmp0 (pi.name, info->active_profile->name) == 0);
+                is_default = (info->active_profile != NULL &&
+                              g_strcmp0 (pi.name, info->active_profile->name) == 0);
                 g_debug ("\tProfile '%s': %d sources %d sinks%s",
                          pi.name, pi.n_sources, pi.n_sinks,
                          is_default ? " (Current)" : "");
@@ -2623,7 +2624,8 @@ update_card (GvcMixerControl      *control,
         gvc_mixer_card_set_profiles (card, profile_list);
         gvc_mixer_card_set_name (card, pa_proplist_gets (info->proplist, "device.description"));
         gvc_mixer_card_set_icon_name (card, pa_proplist_gets (info->proplist, "device.icon_name"));
-        gvc_mixer_card_set_profile (card, info->active_profile->name);
+        if (info->active_profile != NULL)
+                gvc_mixer_card_set_profile (card, info->active_profile->name);
 
         if (is_new) {
                 g_hash_table_insert (control->priv->cards,
