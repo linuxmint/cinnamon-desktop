@@ -1,3 +1,18 @@
+cinnamon-desktop (6.8.0) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * input-sources schema: Add key for layout switch cursor popup.
+  * input-sources schema: Disable layout-switch popup by default
+  * gnome-desktop-thumbnail.c: Tighten up 'thumbnails' directory check
+
+  [ Marshall Bowers ]
+  * libcvc: Don't crash when a card has no active profile (#280)
+
+  [ glira ]
+  * libcvc: handle missing active port in mixer control (#278)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 02 Nov 2026 13:25:16 +0000
+
 cinnamon-desktop (6.7.6) adrien; urgency=medium
 
   [ Clement Lefebvre ]
