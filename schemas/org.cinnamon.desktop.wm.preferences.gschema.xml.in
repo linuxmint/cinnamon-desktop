@@ -2,7 +2,7 @@
 <schemalist>
   <schema id="org.cinnamon.desktop.wm.preferences" path="/org/cinnamon/desktop/wm/preferences/">
     <key name="mouse-button-modifier" type="s">
-      <default><![CDATA['<Alt>']]></default>
+      <default><![CDATA['<Super>']]></default>
       <summary>Modifier to use for modified window click actions</summary>
       <description>
         Clicking a window while holding down this modifier key  will move the
