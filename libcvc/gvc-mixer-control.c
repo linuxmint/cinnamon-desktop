@@ -1459,7 +1459,7 @@ set_icon_name_from_proplist (GvcMixerStream *stream,
 }
 
 static GvcMixerStreamState
-translate_pa_state (pa_sink_state_t state) {
+translate_pa_sink_state (pa_sink_state_t state) {
         switch (state) {
         case PA_SINK_RUNNING:
                 return GVC_STREAM_STATE_RUNNING;
@@ -1470,6 +1470,21 @@ translate_pa_state (pa_sink_state_t state) {
         case PA_SINK_INIT:
         case PA_SINK_INVALID_STATE:
         case PA_SINK_UNLINKED:
+        default:
+                return GVC_STREAM_STATE_INVALID;
+        }
+}
+
+static GvcMixerStreamState
+translate_pa_source_state (pa_source_state_t state) {
+        switch (state) {
+        case PA_SOURCE_RUNNING:
+                return GVC_STREAM_STATE_RUNNING;
+        case PA_SOURCE_IDLE:
+                return GVC_STREAM_STATE_IDLE;
+        case PA_SOURCE_SUSPENDED:
+                return GVC_STREAM_STATE_SUSPENDED;
+        case PA_SOURCE_INVALID_STATE:
         default:
                 return GVC_STREAM_STATE_INVALID;
         }
@@ -1556,7 +1571,7 @@ update_sink (GvcMixerControl    *control,
         gvc_mixer_stream_set_is_muted (stream, info->mute);
         gvc_mixer_stream_set_can_decibel (stream, !!(info->flags & PA_SINK_DECIBEL_VOLUME));
         gvc_mixer_stream_set_base_volume (stream, (guint32) info->base_volume);
-        gvc_mixer_stream_set_state (stream, translate_pa_state (info->state));
+        gvc_mixer_stream_set_state (stream, translate_pa_sink_state (info->state));
 
         is_bt = is_bluetooth (info->proplist);
         /* Sync devices as the port on the stream might have changed */
@@ -1694,6 +1709,7 @@ update_source (GvcMixerControl      *control,
         gvc_mixer_stream_set_is_muted (stream, info->mute);
         gvc_mixer_stream_set_can_decibel (stream, !!(info->flags & PA_SOURCE_DECIBEL_VOLUME));
         gvc_mixer_stream_set_base_volume (stream, (guint32) info->base_volume);
+        gvc_mixer_stream_set_state (stream, translate_pa_source_state (info->state));
         g_debug ("update source");
 
         is_bt = is_bluetooth (info->proplist);
