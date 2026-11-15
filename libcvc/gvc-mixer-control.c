@@ -1223,7 +1223,8 @@ add_stream (GvcMixerControl *control,
 static gboolean
 match_stream_with_devices (GvcMixerControl    *control,
                            GvcMixerStreamPort *stream_port,
-                           GvcMixerStream     *stream)
+                           GvcMixerStream     *stream,
+                           gboolean            is_bluetooth)
 {
         g_autoptr (GList)        devices = NULL;
         guint                    stream_card_id;
@@ -1284,7 +1285,7 @@ match_stream_with_devices (GvcMixerControl    *control,
                                         in_possession = TRUE;
                                 } else {
                                         /* Other UI devices on that card that match the stream can't be valid */
-                                        if (device_stream_id == stream_id) {
+                                        if (device_stream_id == stream_id && is_bluetooth) {
                                                 g_object_set (G_OBJECT (device),
                                                               "stream-id", GVC_MIXER_UI_DEVICE_INVALID,
                                                               NULL);
@@ -1395,7 +1396,7 @@ sync_devices (GvcMixerControl *control,
                 GvcMixerStreamPort *stream_port;
                 stream_port = n->data;
 
-                if (match_stream_with_devices (control, stream_port, stream))
+                if (match_stream_with_devices (control, stream_port, stream, is_bluetooth))
                         continue;
 
                 g_warning ("Sync_devices: Failed to match stream id: %u, description: '%s', origin: '%s'",
