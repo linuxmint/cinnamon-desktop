@@ -28,8 +28,13 @@
     </key>
     <key name="allow-amplified-volume" type="b">
       <default>false</default>
-      <summary>Overamplification</summary>
-      <description>Allows the volume to exceed 100%, with reduced sound quality.</description>
+      <summary>Output overamplification</summary>
+      <description>Allows the output volume to exceed 100%, with reduced sound quality.</description>
+    </key>
+    <key name="allow-amplified-mic" type="b">
+      <default>false</default>
+      <summary>Microphone overamplification</summary>
+      <description>Allows the microphone volume to exceed 100%. This raises the recorded level using software gain, which also amplifies background noise and may cause clipping.</description>
     </key>
   </schema>
 </schemalist>
