@@ -1,3 +1,11 @@
+cinnamon-desktop (6.8.1) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * mixer-control: Only reset stream-id for bluetooth devices
+  * mixer-control: Populate source state field
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 Nov 2026 15:22:03 +0000
+
 cinnamon-desktop (6.8.0) adrien; urgency=medium
 
   [ Michael Webster ]
