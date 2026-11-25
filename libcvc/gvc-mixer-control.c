@@ -2693,7 +2693,7 @@ update_card (GvcMixerControl      *control,
                         card_port->available = port->available;
                         card_port->direction = port->direction;
                         card_port->icon_name = g_strdup (pa_proplist_gets (port->proplist, "device.icon_name"));
-                        card_port->profiles = determine_profiles_for_port (port, profile_list);
+                        card_port->profiles = determine_profiles_for_port (port, gvc_mixer_card_get_profiles (card));
 
                         gvc_mixer_card_add_port (card, card_port);
                         update_ui_device_on_port_added (control, card_port, card);
